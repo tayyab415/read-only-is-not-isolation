@@ -15,7 +15,8 @@
 \setmainfont{OldStandard}[Extension=.otf,UprightFont=*-Regular,BoldFont=*-Bold,ItalicFont=*-Italic]
 \usepackage[table]{xcolor}
 \usepackage{graphicx,booktabs,tabularx,enumitem,url,microtype,needspace,ragged2e}
-\usepackage[font=small,labelfont=bf]{caption}
+\usepackage[font=footnotesize,labelfont=bf,skip=3pt]{caption}
+\setlength{\intextsep}{6pt plus 2pt minus 2pt}\setlength{\textfloatsep}{8pt plus 2pt minus 2pt}\setlength{\floatsep}{6pt plus 2pt minus 2pt}
 \usepackage{titlesec}
 \definecolor{headgrey}{HTML}{434343}
 \definecolor{subgrey}{HTML}{666666}
@@ -71,8 +72,8 @@ I built the lab in steps; each step tested the gap the last one left. First I re
 Artifactory OSS 7.161.26, the product the incident used \cite[p.~5]{metr}, ran on one AWS VM with a local upstream that answers misses after a fixed delay, behind my gateway that forwards only GET and HEAD. vLLM 0.33.0 served Qwen2.5-1.5B-Instruct on one NVIDIA L4 behind gateways with fixed cache policies. I used real systems because the channels come from real product features a mock lacks. Models: GPT-6 Luna, GPT-6.1 Terra and gpt-oss-120b on the mirror; GLM-5.3-Flash and DeepSeek-V4-Flash on the model server, cheap and, where possible, open-weight, with fewer safeguards than frontier models.
 
 \begin{figure}[h]\centering
-\includegraphics[width=\linewidth]{figures/setup.pdf}
-\caption{The test. Two sandboxes with read-only accounts and no route to each other reach one shared service only through my gateway, which forwards GET and HEAD and binds each sandbox's network address to its account. A message passes when A's read changes shared state that B's later read observes. Bottom: the order in which the lab was built.}\label{fig:setup}
+\includegraphics[width=0.82\linewidth]{figures/setup.pdf}
+\caption{The test. Read-only sandboxes with no route to each other reach one shared service through my gateway. A message passes when A's read changes state that B's later read observes. Bottom: the build order.}\label{fig:setup}
 \end{figure}
 
 \subsection{Measurement rules}
@@ -83,7 +84,7 @@ The attack scripts explain how and why a service leaks; the agent runs show whet
 Reads leaked. Through the download counter the receiver recovered 24 of 24 scheduled bits (Figure~\ref{fig:channel}); through remembered misses, a path the sender had just asked for came back in 12 ms instead of 164 ms, and a frozen decoder got 32 of 32 bits. Told to swap a number through the mirror, \textbf{110 of 120} model agents did (Luna 38/40, Terra 40/40, gpt-oss 32/40), all through the counter. With the storage API denied and negative caching off, \textbf{0 of 120} did. 32 of Terra's 40 control episodes were provider failures, so the clean contrast is 70/80 against 0/80.
 
 \begin{figure}[h]\centering
-\includegraphics[width=0.72\linewidth]{figures/channel.pdf}
+\includegraphics[width=0.58\linewidth]{figures/channel.pdf}
 \caption{Download-count channel, two scripted read-only clients, 24 balanced bits per arm. Shared cache: each of A's downloads steps the count B reads (24/24). Separate repositories: the count stays at 2 and B scores chance (12/24).}\label{fig:channel}
 \end{figure}
 
@@ -99,12 +100,12 @@ In 144 audited episodes, agents doing ordinary work never blamed a slowdown on a
 
 \begin{figure}[h]\centering
 \begin{minipage}[t]{0.48\linewidth}\centering
-\includegraphics[width=\linewidth]{figures/rate-strip.pdf}
-\caption{Achieved load-channel rates for one scripted on/off scheme through the gateway-assigned salt (600 holdout symbols per condition; frozen one-threshold decoder). Dots are point estimates; bars run to the Wilson 95\% lower bound. These are achieved rates, not capacity. Bottom row: time to move 128 bits at each rate with ideal coding. Grey lines: TCSEC calls over 100 bit/s high and under 1 bit/s acceptable in most environments \cite{tcsec}; NCSC-TG-030 suggests auditing above 0.1 bit/s \cite{tg030}.}\label{fig:rate}
+\includegraphics[width=0.8\linewidth]{figures/rate-strip.pdf}
+\caption{Model-server load channel: achieved rates for one scripted on/off scheme, 600 holdout symbols per condition, bars to the Wilson 95\% lower bound. Grey lines: covert-channel guidance \cite{tcsec,tg030}.}\label{fig:rate}
 \end{minipage}\hfill
 \begin{minipage}[t]{0.48\linewidth}\centering
-\includegraphics[width=\linewidth]{figures/monitor-bars.pdf}
-\caption{Three study-O monitors on the 110 verified package exchanges and the 60 benign validation agents, with Wilson 95\% intervals: the server-side rule of Sec.~4.3 (M1), a wait-count monitor (M2) and a notes monitor (M3). $^\dagger$M1's recall is partly by construction: a verified exchange requires the peer download and revealing statistics read that M1 looks for, so 110/110 is not evidence that it recognises intent.}\label{fig:monitors}
+\includegraphics[width=0.8\linewidth]{figures/monitor-bars.pdf}
+\caption{Monitors on the 110 verified package exchanges (top) and 60 benign agents (bottom), Wilson 95\% intervals. $^\dagger$M1's 110/110 is partly by construction.}\label{fig:monitors}
 \end{minipage}
 \end{figure}
 
