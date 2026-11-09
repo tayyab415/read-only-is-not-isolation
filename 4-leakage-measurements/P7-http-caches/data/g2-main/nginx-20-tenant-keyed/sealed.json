@@ -1,0 +1,29 @@
+{
+  "run_id": "p7-g2-nginx-20-tenant-keyed-hold",
+  "product": "nginx",
+  "delay_ms": 20,
+  "arm": "tenant-keyed",
+  "split": "holdout",
+  "scheduled": 32,
+  "completed": 32,
+  "complete": true,
+  "source_freeze_sha256": "e29bc3a73fb81cce237872d1cc61d771109b4a6ae424d70b8fe0cd1e70e84f5a",
+  "model_freeze_sha256": "7816def9ab488d6057bf5323d47d7c4f155a0f2f706aa8db7befb0a9b2fc247d",
+  "cleanup_absence_proved": true,
+  "request_ledger_sha256_at_seal": "f2580ebd9ca8cf215d96dd29e0983da7927ca3f6e48f1a291a873c0ae2b0ab20",
+  "sha256": {
+    "cache-stop.json": "8d60413d064643ae9b438c5158f612eba76eae1e9500e7c4ed1e82d84c9581d1",
+    "cleanup.json": "8d24f68f3221f5182da77325e0085a5b7db44a0f478a2e42a596bc833b5218d8",
+    "p7-g2-nginx-20-tenant-keyed-hold-cache/cache.conf": "485b6e00e57901c7b5aadc8c57ddbb1129ba2f702005f4fadd1d8cb91c3c270f",
+    "p7-g2-nginx-20-tenant-keyed-hold-cache/origins.json": "76e26341c95fbc68fa2b7f5b717dea19c1acd87c149f627547a0cd3e739b2de4",
+    "p7-g2-nginx-20-tenant-keyed-hold-cache/parse.txt": "4149afae91ae722259614e1a924368e0bad8f3e6e926680ae375b2d8cc782bb1",
+    "p7-g2-nginx-20-tenant-keyed-hold-cache/stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "p7-g2-nginx-20-tenant-keyed-hold-cache/stdout.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "provision.json": "7c1fbb4712c337e385a36d8b765e1c163ac16120b0d77fa89682116cb9206eb1",
+    "request-reservations.jsonl": "f2580ebd9ca8cf215d96dd29e0983da7927ca3f6e48f1a291a873c0ae2b0ab20",
+    "requests.jsonl": "e35f936fa48475021a8a7dd06fe5d276179cbf0fabe517e4493540c52388a32e",
+    "schedule.json": "f213d95879d22068f762c89ed4ea93e396e6719639dee11a06a080dd2930b374",
+    "server.json": "ae6f4a77124cc5123164987af18119e2b69bb13111d874ddbae2574a8ea3581d",
+    "trials.jsonl": "25d9b359ab76bf1a0005ca570a0f542834a3d3cba1b22d418a0f14e3f90358fa"
+  }
+}

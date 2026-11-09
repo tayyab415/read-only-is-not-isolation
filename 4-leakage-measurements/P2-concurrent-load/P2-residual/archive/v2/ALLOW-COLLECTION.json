@@ -1,0 +1,22 @@
+{
+  "utc": "2026-11-08T21:14:57.684273+00:00",
+  "p1_validated": true,
+  "known_statistics_validated": true,
+  "known_negative_cache_validated": true,
+  "p1_causal_audit_passed": true,
+  "p1_nulls_passed": true,
+  "p2_source_freeze_sha256": "2dddbeeb7dab8262beea73ec93b65ab8f59f078104056aa0c219864e5f943fee",
+  "evidence_sha256": {
+    "audit-results.json": "10cc441fb3dbd779c5170ee40032567a9b9edea56ce96b75fc55cdcf882303f4",
+    "report-metrics.json": "21e234419d0bad9cbbfc171cc0445accabe6d944dee6c0dfed519009fd22d5a0",
+    "holdout-results.json": "cd484b141a0ed8c7e4dfae688fa9e7203ebd140916f5b8136f4b073c48ed9ba1",
+    "FROZEN.json": "018285c6496c02b391c42ff3475bd914f7d89014a736b5a47e7846c1f47288df",
+    "REPORTING-FROZEN.json": "035b44a4fb53e4005a51e27f34682d76a0e58b6a4d6c095492939a49ffd764e1",
+    "known-channel-validation.json": "38b8e72197fbf4b97339a08b55042305a11f5f5932cbd396cac9f7fed98ca1c2",
+    "AUDIT-AMENDMENT-FROZEN.json": "47bd293f4f83c1619401fc9a4854dfb2049994e0c3ee44fb0e9d40cc78e06ac2",
+    "VALIDATION-FROZEN-v3.json": "0d81f5ff96d25b3bb7650ec46848ef62ee852605e67556bd7bc88a86d0548032",
+    "original-failed-audit-results.json": "efdbb32377f899bc040ac1b185c3ee6de654064d7d9b42f752e1fa2fef94c6de"
+  },
+  "post_holdout_operational_amendment_disclosed": true,
+  "interpretation": "P1 known mechanisms and nulls pass using recovered complete native logs and the declared trace/interval audit amendment. Original failed audit remains evidence. Fixed statistical analysis unchanged. Combined load timing association requires fresh P2 investigation; it is not proven channel capacity."
+}

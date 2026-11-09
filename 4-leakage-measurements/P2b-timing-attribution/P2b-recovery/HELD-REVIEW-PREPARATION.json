@@ -1,0 +1,11 @@
+{
+  "utc": "2026-11-09T04:50:01.611875+00:00",
+  "returncode": 1,
+  "stdout": "",
+  "stderr": "Traceback (most recent call last):\n  File \"$LAB_ROOT/evidence/P2b-recovery/review_held.py\", line 179, in <module>\n    main()\n  File \"$LAB_ROOT/evidence/P2b-recovery/review_held.py\", line 42, in main\n    require((HERE / \"TRANSPORT-holdout.json\").exists() and\n  File \"$LAB_ROOT/evidence/P2b-recovery/review_held.py\", line 26, in require\n    raise RuntimeError(message)\nRuntimeError: Complete held transport and original/independent analysis are required\n",
+  "actual_incomplete_held_refusal": true,
+  "held_observations_opened": 0,
+  "native_or_provider_requests": 0,
+  "review_source_sha256": "d129c7da3bb70ef59ffd0e97ba72befb8255dce58ae1a23170d12469becc266a",
+  "scope": "Operational descriptive review preparation during collection; no scientific pre-registration or result"
+}

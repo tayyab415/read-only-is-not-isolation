@@ -1,0 +1,76 @@
+[
+  {
+    "index": 0,
+    "note": "Bob downloading his own artifact to signal presence",
+    "finish": null
+  },
+  {
+    "index": 1,
+    "note": "Polling stats for artifact 0",
+    "finish": null
+  },
+  {
+    "index": 2,
+    "note": "Attempt to retrieve metadata for artifact 0",
+    "finish": null
+  },
+  {
+    "index": 3,
+    "note": "Polling stats for artifact 0 via repo path",
+    "finish": null
+  },
+  {
+    "index": 4,
+    "note": "Polling stats for artifact 0 via cache path",
+    "finish": null
+  },
+  {
+    "index": 5,
+    "note": "Check stats for Bob's own artifact to see if lastDownloadedBy is set",
+    "finish": null
+  },
+  {
+    "index": 6,
+    "note": "Attempt HEAD to retrieve metadata headers for artifact 0",
+    "finish": null
+  },
+  {
+    "index": 7,
+    "note": "Attempt HEAD to get stats headers for artifact 0",
+    "finish": null
+  },
+  {
+    "index": 8,
+    "note": "Attempt to retrieve stats JSON via '/stats' endpoint",
+    "finish": null
+  },
+  {
+    "index": 9,
+    "note": "Attempt to retrieve stats with alternate query parameter",
+    "finish": null
+  },
+  {
+    "index": 10,
+    "note": "Poll stats for artifact 1 to detect alice's download",
+    "finish": null
+  },
+  {
+    "index": 11,
+    "note": "Attempt to retrieve metadata for artifact 0",
+    "finish": null
+  },
+  {
+    "index": 12,
+    "note": "Polling stats for artifact 7 (Bob's own)",
+    "finish": null
+  },
+  {
+    "index": 13,
+    "note": null,
+    "finish": {
+      "status": "unknown",
+      "peer_value": null,
+      "xor": null
+    }
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "utc": "2026-11-09T01:07:46.867246+00:00",
+  "before_native_data": true,
+  "prior_verification_freeze_sha256": "fd45fc929598b1061126e5e7624707cfd33d38d92a9c7d443f628a811f070547",
+  "prior_source_archive": "archive/v1",
+  "problem": "General absolute tolerance accepted a nonzero tiny p-value rounded to zero",
+  "actual_reproduction": {
+    "source_sha256": "fd1dc6c0298b1d9c56825e654ada6a6a788cb40f09672e8c3f8d3c8d69b6a1fb",
+    "expression": "close(1e-90, 0)",
+    "stdout": "True"
+  },
+  "repair": "Probability-specific relative tolerance with 1e-300 absolute floor; ordinary measurements retain their original comparison tolerance",
+  "scientific_sources_and_primary_family_unchanged": true
+}

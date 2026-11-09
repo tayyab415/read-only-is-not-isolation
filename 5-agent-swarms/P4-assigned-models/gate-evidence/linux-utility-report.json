@@ -1,0 +1,607 @@
+{
+  "source_freeze_sha256": "93e268532ededd4060a955df8ac3dfb707cb9d2a80b40894d446020d29b4acc4",
+  "audit_sha256": "6c30a2d698fe502881de377913747211e03c6aaa8b4b2aaedd073ef130ca7c15",
+  "arms_in_run_order": [
+    "separate",
+    "immutable"
+  ],
+  "arms": {
+    "separate": {
+      "scheduled": 28,
+      "completed": 28,
+      "passed": 28,
+      "success_fraction": 1.0,
+      "wilson95_task_interval": [
+        0.8793566952341543,
+        0.9999999999999998
+      ],
+      "elapsed_s_median": 4.308364308499904,
+      "elapsed_s_range": [
+        4.192449187999955,
+        5.379866859999765
+      ],
+      "index_and_wheel_requests": 108,
+      "backend_wheel_requests": 54,
+      "wheel_payload_bytes": 10274240,
+      "all_client_response_bytes": 10291896,
+      "trusted_package_fill_requests": 48,
+      "trusted_package_fill_bytes": 10027350,
+      "trusted_source_requests_during_setup": 96,
+      "trusted_source_requests_during_tasks": 0,
+      "external_package_requests_during_tasks": 0,
+      "client_image_ids": [
+        "sha256:5e2bdb1b0d542d5039cffb8181c65930093949194a65c365dfb1b0fe13a4fa5b"
+      ],
+      "python_versions": [
+        "3.12.16 (main, Nov  5 2026, 07:58:20) [GCC 14.2.0]"
+      ],
+      "pip_versions": [
+        "pip 25.0.1 from /usr/local/lib/python3.12/site-packages/pip (python 3.12)"
+      ],
+      "memory_observations": {
+        "memory_before": {
+          "utc_ns": 1794181215691882832,
+          "method": "Docker CLI usage snapshots, not peak or process RSS",
+          "records": [
+            {
+              "Name": "p1-p3u-m1-separate-alice",
+              "MemUsage": "4.402MiB / 256MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "1",
+              "NetIO": "1.98kB / 1.78kB",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p1-p3u-m1-separate-bob",
+              "MemUsage": "4.781MiB / 256MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "1",
+              "NetIO": "1.79kB / 1.43kB",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p1-p3u-m1-separate-gateway",
+              "MemUsage": "15.36MiB / 128MiB",
+              "CPUPerc": "0.01%",
+              "PIDs": "1",
+              "NetIO": "4.52kB / 2.42kB",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p1-p3u-m1-separate-upstream",
+              "MemUsage": "18.68MiB / 128MiB",
+              "CPUPerc": "0.01%",
+              "PIDs": "3",
+              "NetIO": "68.9kB / 10.1MB",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p1-p3u-m1-separate-adapter-alice",
+              "MemUsage": "23.44MiB / 128MiB",
+              "CPUPerc": "0.01%",
+              "PIDs": "3",
+              "NetIO": "1.07kB / 308B",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p1-p3u-m1-separate-adapter-bob",
+              "MemUsage": "23.42MiB / 128MiB",
+              "CPUPerc": "0.01%",
+              "PIDs": "3",
+              "NetIO": "1.07kB / 308B",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "art-a",
+              "MemUsage": "3.927GiB / 4GiB",
+              "CPUPerc": "14.10%",
+              "PIDs": "477",
+              "NetIO": "25MB / 32.3MB",
+              "BlockIO": "0B / 20.6MB"
+            },
+            {
+              "Name": "art-a-db",
+              "MemUsage": "91.02MiB / 512MiB",
+              "CPUPerc": "0.17%",
+              "PIDs": "26",
+              "NetIO": "12.5MB / 14.7MB",
+              "BlockIO": "0B / 146MB"
+            }
+          ]
+        },
+        "memory_after": {
+          "utc_ns": 1794181356067040497,
+          "method": "Docker CLI usage snapshots, not peak or process RSS",
+          "records": [
+            {
+              "Name": "p1-p3u-m1-separate-alice",
+              "MemUsage": "6.082MiB / 256MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "1",
+              "NetIO": "5.18MB / 54.9kB",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p1-p3u-m1-separate-bob",
+              "MemUsage": "6.172MiB / 256MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "1",
+              "NetIO": "5.18MB / 54.9kB",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p1-p3u-m1-separate-gateway",
+              "MemUsage": "15.51MiB / 128MiB",
+              "CPUPerc": "0.01%",
+              "PIDs": "1",
+              "NetIO": "10.5MB / 10.5MB",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p1-p3u-m1-separate-upstream",
+              "MemUsage": "18.61MiB / 128MiB",
+              "CPUPerc": "0.01%",
+              "PIDs": "1",
+              "NetIO": "69.6kB / 10.1MB",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p1-p3u-m1-separate-adapter-alice",
+              "MemUsage": "23.86MiB / 128MiB",
+              "CPUPerc": "0.01%",
+              "PIDs": "3",
+              "NetIO": "5.24MB / 5.21MB",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p1-p3u-m1-separate-adapter-bob",
+              "MemUsage": "24.36MiB / 128MiB",
+              "CPUPerc": "0.01%",
+              "PIDs": "3",
+              "NetIO": "5.24MB / 5.21MB",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "art-a",
+              "MemUsage": "3.931GiB / 4GiB",
+              "CPUPerc": "2.94%",
+              "PIDs": "472",
+              "NetIO": "26.2MB / 43.6MB",
+              "BlockIO": "0B / 21.2MB"
+            },
+            {
+              "Name": "art-a-db",
+              "MemUsage": "91.52MiB / 512MiB",
+              "CPUPerc": "0.23%",
+              "PIDs": "26",
+              "NetIO": "13.5MB / 15.8MB",
+              "BlockIO": "0B / 152MB"
+            }
+          ]
+        }
+      },
+      "seal_sha256": "14b6b032d3fb16a33587a62e85333836d82851887d839504a65b3d7e5bf33c06",
+      "cleanup_absence_proved": true
+    },
+    "immutable": {
+      "scheduled": 28,
+      "completed": 28,
+      "passed": 28,
+      "success_fraction": 1.0,
+      "wilson95_task_interval": [
+        0.8793566952341543,
+        0.9999999999999998
+      ],
+      "elapsed_s_median": 4.287606407500107,
+      "elapsed_s_range": [
+        4.18848954699979,
+        5.407397780999872
+      ],
+      "index_and_wheel_requests": 108,
+      "backend_wheel_requests": 54,
+      "wheel_payload_bytes": 10274240,
+      "all_client_response_bytes": 10291896,
+      "trusted_package_fill_requests": 0,
+      "trusted_package_fill_bytes": 0,
+      "trusted_source_requests_during_setup": 0,
+      "trusted_source_requests_during_tasks": 0,
+      "external_package_requests_during_tasks": 0,
+      "client_image_ids": [
+        "sha256:5e2bdb1b0d542d5039cffb8181c65930093949194a65c365dfb1b0fe13a4fa5b"
+      ],
+      "python_versions": [
+        "3.12.16 (main, Nov  5 2026, 07:58:20) [GCC 14.2.0]"
+      ],
+      "pip_versions": [
+        "pip 25.0.1 from /usr/local/lib/python3.12/site-packages/pip (python 3.12)"
+      ],
+      "memory_observations": {
+        "memory_before": {
+          "utc_ns": 1794181369680262380,
+          "method": "Docker CLI usage snapshots, not peak or process RSS",
+          "records": [
+            {
+              "Name": "p1-p3u-m1-immutable-alice",
+              "MemUsage": "4.41MiB / 256MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "1",
+              "NetIO": "1.86kB / 1.89kB",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p1-p3u-m1-immutable-bob",
+              "MemUsage": "4.422MiB / 256MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "1",
+              "NetIO": "1.97kB / 1.89kB",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p1-p3u-m1-immutable-mirror-alice",
+              "MemUsage": "18.44MiB / 128MiB",
+              "CPUPerc": "0.01%",
+              "PIDs": "1",
+              "NetIO": "2.2kB / 965B",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p1-p3u-m1-immutable-mirror-bob",
+              "MemUsage": "18.46MiB / 128MiB",
+              "CPUPerc": "0.01%",
+              "PIDs": "1",
+              "NetIO": "2.04kB / 965B",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p1-p3u-m1-immutable-adapter-alice",
+              "MemUsage": "23.43MiB / 128MiB",
+              "CPUPerc": "0.01%",
+              "PIDs": "3",
+              "NetIO": "1.15kB / 308B",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p1-p3u-m1-immutable-adapter-bob",
+              "MemUsage": "23.43MiB / 128MiB",
+              "CPUPerc": "0.01%",
+              "PIDs": "3",
+              "NetIO": "1.15kB / 308B",
+              "BlockIO": "0B / 0B"
+            }
+          ]
+        },
+        "memory_after": {
+          "utc_ns": 1794181509990304382,
+          "method": "Docker CLI usage snapshots, not peak or process RSS",
+          "records": [
+            {
+              "Name": "p1-p3u-m1-immutable-alice",
+              "MemUsage": "6.301MiB / 256MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "1",
+              "NetIO": "5.18MB / 55.7kB",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p1-p3u-m1-immutable-bob",
+              "MemUsage": "6.086MiB / 256MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "1",
+              "NetIO": "5.18MB / 55.2kB",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p1-p3u-m1-immutable-mirror-alice",
+              "MemUsage": "18.73MiB / 128MiB",
+              "CPUPerc": "0.01%",
+              "PIDs": "1",
+              "NetIO": "30.1kB / 5.16MB",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p1-p3u-m1-immutable-mirror-bob",
+              "MemUsage": "18.46MiB / 128MiB",
+              "CPUPerc": "0.01%",
+              "PIDs": "1",
+              "NetIO": "30kB / 5.16MB",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p1-p3u-m1-immutable-adapter-alice",
+              "MemUsage": "23.89MiB / 128MiB",
+              "CPUPerc": "0.01%",
+              "PIDs": "3",
+              "NetIO": "5.22MB / 5.2MB",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p1-p3u-m1-immutable-adapter-bob",
+              "MemUsage": "24.64MiB / 128MiB",
+              "CPUPerc": "0.01%",
+              "PIDs": "3",
+              "NetIO": "5.22MB / 5.2MB",
+              "BlockIO": "0B / 0B"
+            }
+          ]
+        }
+      },
+      "seal_sha256": "d307bcb0c3bcc7b77d57bdbf1e8d5a972da748546c47ce6dde4a2f4741f80557",
+      "cleanup_absence_proved": true
+    }
+  },
+  "paired_tasks": [
+    {
+      "task_id": "u00-bob-rich",
+      "requirement": "rich==13.9.4",
+      "separate_passed": true,
+      "immutable_passed": true,
+      "separate_s": 4.781924172999879,
+      "immutable_s": 4.674723096999969,
+      "immutable_minus_separate_s": -0.10720107599991024
+    },
+    {
+      "task_id": "u01-bob-requests",
+      "requirement": "requests==2.32.3",
+      "separate_passed": true,
+      "immutable_passed": true,
+      "separate_s": 4.892020498999955,
+      "immutable_s": 4.804985710999972,
+      "immutable_minus_separate_s": -0.08703478799998265
+    },
+    {
+      "task_id": "u02-alice-pytest",
+      "requirement": "pytest==8.3.5",
+      "separate_passed": true,
+      "immutable_passed": true,
+      "separate_s": 4.995934821999981,
+      "immutable_s": 5.012851295000019,
+      "immutable_minus_separate_s": 0.016916473000037513
+    },
+    {
+      "task_id": "u03-bob-click",
+      "requirement": "click==8.1.8",
+      "separate_passed": true,
+      "immutable_passed": true,
+      "separate_s": 4.293960038000023,
+      "immutable_s": 4.312115126999743,
+      "immutable_minus_separate_s": 0.018155088999719737
+    },
+    {
+      "task_id": "u04-alice-pluggy",
+      "requirement": "pluggy==1.5.0",
+      "separate_passed": true,
+      "immutable_passed": true,
+      "separate_s": 4.192449187999955,
+      "immutable_s": 4.286508955000045,
+      "immutable_minus_separate_s": 0.09405976700008978
+    },
+    {
+      "task_id": "u05-alice-typing_extensions",
+      "requirement": "typing_extensions==4.12.2",
+      "separate_passed": true,
+      "immutable_passed": true,
+      "separate_s": 4.198946103000253,
+      "immutable_s": 4.285823785000048,
+      "immutable_minus_separate_s": 0.08687768199979473
+    },
+    {
+      "task_id": "u06-alice-rich",
+      "requirement": "rich==13.9.4",
+      "separate_passed": true,
+      "immutable_passed": true,
+      "separate_s": 4.605812022000009,
+      "immutable_s": 4.687360059000184,
+      "immutable_minus_separate_s": 0.0815480370001751
+    },
+    {
+      "task_id": "u07-bob-pluggy",
+      "requirement": "pluggy==1.5.0",
+      "separate_passed": true,
+      "immutable_passed": true,
+      "separate_s": 4.207007945999976,
+      "immutable_s": 4.199980775000313,
+      "immutable_minus_separate_s": -0.007027170999663213
+    },
+    {
+      "task_id": "u08-bob-networkx",
+      "requirement": "networkx==3.4.2",
+      "separate_passed": true,
+      "immutable_passed": true,
+      "separate_s": 5.379866859999765,
+      "immutable_s": 5.407397780999872,
+      "immutable_minus_separate_s": 0.0275309210001069
+    },
+    {
+      "task_id": "u09-bob-packaging",
+      "requirement": "packaging==24.2",
+      "separate_passed": true,
+      "immutable_passed": true,
+      "separate_s": 4.270144569999957,
+      "immutable_s": 4.18848954699979,
+      "immutable_minus_separate_s": -0.0816550230001667
+    },
+    {
+      "task_id": "u10-bob-python-dateutil",
+      "requirement": "python-dateutil==2.9.0.post0",
+      "separate_passed": true,
+      "immutable_passed": true,
+      "separate_s": 4.318078406000041,
+      "immutable_s": 4.265004938999937,
+      "immutable_minus_separate_s": -0.05307346700010385
+    },
+    {
+      "task_id": "u11-alice-click",
+      "requirement": "click==8.1.8",
+      "separate_passed": true,
+      "immutable_passed": true,
+      "separate_s": 4.379723263999949,
+      "immutable_s": 4.28613618899999,
+      "immutable_minus_separate_s": -0.09358707499995944
+    },
+    {
+      "task_id": "u12-bob-tenacity",
+      "requirement": "tenacity==9.0.0",
+      "separate_passed": true,
+      "immutable_passed": true,
+      "separate_s": 4.22255728600021,
+      "immutable_s": 4.285790236000139,
+      "immutable_minus_separate_s": 0.06323294999992868
+    },
+    {
+      "task_id": "u13-alice-networkx",
+      "requirement": "networkx==3.4.2",
+      "separate_passed": true,
+      "immutable_passed": true,
+      "separate_s": 5.365434272999664,
+      "immutable_s": 5.3827534239999295,
+      "immutable_minus_separate_s": 0.017319151000265265
+    },
+    {
+      "task_id": "u14-alice-requests",
+      "requirement": "requests==2.32.3",
+      "separate_passed": true,
+      "immutable_passed": true,
+      "separate_s": 4.810086889000104,
+      "immutable_s": 4.805753906999598,
+      "immutable_minus_separate_s": -0.004332982000505581
+    },
+    {
+      "task_id": "u15-bob-more-itertools",
+      "requirement": "more-itertools==10.6.0",
+      "separate_passed": true,
+      "immutable_passed": true,
+      "separate_s": 4.211776814000132,
+      "immutable_s": 4.202094935999867,
+      "immutable_minus_separate_s": -0.009681878000264987
+    },
+    {
+      "task_id": "u16-bob-typing_extensions",
+      "requirement": "typing_extensions==4.12.2",
+      "separate_passed": true,
+      "immutable_passed": true,
+      "separate_s": 4.226495544000045,
+      "immutable_s": 4.198314502000358,
+      "immutable_minus_separate_s": -0.028181041999687295
+    },
+    {
+      "task_id": "u17-bob-beautifulsoup4",
+      "requirement": "beautifulsoup4==4.13.3",
+      "separate_passed": true,
+      "immutable_passed": true,
+      "separate_s": 4.664604089000022,
+      "immutable_s": 4.6019718210000065,
+      "immutable_minus_separate_s": -0.06263226800001576
+    },
+    {
+      "task_id": "u18-alice-beautifulsoup4",
+      "requirement": "beautifulsoup4==4.13.3",
+      "separate_passed": true,
+      "immutable_passed": true,
+      "separate_s": 4.582755804000044,
+      "immutable_s": 4.575949403999857,
+      "immutable_minus_separate_s": -0.006806400000186841
+    },
+    {
+      "task_id": "u19-bob-pytest",
+      "requirement": "pytest==8.3.5",
+      "separate_passed": true,
+      "immutable_passed": true,
+      "separate_s": 5.0273362360003375,
+      "immutable_s": 4.997512015000211,
+      "immutable_minus_separate_s": -0.029824221000126272
+    },
+    {
+      "task_id": "u20-alice-tenacity",
+      "requirement": "tenacity==9.0.0",
+      "separate_passed": true,
+      "immutable_passed": true,
+      "separate_s": 4.302062538999962,
+      "immutable_s": 4.278530116999718,
+      "immutable_minus_separate_s": -0.02353242200024397
+    },
+    {
+      "task_id": "u21-alice-attrs",
+      "requirement": "attrs==24.3.0",
+      "separate_passed": true,
+      "immutable_passed": true,
+      "separate_s": 4.29697469499979,
+      "immutable_s": 4.297363062999921,
+      "immutable_minus_separate_s": 0.0003883680001308676
+    },
+    {
+      "task_id": "u22-alice-more-itertools",
+      "requirement": "more-itertools==10.6.0",
+      "separate_passed": true,
+      "immutable_passed": true,
+      "separate_s": 4.2079799189996265,
+      "immutable_s": 4.194198595999751,
+      "immutable_minus_separate_s": -0.013781322999875556
+    },
+    {
+      "task_id": "u23-alice-python-dateutil",
+      "requirement": "python-dateutil==2.9.0.post0",
+      "separate_passed": true,
+      "immutable_passed": true,
+      "separate_s": 4.314666077999846,
+      "immutable_s": 4.2821762439998565,
+      "immutable_minus_separate_s": -0.03248983399998906
+    },
+    {
+      "task_id": "u24-bob-attrs",
+      "requirement": "attrs==24.3.0",
+      "separate_passed": true,
+      "immutable_passed": true,
+      "separate_s": 4.315176767000139,
+      "immutable_s": 4.288703860000169,
+      "immutable_minus_separate_s": -0.02647290699997029
+    },
+    {
+      "task_id": "u25-bob-toolz",
+      "requirement": "toolz==1.0.0",
+      "separate_passed": true,
+      "immutable_passed": true,
+      "separate_s": 4.201639832000183,
+      "immutable_s": 4.293861237999863,
+      "immutable_minus_separate_s": 0.09222140599968043
+    },
+    {
+      "task_id": "u26-alice-packaging",
+      "requirement": "packaging==24.2",
+      "separate_passed": true,
+      "immutable_passed": true,
+      "separate_s": 4.203241982999771,
+      "immutable_s": 4.211232968999866,
+      "immutable_minus_separate_s": 0.00799098600009529
+    },
+    {
+      "task_id": "u27-alice-toolz",
+      "requirement": "toolz==1.0.0",
+      "separate_passed": true,
+      "immutable_passed": true,
+      "separate_s": 4.283493835000172,
+      "immutable_s": 4.269142213000123,
+      "immutable_minus_separate_s": -0.014351622000049247
+    }
+  ],
+  "matched_latency_median_difference_s": -0.0083545244999641,
+  "root_cluster_bootstrap95_median_difference_s": [
+    -0.02500266450010713,
+    0.00799098600009529
+  ],
+  "admitted_unique_wheels": 24,
+  "admitted_unique_bytes": 5013675,
+  "logical_in_memory_catalog_copies_per_arm": {
+    "separate": 3,
+    "immutable": 4
+  },
+  "catalog_copy_accounting": "Two common adapters in both arms; one trusted admission source in separate, two private serving processes in immutable. Shared Artifactory and its stored per-repository copies are additional.",
+  "limitations": [
+    "Cold private install directories against prewarmed service content.",
+    "Fourteen fixed universal-wheel roots on one Linux host, two synthetic tenants, one install per root per tenant per arm.",
+    "Latency intervals resample fourteen root clusters; they do not cover independent host deployments.",
+    "Task success intervals describe the 28 scheduled tasks and assume independent Bernoulli outcomes for the interval calculation; dependencies can correlate outcomes.",
+    "Both arms add the common private index adapter; this is not a native PyPI registry benchmark.",
+    "Docker memory observations are snapshots, not peak memory or process RSS.",
+    "The utility workload establishes no timing-isolation or unrestricted package-coverage claim."
+  ]
+}

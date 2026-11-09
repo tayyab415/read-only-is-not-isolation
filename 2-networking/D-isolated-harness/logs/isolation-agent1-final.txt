@@ -1,0 +1,335 @@
+=== isolation test for d-agent1 at 2026-11-07T23:51:31Z ===
+lab host ip=172.31.39.212 art-c ip=172.28.0.10 other sandbox ip=172.30.12.1
+lab host listeners:
+  0.0.0.0:22
+  127.0.0.1:18581
+  127.0.0.1:18582
+  127.0.0.1:18583
+  127.0.0.1:18584
+  127.0.0.1:3773
+  127.0.0.1:38767
+  127.0.0.1:43207
+  127.0.0.1:49374
+  127.0.0.53%lo:53
+  127.0.0.54:53
+  [::]:22
+
+=== 0. positive controls (a leak WOULD show up) ===
+CONTROL bridge: internet HTTP
+  cmd: docker exec d-ctl-a curl -s -m 6 -o /dev/null -w %{http_code} https://example.com
+  out: 200
+CONTROL bridge: external DNS
+  cmd: docker exec d-ctl-a dig +short +time=3 +tries=1 example.com @8.8.8.8
+  out: <public-ip> <public-ip>
+CONTROL bridge: IMDSv2 token
+  cmd: docker exec d-ctl-a curl -s -m 4 -X PUT http://169.254.169.254/latest/api/token -H X-aws-ec2-metadata-token-ttl-seconds:5 -o /dev/null -w %{http_code}
+  out: 200
+CONTROL plain --internal: lab host sshd via bridge gateway 172.19.0.1:22
+  cmd: docker exec d-ctl-b nc -zv -w 3 172.19.0.1 22
+  out: Connection to 172.19.0.1 22 port [tcp/ssh] succeeded!
+
+=== 1. internet ===
+[PASS] HTTPS to example.com by name
+  cmd: curl -sS -m 6 https://example.com
+  rc=6
+  out: curl: (6) Could not resolve host: example.com
+[PASS] HTTP to public IP 1.1.1.1
+  cmd: curl -sS -m 6 http://1.1.1.1
+  rc=7
+  out: curl: (7) Failed to connect to 1.1.1.1 port 80 after 0 ms: Could not connect to server
+[PASS] TCP 443 to 8.8.8.8
+  cmd: nc -zv -w 4 8.8.8.8 443
+  rc=1
+  out: nc: connect to 8.8.8.8 port 443 (tcp) failed: Network is unreachable
+[PASS] ICMP to 8.8.8.8
+  cmd: ping -c1 -W3 8.8.8.8
+  rc=2
+  out: ping: connect: Network is unreachable
+[PASS] pypi.org via pip
+  cmd: pip download --no-deps -d /tmp/x --timeout 4 --retries 0 six 2>&1 | tail -2; test -f /tmp/x/*.whl
+  rc=1
+  out: ERROR: Could not find a version that satisfies the requirement six (from versions: none) ERROR: No matching distribution found for six
+[PASS] DNS: A record for example.com (default resolver)
+  cmd: dig +short +time=3 +tries=1 example.com | grep -E '^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+$'
+  rc=1
+  out: 
+[PASS] DNS: A record via @8.8.8.8 (direct UDP 53)
+  cmd: dig +short +time=3 +tries=1 example.com @8.8.8.8 | grep -E '^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+$'
+  rc=1
+  out: 
+[PASS] DNS: A record via @1.1.1.1 over TCP
+  cmd: dig +tcp +short +time=3 +tries=1 example.com @1.1.1.1 | grep -E '^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+$'
+  rc=1
+  out: 
+[PASS] DNS: unique-name lookup gets NOERROR/NXDOMAIN from a real resolver (exfil channel)
+  cmd: dig +time=3 +tries=1 TXT probe-1794095494.example.com | grep -E 'status: (NOERROR|NXDOMAIN)'
+  rc=1
+  out: 
+[PASS] DNS: default resolver raw status (informational)
+  cmd: dig +time=3 +tries=1 example.com | grep -E 'status:|connection timed out|no servers|communications error' | head -2
+  rc=0
+  out: ;; ->>HEADER<<- opcode: QUERY, status: SERVFAIL, id: 38053
+[PASS] no default route
+  cmd: ip route
+  rc=0
+  out: 172.30.11.0/24 dev eth0 proto kernel scope link src 172.30.11.1 
+[PASS] no IPv6 global address
+  cmd: ip -6 addr show scope global | grep -q inet6
+  rc=1
+  out: 
+
+=== 2. EC2 metadata service ===
+[PASS] IMDSv2 token PUT
+  cmd: curl -sS -m 4 -X PUT http://169.254.169.254/latest/api/token -H 'X-aws-ec2-metadata-token-ttl-seconds: 5'
+  rc=7
+  out: curl: (7) Failed to connect to 169.254.169.254 port 80 after 0 ms: Could not connect to server
+[PASS] IMDSv1 GET
+  cmd: curl -sS -m 4 http://169.254.169.254/latest/meta-data/
+  rc=7
+  out: curl: (7) Failed to connect to 169.254.169.254 port 80 after 0 ms: Could not connect to server
+[PASS] IMDS TCP 80
+  cmd: nc -zv -w 3 169.254.169.254 80
+  rc=1
+  out: nc: connect to 169.254.169.254 port 80 (tcp) failed: Network is unreachable
+[PASS] IMDS IPv6 endpoint
+  cmd: curl -sS -m 4 -g 'http://[fd00:ec2::254]/latest/meta-data/'
+  rc=7
+  out: curl: (7) Failed to connect to fd00:ec2::254 port 80 after 0 ms: Could not connect to server
+
+=== 3. lab host services and published ports ===
+[PASS] lab host private IP 172.31.39.212:22 (sshd)
+  cmd: nc -zv -w 3 172.31.39.212 22
+  rc=1
+  out: nc: connect to 172.31.39.212 port 22 (tcp) failed: Network is unreachable
+[PASS] lab host private IP 172.31.39.212:3773 (listens on loopback only)
+  cmd: nc -zv -w 3 172.31.39.212 3773
+  rc=1
+  out: nc: connect to 172.31.39.212 port 3773 (tcp) failed: Network is unreachable
+[PASS] lab host private IP 172.31.39.212:49374 (listens on loopback only)
+  cmd: nc -zv -w 3 172.31.39.212 49374
+  rc=1
+  out: nc: connect to 172.31.39.212 port 49374 (tcp) failed: Network is unreachable
+[PASS] lab host private IP 172.31.39.212:43207 (listens on loopback only)
+  cmd: nc -zv -w 3 172.31.39.212 43207
+  rc=1
+  out: nc: connect to 172.31.39.212 port 43207 (tcp) failed: Network is unreachable
+[PASS] lab host private IP 172.31.39.212:38767 (listens on loopback only)
+  cmd: nc -zv -w 3 172.31.39.212 38767
+  rc=1
+  out: nc: connect to 172.31.39.212 port 38767 (tcp) failed: Network is unreachable
+[PASS] own loopback 127.0.0.1:3773 (T3 port on host loopback)
+  cmd: nc -zv -w 3 127.0.0.1 3773
+  rc=1
+  out: nc: connect to 127.0.0.1 port 3773 (tcp) failed: Connection refused
+[PASS] own loopback 127.0.0.1:18581 (art-c published port)
+  cmd: nc -zv -w 3 127.0.0.1 18581
+  rc=1
+  out: nc: connect to 127.0.0.1 port 18581 (tcp) failed: Connection refused
+[PASS] docker0 gateway 172.17.0.1:22
+  cmd: nc -zv -w 3 172.17.0.1 22
+  rc=1
+  out: nc: connect to 172.17.0.1 port 22 (tcp) failed: Network is unreachable
+[PASS] artnet-c gateway 172.28.0.1:22
+  cmd: nc -zv -w 3 172.28.0.1 22
+  rc=1
+  out: nc: connect to 172.28.0.1 port 22 (tcp) failed: Network is unreachable
+[PASS] same-subnet .254 (no host IP on bridge)
+  cmd: nc -zv -w 3 172.30.11.254 22
+  rc=1
+  out: nc: connect to 172.30.11.254 port 22 (tcp) timed out: Operation now in progress
+[PASS] same-subnet .2 (nothing there)
+  cmd: nc -zv -w 3 172.30.11.2 22
+  rc=1
+  out: nc: connect to 172.30.11.2 port 22 (tcp) failed: Connection refused
+[PASS] art-c container 172.28.0.10:8081 (another workstream, other network)
+  cmd: curl -sS -m 4 http://172.28.0.10:8081/
+  rc=7
+  out: curl: (7) Failed to connect to 172.28.0.10 port 8081 after 0 ms: Could not connect to server
+[PASS] host.docker.internal resolves
+  cmd: getent hosts host.docker.internal
+  rc=2
+  out: 
+[PASS] host.docker.internal:22 by name
+  cmd: nc -zv -w 3 host.docker.internal 22
+  rc=1
+  out: nc: getaddrinfo for host "host.docker.internal" port 22: Temporary failure in name resolution
+
+=== 4. docker socket ===
+[PASS] /var/run/docker.sock exists
+  cmd: test -e /var/run/docker.sock
+  rc=1
+  out: 
+[PASS] /run/docker.sock exists
+  cmd: test -e /run/docker.sock
+  rc=1
+  out: 
+[PASS] docker API over unix socket
+  cmd: curl -sS -m 3 --unix-socket /var/run/docker.sock http://localhost/version
+  rc=7
+  out: curl: (7) Failed to connect to localhost port 80 after 0 ms: Could not connect to server
+[PASS] docker API over tcp 2375 on lab host IP
+  cmd: curl -sS -m 3 http://172.31.39.212:2375/version
+  rc=7
+  out: curl: (7) Failed to connect to 172.31.39.212 port 2375 after 0 ms: Could not connect to server
+[PASS] no docker binary
+  cmd: command -v docker
+  rc=1
+  out: 
+[PASS] no socket-like file anywhere under /
+  cmd: find / -xdev -type s 2>/dev/null | grep -q .
+  rc=1
+  out: 
+
+=== 5. other sandboxes ===
+[PASS] ICMP to d-agent2 (172.30.12.1)
+  cmd: ping -c1 -W2 172.30.12.1
+  rc=2
+  out: ping: connect: Network is unreachable
+[PASS] TCP to d-agent2 172.30.12.1:22/8080
+  cmd: nc -zv -w 2 172.30.12.1 22; nc -zv -w 2 172.30.12.1 8080
+  rc=1
+  out: nc: connect to 172.30.12.1 port 22 (tcp) failed: Network is unreachable nc: connect to 172.30.12.1 port 8080 (tcp) failed: Network is unreachable
+[PASS] name lookup d-agent2
+  cmd: getent hosts d-agent2
+  rc=2
+  out: 
+[PASS] ICMP to d-agent3 (172.30.13.1)
+  cmd: ping -c1 -W2 172.30.13.1
+  rc=2
+  out: ping: connect: Network is unreachable
+[PASS] TCP to d-agent3 172.30.13.1:22/8080
+  cmd: nc -zv -w 2 172.30.13.1 22; nc -zv -w 2 172.30.13.1 8080
+  rc=1
+  out: nc: connect to 172.30.13.1 port 22 (tcp) failed: Network is unreachable nc: connect to 172.30.13.1 port 8080 (tcp) failed: Network is unreachable
+[PASS] name lookup d-agent3
+  cmd: getent hosts d-agent3
+  rc=2
+  out: 
+[PASS] arp/neighbor table lists no other sandbox
+  cmd: ip neigh | grep -E '172\.30\.1[0-9]\.' | grep -v 172.30.11.
+  rc=1
+  out: 
+
+=== 6. lab host files and host namespace ===
+[PASS] /home/<user> visible
+  cmd: test -e /home/<user>
+  rc=1
+  out: 
+[PASS] ~/.aws visible
+  cmd: find / -xdev -name .aws -o -name credentials 2>/dev/null | grep -q .
+  rc=1
+  out: 
+[PASS] no host-looking mounts (bind from /home,/root,/etc)
+  cmd: grep -E ' /(home/<user>|root|host|mnt|labhost) ' /proc/self/mountinfo
+  rc=1
+  out: 
+[PASS] only docker's own 3 file mounts reference /var/lib/docker
+  cmd: awk '/var\/lib\/docker/{print $5}' /proc/self/mountinfo | sort | tr '\n' ' '
+  rc=0
+  out: /etc/hostname /etc/hosts /etc/resolv.conf 
+[PASS] write to rootfs
+  cmd: touch /usr/x 2>/dev/null
+  rc=1
+  out: 
+[PASS] rootfs is read-only
+  cmd: grep -E ' / ' /proc/self/mountinfo
+  rc=0
+  out: 1401 831 0:53 / / ro,relatime - overlay overlay rw,lowerdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/208/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/198/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/195/fs:/var/lib/con
+[PASS] only expected tmpfs mounts
+  cmd: awk '$9=="tmpfs"{print $5}' /proc/self/mountinfo | sort | tr '\n' ' '
+  rc=0
+  out: /dev /home/agent /proc/acpi /proc/interrupts /proc/kcore /proc/keys /proc/latency_stats /proc/scsi /proc/timer_list /sys/firmware /tmp 
+[PASS] lab host hostname / pid namespace: sees PID of dockerd
+  cmd: pgrep -x dockerd
+  rc=1
+  out: 
+[PASS] can see host processes (cloudflared, opencode, node)
+  cmd: pgrep -x 'cloudflared|opencode.exe|node-MainThread'
+  rc=1
+  out: 
+[PASS] can read /proc/1/root of host
+  cmd: test -e /proc/1/root/home/<user>
+  rc=1
+  out: 
+
+=== 7. privileges and limits ===
+[PASS] runs as uid 20001
+  cmd: id -u
+  rc=0
+  out: 20001
+[PASS] sudo present
+  cmd: command -v sudo
+  rc=1
+  out: 
+[PASS] su to root with empty password
+  cmd: echo | su -c id root
+  rc=1
+  out: Password: su: Authentication failure
+[PASS] CapEff all zero
+  cmd: grep CapEff /proc/self/status
+  rc=0
+  out: CapEff:	0000000000000000
+[PASS] CapBnd all zero
+  cmd: grep CapBnd /proc/self/status
+  rc=0
+  out: CapBnd:	0000000000000000
+[PASS] NoNewPrivs=1
+  cmd: grep NoNewPrivs /proc/self/status
+  rc=0
+  out: NoNewPrivs:	1
+[PASS] Seccomp mode 2 (filter)
+  cmd: grep ^Seccomp: /proc/self/status
+  rc=0
+  out: Seccomp:	2
+[PASS] create network interface
+  cmd: ip link add dummy0 type dummy
+  rc=2
+  out: RTNETLINK answers: Operation not permitted
+[PASS] mount a filesystem
+  cmd: mount -t tmpfs none /mnt
+  rc=32
+  out: mount: /mnt: must be superuser to use mount.        dmesg(1) may have more information after failed mount system call.
+[PASS] unshare user namespace + net
+  cmd: unshare -Urn true
+  rc=1
+  out: unshare: unshare failed: Operation not permitted
+[PASS] chroot
+  cmd: chroot / true
+  rc=125
+  out: chroot: cannot change root directory to '/': Operation not permitted
+[PASS] ptrace PID 1
+  cmd: python3 -c "import ctypes,sys;l=ctypes.CDLL(None);sys.exit(0 if l.ptrace(16,1,0,0)==0 else 1)"
+  rc=1
+  out: 
+[PASS] memory limit 2 GiB
+  cmd: cat /sys/fs/cgroup/memory.max
+  rc=0
+  out: 2147483648
+[PASS] swap limit 0 (memswap = mem)
+  cmd: cat /sys/fs/cgroup/memory.swap.max
+  rc=0
+  out: 0
+[PASS] cpu limit 1 CPU
+  cmd: cat /sys/fs/cgroup/cpu.max
+  rc=0
+  out: 100000 100000
+[PASS] pids limit 256
+  cmd: cat /sys/fs/cgroup/pids.max
+  rc=0
+  out: 256
+[PASS] memory bomb 3 GiB survives
+  cmd: python3 -c 'b=bytearray(3*1024**3); b[::4096]=b"x"*len(b[::4096]); print(len(b))'
+  rc=137
+  out: 
+[PASS] fork bomb of 400 sleeps survives
+  cmd: for i in $(seq 400); do sleep 20 & done 2>&1 | head -1; test $(pgrep -c sleep) -ge 300
+  rc=1
+  out: bash: fork: retry: Resource temporarily unavailable
+[PASS] write 2 GiB to home (tmpfs 1g)
+  cmd: dd if=/dev/zero of=/home/agent/big bs=1M count=2048 2>&1; test $(stat -c %s /home/agent/big) -ge 2147483648
+  rc=1
+  out: dd: error writing '/home/agent/big': No space left on device 1024+0 records in 1023+0 records out 1073516544 bytes (1.1 GB, 1.0 GiB) copied, 0.423337 s, 2.5 GB/s
+
+=== summary: d-agent1 PASS=72 FAIL=0 ===
+--- docker inspect HostConfig for d-agent1
+Privileged=false CapDrop=[ALL] CapAdd=<no value> SecurityOpt=[no-new-privileges:true] ReadonlyRootfs=true Mem=2147483648 MemSwap=2147483648 NanoCpus=1000000000 PidsLimit=256 User=20001:20001 NetworkMode=d-net-1 Binds=<no value> PidMode= IpcMode=private

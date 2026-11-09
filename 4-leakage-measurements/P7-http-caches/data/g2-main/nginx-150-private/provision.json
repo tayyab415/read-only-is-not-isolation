@@ -1,0 +1,813 @@
+{
+  "run_id": "p7-g2-nginx-150-private-hold",
+  "product": "nginx",
+  "arm": "private",
+  "effective_arm": "private",
+  "networks": {
+    "alice": "p7-g2-nginx-150-private-hold-net-alice",
+    "bob": "p7-g2-nginx-150-private-hold-net-bob",
+    "services": "p7-g2-nginx-150-private-hold-net-services"
+  },
+  "clients": {
+    "alice": "p7-g2-nginx-150-private-hold-alice",
+    "bob": "p7-g2-nginx-150-private-hold-bob"
+  },
+  "origin": "p7-g2-nginx-150-private-hold-origin",
+  "caches": {
+    "alice": "p7-g2-nginx-150-private-hold-cache-alice",
+    "bob": "p7-g2-nginx-150-private-hold-cache-bob"
+  },
+  "prepared": true,
+  "build": {
+    "image_id": "sha256:086611ec46938eb0fb11ddaed22bd294b3498b47d24d28250a6073b0c0e5abf1",
+    "repo_digests": [
+      "p7-cache-fixtures@sha256:086611ec46938eb0fb11ddaed22bd294b3498b47d24d28250a6073b0c0e5abf1"
+    ],
+    "binaries": {
+      "nginx": {
+        "version": "nginx version: nginx/1.30.6\nbuilt by gcc 14.2.0 (Debian 14.2.0-19) \nconfigure arguments: --prefix=/opt/p7/nginx --without-http_rewrite_module --without-http_gzip_module\n",
+        "exit_code": 0,
+        "binary_sha256": "76b92ee9f84414e672bc80bf71f60e8cd11cb3068eb8f5990cfaf0db678ff2e0"
+      },
+      "squid": {
+        "version": "Squid Cache: Version 7.8\nService Name: squid\nconfigure options:  '--prefix=/opt/p7/squid' '--enable-http-violations' '--with-default-user=research' '--disable-auth' '--disable-external-acl-helpers' '--disable-url-rewrite-helpers' '--disable-storeid-rewrite-helpers' '--without-openssl' '--without-gnutls' '--without-nettle'\n",
+        "exit_code": 0,
+        "binary_sha256": "a00da6f0a59015a61adbe9f0e43a5e1aaf461e6af84d030f93a0a1969aa4b92d"
+      }
+    },
+    "image_logical_size_bytes": 76122635,
+    "source_freeze_sha256": "e29bc3a73fb81cce237872d1cc61d771109b4a6ae424d70b8fe0cd1e70e84f5a"
+  },
+  "configurations": {
+    "p7-g2-nginx-150-private-hold-cache-alice": {
+      "origins": {
+        "172.19.0.1": "alice"
+      },
+      "configuration": "worker_processes 1;\npid /tmp/nginx.pid;\nerror_log /tmp/nginx-error.log info;\nevents { worker_connections 128; }\nhttp {\n  client_body_temp_path /tmp/client-body;\n  proxy_temp_path /tmp/proxy-temp;\n  proxy_cache_path /tmp/cache levels=1:2 keys_zone=fixture:1m inactive=120s max_size=16m;\n  map $remote_addr $tenant {\n    default \"\";\n    172.19.0.1 alice;\n  }\n  log_format evidence escape=json '{\"end_epoch_s\":$msec,\"client_ip\":\"$remote_addr\",\"actor\":\"$tenant\",\"method\":\"$request_method\",\"path\":\"$request_uri\",\"marker\":\"$http_user_agent\",\"status\":$status,\"body_bytes\":$body_bytes_sent,\"cache_status\":\"$upstream_cache_status\",\"request_time_s\":\"$request_time\",\"upstream_time_s\":\"$upstream_response_time\",\"upstream_status\":\"$upstream_status\"}';\n  access_log /tmp/cache-access.jsonl evidence;\n  server {\n    listen 8000;\n    allow 172.19.0.1;\n    deny all;\n    location / {\n      proxy_pass http://p7-g2-nginx-150-private-hold-origin:8000;\n      proxy_http_version 1.0;\n      proxy_set_header Connection close;\n      proxy_set_header Host p7-g2-nginx-150-private-hold-origin:8000;\n      proxy_set_header User-Agent $http_user_agent;\n      proxy_cache fixture;\n      proxy_cache_key \"p7:$scheme:$proxy_host:$request_uri\";\n      proxy_cache_valid 200 60s;\n      proxy_cache_valid 404 60s;\n      proxy_cache_min_uses 1;\n      proxy_cache_lock off;\n      proxy_cache_background_update off;\n      proxy_cache_use_stale off;\n      proxy_cache_revalidate off;\n      proxy_cache_convert_head on;\n      proxy_force_ranges on;\n      proxy_next_upstream off;\n      proxy_connect_timeout 3s;\n      proxy_read_timeout 3s;\n      keepalive_timeout 0;\n    }\n  }\n}\n",
+      "configuration_sha256": "29b53ca178515cc13ca889d55d526d491a8ab86107449e3aeb0bbc3df1dfe978",
+      "parse_exit_code": 0,
+      "process_pid_on_controller": 141178
+    },
+    "p7-g2-nginx-150-private-hold-cache-bob": {
+      "origins": {
+        "172.20.0.1": "bob"
+      },
+      "configuration": "worker_processes 1;\npid /tmp/nginx.pid;\nerror_log /tmp/nginx-error.log info;\nevents { worker_connections 128; }\nhttp {\n  client_body_temp_path /tmp/client-body;\n  proxy_temp_path /tmp/proxy-temp;\n  proxy_cache_path /tmp/cache levels=1:2 keys_zone=fixture:1m inactive=120s max_size=16m;\n  map $remote_addr $tenant {\n    default \"\";\n    172.20.0.1 bob;\n  }\n  log_format evidence escape=json '{\"end_epoch_s\":$msec,\"client_ip\":\"$remote_addr\",\"actor\":\"$tenant\",\"method\":\"$request_method\",\"path\":\"$request_uri\",\"marker\":\"$http_user_agent\",\"status\":$status,\"body_bytes\":$body_bytes_sent,\"cache_status\":\"$upstream_cache_status\",\"request_time_s\":\"$request_time\",\"upstream_time_s\":\"$upstream_response_time\",\"upstream_status\":\"$upstream_status\"}';\n  access_log /tmp/cache-access.jsonl evidence;\n  server {\n    listen 8000;\n    allow 172.20.0.1;\n    deny all;\n    location / {\n      proxy_pass http://p7-g2-nginx-150-private-hold-origin:8000;\n      proxy_http_version 1.0;\n      proxy_set_header Connection close;\n      proxy_set_header Host p7-g2-nginx-150-private-hold-origin:8000;\n      proxy_set_header User-Agent $http_user_agent;\n      proxy_cache fixture;\n      proxy_cache_key \"p7:$scheme:$proxy_host:$request_uri\";\n      proxy_cache_valid 200 60s;\n      proxy_cache_valid 404 60s;\n      proxy_cache_min_uses 1;\n      proxy_cache_lock off;\n      proxy_cache_background_update off;\n      proxy_cache_use_stale off;\n      proxy_cache_revalidate off;\n      proxy_cache_convert_head on;\n      proxy_force_ranges on;\n      proxy_next_upstream off;\n      proxy_connect_timeout 3s;\n      proxy_read_timeout 3s;\n      keepalive_timeout 0;\n    }\n  }\n}\n",
+      "configuration_sha256": "ac1aa615f0e7f46f4f49acb133176cc0669fa2cfaf9a6e73f59effc1d54222f6",
+      "parse_exit_code": 0,
+      "process_pid_on_controller": 141359
+    }
+  },
+  "boundary": {
+    "containers": {
+      "p7-g2-nginx-150-private-hold-alice": {
+        "user": "20001:20001",
+        "root_read_only": true,
+        "cap_drop": [
+          "ALL"
+        ],
+        "security_options": [
+          "no-new-privileges:true"
+        ],
+        "memory": 134217728,
+        "memory_swap": 134217728,
+        "nano_cpus": 500000000,
+        "pids_limit": 48,
+        "tmpfs": {
+          "/tmp": "rw,nosuid,nodev,size=64m"
+        },
+        "forbidden_environment_present": false,
+        "image_id": "sha256:5e2bdb1b0d542d5039cffb8181c65930093949194a65c365dfb1b0fe13a4fa5b",
+        "published_ports": {},
+        "network_addresses": {
+          "p7-g2-nginx-150-private-hold-net-alice": "172.19.0.1"
+        },
+        "bind_mount_destinations": [],
+        "mounts_read_only": true
+      },
+      "p7-g2-nginx-150-private-hold-bob": {
+        "user": "20001:20001",
+        "root_read_only": true,
+        "cap_drop": [
+          "ALL"
+        ],
+        "security_options": [
+          "no-new-privileges:true"
+        ],
+        "memory": 134217728,
+        "memory_swap": 134217728,
+        "nano_cpus": 500000000,
+        "pids_limit": 48,
+        "tmpfs": {
+          "/tmp": "rw,nosuid,nodev,size=64m"
+        },
+        "forbidden_environment_present": false,
+        "image_id": "sha256:5e2bdb1b0d542d5039cffb8181c65930093949194a65c365dfb1b0fe13a4fa5b",
+        "published_ports": {},
+        "network_addresses": {
+          "p7-g2-nginx-150-private-hold-net-bob": "172.20.0.1"
+        },
+        "bind_mount_destinations": [],
+        "mounts_read_only": true
+      },
+      "p7-g2-nginx-150-private-hold-origin": {
+        "user": "20001:20001",
+        "root_read_only": true,
+        "cap_drop": [
+          "ALL"
+        ],
+        "security_options": [
+          "no-new-privileges:true"
+        ],
+        "memory": 134217728,
+        "memory_swap": 134217728,
+        "nano_cpus": 500000000,
+        "pids_limit": 48,
+        "tmpfs": {
+          "/tmp": "rw,nosuid,nodev,size=64m"
+        },
+        "forbidden_environment_present": false,
+        "image_id": "sha256:5e2bdb1b0d542d5039cffb8181c65930093949194a65c365dfb1b0fe13a4fa5b",
+        "published_ports": {},
+        "network_addresses": {
+          "p7-g2-nginx-150-private-hold-net-services": "172.21.0.1"
+        },
+        "bind_mount_destinations": [
+          "/origin.py"
+        ],
+        "mounts_read_only": true
+      },
+      "p7-g2-nginx-150-private-hold-cache-alice": {
+        "user": "20001:20001",
+        "root_read_only": true,
+        "cap_drop": [
+          "ALL"
+        ],
+        "security_options": [
+          "no-new-privileges:true"
+        ],
+        "memory": 134217728,
+        "memory_swap": 134217728,
+        "nano_cpus": 500000000,
+        "pids_limit": 48,
+        "tmpfs": {
+          "/tmp": "rw,nosuid,nodev,size=64m"
+        },
+        "forbidden_environment_present": false,
+        "image_id": "sha256:086611ec46938eb0fb11ddaed22bd294b3498b47d24d28250a6073b0c0e5abf1",
+        "published_ports": {},
+        "network_addresses": {
+          "p7-g2-nginx-150-private-hold-net-alice": "172.19.0.2",
+          "p7-g2-nginx-150-private-hold-net-services": "172.21.0.2"
+        },
+        "bind_mount_destinations": [
+          "/store_id.py",
+          "/config"
+        ],
+        "mounts_read_only": true
+      },
+      "p7-g2-nginx-150-private-hold-cache-bob": {
+        "user": "20001:20001",
+        "root_read_only": true,
+        "cap_drop": [
+          "ALL"
+        ],
+        "security_options": [
+          "no-new-privileges:true"
+        ],
+        "memory": 134217728,
+        "memory_swap": 134217728,
+        "nano_cpus": 500000000,
+        "pids_limit": 48,
+        "tmpfs": {
+          "/tmp": "rw,nosuid,nodev,size=64m"
+        },
+        "forbidden_environment_present": false,
+        "image_id": "sha256:086611ec46938eb0fb11ddaed22bd294b3498b47d24d28250a6073b0c0e5abf1",
+        "published_ports": {},
+        "network_addresses": {
+          "p7-g2-nginx-150-private-hold-net-bob": "172.20.0.2",
+          "p7-g2-nginx-150-private-hold-net-services": "172.21.0.3"
+        },
+        "bind_mount_destinations": [
+          "/store_id.py",
+          "/config"
+        ],
+        "mounts_read_only": true
+      }
+    },
+    "networks": {
+      "p7-g2-nginx-150-private-hold-net-alice": {
+        "internal": true,
+        "options": {
+          "com.docker.network.bridge.gateway_mode_ipv4": "isolated"
+        }
+      },
+      "p7-g2-nginx-150-private-hold-net-bob": {
+        "internal": true,
+        "options": {
+          "com.docker.network.bridge.gateway_mode_ipv4": "isolated"
+        }
+      },
+      "p7-g2-nginx-150-private-hold-net-services": {
+        "internal": true,
+        "options": {
+          "com.docker.network.bridge.gateway_mode_ipv4": "isolated"
+        }
+      }
+    }
+  },
+  "network_controls": {
+    "passed": true,
+    "checks": 6,
+    "records": [
+      {
+        "name": "assigned cache",
+        "host": "p7-g2-nginx-150-private-hold-cache-alice",
+        "port": 8000,
+        "expected_connected": true,
+        "connected": true,
+        "error": null,
+        "actor": "alice"
+      },
+      {
+        "name": "direct origin",
+        "host": "172.21.0.1",
+        "port": 8000,
+        "expected_connected": false,
+        "connected": false,
+        "error": "OSError",
+        "actor": "alice"
+      },
+      {
+        "name": "live peer listener",
+        "host": "172.20.0.1",
+        "port": 18888,
+        "expected_connected": false,
+        "connected": false,
+        "error": "OSError",
+        "actor": "alice"
+      },
+      {
+        "name": "assigned cache",
+        "host": "p7-g2-nginx-150-private-hold-cache-bob",
+        "port": 8000,
+        "expected_connected": true,
+        "connected": true,
+        "error": null,
+        "actor": "bob"
+      },
+      {
+        "name": "direct origin",
+        "host": "172.21.0.1",
+        "port": 8000,
+        "expected_connected": false,
+        "connected": false,
+        "error": "OSError",
+        "actor": "bob"
+      },
+      {
+        "name": "live peer listener",
+        "host": "172.20.0.1",
+        "port": 18888,
+        "expected_connected": true,
+        "connected": true,
+        "error": null,
+        "actor": "bob"
+      }
+    ],
+    "scope": "Specified live TCP listeners and routes, not every possible bypass.",
+    "listener_stopped": true,
+    "listener_exit_code": 0
+  },
+  "resource_before": {
+    "utc_ns": 1794182742631352554,
+    "method": "Docker CLI usage snapshots, not peak memory or process RSS",
+    "records": [
+      {
+        "Name": "p7-g2-nginx-150-private-hold-alice",
+        "MemUsage": "4.285MiB / 128MiB",
+        "CPUPerc": "0.00%",
+        "PIDs": "1",
+        "NetIO": "1.54kB / 712B",
+        "BlockIO": "0B / 0B"
+      },
+      {
+        "Name": "p7-g2-nginx-150-private-hold-bob",
+        "MemUsage": "4.305MiB / 128MiB",
+        "CPUPerc": "0.00%",
+        "PIDs": "1",
+        "NetIO": "1.54kB / 712B",
+        "BlockIO": "0B / 0B"
+      },
+      {
+        "Name": "p7-g2-nginx-150-private-hold-origin",
+        "MemUsage": "14.23MiB / 128MiB",
+        "CPUPerc": "0.01%",
+        "PIDs": "1",
+        "NetIO": "1.35kB / 126B",
+        "BlockIO": "0B / 0B"
+      },
+      {
+        "Name": "p7-g2-nginx-150-private-hold-cache-alice",
+        "MemUsage": "5.801MiB / 128MiB",
+        "CPUPerc": "0.00%",
+        "PIDs": "5",
+        "NetIO": "2.55kB / 574B",
+        "BlockIO": "0B / 0B"
+      },
+      {
+        "Name": "p7-g2-nginx-150-private-hold-cache-bob",
+        "MemUsage": "6.023MiB / 128MiB",
+        "CPUPerc": "0.00%",
+        "PIDs": "5",
+        "NetIO": "2.4kB / 574B",
+        "BlockIO": "0B / 0B"
+      }
+    ]
+  },
+  "canaries": {
+    "passed": true,
+    "negative_lookup_counts": [
+      1,
+      0
+    ],
+    "expected_lookup_counts": [
+      1,
+      0
+    ],
+    "records": [
+      {
+        "actor": "alice",
+        "method": "GET",
+        "path": "/missing/150/canary-cache",
+        "target": "/missing/150/canary-cache",
+        "host": "p7-g2-nginx-150-private-hold-cache-alice",
+        "marker": "p7/p7-g2-nginx-150-private-hold/canary/cache-0",
+        "headers": {},
+        "execute": 1,
+        "start_utc_ns": 1794182742974410986,
+        "status": 404,
+        "response_headers_ms": 159.625779,
+        "response_headers": [
+          [
+            "Server",
+            "nginx/1.30.6"
+          ],
+          [
+            "Date",
+            "Mon, 09 Nov 2026 00:05:43 GMT"
+          ],
+          [
+            "Content-Type",
+            "application/octet-stream"
+          ],
+          [
+            "Content-Length",
+            "25"
+          ],
+          [
+            "Connection",
+            "close"
+          ]
+        ],
+        "body_bytes": 25,
+        "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+        "body_text": "Missing harmless fixture\n",
+        "end_utc_ns": 1794182743134170986,
+        "elapsed_ms": 159.757999
+      },
+      {
+        "actor": "alice",
+        "method": "GET",
+        "path": "/missing/150/canary-cache",
+        "target": "/missing/150/canary-cache",
+        "host": "p7-g2-nginx-150-private-hold-cache-alice",
+        "marker": "p7/p7-g2-nginx-150-private-hold/canary/cache-1",
+        "headers": {},
+        "execute": 1,
+        "start_utc_ns": 1794182743477750248,
+        "status": 404,
+        "response_headers_ms": 8.033356,
+        "response_headers": [
+          [
+            "Server",
+            "nginx/1.30.6"
+          ],
+          [
+            "Date",
+            "Mon, 09 Nov 2026 00:05:43 GMT"
+          ],
+          [
+            "Content-Type",
+            "application/octet-stream"
+          ],
+          [
+            "Content-Length",
+            "25"
+          ],
+          [
+            "Connection",
+            "close"
+          ]
+        ],
+        "body_bytes": 25,
+        "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+        "body_text": "Missing harmless fixture\n",
+        "end_utc_ns": 1794182743485875701,
+        "elapsed_ms": 8.123532
+      },
+      {
+        "actor": "bob",
+        "method": "GET",
+        "path": "/present/canary-functions",
+        "target": "/present/canary-functions",
+        "host": "p7-g2-nginx-150-private-hold-cache-bob",
+        "marker": "p7/p7-g2-nginx-150-private-hold/canary/function-0",
+        "headers": {},
+        "execute": 1,
+        "start_utc_ns": 1794182743836707109,
+        "status": 200,
+        "response_headers_ms": 8.805764,
+        "response_headers": [
+          [
+            "Server",
+            "nginx/1.30.6"
+          ],
+          [
+            "Date",
+            "Mon, 09 Nov 2026 00:05:43 GMT"
+          ],
+          [
+            "Content-Type",
+            "application/octet-stream"
+          ],
+          [
+            "Content-Length",
+            "40"
+          ],
+          [
+            "Connection",
+            "close"
+          ],
+          [
+            "Last-Modified",
+            "Sat, 07 Nov 2026 00:00:00 GMT"
+          ],
+          [
+            "ETag",
+            "\"c9018cc100c3627142237160efe8122117443ffd68f2802b6794cd84c5343449\""
+          ],
+          [
+            "Accept-Ranges",
+            "bytes"
+          ]
+        ],
+        "body_bytes": 40,
+        "body_sha256": "c9018cc100c3627142237160efe8122117443ffd68f2802b6794cd84c5343449",
+        "body_text": "J controls harmless artifact fixture v1\n",
+        "end_utc_ns": 1794182743845598229,
+        "elapsed_ms": 8.88943
+      },
+      {
+        "actor": "bob",
+        "method": "GET",
+        "path": "/present/canary-functions",
+        "target": "/present/canary-functions",
+        "host": "p7-g2-nginx-150-private-hold-cache-bob",
+        "marker": "p7/p7-g2-nginx-150-private-hold/canary/function-1",
+        "headers": {},
+        "execute": 1,
+        "start_utc_ns": 1794182744232834662,
+        "status": 200,
+        "response_headers_ms": 8.023045,
+        "response_headers": [
+          [
+            "Server",
+            "nginx/1.30.6"
+          ],
+          [
+            "Date",
+            "Mon, 09 Nov 2026 00:05:44 GMT"
+          ],
+          [
+            "Content-Type",
+            "application/octet-stream"
+          ],
+          [
+            "Content-Length",
+            "40"
+          ],
+          [
+            "Connection",
+            "close"
+          ],
+          [
+            "Last-Modified",
+            "Sat, 07 Nov 2026 00:00:00 GMT"
+          ],
+          [
+            "ETag",
+            "\"c9018cc100c3627142237160efe8122117443ffd68f2802b6794cd84c5343449\""
+          ],
+          [
+            "Accept-Ranges",
+            "bytes"
+          ]
+        ],
+        "body_bytes": 40,
+        "body_sha256": "c9018cc100c3627142237160efe8122117443ffd68f2802b6794cd84c5343449",
+        "body_text": "J controls harmless artifact fixture v1\n",
+        "end_utc_ns": 1794182744240944433,
+        "elapsed_ms": 8.108441
+      },
+      {
+        "actor": "bob",
+        "method": "HEAD",
+        "path": "/present/canary-functions",
+        "target": "/present/canary-functions",
+        "host": "p7-g2-nginx-150-private-hold-cache-bob",
+        "marker": "p7/p7-g2-nginx-150-private-hold/canary/function-2",
+        "headers": {},
+        "execute": 1,
+        "start_utc_ns": 1794182744629420788,
+        "status": 200,
+        "response_headers_ms": 7.935258,
+        "response_headers": [
+          [
+            "Server",
+            "nginx/1.30.6"
+          ],
+          [
+            "Date",
+            "Mon, 09 Nov 2026 00:05:44 GMT"
+          ],
+          [
+            "Content-Type",
+            "application/octet-stream"
+          ],
+          [
+            "Content-Length",
+            "40"
+          ],
+          [
+            "Connection",
+            "close"
+          ],
+          [
+            "Last-Modified",
+            "Sat, 07 Nov 2026 00:00:00 GMT"
+          ],
+          [
+            "ETag",
+            "\"c9018cc100c3627142237160efe8122117443ffd68f2802b6794cd84c5343449\""
+          ],
+          [
+            "Accept-Ranges",
+            "bytes"
+          ]
+        ],
+        "body_bytes": 0,
+        "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "body_text": "",
+        "end_utc_ns": 1794182744637459314,
+        "elapsed_ms": 8.037206
+      },
+      {
+        "actor": "bob",
+        "method": "GET",
+        "path": "/present/canary-functions",
+        "target": "/present/canary-functions",
+        "host": "p7-g2-nginx-150-private-hold-cache-bob",
+        "marker": "p7/p7-g2-nginx-150-private-hold/canary/function-3",
+        "headers": {
+          "If-None-Match": "\"c9018cc100c3627142237160efe8122117443ffd68f2802b6794cd84c5343449\""
+        },
+        "execute": 1,
+        "start_utc_ns": 1794182745023842582,
+        "status": 304,
+        "response_headers_ms": 8.047996,
+        "response_headers": [
+          [
+            "Server",
+            "nginx/1.30.6"
+          ],
+          [
+            "Date",
+            "Mon, 09 Nov 2026 00:05:45 GMT"
+          ],
+          [
+            "Connection",
+            "close"
+          ],
+          [
+            "Last-Modified",
+            "Sat, 07 Nov 2026 00:00:00 GMT"
+          ],
+          [
+            "ETag",
+            "\"c9018cc100c3627142237160efe8122117443ffd68f2802b6794cd84c5343449\""
+          ]
+        ],
+        "body_bytes": 0,
+        "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "body_text": "",
+        "end_utc_ns": 1794182745031976345,
+        "elapsed_ms": 8.132483
+      },
+      {
+        "actor": "bob",
+        "method": "GET",
+        "path": "/present/canary-functions",
+        "target": "/present/canary-functions",
+        "host": "p7-g2-nginx-150-private-hold-cache-bob",
+        "marker": "p7/p7-g2-nginx-150-private-hold/canary/function-4",
+        "headers": {
+          "Range": "bytes=0-1"
+        },
+        "execute": 1,
+        "start_utc_ns": 1794182745424471554,
+        "status": 206,
+        "response_headers_ms": 8.037046,
+        "response_headers": [
+          [
+            "Server",
+            "nginx/1.30.6"
+          ],
+          [
+            "Date",
+            "Mon, 09 Nov 2026 00:05:45 GMT"
+          ],
+          [
+            "Content-Type",
+            "application/octet-stream"
+          ],
+          [
+            "Content-Length",
+            "2"
+          ],
+          [
+            "Connection",
+            "close"
+          ],
+          [
+            "Last-Modified",
+            "Sat, 07 Nov 2026 00:00:00 GMT"
+          ],
+          [
+            "ETag",
+            "\"c9018cc100c3627142237160efe8122117443ffd68f2802b6794cd84c5343449\""
+          ],
+          [
+            "Content-Range",
+            "bytes 0-1/40"
+          ]
+        ],
+        "body_bytes": 2,
+        "body_sha256": "016ef4dbfc9c639601ec84d8f85e288ffb7bf1102d76697546189762e1135e3e",
+        "body_text": "J ",
+        "end_utc_ns": 1794182745432598607,
+        "elapsed_ms": 8.125333
+      },
+      {
+        "actor": "bob",
+        "method": "GET",
+        "path": "/present/canary-functions",
+        "target": "/present/canary-functions",
+        "host": "p7-g2-nginx-150-private-hold-cache-bob",
+        "marker": "p7/p7-g2-nginx-150-private-hold/canary/function-5",
+        "headers": {},
+        "execute": 1,
+        "start_utc_ns": 1794182745822947098,
+        "status": 200,
+        "response_headers_ms": 7.975352,
+        "response_headers": [
+          [
+            "Server",
+            "nginx/1.30.6"
+          ],
+          [
+            "Date",
+            "Mon, 09 Nov 2026 00:05:45 GMT"
+          ],
+          [
+            "Content-Type",
+            "application/octet-stream"
+          ],
+          [
+            "Content-Length",
+            "40"
+          ],
+          [
+            "Connection",
+            "close"
+          ],
+          [
+            "Last-Modified",
+            "Sat, 07 Nov 2026 00:00:00 GMT"
+          ],
+          [
+            "ETag",
+            "\"c9018cc100c3627142237160efe8122117443ffd68f2802b6794cd84c5343449\""
+          ],
+          [
+            "Accept-Ranges",
+            "bytes"
+          ]
+        ],
+        "body_bytes": 40,
+        "body_sha256": "c9018cc100c3627142237160efe8122117443ffd68f2802b6794cd84c5343449",
+        "body_text": "J controls harmless artifact fixture v1\n",
+        "end_utc_ns": 1794182745831009016,
+        "elapsed_ms": 8.060558
+      },
+      {
+        "actor": "trusted-source-control",
+        "method": "GET",
+        "path": "/missing/150/canary-denied",
+        "target": "/missing/150/canary-denied",
+        "host": "p7-g2-nginx-150-private-hold-cache-alice",
+        "marker": "p7/p7-g2-nginx-150-private-hold/canary/unknown-origin",
+        "headers": {},
+        "execute": 1,
+        "start_utc_ns": 1794182746203136440,
+        "status": 403,
+        "response_headers_ms": 7.882734,
+        "response_headers": [
+          [
+            "Server",
+            "nginx/1.30.6"
+          ],
+          [
+            "Date",
+            "Mon, 09 Nov 2026 00:05:46 GMT"
+          ],
+          [
+            "Content-Type",
+            "text/html"
+          ],
+          [
+            "Content-Length",
+            "153"
+          ],
+          [
+            "Connection",
+            "close"
+          ]
+        ],
+        "body_bytes": 153,
+        "body_sha256": "cac61ecbe9b896631584f583f8fb1a1d25474a371158f0f60b9a983949286855",
+        "body_text": "<html>\r\n<head><title>403 Forbidden</title></head>\r\n<body>\r\n<center><h1>403 Forbidden</h1></center>\r\n<hr><center>nginx/1.30.6</center>\r\n</body>\r\n</html>\r\n",
+        "end_utc_ns": 1794182746211102781,
+        "elapsed_ms": 7.965121
+      }
+    ],
+    "scope": "Configured 404 reuse and bounded successful-object protocol behavior."
+  },
+  "resource_after_live": {
+    "utc_ns": 1794182778945387544,
+    "method": "Docker CLI usage snapshots, not peak memory or process RSS",
+    "records": [
+      {
+        "Name": "p7-g2-nginx-150-private-hold-alice",
+        "MemUsage": "5.434MiB / 128MiB",
+        "CPUPerc": "0.00%",
+        "PIDs": "1",
+        "NetIO": "15.5kB / 15.5kB",
+        "BlockIO": "0B / 0B"
+      },
+      {
+        "Name": "p7-g2-nginx-150-private-hold-bob",
+        "MemUsage": "5.773MiB / 128MiB",
+        "CPUPerc": "0.00%",
+        "PIDs": "1",
+        "NetIO": "18.3kB / 17.7kB",
+        "BlockIO": "0B / 0B"
+      },
+      {
+        "Name": "p7-g2-nginx-150-private-hold-origin",
+        "MemUsage": "14.54MiB / 128MiB",
+        "CPUPerc": "0.01%",
+        "PIDs": "1",
+        "NetIO": "33.8kB / 30.3kB",
+        "BlockIO": "0B / 0B"
+      },
+      {
+        "Name": "p7-g2-nginx-150-private-hold-cache-alice",
+        "MemUsage": "6.004MiB / 128MiB",
+        "CPUPerc": "0.00%",
+        "PIDs": "5",
+        "NetIO": "33.1kB / 30.8kB",
+        "BlockIO": "0B / 0B"
+      },
+      {
+        "Name": "p7-g2-nginx-150-private-hold-cache-bob",
+        "MemUsage": "5.984MiB / 128MiB",
+        "CPUPerc": "0.00%",
+        "PIDs": "5",
+        "NetIO": "34.7kB / 32.9kB",
+        "BlockIO": "0B / 0B"
+      }
+    ]
+  }
+}

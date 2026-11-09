@@ -1,0 +1,17 @@
+{
+  "edition": 3,
+  "frozen_utc": "2026-11-08T23:38:03.086368+00:00",
+  "before_any_p2b_data": true,
+  "previous_manifest_sha256": "875ccd83c3e29bcd0c2bee0a7df266ae64b25f6ecc47297850b6ab8b97fca654",
+  "manifest_sha256": "0e3ba047d1298e739595acbdfa6884fc7d269103a941b956f848db4d896fea54",
+  "p2_source_freeze_sha256": "a94a7883b207bd1ea9f6b6b83d9581f8370b975561cfb9be43ff8ff2d50f7e42",
+  "regression_tests": {
+    "command": "python3 -m unittest test_readiness -q",
+    "passed": true,
+    "tests": 20
+  },
+  "real_native_replay": "Eight retained P2 smoke trials; full native joins pass, resealed router corruption and lost network positive control fail.",
+  "http_floor_check": "Local real HTTP HEAD response; logged header start at least 12 ms after gateway entry.",
+  "scope": "Operational gate, integrity and attestation repairs before data. Arms, sample sizes, decoder rule, response floor and statistics unchanged.",
+  "pending": "Fresh P2b native smoke on the labhost, complete passing P2 holdout audit and A/A null, calibration then exclusive decoder freeze."
+}

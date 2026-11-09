@@ -1,0 +1,112 @@
++ cd /home/ubuntu/s1
++ PY=/home/ubuntu/venv/bin/python
++ /home/ubuntu/venv/bin/python trials.py run --phase cache_on --split calibration
+wrote /home/ubuntu/s1/data/trials-cache_on-calibration.jsonl 960 trials
++ /home/ubuntu/venv/bin/python trials.py freeze --phase cache_on
+{
+ "phase": "cache_on",
+ "thresholds": {
+  "shared": {
+   "threshold_ms": 38.827768,
+   "low_means_one": true,
+   "calibration_accuracy": 1.0,
+   "n": 120
+  },
+  "salted": {
+   "threshold_ms": 53.8203985,
+   "low_means_one": true,
+   "calibration_accuracy": 0.5333333333333333,
+   "n": 120
+  },
+  "client_salt": {
+   "threshold_ms": 38.618603,
+   "low_means_one": true,
+   "calibration_accuracy": 1.0,
+   "n": 120
+  },
+  "contention": {
+   "threshold_ms": 233.79866700000002,
+   "low_means_one": false,
+   "calibration_accuracy": 1.0,
+   "n": 120
+  },
+  "contention_light": {
+   "threshold_ms": 76.7096235,
+   "low_means_one": false,
+   "calibration_accuracy": 1.0,
+   "n": 120
+  },
+  "shared_short": {
+   "threshold_ms": 21.483141,
+   "low_means_one": true,
+   "calibration_accuracy": 0.975,
+   "n": 120
+  },
+  "shared_busy": {
+   "threshold_ms": 69.13199700000001,
+   "low_means_one": true,
+   "calibration_accuracy": 0.8333333333333334,
+   "n": 120
+  },
+  "salted_busy": {
+   "threshold_ms": 76.613163,
+   "low_means_one": true,
+   "calibration_accuracy": 0.55,
+   "n": 120
+  }
+ },
+ "frozen_utc_ns": 1794185129221348793,
+ "calibration_sha256": "230129da55b063581bfe9c8191aa6a2884c2197898d14b39f5ce7e548a1ae343",
+ "trials_py_sha256": "f1244ee031289b3894ac58e6f6e367b81fc9863e37385a06196eb0bdcfb871df"
+}
++ /home/ubuntu/venv/bin/python trials.py run --phase cache_on --split holdout
+wrote /home/ubuntu/s1/data/trials-cache_on-holdout.jsonl 3200 trials
++ /home/ubuntu/venv/bin/python utility.py --phase cache_on
+util-cache_on-shared-common-1 6.43s 96 ok
+util-cache_on-shared-distinct-0 6.55s 96 ok
+util-cache_on-salted-distinct-0 6.54s 96 ok
+util-cache_on-salted-common-2 6.52s 96 ok
+util-cache_on-shared-distinct-1 6.58s 96 ok
+util-cache_on-shared-distinct-2 6.51s 96 ok
+util-cache_on-salted-common-0 6.53s 96 ok
+util-cache_on-shared-common-0 6.34s 96 ok
+util-cache_on-shared-common-2 6.38s 96 ok
+util-cache_on-salted-common-1 6.48s 96 ok
+util-cache_on-salted-distinct-2 6.51s 96 ok
+util-cache_on-salted-distinct-1 6.53s 96 ok
++ /home/ubuntu/s1/serve.sh cache_off
+gw9001: 1 windows (created Mon Nov  9 01:04:25 2026)
+gw9002: 1 windows (created Mon Nov  9 01:04:25 2026)
+gw9003: 1 windows (created Mon Nov  9 01:04:25 2026)
+s1run: 1 windows (created Mon Nov  9 00:40:29 2026)
+s2run: 1 windows (created Mon Nov  9 00:48:47 2026)
+vllm: 1 windows (created Mon Nov  9 01:03:38 2026)
++ /home/ubuntu/venv/bin/python trials.py run --phase cache_off --split calibration
+wrote /home/ubuntu/s1/data/trials-cache_off-calibration.jsonl 120 trials
++ /home/ubuntu/venv/bin/python trials.py freeze --phase cache_off
+{
+ "phase": "cache_off",
+ "thresholds": {
+  "nocache": {
+   "threshold_ms": 54.6122205,
+   "low_means_one": true,
+   "calibration_accuracy": 0.5666666666666667,
+   "n": 120
+  }
+ },
+ "frozen_utc_ns": 1794186301332843630,
+ "calibration_sha256": "e75c203dea8b485a1a4acecd875112152495ebe68e14bb01799e4127b584b09e",
+ "trials_py_sha256": "f1244ee031289b3894ac58e6f6e367b81fc9863e37385a06196eb0bdcfb871df"
+}
++ /home/ubuntu/venv/bin/python trials.py run --phase cache_off --split holdout
+wrote /home/ubuntu/s1/data/trials-cache_off-holdout.jsonl 400 trials
++ /home/ubuntu/venv/bin/python utility.py --phase cache_off
+util-cache_off-nocache-distinct-0 13.67s 96 ok
+util-cache_off-nocache-distinct-2 13.77s 96 ok
+util-cache_off-nocache-distinct-1 14.23s 96 ok
+util-cache_off-nocache-common-0 13.92s 96 ok
+util-cache_off-nocache-common-1 14.03s 96 ok
+util-cache_off-nocache-common-2 14.07s 96 ok
++ echo S1_DONE
+S1_DONE
+EXIT=0

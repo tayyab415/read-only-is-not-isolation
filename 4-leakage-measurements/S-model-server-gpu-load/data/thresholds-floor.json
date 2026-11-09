@@ -1,0 +1,26 @@
+{
+ "phase": "floor",
+ "thresholds": {
+  "floor500_short": {
+   "threshold_ms": 501.390587,
+   "low_means_one": false,
+   "calibration_accuracy": 0.5625,
+   "n": 80
+  },
+  "floor500_long": {
+   "threshold_ms": 1089.6993295,
+   "low_means_one": false,
+   "calibration_accuracy": 1.0,
+   "n": 80
+  },
+  "nofloor_long": {
+   "threshold_ms": 1087.8540305000001,
+   "low_means_one": false,
+   "calibration_accuracy": 1.0,
+   "n": 80
+  }
+ },
+ "frozen_utc_ns": 1794186798365560022,
+ "calibration_sha256": "897f4e6ec262c1371194a137ebf531c921e2777bb1dc5ab88c268a0de7d275e0",
+ "trials_s2_py_sha256": "1128fb870cfa10742cbf58bba8362e4ba7f3f15d159190ec135d66d1ba27872c"
+}

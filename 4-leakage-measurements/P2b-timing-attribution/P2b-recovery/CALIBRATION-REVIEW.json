@@ -1,0 +1,73 @@
+{
+  "utc": "2026-11-09T03:56:30.534867+00:00",
+  "passed": true,
+  "model_frozen_utc": "2026-11-09T03:51:33.322785+00:00",
+  "model_sha256": "93397b2e74a47d13de4dc28d3b5c3bed76dd0879085edffab9c2252b9d491acc",
+  "source_manifest_sha256": "755154d688bfffc0b4cce9ae97bfad83b9ef16c38745c7d7b09b27817269736a",
+  "transport_sha256": "7fa1d0ea81c652d2e8350b7bc430fa087252467e95443259ac4dd7e1116f7ded",
+  "all_calibration_seals_precede_model": true,
+  "native_checks": 184274,
+  "arms": {
+    "shared": {
+      "trials": 100,
+      "clean": true,
+      "sealed_utc_ns": 1794195172673985710,
+      "calibration_seal_sha256": "a96bd5ab031bb42ab10c0df161ebee36ee32d612d0366023f1bf54c70e512994",
+      "decoder": {
+        "threshold_ms": 3.59074575,
+        "active_is_below": true,
+        "calibration_median_active_ms": 3.2401255,
+        "calibration_median_idle_ms": 3.9413660000000004,
+        "calibration_trials": 100,
+        "calibration_sha256": "0b2e4797ddb9e067697b73d0edf6f27085c06c6e7d13b7995804a2b9e016fe78"
+      }
+    },
+    "pergw": {
+      "trials": 100,
+      "clean": true,
+      "sealed_utc_ns": 1794195546517775972,
+      "calibration_seal_sha256": "5d435b37cbae61c927b407ab5af20cd30e5f069ef06e54496950886cdc540e02",
+      "decoder": {
+        "threshold_ms": 3.70459125,
+        "active_is_below": true,
+        "calibration_median_active_ms": 3.440281,
+        "calibration_median_idle_ms": 3.9689015,
+        "calibration_trials": 100,
+        "calibration_sha256": "f4359fb1916946182878e79a4c35cf0393127f665666891a88583c94a6bc46c3"
+      }
+    },
+    "pad": {
+      "trials": 100,
+      "clean": true,
+      "sealed_utc_ns": 1794195919353775240,
+      "calibration_seal_sha256": "461fdb68850b800fbbf4eb243c5e56ca35772030d21d984e415b81e28e1d50f9",
+      "decoder": {
+        "threshold_ms": 13.615945,
+        "active_is_below": true,
+        "calibration_median_active_ms": 13.554573000000001,
+        "calibration_median_idle_ms": 13.677316999999999,
+        "calibration_trials": 100,
+        "calibration_sha256": "ec31ab876ae0318efb8f3b9b2d73c11759a80de018f60f7426fcf119e2f268c7"
+      }
+    },
+    "aa": {
+      "trials": 100,
+      "clean": true,
+      "sealed_utc_ns": 1794196291633712075,
+      "calibration_seal_sha256": "7be8b13314b8aaf24575e2464bbbf6ca1f9f23a7e6a31bfb922419eb3f3bce0b",
+      "decoder": {
+        "threshold_ms": 3.90706575,
+        "active_is_below": false,
+        "calibration_median_active_ms": 3.907831,
+        "calibration_median_idle_ms": 3.9063005,
+        "calibration_trials": 100,
+        "calibration_sha256": "afafd0c12b7ed936877ebdff1c5d7a3390728d86472a2d4b0b50412fbda13253"
+      }
+    }
+  },
+  "held_observations_opened": false,
+  "decoder_or_science_changed": false,
+  "native_or_provider_requests": 0,
+  "review_source_sha256": "5ce17bb291481f67b93b3c9571db4c9415504eb8ebc3e192e70d742d180c9ee5",
+  "scope": "Complete calibration/model review; held chronology and nulls remain pending"
+}

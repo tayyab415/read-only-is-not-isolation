@@ -1,0 +1,19 @@
+legacy-user-api-oss-gate-retry-3 admin PUT /api/security/users/admin 400
+secure-admin-ui-retry-3 admin PUT /ui/users/admin 200
+secured-admin-version-retry-3 admin GET /api/system/version 200
+Administrator password changed
+default-permissions-legacy-retry-3 admin GET /api/security/permissions 400
+default-permission-anything-retry-3 admin GET /ui/permissiontargets/Anything 200
+default-permission-remote-retry-3 admin GET /ui/permissiontargets/Any%20Remote 200
+existing-a-read-retry-2 admin GET /ui/users/a-read 200
+existing-a-cache-retry-2 admin GET /ui/users/a-cache 200
+existing-a-cache2-retry-2 admin GET /ui/users/a-cache2 200
+create-github-remote-legacy-retry-2 admin PUT /api/repositories/github-remote 400
+existing-repository-ui-retry-2 admin GET /ui/admin/repositories/remote/github-remote 200
+existing-permission-ui-retry-1 admin GET /ui/permissiontargets/a-test 200
+permission-d98f4801 admin PUT /ui/permissiontargets/a-test 200
+read-security-config-5e4b19 admin GET /ui/securityconfig 200
+anonymous-false-69a28c admin PUT /ui/securityconfig 200
+configured-repository admin GET /ui/admin/repositories/remote/github-remote 200
+configured-permission admin GET /ui/permissiontargets/a-test 200
+READY written

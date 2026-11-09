@@ -1,0 +1,66 @@
+{
+  "checked_utc": "2026-11-08T03:04:38.684536+00:00",
+  "window_start": "2026-11-08T03:01:00+00:00",
+  "window_end": "2026-11-08T03:03:00+00:00",
+  "model": "us.openai.gpt-6-luna",
+  "harness_usage": {
+    "inputTokens": 4033,
+    "outputTokens": 6184,
+    "cacheReadInputTokens": 18523,
+    "cacheWriteInputTokens": 4046
+  },
+  "harness_invocations": 20,
+  "cloudwatch": [
+    {
+      "metric": "Invocations",
+      "sum": 20.0,
+      "points": 2,
+      "status": "Complete",
+      "timestamps": [
+        "2026-11-08T08:32:00+05:30",
+        "2026-11-08T08:31:00+05:30"
+      ]
+    },
+    {
+      "metric": "InputTokenCount",
+      "sum": 4033.0,
+      "points": 2,
+      "status": "Complete",
+      "timestamps": [
+        "2026-11-08T08:32:00+05:30",
+        "2026-11-08T08:31:00+05:30"
+      ]
+    },
+    {
+      "metric": "OutputTokenCount",
+      "sum": 6184.0,
+      "points": 2,
+      "status": "Complete",
+      "timestamps": [
+        "2026-11-08T08:32:00+05:30",
+        "2026-11-08T08:31:00+05:30"
+      ]
+    },
+    {
+      "metric": "CacheReadInputTokenCount",
+      "sum": 18523.0,
+      "points": 2,
+      "status": "Complete",
+      "timestamps": [
+        "2026-11-08T08:32:00+05:30",
+        "2026-11-08T08:31:00+05:30"
+      ]
+    },
+    {
+      "metric": "CacheWriteInputTokenCount",
+      "sum": 4046.0,
+      "points": 2,
+      "status": "Complete",
+      "timestamps": [
+        "2026-11-08T08:32:00+05:30",
+        "2026-11-08T08:31:00+05:30"
+      ]
+    }
+  ],
+  "all_token_sums_and_invocations_match": true
+}

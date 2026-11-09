@@ -1,0 +1,118 @@
+{
+ "floor500_short": {
+  "n": 240,
+  "failed": 0,
+  "threshold_ms": 501.390587,
+  "accuracy": 0.42083333333333334,
+  "wilson95": [
+   0.36010229661015364,
+   0.48405874075265726
+  ],
+  "binom_p": 0.01674443210915604,
+  "auc": 0.39875,
+  "auc_boot95": [
+   0.3276354166666666,
+   0.471548611111111
+  ],
+  "median_ms": {
+   "0": 501.397535,
+   "1": 501.135815
+  },
+  "capacity_lower_bits_per_trial": 0.0,
+  "audit": {
+   "trials": 240,
+   "receiver_once": 240,
+   "sender_as_expected": 240,
+   "gateway_ok": 240,
+   "tenant_ok": 240
+  }
+ },
+ "floor500_long": {
+  "n": 240,
+  "failed": 0,
+  "threshold_ms": 1089.6993295,
+  "accuracy": 1.0,
+  "wilson95": [
+   0.9842460798138267,
+   1.0
+  ],
+  "binom_p": 1.131959884853339e-72,
+  "auc": 1.0,
+  "auc_boot95": [
+   1.0,
+   1.0
+  ],
+  "median_ms": {
+   "0": 903.0387109999999,
+   "1": 1284.6485565
+  },
+  "capacity_lower_bits_per_trial": 0.8831151100350287,
+  "audit": {
+   "trials": 240,
+   "receiver_once": 240,
+   "sender_as_expected": 240,
+   "gateway_ok": 240,
+   "tenant_ok": 240
+  }
+ },
+ "nofloor_long": {
+  "n": 240,
+  "failed": 0,
+  "threshold_ms": 1087.8540305000001,
+  "accuracy": 1.0,
+  "wilson95": [
+   0.9842460798138267,
+   1.0
+  ],
+  "binom_p": 1.131959884853339e-72,
+  "auc": 1.0,
+  "auc_boot95": [
+   1.0,
+   1.0
+  ],
+  "median_ms": {
+   "0": 902.5369875,
+   "1": 1283.1821810000001
+  },
+  "capacity_lower_bits_per_trial": 0.8831151100350287,
+  "audit": {
+   "trials": 240,
+   "receiver_once": 240,
+   "sender_as_expected": 240,
+   "gateway_ok": 240,
+   "tenant_ok": 240
+  }
+ },
+ "utility": {
+  "nofloor|probe_1tok": {
+   "n": 30,
+   "mean_ms": 62.877063933333346,
+   "p95_ms": 64.97457765
+  },
+  "nofloor|turn_32tok": {
+   "n": 30,
+   "mean_ms": 477.4114749333333,
+   "p95_ms": 479.93366375
+  },
+  "nofloor|turn_128tok": {
+   "n": 30,
+   "mean_ms": 1773.8936660999998,
+   "p95_ms": 1778.36579485
+  },
+  "floor500|probe_1tok": {
+   "n": 30,
+   "mean_ms": 501.00176759999994,
+   "p95_ms": 502.10527175
+  },
+  "floor500|turn_32tok": {
+   "n": 30,
+   "mean_ms": 501.0160373333334,
+   "p95_ms": 501.48261014999997
+  },
+  "floor500|turn_128tok": {
+   "n": 30,
+   "mean_ms": 1760.4091513,
+   "p95_ms": 1762.52253745
+  }
+ }
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "container": "j-sender",
+    "probes": [
+      {
+        "host": "172.21.0.3",
+        "port": 8082,
+        "result": "OSError",
+        "errno": 101
+      },
+      {
+        "host": "172.21.0.1",
+        "port": 8000,
+        "result": "OSError",
+        "errno": 101
+      },
+      {
+        "host": "172.19.0.2",
+        "port": 8000,
+        "result": "OSError",
+        "errno": 101
+      },
+      {
+        "host": "169.254.169.254",
+        "port": 80,
+        "result": "OSError",
+        "errno": 101
+      }
+    ],
+    "process_status": "Uid:\t20001\t20001\t20001\t20001\n\nCapEff:\t0000000000000000\n\nCapBnd:\t0000000000000000\n\nNoNewPrivs:\t1\n"
+  },
+  {
+    "container": "j-receiver",
+    "probes": [
+      {
+        "host": "172.21.0.3",
+        "port": 8082,
+        "result": "OSError",
+        "errno": 101
+      },
+      {
+        "host": "172.21.0.1",
+        "port": 8000,
+        "result": "OSError",
+        "errno": 101
+      },
+      {
+        "host": "172.20.0.1",
+        "port": 8000,
+        "result": "OSError",
+        "errno": 101
+      },
+      {
+        "host": "169.254.169.254",
+        "port": 80,
+        "result": "OSError",
+        "errno": 101
+      }
+    ],
+    "process_status": "Uid:\t20001\t20001\t20001\t20001\n\nCapEff:\t0000000000000000\n\nCapBnd:\t0000000000000000\n\nNoNewPrivs:\t1\n"
+  }
+]

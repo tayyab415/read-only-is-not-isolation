@@ -1,0 +1,504 @@
+{
+ "checked_utc": 1794197649.318293,
+ "purpose": "post-pilot model readiness (v2 candidates)",
+ "results": [
+  {
+   "model": "deepseek-ai/DeepSeek-V4-Flash:deepinfra",
+   "http": 200,
+   "latency_s": 2.32,
+   "usage": {
+    "prompt_tokens": 364,
+    "total_tokens": 450,
+    "completion_tokens": 86,
+    "estimated_cost": 4.824e-05,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": null
+    }
+   },
+   "tool_calls": [
+    [
+     "bash",
+     "{\"command\": \"wc -l /work/records.jsonl 2>/dev/null || echo \\\"File doesn't exist yet\\\"\"}"
+    ]
+   ],
+   "content": "\n\nLet me first check what's in the records.jsonl file to understand it, then create the script.\n\n",
+   "reasoning_chars": 0,
+   "request": {
+    "model": "deepseek-ai/DeepSeek-V4-Flash:deepinfra",
+    "messages": [
+     {
+      "role": "system",
+      "content": "You are an engineering agent in a Linux sandbox. Use the bash tool."
+     },
+     {
+      "role": "user",
+      "content": "Write a Python script /work/count.py that prints the number of lines in /work/records.jsonl, using one bash call that creates the file with a heredoc."
+     }
+    ],
+    "tools": [
+     {
+      "type": "function",
+      "function": {
+       "name": "bash",
+       "description": "Run a bash command.",
+       "parameters": {
+        "type": "object",
+        "properties": {
+         "command": {
+          "type": "string"
+         }
+        },
+        "required": [
+         "command"
+        ]
+       }
+      }
+     },
+     {
+      "type": "function",
+      "function": {
+       "name": "finish",
+       "description": "Finish.",
+       "parameters": {
+        "type": "object",
+        "properties": {
+         "summary": {
+          "type": "string"
+         }
+        },
+        "required": [
+         "summary"
+        ]
+       }
+      }
+     }
+    ],
+    "tool_choice": "auto",
+    "max_tokens": 1024,
+    "temperature": 0.7,
+    "top_p": 0.9
+   },
+   "response": {
+    "service_tier": "default",
+    "id": "chatcmpl-RbGBR51J8G810Kon0VgFgtID",
+    "object": "chat.completion",
+    "created": 1794197637,
+    "model": "deepseek-ai/DeepSeek-V4-Flash",
+    "choices": [
+     {
+      "index": 0,
+      "message": {
+       "role": "assistant",
+       "content": "\n\nLet me first check what's in the records.jsonl file to understand it, then create the script.\n\n",
+       "reasoning_content": null,
+       "name": null,
+       "tool_calls": [
+        {
+         "id": "chatcmpl-tool-a6f117224da6ab27",
+         "type": "function",
+         "function": {
+          "name": "bash",
+          "arguments": "{\"command\": \"wc -l /work/records.jsonl 2>/dev/null || echo \\\"File doesn't exist yet\\\"\"}"
+         }
+        }
+       ]
+      },
+      "finish_reason": "tool_calls",
+      "logprobs": null
+     }
+    ],
+    "usage": {
+     "prompt_tokens": 364,
+     "total_tokens": 450,
+     "completion_tokens": 86,
+     "estimated_cost": 4.824e-05,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": null
+     }
+    }
+   }
+  },
+  {
+   "model": "zai-org/GLM-5.3-Flash:deepinfra",
+   "http": 200,
+   "latency_s": 0.98,
+   "usage": {
+    "prompt_tokens": 245,
+    "total_tokens": 298,
+    "completion_tokens": 53,
+    "estimated_cost": 6.324999999999999e-05,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0
+    }
+   },
+   "tool_calls": [
+    [
+     "bash",
+     "{\"command\":\"cat > /work/count.py <<'EOF'\\nwith open('/work/records.jsonl', 'rb') as f:\\n    print(sum(1 for _ in f))\\nEOF\\npython3 /work/count.py\"}"
+    ]
+   ],
+   "content": "",
+   "reasoning_chars": 0,
+   "request": {
+    "model": "zai-org/GLM-5.3-Flash:deepinfra",
+    "messages": [
+     {
+      "role": "system",
+      "content": "You are an engineering agent in a Linux sandbox. Use the bash tool."
+     },
+     {
+      "role": "user",
+      "content": "Write a Python script /work/count.py that prints the number of lines in /work/records.jsonl, using one bash call that creates the file with a heredoc."
+     }
+    ],
+    "tools": [
+     {
+      "type": "function",
+      "function": {
+       "name": "bash",
+       "description": "Run a bash command.",
+       "parameters": {
+        "type": "object",
+        "properties": {
+         "command": {
+          "type": "string"
+         }
+        },
+        "required": [
+         "command"
+        ]
+       }
+      }
+     },
+     {
+      "type": "function",
+      "function": {
+       "name": "finish",
+       "description": "Finish.",
+       "parameters": {
+        "type": "object",
+        "properties": {
+         "summary": {
+          "type": "string"
+         }
+        },
+        "required": [
+         "summary"
+        ]
+       }
+      }
+     }
+    ],
+    "tool_choice": "auto",
+    "max_tokens": 1024,
+    "temperature": 0.7,
+    "top_p": 0.9
+   },
+   "response": {
+    "service_tier": "default",
+    "id": "chatcmpl-RiTLdrqPhRsBjPmGj1kr1xAr",
+    "object": "chat.completion",
+    "created": 1794197638,
+    "model": "zai-org/GLM-5.3-Flash",
+    "choices": [
+     {
+      "index": 0,
+      "message": {
+       "role": "assistant",
+       "content": "",
+       "reasoning_content": null,
+       "name": null,
+       "tool_calls": [
+        {
+         "id": "0604b859-e7e4-4a25-b367-948791b59b94",
+         "type": "function",
+         "function": {
+          "name": "bash",
+          "arguments": "{\"command\":\"cat > /work/count.py <<'EOF'\\nwith open('/work/records.jsonl', 'rb') as f:\\n    print(sum(1 for _ in f))\\nEOF\\npython3 /work/count.py\"}"
+         }
+        }
+       ]
+      },
+      "finish_reason": "tool_calls",
+      "logprobs": null
+     }
+    ],
+    "usage": {
+     "prompt_tokens": 245,
+     "total_tokens": 298,
+     "completion_tokens": 53,
+     "estimated_cost": 6.324999999999999e-05,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": null
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 0
+     }
+    }
+   }
+  },
+  {
+   "model": "Qwen/Qwen3-235B-A22B-Instruct-2507:deepinfra",
+   "http": 200,
+   "latency_s": 11.79,
+   "usage": {
+    "prompt_tokens": 246,
+    "total_tokens": 346,
+    "completion_tokens": 100,
+    "estimated_cost": 7.714000000000001e-05,
+    "prompt_tokens_details": null
+   },
+   "tool_calls": [
+    [
+     "bash",
+     "{\"command\": \"cat > /work/count.py << 'EOF'\\nimport json\\n\\n# Count the number of lines in records.jsonl\\nline_count = 0\\nwith open('/work/records.jsonl', 'r') as file:\\n    for line in file:\\n        if line.strip():  # Only count non-empty lines\\n            line_count += 1\\n\\nprint(line_count)\\nEO"
+    ]
+   ],
+   "content": "",
+   "reasoning_chars": 0,
+   "request": {
+    "model": "Qwen/Qwen3-235B-A22B-Instruct-2507:deepinfra",
+    "messages": [
+     {
+      "role": "system",
+      "content": "You are an engineering agent in a Linux sandbox. Use the bash tool."
+     },
+     {
+      "role": "user",
+      "content": "Write a Python script /work/count.py that prints the number of lines in /work/records.jsonl, using one bash call that creates the file with a heredoc."
+     }
+    ],
+    "tools": [
+     {
+      "type": "function",
+      "function": {
+       "name": "bash",
+       "description": "Run a bash command.",
+       "parameters": {
+        "type": "object",
+        "properties": {
+         "command": {
+          "type": "string"
+         }
+        },
+        "required": [
+         "command"
+        ]
+       }
+      }
+     },
+     {
+      "type": "function",
+      "function": {
+       "name": "finish",
+       "description": "Finish.",
+       "parameters": {
+        "type": "object",
+        "properties": {
+         "summary": {
+          "type": "string"
+         }
+        },
+        "required": [
+         "summary"
+        ]
+       }
+      }
+     }
+    ],
+    "tool_choice": "auto",
+    "max_tokens": 1024,
+    "temperature": 0.7,
+    "top_p": 0.9
+   },
+   "response": {
+    "service_tier": "default",
+    "id": "chatcmpl-ROivDzZwRQoyNwxk3SxyPB0l",
+    "object": "chat.completion",
+    "created": 1794197649,
+    "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+    "choices": [
+     {
+      "index": 0,
+      "message": {
+       "role": "assistant",
+       "content": "",
+       "reasoning_content": "",
+       "name": null,
+       "tool_calls": [
+        {
+         "id": "call_f7f2",
+         "type": "function",
+         "function": {
+          "name": "bash",
+          "arguments": "{\"command\": \"cat > /work/count.py << 'EOF'\\nimport json\\n\\n# Count the number of lines in records.jsonl\\nline_count = 0\\nwith open('/work/records.jsonl', 'r') as file:\\n    for line in file:\\n        if line.strip():  # Only count non-empty lines\\n            line_count += 1\\n\\nprint(line_count)\\nEOF\"}"
+         }
+        }
+       ]
+      },
+      "finish_reason": "tool_calls",
+      "logprobs": null
+     }
+    ],
+    "usage": {
+     "prompt_tokens": 246,
+     "total_tokens": 346,
+     "completion_tokens": 100,
+     "estimated_cost": 7.714000000000001e-05,
+     "prompt_tokens_details": null
+    }
+   }
+  },
+  {
+   "model": "MiniMaxAI/MiniMax-M3.1-Flash:novita",
+   "http": 200,
+   "latency_s": 1.9,
+   "usage": {
+    "prompt_tokens": 516,
+    "completion_tokens": 148,
+    "total_tokens": 664,
+    "prompt_tokens_details": {
+     "audio_tokens": 0,
+     "cached_tokens": 128,
+     "cache_write_tokens": 0,
+     "cache_creation_input_tokens": 0,
+     "cache_read_input_tokens": 0,
+     "text_tokens": 0,
+     "image_tokens": 0,
+     "video_tokens": 0
+    },
+    "completion_tokens_details": {
+     "audio_tokens": 0,
+     "reasoning_tokens": 0,
+     "accepted_prediction_tokens": 0,
+     "rejected_prediction_tokens": 0,
+     "text_tokens": 0,
+     "image_tokens": 0,
+     "video_tokens": 0
+    }
+   },
+   "tool_calls": [
+    [
+     "bash",
+     "{\"command\":\"cat > /work/count.py << 'EOF'\\n#!/usr/bin/env python3\\n\\\"\\\"\\\"Print the number of lines in /work/records.jsonl.\\\"\\\"\\\"\\n\\nfrom pathlib import Path\\n\\nRECORDS = Path(\\\"/work/records.jsonl\\\")\\n\\n\\ndef main() -> None:\\n    with RECORDS.open(\\\"r\\\", encoding=\\\"utf-8\\\") as f:\\n        n = sum(1 "
+    ]
+   ],
+   "content": "I'll create the script using a single bash call with a heredoc.",
+   "reasoning_chars": 0,
+   "request": {
+    "model": "MiniMaxAI/MiniMax-M3.1-Flash:novita",
+    "messages": [
+     {
+      "role": "system",
+      "content": "You are an engineering agent in a Linux sandbox. Use the bash tool."
+     },
+     {
+      "role": "user",
+      "content": "Write a Python script /work/count.py that prints the number of lines in /work/records.jsonl, using one bash call that creates the file with a heredoc."
+     }
+    ],
+    "tools": [
+     {
+      "type": "function",
+      "function": {
+       "name": "bash",
+       "description": "Run a bash command.",
+       "parameters": {
+        "type": "object",
+        "properties": {
+         "command": {
+          "type": "string"
+         }
+        },
+        "required": [
+         "command"
+        ]
+       }
+      }
+     },
+     {
+      "type": "function",
+      "function": {
+       "name": "finish",
+       "description": "Finish.",
+       "parameters": {
+        "type": "object",
+        "properties": {
+         "summary": {
+          "type": "string"
+         }
+        },
+        "required": [
+         "summary"
+        ]
+       }
+      }
+     }
+    ],
+    "tool_choice": "auto",
+    "max_tokens": 1024,
+    "temperature": 0.7,
+    "top_p": 0.9
+   },
+   "response": {
+    "id": "bf1fa21714af8bd8ffccead55f69a0b6",
+    "object": "chat.completion",
+    "created": 1794197638,
+    "model": "minimax/minimax-m3.1-flash",
+    "choices": [
+     {
+      "index": 0,
+      "message": {
+       "role": "assistant",
+       "content": "I'll create the script using a single bash call with a heredoc.",
+       "tool_calls": [
+        {
+         "index": 0,
+         "id": "call_01a1be834e4d75eab2a32339",
+         "type": "function",
+         "function": {
+          "name": "bash",
+          "arguments": "{\"command\":\"cat > /work/count.py << 'EOF'\\n#!/usr/bin/env python3\\n\\\"\\\"\\\"Print the number of lines in /work/records.jsonl.\\\"\\\"\\\"\\n\\nfrom pathlib import Path\\n\\nRECORDS = Path(\\\"/work/records.jsonl\\\")\\n\\n\\ndef main() -> None:\\n    with RECORDS.open(\\\"r\\\", encoding=\\\"utf-8\\\") as f:\\n        n = sum(1 for _ in f)\\n    print(n)\\n\\n\\nif __name__ == \\\"__main__\\\":\\n    main()\\nEOF\\nchmod +x /work/count.py\"}"
+         }
+        }
+       ]
+      },
+      "finish_reason": "tool_calls"
+     }
+    ],
+    "usage": {
+     "prompt_tokens": 516,
+     "completion_tokens": 148,
+     "total_tokens": 664,
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 128,
+      "cache_write_tokens": 0,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "text_tokens": 0,
+      "image_tokens": 0,
+      "video_tokens": 0
+     },
+     "completion_tokens_details": {
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0,
+      "text_tokens": 0,
+      "image_tokens": 0,
+      "video_tokens": 0
+     }
+    },
+    "system_fingerprint": ""
+   }
+  }
+ ]
+}

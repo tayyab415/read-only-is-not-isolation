@@ -1,0 +1,97 @@
+{
+  "utc": "2026-11-09T02:49:13.051736+00:00",
+  "passed": true,
+  "native_audit_rerun": [
+    {
+      "configuration": "separate",
+      "split": "holdout",
+      "trials": 1000,
+      "checks": 863824,
+      "passed": true,
+      "failures": [],
+      "failure_count": 0,
+      "client_requests": 85000
+    },
+    {
+      "configuration": "sham",
+      "split": "holdout",
+      "trials": 1000,
+      "checks": 632292,
+      "passed": true,
+      "failures": [],
+      "failure_count": 0,
+      "client_requests": 85018
+    },
+    {
+      "configuration": "aa",
+      "split": "holdout",
+      "trials": 1000,
+      "checks": 216016,
+      "passed": true,
+      "failures": [],
+      "failure_count": 0,
+      "client_requests": 21000
+    },
+    {
+      "configuration": "immutable",
+      "split": "holdout",
+      "trials": 1000,
+      "checks": 523952,
+      "passed": true,
+      "failures": [],
+      "failure_count": 0,
+      "client_requests": 85000
+    }
+  ],
+  "numerical_checks": {
+    "separate": {
+      "counts_match": true,
+      "monte_carlo_consistent": true,
+      "correct": 942,
+      "trials": 1000,
+      "tpr": 0.922,
+      "fpr": 0.038,
+      "exact_conditional_randomization_p": 2.2980701187078268e-222,
+      "primary_monte_carlo_p": 9.999000099990002e-05,
+      "monte_carlo_comparison_tolerance": 0.00019998000199980003
+    },
+    "sham": {
+      "counts_match": true,
+      "monte_carlo_consistent": true,
+      "correct": 657,
+      "trials": 1000,
+      "tpr": 0.684,
+      "fpr": 0.37,
+      "exact_conditional_randomization_p": 1.0283163367473278e-23,
+      "primary_monte_carlo_p": 9.999000099990002e-05,
+      "monte_carlo_comparison_tolerance": 0.0001999800021601369
+    },
+    "aa": {
+      "counts_match": true,
+      "monte_carlo_consistent": true,
+      "correct": 517,
+      "trials": 1000,
+      "tpr": 0.65,
+      "fpr": 0.616,
+      "exact_conditional_randomization_p": 0.1473712164072276,
+      "primary_monte_carlo_p": 0.147985201479852,
+      "monte_carlo_comparison_tolerance": 0.017923759295782046
+    },
+    "immutable": {
+      "counts_match": true,
+      "monte_carlo_consistent": true,
+      "correct": 562,
+      "trials": 1000,
+      "tpr": 0.212,
+      "fpr": 0.088,
+      "exact_conditional_randomization_p": 2.6442935326329663e-08,
+      "primary_monte_carlo_p": 9.999000099990002e-05,
+      "monte_carlo_comparison_tolerance": 0.0002081106438298004
+    }
+  },
+  "aa_nominal_decision_matches_report": true,
+  "primary_aa_null_passed": true,
+  "holdout_results_sha256": "fce05bd604bdc2994d1a033d0b0e36e30a37a5949ad7565c25f35e26d1f735a9",
+  "verification_freeze_sha256": "83ed49795468c7ba1ca6961d7fc7c64aa5cad64adf423e8121f20ad974b66005",
+  "scope": "Reuses frozen features/models and native auditor. Independent confusion arithmetic and exact classifier randomization. Does not independently reimplement every confirmatory feature test or replace the primary reporting family."
+}

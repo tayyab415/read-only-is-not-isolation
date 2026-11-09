@@ -1,0 +1,45 @@
+{"run_id": "p9-s1-equal", "trial": "s0000", "retained": 1}
+{"run_id": "p9-s1-equal", "trial": "s0001", "retained": 2}
+{"run_id": "p9-s1-equal", "trial": "s0002", "retained": 3}
+{"run_id": "p9-s1-equal", "trial": "s0003", "retained": 4}
+{"run_id": "p9-s1-equal", "trial": "s0004", "retained": 5}
+{"run_id": "p9-s1-equal", "trial": "s0005", "retained": 6}
+{"run_id": "p9-s1-equal", "trial": "s0006", "retained": 7}
+{"run_id": "p9-s1-equal", "trial": "s0007", "retained": 8}
+{"run_id": "p9-s1-distinct", "trial": "s0000", "retained": 1}
+{"run_id": "p9-s1-distinct", "trial": "s0001", "retained": 2}
+{"run_id": "p9-s1-distinct", "trial": "s0002", "retained": 3}
+{"run_id": "p9-s1-distinct", "trial": "s0003", "retained": 4}
+{"run_id": "p9-s1-distinct", "trial": "s0004", "retained": 5}
+{"run_id": "p9-s1-distinct", "trial": "s0005", "retained": 6}
+{"run_id": "p9-s1-distinct", "trial": "s0006", "retained": 7}
+{"run_id": "p9-s1-distinct", "trial": "s0007", "retained": 8}
+{"run_id": "p9-s1-aa-equal", "trial": "s0000", "retained": 1}
+{"run_id": "p9-s1-aa-equal", "trial": "s0001", "retained": 2}
+{"run_id": "p9-s1-aa-equal", "trial": "s0002", "retained": 3}
+{"run_id": "p9-s1-aa-equal", "trial": "s0003", "retained": 4}
+{"run_id": "p9-s1-aa-equal", "trial": "s0004", "retained": 5}
+{"run_id": "p9-s1-aa-equal", "trial": "s0005", "retained": 6}
+{"run_id": "p9-s1-aa-equal", "trial": "s0006", "retained": 7}
+{"run_id": "p9-s1-aa-equal", "trial": "s0007", "retained": 8}
+{"run_id": "p9-s1-aa-distinct", "trial": "s0000", "retained": 1}
+{"run_id": "p9-s1-aa-distinct", "trial": "s0001", "retained": 2}
+{"run_id": "p9-s1-aa-distinct", "trial": "s0002", "retained": 3}
+{"run_id": "p9-s1-aa-distinct", "trial": "s0003", "retained": 4}
+{"run_id": "p9-s1-aa-distinct", "trial": "s0004", "retained": 5}
+{"run_id": "p9-s1-aa-distinct", "trial": "s0005", "retained": 6}
+{"run_id": "p9-s1-aa-distinct", "trial": "s0006", "retained": 7}
+{"run_id": "p9-s1-aa-distinct", "trial": "s0007", "retained": 8}
+Traceback (most recent call last):
+  File "/home/ubuntu/workspaces/artifactory-lab/next/P9-content/sequence.py", line 68, in <module>
+    main()
+  File "/home/ubuntu/workspaces/artifactory-lab/next/P9-content/sequence.py", line 49, in main
+    runs = [audit.audit_arm(HERE / "data" / arm, arm, split) for arm in p2b.ARMS]
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/workspaces/artifactory-lab/next/P9-content/audit.py", line 123, in audit_arm
+    content = validate_public_evidence(public, trials, json.loads((folder / f'{split}-native-before.json').read_text()), json.loads((folder / f'{split}-native-after.json').read_text()))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/workspaces/artifactory-lab/next/P9-content/native_storage.py", line 166, in validate_public_evidence
+    headers = {key.lower(): value for key, value in row["headers"].items()}
+                                                    ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'items'

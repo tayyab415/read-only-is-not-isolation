@@ -1,0 +1,141 @@
++ cd /home/ubuntu/s1
++ export CUDA_HOME=/usr/local/cuda
++ CUDA_HOME=/usr/local/cuda
++ export PATH=/usr/local/cuda/bin:/home/ubuntu/venv/bin:/usr/local/cuda-13.2/bin:/usr/local/cuda-13.2/include:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
++ PATH=/usr/local/cuda/bin:/home/ubuntu/venv/bin:/usr/local/cuda-13.2/bin:/usr/local/cuda-13.2/include:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
++ for s in vllm vllm2 gw9001 gw9002 gw9003 gw9004 gw9101 gw9102
++ tmux kill-session -t vllm
++ for s in vllm vllm2 gw9001 gw9002 gw9003 gw9004 gw9101 gw9102
++ tmux kill-session -t vllm2
++ true
++ for s in vllm vllm2 gw9001 gw9002 gw9003 gw9004 gw9101 gw9102
++ tmux kill-session -t gw9001
++ true
++ for s in vllm vllm2 gw9001 gw9002 gw9003 gw9004 gw9101 gw9102
++ tmux kill-session -t gw9002
++ for s in vllm vllm2 gw9001 gw9002 gw9003 gw9004 gw9101 gw9102
++ tmux kill-session -t gw9003
++ true
++ for s in vllm vllm2 gw9001 gw9002 gw9003 gw9004 gw9101 gw9102
++ tmux kill-session -t gw9004
++ true
++ for s in vllm vllm2 gw9001 gw9002 gw9003 gw9004 gw9101 gw9102
++ tmux kill-session -t gw9101
++ true
++ for s in vllm vllm2 gw9001 gw9002 gw9003 gw9004 gw9101 gw9102
++ tmux kill-session -t gw9102
++ true
++ sleep 5
++ tmux new-session -d -s vllm '~/venv/bin/vllm serve Qwen/Qwen2.5-1.5B-Instruct --host 127.0.0.1 --port 8000 --enable-prefix-caching --enable-prompt-tokens-details --gpu-memory-utilization 0.42 --max-model-len 8192 --seed 0 2>&1 | tee ~/s1/logs/vllm-s4-a.log'
++ curl -sf http://127.0.0.1:8000/health
++ sleep 2
++ curl -sf http://127.0.0.1:8000/health
++ sleep 2
++ curl -sf http://127.0.0.1:8000/health
++ sleep 2
++ curl -sf http://127.0.0.1:8000/health
++ sleep 2
++ curl -sf http://127.0.0.1:8000/health
++ sleep 2
++ curl -sf http://127.0.0.1:8000/health
++ sleep 2
++ curl -sf http://127.0.0.1:8000/health
++ sleep 2
++ curl -sf http://127.0.0.1:8000/health
++ sleep 2
++ curl -sf http://127.0.0.1:8000/health
++ sleep 2
++ curl -sf http://127.0.0.1:8000/health
++ sleep 2
++ curl -sf http://127.0.0.1:8000/health
++ sleep 2
++ curl -sf http://127.0.0.1:8000/health
++ sleep 2
++ curl -sf http://127.0.0.1:8000/health
++ sleep 2
++ curl -sf http://127.0.0.1:8000/health
++ sleep 2
++ curl -sf http://127.0.0.1:8000/health
++ sleep 2
++ curl -sf http://127.0.0.1:8000/health
++ sleep 2
++ curl -sf http://127.0.0.1:8000/health
++ sleep 2
++ curl -sf http://127.0.0.1:8000/health
++ sleep 2
++ curl -sf http://127.0.0.1:8000/health
++ tmux new-session -d -s vllm2 '~/venv/bin/vllm serve Qwen/Qwen2.5-1.5B-Instruct --host 127.0.0.1 --port 8001 --enable-prefix-caching --enable-prompt-tokens-details --gpu-memory-utilization 0.42 --max-model-len 8192 --seed 0 2>&1 | tee ~/s1/logs/vllm-s4-b.log'
++ curl -sf http://127.0.0.1:8001/health
++ sleep 2
++ curl -sf http://127.0.0.1:8001/health
++ sleep 2
++ curl -sf http://127.0.0.1:8001/health
++ sleep 2
++ curl -sf http://127.0.0.1:8001/health
++ sleep 2
++ curl -sf http://127.0.0.1:8001/health
++ sleep 2
++ curl -sf http://127.0.0.1:8001/health
++ sleep 2
++ curl -sf http://127.0.0.1:8001/health
++ sleep 2
++ curl -sf http://127.0.0.1:8001/health
++ sleep 2
++ curl -sf http://127.0.0.1:8001/health
++ sleep 2
++ curl -sf http://127.0.0.1:8001/health
++ sleep 2
++ curl -sf http://127.0.0.1:8001/health
++ sleep 2
++ curl -sf http://127.0.0.1:8001/health
++ sleep 2
++ curl -sf http://127.0.0.1:8001/health
++ sleep 2
++ curl -sf http://127.0.0.1:8001/health
++ sleep 2
++ curl -sf http://127.0.0.1:8001/health
++ sleep 2
++ curl -sf http://127.0.0.1:8001/health
++ sleep 2
++ curl -sf http://127.0.0.1:8001/health
++ sleep 2
++ curl -sf http://127.0.0.1:8001/health
++ sleep 2
++ curl -sf http://127.0.0.1:8001/health
++ tmux new-session -d -s gw9101 '~/venv/bin/python ~/s1/gateway.py --policy salted --port 9101 --upstream http://127.0.0.1:8000 --log ~/s1/logs/gw-s4-a.jsonl'
++ tmux new-session -d -s gw9102 '~/venv/bin/python ~/s1/gateway.py --policy salted --port 9102 --upstream http://127.0.0.1:8001 --log ~/s1/logs/gw-s4-b.jsonl'
++ sleep 5
++ nvidia-smi --query-compute-apps=pid,used_memory --format=csv
++ tee /home/ubuntu/s1/logs/s4-gpu-processes.csv
+pid, used_gpu_memory [MiB]
+19085, 9280 MiB
+19357, 9280 MiB
++ PY=/home/ubuntu/venv/bin/python
++ /home/ubuntu/venv/bin/python trials_s4.py run --split calibration
+wrote /home/ubuntu/s1/data/trials-s4-calibration.jsonl
++ /home/ubuntu/venv/bin/python trials_s4.py freeze
+{
+ "phase": "s4",
+ "thresholds": {
+  "T100_sep": {
+   "threshold_ms": 37.969331,
+   "low_means_one": false,
+   "calibration_accuracy": 1.0,
+   "n": 200
+  },
+  "T200_sep": {
+   "threshold_ms": 38.244457,
+   "low_means_one": false,
+   "calibration_accuracy": 1.0,
+   "n": 200
+  }
+ },
+ "frozen_utc_ns": 1794189116110274215,
+ "calibration_sha256": "01a51dff1584a590eb5358852135b65d8ca6826de43a1a209f7e1e7824787126",
+ "trials_s4_py_sha256": "78aa2aa7b30e437345cea38d7d37ea4f8bf33c1352ab80db53b150c93e2982a8"
+}
++ /home/ubuntu/venv/bin/python trials_s4.py run --split holdout
+wrote /home/ubuntu/s1/data/trials-s4-holdout.jsonl
++ echo S4_DONE
+S4_DONE
+EXIT=0

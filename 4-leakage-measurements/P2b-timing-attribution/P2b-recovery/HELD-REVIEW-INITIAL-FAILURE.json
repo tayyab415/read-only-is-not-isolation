@@ -1,0 +1,7 @@
+{
+  "utc": "2026-11-09T05:09:43.182570+00:00",
+  "returncode": 1,
+  "stdout": "",
+  "stderr": "Traceback (most recent call last):\n  File \"$LAB_ROOT/evidence/P2b-recovery/review_held.py\", line 179, in <module>\n    main()\n  File \"$LAB_ROOT/evidence/P2b-recovery/review_held.py\", line 134, in main\n    selected = [g for g in server[\"gateway_log\"] if g[\"marker\"] in wanted]\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"$LAB_ROOT/evidence/P2b-recovery/review_held.py\", line 134, in <listcomp>\n    selected = [g for g in server[\"gateway_log\"] if g[\"marker\"] in wanted]\n                                                    ~^^^^^^^^^^\nKeyError: 'marker'\n",
+  "source_sha256": "d129c7da3bb70ef59ffd0e97ba72befb8255dce58ae1a23170d12469becc266a"
+}

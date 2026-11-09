@@ -1,0 +1,27 @@
+Looking in indexes: http://127.0.0.1:64627/simple/
+Collecting rich==13.9.4
+  Downloading http://127.0.0.1:64627/files/6049d5e6ec054bf2779ab3358186963bac2ea89175919d699e378b99738c2a90/rich-13.9.4-py3-none-any.whl (242 kB)
+Collecting markdown-it-py>=2.2.0 (from rich==13.9.4)
+  Downloading http://127.0.0.1:64627/files/355216845c60bd96232cd8d8c40e8f9765cc86f46880e43a8fd22dc1a1a8cab1/markdown_it_py-3.0.0-py3-none-any.whl (87 kB)
+Collecting pygments<3.0.0,>=2.13.0 (from rich==13.9.4)
+  Downloading http://127.0.0.1:64627/files/9ea1544ad55cecf4b8242fab6dd35a93bbce657034b0611ee383099054ab6d8c/pygments-2.19.1-py3-none-any.whl (1.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 3.7 GB/s  0:00:00
+Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich==13.9.4)
+  Downloading http://127.0.0.1:64627/files/84008a41e51615a49fc9966191ff91509e3c40b939176e643fd50a5c2196b8f8/mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+Installing collected packages: pygments, mdurl, markdown-it-py, rich
+
+Successfully installed markdown-it-py-3.0.0 mdurl-0.1.2 pygments-2.19.1 rich-13.9.4
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+spyder 5.4.3 requires pyqt5<5.16, which is not installed.
+spyder 5.4.3 requires pyqtwebengine<5.16, which is not installed.
+mdit-py-plugins 0.3.0 requires markdown-it-py<3.0.0,>=1.0.0, but you have markdown-it-py 3.0.0 which is incompatible.
+streamlit 1.39.0 requires packaging<25,>=20, but you have packaging 25.0 which is incompatible.
+streamlit 1.39.0 requires pillow<11,>=7.1.0, but you have pillow 11.3.0 which is incompatible.
+streamlit 1.39.0 requires protobuf<6,>=3.20, but you have protobuf 6.33.5 which is incompatible.
+boxmot 22.0.0 requires rich>=15.0.0, but you have rich 13.9.4 which is incompatible.
+bigframes 2.21.0 requires google-cloud-bigquery[bqstorage,pandas]>=3.31.0, but you have google-cloud-bigquery 3.17.0 which is incompatible.
+gradio 6.0.0 requires gradio-client==2.0.0-dev.3, but you have gradio-client 2.5.0 which is incompatible.
+gradio 6.0.0 requires pydantic<=2.12.4,>=2.11.10, but you have pydantic 2.12.5 which is incompatible.
+soccerdata 1.8.7 requires packaging<25.0,>=24.1, but you have packaging 25.0 which is incompatible.
+spyder 5.4.3 requires ipython!=8.10.0,!=8.8.0,!=8.9.0,<9.0.0,>=7.31.1, but you have ipython 9.5.0 which is incompatible.
+spyder 5.4.3 requires jedi<0.19.0,>=0.17.2, but you have jedi 0.19.2 which is incompatible.

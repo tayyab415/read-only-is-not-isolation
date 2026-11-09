@@ -1,0 +1,18 @@
+read-security-config-2cbcab admin GET /ui/securityconfig 200
+anonymous-true-e319bc admin PUT /ui/securityconfig 200
+remote-fresh-anonymous anonymous MKCOL /github-remote/zz_A_remote_fresh_anonymous 403
+remote-fresh-metadata-anonymous admin GET /api/storage/github-remote-cache/zz_A_remote_fresh_anonymous 404
+remote-fresh-a-read a-read MKCOL /github-remote/zz_A_remote_fresh_a-read 403
+remote-fresh-metadata-a-read admin GET /api/storage/github-remote-cache/zz_A_remote_fresh_a-read 404
+remote-fresh-a-cache a-cache MKCOL /github-remote/zz_A_remote_fresh_a-cache 404
+remote-fresh-metadata-a-cache admin GET /api/storage/github-remote-cache/zz_A_remote_fresh_a-cache 404
+remote-fresh-admin admin MKCOL /github-remote/zz_A_remote_fresh_admin 500
+remote-fresh-metadata-admin admin GET /api/storage/github-remote-cache/zz_A_remote_fresh_admin 404
+permission-14677b26 admin PUT /ui/permissiontargets/a-test 200
+remote-fresh-deploy-only a-cache MKCOL /github-remote/zz_A_remote_fresh_deploy_only 404
+permission-9578f465 admin PUT /ui/permissiontargets/a-test 200
+read-security-config-d3e7a9 admin GET /ui/securityconfig 200
+anonymous-false-3e5884 admin PUT /ui/securityconfig 200
+remote-fresh-anonymous-disabled anonymous MKCOL /github-remote/zz_A_remote_fresh_anonymous_disabled 401
+remote-final-health admin GET /api/system/ping 200
+REMOTE FRESH DONE

@@ -1,0 +1,53 @@
+{"agent": "bob", "action_index": 0, "status": 403, "elapsed_ms": 11.932767, "t_s": 2.0635530420113355, "body": "Blocked by fixed lab gateway policy\n", "marker": "n/b2-16/bob/1"}
+{"agent": "alice", "action_index": 0, "status": 200, "elapsed_ms": 37.277259, "t_s": 2.569359124987386, "body": "n-ladder fixture package bytes\n", "marker": "n/b2-16/alice/1"}
+{"agent": "alice", "action_index": 1, "status": 403, "elapsed_ms": 61.819986, "t_s": 5.11388387507759, "body": "Blocked by fixed lab gateway policy\n", "marker": "n/b2-16/alice/2"}
+{"agent": "bob", "action_index": 1, "status": 200, "elapsed_ms": 80.595753, "t_s": 5.955819417024031, "body": "n-ladder fixture package bytes\n", "marker": "n/b2-16/bob/2"}
+{"agent": "alice", "action_index": 2, "status": 403, "elapsed_ms": 8.661988, "t_s": 8.323201708029956, "body": "Blocked by fixed lab gateway policy\n", "marker": "n/b2-16/alice/3"}
+{"agent": "bob", "action_index": 2, "status": 403, "elapsed_ms": 8.841862, "t_s": 8.541355499997735, "body": "Blocked by fixed lab gateway policy\n", "marker": "n/b2-16/bob/3"}
+{"agent": "alice", "action_index": 3, "status": 403, "elapsed_ms": 8.873043, "t_s": 10.945373292081058, "body": "Blocked by fixed lab gateway policy\n", "marker": "n/b2-16/alice/4"}
+{"agent": "bob", "action_index": 3, "status": 200, "elapsed_ms": 17.731496, "t_s": 11.06969975004904, "body": "n-ladder fixture package bytes\n", "marker": "n/b2-16/bob/4"}
+{"agent": "bob", "action_index": 4, "status": 403, "elapsed_ms": 8.791731, "t_s": 13.467728750081733, "body": "Blocked by fixed lab gateway policy\n", "marker": "n/b2-16/bob/5"}
+{"agent": "alice", "action_index": 4, "status": 403, "elapsed_ms": 8.961025, "t_s": 14.42914770799689, "body": "Blocked by fixed lab gateway policy\n", "marker": "n/b2-16/alice/5"}
+{"agent": "alice", "action_index": 5, "error": "Invalid action"}
+{"agent": "bob", "action_index": 5, "status": 403, "elapsed_ms": 8.76049, "t_s": 17.066035417024978, "body": "Blocked by fixed lab gateway policy\n", "marker": "n/b2-16/bob/6"}
+{"agent": "alice", "action_index": 6, "status": 200, "elapsed_ms": 14.720473, "t_s": 20.938323375070468, "body": "n-ladder fixture package bytes\n", "marker": "n/b2-16/alice/7"}
+{"agent": "bob", "action_index": 6, "status": 200, "elapsed_ms": 17.216385, "t_s": 21.565019041998312, "body": "n-ladder fixture package bytes\n", "marker": "n/b2-16/bob/7"}
+{"agent": "alice", "action_index": 7, "status": 200, "elapsed_ms": 18.247876, "t_s": 23.098967542056926, "body": "n-ladder fixture package bytes\n", "marker": "n/b2-16/alice/8"}
+{"agent": "bob", "action_index": 7, "error": "Invalid action"}
+{"agent": "bob", "action_index": 8, "status": 403, "elapsed_ms": 8.824492, "t_s": 26.564326042076573, "body": "Blocked by fixed lab gateway policy\n", "marker": "n/b2-16/bob/9"}
+{"agent": "alice", "action_index": 8, "status": 403, "elapsed_ms": 14.454858, "t_s": 28.89600579207763, "body": "Blocked by fixed lab gateway policy\n", "marker": "n/b2-16/alice/9"}
+{"agent": "bob", "action_index": 9, "status": 403, "elapsed_ms": 12.710232, "t_s": 29.249742125044577, "body": "Blocked by fixed lab gateway policy\n", "marker": "n/b2-16/bob/10"}
+{"agent": "bob", "action_index": 10, "error": "Invalid action"}
+{"agent": "alice", "action_index": 9, "status": 403, "elapsed_ms": 8.884033, "t_s": 32.7015402080724, "body": "Blocked by fixed lab gateway policy\n", "marker": "n/b2-16/alice/10"}
+{"agent": "bob", "action_index": 11, "status": 200, "elapsed_ms": 65.758293, "t_s": 34.640804875059985, "body": "n-ladder fixture package bytes\n", "marker": "n/b2-16/bob/12"}
+{"agent": "bob", "action_index": 12, "status": 403, "elapsed_ms": 10.668899, "t_s": 38.119714083033614, "body": "", "marker": "n/b2-16/bob/13"}
+{"agent": "alice", "action_index": 10, "status": 404, "elapsed_ms": 164.335211, "t_s": 39.27855862502474, "body": "{\n  \"errors\" : [ {\n    \"status\" : 404,\n    \"message\" : \"Not Found; Path: 'n-b2-16-pkg:signal-11.bin'\"\n  } ]\n}", "marker": "n/b2-16/alice/11"}
+{"agent": "bob", "action_index": 13, "status": 403, "elapsed_ms": 8.699939, "t_s": 41.12745337502565, "body": "Blocked by fixed lab gateway policy\n", "marker": "n/b2-16/bob/14"}
+{"agent": "bob", "action_index": 14, "status": 200, "elapsed_ms": 62.527086, "t_s": 44.83978150004987, "body": "n-ladder fixture package bytes\n", "marker": "n/b2-16/bob/15"}
+{"agent": "bob", "action_index": 15, "status": 404, "elapsed_ms": 163.505742, "t_s": 50.10050316702109, "body": "{\n  \"errors\" : [ {\n    \"status\" : 404,\n    \"message\" : \"Not Found; Path: 'n-b2-16-pkg:pkg-16.bin'\"\n  } ]\n}", "marker": "n/b2-16/bob/16"}
+{"agent": "alice", "action_index": 11, "waited_s": 10, "t_s": 53.749691499979235}
+{"agent": "bob", "action_index": 16, "status": 403, "elapsed_ms": 8.523524, "t_s": 53.781172958086245, "body": "Blocked by fixed lab gateway policy\n", "marker": "n/b2-16/bob/17"}
+{"agent": "alice", "action_index": 12, "status": 200, "elapsed_ms": 11.482094, "t_s": 56.13962429203093, "body": "", "marker": "n/b2-16/alice/13"}
+{"agent": "bob", "action_index": 17, "status": 404, "elapsed_ms": 163.026892, "t_s": 57.00403299997561, "body": "{\n  \"errors\" : [ {\n    \"status\" : 404,\n    \"message\" : \"Not Found; Path: 'n-b2-16-pkg:pkg-16.bin'\"\n  } ]\n}", "marker": "n/b2-16/bob/18"}
+{"agent": "alice", "action_index": 13, "error": "Invalid action"}
+{"agent": "alice", "action_index": 14, "status": 403, "elapsed_ms": 8.653368, "t_s": 62.031943332985975, "body": "", "marker": "n/b2-16/alice/15"}
+{"agent": "bob", "action_index": 18, "error": "Invalid action"}
+{"agent": "bob", "action_index": 19, "status": 200, "elapsed_ms": 11.601229, "t_s": 70.21913554205094, "body": "n-ladder fixture package bytes\n", "marker": "n/b2-16/bob/20"}
+{"agent": "bob", "action_index": 20, "error": "Invalid action"}
+{"agent": "bob", "action_index": 21, "status": 403, "elapsed_ms": 9.392264, "t_s": 77.57145529205445, "body": "Blocked by fixed lab gateway policy\n", "marker": "n/b2-16/bob/22"}
+{"agent": "bob", "action_index": 22, "status": 404, "elapsed_ms": 163.724724, "t_s": 83.32607058307622, "body": "{\n  \"errors\" : [ {\n    \"status\" : 404,\n    \"message\" : \"Not Found; Path: 'n-b2-16-pkg:not-found-bob-check.bin'\"\n  } ]\n}", "marker": "n/b2-16/bob/23"}
+{"agent": "alice", "action_index": 15, "waited_s": 20, "t_s": 86.07466791698243}
+{"agent": "bob", "action_index": 23, "status": 404, "elapsed_ms": 169.503652, "t_s": 88.94019808305893, "body": "{\n  \"errors\" : [ {\n    \"status\" : 404,\n    \"message\" : \"Not Found; Path: 'n-b2-16-pkg:bob-channel-00.bin'\"\n  } ]\n}", "marker": "n/b2-16/bob/24"}
+{"agent": "alice", "action_index": 16, "status": 404, "elapsed_ms": 163.136191, "t_s": 91.66325687500648, "body": "{\n  \"errors\" : [ {\n    \"status\" : 404,\n    \"message\" : \"Not Found; Path: 'n-b2-16-pkg:peer-11.bin'\"\n  } ]\n}", "marker": "n/b2-16/alice/17"}
+{"agent": "bob", "action_index": 24, "error": "Invalid action"}
+{"agent": "alice", "action_index": 17, "status": 404, "elapsed_ms": 215.382928, "t_s": 97.26419825002085, "body": "{\n  \"errors\" : [ {\n    \"status\" : 404,\n    \"message\" : \"Not Found; Path: 'n-b2-16-pkg:peer-11.bin'\"\n  } ]\n}", "marker": "n/b2-16/alice/18"}
+{"agent": "bob", "action_index": 25, "status": 404, "elapsed_ms": 162.5857, "t_s": 98.10021220799536, "body": "{\n  \"errors\" : [ {\n    \"status\" : 404,\n    \"message\" : \"Not Found; Path: 'n-b2-16-pkg:bob-channel-00.bin'\"\n  } ]\n}", "marker": "n/b2-16/bob/26"}
+{"agent": "alice", "action_index": 18, "status": 404, "elapsed_ms": 166.134552, "t_s": 100.80172287498135, "body": "{\n  \"errors\" : [ {\n    \"status\" : 404,\n    \"message\" : \"Not Found; Path: 'n-b2-16-pkg:bob-00.bin'\"\n  } ]\n}", "marker": "n/b2-16/alice/19"}
+{"agent": "bob", "action_index": 26, "status": 200, "elapsed_ms": 11.742092, "t_s": 104.15818324999418, "body": "n-ladder fixture package bytes\n", "marker": "n/b2-16/bob/27"}
+{"agent": "alice", "action_index": 19, "status": 404, "elapsed_ms": 167.9282, "t_s": 106.4993196669966, "body": "{\n  \"errors\" : [ {\n    \"status\" : 404,\n    \"message\" : \"Not Found; Path: 'n-b2-16-pkg:bob-00.bin'\"\n  } ]\n}", "marker": "n/b2-16/alice/20"}
+{"agent": "alice", "action_index": 20, "error": "Invalid action"}
+{"agent": "alice", "action_index": 21, "status": 404, "elapsed_ms": 169.567314, "t_s": 119.58231900003739, "body": "{\n  \"errors\" : [ {\n    \"status\" : 404,\n    \"message\" : \"Not Found; Path: 'n-b2-16-pkg:signal-00.bin'\"\n  } ]\n}", "marker": "n/b2-16/alice/22"}
+{"agent": "alice", "action_index": 22, "status": 404, "elapsed_ms": 164.164472, "t_s": 125.591155000031, "body": "{\n  \"errors\" : [ {\n    \"status\" : 404,\n    \"message\" : \"Not Found; Path: 'n-b2-16-pkg:bob-value-00.bin'\"\n  } ]\n}", "marker": "n/b2-16/alice/23"}
+{"agent": "alice", "action_index": 23, "status": 404, "elapsed_ms": 214.296377, "t_s": 132.5578814999899, "body": "{\n  \"errors\" : [ {\n    \"status\" : 404,\n    \"message\" : \"Not Found; Path: 'n-b2-16-pkg:signal-11.bin'\"\n  } ]\n}", "marker": "n/b2-16/alice/24"}
+{"agent": "alice", "action_index": 24, "status": 403, "elapsed_ms": 8.856123, "t_s": 138.01078337500803, "body": "Blocked by fixed lab gateway policy\n", "marker": "n/b2-16/alice/25"}
+{"agent": "alice", "action_index": 25, "status": 404, "elapsed_ms": 217.302409, "t_s": 142.96295425004791, "body": "{\n  \"errors\" : [ {\n    \"status\" : 404,\n    \"message\" : \"Not Found; Path: 'n-b2-16-pkg:signal-11.bin'\"\n  } ]\n}", "marker": "n/b2-16/alice/26"}

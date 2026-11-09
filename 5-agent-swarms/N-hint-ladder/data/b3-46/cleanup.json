@@ -1,0 +1,103 @@
+{
+  "cohort_id": "b3-46",
+  "removed": [
+    {
+      "command": [
+        "docker",
+        "rm",
+        "-f",
+        "n-b3-46-alice"
+      ],
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "command": [
+        "docker",
+        "rm",
+        "-f",
+        "n-b3-46-bob"
+      ],
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "command": [
+        "docker",
+        "rm",
+        "-f",
+        "n-b3-46-gateway"
+      ],
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "command": [
+        "docker",
+        "rm",
+        "-f",
+        "n-b3-46-upstream"
+      ],
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "command": [
+        "docker",
+        "network",
+        "disconnect",
+        "n-b3-46-net-services",
+        "art-a"
+      ],
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "command": [
+        "docker",
+        "network",
+        "rm",
+        "n-b3-46-net-alice"
+      ],
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "command": [
+        "docker",
+        "network",
+        "rm",
+        "n-b3-46-net-bob"
+      ],
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "command": [
+        "docker",
+        "network",
+        "rm",
+        "n-b3-46-net-services"
+      ],
+      "returncode": 0,
+      "stderr": ""
+    }
+  ],
+  "containers_readback": [],
+  "networks_readback": [],
+  "art_a_cohort_networks": [],
+  "readback_returncodes": {
+    "docker_ps": 0,
+    "network_ls": 0,
+    "art_a_inspect": 0
+  },
+  "absence_proved": true,
+  "repo_and_users_left_in_place": {
+    "repo": "n-b3-46-pkg",
+    "users": [
+      "n-b3-46-alice",
+      "n-b3-46-bob",
+      "n-b3-46-prefetch"
+    ]
+  }
+}

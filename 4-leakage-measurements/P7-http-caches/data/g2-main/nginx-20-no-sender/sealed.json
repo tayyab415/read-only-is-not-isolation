@@ -1,0 +1,29 @@
+{
+  "run_id": "p7-g2-nginx-20-no-sender-hold",
+  "product": "nginx",
+  "delay_ms": 20,
+  "arm": "no-sender",
+  "split": "holdout",
+  "scheduled": 16,
+  "completed": 16,
+  "complete": true,
+  "source_freeze_sha256": "e29bc3a73fb81cce237872d1cc61d771109b4a6ae424d70b8fe0cd1e70e84f5a",
+  "model_freeze_sha256": "7816def9ab488d6057bf5323d47d7c4f155a0f2f706aa8db7befb0a9b2fc247d",
+  "cleanup_absence_proved": true,
+  "request_ledger_sha256_at_seal": "494557e8a5b76e2d4adc61f5edf7183e9629099db69d58d995a2e39e2ecc620a",
+  "sha256": {
+    "cache-stop.json": "0222bbda55396d6477a73f69c6527c18e10574c912a34f1a0921db614c5aa211",
+    "cleanup.json": "975c6062cd9f8f7cc3617406041cca37bab9c8dababea2fc2af701f6a0978868",
+    "p7-g2-nginx-20-no-sender-hold-cache/cache.conf": "3f58a9d481691960b36fb68d593c2171e331849067c0bc0882bbb09c673e4a36",
+    "p7-g2-nginx-20-no-sender-hold-cache/origins.json": "76e26341c95fbc68fa2b7f5b717dea19c1acd87c149f627547a0cd3e739b2de4",
+    "p7-g2-nginx-20-no-sender-hold-cache/parse.txt": "4149afae91ae722259614e1a924368e0bad8f3e6e926680ae375b2d8cc782bb1",
+    "p7-g2-nginx-20-no-sender-hold-cache/stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "p7-g2-nginx-20-no-sender-hold-cache/stdout.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "provision.json": "6426ddcba53f80da6cffa2c3d54145f8d241b6acdb36c5e2c116904700cd883c",
+    "request-reservations.jsonl": "494557e8a5b76e2d4adc61f5edf7183e9629099db69d58d995a2e39e2ecc620a",
+    "requests.jsonl": "f50ea77a14c982319f613ace3b7eaa3f4abf8f0e7093164cba142f909c3aec01",
+    "schedule.json": "09ffd33b4363af04e32493ca13d1620f75b4d25f357874dae13f95f4d254bce7",
+    "server.json": "3692916f11f38bb7ebdffcd6fc7ca070df55abecb3be2230ab79ff5396e3816e",
+    "trials.jsonl": "668eb91771d2879df2a79e6568434339fdde5abebf1b51cab2c0522e59c50b77"
+  }
+}

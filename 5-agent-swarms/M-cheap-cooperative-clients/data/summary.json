@@ -1,0 +1,33 @@
+{
+  "reserved_ceiling_usd": 7.438199999999995,
+  "model_calls": 96,
+  "earlier_logging_failure_calls": 2,
+  "earlier_logging_failure_maximum_reservation_usd": 0.1518,
+  "completed_model_calls": 96,
+  "usage": {
+    "inputTokens": 53753,
+    "outputTokens": 24108,
+    "cacheReadInputTokens": 0,
+    "cacheWriteInputTokens": 0
+  },
+  "luna_reference_rate_estimate_usd": 0.0174293,
+  "settled_aws_invoice": false,
+  "cohorts": {
+    "shared": {
+      "alice": {
+        "status": "action_limit"
+      },
+      "bob": {
+        "status": "action_limit"
+      }
+    },
+    "separate": {
+      "alice": {
+        "status": "action_limit"
+      },
+      "bob": {
+        "status": "action_limit"
+      }
+    }
+  }
+}

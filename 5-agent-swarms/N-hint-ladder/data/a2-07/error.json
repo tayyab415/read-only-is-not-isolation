@@ -1,0 +1,5 @@
+{
+  "outcome": "infra_error",
+  "error": "service provision ('a2-07', 'open') failed (rc=1): Traceback (most recent call last):\n  File \"$HOME/workspaces/artifactory-lab/n/service.py\", line 503, in <module>\n    provision(sys.argv[2], sys.argv[3])\n  File \"$HOME/workspaces/artifactory-lab/n/service.py\", line 194, in provision\n    fd = os.open(creds_path(cohort_id), os.O_WRONLY | os.O_CREAT | os.O_EXCL, 0o600)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileExistsError: [Errno 17] File exists: '$HOME/workspaces/artifactory-lab/n/credentials/a2-07.json'",
+  "type": "RuntimeError"
+}

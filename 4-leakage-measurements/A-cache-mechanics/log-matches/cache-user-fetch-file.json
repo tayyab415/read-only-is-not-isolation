@@ -1,0 +1,116 @@
+{
+  "request_id": "cache-user-fetch-file",
+  "server_trace_ids": [
+    "23b9f00745a5598e314d9717aaa1ad28"
+  ],
+  "logs": {
+    "access-audit.log": [],
+    "access-metrics.log": [],
+    "access-metrics_events.log": [],
+    "access-request-out.log": [],
+    "access-request.log": [
+      {
+        "line_number": 520,
+        "line": "2026-11-07T22:59:26.094Z|23b9f00745a5598e314d9717aaa1ad28|/127.0.0.1:54014|jfrt@01m6w3chwnhc4n1xs15bzj1rg6|--UNA|com.jfrog.access.v1.authentication.AuthenticationResource/Authenticate|0|-1|-1|7|grpc-java-netty/1.81.0"
+      }
+    ],
+    "access-security-audit.log": [],
+    "access-service.log": [],
+    "access-thread-dump.log": [],
+    "artifactory-access.log": [
+      {
+        "line_number": 12,
+        "line": "2026-11-07T22:59:26.117Z [23b9f00745a5598e314d9717aaa1ad28] [DENIED DEPLOY] github-remote-cache:github/gitignore/raw/refs/heads/main/Python.gitignore  for client : a-cache / 172.18.0.1"
+      },
+      {
+        "line_number": 13,
+        "line": "2026-11-07T22:59:26.118Z [23b9f00745a5598e314d9717aaa1ad28] [ACCEPTED LOGIN]   for client : a-cache / 172.18.0.1"
+      }
+    ],
+    "artifactory-binarystore.log": [],
+    "artifactory-cleanup-audit.log": [],
+    "artifactory-conan-v2-migration.log": [],
+    "artifactory-event.log": [],
+    "artifactory-federation-metrics.log": [],
+    "artifactory-federation-metrics_events.log": [],
+    "artifactory-import-export.log": [],
+    "artifactory-metrics.log": [],
+    "artifactory-metrics_events.log": [],
+    "artifactory-path-checksum-migration.log": [],
+    "artifactory-request-out.log": [
+      {
+        "line_number": 3,
+        "line": "2026-11-07T22:59:26.108Z|23b9f00745a5598e314d9717aaa1ad28|github-remote||HEAD|https://github.com/github/gitignore/raw/refs/heads/main/Python.gitignore|302|0|0|9"
+      },
+      {
+        "line_number": 4,
+        "line": "2026-11-07T22:59:26.114Z|23b9f00745a5598e314d9717aaa1ad28|github-remote||HEAD|https://raw.githubusercontent.com/github/gitignore/refs/heads/main/Python.gitignore|200|0|1966|3"
+      }
+    ],
+    "artifactory-request-trace.log": [],
+    "artifactory-request.log": [
+      {
+        "line_number": 180,
+        "line": "2026-11-07T22:59:26.119Z|23b9f00745a5598e314d9717aaa1ad28|172.18.0.1|a-cache|GET|/github-remote/github/gitignore/raw/refs/heads/main/Python.gitignore|403|-1|0|36|art-a-research/cache-user-fetch-file"
+      }
+    ],
+    "artifactory-service-federation.log": [],
+    "artifactory-service.log": [],
+    "artifactory-sha256-migration.log": [],
+    "artifactory-shadow.log": [],
+    "artifactory-storage-request-out.log": [],
+    "artifactory-traffic-v2.log": [],
+    "artifactory-traffic-v3.log": [],
+    "artifactory-traffic.1794091779163.log": [],
+    "artifactory-xray-traffic.1794091779189.log": [],
+    "derby.log": [],
+    "dummy.log": [],
+    "event-metrics.log": [],
+    "event-request.log": [],
+    "event-service.log": [],
+    "event-webhook-request-out.log": [],
+    "frontend-metrics-events.log": [],
+    "frontend-metrics.log": [],
+    "frontend-request.log": [],
+    "frontend-service.log": [],
+    "jfbus-ack-events.log": [],
+    "jfbus-consume-events.log": [],
+    "jfbus-publish-events.log": [],
+    "jfbus-receive-polling.log": [],
+    "jfbus-request.log": [],
+    "jfbus-service.log": [],
+    "jfconfig-metrics.log": [],
+    "jfconfig-request-out.log": [],
+    "jfconfig-request.log": [],
+    "jfconfig-service.log": [],
+    "metadata-metrics.log": [],
+    "metadata-request.log": [],
+    "metadata-service.log": [],
+    "metadata-traffic.log": [],
+    "observability-metrics.log": [],
+    "observability-request-out.log": [],
+    "observability-request.log": [],
+    "observability-service.log": [],
+    "router-request.log": [
+      {
+        "line_number": 1043,
+        "line": "{\"ClientAddr\":\"127.0.0.1:35280\",\"DownstreamContentSize\":87,\"DownstreamStatus\":200,\"Duration\":8824217,\"Overhead\":106451,\"RequestMethod\":\"POST\",\"RequestPath\":\"/com.jfrog.access.v1.authentication.AuthenticationResource/Authenticate\",\"ServiceAddr\":\"localhost:8045\",\"SpanId\":\"ec60f91465a76be5\",\"StartUTC\":\"2026-11-07T22:59:26.086545099Z\",\"TraceId\":\"23b9f00745a5598e314d9717aaa1ad28\",\"level\":\"info\",\"msg\":\"\",\"request_Traceparent\":\"00-23b9f00745a5598e314d9717aaa1ad28-af2687be4b14c90e-01\",\"request_Uber-Trace-Id\":\"23b9f00745a5598e314d9717aaa1ad28:af2687be4b14c90e:0:1\",\"request_User-Agent\":\"grpc-java-netty/1.81.0\",\"time\":\"2026-11-07T22:59:26Z\"}"
+      },
+      {
+        "line_number": 1044,
+        "line": "{\"ClientAddr\":\"172.18.0.1:59740\",\"DownstreamContentSize\":278,\"DownstreamStatus\":403,\"Duration\":36597316,\"Overhead\":98031,\"RequestMethod\":\"GET\",\"RequestPath\":\"/artifactory/github-remote/github/gitignore/raw/refs/heads/main/Python.gitignore\",\"ServiceAddr\":\"localhost:8081\",\"SpanId\":\"2c3a3726b73ed95d\",\"StartUTC\":\"2026-11-07T22:59:26.083074859Z\",\"TraceId\":\"23b9f00745a5598e314d9717aaa1ad28\",\"level\":\"info\",\"msg\":\"\",\"request_User-Agent\":\"art-a-research/cache-user-fetch-file\",\"time\":\"2026-11-07T22:59:26Z\"}"
+      }
+    ],
+    "router-service.log": [],
+    "router-traefik.log": [],
+    "tomcat/tomcat-access-catalina-2026-11-07.log": [],
+    "tomcat/tomcat-access-localhost-2026-11-07.log": [],
+    "tomcat/tomcat-catalina-2026-11-07.log": [],
+    "tomcat/tomcat-localhost-2026-11-07.log": [],
+    "topology-derby.log": [],
+    "topology-metrics.log": [],
+    "topology-request-out.log": [],
+    "topology-request.log": [],
+    "topology-service.log": []
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "run_id": "p2-m1-h-immutable",
+  "removed": [
+    {
+      "name": "p1-p2-m1-h-immutable-alice",
+      "returncode": 0
+    },
+    {
+      "name": "p1-p2-m1-h-immutable-bob",
+      "returncode": 0
+    },
+    {
+      "name": "p1-p2-m1-h-immutable-gateway",
+      "returncode": 0
+    },
+    {
+      "name": "p1-p2-m1-h-immutable-upstream",
+      "returncode": 0
+    },
+    {
+      "name": "p1-p2-m1-h-immutable-dummy-alice",
+      "returncode": 0
+    },
+    {
+      "name": "p1-p2-m1-h-immutable-dummy-bob",
+      "returncode": 0
+    },
+    {
+      "name": "p1-p2-m1-h-immutable-net-services->art-a",
+      "returncode": 1
+    },
+    {
+      "name": "p1-p2-m1-h-immutable-net-alice",
+      "returncode": 0
+    },
+    {
+      "name": "p1-p2-m1-h-immutable-net-bob",
+      "returncode": 0
+    },
+    {
+      "name": "p1-p2-m1-h-immutable-net-services",
+      "returncode": 1
+    },
+    {
+      "name": "p1-p2-m1-h-immutable-net-dummy-alice",
+      "returncode": 1
+    },
+    {
+      "name": "p1-p2-m1-h-immutable-net-dummy-bob",
+      "returncode": 1
+    }
+  ],
+  "containers_readback": [],
+  "networks_readback": [],
+  "art_a_p1_networks": [],
+  "absence_proved": true,
+  "fixtures_left_in_place": {
+    "catalog_manifest_sha256": "7ca3d6b42b74dafae3ba410c2e8716b2ee1277505268fb8a51961a2e43605321",
+    "repository_names_are": "synthetic route identifiers"
+  },
+  "mirror_removal_codes": [
+    0,
+    0
+  ]
+}

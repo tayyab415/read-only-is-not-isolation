@@ -1,0 +1,29 @@
+{
+  "bits": [
+    1,
+    0,
+    1,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    1,
+    0,
+    1,
+    0,
+    1,
+    1,
+    0
+  ],
+  "seed": 2208,
+  "threshold_ns": 80000000,
+  "upstream_missing_head_delay_s": 0.15,
+  "rule": "Decode 1 for a receiver duration below 80 ms, otherwise 0.",
+  "arms": [
+    "default-negative-cache",
+    "negative-cache-disabled"
+  ],
+  "note": "Artificial local upstream delay; thresholds do not transfer to production."
+}

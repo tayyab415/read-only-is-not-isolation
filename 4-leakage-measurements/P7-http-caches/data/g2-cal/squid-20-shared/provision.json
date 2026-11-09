@@ -1,0 +1,845 @@
+{
+  "run_id": "p7-g2-squid-20-shared-cal",
+  "product": "squid",
+  "arm": "shared",
+  "effective_arm": "shared",
+  "networks": {
+    "alice": "p7-g2-squid-20-shared-cal-net-alice",
+    "bob": "p7-g2-squid-20-shared-cal-net-bob",
+    "services": "p7-g2-squid-20-shared-cal-net-services"
+  },
+  "clients": {
+    "alice": "p7-g2-squid-20-shared-cal-alice",
+    "bob": "p7-g2-squid-20-shared-cal-bob"
+  },
+  "origin": "p7-g2-squid-20-shared-cal-origin",
+  "caches": {
+    "alice": "p7-g2-squid-20-shared-cal-cache",
+    "bob": "p7-g2-squid-20-shared-cal-cache"
+  },
+  "prepared": true,
+  "build": {
+    "image_id": "sha256:086611ec46938eb0fb11ddaed22bd294b3498b47d24d28250a6073b0c0e5abf1",
+    "repo_digests": [
+      "p7-cache-fixtures@sha256:086611ec46938eb0fb11ddaed22bd294b3498b47d24d28250a6073b0c0e5abf1"
+    ],
+    "binaries": {
+      "nginx": {
+        "version": "nginx version: nginx/1.30.6\nbuilt by gcc 14.2.0 (Debian 14.2.0-19) \nconfigure arguments: --prefix=/opt/p7/nginx --without-http_rewrite_module --without-http_gzip_module\n",
+        "exit_code": 0,
+        "binary_sha256": "76b92ee9f84414e672bc80bf71f60e8cd11cb3068eb8f5990cfaf0db678ff2e0"
+      },
+      "squid": {
+        "version": "Squid Cache: Version 7.8\nService Name: squid\nconfigure options:  '--prefix=/opt/p7/squid' '--enable-http-violations' '--with-default-user=research' '--disable-auth' '--disable-external-acl-helpers' '--disable-url-rewrite-helpers' '--disable-storeid-rewrite-helpers' '--without-openssl' '--without-gnutls' '--without-nettle'\n",
+        "exit_code": 0,
+        "binary_sha256": "a00da6f0a59015a61adbe9f0e43a5e1aaf461e6af84d030f93a0a1969aa4b92d"
+      }
+    },
+    "image_logical_size_bytes": 76122635,
+    "source_freeze_sha256": "e29bc3a73fb81cce237872d1cc61d771109b4a6ae424d70b8fe0cd1e70e84f5a"
+  },
+  "configurations": {
+    "p7-g2-squid-20-shared-cal-cache": {
+      "origins": {
+        "172.19.0.1": "alice",
+        "172.20.0.1": "bob"
+      },
+      "configuration": "http_port 8000\nvisible_hostname p7-owned-cache\npid_filename /tmp/squid.pid\ncoredump_dir /tmp\ncache_effective_user research\ncache_effective_group research\nworkers 1\nacl owned_clients src 172.19.0.1 172.20.0.1\nacl owned_origin dstdomain p7-g2-squid-20-shared-cal-origin\nacl owned_port port 8000\nacl permitted_methods method GET HEAD\nhttp_access allow owned_clients owned_origin owned_port permitted_methods\nhttp_access deny all\ncache allow all\ncache_mem 4 MB\nmaximum_object_size_in_memory 64 KB\ncache_dir ufs /tmp/cache 16 4 16\nmaximum_object_size 64 KB\nnegative_ttl 60 seconds\ncollapsed_forwarding off\noffline_mode off\nclient_persistent_connections off\nserver_persistent_connections off\nforward_max_tries 1\nretry_on_error off\nuri_whitespace deny\nrefresh_pattern . 0 0% 0\nrange_offset_limit none\nshutdown_lifetime 0 seconds\ncache_log /tmp/squid-cache.log\ncache_store_log none\nlogformat evidence %ts.%03tu %>a %rm %ru %>Hs %Ss %tr %{User-Agent}>h\naccess_log stdio:/tmp/cache-access.txt evidence\nbuffered_logs off\n",
+      "configuration_sha256": "80a2f4d0c7fd32e060bf60b3cdeaff549d23d2500c7a855d753e1f37c6ecadea",
+      "parse_exit_code": 0,
+      "process_pid_on_controller": 120072
+    }
+  },
+  "boundary": {
+    "containers": {
+      "p7-g2-squid-20-shared-cal-alice": {
+        "user": "20001:20001",
+        "root_read_only": true,
+        "cap_drop": [
+          "ALL"
+        ],
+        "security_options": [
+          "no-new-privileges:true"
+        ],
+        "memory": 134217728,
+        "memory_swap": 134217728,
+        "nano_cpus": 500000000,
+        "pids_limit": 48,
+        "tmpfs": {
+          "/tmp": "rw,nosuid,nodev,size=64m"
+        },
+        "forbidden_environment_present": false,
+        "image_id": "sha256:5e2bdb1b0d542d5039cffb8181c65930093949194a65c365dfb1b0fe13a4fa5b",
+        "published_ports": {},
+        "network_addresses": {
+          "p7-g2-squid-20-shared-cal-net-alice": "172.19.0.1"
+        },
+        "bind_mount_destinations": [],
+        "mounts_read_only": true
+      },
+      "p7-g2-squid-20-shared-cal-bob": {
+        "user": "20001:20001",
+        "root_read_only": true,
+        "cap_drop": [
+          "ALL"
+        ],
+        "security_options": [
+          "no-new-privileges:true"
+        ],
+        "memory": 134217728,
+        "memory_swap": 134217728,
+        "nano_cpus": 500000000,
+        "pids_limit": 48,
+        "tmpfs": {
+          "/tmp": "rw,nosuid,nodev,size=64m"
+        },
+        "forbidden_environment_present": false,
+        "image_id": "sha256:5e2bdb1b0d542d5039cffb8181c65930093949194a65c365dfb1b0fe13a4fa5b",
+        "published_ports": {},
+        "network_addresses": {
+          "p7-g2-squid-20-shared-cal-net-bob": "172.20.0.1"
+        },
+        "bind_mount_destinations": [],
+        "mounts_read_only": true
+      },
+      "p7-g2-squid-20-shared-cal-origin": {
+        "user": "20001:20001",
+        "root_read_only": true,
+        "cap_drop": [
+          "ALL"
+        ],
+        "security_options": [
+          "no-new-privileges:true"
+        ],
+        "memory": 134217728,
+        "memory_swap": 134217728,
+        "nano_cpus": 500000000,
+        "pids_limit": 48,
+        "tmpfs": {
+          "/tmp": "rw,nosuid,nodev,size=64m"
+        },
+        "forbidden_environment_present": false,
+        "image_id": "sha256:5e2bdb1b0d542d5039cffb8181c65930093949194a65c365dfb1b0fe13a4fa5b",
+        "published_ports": {},
+        "network_addresses": {
+          "p7-g2-squid-20-shared-cal-net-services": "172.21.0.1"
+        },
+        "bind_mount_destinations": [
+          "/origin.py"
+        ],
+        "mounts_read_only": true
+      },
+      "p7-g2-squid-20-shared-cal-cache": {
+        "user": "20001:20001",
+        "root_read_only": true,
+        "cap_drop": [
+          "ALL"
+        ],
+        "security_options": [
+          "no-new-privileges:true"
+        ],
+        "memory": 268435456,
+        "memory_swap": 268435456,
+        "nano_cpus": 500000000,
+        "pids_limit": 96,
+        "tmpfs": {
+          "/tmp": "rw,nosuid,nodev,size=64m"
+        },
+        "forbidden_environment_present": false,
+        "image_id": "sha256:086611ec46938eb0fb11ddaed22bd294b3498b47d24d28250a6073b0c0e5abf1",
+        "published_ports": {},
+        "network_addresses": {
+          "p7-g2-squid-20-shared-cal-net-alice": "172.19.0.2",
+          "p7-g2-squid-20-shared-cal-net-bob": "172.20.0.2",
+          "p7-g2-squid-20-shared-cal-net-services": "172.21.0.2"
+        },
+        "bind_mount_destinations": [
+          "/config",
+          "/store_id.py"
+        ],
+        "mounts_read_only": true
+      }
+    },
+    "networks": {
+      "p7-g2-squid-20-shared-cal-net-alice": {
+        "internal": true,
+        "options": {
+          "com.docker.network.bridge.gateway_mode_ipv4": "isolated"
+        }
+      },
+      "p7-g2-squid-20-shared-cal-net-bob": {
+        "internal": true,
+        "options": {
+          "com.docker.network.bridge.gateway_mode_ipv4": "isolated"
+        }
+      },
+      "p7-g2-squid-20-shared-cal-net-services": {
+        "internal": true,
+        "options": {
+          "com.docker.network.bridge.gateway_mode_ipv4": "isolated"
+        }
+      }
+    }
+  },
+  "network_controls": {
+    "passed": true,
+    "checks": 6,
+    "records": [
+      {
+        "name": "assigned cache",
+        "host": "p7-g2-squid-20-shared-cal-cache",
+        "port": 8000,
+        "expected_connected": true,
+        "connected": true,
+        "error": null,
+        "actor": "alice"
+      },
+      {
+        "name": "direct origin",
+        "host": "172.21.0.1",
+        "port": 8000,
+        "expected_connected": false,
+        "connected": false,
+        "error": "OSError",
+        "actor": "alice"
+      },
+      {
+        "name": "live peer listener",
+        "host": "172.20.0.1",
+        "port": 18888,
+        "expected_connected": false,
+        "connected": false,
+        "error": "OSError",
+        "actor": "alice"
+      },
+      {
+        "name": "assigned cache",
+        "host": "p7-g2-squid-20-shared-cal-cache",
+        "port": 8000,
+        "expected_connected": true,
+        "connected": true,
+        "error": null,
+        "actor": "bob"
+      },
+      {
+        "name": "direct origin",
+        "host": "172.21.0.1",
+        "port": 8000,
+        "expected_connected": false,
+        "connected": false,
+        "error": "OSError",
+        "actor": "bob"
+      },
+      {
+        "name": "live peer listener",
+        "host": "172.20.0.1",
+        "port": 18888,
+        "expected_connected": true,
+        "connected": true,
+        "error": null,
+        "actor": "bob"
+      }
+    ],
+    "scope": "Specified live TCP listeners and routes, not every possible bypass.",
+    "listener_stopped": true,
+    "listener_exit_code": 0
+  },
+  "resource_before": {
+    "utc_ns": 1794182080203769380,
+    "method": "Docker CLI usage snapshots, not peak memory or process RSS",
+    "records": [
+      {
+        "Name": "p7-g2-squid-20-shared-cal-alice",
+        "MemUsage": "4.301MiB / 128MiB",
+        "CPUPerc": "0.00%",
+        "PIDs": "1",
+        "NetIO": "1.6kB / 786B",
+        "BlockIO": "0B / 0B"
+      },
+      {
+        "Name": "p7-g2-squid-20-shared-cal-bob",
+        "MemUsage": "4.301MiB / 128MiB",
+        "CPUPerc": "0.00%",
+        "PIDs": "1",
+        "NetIO": "1.4kB / 440B",
+        "BlockIO": "0B / 0B"
+      },
+      {
+        "Name": "p7-g2-squid-20-shared-cal-origin",
+        "MemUsage": "14.23MiB / 128MiB",
+        "CPUPerc": "0.01%",
+        "PIDs": "1",
+        "NetIO": "1.17kB / 126B",
+        "BlockIO": "0B / 0B"
+      },
+      {
+        "Name": "p7-g2-squid-20-shared-cal-cache",
+        "MemUsage": "10.74MiB / 256MiB",
+        "CPUPerc": "0.01%",
+        "PIDs": "4",
+        "NetIO": "3.74kB / 936B",
+        "BlockIO": "0B / 0B"
+      }
+    ]
+  },
+  "canaries": {
+    "passed": true,
+    "negative_lookup_counts": [
+      1,
+      0
+    ],
+    "expected_lookup_counts": [
+      1,
+      0
+    ],
+    "records": [
+      {
+        "actor": "alice",
+        "method": "GET",
+        "path": "/missing/20/canary-cache",
+        "target": "http://p7-g2-squid-20-shared-cal-origin:8000/missing/20/canary-cache",
+        "host": "p7-g2-squid-20-shared-cal-cache",
+        "marker": "p7/p7-g2-squid-20-shared-cal/canary/cache-0",
+        "headers": {},
+        "execute": 1,
+        "start_utc_ns": 1794182080565536936,
+        "status": 404,
+        "response_headers_ms": 29.872498,
+        "response_headers": [
+          [
+            "Server",
+            "BaseHTTP/0.6 Python/3.12.16"
+          ],
+          [
+            "Date",
+            "Sun, 08 Nov 2026 23:54:40 GMT"
+          ],
+          [
+            "Content-Type",
+            "application/octet-stream"
+          ],
+          [
+            "Content-Length",
+            "25"
+          ],
+          [
+            "Cache-Status",
+            "p7-owned-cache;fwd=miss;detail=mismatch"
+          ],
+          [
+            "Via",
+            "1.1 p7-owned-cache (squid/7.8)"
+          ],
+          [
+            "Connection",
+            "close"
+          ]
+        ],
+        "body_bytes": 25,
+        "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+        "body_text": "Missing harmless fixture\n",
+        "end_utc_ns": 1794182080595533633,
+        "elapsed_ms": 29.995407
+      },
+      {
+        "actor": "alice",
+        "method": "GET",
+        "path": "/missing/20/canary-cache",
+        "target": "http://p7-g2-squid-20-shared-cal-origin:8000/missing/20/canary-cache",
+        "host": "p7-g2-squid-20-shared-cal-cache",
+        "marker": "p7/p7-g2-squid-20-shared-cal/canary/cache-1",
+        "headers": {},
+        "execute": 1,
+        "start_utc_ns": 1794182080962120482,
+        "status": 404,
+        "response_headers_ms": 8.257671,
+        "response_headers": [
+          [
+            "Server",
+            "BaseHTTP/0.6 Python/3.12.16"
+          ],
+          [
+            "Date",
+            "Sun, 08 Nov 2026 23:54:40 GMT"
+          ],
+          [
+            "Content-Type",
+            "application/octet-stream"
+          ],
+          [
+            "Content-Length",
+            "25"
+          ],
+          [
+            "Age",
+            "0"
+          ],
+          [
+            "Cache-Status",
+            "p7-owned-cache;hit;detail=match"
+          ],
+          [
+            "Via",
+            "1.1 p7-owned-cache (squid/7.8)"
+          ],
+          [
+            "Connection",
+            "close"
+          ]
+        ],
+        "body_bytes": 25,
+        "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+        "body_text": "Missing harmless fixture\n",
+        "end_utc_ns": 1794182080970499652,
+        "elapsed_ms": 8.37767
+      },
+      {
+        "actor": "bob",
+        "method": "GET",
+        "path": "/present/canary-functions",
+        "target": "http://p7-g2-squid-20-shared-cal-origin:8000/present/canary-functions",
+        "host": "p7-g2-squid-20-shared-cal-cache",
+        "marker": "p7/p7-g2-squid-20-shared-cal/canary/function-0",
+        "headers": {},
+        "execute": 1,
+        "start_utc_ns": 1794182081359264059,
+        "status": 200,
+        "response_headers_ms": 9.005477,
+        "response_headers": [
+          [
+            "Server",
+            "BaseHTTP/0.6 Python/3.12.16"
+          ],
+          [
+            "Date",
+            "Sun, 08 Nov 2026 23:54:41 GMT"
+          ],
+          [
+            "Content-Type",
+            "application/octet-stream"
+          ],
+          [
+            "Content-Length",
+            "40"
+          ],
+          [
+            "Last-Modified",
+            "Sat, 07 Nov 2026 00:00:00 GMT"
+          ],
+          [
+            "ETag",
+            "\"c9018cc100c3627142237160efe8122117443ffd68f2802b6794cd84c5343449\""
+          ],
+          [
+            "Cache-Status",
+            "p7-owned-cache;fwd=miss;detail=mismatch"
+          ],
+          [
+            "Via",
+            "1.1 p7-owned-cache (squid/7.8)"
+          ],
+          [
+            "Connection",
+            "close"
+          ]
+        ],
+        "body_bytes": 40,
+        "body_sha256": "c9018cc100c3627142237160efe8122117443ffd68f2802b6794cd84c5343449",
+        "body_text": "J controls harmless artifact fixture v1\n",
+        "end_utc_ns": 1794182081368528387,
+        "elapsed_ms": 9.262397
+      },
+      {
+        "actor": "bob",
+        "method": "GET",
+        "path": "/present/canary-functions",
+        "target": "http://p7-g2-squid-20-shared-cal-origin:8000/present/canary-functions",
+        "host": "p7-g2-squid-20-shared-cal-cache",
+        "marker": "p7/p7-g2-squid-20-shared-cal/canary/function-1",
+        "headers": {},
+        "execute": 1,
+        "start_utc_ns": 1794182081755975364,
+        "status": 200,
+        "response_headers_ms": 9.083974,
+        "response_headers": [
+          [
+            "Server",
+            "BaseHTTP/0.6 Python/3.12.16"
+          ],
+          [
+            "Date",
+            "Sun, 08 Nov 2026 23:54:41 GMT"
+          ],
+          [
+            "Content-Type",
+            "application/octet-stream"
+          ],
+          [
+            "Content-Length",
+            "40"
+          ],
+          [
+            "Last-Modified",
+            "Sat, 07 Nov 2026 00:00:00 GMT"
+          ],
+          [
+            "ETag",
+            "\"c9018cc100c3627142237160efe8122117443ffd68f2802b6794cd84c5343449\""
+          ],
+          [
+            "Cache-Status",
+            "p7-owned-cache;fwd=stale;detail=match"
+          ],
+          [
+            "Via",
+            "1.1 p7-owned-cache (squid/7.8)"
+          ],
+          [
+            "Connection",
+            "close"
+          ]
+        ],
+        "body_bytes": 40,
+        "body_sha256": "c9018cc100c3627142237160efe8122117443ffd68f2802b6794cd84c5343449",
+        "body_text": "J controls harmless artifact fixture v1\n",
+        "end_utc_ns": 1794182081765249292,
+        "elapsed_ms": 9.272028
+      },
+      {
+        "actor": "bob",
+        "method": "HEAD",
+        "path": "/present/canary-functions",
+        "target": "http://p7-g2-squid-20-shared-cal-origin:8000/present/canary-functions",
+        "host": "p7-g2-squid-20-shared-cal-cache",
+        "marker": "p7/p7-g2-squid-20-shared-cal/canary/function-2",
+        "headers": {},
+        "execute": 1,
+        "start_utc_ns": 1794182082103094528,
+        "status": 200,
+        "response_headers_ms": 60.272626,
+        "response_headers": [
+          [
+            "Server",
+            "BaseHTTP/0.6 Python/3.12.16"
+          ],
+          [
+            "Date",
+            "Sun, 08 Nov 2026 23:54:42 GMT"
+          ],
+          [
+            "Content-Type",
+            "application/octet-stream"
+          ],
+          [
+            "Content-Length",
+            "40"
+          ],
+          [
+            "Last-Modified",
+            "Sat, 07 Nov 2026 00:00:00 GMT"
+          ],
+          [
+            "ETag",
+            "\"c9018cc100c3627142237160efe8122117443ffd68f2802b6794cd84c5343449\""
+          ],
+          [
+            "Cache-Status",
+            "p7-owned-cache;fwd=stale;detail=match"
+          ],
+          [
+            "Via",
+            "1.1 p7-owned-cache (squid/7.8)"
+          ],
+          [
+            "Connection",
+            "close"
+          ]
+        ],
+        "body_bytes": 0,
+        "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "body_text": "",
+        "end_utc_ns": 1794182082163481222,
+        "elapsed_ms": 60.384934
+      },
+      {
+        "actor": "bob",
+        "method": "GET",
+        "path": "/present/canary-functions",
+        "target": "http://p7-g2-squid-20-shared-cal-origin:8000/present/canary-functions",
+        "host": "p7-g2-squid-20-shared-cal-cache",
+        "marker": "p7/p7-g2-squid-20-shared-cal/canary/function-3",
+        "headers": {
+          "If-None-Match": "\"c9018cc100c3627142237160efe8122117443ffd68f2802b6794cd84c5343449\""
+        },
+        "execute": 1,
+        "start_utc_ns": 1794182082500113966,
+        "status": 200,
+        "response_headers_ms": 59.544662,
+        "response_headers": [
+          [
+            "Server",
+            "BaseHTTP/0.6 Python/3.12.16"
+          ],
+          [
+            "Date",
+            "Sun, 08 Nov 2026 23:54:42 GMT"
+          ],
+          [
+            "Content-Type",
+            "application/octet-stream"
+          ],
+          [
+            "Content-Length",
+            "40"
+          ],
+          [
+            "Last-Modified",
+            "Sat, 07 Nov 2026 00:00:00 GMT"
+          ],
+          [
+            "ETag",
+            "\"c9018cc100c3627142237160efe8122117443ffd68f2802b6794cd84c5343449\""
+          ],
+          [
+            "Cache-Status",
+            "p7-owned-cache;fwd=miss;detail=mismatch"
+          ],
+          [
+            "Via",
+            "1.1 p7-owned-cache (squid/7.8)"
+          ],
+          [
+            "Connection",
+            "close"
+          ]
+        ],
+        "body_bytes": 40,
+        "body_sha256": "c9018cc100c3627142237160efe8122117443ffd68f2802b6794cd84c5343449",
+        "body_text": "J controls harmless artifact fixture v1\n",
+        "end_utc_ns": 1794182082559753704,
+        "elapsed_ms": 59.638258
+      },
+      {
+        "actor": "bob",
+        "method": "GET",
+        "path": "/present/canary-functions",
+        "target": "http://p7-g2-squid-20-shared-cal-origin:8000/present/canary-functions",
+        "host": "p7-g2-squid-20-shared-cal-cache",
+        "marker": "p7/p7-g2-squid-20-shared-cal/canary/function-4",
+        "headers": {
+          "Range": "bytes=0-1"
+        },
+        "execute": 1,
+        "start_utc_ns": 1794182082898178443,
+        "status": 206,
+        "response_headers_ms": 60.114904,
+        "response_headers": [
+          [
+            "Server",
+            "BaseHTTP/0.6 Python/3.12.16"
+          ],
+          [
+            "Date",
+            "Sun, 08 Nov 2026 23:54:42 GMT"
+          ],
+          [
+            "Content-Type",
+            "application/octet-stream"
+          ],
+          [
+            "Last-Modified",
+            "Sat, 07 Nov 2026 00:00:00 GMT"
+          ],
+          [
+            "ETag",
+            "\"c9018cc100c3627142237160efe8122117443ffd68f2802b6794cd84c5343449\""
+          ],
+          [
+            "Cache-Status",
+            "p7-owned-cache;fwd=stale;detail=match"
+          ],
+          [
+            "Via",
+            "1.1 p7-owned-cache (squid/7.8)"
+          ],
+          [
+            "Connection",
+            "close"
+          ],
+          [
+            "Content-Range",
+            "bytes 0-1/40"
+          ],
+          [
+            "Content-Length",
+            "2"
+          ]
+        ],
+        "body_bytes": 2,
+        "body_sha256": "016ef4dbfc9c639601ec84d8f85e288ffb7bf1102d76697546189762e1135e3e",
+        "body_text": "J ",
+        "end_utc_ns": 1794182082958378194,
+        "elapsed_ms": 60.197991
+      },
+      {
+        "actor": "bob",
+        "method": "GET",
+        "path": "/present/canary-functions",
+        "target": "http://p7-g2-squid-20-shared-cal-origin:8000/present/canary-functions",
+        "host": "p7-g2-squid-20-shared-cal-cache",
+        "marker": "p7/p7-g2-squid-20-shared-cal/canary/function-5",
+        "headers": {},
+        "execute": 1,
+        "start_utc_ns": 1794182083299008488,
+        "status": 200,
+        "response_headers_ms": 60.31986,
+        "response_headers": [
+          [
+            "Server",
+            "BaseHTTP/0.6 Python/3.12.16"
+          ],
+          [
+            "Date",
+            "Sun, 08 Nov 2026 23:54:43 GMT"
+          ],
+          [
+            "Content-Type",
+            "application/octet-stream"
+          ],
+          [
+            "Content-Length",
+            "40"
+          ],
+          [
+            "Last-Modified",
+            "Sat, 07 Nov 2026 00:00:00 GMT"
+          ],
+          [
+            "ETag",
+            "\"c9018cc100c3627142237160efe8122117443ffd68f2802b6794cd84c5343449\""
+          ],
+          [
+            "Cache-Status",
+            "p7-owned-cache;fwd=stale;detail=match"
+          ],
+          [
+            "Via",
+            "1.1 p7-owned-cache (squid/7.8)"
+          ],
+          [
+            "Connection",
+            "close"
+          ]
+        ],
+        "body_bytes": 40,
+        "body_sha256": "c9018cc100c3627142237160efe8122117443ffd68f2802b6794cd84c5343449",
+        "body_text": "J controls harmless artifact fixture v1\n",
+        "end_utc_ns": 1794182083359427866,
+        "elapsed_ms": 60.417868
+      },
+      {
+        "actor": "trusted-source-control",
+        "method": "GET",
+        "path": "/missing/20/canary-denied",
+        "target": "http://p7-g2-squid-20-shared-cal-origin:8000/missing/20/canary-denied",
+        "host": "p7-g2-squid-20-shared-cal-cache",
+        "marker": "p7/p7-g2-squid-20-shared-cal/canary/unknown-origin",
+        "headers": {},
+        "execute": 1,
+        "start_utc_ns": 1794182083740847496,
+        "status": 403,
+        "response_headers_ms": 8.802643,
+        "response_headers": [
+          [
+            "Server",
+            "squid/7.8"
+          ],
+          [
+            "Mime-Version",
+            "1.0"
+          ],
+          [
+            "Date",
+            "Sun, 08 Nov 2026 23:54:43 GMT"
+          ],
+          [
+            "Content-Type",
+            "text/html;charset=utf-8"
+          ],
+          [
+            "Content-Length",
+            "3159"
+          ],
+          [
+            "X-Squid-Error",
+            "ERR_ACCESS_DENIED 0"
+          ],
+          [
+            "Vary",
+            "Accept-Language"
+          ],
+          [
+            "Content-Language",
+            "en"
+          ],
+          [
+            "Cache-Status",
+            "p7-owned-cache"
+          ],
+          [
+            "Via",
+            "1.1 p7-owned-cache (squid/7.8)"
+          ],
+          [
+            "Connection",
+            "close"
+          ]
+        ],
+        "body_bytes": 3159,
+        "body_sha256": "3440b39ee303e42ba53cc793366a53aa7d9d1aad45515babd1e4edb891f98c2b",
+        "body_text": "<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01//EN\" \"http://www.w3.org/TR/html4/strict.dtd\">\n<html><head>\n<meta type=\"copyright\" content=\"Copyright (C) 1996-2026 The Squid Software Foundation and contributors\">\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">\n<title>ERROR: The requested URL could not be retrieved</title>\n<style type=\"text/css\"><!--\n /*\n * Copyright (C) 1996-2026 The Squid Software Foundation and contributors\n *\n * Squid software is distributed under GPLv2+ license and includes\n * contributions from numerous individuals and organizations.\n * Please see the COPYING and CONTRIBUTORS files for details.\n */\n\n/*\n Stylesheet for Squid Error pages\n Adapted from design by Free CSS Templates\n http://www.freecsstemplates.org\n Released for free under a Creative Commons Attribution 2.5 License\n*/\n\n/* Page basics */\n* {\n\tfont-family: verdana, sans-serif;\n}\n\nhtml body {\n\tmargin: 0;\n\tpadding: 0;\n\tbackground: #efefef;\n\tfont-size: 12px;\n\tcolor: #1e1e1e;\n}\n\n/* Page displayed title area */\n#titles {\n\tmargin-left: 15px;\n\tpadding: 10px;\n\tpadding-left: 100px;\n\tbackground: url('/squid-internal-static/icons/SN.png') no-repeat left;\n}\n\n/* initial title */\n#titles h1 {\n\tcolor: #000000;\n}\n#titles h2 {\n\tcolor: #000000;\n}\n\n/* special event: FTP success page titles */\n#titles ftpsuccess {\n\tbackground-color:#00ff00;\n\twidth:100%;\n}\n\n/* Page displayed body content area */\n#content {\n\tpadding: 10px;\n\tbackground: #ffffff;\n}\n\n/* General text */\np {\n}\n\n/* error brief description */\n#error p {\n}\n\n/* some data which may have caused the problem */\n#data {\n}\n\n/* the error message received from the system or other software */\n#sysmsg {\n}\n\npre {\n}\n\n/* special event: FTP directory listing */\n#dirmsg {\n    font-family: courier, monospace;\n    color: black;\n    font-size: 10pt;\n}\n#dirlisting {\n    margin-left: 2%;\n    margin-right: 2%;\n}\n#dirlisting tr.entry td.icon,td.filename,td.size,td.date {\n    border-bottom: groove;\n}\n#dirlisting td.size {\n    width: 50px;\n    text-align: right;\n    padding-right: 5px;\n}\n\n/* horizontal lines */\nhr {\n\tmargin: 0;\n}\n\n/* page displayed footer area */\n#footer {\n\tfont-size: 9px;\n\tpadding-left: 10px;\n}\n\n\nbody\n:lang(fa) { direction: rtl; font-size: 100%; font-family: Tahoma, Roya, sans-serif; float: right; }\n:lang(he) { direction: rtl; }\n --></style>\n</head><body id=ERR_ACCESS_DENIED>\n<div id=\"titles\">\n<h1>ERROR</h1>\n<h2>The requested URL could not be retrieved</h2>\n</div>\n<hr>\n\n<div id=\"content\">\n<p>The following error was encountered while trying to retrieve the URL: <a href=\"http://p7-g2-squid-20-shared-cal-origin:8000/missing/20/canary-denied\">http://p7-g2-squid-20-shared-cal-origin:8000/missing/20/canary-denied</a></p>\n\n<blockquote id=\"error\">\n<p><b>Access Denied.</b></p>\n</blockquote>\n\n<p>Access control configuration prevents your request from being allowed at this time. Please contact your service provider if you feel this is incorrect.</p>\n\n<p>Your cache administrator is <a href=\"mailto:webmaster\">webmaster</a>.</p>\n<br>\n</div>\n\n<hr>\n<div id=\"footer\">\n<p>Generated Sun, 08 Nov 2026 23:54:43 GMT by p7-owned-cache (squid/7.8)</p>\n<!-- ERR_ACCESS_DENIED -->\n</div>\n</body></html>\n",
+        "end_utc_ns": 1794182083749750166,
+        "elapsed_ms": 8.90082
+      }
+    ],
+    "scope": "Configured 404 reuse and bounded successful-object protocol behavior."
+  },
+  "resource_after_live": {
+    "utc_ns": 1794182094921641910,
+    "method": "Docker CLI usage snapshots, not peak memory or process RSS",
+    "records": [
+      {
+        "Name": "p7-g2-squid-20-shared-cal-alice",
+        "MemUsage": "4.734MiB / 128MiB",
+        "CPUPerc": "0.00%",
+        "PIDs": "1",
+        "NetIO": "9.44kB / 8.15kB",
+        "BlockIO": "0B / 0B"
+      },
+      {
+        "Name": "p7-g2-squid-20-shared-cal-bob",
+        "MemUsage": "5MiB / 128MiB",
+        "CPUPerc": "0.00%",
+        "PIDs": "1",
+        "NetIO": "12.6kB / 10.7kB",
+        "BlockIO": "0B / 0B"
+      },
+      {
+        "Name": "p7-g2-squid-20-shared-cal-origin",
+        "MemUsage": "14.54MiB / 128MiB",
+        "CPUPerc": "0.01%",
+        "PIDs": "1",
+        "NetIO": "19.3kB / 12.7kB",
+        "BlockIO": "0B / 0B"
+      },
+      {
+        "Name": "p7-g2-squid-20-shared-cal-cache",
+        "MemUsage": "11.27MiB / 256MiB",
+        "CPUPerc": "0.00%",
+        "PIDs": "4",
+        "NetIO": "34.3kB / 37.6kB",
+        "BlockIO": "0B / 0B"
+      }
+    ]
+  }
+}

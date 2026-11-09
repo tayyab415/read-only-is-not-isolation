@@ -1,0 +1,27 @@
+{
+  "utc": "2026-11-09T05:53:04.915700+00:00",
+  "edition": 3,
+  "instance_id": "i-0de32c76945e63b44",
+  "volume_id": "vol-097dd03703099d51a",
+  "security_group_id": "sg-0bd03bd6068a00be2",
+  "region": "ap-south-1",
+  "cutoff_utc": "2026-11-09T10:30:00+00:00",
+  "prior_control_sha256": "082b9358ba9adb775a89d0ddff3506126b3386d043db24cc3d52aa10a77c0f25",
+  "prior_v2_control_sha256": "b3f5cab02585ce5f115b8a58b3206b9fa55f8fd259a59b4ccfa013dbd1b8a69e",
+  "p9_public_inventory_supported": true,
+  "incomplete_public_diagnostics_supported": true,
+  "fixed_public_roots": 39,
+  "fixed_public_files": 635,
+  "failed_edition1_native_files": 36,
+  "total_declared_roots": 40,
+  "p9_current_maximum_public_files": 111,
+  "fresh_edition2_data_at_freeze": false,
+  "sha256": {
+    "public_inventory_v3.py": "ec987fcd9184366bd58a08ae3e7e3e7473f17a489295fb91336bd772447cab86",
+    "owned_cleanup_v3.py": "ff654204bebf66cd60630c3fb2a6e62bf34a70b12eac0700cd0f242b87b475b3",
+    "test_cleanup_v3.py": "abc48ffc126c7e97a1305457ca3cd3793f913d5d2afa66bb14212df78c7eaa7a",
+    "OWNED-CLEANUP-v3-CHECKS.json": "23cf6c9e38ed777111422702ca2121ca6ba9b3513fe50839c1ae5dedfc81975a",
+    "PUBLIC-INVENTORY-v3-BASELINE.json": "7295c1a458a9e98e452246d02b8db07fa4cbdedff617d2311748ec0a6b8b0dcd"
+  },
+  "scope": "Prospective retained-failure and fresh-public-data inventory. All prior sources and original native teardown boundary remain unchanged."
+}

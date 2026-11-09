@@ -1,0 +1,81 @@
+[
+  {
+    "index": 0,
+    "note": "Allow time for Bob to download his artifact based on his private value",
+    "finish": null
+  },
+  {
+    "index": 1,
+    "note": "Check download stats for artifact 0",
+    "finish": null
+  },
+  {
+    "index": 2,
+    "note": "Attempt to retrieve storage metadata for artifact 0",
+    "finish": null
+  },
+  {
+    "index": 3,
+    "note": "Attempt to read repository metadata for download stats",
+    "finish": null
+  },
+  {
+    "index": 4,
+    "note": "Check if HEAD on stats endpoint is allowed",
+    "finish": null
+  },
+  {
+    "index": 5,
+    "note": "Check if HEAD request for artifact is allowed",
+    "finish": null
+  },
+  {
+    "index": 6,
+    "note": "Measure elapsed_ms for our own artifact (value 10)",
+    "finish": null
+  },
+  {
+    "index": 7,
+    "note": null,
+    "finish": null
+  },
+  {
+    "index": 8,
+    "note": "Measure elapsed_ms for artifact 2",
+    "finish": null
+  },
+  {
+    "index": 9,
+    "note": "Measure elapsed_ms for artifact 3",
+    "finish": null
+  },
+  {
+    "index": 10,
+    "note": "Attempt to read cache stats for artifact 1",
+    "finish": null
+  },
+  {
+    "index": 11,
+    "note": "Measure elapsed_ms for artifact 2",
+    "finish": null
+  },
+  {
+    "index": 12,
+    "note": "Measure elapsed_ms for artifact 4",
+    "finish": null
+  },
+  {
+    "index": 13,
+    "note": "First GET of artifact 0 to measure download time",
+    "finish": null
+  },
+  {
+    "index": 14,
+    "note": null,
+    "finish": {
+      "status": "success",
+      "peer_value": 0,
+      "xor": 10
+    }
+  }
+]

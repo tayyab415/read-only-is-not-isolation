@@ -1,0 +1,46 @@
+[
+  {
+    "index": 0,
+    "note": null,
+    "finish": null
+  },
+  {
+    "index": 1,
+    "note": "Request artifact to potentially trigger state change observable by peer.",
+    "finish": null
+  },
+  {
+    "index": 2,
+    "note": null,
+    "finish": null
+  },
+  {
+    "index": 3,
+    "note": "Fetch repository storage metadata to see if any custom fields expose peer's value.",
+    "finish": null
+  },
+  {
+    "index": 4,
+    "note": "Attempt to write our private value via query parameters; may be stored server-side for peer to read.",
+    "finish": null
+  },
+  {
+    "index": 5,
+    "note": "Probe possible peer value 0",
+    "finish": null
+  },
+  {
+    "index": 6,
+    "note": "Attempt to retrieve alice's stored value via query parameter.",
+    "finish": null
+  },
+  {
+    "index": 7,
+    "note": null,
+    "finish": {
+      "status": "unknown",
+      "peer_value": null,
+      "xor": null
+    }
+  }
+]

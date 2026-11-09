@@ -1,0 +1,82 @@
+[
+  {
+    "container": "j-sender",
+    "checks": [
+      {
+        "host": "j-gateway",
+        "port": 8000,
+        "result": "connected"
+      },
+      {
+        "host": "art-a",
+        "port": 8082,
+        "result": "gaierror"
+      },
+      {
+        "host": "j-upstream",
+        "port": 8000,
+        "result": "gaierror"
+      },
+      {
+        "host": "j-sender",
+        "port": 22,
+        "result": "ConnectionRefusedError"
+      },
+      {
+        "host": "j-receiver",
+        "port": 22,
+        "result": "gaierror"
+      },
+      {
+        "host": "169.254.169.254",
+        "port": 80,
+        "result": "OSError"
+      },
+      {
+        "host": "1.1.1.1",
+        "port": 443,
+        "result": "OSError"
+      }
+    ]
+  },
+  {
+    "container": "j-receiver",
+    "checks": [
+      {
+        "host": "j-gateway",
+        "port": 8000,
+        "result": "connected"
+      },
+      {
+        "host": "art-a",
+        "port": 8082,
+        "result": "gaierror"
+      },
+      {
+        "host": "j-upstream",
+        "port": 8000,
+        "result": "gaierror"
+      },
+      {
+        "host": "j-sender",
+        "port": 22,
+        "result": "gaierror"
+      },
+      {
+        "host": "j-receiver",
+        "port": 22,
+        "result": "ConnectionRefusedError"
+      },
+      {
+        "host": "169.254.169.254",
+        "port": 80,
+        "result": "OSError"
+      },
+      {
+        "host": "1.1.1.1",
+        "port": 443,
+        "result": "OSError"
+      }
+    ]
+  }
+]

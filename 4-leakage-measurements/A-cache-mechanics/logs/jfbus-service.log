@@ -1,0 +1,164 @@
+2026-11-07T22:49:41.341Z [jfbus] [INFO] [] [org.jfrog.jfbus.broker.JfbusBrokerApplication:54] [main] - Starting JfbusBrokerApplication using Java 25.0.4.1 with PID 9586 (/opt/jfrog/artifactory/app/jfbus/lib/jfbus.jar started by artifactory in /var/opt/jfrog/artifactory)
+ - Starting JfbusBrokerApplication using Java 25.0.4.1 with PID 9586 (/opt/jfrog/artifactory/app/jfbus/lib/jfbus.jar started by artifactory in /var/opt/jfrog/artifactory)
+2026-11-07T22:49:41.355Z [jfbus] [INFO] [] [org.jfrog.jfbus.broker.JfbusBrokerApplication:652] [main] - No active profile set, falling back to 1 default profile: "default"
+ - No active profile set, falling back to 1 default profile: "default"
+2026-11-07T22:49:48.328Z [jfbus] [INFO] [] [com.jfrog.autoconfigure.logging.JfrogLoggingAutoConfiguration:62] [main] - Logging of actuator requests (health, metrics, etc.) will be limited.
+ - Logging of actuator requests (health, metrics, etc.) will be limited.
+2026-11-07T22:49:48.328Z [jfbus] [INFO] [] [com.jfrog.autoconfigure.logging.JfrogLoggingAutoConfiguration:63] [main] - Actuator filter details: base-path=/system, min-status-to-log=400, min-duration-to-log=0 msec
+ - Actuator filter details: base-path=/system, min-status-to-log=400, min-duration-to-log=0 msec
+2026-11-07T22:49:48.985Z [jfbus] [INFO] [] [org.springframework.boot.tomcat.TomcatWebServer:114] [main] - Tomcat initialized with port 8057 (http)
+ - Tomcat initialized with port 8057 (http)
+2026-11-07T22:49:49.335Z [jfbus] [INFO] [] [org.apache.catalina.core.StandardService:168] [main] - Starting service [Tomcat]
+ - Starting service [Tomcat]
+2026-11-07T22:49:49.335Z [jfbus] [INFO] [] [org.apache.catalina.core.StandardEngine:168] [main] - Starting Servlet engine: [Apache Tomcat/11.0.25]
+ - Starting Servlet engine: [Apache Tomcat/11.0.25]
+2026-11-07T22:49:49.435Z [jfbus] [INFO] [] [org.springframework.boot.web.context.servlet.WebApplicationContextInitializer:77] [main] - Root WebApplicationContext: initialization completed in 7776 ms
+ - Root WebApplicationContext: initialization completed in 7776 ms
+2026-11-07T22:49:50.359Z [jfbus] [INFO] [] [com.zaxxer.hikari.HikariDataSource:109] [main] - HikariPool-1 - Starting...
+ - HikariPool-1 - Starting...
+2026-11-07T22:49:50.364Z [jfbus] [WARN] [] [com.zaxxer.hikari.util.DriverDataSource:68] [main] - Registered driver with driverClassName=org.apache.derby.jdbc.EmbeddedDriver was not found, trying direct instantiation.
+ - Registered driver with driverClassName=org.apache.derby.jdbc.EmbeddedDriver was not found, trying direct instantiation.
+2026-11-07T22:49:51.742Z [jfbus] [INFO] [] [com.zaxxer.hikari.pool.PoolBase:537] [main] - HikariPool-1 - Driver does not support get/set network timeout for connections. (Feature not implemented: No details.)
+ - HikariPool-1 - Driver does not support get/set network timeout for connections. (Feature not implemented: No details.)
+2026-11-07T22:49:51.746Z [jfbus] [INFO] [] [com.zaxxer.hikari.pool.HikariPool:554] [main] - HikariPool-1 - Added connection org.apache.derby.impl.jdbc.EmbedConnection@1535482311 (XID = 166), (SESSIONID = 1), (DATABASE = /opt/jfrog/artifactory/var/data/jfbus/derby), (DRDAID = null) 
+ - HikariPool-1 - Added connection org.apache.derby.impl.jdbc.EmbedConnection@1535482311 (XID = 166), (SESSIONID = 1), (DATABASE = /opt/jfrog/artifactory/var/data/jfbus/derby), (DRDAID = null) 
+2026-11-07T22:49:51.752Z [jfbus] [INFO] [] [com.zaxxer.hikari.HikariDataSource:122] [main] - HikariPool-1 - Start completed.
+ - HikariPool-1 - Start completed.
+2026-11-07T22:49:57.979Z [jfbus] [INFO] [] [org.jfrog.jfbus.broker.db.DatabaseTypeConfig:20] [main] - Resolved jfbus database type 'DERBY' from configured type 'derby'
+ - Resolved jfbus database type 'DERBY' from configured type 'derby'
+2026-11-07T22:49:58.241Z [jfbus] [INFO] [] [org.jfrog.jfbus.broker.tenant.migration.TenantMigrationValidator:25] [main] - [VALIDATOR] Initializing TenantMigrationValidator
+ - [VALIDATOR] Initializing TenantMigrationValidator
+2026-11-07T22:49:58.241Z [jfbus] [INFO] [] [org.jfrog.jfbus.broker.tenant.migration.TenantMigrationValidator:29] [main] - [VALIDATOR] Configured database type: DERBY
+ - [VALIDATOR] Configured database type: DERBY
+2026-11-07T22:49:58.385Z [jfbus] [INFO] [] [org.jfrog.jfbus.broker.service.backoffice.FallbackMetricsConfigsProvider:60] [main] - Fallback metrics config loaded (multiTenant=false, metrics=1, aggregationPeriodMinutes=60, jpdConnected=true)
+ - Fallback metrics config loaded (multiTenant=false, metrics=1, aggregationPeriodMinutes=60, jpdConnected=true)
+2026-11-07T22:50:03.394Z [jfbus] [INFO] [] [org.jfrog.security.common.KeyUtils:108] [main] - Cluster join: Join key is missing. Pending for 5 seconds with 120 seconds timeout
+ - Cluster join: Join key is missing. Pending for 5 seconds with 120 seconds timeout
+2026-11-07T22:50:08.396Z [jfbus] [INFO] [] [org.jfrog.security.common.KeyUtils:108] [main] - Cluster join: Join key is missing. Pending for 5 seconds with 120 seconds timeout
+ - Cluster join: Join key is missing. Pending for 5 seconds with 120 seconds timeout
+2026-11-07T22:50:13.399Z [jfbus] [INFO] [] [org.jfrog.security.common.KeyUtils:108] [main] - Cluster join: Join key is missing. Pending for 5 seconds with 120 seconds timeout
+ - Cluster join: Join key is missing. Pending for 5 seconds with 120 seconds timeout
+2026-11-07T22:50:18.401Z [jfbus] [INFO] [] [org.jfrog.security.common.KeyUtils:108] [main] - Cluster join: Join key is missing. Pending for 5 seconds with 120 seconds timeout
+ - Cluster join: Join key is missing. Pending for 5 seconds with 120 seconds timeout
+2026-11-07T22:50:23.403Z [jfbus] [INFO] [] [org.jfrog.security.common.KeyUtils:108] [main] - Cluster join: Join key is missing. Pending for 5 seconds with 120 seconds timeout
+ - Cluster join: Join key is missing. Pending for 5 seconds with 120 seconds timeout
+2026-11-07T22:51:26.229Z [jfbus] [INFO] [] [org.jfrog.jfbus.broker.JfbusBrokerApplication:54] [main] - Starting JfbusBrokerApplication using Java 25.0.4.1 with PID 8476 (/opt/jfrog/artifactory/app/jfbus/lib/jfbus.jar started by artifactory in /var/opt/jfrog/artifactory)
+ - Starting JfbusBrokerApplication using Java 25.0.4.1 with PID 8476 (/opt/jfrog/artifactory/app/jfbus/lib/jfbus.jar started by artifactory in /var/opt/jfrog/artifactory)
+2026-11-07T22:51:26.250Z [jfbus] [INFO] [] [org.jfrog.jfbus.broker.JfbusBrokerApplication:658] [main] - The following 1 profile is active: "postgres"
+ - The following 1 profile is active: "postgres"
+2026-11-07T22:51:26.518Z [jfbus] [INFO] [] [org.jfrog.jfbus.broker.db.liquibase.JfbusLiquibaseDialectEnvironmentPostProcessor:69] [main] - Registered ConfiguredPostgresDatabase for configured database type 'postgresql'
+ - Registered ConfiguredPostgresDatabase for configured database type 'postgresql'
+2026-11-07T22:51:32.564Z [jfbus] [INFO] [] [com.jfrog.autoconfigure.logging.JfrogLoggingAutoConfiguration:62] [main] - Logging of actuator requests (health, metrics, etc.) will be limited.
+ - Logging of actuator requests (health, metrics, etc.) will be limited.
+2026-11-07T22:51:32.565Z [jfbus] [INFO] [] [com.jfrog.autoconfigure.logging.JfrogLoggingAutoConfiguration:63] [main] - Actuator filter details: base-path=/system, min-status-to-log=400, min-duration-to-log=0 msec
+ - Actuator filter details: base-path=/system, min-status-to-log=400, min-duration-to-log=0 msec
+2026-11-07T22:51:33.316Z [jfbus] [INFO] [] [org.springframework.boot.tomcat.TomcatWebServer:114] [main] - Tomcat initialized with port 8057 (http)
+ - Tomcat initialized with port 8057 (http)
+2026-11-07T22:51:33.596Z [jfbus] [INFO] [] [org.apache.catalina.core.StandardService:168] [main] - Starting service [Tomcat]
+ - Starting service [Tomcat]
+2026-11-07T22:51:33.599Z [jfbus] [INFO] [] [org.apache.catalina.core.StandardEngine:168] [main] - Starting Servlet engine: [Apache Tomcat/11.0.25]
+ - Starting Servlet engine: [Apache Tomcat/11.0.25]
+2026-11-07T22:51:33.705Z [jfbus] [INFO] [] [org.springframework.boot.web.context.servlet.WebApplicationContextInitializer:77] [main] - Root WebApplicationContext: initialization completed in 7180 ms
+ - Root WebApplicationContext: initialization completed in 7180 ms
+2026-11-07T22:51:35.099Z [jfbus] [INFO] [] [com.zaxxer.hikari.HikariDataSource:109] [main] - HikariPool-1 - Starting...
+ - HikariPool-1 - Starting...
+2026-11-07T22:51:35.460Z [jfbus] [INFO] [] [com.zaxxer.hikari.pool.HikariPool:554] [main] - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1822a61b
+ - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1822a61b
+2026-11-07T22:51:35.466Z [jfbus] [INFO] [] [com.zaxxer.hikari.HikariDataSource:122] [main] - HikariPool-1 - Start completed.
+ - HikariPool-1 - Start completed.
+2026-11-07T22:51:40.832Z [jfbus] [INFO] [] [org.jfrog.jfbus.broker.db.DatabaseTypeConfig:20] [main] - Resolved jfbus database type 'POSTGRES' from configured type 'postgresql'
+ - Resolved jfbus database type 'POSTGRES' from configured type 'postgresql'
+2026-11-07T22:51:41.175Z [jfbus] [INFO] [] [org.jfrog.jfbus.broker.tenant.migration.TenantMigrationValidator:25] [main] - [VALIDATOR] Initializing TenantMigrationValidator
+ - [VALIDATOR] Initializing TenantMigrationValidator
+2026-11-07T22:51:41.175Z [jfbus] [INFO] [] [org.jfrog.jfbus.broker.tenant.migration.TenantMigrationValidator:29] [main] - [VALIDATOR] Configured database type: POSTGRES
+ - [VALIDATOR] Configured database type: POSTGRES
+2026-11-07T22:51:41.517Z [jfbus] [INFO] [] [org.jfrog.jfbus.broker.service.backoffice.FallbackMetricsConfigsProvider:60] [main] - Fallback metrics config loaded (multiTenant=false, metrics=1, aggregationPeriodMinutes=60, jpdConnected=true)
+ - Fallback metrics config loaded (multiTenant=false, metrics=1, aggregationPeriodMinutes=60, jpdConnected=true)
+2026-11-07T22:51:45.601Z [jfbus] [INFO] [] [org.jfrog.jfbus.broker.service.backoffice.JfbusJfconnectConfiguration:45] [main] - Configuring JFConnect client for backoffice metrics (multiTenant=false, routerPort=8046, nodeId=67ad257275ae, serviceId=jfbus@01m6w3bqn1fswr0b37nnes1h81)
+ - Configuring JFConnect client for backoffice metrics (multiTenant=false, routerPort=8046, nodeId=67ad257275ae, serviceId=jfbus@01m6w3bqn1fswr0b37nnes1h81)
+2026-11-07T22:51:47.224Z [jfbus] [INFO] [] [org.jfrog.jfbus.broker.service.backoffice.JfbusJfconnectConfiguration:158] [main] - Single-Tenant JFConnect client created for backoffice metrics
+ - Single-Tenant JFConnect client created for backoffice metrics
+2026-11-07T22:51:47.375Z [jfbus] [INFO] [] [org.jfrog.jfbus.broker.service.backoffice.JfbusBackofficeMetricsService:78] [main] - Backoffice metrics service initialized (usageDir=/opt/jfrog/artifactory/var/data/jfbus/usage, multiTenant=false)
+ - Backoffice metrics service initialized (usageDir=/opt/jfrog/artifactory/var/data/jfbus/usage, multiTenant=false)
+2026-11-07T22:51:47.651Z [jfbus] [INFO] [] [org.jfrog.jfbus.broker.db.JfbusQuartzDelegateConfiguration:46] [main] - Setting Quartz driverDelegateClass 'org.quartz.impl.jdbcjobstore.PostgreSQLDelegate' from configured database type 'POSTGRES'
+ - Setting Quartz driverDelegateClass 'org.quartz.impl.jdbcjobstore.PostgreSQLDelegate' from configured database type 'POSTGRES'
+2026-11-07T22:51:51.879Z [jfbus] [WARN] [] [io.micrometer.core.instrument.binder.cache.CaffeineCacheMetrics:63] [main] - The cache 'default-cache' is not recording statistics. No meters except 'cache.size' will be registered. Call 'Caffeine#recordStats()' prior to building the cache for metrics to be recorded.
+ - The cache 'default-cache' is not recording statistics. No meters except 'cache.size' will be registered. Call 'Caffeine#recordStats()' prior to building the cache for metrics to be recorded.
+2026-11-07T22:51:51.891Z [jfbus] [WARN] [] [io.micrometer.core.instrument.binder.cache.CaffeineCacheMetrics:63] [main] - The cache 'subscription-by-name' is not recording statistics. No meters except 'cache.size' will be registered. Call 'Caffeine#recordStats()' prior to building the cache for metrics to be recorded.
+ - The cache 'subscription-by-name' is not recording statistics. No meters except 'cache.size' will be registered. Call 'Caffeine#recordStats()' prior to building the cache for metrics to be recorded.
+2026-11-07T22:51:51.894Z [jfbus] [WARN] [] [io.micrometer.core.instrument.binder.cache.CaffeineCacheMetrics:63] [main] - The cache 'topic-by-name' is not recording statistics. No meters except 'cache.size' will be registered. Call 'Caffeine#recordStats()' prior to building the cache for metrics to be recorded.
+ - The cache 'topic-by-name' is not recording statistics. No meters except 'cache.size' will be registered. Call 'Caffeine#recordStats()' prior to building the cache for metrics to be recorded.
+2026-11-07T22:51:52.542Z [jfbus] [INFO] [] [org.springframework.scheduling.quartz.SchedulerFactoryBean$LocalSchedulerFactory:1222] [main] - Using default implementation for ThreadExecutor
+ - Using default implementation for ThreadExecutor
+2026-11-07T22:51:52.618Z [jfbus] [INFO] [] [org.quartz.core.SchedulerSignalerImpl:62] [main] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+ - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2026-11-07T22:51:52.621Z [jfbus] [INFO] [] [org.quartz.core.QuartzScheduler:224] [main] - Quartz Scheduler v2.5.2 created.
+ - Quartz Scheduler v2.5.2 created.
+2026-11-07T22:51:52.632Z [jfbus] [INFO] [] [org.springframework.scheduling.quartz.LocalDataSourceJobStore:676] [main] - Using db table-based data access locking (synchronization).
+ - Using db table-based data access locking (synchronization).
+2026-11-07T22:51:52.634Z [jfbus] [INFO] [] [org.springframework.scheduling.quartz.LocalDataSourceJobStore:147] [main] - JobStoreCMT initialized.
+ - JobStoreCMT initialized.
+2026-11-07T22:51:52.636Z [jfbus] [INFO] [] [org.quartz.core.QuartzScheduler:289] [main] - Scheduler meta-data: Quartz Scheduler (v2.5.2) 'JfbusScheduler' with instanceId '67ad257275ae1794091912548'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+ - Scheduler meta-data: Quartz Scheduler (v2.5.2) 'JfbusScheduler' with instanceId '67ad257275ae1794091912548'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+2026-11-07T22:51:52.637Z [jfbus] [INFO] [] [org.springframework.scheduling.quartz.SchedulerFactoryBean$LocalSchedulerFactory:1376] [main] - Quartz scheduler 'JfbusScheduler' initialized from an externally provided properties instance.
+ - Quartz scheduler 'JfbusScheduler' initialized from an externally provided properties instance.
+2026-11-07T22:51:52.638Z [jfbus] [INFO] [] [org.springframework.scheduling.quartz.SchedulerFactoryBean$LocalSchedulerFactory:1378] [main] - Quartz scheduler version: 2.5.2
+ - Quartz scheduler version: 2.5.2
+2026-11-07T22:51:52.639Z [jfbus] [INFO] [] [org.quartz.core.QuartzScheduler:2250] [main] - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@74832e40
+ - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@74832e40
+2026-11-07T22:51:53.149Z [jfbus] [INFO] [] [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver:60] [main] - Exposing 3 endpoints beneath base path '/system'
+ - Exposing 3 endpoints beneath base path '/system'
+2026-11-07T22:51:53.426Z [jfbus] [INFO] [] [org.springframework.boot.tomcat.TomcatWebServer:240] [main] - Tomcat started on port 8057 (http) with context path '/jfbus'
+ - Tomcat started on port 8057 (http) with context path '/jfbus'
+2026-11-07T22:51:53.428Z [jfbus] [INFO] [] [org.springframework.scheduling.quartz.SchedulerFactoryBean:718] [main] - Starting Quartz Scheduler now
+ - Starting Quartz Scheduler now
+2026-11-07T22:51:53.513Z [jfbus] [INFO] [] [org.quartz.core.QuartzScheduler:541] [main] - Scheduler JfbusScheduler_$_67ad257275ae1794091912548 started.
+ - Scheduler JfbusScheduler_$_67ad257275ae1794091912548 started.
+2026-11-07T22:51:53.588Z [jfbus] [INFO] [] [org.jfrog.jfbus.broker.JfbusBrokerApplication:60] [main] - Started JfbusBrokerApplication in 32.545 seconds (process running for 38.42)
+ - Started JfbusBrokerApplication in 32.545 seconds (process running for 38.42)
+2026-11-07T22:51:53.638Z [jfbus] [INFO] [] [org.jfrog.jfbus.broker.metrics.VirtualThreadsStartupLogger:30] [main] - VT runtime | jvm=25.0.4.1 Eclipse Adoptium | availableProcessors=4 | spring.threads.virtual.enabled=true | jdk.virtualThreadScheduler.parallelism=<default> | jdk.virtualThreadScheduler.maxPoolSize=<default> | jdk.tracePinnedThreads=<default>
+ - VT runtime | jvm=25.0.4.1 Eclipse Adoptium | availableProcessors=4 | spring.threads.virtual.enabled=true | jdk.virtualThreadScheduler.parallelism=<default> | jdk.virtualThreadScheduler.maxPoolSize=<default> | jdk.tracePinnedThreads=<default>
+2026-11-07T22:51:53.767Z [jfbus] [INFO] [] [org.jfrog.jfbus.broker.dao.PartitionsDaoJdbc:359] [JfbusScheduler_Worker-3] - Getting top range for table jfbus_events
+ - Getting top range for table jfbus_events
+2026-11-07T22:51:53.772Z [jfbus] [INFO] [] [org.jfrog.jfbus.broker.jobs.PartitionsLifeCycleJob:121] [JfbusScheduler_Worker-3] - Will not create new partition, the current partition is still within the threshold, max event ID: 0, top partition range: 5000000, partition size: 5000000
+ - Will not create new partition, the current partition is still within the threshold, max event ID: 0, top partition range: 5000000, partition size: 5000000
+2026-11-07T22:51:53.774Z [jfbus] [INFO] [] [org.jfrog.jfbus.broker.dao.PartitionsDaoJdbc:580] [JfbusScheduler_Worker-3] - Getting partitions count for table jfbus_events
+ - Getting partitions count for table jfbus_events
+2026-11-07T22:51:53.777Z [jfbus] [INFO] [] [org.jfrog.jfbus.broker.jobs.PartitionsLifeCycleJob:130] [JfbusScheduler_Worker-3] - Will not delete partition, only one partition exists
+ - Will not delete partition, only one partition exists
+2026-11-07T22:51:55.765Z [jfbus] [INFO] [] [org.jfrog.common.ExecutionUtils:289] [jf-common-pool-0] - Cluster join: Retry 5: Service registry ping failed, will retry. Error while trying to connect to local router at address 'http://localhost:8046/access': Connect to localhost:8046 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (connect failed)
+ - Cluster join: Retry 5: Service registry ping failed, will retry. Error while trying to connect to local router at address 'http://localhost:8046/access': Connect to localhost:8046 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (connect failed)
+2026-11-07T22:52:00.794Z [jfbus] [INFO] [] [org.jfrog.common.ExecutionUtils:289] [jf-common-pool-1] - Cluster join: Retry 10: Service registry ping failed, will retry. Error while trying to connect to local router at address 'http://localhost:8046/access': Connect to localhost:8046 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (connect failed)
+ - Cluster join: Retry 10: Service registry ping failed, will retry. Error while trying to connect to local router at address 'http://localhost:8046/access': Connect to localhost:8046 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (connect failed)
+2026-11-07T22:52:05.818Z [jfbus] [INFO] [] [org.jfrog.common.ExecutionUtils:289] [jf-common-pool-0] - Cluster join: Retry 15: Service registry ping failed, will retry. Error while trying to connect to local router at address 'http://localhost:8046/access': Connect to localhost:8046 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (connect failed)
+ - Cluster join: Retry 15: Service registry ping failed, will retry. Error while trying to connect to local router at address 'http://localhost:8046/access': Connect to localhost:8046 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (connect failed)
+2026-11-07T22:52:10.942Z [jfbus] [INFO] [] [org.jfrog.access.client.AccessClientBootstrap:180] [main] - Cluster join: Executing join on 'http://localhost:8046/access'
+ - Cluster join: Executing join on 'http://localhost:8046/access'
+2026-11-07T22:52:11.116Z [jfbus] [INFO] [] [org.jfrog.access.client.AccessClientBootstrap:191] [main] - Cluster join: Successfully joined the cluster
+ - Cluster join: Successfully joined the cluster
+2026-11-07T22:52:11.881Z [jfbus] [INFO] [] [io.grpc.netty.TcpMetrics:87] [main] - Epoll available during static init of TcpMetrics:false
+ - Epoll available during static init of TcpMetrics:false
+2026-11-07T22:52:12.893Z [jfbus] [INFO] [] [org.jfrog.jfbus.broker.security.AccessClientProvider:96] [main] - Successfully joined Access
+ - Successfully joined Access
+2026-11-07T22:52:12.906Z [jfbus] [INFO] [] [org.jfrog.jfbus.broker.security.RouterRegistrationService:29] [main] - Successfully registered JFBus in the Router
+ - Successfully registered JFBus in the Router
+2026-11-07T22:52:16.160Z [jfbus] [INFO] [] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/jfbus]:168] [tomcat-handler-0] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+ - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-11-07T22:52:16.163Z [jfbus] [INFO] [] [org.springframework.web.servlet.DispatcherServlet:523] [tomcat-handler-0] - Initializing Servlet 'dispatcherServlet'
+ - Initializing Servlet 'dispatcherServlet'
+2026-11-07T22:52:16.176Z [jfbus] [INFO] [] [org.springframework.web.servlet.DispatcherServlet:545] [tomcat-handler-0] - Completed initialization in 12 ms
+ - Completed initialization in 12 ms

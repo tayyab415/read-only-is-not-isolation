@@ -1,0 +1,125 @@
+{
+  "request_id": "no-store-fetch",
+  "server_trace_ids": [
+    "c48632522cacb80a95b11586abcdfd58"
+  ],
+  "logs": {
+    "access-audit.log": [],
+    "access-metrics.log": [],
+    "access-metrics_events.log": [],
+    "access-request-out.log": [],
+    "access-request.log": [
+      {
+        "line_number": 780,
+        "line": "2026-11-07T23:02:36.786Z|c48632522cacb80a95b11586abcdfd58|/127.0.0.1:54014|jfrt@01m6w3chwnhc4n1xs15bzj1rg6|--SST|com.jfrog.access.v1.permission.PermissionResource/ListPermissionsStream|0|-1|-1|3|grpc-java-netty/1.81.0"
+      }
+    ],
+    "access-security-audit.log": [],
+    "access-service.log": [],
+    "access-thread-dump.log": [],
+    "artifactory-access.log": [
+      {
+        "line_number": 61,
+        "line": "2026-11-07T23:02:37.386Z [c48632522cacb80a95b11586abcdfd58] [ACCEPTED DOWNLOAD] github-remote:github/gitignore/raw/refs/heads/main/Node.gitignore  for client : a-cache / 172.18.0.1"
+      }
+    ],
+    "artifactory-binarystore.log": [],
+    "artifactory-cleanup-audit.log": [],
+    "artifactory-conan-v2-migration.log": [],
+    "artifactory-event.log": [],
+    "artifactory-federation-metrics.log": [],
+    "artifactory-federation-metrics_events.log": [],
+    "artifactory-import-export.log": [],
+    "artifactory-metrics.log": [],
+    "artifactory-metrics_events.log": [],
+    "artifactory-path-checksum-migration.log": [],
+    "artifactory-request-out.log": [
+      {
+        "line_number": 23,
+        "line": "2026-11-07T23:02:37.094Z|c48632522cacb80a95b11586abcdfd58|github-remote||HEAD|https://github.com/github/gitignore/raw/refs/heads/main/Node.gitignore|302|0|0|304"
+      },
+      {
+        "line_number": 24,
+        "line": "2026-11-07T23:02:37.369Z|c48632522cacb80a95b11586abcdfd58|github-remote||HEAD|https://raw.githubusercontent.com/github/gitignore/refs/heads/main/Node.gitignore|200|0|1041|269"
+      },
+      {
+        "line_number": 25,
+        "line": "2026-11-07T23:02:37.387Z|c48632522cacb80a95b11586abcdfd58|github-remote||GET|https://raw.githubusercontent.com/github/gitignore/refs/heads/main/Node.gitignore|200|0|0|3"
+      }
+    ],
+    "artifactory-request-trace.log": [],
+    "artifactory-request.log": [
+      {
+        "line_number": 483,
+        "line": "2026-11-07T23:02:37.388Z|c48632522cacb80a95b11586abcdfd58|172.18.0.1|a-cache|GET|/github-remote/github/gitignore/raw/refs/heads/main/Node.gitignore|200|-1|2262|608|art-a-research/no-store-fetch"
+      }
+    ],
+    "artifactory-service-federation.log": [],
+    "artifactory-service.log": [
+      {
+        "line_number": 3061,
+        "line": "2026-11-07T23:02:37.386Z [jfrt ] [INFO ] [c48632522cacb80a95b11586abcdfd58] [o.a.r.HttpRepo:655            ] [http-nio-8081-exec-7] - github-remote downloading https://github.com/github/gitignore/raw/refs/heads/main/Node.gitignore Unknown content length "
+      },
+      {
+        "line_number": 3062,
+        "line": "2026-11-07T23:02:37.388Z [jfrt ] [INFO ] [c48632522cacb80a95b11586abcdfd58] [o.a.r.HttpRepo:668            ] [http-nio-8081-exec-7] - github-remote downloaded  https://github.com/github/gitignore/raw/refs/heads/main/Node.gitignore 2.21 KB at 1,509.89 KB/sec"
+      }
+    ],
+    "artifactory-sha256-migration.log": [],
+    "artifactory-shadow.log": [],
+    "artifactory-storage-request-out.log": [],
+    "artifactory-traffic-v2.log": [],
+    "artifactory-traffic-v3.log": [],
+    "artifactory-traffic.1794091779163.log": [],
+    "artifactory-xray-traffic.1794091779189.log": [],
+    "derby.log": [],
+    "dummy.log": [],
+    "event-metrics.log": [],
+    "event-request.log": [],
+    "event-service.log": [],
+    "event-webhook-request-out.log": [],
+    "frontend-metrics-events.log": [],
+    "frontend-metrics.log": [],
+    "frontend-request.log": [],
+    "frontend-service.log": [],
+    "jfbus-ack-events.log": [],
+    "jfbus-consume-events.log": [],
+    "jfbus-publish-events.log": [],
+    "jfbus-receive-polling.log": [],
+    "jfbus-request.log": [],
+    "jfbus-service.log": [],
+    "jfconfig-metrics.log": [],
+    "jfconfig-request-out.log": [],
+    "jfconfig-request.log": [],
+    "jfconfig-service.log": [],
+    "metadata-metrics.log": [],
+    "metadata-request.log": [],
+    "metadata-service.log": [],
+    "metadata-traffic.log": [],
+    "observability-metrics.log": [],
+    "observability-request-out.log": [],
+    "observability-request.log": [],
+    "observability-service.log": [],
+    "router-request.log": [
+      {
+        "line_number": 1590,
+        "line": "{\"ClientAddr\":\"127.0.0.1:35280\",\"DownstreamContentSize\":760,\"DownstreamStatus\":200,\"Duration\":4678503,\"Overhead\":107072,\"RequestMethod\":\"POST\",\"RequestPath\":\"/com.jfrog.access.v1.permission.PermissionResource/ListPermissionsStream\",\"ServiceAddr\":\"localhost:8045\",\"SpanId\":\"b25f92cd2e3b65c8\",\"StartUTC\":\"2026-11-07T23:02:36.782556408Z\",\"TraceId\":\"c48632522cacb80a95b11586abcdfd58\",\"level\":\"info\",\"msg\":\"\",\"request_Traceparent\":\"00-c48632522cacb80a95b11586abcdfd58-53860794ae6460ae-01\",\"request_Uber-Trace-Id\":\"c48632522cacb80a95b11586abcdfd58:53860794ae6460ae:0:1\",\"request_User-Agent\":\"grpc-java-netty/1.81.0\",\"time\":\"2026-11-07T23:02:36Z\"}"
+      },
+      {
+        "line_number": 1591,
+        "line": "{\"ClientAddr\":\"172.18.0.1:52660\",\"DownstreamContentSize\":2262,\"DownstreamStatus\":200,\"Duration\":609305375,\"Overhead\":125002,\"RequestMethod\":\"GET\",\"RequestPath\":\"/artifactory/github-remote/github/gitignore/raw/refs/heads/main/Node.gitignore\",\"ServiceAddr\":\"localhost:8081\",\"SpanId\":\"717db34f070085eb\",\"StartUTC\":\"2026-11-07T23:02:36.778626589Z\",\"TraceId\":\"c48632522cacb80a95b11586abcdfd58\",\"level\":\"info\",\"msg\":\"\",\"request_User-Agent\":\"art-a-research/no-store-fetch\",\"time\":\"2026-11-07T23:02:37Z\"}"
+      }
+    ],
+    "router-service.log": [],
+    "router-traefik.log": [],
+    "tomcat/tomcat-access-catalina-2026-11-07.log": [],
+    "tomcat/tomcat-access-localhost-2026-11-07.log": [],
+    "tomcat/tomcat-catalina-2026-11-07.log": [],
+    "tomcat/tomcat-localhost-2026-11-07.log": [],
+    "topology-derby.log": [],
+    "topology-metrics.log": [],
+    "topology-request-out.log": [],
+    "topology-request.log": [],
+    "topology-service.log": []
+  }
+}

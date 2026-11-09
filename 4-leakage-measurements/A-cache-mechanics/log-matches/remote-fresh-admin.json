@@ -1,0 +1,94 @@
+{
+  "request_id": "remote-fresh-admin",
+  "server_trace_ids": [
+    "2d72736032704e979fc1efd0ffac675b"
+  ],
+  "logs": {
+    "access-audit.log": [],
+    "access-metrics.log": [],
+    "access-metrics_events.log": [],
+    "access-request-out.log": [],
+    "access-request.log": [],
+    "access-security-audit.log": [],
+    "access-service.log": [],
+    "access-thread-dump.log": [],
+    "artifactory-access.log": [],
+    "artifactory-binarystore.log": [],
+    "artifactory-cleanup-audit.log": [],
+    "artifactory-conan-v2-migration.log": [],
+    "artifactory-event.log": [],
+    "artifactory-federation-metrics.log": [],
+    "artifactory-federation-metrics_events.log": [],
+    "artifactory-import-export.log": [],
+    "artifactory-metrics.log": [],
+    "artifactory-metrics_events.log": [],
+    "artifactory-path-checksum-migration.log": [],
+    "artifactory-request-out.log": [],
+    "artifactory-request-trace.log": [],
+    "artifactory-request.log": [
+      {
+        "line_number": 3771,
+        "line": "2026-11-07T23:12:41.360Z|2d72736032704e979fc1efd0ffac675b|172.18.0.1|non_authenticated_user|MKCOL|/github-remote/zz_A_remote_fresh_admin|500|-1|0|2|art-a-research/remote-fresh-admin"
+      }
+    ],
+    "artifactory-service-federation.log": [],
+    "artifactory-service.log": [
+      {
+        "line_number": 3377,
+        "line": "2026-11-07T23:12:41.360Z [jfrt ] [ERROR] [2d72736032704e979fc1efd0ffac675b] [o.a.w.s.ArtifactoryFilter:211 ] [http-nio-8081-exec-6] - Caught exception in MKCOL, /artifactory/github-remote/zz_A_remote_fresh_admin"
+      }
+    ],
+    "artifactory-sha256-migration.log": [],
+    "artifactory-shadow.log": [],
+    "artifactory-storage-request-out.log": [],
+    "artifactory-traffic-v2.log": [],
+    "artifactory-traffic-v3.log": [],
+    "artifactory-traffic.1794091779163.log": [],
+    "artifactory-xray-traffic.1794091779189.log": [],
+    "derby.log": [],
+    "dummy.log": [],
+    "event-metrics.log": [],
+    "event-request.log": [],
+    "event-service.log": [],
+    "event-webhook-request-out.log": [],
+    "frontend-metrics-events.log": [],
+    "frontend-metrics.log": [],
+    "frontend-request.log": [],
+    "frontend-service.log": [],
+    "jfbus-ack-events.log": [],
+    "jfbus-consume-events.log": [],
+    "jfbus-publish-events.log": [],
+    "jfbus-receive-polling.log": [],
+    "jfbus-request.log": [],
+    "jfbus-service.log": [],
+    "jfconfig-metrics.log": [],
+    "jfconfig-request-out.log": [],
+    "jfconfig-request.log": [],
+    "jfconfig-service.log": [],
+    "metadata-metrics.log": [],
+    "metadata-request.log": [],
+    "metadata-service.log": [],
+    "metadata-traffic.log": [],
+    "observability-metrics.log": [],
+    "observability-request-out.log": [],
+    "observability-request.log": [],
+    "observability-service.log": [],
+    "router-request.log": [
+      {
+        "line_number": 5229,
+        "line": "{\"ClientAddr\":\"172.18.0.1:43086\",\"DownstreamContentSize\":134,\"DownstreamStatus\":500,\"Duration\":4281206,\"Overhead\":82032,\"RequestMethod\":\"MKCOL\",\"RequestPath\":\"/artifactory/github-remote/zz_A_remote_fresh_admin\",\"ServiceAddr\":\"localhost:8081\",\"SpanId\":\"3de225f84b44a72d\",\"StartUTC\":\"2026-11-07T23:12:41.358310127Z\",\"TraceId\":\"2d72736032704e979fc1efd0ffac675b\",\"level\":\"info\",\"msg\":\"\",\"request_User-Agent\":\"art-a-research/remote-fresh-admin\",\"time\":\"2026-11-07T23:12:41Z\"}"
+      }
+    ],
+    "router-service.log": [],
+    "router-traefik.log": [],
+    "tomcat/tomcat-access-catalina-2026-11-07.log": [],
+    "tomcat/tomcat-access-localhost-2026-11-07.log": [],
+    "tomcat/tomcat-catalina-2026-11-07.log": [],
+    "tomcat/tomcat-localhost-2026-11-07.log": [],
+    "topology-derby.log": [],
+    "topology-metrics.log": [],
+    "topology-request-out.log": [],
+    "topology-request.log": [],
+    "topology-service.log": []
+  }
+}

@@ -1,0 +1,252 @@
+{
+  "run_id": "p4-s1-immutable",
+  "kind": "immutable",
+  "configuration": "immutable",
+  "networks": {
+    "alice": "p1-p4-s1-immutable-net-alice",
+    "bob": "p1-p4-s1-immutable-net-bob"
+  },
+  "containers": {
+    "alice": "p1-p4-s1-immutable-alice",
+    "bob": "p1-p4-s1-immutable-bob",
+    "mirror_alice": "p1-p4-s1-immutable-mirror-alice",
+    "mirror_bob": "p1-p4-s1-immutable-mirror-bob"
+  },
+  "users": {
+    "alice": "p1-p4-s1-immutable-alice",
+    "bob": "p1-p4-s1-immutable-bob"
+  },
+  "repositories": {
+    "alice": "p1-p4-s1-immutable-alice",
+    "bob": "p1-p4-s1-immutable-bob"
+  },
+  "repository_names_are": "synthetic route identifiers",
+  "object_paths": {
+    "0": "/fixture/pkg-00.bin",
+    "15": "/fixture/pkg-15.bin"
+  },
+  "fixture_etag": "\"85c7795747cf1f3ac1e7d7f53d3faa6b9d9f3dc961aa9b692aaaddb943ace870\"",
+  "storage_blocked": true,
+  "negative_cache_period_seconds": 0,
+  "manifest_sha256": "7ca3d6b42b74dafae3ba410c2e8716b2ee1277505268fb8a51961a2e43605321",
+  "server_tmpfs_bytes": 67108864,
+  "server_memory_bytes": 134217728,
+  "private_queue_size": 5,
+  "boundary_readback": {
+    "containers": {
+      "alice": {
+        "name": "p1-p4-s1-immutable-alice",
+        "user": "20001:20001",
+        "root_read_only": true,
+        "cap_drop": [
+          "ALL"
+        ],
+        "security_options": [
+          "no-new-privileges:true"
+        ],
+        "memory": 134217728,
+        "memory_swap": 134217728,
+        "nano_cpus": 500000000,
+        "pids_limit": 48,
+        "tmpfs": {
+          "/tmp": "rw,nosuid,nodev,size=16m"
+        },
+        "forbidden_environment_present": false,
+        "published_ports": {},
+        "attached_networks": [
+          "p1-p4-s1-immutable-net-alice"
+        ],
+        "network_addresses": {
+          "p1-p4-s1-immutable-net-alice": "172.19.0.1"
+        },
+        "image_id": "sha256:5e2bdb1b0d542d5039cffb8181c65930093949194a65c365dfb1b0fe13a4fa5b",
+        "bind_mount_destinations": [],
+        "mounts_read_only": true
+      },
+      "bob": {
+        "name": "p1-p4-s1-immutable-bob",
+        "user": "20001:20001",
+        "root_read_only": true,
+        "cap_drop": [
+          "ALL"
+        ],
+        "security_options": [
+          "no-new-privileges:true"
+        ],
+        "memory": 134217728,
+        "memory_swap": 134217728,
+        "nano_cpus": 500000000,
+        "pids_limit": 48,
+        "tmpfs": {
+          "/tmp": "rw,nosuid,nodev,size=16m"
+        },
+        "forbidden_environment_present": false,
+        "published_ports": {},
+        "attached_networks": [
+          "p1-p4-s1-immutable-net-bob"
+        ],
+        "network_addresses": {
+          "p1-p4-s1-immutable-net-bob": "172.20.0.1"
+        },
+        "image_id": "sha256:5e2bdb1b0d542d5039cffb8181c65930093949194a65c365dfb1b0fe13a4fa5b",
+        "bind_mount_destinations": [],
+        "mounts_read_only": true
+      },
+      "mirror_alice": {
+        "name": "p1-p4-s1-immutable-mirror-alice",
+        "user": "20001:20001",
+        "root_read_only": true,
+        "cap_drop": [
+          "ALL"
+        ],
+        "security_options": [
+          "no-new-privileges:true"
+        ],
+        "memory": 134217728,
+        "memory_swap": 134217728,
+        "nano_cpus": 500000000,
+        "pids_limit": 48,
+        "tmpfs": {
+          "/tmp": "rw,nosuid,nodev,size=64m"
+        },
+        "forbidden_environment_present": false,
+        "published_ports": {},
+        "attached_networks": [
+          "p1-p4-s1-immutable-net-alice"
+        ],
+        "network_addresses": {
+          "p1-p4-s1-immutable-net-alice": "172.19.0.2"
+        },
+        "image_id": "sha256:5e2bdb1b0d542d5039cffb8181c65930093949194a65c365dfb1b0fe13a4fa5b",
+        "bind_mount_destinations": [
+          "/deploy.py",
+          "/catalog",
+          "/config.json",
+          "/mirror.py"
+        ],
+        "mounts_read_only": true
+      },
+      "mirror_bob": {
+        "name": "p1-p4-s1-immutable-mirror-bob",
+        "user": "20001:20001",
+        "root_read_only": true,
+        "cap_drop": [
+          "ALL"
+        ],
+        "security_options": [
+          "no-new-privileges:true"
+        ],
+        "memory": 134217728,
+        "memory_swap": 134217728,
+        "nano_cpus": 500000000,
+        "pids_limit": 48,
+        "tmpfs": {
+          "/tmp": "rw,nosuid,nodev,size=64m"
+        },
+        "forbidden_environment_present": false,
+        "published_ports": {},
+        "attached_networks": [
+          "p1-p4-s1-immutable-net-bob"
+        ],
+        "network_addresses": {
+          "p1-p4-s1-immutable-net-bob": "172.20.0.2"
+        },
+        "image_id": "sha256:5e2bdb1b0d542d5039cffb8181c65930093949194a65c365dfb1b0fe13a4fa5b",
+        "bind_mount_destinations": [
+          "/catalog",
+          "/config.json",
+          "/mirror.py",
+          "/deploy.py"
+        ],
+        "mounts_read_only": true
+      }
+    },
+    "networks": {
+      "alice": {
+        "name": "p1-p4-s1-immutable-net-alice",
+        "internal": true,
+        "options": {
+          "com.docker.network.bridge.gateway_mode_ipv4": "isolated"
+        },
+        "containers": [
+          "p1-p4-s1-immutable-alice",
+          "p1-p4-s1-immutable-mirror-alice"
+        ]
+      },
+      "bob": {
+        "name": "p1-p4-s1-immutable-net-bob",
+        "internal": true,
+        "options": {
+          "com.docker.network.bridge.gateway_mode_ipv4": "isolated"
+        },
+        "containers": [
+          "p1-p4-s1-immutable-bob",
+          "p1-p4-s1-immutable-mirror-bob"
+        ]
+      }
+    }
+  },
+  "network_positive_controls": {
+    "passed": true,
+    "checks": 6,
+    "records": [
+      {
+        "host": "172.20.0.1",
+        "port": 18888,
+        "expected_connected": true,
+        "name": "live peer listener on its own network",
+        "connected": true,
+        "error": null,
+        "actor": "bob"
+      },
+      {
+        "host": "172.20.0.2",
+        "port": 8000,
+        "expected_connected": true,
+        "name": "assigned serving route",
+        "connected": true,
+        "error": null,
+        "actor": "bob"
+      },
+      {
+        "host": "172.19.0.2",
+        "port": 8000,
+        "expected_connected": false,
+        "name": "peer serving route",
+        "connected": false,
+        "error": "OSError",
+        "actor": "bob"
+      },
+      {
+        "host": "172.20.0.1",
+        "port": 18888,
+        "expected_connected": false,
+        "name": "same live listener from the other network",
+        "connected": false,
+        "error": "OSError",
+        "actor": "alice"
+      },
+      {
+        "host": "172.19.0.2",
+        "port": 8000,
+        "expected_connected": true,
+        "name": "assigned serving route",
+        "connected": true,
+        "error": null,
+        "actor": "alice"
+      },
+      {
+        "host": "172.20.0.2",
+        "port": 8000,
+        "expected_connected": false,
+        "name": "peer serving route",
+        "connected": false,
+        "error": "OSError",
+        "actor": "alice"
+      }
+    ],
+    "listener_stopped": true,
+    "scope": "Specified live TCP listeners and routes, not every possible bypass.",
+    "listener_exit_code": 0
+  }
+}

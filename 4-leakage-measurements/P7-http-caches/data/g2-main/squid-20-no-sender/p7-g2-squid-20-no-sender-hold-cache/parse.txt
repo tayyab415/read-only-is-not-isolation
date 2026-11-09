@@ -1,0 +1,35 @@
+2026/11/09 00:09:30| Processing Configuration File: /config/cache.conf (depth 0)
+2026/11/09 00:09:30| Processing: http_port 8000
+2026/11/09 00:09:30| Processing: visible_hostname p7-owned-cache
+2026/11/09 00:09:30| Processing: pid_filename /tmp/squid.pid
+2026/11/09 00:09:30| Processing: coredump_dir /tmp
+2026/11/09 00:09:30| Processing: cache_effective_user research
+2026/11/09 00:09:30| Processing: cache_effective_group research
+2026/11/09 00:09:30| Processing: workers 1
+2026/11/09 00:09:30| Processing: acl owned_clients src 172.19.0.1 172.20.0.1
+2026/11/09 00:09:30| Processing: acl owned_origin dstdomain p7-g2-squid-20-no-sender-hold-origin
+2026/11/09 00:09:30| Processing: acl owned_port port 8000
+2026/11/09 00:09:30| Processing: acl permitted_methods method GET HEAD
+2026/11/09 00:09:30| Processing: http_access allow owned_clients owned_origin owned_port permitted_methods
+2026/11/09 00:09:30| Processing: http_access deny all
+2026/11/09 00:09:30| Processing: cache allow all
+2026/11/09 00:09:30| Processing: cache_mem 4 MB
+2026/11/09 00:09:30| Processing: maximum_object_size_in_memory 64 KB
+2026/11/09 00:09:30| Processing: cache_dir ufs /tmp/cache 16 4 16
+2026/11/09 00:09:30| Processing: maximum_object_size 64 KB
+2026/11/09 00:09:30| Processing: negative_ttl 60 seconds
+2026/11/09 00:09:30| Processing: collapsed_forwarding off
+2026/11/09 00:09:30| Processing: offline_mode off
+2026/11/09 00:09:30| Processing: client_persistent_connections off
+2026/11/09 00:09:30| Processing: server_persistent_connections off
+2026/11/09 00:09:30| Processing: forward_max_tries 1
+2026/11/09 00:09:30| Processing: retry_on_error off
+2026/11/09 00:09:30| Processing: uri_whitespace deny
+2026/11/09 00:09:30| Processing: refresh_pattern . 0 0% 0
+2026/11/09 00:09:30| Processing: range_offset_limit none
+2026/11/09 00:09:30| Processing: shutdown_lifetime 0 seconds
+2026/11/09 00:09:30| Processing: cache_log /tmp/squid-cache.log
+2026/11/09 00:09:30| Processing: cache_store_log none
+2026/11/09 00:09:30| Processing: logformat evidence %ts.%03tu %>a %rm %ru %>Hs %Ss %tr %{User-Agent}>h
+2026/11/09 00:09:30| Processing: access_log stdio:/tmp/cache-access.txt evidence
+2026/11/09 00:09:30| Processing: buffered_logs off

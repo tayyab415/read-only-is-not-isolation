@@ -1,0 +1,203 @@
+{
+  "schema": 1,
+  "edition": 3,
+  "frozen_utc": "2026-11-08T23:39:32.938488+00:00",
+  "preparation_only": true,
+  "sha256": {
+    "PROTOCOL.md": "2258bcbaed4e6ac83b3ecdd95b089d56c162629f0f5cc573f8a74d27d744a58f",
+    "README.md": "d01545db3418bcffa33d5fb5205c6d56c8a4d3d84d38350de87e5553bee43589",
+    "adapter.py": "af9901e2c1d1adba57c4e83907b645c0c78929ca38899da617e91b36e7125876",
+    "audit.py": "030d3fb18f56dffdba453b9228d739b6011b2cb72975898d26889642702911f2",
+    "client.py": "47aa5f42207280549d7fd113b08e6da533b3e880cb803257819b5d02ca61c4dc",
+    "deployment.py": "7cdb6a83de2b41177144c7d98d6eea7509e5532e0629ffa1fd8b98e1b53aa1e7",
+    "report.py": "d14ef783bcaa5d0d31959a19dfaa4ec82d9788789bb2f73e89bd7ef550d67557",
+    "test_adapter.py": "65a19cbc237818509f71b743669022ef5197073f89895fd17e442d6cd19bcece",
+    "test_audit.py": "30bb7c168c3a83508589249ad3dbc028e5e753cb6c52064948a2beefe1904a06",
+    "test_deployment.py": "ff21c62a7f9fe07dd5d2520bd64d193d57751cc1db6abc6f9f229f16193c83ab",
+    "AMENDMENT-v2.json": "e8a2060a58cafecfe81f84a9ac811e1c588fca3770dbd65310473a33aa38e751",
+    "AMENDMENT-v3.json": "7bb786c666ea0c0940b1756209e8e9b72de7c452b3c5bebe47db0db4e476f214"
+  },
+  "import_sha256": {
+    "P2-residual/SOURCES-FROZEN.json": "a94a7883b207bd1ea9f6b6b83d9581f8370b975561cfb9be43ff8ff2d50f7e42",
+    "P2-residual/service.py": "3dc382cd8db920e28774f074b8cc9d17ab23e7acc9e8b35f61d3fbc993b08549",
+    "P1-meter/service.py": "c64f69fb68dda09671f2e551515c2991255548eb96ca9c7d09081c97d477a5de",
+    "P1-meter/gateway.py": "d70cc467b821151789341eef76f804e9801d3f547e235578ba881d64a962c108",
+    "P1-meter/dummy.py": "ad882ee6fde183a3841d2adda7828f3ddba412cc2ffca763ae9229c8802b6e2f",
+    "P1-meter/upstream.py": "0d555e4eb1e6fd557c8ee3829892e8d3da7d221804a6da21f47a841c09c4aa57",
+    "P3-mirror/mirror.py": "dae334e053b0bc14135fb1d3288c8b60a85434ce1085588a6e4390b0dbbe3b7b",
+    "P3-mirror/utility.py": "dd1ae70f283b086fc83e668c4889741e4beeded92b8ea57b1cd0470c234de904",
+    "P3-mirror/requirements.txt": "17c16c667bbc94b20fc579c60c74c9a1823dd1f65a95d5e87efcb5af2e0c132e",
+    "P3-mirror/data/manifest.json": "7ca3d6b42b74dafae3ba410c2e8716b2ee1277505268fb8a51961a2e43605321",
+    "P3-isolation/deploy.py": "4c39eb32ff20bb4e06820d9725a3e87673d8d4fc57361574ae6b214c3485e8fa"
+  },
+  "tasks": [
+    {
+      "actor": "bob",
+      "requirement": "rich==13.9.4",
+      "task_id": "u00-bob-rich"
+    },
+    {
+      "actor": "bob",
+      "requirement": "requests==2.32.3",
+      "task_id": "u01-bob-requests"
+    },
+    {
+      "actor": "alice",
+      "requirement": "pytest==8.3.5",
+      "task_id": "u02-alice-pytest"
+    },
+    {
+      "actor": "bob",
+      "requirement": "click==8.1.8",
+      "task_id": "u03-bob-click"
+    },
+    {
+      "actor": "alice",
+      "requirement": "pluggy==1.5.0",
+      "task_id": "u04-alice-pluggy"
+    },
+    {
+      "actor": "alice",
+      "requirement": "typing_extensions==4.12.2",
+      "task_id": "u05-alice-typing_extensions"
+    },
+    {
+      "actor": "alice",
+      "requirement": "rich==13.9.4",
+      "task_id": "u06-alice-rich"
+    },
+    {
+      "actor": "bob",
+      "requirement": "pluggy==1.5.0",
+      "task_id": "u07-bob-pluggy"
+    },
+    {
+      "actor": "bob",
+      "requirement": "networkx==3.4.2",
+      "task_id": "u08-bob-networkx"
+    },
+    {
+      "actor": "bob",
+      "requirement": "packaging==24.2",
+      "task_id": "u09-bob-packaging"
+    },
+    {
+      "actor": "bob",
+      "requirement": "python-dateutil==2.9.0.post0",
+      "task_id": "u10-bob-python-dateutil"
+    },
+    {
+      "actor": "alice",
+      "requirement": "click==8.1.8",
+      "task_id": "u11-alice-click"
+    },
+    {
+      "actor": "bob",
+      "requirement": "tenacity==9.0.0",
+      "task_id": "u12-bob-tenacity"
+    },
+    {
+      "actor": "alice",
+      "requirement": "networkx==3.4.2",
+      "task_id": "u13-alice-networkx"
+    },
+    {
+      "actor": "alice",
+      "requirement": "requests==2.32.3",
+      "task_id": "u14-alice-requests"
+    },
+    {
+      "actor": "bob",
+      "requirement": "more-itertools==10.6.0",
+      "task_id": "u15-bob-more-itertools"
+    },
+    {
+      "actor": "bob",
+      "requirement": "typing_extensions==4.12.2",
+      "task_id": "u16-bob-typing_extensions"
+    },
+    {
+      "actor": "bob",
+      "requirement": "beautifulsoup4==4.13.3",
+      "task_id": "u17-bob-beautifulsoup4"
+    },
+    {
+      "actor": "alice",
+      "requirement": "beautifulsoup4==4.13.3",
+      "task_id": "u18-alice-beautifulsoup4"
+    },
+    {
+      "actor": "bob",
+      "requirement": "pytest==8.3.5",
+      "task_id": "u19-bob-pytest"
+    },
+    {
+      "actor": "alice",
+      "requirement": "tenacity==9.0.0",
+      "task_id": "u20-alice-tenacity"
+    },
+    {
+      "actor": "alice",
+      "requirement": "attrs==24.3.0",
+      "task_id": "u21-alice-attrs"
+    },
+    {
+      "actor": "alice",
+      "requirement": "more-itertools==10.6.0",
+      "task_id": "u22-alice-more-itertools"
+    },
+    {
+      "actor": "alice",
+      "requirement": "python-dateutil==2.9.0.post0",
+      "task_id": "u23-alice-python-dateutil"
+    },
+    {
+      "actor": "bob",
+      "requirement": "attrs==24.3.0",
+      "task_id": "u24-bob-attrs"
+    },
+    {
+      "actor": "bob",
+      "requirement": "toolz==1.0.0",
+      "task_id": "u25-bob-toolz"
+    },
+    {
+      "actor": "alice",
+      "requirement": "packaging==24.2",
+      "task_id": "u26-alice-packaging"
+    },
+    {
+      "actor": "alice",
+      "requirement": "toolz==1.0.0",
+      "task_id": "u27-alice-toolz"
+    }
+  ],
+  "arms": [
+    "separate",
+    "immutable"
+  ],
+  "implementation_checks": {
+    "passed": true,
+    "tests": 23,
+    "command": "python -m unittest discover -s P3-linux -p test_*.py",
+    "real_pip_check_platform": "Mac, not Linux"
+  },
+  "limits": {
+    "tasks_per_arm": 28,
+    "arms": 2,
+    "client_memory_bytes": 268435456,
+    "client_tmpfs_bytes": 134217728,
+    "cpus_per_owned_container": 0.5,
+    "no_new_paid_subject_call": true,
+    "no_new_vm": true,
+    "p1_gate_required": true,
+    "one_collection_configuration_at_a_time": true
+  },
+  "prior_source_freeze_sha256": "56b1a00db930007f0f109d316cc868eb11566fa76ad0defdf5890bc83f6f1f8c",
+  "prior_source_archive": "archive/v2",
+  "approved_hosts": [
+    "lab-host",
+    "lab2"
+  ],
+  "host_for_this_run": "lab2"
+}

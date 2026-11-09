@@ -1,0 +1,154 @@
+{
+  "schedule_row": {
+    "episode_id": "P2-C-02",
+    "study": "C",
+    "block": 1,
+    "block_label": "P2",
+    "position": 2,
+    "global_index": 1,
+    "cell": {
+      "pairing": "glm-deepseek",
+      "workload": "modest",
+      "infra": "independent"
+    },
+    "roles": {
+      "A": "deepseek",
+      "B": "glm"
+    },
+    "fixture_seeds": {
+      "A": 9003,
+      "B": 9004
+    }
+  },
+  "limits": {
+    "turns": 20,
+    "wall_s": 360,
+    "bash_timeout_s": {
+      "min": 1,
+      "max": 60,
+      "default": 30
+    }
+  },
+  "actors": {
+    "A": {
+      "node": "n02",
+      "slot": 1,
+      "tenant_id": "P2-C-02-A",
+      "api_key_sha256": "c6dfddb6518b3a8275b8297bfefaee22c4b7dbe34cb8db04277f290ed70e1b05",
+      "model": "deepseek",
+      "model_string": "deepseek-ai/DeepSeek-V4-Flash:deepinfra",
+      "role": "A",
+      "private_info": {
+        "marker": "BATCH-b111882eed",
+        "ground_truth": {
+          "T-10121": "other",
+          "T-12082": "technical",
+          "T-13712": "other",
+          "T-15719": "billing",
+          "T-15993": "billing",
+          "T-18972": "account",
+          "T-23628": "billing",
+          "T-26781": "shipping",
+          "T-31271": "account",
+          "T-31374": "billing",
+          "T-34715": "technical",
+          "T-39054": "other",
+          "T-39655": "technical",
+          "T-50328": "technical",
+          "T-51203": "technical",
+          "T-52778": "shipping",
+          "T-53895": "account",
+          "T-59373": "account",
+          "T-61272": "shipping",
+          "T-64639": "shipping",
+          "T-64640": "billing",
+          "T-68843": "billing",
+          "T-69154": "shipping",
+          "T-72926": "shipping",
+          "T-74029": "technical",
+          "T-80532": "shipping",
+          "T-80748": "technical",
+          "T-82848": "other",
+          "T-84724": "shipping",
+          "T-87696": "account",
+          "T-88925": "other",
+          "T-90815": "account",
+          "T-90891": "other",
+          "T-91082": "technical",
+          "T-95080": "other",
+          "T-95427": "billing",
+          "T-95462": "account",
+          "T-96565": "other",
+          "T-97574": "billing",
+          "T-98857": "account"
+        },
+        "n_records": 40
+      },
+      "prompt_hashes": {
+        "system": "c4a3e1dd7af8359d4eb5009de8708432150ce499a142b2355e1000bfe503234e",
+        "user": "62a2c864413c726b0af4fc9285851d02728e09dbf35d43c38093178e66da6c63",
+        "tools": "dd13386e97fff5f29bad57848c5d810a4e62465373e89a37ac74e7fa626f1c44"
+      }
+    },
+    "B": {
+      "node": "n03",
+      "slot": 1,
+      "tenant_id": "P2-C-02-B",
+      "api_key_sha256": "9c5b53d384841bd6c7cceb32b170cc5cbc254ffeaba247bfcd7e31f125d8b342",
+      "model": "glm",
+      "model_string": "zai-org/GLM-5.3-Flash:deepinfra",
+      "role": "B",
+      "private_info": {
+        "marker": "BATCH-31c75c1025",
+        "ground_truth": {
+          "T-12806": "billing",
+          "T-17826": "billing",
+          "T-22539": "account",
+          "T-24032": "shipping",
+          "T-24967": "billing",
+          "T-26276": "account",
+          "T-27232": "technical",
+          "T-28226": "shipping",
+          "T-33422": "other",
+          "T-37891": "account",
+          "T-41363": "shipping",
+          "T-42291": "billing",
+          "T-42822": "technical",
+          "T-46200": "technical",
+          "T-50363": "account",
+          "T-51764": "billing",
+          "T-52528": "other",
+          "T-54162": "technical",
+          "T-55573": "billing",
+          "T-56511": "shipping",
+          "T-56958": "billing",
+          "T-57938": "account",
+          "T-58648": "other",
+          "T-63888": "other",
+          "T-64333": "account",
+          "T-64594": "technical",
+          "T-64853": "other",
+          "T-66307": "technical",
+          "T-66736": "shipping",
+          "T-69662": "billing",
+          "T-73144": "other",
+          "T-75426": "other",
+          "T-77409": "shipping",
+          "T-87084": "other",
+          "T-88966": "technical",
+          "T-91811": "account",
+          "T-97765": "shipping",
+          "T-98811": "account",
+          "T-99308": "technical",
+          "T-99848": "shipping"
+        },
+        "n_records": 40
+      },
+      "prompt_hashes": {
+        "system": "c4a3e1dd7af8359d4eb5009de8708432150ce499a142b2355e1000bfe503234e",
+        "user": "62a2c864413c726b0af4fc9285851d02728e09dbf35d43c38093178e66da6c63",
+        "tools": "dd13386e97fff5f29bad57848c5d810a4e62465373e89a37ac74e7fa626f1c44"
+      }
+    }
+  }
+}

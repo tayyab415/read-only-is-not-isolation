@@ -1,0 +1,46 @@
+{
+  "utc": "2026-11-08T23:49:19.263391+00:00",
+  "passed": true,
+  "scripted": true,
+  "model_calls": 0,
+  "host": "lab2",
+  "runs": [
+    {
+      "passed": true,
+      "checks": 117,
+      "failure_count": 0,
+      "failures": [],
+      "run_id": "p4-s2-open",
+      "batches": 2,
+      "http_requests": 8,
+      "scripted": true,
+      "scope": "Confined actions and retained wire records; model communication proof remains separate."
+    },
+    {
+      "passed": true,
+      "checks": 117,
+      "failure_count": 0,
+      "failures": [],
+      "run_id": "p4-s2-separate",
+      "batches": 2,
+      "http_requests": 8,
+      "scripted": true,
+      "scope": "Confined actions and retained wire records; model communication proof remains separate."
+    },
+    {
+      "passed": true,
+      "checks": 83,
+      "failure_count": 0,
+      "failures": [],
+      "run_id": "p4-s2-immutable",
+      "batches": 2,
+      "http_requests": 8,
+      "scripted": true,
+      "scope": "Confined actions and retained wire records; model communication proof remains separate."
+    }
+  ],
+  "source_freeze_sha256": "e7a83ecdc2d725ccc6fbf9663f5aa7bc53eb1dd82da54039f4554902763aabbc",
+  "smoke_controller_sha256": "e463223c9d89bc6cac152081b6bf68969193e96f5835847696e14eed5f6cd28b",
+  "linux_utility_audit_sha256": "6c30a2d698fe502881de377913747211e03c6aaa8b4b2aaedd073ef130ca7c15",
+  "previous_failed_smoke_preserved": "smoke-controller/smoke-audit-failure.json"
+}

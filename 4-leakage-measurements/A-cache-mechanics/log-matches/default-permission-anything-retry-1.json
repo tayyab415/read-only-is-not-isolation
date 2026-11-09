@@ -1,0 +1,114 @@
+{
+  "request_id": "default-permission-anything-retry-1",
+  "server_trace_ids": [
+    "0a98d5a828d7b26fd8eacd790aced5fc"
+  ],
+  "logs": {
+    "access-audit.log": [],
+    "access-metrics.log": [],
+    "access-metrics_events.log": [],
+    "access-request-out.log": [],
+    "access-request.log": [
+      {
+        "line_number": 434,
+        "line": "2026-11-07T22:58:17.460Z|0a98d5a828d7b26fd8eacd790aced5fc|/127.0.0.1:54014|jfrt@01m6w3chwnhc4n1xs15bzj1rg6|--SST|com.jfrog.access.v1.permission.PermissionResource/ListPermissionsStream|0|-1|-1|11|grpc-java-netty/1.81.0"
+      },
+      {
+        "line_number": 435,
+        "line": "2026-11-07T22:58:17.475Z|0a98d5a828d7b26fd8eacd790aced5fc|/127.0.0.1:54014|jfrt@01m6w3chwnhc4n1xs15bzj1rg6|--SST|com.jfrog.access.v1.permission.PermissionResource/ListPermissionsStream|0|-1|-1|10|grpc-java-netty/1.81.0"
+      },
+      {
+        "line_number": 436,
+        "line": "2026-11-07T22:58:17.486Z|0a98d5a828d7b26fd8eacd790aced5fc|/127.0.0.1:54014|jfrt@01m6w3chwnhc4n1xs15bzj1rg6|--SST|com.jfrog.access.v1.permission.PermissionResource/ListPermissionsStream|0|-1|-1|4|grpc-java-netty/1.81.0"
+      }
+    ],
+    "access-security-audit.log": [],
+    "access-service.log": [],
+    "access-thread-dump.log": [],
+    "artifactory-access.log": [],
+    "artifactory-binarystore.log": [],
+    "artifactory-cleanup-audit.log": [],
+    "artifactory-conan-v2-migration.log": [],
+    "artifactory-event.log": [],
+    "artifactory-federation-metrics.log": [],
+    "artifactory-federation-metrics_events.log": [],
+    "artifactory-import-export.log": [],
+    "artifactory-metrics.log": [],
+    "artifactory-metrics_events.log": [],
+    "artifactory-path-checksum-migration.log": [],
+    "artifactory-request-out.log": [],
+    "artifactory-request-trace.log": [],
+    "artifactory-request.log": [
+      {
+        "line_number": 122,
+        "line": "2026-11-07T22:58:17.492Z|0a98d5a828d7b26fd8eacd790aced5fc|172.18.0.1|admin|GET|/ui/permissiontargets/Anything|200|-1|305|51|art-a-research/default-permission-anything-retry-1"
+      }
+    ],
+    "artifactory-service-federation.log": [],
+    "artifactory-service.log": [],
+    "artifactory-sha256-migration.log": [],
+    "artifactory-shadow.log": [],
+    "artifactory-storage-request-out.log": [],
+    "artifactory-traffic-v2.log": [],
+    "artifactory-traffic-v3.log": [],
+    "artifactory-traffic.1794091779163.log": [],
+    "artifactory-xray-traffic.1794091779189.log": [],
+    "derby.log": [],
+    "dummy.log": [],
+    "event-metrics.log": [],
+    "event-request.log": [],
+    "event-service.log": [],
+    "event-webhook-request-out.log": [],
+    "frontend-metrics-events.log": [],
+    "frontend-metrics.log": [],
+    "frontend-request.log": [],
+    "frontend-service.log": [],
+    "jfbus-ack-events.log": [],
+    "jfbus-consume-events.log": [],
+    "jfbus-publish-events.log": [],
+    "jfbus-receive-polling.log": [],
+    "jfbus-request.log": [],
+    "jfbus-service.log": [],
+    "jfconfig-metrics.log": [],
+    "jfconfig-request-out.log": [],
+    "jfconfig-request.log": [],
+    "jfconfig-service.log": [],
+    "metadata-metrics.log": [],
+    "metadata-request.log": [],
+    "metadata-service.log": [],
+    "metadata-traffic.log": [],
+    "observability-metrics.log": [],
+    "observability-request-out.log": [],
+    "observability-request.log": [],
+    "observability-service.log": [],
+    "router-request.log": [
+      {
+        "line_number": 903,
+        "line": "{\"ClientAddr\":\"127.0.0.1:35280\",\"DownstreamContentSize\":301,\"DownstreamStatus\":200,\"Duration\":12596053,\"Overhead\":118572,\"RequestMethod\":\"POST\",\"RequestPath\":\"/com.jfrog.access.v1.permission.PermissionResource/ListPermissionsStream\",\"ServiceAddr\":\"localhost:8045\",\"SpanId\":\"1625049fb25e087a\",\"StartUTC\":\"2026-11-07T22:58:17.448460175Z\",\"TraceId\":\"0a98d5a828d7b26fd8eacd790aced5fc\",\"level\":\"info\",\"msg\":\"\",\"request_Traceparent\":\"00-0a98d5a828d7b26fd8eacd790aced5fc-2a8763f8a98e3722-01\",\"request_Uber-Trace-Id\":\"0a98d5a828d7b26fd8eacd790aced5fc:2a8763f8a98e3722:0:1\",\"request_User-Agent\":\"grpc-java-netty/1.81.0\",\"time\":\"2026-11-07T22:58:17Z\"}"
+      },
+      {
+        "line_number": 904,
+        "line": "{\"ClientAddr\":\"127.0.0.1:35280\",\"DownstreamContentSize\":167,\"DownstreamStatus\":200,\"Duration\":13287287,\"Overhead\":120812,\"RequestMethod\":\"POST\",\"RequestPath\":\"/com.jfrog.access.v1.permission.PermissionResource/ListPermissionsStream\",\"ServiceAddr\":\"localhost:8045\",\"SpanId\":\"64823bfaab57558c\",\"StartUTC\":\"2026-11-07T22:58:17.463999588Z\",\"TraceId\":\"0a98d5a828d7b26fd8eacd790aced5fc\",\"level\":\"info\",\"msg\":\"\",\"request_Traceparent\":\"00-0a98d5a828d7b26fd8eacd790aced5fc-2a8763f8a98e3722-01\",\"request_Uber-Trace-Id\":\"0a98d5a828d7b26fd8eacd790aced5fc:2a8763f8a98e3722:0:1\",\"request_User-Agent\":\"grpc-java-netty/1.81.0\",\"time\":\"2026-11-07T22:58:17Z\"}"
+      },
+      {
+        "line_number": 905,
+        "line": "{\"ClientAddr\":\"127.0.0.1:35280\",\"DownstreamContentSize\":0,\"DownstreamStatus\":200,\"Duration\":6188104,\"Overhead\":105312,\"RequestMethod\":\"POST\",\"RequestPath\":\"/com.jfrog.access.v1.permission.PermissionResource/ListPermissionsStream\",\"ServiceAddr\":\"localhost:8045\",\"SpanId\":\"040a318d5b56f6c5\",\"StartUTC\":\"2026-11-07T22:58:17.481098912Z\",\"TraceId\":\"0a98d5a828d7b26fd8eacd790aced5fc\",\"level\":\"info\",\"msg\":\"\",\"request_Traceparent\":\"00-0a98d5a828d7b26fd8eacd790aced5fc-2a8763f8a98e3722-01\",\"request_Uber-Trace-Id\":\"0a98d5a828d7b26fd8eacd790aced5fc:2a8763f8a98e3722:0:1\",\"request_User-Agent\":\"grpc-java-netty/1.81.0\",\"time\":\"2026-11-07T22:58:17Z\"}"
+      },
+      {
+        "line_number": 906,
+        "line": "{\"ClientAddr\":\"172.18.0.1:59264\",\"DownstreamContentSize\":305,\"DownstreamStatus\":200,\"Duration\":53134649,\"Overhead\":100692,\"RequestMethod\":\"GET\",\"RequestPath\":\"/artifactory/ui/permissiontargets/Anything\",\"ServiceAddr\":\"localhost:8081\",\"SpanId\":\"ca8a2be52678d5f9\",\"StartUTC\":\"2026-11-07T22:58:17.440452944Z\",\"TraceId\":\"0a98d5a828d7b26fd8eacd790aced5fc\",\"level\":\"info\",\"msg\":\"\",\"request_User-Agent\":\"art-a-research/default-permission-anything-retry-1\",\"time\":\"2026-11-07T22:58:17Z\"}"
+      }
+    ],
+    "router-service.log": [],
+    "router-traefik.log": [],
+    "tomcat/tomcat-access-catalina-2026-11-07.log": [],
+    "tomcat/tomcat-access-localhost-2026-11-07.log": [],
+    "tomcat/tomcat-catalina-2026-11-07.log": [],
+    "tomcat/tomcat-localhost-2026-11-07.log": [],
+    "topology-derby.log": [],
+    "topology-metrics.log": [],
+    "topology-request-out.log": [],
+    "topology-request.log": [],
+    "topology-service.log": []
+  }
+}

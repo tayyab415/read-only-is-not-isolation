@@ -1,0 +1,22 @@
+{
+  "edition": 2,
+  "frozen_utc": "2026-11-08T20:40:33.861813+00:00",
+  "main_holdout_local": false,
+  "local_tests": 8,
+  "minimum_each_label_per_recipe": 10,
+  "criterion": "All eligible causal records agree and a calibration-selected mechanism feature passes existing experiment-wide Holm correction.",
+  "sha256": {
+    "AMENDMENT.json": "c2b1a1ca699602d1f2e807648c94791d97d1f77b30a041e3f666146ff6a59a2e",
+    "README.md": "e4b2546160fd4545c22ebb8a13c0289183d3740e543ac303d9a33b15bbd92ce7",
+    "test_validate.py": "1634aeb2aee7e40a07cd1ffb89dd1a52ec247167c977561875b98f324a01af17",
+    "validate.py": "5db69c05193151f0617263b17851609f72ca63cc851285f062ecd0f6bc459b0e"
+  },
+  "p1_import_sha256": {
+    "analysis.py": "14a1832826898ccca2510ae33a3837b52eea9b3b8ca4646abcd1cd2ee9cd2e73",
+    "audit.py": "3258011c4586da62f2e813c2f12682d9c965cdf835d00a087a5b728ce9348938",
+    "report_metrics.py": "095e71cdb935ae974b95c59e21ac02ac9837e320ae898794f6c3df62b964dfc9",
+    "ANALYSIS-CODE-FROZEN.json": "58e370bd953b7324fa646577b03769dcac05ec6f9dcc4b0cbf4aa32df094812f",
+    "REPORTING-FROZEN.json": "035b44a4fb53e4005a51e27f34682d76a0e58b6a4d6c095492939a49ffd764e1"
+  },
+  "supersedes_for_execution": "P1-validation/VALIDATION-FROZEN.json"
+}

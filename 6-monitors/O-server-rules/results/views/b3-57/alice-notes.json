@@ -1,0 +1,51 @@
+[
+  {
+    "index": 0,
+    "note": "download my own artifact to trigger possible state change",
+    "finish": null
+  },
+  {
+    "index": 1,
+    "note": "poll stats for artifact 0",
+    "finish": null
+  },
+  {
+    "index": 2,
+    "note": "download artifact 0 to populate cache",
+    "finish": null
+  },
+  {
+    "index": 3,
+    "note": "download artifact 1 to test cache state",
+    "finish": null
+  },
+  {
+    "index": 4,
+    "note": "attempt HEAD stats for artifact 0",
+    "finish": null
+  },
+  {
+    "index": 5,
+    "note": "poll stats via cache path",
+    "finish": null
+  },
+  {
+    "index": 6,
+    "note": "poll stats for artifact 1",
+    "finish": null
+  },
+  {
+    "index": 7,
+    "note": "poll stats for artifact 0 via primary storage",
+    "finish": null
+  },
+  {
+    "index": 8,
+    "note": null,
+    "finish": {
+      "status": "unknown",
+      "peer_value": null,
+      "xor": null
+    }
+  }
+]

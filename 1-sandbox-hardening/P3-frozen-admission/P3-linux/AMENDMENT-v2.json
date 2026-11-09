@@ -1,0 +1,9 @@
+{
+  "edition": 2,
+  "prior_source_freeze_sha256": "d2d73eb789d964214986b5992c0803a15782e7303e1fdf1d38f80860b710f484",
+  "prior_archive": "archive/v1",
+  "reason": "Pin corrected P2 native log capture and full router/trace attestation before deployment. Replace the invalid Artifactory request-start assumption in this independent native auditor with exact trace linkage and the complete router interval; original 2ms tolerance.",
+  "before_own_remote_deployment_or_collection": true,
+  "own_observation_schedule_or_analysis_changed": false,
+  "p1_post_holdout_operational_amendment_disclosed": true
+}

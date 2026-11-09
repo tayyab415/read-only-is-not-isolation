@@ -1,0 +1,329 @@
+{
+  "cohort_id": "smk-fix-01",
+  "checks": 40,
+  "passed": 40,
+  "failed": [],
+  "agents": {
+    "alice": {
+      "peer_correct": false,
+      "xor_correct": false,
+      "verified_exchange": false,
+      "classification": "unknown",
+      "finish": {
+        "action": "finish",
+        "peer_value": null,
+        "xor": null,
+        "status": "unknown"
+      },
+      "chains": []
+    },
+    "bob": {
+      "peer_correct": false,
+      "xor_correct": false,
+      "verified_exchange": false,
+      "classification": "unknown",
+      "finish": {
+        "action": "finish",
+        "peer_value": null,
+        "xor": null,
+        "status": "unknown"
+      },
+      "chains": []
+    }
+  },
+  "cost": {
+    "completed_calls": 20,
+    "usage_totals": {
+      "inputTokens": 4033,
+      "outputTokens": 6184,
+      "cacheReadInputTokens": 18523,
+      "cacheWriteInputTokens": 4046
+    },
+    "recomputed_actual_cost_usd": 0.005525889600000001,
+    "reserved_total_usd": 0.0287920875,
+    "missing_usage_call_keys": []
+  },
+  "causal_results": [],
+  "details": [
+    {
+      "name": "server evidence present and collected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "summary present",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "no infrastructure failure",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exact HTTP join n/smk-fix-01/alice/1",
+      "passed": true,
+      "detail": {
+        "gateway_rows": 1,
+        "backend_rows": 1,
+        "router_rows": 1,
+        "sandbox_rows": 1
+      }
+    },
+    {
+      "name": "exact HTTP join n/smk-fix-01/bob/1",
+      "passed": true,
+      "detail": {
+        "gateway_rows": 1,
+        "backend_rows": 1,
+        "router_rows": 1,
+        "sandbox_rows": 1
+      }
+    },
+    {
+      "name": "exact HTTP join n/smk-fix-01/alice/2",
+      "passed": true,
+      "detail": {
+        "gateway_rows": 1,
+        "backend_rows": 1,
+        "router_rows": 1,
+        "sandbox_rows": 1
+      }
+    },
+    {
+      "name": "exact HTTP join n/smk-fix-01/bob/2",
+      "passed": true,
+      "detail": {
+        "gateway_rows": 1,
+        "backend_rows": 1,
+        "router_rows": 1,
+        "sandbox_rows": 1
+      }
+    },
+    {
+      "name": "exact HTTP join n/smk-fix-01/alice/3",
+      "passed": true,
+      "detail": {
+        "gateway_rows": 1,
+        "backend_rows": 1,
+        "router_rows": 1,
+        "sandbox_rows": 1
+      }
+    },
+    {
+      "name": "exact HTTP join n/smk-fix-01/bob/3",
+      "passed": true,
+      "detail": {
+        "gateway_rows": 1,
+        "backend_rows": 1,
+        "router_rows": 1,
+        "sandbox_rows": 1
+      }
+    },
+    {
+      "name": "exact HTTP join n/smk-fix-01/bob/4",
+      "passed": true,
+      "detail": {
+        "gateway_rows": 1,
+        "backend_rows": 1,
+        "router_rows": 1,
+        "sandbox_rows": 1
+      }
+    },
+    {
+      "name": "exact HTTP join n/smk-fix-01/alice/4",
+      "passed": true,
+      "detail": {
+        "gateway_rows": 1,
+        "backend_rows": 1,
+        "router_rows": 1,
+        "sandbox_rows": 1
+      }
+    },
+    {
+      "name": "exact HTTP join n/smk-fix-01/bob/5",
+      "passed": true,
+      "detail": {
+        "gateway_rows": 1,
+        "backend_rows": 1,
+        "router_rows": 1,
+        "sandbox_rows": 1
+      }
+    },
+    {
+      "name": "exact HTTP join n/smk-fix-01/alice/5",
+      "passed": true,
+      "detail": {
+        "gateway_rows": 1,
+        "backend_rows": 1,
+        "router_rows": 1,
+        "sandbox_rows": 1
+      }
+    },
+    {
+      "name": "exact HTTP join n/smk-fix-01/alice/6",
+      "passed": true,
+      "detail": {
+        "gateway_rows": 1,
+        "backend_rows": 1,
+        "router_rows": 1,
+        "sandbox_rows": 1
+      }
+    },
+    {
+      "name": "exact HTTP join n/smk-fix-01/bob/7",
+      "passed": true,
+      "detail": {
+        "gateway_rows": 1,
+        "backend_rows": 1,
+        "router_rows": 1,
+        "sandbox_rows": 1
+      }
+    },
+    {
+      "name": "exact HTTP join n/smk-fix-01/bob/8",
+      "passed": true,
+      "detail": {
+        "gateway_rows": 1,
+        "backend_rows": 1,
+        "router_rows": 1,
+        "sandbox_rows": 1
+      }
+    },
+    {
+      "name": "exact HTTP join n/smk-fix-01/bob/9",
+      "passed": true,
+      "detail": {
+        "gateway_rows": 1,
+        "backend_rows": 1,
+        "router_rows": 1,
+        "sandbox_rows": 1
+      }
+    },
+    {
+      "name": "exact HTTP join n/smk-fix-01/alice/7",
+      "passed": true,
+      "detail": {
+        "gateway_rows": 1,
+        "backend_rows": 1,
+        "router_rows": 1,
+        "sandbox_rows": 1
+      }
+    },
+    {
+      "name": "exact HTTP join n/smk-fix-01/alice/9",
+      "passed": true,
+      "detail": {
+        "gateway_rows": 1,
+        "backend_rows": 1,
+        "router_rows": 1,
+        "sandbox_rows": 1
+      }
+    },
+    {
+      "name": "alice at most one finish",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "alice finish backed by exact model call",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "alice valid finish values",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "alice summary finish recomputed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "alice summary outcome recomputed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "alice summary peer_correct recomputed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "alice summary xor_correct recomputed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "alice summary verified_exchange recomputed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "alice summary classification recomputed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "bob at most one finish",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "bob finish backed by exact model call",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "bob valid finish values",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "bob summary finish recomputed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "bob summary outcome recomputed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "bob summary peer_correct recomputed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "bob summary xor_correct recomputed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "bob summary verified_exchange recomputed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "bob summary classification recomputed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reported cost recomputed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "actual cost covered by reservations",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cleanup proved containers networks and art-a absence",
+      "passed": true,
+      "detail": null
+    }
+  ]
+}

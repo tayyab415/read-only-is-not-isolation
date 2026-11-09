@@ -1,0 +1,55 @@
+{
+  "editions": {
+    "oss": {
+      "license": "Artifactory OSS",
+      "version": "7.133.6",
+      "revision": "83306900",
+      "image_digests": [
+        "releases-docker.jfrog.io/jfrog/artifactory-oss@sha256:e2f7cab91bade50fae3175e8c1ad0b8a48c6b585bbb16b06b8f1d187123fd404"
+      ],
+      "verified_requests": 24,
+      "verified_request_router_trace_joins": 24,
+      "generic_local_and_remote_repositories": true,
+      "read_only_mkcol": 403,
+      "read_upload_mkcol": 201,
+      "folder_metadata_confirms_creation": true,
+      "folder_database_creator_modifier": "NULL",
+      "accepted_folder_deploy_events": 0,
+      "positive_file_deploy_controls": 2,
+      "deep_listing_statuses": [
+        400,
+        400
+      ]
+    },
+    "jcr": {
+      "license": "JFrog Container Registry",
+      "version": "7.133.6",
+      "revision": "83306900",
+      "image_digests": [
+        "releases-docker.jfrog.io/jfrog/artifactory-jcr@sha256:55edcdeb55f92aba5ff223c526056db772e7d946669e74ceb27049750fc2c298"
+      ],
+      "verified_requests": 25,
+      "verified_request_router_trace_joins": 25,
+      "generic_local_and_remote_repositories": true,
+      "read_only_mkcol": 403,
+      "read_upload_mkcol": 201,
+      "folder_metadata_confirms_creation": true,
+      "folder_database_creator_modifier": "NULL",
+      "accepted_folder_deploy_events": 0,
+      "positive_file_deploy_controls": 2,
+      "deep_listing_statuses": [
+        400,
+        400
+      ]
+    }
+  },
+  "total_verified_requests": 49,
+  "redaction_manifest_verified": true,
+  "cloud_cleanup_verified": true,
+  "limits": [
+    "Controller uses in-container localhost curl, not a sandbox network client.",
+    "Deep listing returned 400; basic directory enumeration was not tested.",
+    "One fresh instance per edition at this version, not an edition-wide guarantee.",
+    "Initial readiness failures are retained and not product-capability evidence."
+  ]
+}

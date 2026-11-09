@@ -1,0 +1,25 @@
+{
+  "utc": "2026-11-09T05:33:44.442958+00:00",
+  "edition": 2,
+  "instance_id": "i-0de32c76945e63b44",
+  "volume_id": "vol-097dd03703099d51a",
+  "security_group_id": "sg-0bd03bd6068a00be2",
+  "region": "ap-south-1",
+  "cutoff_utc": "2026-11-09T10:30:00+00:00",
+  "prior_control_sha256": "082b9358ba9adb775a89d0ddff3506126b3386d043db24cc3d52aa10a77c0f25",
+  "p9_public_inventory_supported": true,
+  "incomplete_public_diagnostics_supported": true,
+  "original_closed_roots": 38,
+  "original_closed_files": 599,
+  "total_declared_roots": 39,
+  "p9_maximum_public_files": 111,
+  "p9_data_at_freeze": false,
+  "sha256": {
+    "public_inventory_v2.py": "1cc88cc553dc4847a948cdb607a53ee85b49af72d782830e08b6b038913a7c20",
+    "owned_cleanup_v2.py": "6f92601335ce480a8f96aa209e213617323c015002d51c073c3e441eb25a8e51",
+    "test_cleanup_v2.py": "4cf54c25096a2b5ed5449e622e14ec16cbf6109facc206cbad0e0f07736e9e4f",
+    "OWNED-CLEANUP-v2-CHECKS.json": "d890f7d67a763f4d7556e0494e0132624b858ba8950055ae5dafbad229e6fb37",
+    "PUBLIC-INVENTORY-20261109T040950Z.json": "2d03c514ec6494240f19a6f1fbc1c53a191b76585aa1ead8569651be1e44e583"
+  },
+  "scope": "Prospective public inventory expansion. Original teardown functions and ownership/native absence boundaries remain pinned; no native teardown performed."
+}

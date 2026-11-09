@@ -1,0 +1,867 @@
+{
+ "kinds": {
+  "payload": 91037,
+  "response": 23008,
+  "recovered_text": 75534
+ },
+ "n_payload": 91037,
+ "n_payload_with_any_token": 88490,
+ "length_quantiles": {
+  "0.01": 20,
+  "0.1": 57,
+  "0.25": 102,
+  "0.5": 159,
+  "0.75": 411,
+  "0.9": 914,
+  "0.99": 4650
+ },
+ "token_types_by_rows": [
+  [
+   "[ENCODED BLOB #]",
+   43979
+  ],
+  [
+   "[REDACTED:destination:#]",
+   38698
+  ],
+  [
+   "[SERVICE # URL #]",
+   31707
+  ],
+  [
+   "[CREDENTIAL #]",
+   22565
+  ],
+  [
+   "[SHORTENER URL #]",
+   22339
+  ],
+  [
+   "[REDACTED:opaque_marker_tail:#]",
+   18870
+  ],
+  [
+   "[REDACTED:opaque_fragment:#]",
+   15882
+  ],
+  [
+   "[PROXY # URL #]",
+   15477
+  ],
+  [
+   "[ENCODED BLOB]",
+   10336
+  ],
+  [
+   "[SERVICE HOST #]",
+   8545
+  ],
+  [
+   "[SHORTENER CODE #]",
+   8011
+  ],
+  [
+   "[REDACTED SENSITIVE CONTENT]",
+   8003
+  ],
+  [
+   "[REDACTED:source_identifier:#]",
+   7076
+  ],
+  [
+   "[SHORTENER-#-HOST]",
+   5930
+  ],
+  [
+   "[REDACTED:runtime_identifier]",
+   5740
+  ],
+  [
+   "[REDACTED:query_value:#]",
+   5544
+  ],
+  [
+   "[REDACTED:opaque_base#:#]",
+   5049
+  ],
+  [
+   "[REDACTED:runtime_identifier:#]",
+   4292
+  ],
+  [
+   "[HF REPO #]",
+   3436
+  ],
+  [
+   "[USER #]",
+   2736
+  ],
+  [
+   "[REDACTED:source_path:#]",
+   2143
+  ],
+  [
+   "[REDACTED:secret_key:#]",
+   2009
+  ],
+  [
+   "[REDACTED REPOSITORY]",
+   1925
+  ],
+  [
+   "[REDACTED:jwt_claim_identifier:#]",
+   1552
+  ],
+  [
+   "[REDACTED:jwt_claim_time:#]",
+   1513
+  ],
+  [
+   "[REDACTED:opaque_encoded_blob:#]",
+   1168
+  ],
+  [
+   "[REDACTED:username:#]",
+   1003
+  ],
+  [
+   "[IP ADDRESS #]",
+   810
+  ],
+  [
+   "[WORKLOAD ID]",
+   465
+  ],
+  [
+   "[REDACTED:hf_repo:#]",
+   445
+  ],
+  [
+   "[REDACTED ACCOUNT OR OBJECT ID]",
+   380
+  ],
+  [
+   "[REDACTED OPAQUE BINARY CONTENT]",
+   380
+  ],
+  [
+   "[REDACTED OPAQUE OR TOKEN FRAGMENT]",
+   324
+  ],
+  [
+   "[REDACTED PRIVATE CONFIG KEY]",
+   324
+  ],
+  [
+   "[INTERNAL HOST #]",
+   302
+  ],
+  [
+   "[REDACTED:repo_locator:#]",
+   266
+  ],
+  [
+   "[INFRA CONFIG #]",
+   217
+  ],
+  [
+   "[REDACTED:network_address:#]",
+   212
+  ],
+  [
+   "[REDACTED:bearer_token:#]",
+   187
+  ],
+  [
+   "[REDACTED PRIVATE BUCKET]",
+   171
+  ],
+  [
+   "[SHORTENER CODE]",
+   169
+  ],
+  [
+   "[ENV VALUE #]",
+   159
+  ],
+  [
+   "[SHORTENER-#]",
+   135
+  ],
+  [
+   "[A-Za-z#-#_-]",
+   128
+  ],
+  [
+   "[REDACTED:partial_repo_name:#]",
+   128
+  ],
+  [
+   "[REDACTED HF TOKEN FRAGMENT]",
+   126
+  ],
+  [
+   "[HF CUSTOMER B]",
+   109
+  ],
+  [
+   "[WORKLOAD ID #]",
+   109
+  ],
+  [
+   "[REDACTED PRIVATE NAMESPACE]",
+   108
+  ],
+  [
+   "[CALLBACK ID]",
+   107
+  ],
+  [
+   "[REDACTED PRIVATE IDENTIFIER]",
+   102
+  ],
+  [
+   "[REDACTED PRIVATE HOST]",
+   94
+  ],
+  [
+   "[WEBHOOK # URL #]",
+   80
+  ],
+  [
+   "[REDACTED:opaque_numeric_bytes:#]",
+   79
+  ],
+  [
+   "[A-Za-z#-#]",
+   64
+  ],
+  [
+   "[RESEARCHER RECEIPT REMOVED]",
+   64
+  ],
+  [
+   "[REDACTED]",
+   62
+  ],
+  [
+   "[EMAIL #]",
+   61
+  ],
+  [
+   "[REDACTED HF TOKEN]",
+   57
+  ],
+  [
+   "[REDIRECT URL #]",
+   53
+  ]
+ ],
+ "token_types_total": [
+  [
+   "[ENCODED BLOB #]",
+   66974
+  ],
+  [
+   "[REDACTED:destination:#]",
+   66691
+  ],
+  [
+   "[SHORTENER CODE #]",
+   53776
+  ],
+  [
+   "[SERVICE # URL #]",
+   37699
+  ],
+  [
+   "[CREDENTIAL #]",
+   30855
+  ],
+  [
+   "[SHORTENER URL #]",
+   29080
+  ],
+  [
+   "[REDACTED:opaque_marker_tail:#]",
+   21750
+  ],
+  [
+   "[REDACTED:opaque_fragment:#]",
+   20440
+  ],
+  [
+   "[PROXY # URL #]",
+   17237
+  ],
+  [
+   "[ENCODED BLOB]",
+   14264
+  ],
+  [
+   "[REDACTED:source_identifier:#]",
+   13369
+  ],
+  [
+   "[REDACTED SENSITIVE CONTENT]",
+   10055
+  ],
+  [
+   "[SERVICE HOST #]",
+   9184
+  ],
+  [
+   "[REDACTED:source_path:#]",
+   8632
+  ],
+  [
+   "[REDACTED:opaque_base#:#]",
+   6948
+  ],
+  [
+   "[REDACTED:runtime_identifier]",
+   6261
+  ],
+  [
+   "[REDACTED:query_value:#]",
+   6130
+  ],
+  [
+   "[SHORTENER-#-HOST]",
+   5999
+  ],
+  [
+   "[HF REPO #]",
+   5051
+  ],
+  [
+   "[REDACTED:runtime_identifier:#]",
+   4696
+  ],
+  [
+   "[SHORTENER CODE]",
+   4343
+  ],
+  [
+   "[REDACTED:jwt_claim_time:#]",
+   3834
+  ],
+  [
+   "[REDACTED:jwt_claim_identifier:#]",
+   3204
+  ],
+  [
+   "[USER #]",
+   3140
+  ],
+  [
+   "[REDACTED:secret_key:#]",
+   2197
+  ],
+  [
+   "[REDACTED REPOSITORY]",
+   2185
+  ],
+  [
+   "[IP ADDRESS #]",
+   1952
+  ],
+  [
+   "[REDACTED:opaque_encoded_blob:#]",
+   1504
+  ],
+  [
+   "[REDACTED PRIVATE CONFIG KEY]",
+   1485
+  ],
+  [
+   "[ENV VALUE #]",
+   1339
+  ],
+  [
+   "[REDACTED:username:#]",
+   1168
+  ],
+  [
+   "[WORKLOAD ID #]",
+   849
+  ],
+  [
+   "[WORKLOAD ID]",
+   812
+  ],
+  [
+   "[INFRA CONFIG #]",
+   546
+  ],
+  [
+   "[REDACTED:hf_repo:#]",
+   515
+  ],
+  [
+   "[REDACTED OPAQUE OR TOKEN FRAGMENT]",
+   495
+  ],
+  [
+   "[REDACTED OPAQUE BINARY CONTENT]",
+   480
+  ],
+  [
+   "[INTERNAL HOST #]",
+   467
+  ],
+  [
+   "[REDACTED ACCOUNT OR OBJECT ID]",
+   460
+  ],
+  [
+   "[REDACTED:network_address:#]",
+   401
+  ],
+  [
+   "[REDACTED:whoami_name:#]",
+   337
+  ],
+  [
+   "[REDACTED:repo_locator:#]",
+   285
+  ],
+  [
+   "[REDACTED PRIVATE HOST]",
+   231
+  ],
+  [
+   "[HF CUSTOMER B]",
+   216
+  ],
+  [
+   "[REDACTED HF TOKEN FRAGMENT]",
+   203
+  ],
+  [
+   "[REDACTED:bearer_token:#]",
+   196
+  ],
+  [
+   "[REDACTED:partial_repo_name:#]",
+   194
+  ],
+  [
+   "[REDACTED PRIVATE BUCKET]",
+   192
+  ],
+  [
+   "[REDACTED PRIVATE NAMESPACE]",
+   156
+  ],
+  [
+   "[SHORTENER-#]",
+   154
+  ],
+  [
+   "[REDIRECT URL #]",
+   143
+  ],
+  [
+   "[A-Za-z#-#_-]",
+   135
+  ],
+  [
+   "[EMAIL #]",
+   120
+  ],
+  [
+   "[REDACTED PRIVATE IDENTIFIER]",
+   116
+  ],
+  [
+   "[CALLBACK ID]",
+   111
+  ],
+  [
+   "[REDACTED:opaque_numeric_bytes:#]",
+   106
+  ],
+  [
+   "[WEBHOOK # URL #]",
+   93
+  ],
+  [
+   "[REDACTED:credential_header_value]",
+   72
+  ],
+  [
+   "[A-Za-z#-#]",
+   71
+  ],
+  [
+   "[REDACTED:sensitive_profile:#]",
+   67
+  ]
+ ],
+ "token_examples": {
+  "[REDACTED:destination:#]": "[REDACTED:destination:000002]",
+  "[SERVICE # URL #]": "[SERVICE 2 URL 1]",
+  "[CREDENTIAL #]": "[CREDENTIAL 1]",
+  "[REDACTED:runtime_identifier]": "[REDACTED:runtime_identifier]",
+  "[REDACTED:source_identifier:#]": "[REDACTED:source_identifier:000001]",
+  "[REDACTED:runtime_identifier:#]": "[REDACTED:runtime_identifier:000001]",
+  "[PROXY # URL #]": "[PROXY 4 URL 1]",
+  "[ENCODED BLOB]": "[ENCODED BLOB]",
+  "[SHORTENER URL #]": "[SHORTENER URL 1]",
+  "[REDACTED ACCOUNT OR OBJECT ID]": "[REDACTED ACCOUNT OR OBJECT ID]",
+  "[SHORTENER-#-HOST]": "[SHORTENER-3-HOST]",
+  "[SHORTENER CODE #]": "[SHORTENER CODE 3]",
+  "[SERVICE HOST #]": "[SERVICE HOST 1]",
+  "[REDACTED:opaque_encoded_blob:#]": "[REDACTED:opaque_encoded_blob:000001]",
+  "[REDACTED:opaque_numeric_bytes:#]": "[REDACTED:opaque_numeric_bytes:000001]",
+  "[ENCODED BLOB #]": "[ENCODED BLOB 3]",
+  "[REDACTED:source_path:#]": "[REDACTED:source_path:000001]",
+  "[REDACTED:url_fragment:#]": "[REDACTED:url_fragment:000001]",
+  "[IP ADDRESS]": "[IP ADDRESS]",
+  "[HF REPO #]": "[HF REPO 2]",
+  "[WEBHOOK # URL #]": "[WEBHOOK 10 URL 1]",
+  "[CALLBACK ID]": "[CALLBACK ID]",
+  "[USER #]": "[USER 2]",
+  "[REDACTED REPOSITORY]": "[REDACTED REPOSITORY]",
+  "[INTERNAL HOST #]": "[INTERNAL HOST 1]",
+  "[HF CUSTOMER B]": "[HF CUSTOMER B]",
+  "[REDACTED SENSITIVE CONTENT]": "[REDACTED SENSITIVE CONTENT]",
+  "[REDACTED:username:#]": "[REDACTED:username:000002]",
+  "[WEBHOOK HOST #]": "[WEBHOOK HOST 10]",
+  "[REDACTED:CREDENTIAL_FRAGMENT]": "[REDACTED:CREDENTIAL_FRAGMENT]",
+  "[IP ADDRESS #]": "[IP ADDRESS 3]",
+  "[REDACTED:opaque_base#:#]": "[REDACTED:opaque_base64:000001]",
+  "[REDACTED:jwt_claim_identifier:#]": "[REDACTED:jwt_claim_identifier:000001]",
+  "[REDACTED:jwt_claim_time:#]": "[REDACTED:jwt_claim_time:000001]",
+  "[REDACTED:repo_locator:#]": "[REDACTED:repo_locator:000009]",
+  "[REDACTED:secret_key:#]": "[REDACTED:secret_key:000001]",
+  "[EMAIL #]": "[EMAIL 1]",
+  "[REDACTED:query_value:#]": "[REDACTED:query_value:000002]",
+  "[SHORTENER-#]": "[SHORTENER-1]",
+  "[INFRA CONFIG #]": "[INFRA CONFIG 1]",
+  "[ENV VALUE #]": "[ENV VALUE 1]",
+  "[REDACTED:hf_repo:#]": "[REDACTED:hf_repo:000001]",
+  "[REDACTED OPAQUE BINARY CONTENT]": "[REDACTED OPAQUE BINARY CONTENT]",
+  "[A-Za-z#-#_-]": "[A-Za-z0-9_-]",
+  "[Z]": "[Z]",
+  "[REDACTED OPAQUE OR TOKEN FRAGMENT]": "[REDACTED OPAQUE OR TOKEN FRAGMENT]",
+  "[B]": "[B]",
+  "[A-Z#-#]": "[A-Z2-7]",
+  "[REDACTED:partial_repo_name:#]": "[REDACTED:partial_repo_name:000001]",
+  "[REG_RIP]": "[REG_RIP]",
+  "[REDACTED:opaque_marker_tail:#]": "[REDACTED:opaque_marker_tail:000001]",
+  "[NS]": "[NS]",
+  "[REDACTED SHORTENER PATH]": "[REDACTED SHORTENER PATH]",
+  "[AC#_MAX_CHANNELS]": "[AC3_MAX_CHANNELS]",
+  "[AC#_MAX_COEFS]": "[AC3_MAX_COEFS]",
+  "[AC#_MAX_CHANNELS-#]": "[AC3_MAX_CHANNELS-1]",
+  "[REDACTED:opaque_hex_bytes:#]": "[REDACTED:opaque_hex_bytes:000001]",
+  "[REDACTED SHORTENER CODE]": "[REDACTED SHORTENER CODE]",
+  "[REDACTED:whoami_name:#]": "[REDACTED:whoami_name:000001]",
+  "[REDACTED:opaque_fragment:#]": "[REDACTED:opaque_fragment:000018]",
+  "[REDACTED:street_address:#]": "[REDACTED:street_address:000001]",
+  "[A-Za-z#-#]": "[A-Za-z0-9]",
+  "[REDACTED:private_host:#]": "[REDACTED:private_host:000001]",
+  "[REDIRECT URL #]": "[REDIRECT URL 1]",
+  "[N]": "[N]",
+  "[RESEARCH ASSEMBLY METADATA REMOVED]": "[RESEARCH ASSEMBLY METADATA REMOVED]",
+  "[NBITS]": "[NBITS]",
+  "[INSZ-#]": "[INSZ-1]",
+  "[NKEY]": "[NKEY]",
+  "[SZ]": "[SZ]",
+  "[REDACTED OPAQUE TAIL]": "[REDACTED OPAQUE TAIL]",
+  "[DOCKER REPO #]": "[DOCKER REPO 6]",
+  "[REDACTED HF TOKEN FRAGMENT]": "[REDACTED HF TOKEN FRAGMENT]",
+  "[REDACTED:network_address:#]": "[REDACTED:network_address:000001]",
+  "[NTRY]": "[NTRY]",
+  "[NSEG]": "[NSEG]",
+  "[NSEG-#]": "[NSEG-1]",
+  "[SEGLEN]": "[SEGLEN]",
+  "[REDACTED:sensitive_profile:#]": "[REDACTED:sensitive_profile:000001]",
+  "[REDACTED:bearer_token:#]": "[REDACTED:bearer_token:000001]",
+  "[REDACTED PARTIAL TOKEN OR REFERENCE]": "[REDACTED PARTIAL TOKEN OR REFERENCE]",
+  "[REDACTED EVALUATION IDENTIFIER]": "[REDACTED EVALUATION IDENTIFIER]",
+  "[HF REPO]": "[HF REPO]",
+  "[CAPTURED CUSTOMER TRACE REDACTED]": "[CAPTURED CUSTOMER TRACE REDACTED]",
+  "[TOK]": "[TOK]",
+  "[REDACTED PRIVATE CONFIG KEY]": "[REDACTED PRIVATE CONFIG KEY]",
+  "[REDACTED:cookie_value]": "[REDACTED:cookie_value]",
+  "[REDACTED PRIVATE BUCKET]": "[REDACTED PRIVATE BUCKET]",
+  "[REDACTED:opaque_base#:Ne#c#]": "[REDACTED:opaque_base64:Ne6546c2342818035]",
+  "[CLOUD RESOURCE #]": "[CLOUD RESOURCE 3]",
+  "[REDACTED HF TOKEN]": "[REDACTED HF TOKEN]",
+  "[CREDENTIAL]": "[CREDENTIAL]",
+  "[DEBUG]": "[DEBUG]",
+  "[SHORTENER LINK #]": "[SHORTENER LINK 1]",
+  "[REDACTED:opaque_binary_residual]": "[REDACTED:opaque_binary_residual]",
+  "[O]": "[O]",
+  "[REDACTED:url_userinfo:#]": "[REDACTED:url_userinfo:000002]",
+  "[REDACTED:DOCKERHUB_PAT_FRAGMENT]": "[REDACTED:DOCKERHUB_PAT_FRAGMENT]",
+  "[ROW]": "[ROW]",
+  "[MAX]": "[MAX]",
+  "[WORKLOAD ID #]": "[WORKLOAD ID 1]",
+  "[R]": "[R]",
+  "[REDACTED PRIVATE NAMESPACE]": "[REDACTED PRIVATE NAMESPACE]",
+  "[PROXY HOST #]": "[PROXY HOST 24]",
+  "[L-#]": "[L-1]",
+  "[CM]": "[CM]",
+  "[REDACTED:opaque_encoded_payload]": "[REDACTED:opaque_encoded_payload]",
+  "[SHORTENER CODE]": "[SHORTENER CODE]",
+  "[MAXN]": "[MAXN]",
+  "[EI_CLASS]": "[EI_CLASS]",
+  "[EI_DATA]": "[EI_DATA]",
+  "[PATH_MAX]": "[PATH_MAX]",
+  "[REDACTED:credential_header_value]": "[REDACTED:credential_header_value]",
+  "[REDACTED PRIVATE IDENTIFIER]": "[REDACTED PRIVATE IDENTIFIER]",
+  "[REDACTED PRIVATE HOST]": "[REDACTED PRIVATE HOST]",
+  "[PADDING REDACTED]": "[PADDING REDACTED]",
+  "[A-Za-z]": "[A-Za-z]",
+  "[CREDENTIAL FRAGMENT #]": "[CREDENTIAL FRAGMENT 2]",
+  "[REDACTED PRIVATE WORKLOAD]": "[REDACTED PRIVATE WORKLOAD]",
+  "[NW]": "[NW]",
+  "[SHA_LBLOCK]": "[SHA_LBLOCK]",
+  "[REG_EIP]": "[REG_EIP]",
+  "[REG_EBX]": "[REG_EBX]",
+  "[FLAG_REDACTED]": "[FLAG_REDACTED]",
+  "[REDACTED_FLAG]": "[REDACTED_FLAG]",
+  "[FLAG-REDACTED]": "[FLAG-REDACTED]",
+  "[HEX_REDACTED]": "[HEX_REDACTED]",
+  "[HEX]": "[HEX]",
+  "[U]": "[U]",
+  "[REDACTED]": "[REDACTED]",
+  "[WORKLOAD ID]": "[WORKLOAD ID]",
+  "[REDACTED_CATFLAG_OUTPUT]": "[REDACTED_CATFLAG_OUTPUT]",
+  "[A-Za-z#-#_]": "[A-Za-z0-9_]",
+  "[REDACTED:opaque_base#:Nd#e#e#c#e#]": "[REDACTED:opaque_base64:Nd730e9e4c824e054]",
+  "[REDACTED_TOKEN]": "[REDACTED_TOKEN]",
+  "[REDACTED_AWSKEY]": "[REDACTED_AWSKEY]",
+  "[REDACTED_JWT]": "[REDACTED_JWT]",
+  "[REDACTED_LONGHEX]": "[REDACTED_LONGHEX]",
+  "[CAPTURE REMOVED BY SAFETY CHECK]": "[CAPTURE REMOVED BY SAFETY CHECK]",
+  "[REDACTED:opaque_base#:Nfaa#b#c#ef#c#]": "[REDACTED:opaque_base64:Nfaa2b0c8949ef3c5]",
+  "[TOKEN_REDACTED]": "[TOKEN_REDACTED]",
+  "[CUT]": "[CUT]",
+  "[TRIM]": "[TRIM]",
+  "[A-Za-z#-#_.-]": "[A-Za-z0-9_.-]",
+  "[REDACTED_URLFLAG]": "[REDACTED_URLFLAG]",
+  "[REDACTED FLAG-RELATED LINE]": "[REDACTED FLAG-RELATED LINE]",
+  "[A-Za-z#-#._-]": "[A-Za-z0-9._-]",
+  "[REDACTED_HEX]": "[REDACTED_HEX]",
+  "[A-Z]": "[A-Z]",
+  "[REDACTED_CMD]": "[REDACTED_CMD]",
+  "[REDACTED:service_path:#]": "[REDACTED:service_path:000001]",
+  "[REDACTED:opaque_base#:Nbe#d#f#ea#a#]": "[REDACTED:opaque_base64:Nbe04d8f8ea844a01]",
+  "[TRUNCATED]": "[TRUNCATED]",
+  "[HF_TOKEN_REDACTED]": "[HF_TOKEN_REDACTED]",
+  "[P-SU]": "[P-SU]",
+  "[REDACTEDSTR]": "[REDACTEDSTR]",
+  "[KEY]": "[KEY]",
+  "[REDACTED OPAQUE OR HOST FRAGMENT]": "[REDACTED OPAQUE OR HOST FRAGMENT]",
+  "[REDACTED_HF_TOKEN]": "[REDACTED_HF_TOKEN]",
+  "[REDACTED_AWS_KEY]": "[REDACTED_AWS_KEY]",
+  "[REDACTED:opaque_base#:N#f#ad#d#e#da]": "[REDACTED:opaque_base64:N8f56ad692d5e47da]",
+  "[CONNECTION STRING #]": "[CONNECTION STRING 1]",
+  "[REDACTED:CREDENTIAL]": "[REDACTED:CREDENTIAL]",
+  "[REDACTED:opaque_base#:Nb#a#fca#b#d#]": "[REDACTED:opaque_base64:Nb754a41fca2b81d4]",
+  "[REDACTED_CREDENTIAL]": "[REDACTED_CREDENTIAL]",
+  "[SNIP]": "[SNIP]",
+  "[C]": "[C]",
+  "[CATFLAG_REDACTED]": "[CATFLAG_REDACTED]",
+  "[LONGHEX_REDACTED]": "[LONGHEX_REDACTED]",
+  "[DEPTH]": "[DEPTH]",
+  "[SENSITIVE_KEY]": "[SENSITIVE_KEY]",
+  "[HOSTNAME]": "[HOSTNAME]",
+  "[HF_REDACTED]": "[HF_REDACTED]",
+  "[TOKEN]": "[TOKEN]",
+  "[REDACTED HF IDENTITY]": "[REDACTED HF IDENTITY]",
+  "[JWT_REDACTED]": "[JWT_REDACTED]",
+  "[SENSITIVE_LINE_REDACTED]": "[SENSITIVE_LINE_REDACTED]",
+  "[REDACTED_FIELD]": "[REDACTED_FIELD]",
+  "[TYPE_REDACTED]": "[TYPE_REDACTED]",
+  "[REDACTED:AUTH_TEST_CREDENTIAL]": "[REDACTED:AUTH_TEST_CREDENTIAL]",
+  "[HF CUSTOMER A]": "[HF CUSTOMER A]",
+  "[A-Za-z#-#.-]": "[A-Za-z0-9.-]",
+  "[REDACTED:contact:#]": "[REDACTED:contact:000001]",
+  "[REDACTED:JWT_SIGNING_KEY]": "[REDACTED:JWT_SIGNING_KEY]",
+  "[PRIVATE DATASET TREE AND TRAJECTORY RECORDS REDACTED]": "[PRIVATE DATASET TREE AND TRAJECTORY RECORDS REDACTED]",
+  "[REDACTED_HF]": "[REDACTED_HF]",
+  "[REDACTED:BEARER_FRAGMENT]": "[REDACTED:BEARER_FRAGMENT]",
+  "[PRIVATE DATASET JWT CLAIMS REDACTED]": "[PRIVATE DATASET JWT CLAIMS REDACTED]",
+  "[REDACTED:opaque_base#:Nf#a#d#ce#]": "[REDACTED:opaque_base64:Nf07800a711d48ce7]",
+  "[FLAG]": "[FLAG]",
+  "[SENSITIVE]": "[SENSITIVE]",
+  "[REDACTED:SHORTENER_DESTINATION]": "[REDACTED:SHORTENER_DESTINATION]",
+  "[CF]": "[CF]",
+  "[A-Fa-f#-#]": "[A-Fa-f0-9]",
+  "[REDACTED:secret_suffix:#]": "[REDACTED:secret_suffix:000001]",
+  "[HFTOKEN]": "[HFTOKEN]",
+  "[REDACTED:password_value:#]": "[REDACTED:password_value:000001]",
+  "[REDACTED LINK]": "[REDACTED LINK]",
+  "[REDACTED:opaque_base#:N#e#c#bb#]": "[REDACTED:opaque_base64:N5623e227929c5bb2]",
+  "[TRUNCATED_KEYS]": "[TRUNCATED_KEYS]",
+  "[X]": "[X]",
+  "[HF_TOKEN]": "[HF_TOKEN]",
+  "[AWS_KEY]": "[AWS_KEY]",
+  "[HEX#]": "[HEX64]",
+  "[REDACTED_CRED]": "[REDACTED_CRED]",
+  "[REDACTED_LONG_BLOB]": "[REDACTED_LONG_BLOB]",
+  "[REDACTED_SENSITIVE_LINE]": "[REDACTED_SENSITIVE_LINE]",
+  "[REDACTED_CREDENTIAL_LINE]": "[REDACTED_CREDENTIAL_LINE]",
+  "[REDACTED SENSITIVE LINE]": "[REDACTED SENSITIVE LINE]",
+  "[PRIVATE EVALUATION READBACK REDACTED]": "[PRIVATE EVALUATION READBACK REDACTED]",
+  "[REDACTED:opaque_base#:N#d#faac#cafe#e#]": "[REDACTED:opaque_base64:N2d0faac8cafe9e75]",
+  "[PRIVATE EVALUATION TRANSCRIPT REDACTED]": "[PRIVATE EVALUATION TRANSCRIPT REDACTED]",
+  "[REDACT]": "[REDACT]",
+  "[REDACTED:aws_auth_value:#]": "[REDACTED:aws_auth_value:000004]",
+  "[S]": "[S]",
+  "[REDACTED:ARTIFACT_PATH]": "[REDACTED:ARTIFACT_PATH]",
+  "[REDACTED:opaque_base#:Nf#db#ebf#d#a#a]": "[REDACTED:opaque_base64:Nf2db2ebf59d7a47a]",
+  "[REDACTED:opaque_base#:Nbee#aef#ed#e#]": "[REDACTED:opaque_base64:Nbee6aef64ed02e35]",
+  "[REDACTED:opaque_base#:Nf#c#eadade#c]": "[REDACTED:opaque_base64:Nf5c7662eadade40c]",
+  "[REDACTED:opaque_base#:N#c#e#]": "[REDACTED:opaque_base64:N9c5125238980e062]",
+  "[CLOUD ACCOUNT]": "[CLOUD ACCOUNT]",
+  "[REDACTED OPAQUE OR IDENTIFIER]": "[REDACTED OPAQUE OR IDENTIFIER]",
+  "[REDACTED:uuid]": "[REDACTED:uuid]",
+  "[REDACTED:basic_auth:#]": "[REDACTED:basic_auth:000001]",
+  "[CUSTOMER HOST]": "[CUSTOMER HOST]",
+  "[NO]": "[NO]",
+  "[NOF]": "[NOF]",
+  "[REDACTED RESEARCH INDEX]": "[REDACTED RESEARCH INDEX]",
+  "[REDACTED RESEARCH METADATA]": "[REDACTED RESEARCH METADATA]",
+  "[RESEARCHER RECEIPT REMOVED]": "[RESEARCHER RECEIPT REMOVED]",
+  "[L]": "[L]",
+  "[SHORTENER HOST #]": "[SHORTENER HOST 1]",
+  "[KP_type]": "[KP_type]",
+  "[HK]": "[HK]",
+  "[MID]": "[MID]",
+  "[REDACTED:LINK_FRAGMENT]": "[REDACTED:LINK_FRAGMENT]",
+  "[REDACTED:PRIVATE_HOST]": "[REDACTED:PRIVATE_HOST]",
+  "[R-CA#]": "[R-CA48]",
+  "[R-TX#]": "[R-TX23]",
+  "[R-NJ#]": "[R-NJ2]",
+  "[R-AL#]": "[R-AL1]",
+  "[R-TX]": "[R-TX]",
+  "[D-IL#]": "[D-IL7]",
+  "[R-TN]": "[R-TN]",
+  "[G]": "[G]",
+  "[M]": "[M]",
+  "[REMOVED UNRELATED TRAVEL LISTINGS]": "[REMOVED UNRELATED TRAVEL LISTINGS]",
+  "[REDACTED:opaque_base#:Nfdd#aacd#fb#c]": "[REDACTED:opaque_base64:Nfdd2aacd0107fb6c]",
+  "[COOKIE VALUE REDACTED]": "[COOKIE VALUE REDACTED]",
+  "[REDACTED:opaque_base#:Naef#a#fe]": "[REDACTED:opaque_base64:Naef7a072049172fe]",
+  "[REDACTED:opaque_base#:N#c#a#a#]": "[REDACTED:opaque_base64:N2296c587806a05a6]",
+  "[TIMER#]": "[TIMER5]",
+  "[P]": "[P]",
+  "[REDACTED:ENCODED_DESTINATION]": "[REDACTED:ENCODED_DESTINATION]",
+  "[REDACTED:PRIVATE_DESTINATION]": "[REDACTED:PRIVATE_DESTINATION]",
+  "[REDACTED CREDENTIAL-LIKE CONTENT]": "[REDACTED CREDENTIAL-LIKE CONTENT]",
+  "[REDACTED SHORTENER URL]": "[REDACTED SHORTENER URL]",
+  "[REDACTED:LINK_DESTINATION]": "[REDACTED:LINK_DESTINATION]",
+  "[REDACTED:HF_REPO]": "[REDACTED:HF_REPO]",
+  "[REDACTED:SHORTENER_FRAGMENT]": "[REDACTED:SHORTENER_FRAGMENT]",
+  "[A]": "[A]"
+ },
+ "top_prefixes": [
+  [
+   "[SERVICE 3 U",
+   16897
+  ],
+  [
+   "[PROXY 4 URL",
+   8694
+  ],
+  [
+   "\u2500\u2500 stage: A[",
+   8019
+  ],
+  [
+   "x=new XMLHtt",
+   4172
+  ],
+  [
+   "fetch('https",
+   3220
+  ],
+  [
+   "for(s of'[SH",
+   3174
+  ],
+  [
+   "(async()=>{l",
+   2694
+  ],
+  [
+   "[SERVICE HOS",
+   2642
+  ],
+  [
+   "document.bod",
+   2301
+  ],
+  [
+   "x+='[ENCODED",
+   2142
+  ],
+  [
+   "document.wri",
+   2046
+  ],
+  [
+   "[SERVICE 25 ",
+   2044
+  ],
+  [
+   "fetch(\"https",
+   1718
+  ],
+  [
+   "https://[RED",
+   1595
+  ],
+  [
+   "(async()=>{t",
+   1579
+  ],
+  [
+   "x=(self.x||'",
+   1187
+  ],
+  [
+   "[ENCODED BLO",
+   1110
+  ],
+  [
+   "i=new Image;",
+   877
+  ],
+  [
+   "import urlli",
+   609
+  ],
+  [
+   "<iframe src=",
+   553
+  ],
+  [
+   "https://hugg",
+   550
+  ],
+  [
+   "https://data",
+   532
+  ],
+  [
+   "u='https://[",
+   471
+  ],
+  [
+   "try{x=new XM",
+   448
+  ],
+  [
+   "fetch('//[SE",
+   388
+  ]
+ ]
+}

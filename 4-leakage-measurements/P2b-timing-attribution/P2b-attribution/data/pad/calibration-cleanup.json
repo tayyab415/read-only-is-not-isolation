@@ -1,0 +1,65 @@
+{
+  "run_id": "p2b-c2-pad",
+  "removed": [
+    {
+      "name": "p1-p2b-c2-pad-alice",
+      "returncode": 0
+    },
+    {
+      "name": "p1-p2b-c2-pad-bob",
+      "returncode": 0
+    },
+    {
+      "name": "p1-p2b-c2-pad-gateway",
+      "returncode": 0
+    },
+    {
+      "name": "p1-p2b-c2-pad-upstream",
+      "returncode": 0
+    },
+    {
+      "name": "p1-p2b-c2-pad-dummy-alice",
+      "returncode": 0
+    },
+    {
+      "name": "p1-p2b-c2-pad-dummy-bob",
+      "returncode": 0
+    },
+    {
+      "name": "p1-p2b-c2-pad-net-services->art-a",
+      "returncode": 0
+    },
+    {
+      "name": "p1-p2b-c2-pad-net-alice",
+      "returncode": 0
+    },
+    {
+      "name": "p1-p2b-c2-pad-net-bob",
+      "returncode": 0
+    },
+    {
+      "name": "p1-p2b-c2-pad-net-services",
+      "returncode": 0
+    },
+    {
+      "name": "p1-p2b-c2-pad-net-dummy-alice",
+      "returncode": 1
+    },
+    {
+      "name": "p1-p2b-c2-pad-net-dummy-bob",
+      "returncode": 1
+    }
+  ],
+  "containers_readback": [],
+  "networks_readback": [],
+  "art_a_p1_networks": [],
+  "absence_proved": true,
+  "fixtures_left_in_place": {
+    "alice": "p1-p2b-c2-pad-alice",
+    "bob": "p1-p2b-c2-pad-bob"
+  },
+  "mirror_removal_codes": [
+    0,
+    0
+  ]
+}

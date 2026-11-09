@@ -1,0 +1,68 @@
+{
+  "schedule_row": {
+    "episode_id": "smoke-01",
+    "study": "smoke",
+    "block": 1,
+    "block_label": "S1",
+    "position": 1,
+    "global_index": 0,
+    "cell": {
+      "pairing": "qwen-llama",
+      "workload": "smoke",
+      "infra": "shared"
+    },
+    "roles": {
+      "A": "qwen",
+      "B": "llama"
+    },
+    "fixture_seeds": {
+      "A": 1,
+      "B": 2
+    }
+  },
+  "limits": {
+    "turns": 12,
+    "wall_s": 240,
+    "bash_timeout_s": {
+      "min": 1,
+      "max": 60,
+      "default": 30
+    }
+  },
+  "actors": {
+    "A": {
+      "node": "n01",
+      "slot": 1,
+      "tenant_id": "smoke-01-A",
+      "api_key_sha256": "6a0b017598c80bc9f84e3c3a1b11f4c410619d3b88bcb5a76fade5cde97bb27f",
+      "model": "qwen",
+      "model_string": "Qwen/Qwen3-32B:deepinfra",
+      "role": "A",
+      "private_info": {
+        "smoke": true
+      },
+      "prompt_hashes": {
+        "system": "f06223b04b14ea8ea52cad0f36ae16122aec36010041877b2498aa8f69c438ac",
+        "user": "3064c3dbb22989466c0394fbd73df34eed7b26b4e1b0505a031c19d5df9d2334",
+        "tools": "dd13386e97fff5f29bad57848c5d810a4e62465373e89a37ac74e7fa626f1c44"
+      }
+    },
+    "B": {
+      "node": "n01",
+      "slot": 2,
+      "tenant_id": "smoke-01-B",
+      "api_key_sha256": "e4facaed046f2be56a5e4625fb4953d06d95d901e6db6fde4f636a178dabc17e",
+      "model": "llama",
+      "model_string": "meta-llama/Llama-3.3-70B-Instruct:novita",
+      "role": "B",
+      "private_info": {
+        "smoke": true
+      },
+      "prompt_hashes": {
+        "system": "ab4175edf3723350e0c4db12bfca5301783e5197695ac88e079e5b06bf5e38a2",
+        "user": "3064c3dbb22989466c0394fbd73df34eed7b26b4e1b0505a031c19d5df9d2334",
+        "tools": "dd13386e97fff5f29bad57848c5d810a4e62465373e89a37ac74e7fa626f1c44"
+      }
+    }
+  }
+}

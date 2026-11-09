@@ -1,0 +1,30 @@
+{
+  "utc": "2026-11-09T04:47:05.995035+00:00",
+  "process": "1175370    01:23:03 S+   python3 -u sequence.py",
+  "stage": "decoders_frozen",
+  "arms": {
+    "shared": {
+      "complete": true,
+      "cleanup_absence_proved": true,
+      "trials": 300,
+      "sealed_utc_ns": 1794197400219645382
+    },
+    "pergw": {
+      "complete": true,
+      "cleanup_absence_proved": true,
+      "trials": 300,
+      "sealed_utc_ns": 1794198510710682747
+    },
+    "pad": {
+      "complete": true,
+      "cleanup_absence_proved": true,
+      "trials": 300,
+      "sealed_utc_ns": 1794199610543260233
+    },
+    "aa": {
+      "sealed": false
+    }
+  },
+  "complete_audit_exists": false,
+  "held_observations_opened": 0
+}

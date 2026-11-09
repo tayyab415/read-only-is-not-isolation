@@ -1,0 +1,17 @@
+# 4. Leakage measurements
+
+These folders hold the code, frozen protocols, hash manifests and analysis outputs behind the paper's leakage measurements. They start with how the shared Artifactory cache works (A) and what an operator can see in its logs (C). They then measure how much information moves through shared state: with a generic meter (P1), under overlapping load (P2, P2b), through HTTP caches (P7), host CPU counters (P8) and a GPU model server (S). P9 is a prepared follow-up with no result yet. Large raw trial files are left out and listed in each folder's README under "Not included"; they are available on request.
+
+| Folder | Question | Result |
+| --- | --- | --- |
+| [A-cache-mechanics](A-cache-mechanics/) | What can users with Read, Deploy/Cache or Annotate do to a shared Artifactory cache? | Read + Deploy/Cache users created directories in the shared cache, including under another user's folder (HTTP 201); a second user rebuilt a file from four folder names with a matching SHA-256. |
+| [C-server-logs](C-server-logs/) | Can server logs separate message-board use from benign traffic? | A cache-scoped `MKCOL` rule flagged 1,632 of 1,632 board writes with 0 false flags; repeated listing of one cache path (5 in 10 min) had precision 1.00 and recall 0.87. |
+| [P1-leakage-meter](P1-leakage-meter/) | Does a generic differential test find the read-only channels without being told? | Open service 590/1,000 correct (59.0%, p = 0.0005); hardened and null arms 51.3%, 51.7%, 49.0% and 50.0%. |
+| [P2-concurrent-load](P2-concurrent-load/) | Does overlapping load still leak through the hardened designs? | Held accuracy: separate repositories 942/1,000, dummy-service sham 657/1,000, private immutable serving 562/1,000, idle A/A 517/1,000. |
+| [P2b-timing-attribution](P2b-timing-attribution/) | Do per-tenant gateways or a 12 ms response floor remove the P2 timing signal? | Neither: 73.33% shared, 65.67% per-tenant gateways, 72.00% with the floor, 48.67% idle A/A (300 trials each). |
+| [P7-http-caches](P7-http-caches/) | Do NGINX and Squid 404 caches show the same shared state, and what removes it? | Shared cache decoded 29/32 to 32/32; trusted tenant key, private cache and no cache all 16/32 (chance); 60 of 60 ordinary GETs correct. |
+| [P8-host-telemetry](P8-host-telemetry/) | Does a private cgroup hide the host CPU counter from a shell-enabled sandbox? | No: a reader recovered 64/64 labels from live `/proc/stat`; a static file bound over it gave 32/64. |
+| [P9-content-hash](P9-content-hash/) | Does a shared object checksum matter for the P2 timing signal? | No result: protocol, code and verifier prepared, smoke audit only. |
+| [S-model-server-gpu-load](S-model-server-gpu-load/) | What can one tenant read of another's activity on a shared vLLM server? | Shared prefix cache decoded at 1.000; gateway-assigned salt 0.498; load still decoded at 1.000 and carried about 10 bits/s at 100 ms symbols. |
+
+Several scripts import code from sibling study folders (for example `P2-verification` imports `P1-meter`). Run `./make-evidence-tree.sh` to copy the folders into the flat `evidence/` layout the scripts expect, then run tests from there.

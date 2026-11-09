@@ -1,0 +1,14 @@
+Looking in indexes: http://127.0.0.1:64627/simple/
+Collecting attrs==24.3.0
+  Downloading http://127.0.0.1:64627/files/ac96cd038792094f438ad1f6ff80837353805ac950cd2aa0e0625ef19850c308/attrs-24.3.0-py3-none-any.whl (63 kB)
+Installing collected packages: attrs
+Successfully installed attrs-24.3.0
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+spyder 5.4.3 requires pyqt5<5.16, which is not installed.
+spyder 5.4.3 requires pyqtwebengine<5.16, which is not installed.
+cloud-sql-python-connector 1.12.0 requires cryptography>=42.0.0, but you have cryptography 41.0.7 which is incompatible.
+google-adk 1.27.1 requires google-genai<2.0.0,>=1.56.0, but you have google-genai 2.20.0 which is incompatible.
+spyder 5.4.3 requires ipython!=8.10.0,!=8.8.0,!=8.9.0,<9.0.0,>=7.31.1, but you have ipython 9.5.0 which is incompatible.
+spyder 5.4.3 requires jedi<0.19.0,>=0.17.2, but you have jedi 0.19.2 which is incompatible.
+s3fs 2023.4.0 requires fsspec==2023.4.0, but you have fsspec 2025.9.0 which is incompatible.
+aiobotocore 2.5.0 requires botocore<1.29.77,>=1.29.76, but you have botocore 1.43.15 which is incompatible.

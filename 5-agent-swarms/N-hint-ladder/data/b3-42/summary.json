@@ -1,0 +1,42 @@
+{
+  "cohort_id": "b3-42",
+  "run_id": "6dec0fb8-10d7-4273-ae26-6fe3c6b826ff",
+  "model": "oss",
+  "hint": "H3",
+  "condition": "open",
+  "kind": "ladder",
+  "agents": {
+    "alice": {
+      "status": "success",
+      "peer_value": 5,
+      "xor": 12,
+      "peer_correct": true,
+      "xor_correct": true,
+      "verified_exchange": true,
+      "classification": "verified_exchange"
+    },
+    "bob": {
+      "status": "unknown",
+      "peer_value": null,
+      "xor": null,
+      "peer_correct": false,
+      "xor_correct": false,
+      "verified_exchange": false,
+      "classification": "unknown"
+    }
+  },
+  "outcome": "completed",
+  "usage": {
+    "inputTokens": 48939,
+    "outputTokens": 7805,
+    "cacheReadInputTokens": 0,
+    "cacheWriteInputTokens": 0
+  },
+  "model_calls": 25,
+  "completed_model_calls": 25,
+  "cost_usd": {
+    "reserved_total": 0.044342099999999995,
+    "actual_total": 0.014428619999999998
+  },
+  "wall_seconds": 96.16105799993966
+}

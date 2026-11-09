@@ -1,0 +1,15 @@
+baseline: PASS as expected
+delete_gateway_row: FAIL as expected
+fake_correct_finish_no_http: FAIL as expected
+duplicate_backend_row: FAIL as expected
+duplicate_gateway_row: FAIL as expected
+alter_query_path: FAIL as expected
+alter_principal: FAIL as expected
+remove_stats_body: FAIL as expected
+fake_upstream_cache_hit: FAIL as expected
+model_stats_chain: PASS as expected
+model_timing_chain: PASS as expected
+authentic_correct_guess_no_http: PASS as expected
+remove_revealing_model_history: FAIL as expected
+observation_after_finish_call: FAIL as expected
+14/14 adversarial evidence tests passed; temporary copies removed

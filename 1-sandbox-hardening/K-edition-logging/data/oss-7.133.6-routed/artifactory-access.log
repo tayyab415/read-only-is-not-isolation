@@ -1,0 +1,9 @@
+2026-11-08T00:31:56.846Z [79dfdd27bb949cb18d6370e82efe304c] [ACCEPTED LOGIN]   for client : admin / ::1
+2026-11-08T00:31:57.027Z [ab028fc8941d4feb31692289ef62cf57] [ACCEPTED LOGIN]   for client : admin / ::1
+2026-11-08T00:31:59.630Z [5674851492015cf6971a1dfdeee539f0] [ACCEPTED DEPLOY] k-local:fixture.bin  for client : admin / ::1
+2026-11-08T00:31:59.814Z [e6dc0d09b2b6b87fefa54f3545b2b7cb] [DENIED DEPLOY] k-local:folder-k-read  for client : k-read / ::1
+2026-11-08T00:31:59.819Z [e6dc0d09b2b6b87fefa54f3545b2b7cb] [ACCEPTED LOGIN]   for client : k-read / ::1
+2026-11-08T00:32:00.095Z [230ff8978a3455d8f967ae914aeef06d] [ACCEPTED LOGIN]   for client : k-cache / ::1
+2026-11-08T00:32:00.637Z [b0a5d057314448fb6c6f37c8d06cd644] [ACCEPTED DEPLOY] k-remote-cache:fixture.bin  for client : k-cache / ::1
+2026-11-08T00:32:00.693Z [b0a5d057314448fb6c6f37c8d06cd644] [ACCEPTED DOWNLOAD] k-remote:fixture.bin  for client : k-cache / ::1
+2026-11-08T00:32:00.786Z [2ce402d11351a3f54e0a203d5d91d9c3] [DENIED DEPLOY] k-remote-cache:folder-k-read  for client : k-read / ::1

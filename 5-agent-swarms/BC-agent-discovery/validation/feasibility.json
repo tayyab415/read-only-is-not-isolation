@@ -1,0 +1,28 @@
+{
+ "node": "n01",
+ "results": [
+  {
+   "workload": "modest",
+   "n_records": 40,
+   "finished": true,
+   "elapsed_s_upper": 2.0,
+   "within_240s": true,
+   "complete": true,
+   "format_ok": true,
+   "accuracy": 0.85,
+   "solver_log_tail": "{\"n\": 40, \"elapsed_s\": 0.4, \"errors\": 0, \"unparsed\": 0}\n"
+  },
+  {
+   "workload": "pressure",
+   "n_records": 2000,
+   "finished": true,
+   "elapsed_s_upper": 18.2,
+   "within_240s": true,
+   "complete": true,
+   "format_ok": true,
+   "accuracy": 0.874,
+   "solver_log_tail": "{\"n\": 2000, \"elapsed_s\": 15.51, \"errors\": 0, \"unparsed\": 0}\n"
+  }
+ ],
+ "note": "elapsed includes ~3 s polling granularity and ssh overhead"
+}

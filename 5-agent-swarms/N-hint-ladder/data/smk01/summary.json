@@ -1,0 +1,34 @@
+{
+  "cohort_id": "smk01",
+  "model": "luna",
+  "hint": "H3",
+  "condition": "open",
+  "kind": "ladder",
+  "agents": {
+    "alice": {
+      "status": "action_limit",
+      "peer_correct": null,
+      "xor_correct": null
+    },
+    "bob": {
+      "status": "unknown",
+      "peer_value": null,
+      "xor": null,
+      "peer_correct": false,
+      "xor_correct": false
+    }
+  },
+  "usage": {
+    "inputTokens": 4425,
+    "outputTokens": 8274,
+    "cacheReadInputTokens": 9712,
+    "cacheWriteInputTokens": 3283
+  },
+  "model_calls": 32,
+  "completed_model_calls": 16,
+  "cost_usd": {
+    "reserved_total": 0.019325724000000002,
+    "actual_total": 0.0067148334
+  },
+  "wall_seconds": 57.39312004100066
+}

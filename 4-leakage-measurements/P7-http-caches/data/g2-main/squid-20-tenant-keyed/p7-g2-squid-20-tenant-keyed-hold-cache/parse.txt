@@ -1,0 +1,41 @@
+2026/11/09 00:11:15| Processing Configuration File: /config/cache.conf (depth 0)
+2026/11/09 00:11:15| Processing: http_port 8000
+2026/11/09 00:11:15| Processing: visible_hostname p7-owned-cache
+2026/11/09 00:11:15| Processing: pid_filename /tmp/squid.pid
+2026/11/09 00:11:15| Processing: coredump_dir /tmp
+2026/11/09 00:11:15| Processing: cache_effective_user research
+2026/11/09 00:11:15| Processing: cache_effective_group research
+2026/11/09 00:11:15| Processing: workers 1
+2026/11/09 00:11:15| Processing: acl owned_clients src 172.19.0.1 172.20.0.1
+2026/11/09 00:11:15| Processing: acl owned_origin dstdomain p7-g2-squid-20-tenant-keyed-hold-origin
+2026/11/09 00:11:15| Processing: acl owned_port port 8000
+2026/11/09 00:11:15| Processing: acl permitted_methods method GET HEAD
+2026/11/09 00:11:15| Processing: http_access allow owned_clients owned_origin owned_port permitted_methods
+2026/11/09 00:11:15| Processing: http_access deny all
+2026/11/09 00:11:15| Processing: cache allow all
+2026/11/09 00:11:15| Processing: cache_mem 4 MB
+2026/11/09 00:11:15| Processing: maximum_object_size_in_memory 64 KB
+2026/11/09 00:11:15| Processing: cache_dir ufs /tmp/cache 16 4 16
+2026/11/09 00:11:15| Processing: maximum_object_size 64 KB
+2026/11/09 00:11:15| Processing: negative_ttl 60 seconds
+2026/11/09 00:11:15| Processing: collapsed_forwarding off
+2026/11/09 00:11:15| Processing: offline_mode off
+2026/11/09 00:11:15| Processing: client_persistent_connections off
+2026/11/09 00:11:15| Processing: server_persistent_connections off
+2026/11/09 00:11:15| Processing: forward_max_tries 1
+2026/11/09 00:11:15| Processing: retry_on_error off
+2026/11/09 00:11:15| Processing: uri_whitespace deny
+2026/11/09 00:11:15| Processing: refresh_pattern . 0 0% 0
+2026/11/09 00:11:15| Processing: range_offset_limit none
+2026/11/09 00:11:15| Processing: shutdown_lifetime 0 seconds
+2026/11/09 00:11:15| Processing: cache_log /tmp/squid-cache.log
+2026/11/09 00:11:15| Processing: cache_store_log none
+2026/11/09 00:11:15| Processing: logformat evidence %ts.%03tu %>a %rm %ru %>Hs %Ss %tr %{User-Agent}>h
+2026/11/09 00:11:15| Processing: access_log stdio:/tmp/cache-access.txt evidence
+2026/11/09 00:11:15| Processing: buffered_logs off
+2026/11/09 00:11:15| Processing: store_id_program /usr/local/bin/python3 /store_id.py /config/origins.json /tmp/store-id.jsonl
+2026/11/09 00:11:15| Processing: store_id_extras "%>a"
+2026/11/09 00:11:15| Processing: store_id_children 1 startup=1 idle=1 concurrency=0
+2026/11/09 00:11:15| Processing: store_id_bypass off
+2026/11/09 00:11:15| Processing: store_id_access allow owned_clients
+2026/11/09 00:11:15| Processing: store_id_access deny all

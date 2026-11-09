@@ -1,0 +1,60 @@
+{
+  "run_id": "s1-combined",
+  "removed": [
+    {
+      "name": "p1-s1-combined-alice",
+      "returncode": 0
+    },
+    {
+      "name": "p1-s1-combined-bob",
+      "returncode": 0
+    },
+    {
+      "name": "p1-s1-combined-gateway",
+      "returncode": 0
+    },
+    {
+      "name": "p1-s1-combined-upstream",
+      "returncode": 0
+    },
+    {
+      "name": "p1-s1-combined-dummy-alice",
+      "returncode": 0
+    },
+    {
+      "name": "p1-s1-combined-dummy-bob",
+      "returncode": 0
+    },
+    {
+      "name": "p1-s1-combined-net-services->art-a",
+      "returncode": 0
+    },
+    {
+      "name": "p1-s1-combined-net-alice",
+      "returncode": 0
+    },
+    {
+      "name": "p1-s1-combined-net-bob",
+      "returncode": 0
+    },
+    {
+      "name": "p1-s1-combined-net-services",
+      "returncode": 0
+    },
+    {
+      "name": "p1-s1-combined-net-dummy-alice",
+      "returncode": 1
+    },
+    {
+      "name": "p1-s1-combined-net-dummy-bob",
+      "returncode": 1
+    }
+  ],
+  "containers_readback": [],
+  "networks_readback": [],
+  "art_a_p1_networks": [],
+  "absence_proved": true,
+  "fixtures_left_in_place": {
+    "shared": "p1-s1-combined-shared"
+  }
+}

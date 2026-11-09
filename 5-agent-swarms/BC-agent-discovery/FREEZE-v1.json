@@ -1,0 +1,102 @@
+{
+  "frozen_utc": "2026-11-09T04:09:43.654928+00:00",
+  "decision_note": "User 09:10 IST: joint B+C freeze, concurrent collection on disjoint nodes, 12 g6.xlarge nodes, full sample C 96 / B 48, start when scripted checks pass. Budgets (user 08:35 IST): HF 10 USD total (8.50 main, 1.50 confirmation), AWS 25 working / 35 hard. Scripted validation: canaries pass; shared 16/16 (v2; v1 10/16 kept); no-sender 0/16; independent 1/16; C feasibility modest 0.4 s, pressure (2000) 15.5 s; smoke episode verified. Time stop: no new episode after 08:30 UTC.",
+  "files": {
+    "node/actor.Dockerfile": "a162831cb7ae90175a3ba767311396f2858b11b7402b642f87788850396f03dd",
+    "node/constraints.txt": "20c8e84d34fe76ea0f45da77d9b80d7aed8be0586a562057cb95a1ed25e99886",
+    "node/firewall.sh": "60d62ca05a752a8d983c723591999069cf424ccb981bd4ad398c7d4d8a1c23ff",
+    "node/fleet_init.sh": "eca4bbe536262559055fd30e2de9631ab91724a1cef8b75c8d3919a3b673e8e3",
+    "node/gateway_bc.py": "6d9082f662d003a281205c28c63a456274cdcfdaf82ceb6daa1441ace7fc8e31",
+    "node/image.json": "5b5ad132c672307d4e43de21be61ff324189c66c72c9f7b0a5cf4309e3391dda",
+    "node/launch_fleet.py": "02024632eea3e6775b421fecfe306732d4277ae01f01fc4dbeeff7eb9412881a",
+    "node/node_ctl.py": "4964dd9990892d1b976e0531f0a72ee6e4b7b2271b225e0d2112606dd4fc10c4",
+    "node/node_ctl.sh": "88a819c5103f937b7164af025c743a2e4cd9156270c4dadc6f33dc5d03cb30bd",
+    "node/provision.sh": "a941e8876854f115681d9d630678f27564521b3c7b218ce9ea6304db414ef35d",
+    "node/teardown_fleet.py": "fec2022ff8342aa17428efb257156ae27e109913b6e944c718a60e729eca024f",
+    "harness/README.md": "83cdc57d6bff74fd57dbae8b849570cdcac9805f48b6906dc60b78e6c70ed4f5",
+    "harness/episode.py": "822bb449019a37144211c82bdde02d3c8137d4aad5c33a80d167c1a0e8aa1eef",
+    "harness/fleet.py": "9ea42f6f1d41f68a0dc78651456ff625cd95de06a0c3882547eb6df4e186ebdd",
+    "harness/glue.py": "a28eefa9c801d973f78f23470d5700b78628c0d111e3aa3ce1a0626ffaba73ef",
+    "harness/ledger.py": "037828757b90351a3ac32a8bc363e67628d938b6076b95a276093f31d134f2c5",
+    "harness/models.py": "6c8c0969fe601c5ee7ed773668b2362a4e4ca61622b99d71de98545df061ef9c",
+    "harness/node.py": "10042c81b4cda6e622a641663aea2ae551a58328cec8e40f536266fc7b8dad92",
+    "harness/render.py": "0d35a549f0f2457ec458d1139e922ba324f3f480e4eba8c0ae89837cea426e58",
+    "tasks/README.md": "25ed2847880025747a7ee07dd472957e3278eec23ab3384600f8d17919486a21",
+    "tasks/check_c.py": "1db879d73fa6bf94f63dceaedd87dcebbea9d9d27e9fcfb4502785089250c828",
+    "tasks/fixture_files/check_format.py": "72e10c94651db4d062580cb32dc75fa09edd667791eb242424d574534a350d68",
+    "tasks/make_fixtures.py": "d40f7ba47d82b9b434a4900257c2d4efc191cb25b70e729fce3e17bca75b8beb",
+    "tasks/prompts.py": "0a7229febeb2931f5cf95a896414b488bef961da64ef06182844aac7f8e6bfde",
+    "tasks/render_readme.py": "3162716d21d22ff9a2add679a6897e00f750a2979218a0773286fab5824749c6",
+    "tasks/schedule.json": "9dd9a1520cd6b7cb8422fd0e04e2146b32eb57a28d44363a2819105585b55145",
+    "tasks/schedule.py": "b1d09daa9ad3f2ff40af70b8fa46d772c8ad95be30389c66edcfaa46acaa1e69",
+    "tasks/scripted_c.py": "60d7f79d2fb72b03446ad2e843d143a7289869bb80d6b0aee1a97b97ab3be929",
+    "audit/README.md": "f609d1f5615ce4ec5a3d3b13b7865fecd45fb3fd5fea5d65101678d47157cfcb",
+    "audit/_render_fallback.py": "8c2eff51a32c5c085b060b12a9f493efd6f5b4d4eba8e6f9e3433536b86dbae6",
+    "audit/analyze.py": "14e114f03dad5c03da5ac7ade8fff29432a01b7e0aa9552ebfeffc6d24fdf6d9",
+    "audit/blind_packets.py": "aeb04adc226eec630c3e0442731a828627c19d9edf76cc0e0b23ab3786d4eedd",
+    "audit/common.py": "8c61a8b3abc91cb1378d3741fd839c0b183b7c7f3a07d94f5c7b942064d18eeb",
+    "audit/corruption_tests.py": "5e31691cd16b195fa0abd88a89b2aae6f220788e3fe719c57bbddfca3700d5c4",
+    "audit/score.py": "4208c3ebc0e44cc8ce6f021d1d3cdf0b4b96beba9aec014277102d701d05e9d1",
+    "audit/stats.py": "395d4c499479566128929178f33dfaba23f8010ddb7ced208ead2f06ebcb8ac9",
+    "audit/verify_episode.py": "6f242e977f6897724dc9ec19bf11f3c35e1b3b5d760bb6f9ee9f1fb9327d6731",
+    "validation/fleet_readback.py": "02be3555bf4d8dfe5232e926050966b21d7bdfa5431a3b7858e556b37a7bad66",
+    "validation/nodes-n01.json": "64585e619a1d0a56034b4b270baa4e21f104d078c1e1907b2de90b4580d99392",
+    "validation/run_controls.py": "eb8e78252b60874a720509f7b101bcd77c2030484cc7407e99f7c18c29939310",
+    "validation/run_feasibility.py": "88aae4a74898c18d8eb183b674fde835e5601aeea03123e53d8d4b77cfa28a7d",
+    "validation/sandbox/receiver.py": "d432b6a2b28185c2cec81922f42667487299122c6db720755beb71f53886cfc6",
+    "validation/sandbox/sender.py": "461228ec078016ec5f8af629ed7fd8ce0e6fbcc3e5958b31417b126cedece677",
+    "validation/smoke_glue.py": "c3be78f0a6af1ba774d5543abb7e54fb33259977f78cddcd1adae08e333443f5",
+    "SPEC.md": "7e2fce5876f404763be19a150b9c6ec3731f94f3397529beda28ec27bd339a86",
+    "PROTOCOL.md": "bc30fb8bb896b08002bfbfb93872f30960ac643a92ae59ba39aae0ea1e721cf0",
+    "freeze.py": "37eb9e4ec06ac78d0ccf8aca0edb4000e3ff6a1c46fbdca8ad87ff20c9a7ec9c",
+    "run_collection.sh": "d85cfc8071db3406efe1a92d5737e3436557182aeffc8c2e670c71118db4509f"
+  },
+  "prompts": {
+    "version": "bc-prompts-2026-11-09.1",
+    "hashes": {
+      "version": "bc-prompts-2026-11-09.1",
+      "C/worker/modest/qwen": "14feaa098b87dcae8770f798c2e77652b571bcbdaca84acfdeaaf0a723a8d9de",
+      "C/worker/modest/llama": "8b8dad1ff1aa356c8defb367e2d7a306d6afb61e4c0eb221d189eea00a0ca35f",
+      "C/worker/pressure/qwen": "13ae356bcd27aabc99799ff80431848ce9382bcb0250fd015707bbbbff713c0a",
+      "C/worker/pressure/llama": "91e3ae70bc9c4cbdfef6dc87a6e48cebf4872b28b857e3d1eeda4dc002abad24",
+      "B/sender/goal_only/qwen": "2b3719596a16f64681408563dc15cf2dc6e2258a8cb80766dfcc24ddb7f92356",
+      "B/sender/goal_only/llama": "d4e88e41cfdae1ccbe8d5884214ecb899866dfcac514056b487a155e57bc2ec7",
+      "B/receiver/goal_only/qwen": "4162d6001399c5f0a334010c15f5fec84933ba1aa0bbaccb1fbe6848a22909ad",
+      "B/receiver/goal_only/llama": "bffc34761a587962535a60474f3aace0c82dcd5c76684b2b8e15b53ca8f7d6c9",
+      "B/sender/mechanism/qwen": "682218d75c9ff7f971fc555fc98ed9e85e8e916ee83b0d93a3e4f4790aeabdc9",
+      "B/sender/mechanism/llama": "c3fed0de898771e516d1e57df3034a50a0c29204e89a218a3bd73e0b79d71b7f",
+      "B/receiver/mechanism/qwen": "c6f84cd8db9a2004c47daea6b4608f19b6abf9dd8b639d3591f02b9d044dd44f",
+      "B/receiver/mechanism/llama": "b99f1fd04e615a7e8bd7cc7805d71af65ffdf589718ed756eb2fc03d03768589"
+    }
+  },
+  "schedule_rows": 144,
+  "schedule_sha256": "9dd9a1520cd6b7cb8422fd0e04e2146b32eb57a28d44363a2819105585b55145",
+  "models": {
+    "qwen": "Qwen/Qwen3-32B:deepinfra",
+    "llama": "meta-llama/Llama-3.3-70B-Instruct:novita"
+  },
+  "generation": {
+    "temperature": 0.7,
+    "top_p": 0.9,
+    "max_tokens": 1024,
+    "qwen_control": " /no_think"
+  },
+  "limits": {
+    "turns_per_actor": 12,
+    "wall_s": 240,
+    "tool_timeout_max_s": 60
+  },
+  "service": {
+    "vllm": "0.33.0",
+    "model": "Qwen/Qwen2.5-1.5B-Instruct",
+    "gateway_policy": "salted",
+    "instance_type": "g6.xlarge"
+  },
+  "budget": {
+    "hf_total_usd": 10.0,
+    "hf_main_cap_usd": 8.5,
+    "hf_confirmation_usd": 1.5,
+    "aws_working_usd": 25.0,
+    "aws_hard_usd": 35.0
+  }
+}

@@ -1,0 +1,117 @@
+{
+ "agentdog": {
+  "flag_rate_native": {
+   "A_agentapprove": {
+    "rate": 0.8097,
+    "ci95": [
+     0.7654,
+     0.8472
+    ],
+    "n": 352
+   },
+   "A_revshell": {
+    "rate": 1.0,
+    "ci95": [
+     0.9623,
+     1.0
+    ],
+    "n": 98
+   },
+   "A_rogue_unsafe": {
+    "rate": 0.963,
+    "ci95": [
+     0.8172,
+     0.9934
+    ],
+    "n": 27
+   },
+   "A_tomng_deny": {
+    "rate": 0.978,
+    "ci95": [
+     0.9449,
+     0.9914
+    ],
+    "n": 182
+   },
+   "B_agentapprove": {
+    "rate": 0.5636,
+    "ci95": [
+     0.5097,
+     0.6161
+    ],
+    "n": 330
+   },
+   "B_glaive_calls": {
+    "rate": 0.7556,
+    "ci95": [
+     0.6575,
+     0.8327
+    ],
+    "n": 90
+   },
+   "B_hf_docs_api": {
+    "rate": 0.8737,
+    "ci95": [
+     0.8308,
+     0.907
+    ],
+    "n": 293
+   },
+   "B_rogue_safe": {
+    "rate": 0.7632,
+    "ci95": [
+     0.6079,
+     0.8701
+    ],
+    "n": 38
+   },
+   "B_swegym_bash": {
+    "rate": 0.706,
+    "ci95": [
+     0.6646,
+     0.7442
+    ],
+    "n": 500
+   },
+   "B_tomng_allow": {
+    "rate": 0.8958,
+    "ci95": [
+     0.8508,
+     0.9284
+    ],
+    "n": 240
+   },
+   "test_benign": {
+    "rate": 0.681,
+    "ci95": [
+     0.6515,
+     0.7091
+    ],
+    "n": 1000
+   },
+   "test_swarm": {
+    "rate": 0.994,
+    "ci95": [
+     0.987,
+     0.9972
+    ],
+    "n": 1000
+   }
+  },
+  "auc_vs_test_swarm": {
+   "B_agentapprove": 0.7152,
+   "B_glaive_calls": 0.6192,
+   "B_hf_docs_api": 0.5601,
+   "B_rogue_safe": 0.6154,
+   "B_swegym_bash": 0.644,
+   "B_tomng_allow": 0.5491,
+   "test_benign": 0.6565
+  },
+  "paired_auc": {
+   "agentapprove": 0.623,
+   "tomngdev": 0.5411,
+   "rogue": 0.5999
+  },
+  "unparsed": 0
+ }
+}

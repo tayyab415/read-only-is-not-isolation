@@ -1,0 +1,10 @@
+image: releases-docker.jfrog.io/jfrog/artifactory-oss:7.161.26 (pulled as :latest)
+digest: releases-docker.jfrog.io/jfrog/artifactory-oss@sha256:d103c0464d33645acdcbfbb6fc61310d7faf14c9893975cbee562487eaeac1d1
+created: 2026-09-07T15:53:24.32756422Z id: sha256:d103c0464d33645acdcbfbb6fc61310d7faf14c9893975cbee562487eaeac1d1
+license: Artifactory OSS (from /api/system/version)
+postgres: postgres:16-alpine (art-c-db)
+memory-limit: 3221225472 ports: {"8081/tcp":[{"HostIp":"127.0.0.1","HostPort":"18581"}],"8082/tcp":[{"HostIp":"127.0.0.1","HostPort":"18582"}]}
+    ## Extra Java options to pass to the JVM. These values add to or override the defaults.
+## Extra Java options to pass to the JVM. These values add to or override the defaults.
+Xmx1536m
+Xmx

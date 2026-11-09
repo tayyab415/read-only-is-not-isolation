@@ -1,0 +1,183 @@
+{'hf_api_with_auth': 13491, 'script_or_frame_injection': 12034, 'image_beacon': 8714, 'python_or_shell_launcher': 1393, 'decode_and_run': 9175} clusters: {'hf_api_with_auth': 6131, 'script_or_frame_injection': 3010, 'image_beacon': 3390, 'python_or_shell_launcher': 961, 'decode_and_run': 4603}
+0 detok seen {'test_benign_fpr': 0.011, 'tpr:hf_api_with_auth': 1.0, 'tpr:script_or_frame_injection': 1.0, 'tpr:image_beacon': 1.0, 'tpr:python_or_shell_launcher': 1.0, 'tpr:decode_and_run': 1.0}
+0 detok hf_api_with_auth {'test_benign_fpr': 0.015, 'tpr:hf_api_with_auth': 1.0, 'tpr:script_or_frame_injection': 1.0, 'tpr:image_beacon': 1.0, 'tpr:python_or_shell_launcher': 1.0, 'tpr:decode_and_run': 1.0}
+0 detok script_or_frame_injection {'test_benign_fpr': 0.015, 'tpr:hf_api_with_auth': 1.0, 'tpr:script_or_frame_injection': 1.0, 'tpr:image_beacon': 1.0, 'tpr:python_or_shell_launcher': 1.0, 'tpr:decode_and_run': 1.0}
+0 detok image_beacon {'test_benign_fpr': 0.012, 'tpr:hf_api_with_auth': 1.0, 'tpr:script_or_frame_injection': 1.0, 'tpr:image_beacon': 1.0, 'tpr:python_or_shell_launcher': 1.0, 'tpr:decode_and_run': 1.0}
+0 detok python_or_shell_launcher {'test_benign_fpr': 0.013, 'tpr:hf_api_with_auth': 1.0, 'tpr:script_or_frame_injection': 1.0, 'tpr:image_beacon': 1.0, 'tpr:python_or_shell_launcher': 1.0, 'tpr:decode_and_run': 1.0}
+0 detok decode_and_run {'test_benign_fpr': 0.012, 'tpr:hf_api_with_auth': 1.0, 'tpr:script_or_frame_injection': 1.0, 'tpr:image_beacon': 1.0, 'tpr:python_or_shell_launcher': 1.0, 'tpr:decode_and_run': 1.0}
+0 struct seen {'test_benign_fpr': 0.012, 'tpr:hf_api_with_auth': 1.0, 'tpr:script_or_frame_injection': 1.0, 'tpr:image_beacon': 1.0, 'tpr:python_or_shell_launcher': 0.996, 'tpr:decode_and_run': 0.998}
+0 struct hf_api_with_auth {'test_benign_fpr': 0.009, 'tpr:hf_api_with_auth': 1.0, 'tpr:script_or_frame_injection': 1.0, 'tpr:image_beacon': 1.0, 'tpr:python_or_shell_launcher': 0.996, 'tpr:decode_and_run': 0.998}
+0 struct script_or_frame_injection {'test_benign_fpr': 0.01, 'tpr:hf_api_with_auth': 1.0, 'tpr:script_or_frame_injection': 1.0, 'tpr:image_beacon': 1.0, 'tpr:python_or_shell_launcher': 0.996, 'tpr:decode_and_run': 0.998}
+0 struct image_beacon {'test_benign_fpr': 0.008, 'tpr:hf_api_with_auth': 1.0, 'tpr:script_or_frame_injection': 1.0, 'tpr:image_beacon': 0.997, 'tpr:python_or_shell_launcher': 0.991, 'tpr:decode_and_run': 0.997}
+0 struct python_or_shell_launcher {'test_benign_fpr': 0.012, 'tpr:hf_api_with_auth': 1.0, 'tpr:script_or_frame_injection': 1.0, 'tpr:image_beacon': 1.0, 'tpr:python_or_shell_launcher': 0.987, 'tpr:decode_and_run': 1.0}
+0 struct decode_and_run {'test_benign_fpr': 0.01, 'tpr:hf_api_with_auth': 1.0, 'tpr:script_or_frame_injection': 1.0, 'tpr:image_beacon': 1.0, 'tpr:python_or_shell_launcher': 0.996, 'tpr:decode_and_run': 0.994}
+1 detok seen {'test_benign_fpr': 0.009, 'tpr:hf_api_with_auth': 0.999, 'tpr:script_or_frame_injection': 1.0, 'tpr:image_beacon': 1.0, 'tpr:python_or_shell_launcher': 1.0, 'tpr:decode_and_run': 1.0}
+1 detok hf_api_with_auth {'test_benign_fpr': 0.007, 'tpr:hf_api_with_auth': 0.999, 'tpr:script_or_frame_injection': 1.0, 'tpr:image_beacon': 1.0, 'tpr:python_or_shell_launcher': 1.0, 'tpr:decode_and_run': 1.0}
+1 detok script_or_frame_injection {'test_benign_fpr': 0.008, 'tpr:hf_api_with_auth': 0.999, 'tpr:script_or_frame_injection': 1.0, 'tpr:image_beacon': 1.0, 'tpr:python_or_shell_launcher': 1.0, 'tpr:decode_and_run': 1.0}
+1 detok image_beacon {'test_benign_fpr': 0.009, 'tpr:hf_api_with_auth': 0.999, 'tpr:script_or_frame_injection': 1.0, 'tpr:image_beacon': 1.0, 'tpr:python_or_shell_launcher': 1.0, 'tpr:decode_and_run': 1.0}
+1 detok python_or_shell_launcher {'test_benign_fpr': 0.007, 'tpr:hf_api_with_auth': 0.999, 'tpr:script_or_frame_injection': 1.0, 'tpr:image_beacon': 1.0, 'tpr:python_or_shell_launcher': 1.0, 'tpr:decode_and_run': 1.0}
+1 detok decode_and_run {'test_benign_fpr': 0.007, 'tpr:hf_api_with_auth': 1.0, 'tpr:script_or_frame_injection': 1.0, 'tpr:image_beacon': 1.0, 'tpr:python_or_shell_launcher': 1.0, 'tpr:decode_and_run': 1.0}
+1 struct seen {'test_benign_fpr': 0.008, 'tpr:hf_api_with_auth': 1.0, 'tpr:script_or_frame_injection': 1.0, 'tpr:image_beacon': 1.0, 'tpr:python_or_shell_launcher': 1.0, 'tpr:decode_and_run': 1.0}
+1 struct hf_api_with_auth {'test_benign_fpr': 0.009, 'tpr:hf_api_with_auth': 1.0, 'tpr:script_or_frame_injection': 1.0, 'tpr:image_beacon': 1.0, 'tpr:python_or_shell_launcher': 1.0, 'tpr:decode_and_run': 1.0}
+1 struct script_or_frame_injection {'test_benign_fpr': 0.009, 'tpr:hf_api_with_auth': 1.0, 'tpr:script_or_frame_injection': 0.999, 'tpr:image_beacon': 1.0, 'tpr:python_or_shell_launcher': 1.0, 'tpr:decode_and_run': 1.0}
+1 struct image_beacon {'test_benign_fpr': 0.009, 'tpr:hf_api_with_auth': 1.0, 'tpr:script_or_frame_injection': 1.0, 'tpr:image_beacon': 1.0, 'tpr:python_or_shell_launcher': 1.0, 'tpr:decode_and_run': 1.0}
+1 struct python_or_shell_launcher {'test_benign_fpr': 0.009, 'tpr:hf_api_with_auth': 1.0, 'tpr:script_or_frame_injection': 1.0, 'tpr:image_beacon': 1.0, 'tpr:python_or_shell_launcher': 0.996, 'tpr:decode_and_run': 1.0}
+1 struct decode_and_run {'test_benign_fpr': 0.007, 'tpr:hf_api_with_auth': 1.0, 'tpr:script_or_frame_injection': 1.0, 'tpr:image_beacon': 1.0, 'tpr:python_or_shell_launcher': 1.0, 'tpr:decode_and_run': 0.998}
+2 detok seen {'test_benign_fpr': 0.005, 'tpr:hf_api_with_auth': 1.0, 'tpr:script_or_frame_injection': 1.0, 'tpr:image_beacon': 1.0, 'tpr:python_or_shell_launcher': 1.0, 'tpr:decode_and_run': 1.0}
+2 detok hf_api_with_auth {'test_benign_fpr': 0.007, 'tpr:hf_api_with_auth': 0.999, 'tpr:script_or_frame_injection': 1.0, 'tpr:image_beacon': 1.0, 'tpr:python_or_shell_launcher': 1.0, 'tpr:decode_and_run': 1.0}
+2 detok script_or_frame_injection {'test_benign_fpr': 0.008, 'tpr:hf_api_with_auth': 0.999, 'tpr:script_or_frame_injection': 1.0, 'tpr:image_beacon': 1.0, 'tpr:python_or_shell_launcher': 1.0, 'tpr:decode_and_run': 1.0}
+2 detok image_beacon {'test_benign_fpr': 0.006, 'tpr:hf_api_with_auth': 0.999, 'tpr:script_or_frame_injection': 1.0, 'tpr:image_beacon': 1.0, 'tpr:python_or_shell_launcher': 1.0, 'tpr:decode_and_run': 1.0}
+2 detok python_or_shell_launcher {'test_benign_fpr': 0.004, 'tpr:hf_api_with_auth': 0.999, 'tpr:script_or_frame_injection': 1.0, 'tpr:image_beacon': 1.0, 'tpr:python_or_shell_launcher': 1.0, 'tpr:decode_and_run': 1.0}
+2 detok decode_and_run {'test_benign_fpr': 0.007, 'tpr:hf_api_with_auth': 1.0, 'tpr:script_or_frame_injection': 1.0, 'tpr:image_beacon': 1.0, 'tpr:python_or_shell_launcher': 1.0, 'tpr:decode_and_run': 1.0}
+2 struct seen {'test_benign_fpr': 0.007, 'tpr:hf_api_with_auth': 1.0, 'tpr:script_or_frame_injection': 0.993, 'tpr:image_beacon': 1.0, 'tpr:python_or_shell_launcher': 0.995, 'tpr:decode_and_run': 1.0}
+2 struct hf_api_with_auth {'test_benign_fpr': 0.007, 'tpr:hf_api_with_auth': 1.0, 'tpr:script_or_frame_injection': 1.0, 'tpr:image_beacon': 1.0, 'tpr:python_or_shell_launcher': 0.995, 'tpr:decode_and_run': 1.0}
+2 struct script_or_frame_injection {'test_benign_fpr': 0.008, 'tpr:hf_api_with_auth': 1.0, 'tpr:script_or_frame_injection': 0.987, 'tpr:image_beacon': 1.0, 'tpr:python_or_shell_launcher': 1.0, 'tpr:decode_and_run': 1.0}
+2 struct image_beacon {'test_benign_fpr': 0.007, 'tpr:hf_api_with_auth': 1.0, 'tpr:script_or_frame_injection': 0.995, 'tpr:image_beacon': 0.998, 'tpr:python_or_shell_launcher': 0.995, 'tpr:decode_and_run': 0.999}
+2 struct python_or_shell_launcher {'test_benign_fpr': 0.005, 'tpr:hf_api_with_auth': 1.0, 'tpr:script_or_frame_injection': 0.993, 'tpr:image_beacon': 1.0, 'tpr:python_or_shell_launcher': 0.982, 'tpr:decode_and_run': 0.999}
+2 struct decode_and_run {'test_benign_fpr': 0.006, 'tpr:hf_api_with_auth': 1.0, 'tpr:script_or_frame_injection': 0.997, 'tpr:image_beacon': 1.0, 'tpr:python_or_shell_launcher': 0.995, 'tpr:decode_and_run': 0.997}
+{
+ "detok": {
+  "hf_api_with_auth": {
+   "tpr_seen": [
+    0.9998,
+    0.0004
+   ],
+   "tpr_held_out": [
+    0.9996,
+    0.0004
+   ],
+   "auc_seen": 1.0,
+   "auc_held_out": 1.0,
+   "n_test_rows_per_seed": 1661,
+   "benign_fpr_when_held_out": 0.0095
+  },
+  "script_or_frame_injection": {
+   "tpr_seen": [
+    1.0,
+    0.0
+   ],
+   "tpr_held_out": [
+    1.0,
+    0.0
+   ],
+   "auc_seen": 1.0,
+   "auc_held_out": 1.0,
+   "n_test_rows_per_seed": 791,
+   "benign_fpr_when_held_out": 0.0101
+  },
+  "image_beacon": {
+   "tpr_seen": [
+    1.0,
+    0.0
+   ],
+   "tpr_held_out": [
+    1.0,
+    0.0
+   ],
+   "auc_seen": 1.0,
+   "auc_held_out": 1.0,
+   "n_test_rows_per_seed": 966,
+   "benign_fpr_when_held_out": 0.009
+  },
+  "python_or_shell_launcher": {
+   "tpr_seen": [
+    1.0,
+    0.0
+   ],
+   "tpr_held_out": [
+    1.0,
+    0.0
+   ],
+   "auc_seen": 1.0,
+   "auc_held_out": 1.0,
+   "n_test_rows_per_seed": 236,
+   "benign_fpr_when_held_out": 0.0079
+  },
+  "decode_and_run": {
+   "tpr_seen": [
+    1.0,
+    0.0
+   ],
+   "tpr_held_out": [
+    1.0,
+    0.0
+   ],
+   "auc_seen": 1.0,
+   "auc_held_out": 1.0,
+   "n_test_rows_per_seed": 1220,
+   "benign_fpr_when_held_out": 0.0086
+  }
+ },
+ "struct": {
+  "hf_api_with_auth": {
+   "tpr_seen": [
+    1.0,
+    0.0
+   ],
+   "tpr_held_out": [
+    1.0,
+    0.0
+   ],
+   "auc_seen": 1.0,
+   "auc_held_out": 0.9999,
+   "n_test_rows_per_seed": 1661,
+   "benign_fpr_when_held_out": 0.0079
+  },
+  "script_or_frame_injection": {
+   "tpr_seen": [
+    0.9978,
+    0.0038
+   ],
+   "tpr_held_out": [
+    0.9952,
+    0.0072
+   ],
+   "auc_seen": 0.9999,
+   "auc_held_out": 0.9997,
+   "n_test_rows_per_seed": 791,
+   "benign_fpr_when_held_out": 0.0088
+  },
+  "image_beacon": {
+   "tpr_seen": [
+    1.0,
+    0.0
+   ],
+   "tpr_held_out": [
+    0.9983,
+    0.0016
+   ],
+   "auc_seen": 1.0,
+   "auc_held_out": 0.9999,
+   "n_test_rows_per_seed": 966,
+   "benign_fpr_when_held_out": 0.0079
+  },
+  "python_or_shell_launcher": {
+   "tpr_seen": [
+    0.997,
+    0.0026
+   ],
+   "tpr_held_out": [
+    0.9883,
+    0.0072
+   ],
+   "auc_seen": 0.9998,
+   "auc_held_out": 0.9995,
+   "n_test_rows_per_seed": 236,
+   "benign_fpr_when_held_out": 0.0086
+  },
+  "decode_and_run": {
+   "tpr_seen": [
+    0.9994,
+    0.001
+   ],
+   "tpr_held_out": [
+    0.9964,
+    0.0021
+   ],
+   "auc_seen": 0.9999,
+   "auc_held_out": 0.9998,
+   "n_test_rows_per_seed": 1220,
+   "benign_fpr_when_held_out": 0.0077
+  }
+ }
+}

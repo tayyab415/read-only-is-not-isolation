@@ -1,0 +1,48 @@
++ cd /home/ubuntu/s1
++ PY=/home/ubuntu/venv/bin/python
++ /home/ubuntu/venv/bin/python trials_s3.py run --split calibration
+wrote /home/ubuntu/s1/data/trials-s3-calibration.jsonl
++ /home/ubuntu/venv/bin/python trials_s3.py freeze
+{
+ "phase": "s3",
+ "thresholds": {
+  "T50": {
+   "threshold_ms": 63.457099,
+   "low_means_one": false,
+   "calibration_accuracy": 0.765,
+   "n": 200
+  },
+  "T100": {
+   "threshold_ms": 44.630226,
+   "low_means_one": false,
+   "calibration_accuracy": 1.0,
+   "n": 200
+  },
+  "T200": {
+   "threshold_ms": 44.209974,
+   "low_means_one": false,
+   "calibration_accuracy": 1.0,
+   "n": 200
+  },
+  "T400": {
+   "threshold_ms": 44.032632,
+   "low_means_one": false,
+   "calibration_accuracy": 1.0,
+   "n": 200
+  },
+  "T200_busy": {
+   "threshold_ms": 82.3102165,
+   "low_means_one": false,
+   "calibration_accuracy": 0.765,
+   "n": 200
+  }
+ },
+ "frozen_utc_ns": 1794188248119556044,
+ "calibration_sha256": "8b052732ffd4b670b51aeb19409af05e0daa00599678ce706b706d91a7e825a8",
+ "trials_s3_py_sha256": "8590b025661b3e16c18aec9f0a4e84e81ecb972b023838e547734173fe31ded6"
+}
++ /home/ubuntu/venv/bin/python trials_s3.py run --split holdout
+wrote /home/ubuntu/s1/data/trials-s3-holdout.jsonl
++ echo S3_DONE
+S3_DONE
+EXIT=0

@@ -1,0 +1,6 @@
+COMMAND ['docker', 'exec', 'art-a-db', 'psql', '-U', 'artifactory', '-d', 'artifactory', '-P', 'null=<NULL>', '-c', "select repo,node_path,node_name,created_by,modified_by\n    from nodes where repo='github-remote-cache' and node_name='Python.gitignore'"]
+        repo         |              node_path               |    node_name     | created_by | modified_by 
+---------------------+--------------------------------------+------------------+------------+-------------
+ github-remote-cache | github/gitignore/raw/refs/heads/main | Python.gitignore | a-cache    | a-cache
+(1 row)
+

@@ -1,0 +1,32 @@
+{
+  "python": "3.11.4 (main, Jul  5 2023, 08:54:11) [Clang 14.0.6 ]",
+  "executable": "$HOME/anaconda3/bin/python3",
+  "pip": "pip 25.3 from $HOME/anaconda3/lib/python3.11/site-packages/pip (python 3.11)",
+  "command": [
+    "$HOME/anaconda3/bin/python3",
+    "-m",
+    "pip",
+    "--isolated",
+    "download",
+    "--index-url",
+    "https://pypi.org/simple",
+    "--only-binary=:all:",
+    "--platform",
+    "any",
+    "--python-version",
+    "3.11",
+    "--implementation",
+    "py",
+    "--abi",
+    "none",
+    "--disable-pip-version-check",
+    "--no-cache-dir",
+    "--dest",
+    "$LAB_ROOT/evidence/P3-mirror/data/wheels",
+    "-r",
+    "$LAB_ROOT/evidence/P3-mirror/requirements.txt"
+  ],
+  "exit_code": 1,
+  "start_utc_ns": 1794157798358355000,
+  "end_utc_ns": 1794157925980103000
+}

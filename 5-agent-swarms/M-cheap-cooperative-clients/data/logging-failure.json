@@ -1,0 +1,7 @@
+{
+  "problem": "Two provider responses contained opaque binary fields. The JSON logger raised before preserving the responses or executing any model-selected HTTP action.",
+  "response_usage_unavailable": true,
+  "budget_treatment": "Both attempted calls retain their full maximum reservation.",
+  "correction": "Binary fields are stored as base64; only visible text enters subsequent conversations.",
+  "subject_http_actions_before_failure": 0
+}

@@ -1,0 +1,37 @@
+{
+  "run": "j-20261108T000705",
+  "repos": {
+    "j-20261108T000705-method-only": {
+      "block_metadata": false,
+      "arm": "method-only"
+    },
+    "j-20261108T000705-metadata-blocked": {
+      "block_metadata": true,
+      "arm": "metadata-blocked"
+    },
+    "j-20261108T000705-negative-off": {
+      "block_metadata": false,
+      "arm": "negative-off"
+    },
+    "j-20261108T000705-both": {
+      "block_metadata": true,
+      "arm": "both"
+    },
+    "j-20261108T000705-partitioned-rx": {
+      "block_metadata": false,
+      "arm": "partitioned"
+    },
+    "j-20261108T000705-partitioned-tx": {
+      "block_metadata": false,
+      "arm": "partitioned"
+    },
+    "j-20261108T000705-no-store": {
+      "block_metadata": false,
+      "arm": "no-store"
+    },
+    "j-20261108T000705-offline": {
+      "block_metadata": false,
+      "arm": "offline"
+    }
+  }
+}

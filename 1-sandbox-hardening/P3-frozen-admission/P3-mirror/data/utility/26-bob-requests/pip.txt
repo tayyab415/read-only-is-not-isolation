@@ -1,0 +1,43 @@
+Looking in indexes: http://127.0.0.1:64628/simple/
+Collecting requests==2.32.3
+  Downloading http://127.0.0.1:64628/files/70761cfe03c773ceb22aa2f671b4757976145175cdfca038c02654d061d6dcc6/requests-2.32.3-py3-none-any.whl (64 kB)
+Collecting charset-normalizer<4,>=2 (from requests==2.32.3)
+  Downloading http://127.0.0.1:64628/files/d98b1668f06378c6dbefec3b92299716b931cd4e6061f3c875a71ced1780ab85/charset_normalizer-3.4.1-py3-none-any.whl (49 kB)
+Collecting idna<4,>=2.5 (from requests==2.32.3)
+  Downloading http://127.0.0.1:64628/files/946d195a0d259cbba61165e88e65941f16e9b36ea6ddb97f00452bae8b1287d3/idna-3.10-py3-none-any.whl (70 kB)
+Collecting urllib3<3,>=1.21.1 (from requests==2.32.3)
+  Downloading http://127.0.0.1:64628/files/1cee9ad369867bfdbbb48b7dd50374c0967a0bb7710050facf0dd6911440e3df/urllib3-2.3.0-py3-none-any.whl (128 kB)
+Collecting certifi>=2017.4.17 (from requests==2.32.3)
+  Downloading http://127.0.0.1:64628/files/ca78db4565a652026a4db2bcdf68f2fb589ea80d0be70e03929ed730746b84fe/certifi-2025.1.31-py3-none-any.whl (166 kB)
+Installing collected packages: urllib3, idna, charset-normalizer, certifi, requests
+
+Successfully installed certifi-2025.1.31 charset-normalizer-3.4.1 idna-3.10 requests-2.32.3 urllib3-2.3.0
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+conda-repo-cli 1.0.41 requires requests_mock, which is not installed.
+spyder 5.4.3 requires pyqt5<5.16, which is not installed.
+spyder 5.4.3 requires pyqtwebengine<5.16, which is not installed.
+streamlit 1.39.0 requires packaging<25,>=20, but you have packaging 25.0 which is incompatible.
+streamlit 1.39.0 requires pillow<11,>=7.1.0, but you have pillow 11.3.0 which is incompatible.
+streamlit 1.39.0 requires protobuf<6,>=3.20, but you have protobuf 6.33.5 which is incompatible.
+streamlit 1.39.0 requires rich<14,>=10.14.0, but you have rich 15.0.0 which is incompatible.
+langchain 0.3.27 requires langchain-core<1.0.0,>=0.3.72, but you have langchain-core 0.1.53 which is incompatible.
+cloud-sql-python-connector 1.12.0 requires cryptography>=42.0.0, but you have cryptography 41.0.7 which is incompatible.
+conda-repo-cli 1.0.41 requires clyent==1.2.1, but you have clyent 1.2.2 which is incompatible.
+conda-repo-cli 1.0.41 requires nbformat==5.4.0, but you have nbformat 5.7.0 which is incompatible.
+conda-repo-cli 1.0.41 requires python-dateutil==2.8.2, but you have python-dateutil 2.9.0.post0 which is incompatible.
+conda-repo-cli 1.0.41 requires PyYAML==6.0, but you have pyyaml 6.0.3 which is incompatible.
+conda-repo-cli 1.0.41 requires requests==2.28.1, but you have requests 2.32.3 which is incompatible.
+google-cloud-aiplatform 1.141.0 requires google-genai<2.0.0,>=1.59.0; python_version >= "3.10", but you have google-genai 2.20.0 which is incompatible.
+bigframes 2.21.0 requires google-cloud-bigquery[bqstorage,pandas]>=3.31.0, but you have google-cloud-bigquery 3.17.0 which is incompatible.
+bigframes 2.21.0 requires rich<14,>=12.4.4, but you have rich 15.0.0 which is incompatible.
+gradio 6.0.0 requires gradio-client==2.0.0-dev.3, but you have gradio-client 2.5.0 which is incompatible.
+gradio 6.0.0 requires pydantic<=2.12.4,>=2.11.10, but you have pydantic 2.12.5 which is incompatible.
+soccerdata 1.8.7 requires packaging<25.0,>=24.1, but you have packaging 25.0 which is incompatible.
+soccerdata 1.8.7 requires rich<14.0.0,>=13.0.0, but you have rich 15.0.0 which is incompatible.
+langchain-openai 0.3.31 requires langchain-core<1.0.0,>=0.3.74, but you have langchain-core 0.1.53 which is incompatible.
+google-adk 1.27.1 requires google-genai<2.0.0,>=1.56.0, but you have google-genai 2.20.0 which is incompatible.
+google-adk 1.27.1 requires requests<3.0.0,>=2.32.4, but you have requests 2.32.3 which is incompatible.
+spyder 5.4.3 requires ipython!=8.10.0,!=8.8.0,!=8.9.0,<9.0.0,>=7.31.1, but you have ipython 9.5.0 which is incompatible.
+spyder 5.4.3 requires jedi<0.19.0,>=0.17.2, but you have jedi 0.19.2 which is incompatible.
+aiobotocore 2.5.0 requires botocore<1.29.77,>=1.29.76, but you have botocore 1.43.15 which is incompatible.
+google-cloud-firestore 2.14.0 requires protobuf!=3.20.0,!=3.20.1,!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<5.0.0dev,>=3.19.5, but you have protobuf 6.33.5 which is incompatible.

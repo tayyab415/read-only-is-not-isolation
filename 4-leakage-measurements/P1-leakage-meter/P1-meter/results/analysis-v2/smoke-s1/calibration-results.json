@@ -1,0 +1,103 @@
+{
+  "open": {
+    "analysis_version": 2,
+    "calibration_sha256": "28607981ce32a9b683c0a88d4228915771db58eb0681aad88c67e7c9b1326e1d",
+    "provision_sha256": "653c80e1f7de9d82482e7d8a5a1d22edaf5114a21d2e83a695feb779219dfff1",
+    "trials": 10,
+    "features": 1223,
+    "cv_accuracy": {
+      "logistic": 0.3,
+      "boosting": 0.5
+    },
+    "model": "boosting",
+    "holm_significant": [],
+    "per_recipe_holm_significant": {
+      "cond_get": [],
+      "folder_api": [],
+      "range_get": [],
+      "stats": []
+    },
+    "selected_for_confirmation": []
+  },
+  "combined": {
+    "analysis_version": 2,
+    "calibration_sha256": "6eec2336601b1abe8fd5a8ac9b4b57583a5680353e571513005111a1c10681e6",
+    "provision_sha256": "6cbd103d1be22cf5ff46a223345083bace531d7106e9f0f6185ce3c46b52fa43",
+    "trials": 10,
+    "features": 820,
+    "cv_accuracy": {
+      "logistic": 0.5,
+      "boosting": 0.5
+    },
+    "model": "logistic",
+    "holm_significant": [],
+    "per_recipe_holm_significant": {
+      "cond_get": [],
+      "folder_html": [],
+      "range_get": [],
+      "rdv_get": []
+    },
+    "selected_for_confirmation": []
+  },
+  "separate": {
+    "analysis_version": 2,
+    "calibration_sha256": "a06c973d8311c23280ae9e0f7e3a56d35a2687911e8db8257edc1d31ad3e4bc9",
+    "provision_sha256": "f646750baf8bc4ff077c9ad3f9d732e3396a23ad4bdc79294de7f3d28eac8e60",
+    "trials": 10,
+    "features": 820,
+    "cv_accuracy": {
+      "logistic": 0.4,
+      "boosting": 0.5
+    },
+    "model": "boosting",
+    "holm_significant": [],
+    "per_recipe_holm_significant": {
+      "cond_get": [],
+      "load": [],
+      "range_get": [],
+      "rdv_head": [],
+      "stats": []
+    },
+    "selected_for_confirmation": []
+  },
+  "aa": {
+    "analysis_version": 2,
+    "calibration_sha256": "8d80c65aab5aab3c7f2566f449bacbaec7249afcbda44ecab0fdc968cba40e58",
+    "provision_sha256": "26633753524450fe01ed101572b82ee1a6c1fb18d8bef7b8ff7600f6967082a8",
+    "trials": 10,
+    "features": 1223,
+    "cv_accuracy": {
+      "logistic": 0.4,
+      "boosting": 0.5
+    },
+    "model": "boosting",
+    "holm_significant": [],
+    "per_recipe_holm_significant": {
+      "fresh_get": [],
+      "properties": [],
+      "range_get": [],
+      "stats": []
+    },
+    "selected_for_confirmation": []
+  },
+  "sham": {
+    "analysis_version": 2,
+    "calibration_sha256": "898192c07d73db6f6d7d7c9794f105da2825c82a8c05b67996f2e131641e0d18",
+    "provision_sha256": "9cffccbc60ceb6f8022143c5c7179bd60bf92ad802c9282a90dc320ebc9dae6b",
+    "trials": 10,
+    "features": 1223,
+    "cv_accuracy": {
+      "logistic": 0.6,
+      "boosting": 0.5
+    },
+    "model": "logistic",
+    "holm_significant": [],
+    "per_recipe_holm_significant": {
+      "folder_html": [],
+      "get": [],
+      "range_get": [],
+      "rdv_head": []
+    },
+    "selected_for_confirmation": []
+  }
+}

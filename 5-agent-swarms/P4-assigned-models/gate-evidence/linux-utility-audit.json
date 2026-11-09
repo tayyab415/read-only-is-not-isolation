@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "identical_client_image": true,
+  "arms": [
+    {
+      "mode": "separate",
+      "passed": true,
+      "checks": 678,
+      "scheduled": 28,
+      "completed": 28,
+      "successful_tasks": 28,
+      "failure_count": 0,
+      "failures": [],
+      "forwarded_requests": 54,
+      "rejected_controls": 2
+    },
+    {
+      "mode": "immutable",
+      "passed": true,
+      "checks": 329,
+      "scheduled": 28,
+      "completed": 28,
+      "successful_tasks": 28,
+      "failure_count": 0,
+      "failures": [],
+      "forwarded_requests": 54,
+      "rejected_controls": 2
+    }
+  ],
+  "audit_source_sha256": "030d3fb18f56dffdba453b9228d739b6011b2cb72975898d26889642702911f2",
+  "sealed_sha256": {
+    "separate": "14b6b032d3fb16a33587a62e85333836d82851887d839504a65b3d7e5bf33c06",
+    "immutable": "d307bcb0c3bcc7b77d57bdbf1e8d5a972da748546c47ce6dde4a2f4741f80557"
+  }
+}

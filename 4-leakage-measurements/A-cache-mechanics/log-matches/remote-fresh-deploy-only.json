@@ -1,0 +1,116 @@
+{
+  "request_id": "remote-fresh-deploy-only",
+  "server_trace_ids": [
+    "f53e2aa64ef5b405a00098b7b13259e6"
+  ],
+  "logs": {
+    "access-audit.log": [],
+    "access-metrics.log": [],
+    "access-metrics_events.log": [],
+    "access-request-out.log": [],
+    "access-request.log": [
+      {
+        "line_number": 1216,
+        "line": "2026-11-07T23:12:41.420Z|f53e2aa64ef5b405a00098b7b13259e6|/127.0.0.1:54014|jfrt@01m6w3chwnhc4n1xs15bzj1rg6|--UNA|com.jfrog.access.v1.authentication.AuthenticationResource/Authenticate|0|-1|-1|5|grpc-java-netty/1.81.0"
+      },
+      {
+        "line_number": 1217,
+        "line": "2026-11-07T23:12:41.426Z|f53e2aa64ef5b405a00098b7b13259e6|/127.0.0.1:54014|jfrt@01m6w3chwnhc4n1xs15bzj1rg6|--SST|com.jfrog.access.v1.permission.PermissionResource/ListPermissionsStream|0|-1|-1|3|grpc-java-netty/1.81.0"
+      }
+    ],
+    "access-security-audit.log": [],
+    "access-service.log": [],
+    "access-thread-dump.log": [],
+    "artifactory-access.log": [
+      {
+        "line_number": 101,
+        "line": "2026-11-07T23:12:41.431Z [f53e2aa64ef5b405a00098b7b13259e6] [ACCEPTED LOGIN]   for client : a-cache / 172.18.0.1"
+      }
+    ],
+    "artifactory-binarystore.log": [],
+    "artifactory-cleanup-audit.log": [],
+    "artifactory-conan-v2-migration.log": [],
+    "artifactory-event.log": [],
+    "artifactory-federation-metrics.log": [],
+    "artifactory-federation-metrics_events.log": [],
+    "artifactory-import-export.log": [],
+    "artifactory-metrics.log": [],
+    "artifactory-metrics_events.log": [],
+    "artifactory-path-checksum-migration.log": [],
+    "artifactory-request-out.log": [],
+    "artifactory-request-trace.log": [],
+    "artifactory-request.log": [
+      {
+        "line_number": 3774,
+        "line": "2026-11-07T23:12:41.431Z|f53e2aa64ef5b405a00098b7b13259e6|172.18.0.1|a-cache|MKCOL|/github-remote/zz_A_remote_fresh_deploy_only|404|-1|0|19|art-a-research/remote-fresh-deploy-only"
+      }
+    ],
+    "artifactory-service-federation.log": [],
+    "artifactory-service.log": [
+      {
+        "line_number": 3455,
+        "line": "2026-11-07T23:12:41.430Z [jfrt ] [WARN ] [f53e2aa64ef5b405a00098b7b13259e6] [yAuthenticationFilterChain:192] [http-nio-8081-exec-2] - User authentication has failed due to Attempt to lock 'github-remote:' with repository 'github-remote-cache"
+      }
+    ],
+    "artifactory-sha256-migration.log": [],
+    "artifactory-shadow.log": [],
+    "artifactory-storage-request-out.log": [],
+    "artifactory-traffic-v2.log": [],
+    "artifactory-traffic-v3.log": [],
+    "artifactory-traffic.1794091779163.log": [],
+    "artifactory-xray-traffic.1794091779189.log": [],
+    "derby.log": [],
+    "dummy.log": [],
+    "event-metrics.log": [],
+    "event-request.log": [],
+    "event-service.log": [],
+    "event-webhook-request-out.log": [],
+    "frontend-metrics-events.log": [],
+    "frontend-metrics.log": [],
+    "frontend-request.log": [],
+    "frontend-service.log": [],
+    "jfbus-ack-events.log": [],
+    "jfbus-consume-events.log": [],
+    "jfbus-publish-events.log": [],
+    "jfbus-receive-polling.log": [],
+    "jfbus-request.log": [],
+    "jfbus-service.log": [],
+    "jfconfig-metrics.log": [],
+    "jfconfig-request-out.log": [],
+    "jfconfig-request.log": [],
+    "jfconfig-service.log": [],
+    "metadata-metrics.log": [],
+    "metadata-request.log": [],
+    "metadata-service.log": [],
+    "metadata-traffic.log": [],
+    "observability-metrics.log": [],
+    "observability-request-out.log": [],
+    "observability-request.log": [],
+    "observability-service.log": [],
+    "router-request.log": [
+      {
+        "line_number": 5239,
+        "line": "{\"ClientAddr\":\"127.0.0.1:35280\",\"DownstreamContentSize\":87,\"DownstreamStatus\":200,\"Duration\":6421019,\"Overhead\":89583,\"RequestMethod\":\"POST\",\"RequestPath\":\"/com.jfrog.access.v1.authentication.AuthenticationResource/Authenticate\",\"ServiceAddr\":\"localhost:8045\",\"SpanId\":\"e8fe82f58d2d3ca6\",\"StartUTC\":\"2026-11-07T23:12:41.414619438Z\",\"TraceId\":\"f53e2aa64ef5b405a00098b7b13259e6\",\"level\":\"info\",\"msg\":\"\",\"request_Traceparent\":\"00-f53e2aa64ef5b405a00098b7b13259e6-4a441429f9f20dc0-01\",\"request_Uber-Trace-Id\":\"f53e2aa64ef5b405a00098b7b13259e6:4a441429f9f20dc0:0:1\",\"request_User-Agent\":\"grpc-java-netty/1.81.0\",\"time\":\"2026-11-07T23:12:41Z\"}"
+      },
+      {
+        "line_number": 5240,
+        "line": "{\"ClientAddr\":\"127.0.0.1:35280\",\"DownstreamContentSize\":746,\"DownstreamStatus\":200,\"Duration\":4054382,\"Overhead\":104073,\"RequestMethod\":\"POST\",\"RequestPath\":\"/com.jfrog.access.v1.permission.PermissionResource/ListPermissionsStream\",\"ServiceAddr\":\"localhost:8045\",\"SpanId\":\"117517076b7c7bd4\",\"StartUTC\":\"2026-11-07T23:12:41.422864193Z\",\"TraceId\":\"f53e2aa64ef5b405a00098b7b13259e6\",\"level\":\"info\",\"msg\":\"\",\"request_Traceparent\":\"00-f53e2aa64ef5b405a00098b7b13259e6-4a441429f9f20dc0-01\",\"request_Uber-Trace-Id\":\"f53e2aa64ef5b405a00098b7b13259e6:4a441429f9f20dc0:0:1\",\"request_User-Agent\":\"grpc-java-netty/1.81.0\",\"time\":\"2026-11-07T23:12:41Z\"}"
+      },
+      {
+        "line_number": 5241,
+        "line": "{\"ClientAddr\":\"172.18.0.1:43086\",\"DownstreamContentSize\":172,\"DownstreamStatus\":404,\"Duration\":19403910,\"Overhead\":98692,\"RequestMethod\":\"MKCOL\",\"RequestPath\":\"/artifactory/github-remote/zz_A_remote_fresh_deploy_only\",\"ServiceAddr\":\"localhost:8081\",\"SpanId\":\"51caf59bb52a2ec8\",\"StartUTC\":\"2026-11-07T23:12:41.412516295Z\",\"TraceId\":\"f53e2aa64ef5b405a00098b7b13259e6\",\"level\":\"info\",\"msg\":\"\",\"request_User-Agent\":\"art-a-research/remote-fresh-deploy-only\",\"time\":\"2026-11-07T23:12:41Z\"}"
+      }
+    ],
+    "router-service.log": [],
+    "router-traefik.log": [],
+    "tomcat/tomcat-access-catalina-2026-11-07.log": [],
+    "tomcat/tomcat-access-localhost-2026-11-07.log": [],
+    "tomcat/tomcat-catalina-2026-11-07.log": [],
+    "tomcat/tomcat-localhost-2026-11-07.log": [],
+    "topology-derby.log": [],
+    "topology-metrics.log": [],
+    "topology-request-out.log": [],
+    "topology-request.log": [],
+    "topology-service.log": []
+  }
+}

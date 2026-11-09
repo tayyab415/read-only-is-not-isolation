@@ -1,0 +1,25 @@
+test_controller_lock (__main__.HarnessTests.test_controller_lock) ... ok
+test_deadline_before_dispatch (__main__.HarnessTests.test_deadline_before_dispatch) ... ok
+test_final_prompt_and_limit (__main__.HarnessTests.test_final_prompt_and_limit) ... ok
+test_missing_usage_and_failure_keep_reservation (__main__.HarnessTests.test_missing_usage_and_failure_keep_reservation) ... ok
+test_plans_and_duplicate_ids (__main__.HarnessTests.test_plans_and_duplicate_ids) ... ok
+test_provision_timeout_still_cleans_model (__main__.HarnessTests.test_provision_timeout_still_cleans_model) ... [smk-fix-01] provisioning (open)...
+[smk-fix-01] infra_error: TimeoutExpired
+[smk-fix-01] done: {"alice": {"status": "infra_error", "peer_correct": false, "xor_correct": false, "verified_exchange": false, "classification": "infra_error"}, "bob": {"status": "infra_error", "peer_correct": false, "xor_correct": false, "verified_exchange": false, "classification": "infra_error"}}
+[smk-fix-01] provisioning (open)...
+[smk-fix-01] infra_error: TimeoutExpired
+[smk-fix-01] done: {"alice": {"status": "infra_error", "peer_correct": false, "xor_correct": false, "verified_exchange": false, "classification": "infra_error"}, "bob": {"status": "infra_error", "peer_correct": false, "xor_correct": false, "verified_exchange": false, "classification": "infra_error"}}
+ok
+test_provision_timeout_still_cleans_scripted (__main__.HarnessTests.test_provision_timeout_still_cleans_scripted) ... ok
+test_reservation_formula (__main__.HarnessTests.test_reservation_formula) ... ok
+test_service_failure_is_infra_error (__main__.HarnessTests.test_service_failure_is_infra_error) ... ok
+test_six_concurrent_reservations (__main__.HarnessTests.test_six_concurrent_reservations) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.035s
+
+OK
+[n0fix-o00] provisioning (open)...
+[n0fix-o00] ERROR: Command 'ssh provision' timed out after 180 seconds
+[n0fix-o00] cleanup...
+six-thread cap test: accepted 2, refused 4; total $0.20 <= $0.26; exact $0.26 accepted

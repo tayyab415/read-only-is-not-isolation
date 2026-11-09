@@ -1,0 +1,19 @@
+=== docker ps ===
+cx-board2	Up 11 minutes
+art-c	Up 14 minutes
+art-c-db	Up 14 minutes
+art-a	Up 3 hours
+art-a-db	Up 3 hours
+=== docker network ls ===
+art-a-net
+artnet-c
+bridge
+d-net-1
+d-net-2
+d-net-3
+host
+none
+=== free -h ===
+               total        used        free      shared  buff/cache   available
+Mem:            15Gi       8.4Gi       4.0Gi        52Mi       3.2Gi       6.8Gi
+Swap:          8.0Gi       1.2Gi       6.8Gi

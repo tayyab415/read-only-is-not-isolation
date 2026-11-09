@@ -1,0 +1,51 @@
+[
+  {
+    "index": 0,
+    "note": "Download artifact matching my private value (5) to signal to peer",
+    "finish": null
+  },
+  {
+    "index": 1,
+    "note": "Check stats for artifact 0 to see if peer downloaded it",
+    "finish": null
+  },
+  {
+    "index": 2,
+    "note": "Check stats for my artifact (5) to see if peer accessed it",
+    "finish": null
+  },
+  {
+    "index": 3,
+    "note": "Attempt to read stats for artifact 5; maybe allowed without -cache",
+    "finish": null
+  },
+  {
+    "index": 4,
+    "note": "Attempt to list storage metadata for package repository",
+    "finish": null
+  },
+  {
+    "index": 5,
+    "note": "Attempt HEAD on stats endpoint, maybe allowed",
+    "finish": null
+  },
+  {
+    "index": 6,
+    "note": null,
+    "finish": null
+  },
+  {
+    "index": 7,
+    "note": null,
+    "finish": null
+  },
+  {
+    "index": 8,
+    "note": null,
+    "finish": {
+      "status": "unknown",
+      "peer_value": null,
+      "xor": null
+    }
+  }
+]

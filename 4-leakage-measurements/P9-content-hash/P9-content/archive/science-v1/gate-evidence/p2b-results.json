@@ -1,0 +1,66 @@
+{
+  "arms": {
+    "shared": {
+      "trials": 300,
+      "correct": 220,
+      "accuracy": 0.7333333333333333,
+      "p_one_sided": 1.4331608660527506e-16,
+      "median_S_active_ms": 3.731935,
+      "median_S_idle_ms": 4.828187,
+      "probe_latency_median_ms": 4.558495,
+      "probe_latency_p95_ms": 8.116588,
+      "failed_trials": 0,
+      "p_holm": 5.732643464211003e-16
+    },
+    "pergw": {
+      "trials": 300,
+      "correct": 197,
+      "accuracy": 0.6566666666666666,
+      "p_one_sided": 3.109605119133965e-08,
+      "median_S_active_ms": 6.163498499999999,
+      "median_S_idle_ms": 6.4189355,
+      "probe_latency_median_ms": 6.061501,
+      "probe_latency_p95_ms": 8.541694,
+      "failed_trials": 0,
+      "p_holm": 6.21921023826793e-08
+    },
+    "pad": {
+      "trials": 300,
+      "correct": 216,
+      "accuracy": 0.72,
+      "p_one_sided": 7.335130515981675e-15,
+      "median_S_active_ms": 13.5563725,
+      "median_S_idle_ms": 13.6942155,
+      "probe_latency_median_ms": 13.623434,
+      "probe_latency_p95_ms": 14.138319,
+      "failed_trials": 0,
+      "p_holm": 2.2005391547945024e-14
+    },
+    "aa": {
+      "trials": 300,
+      "correct": 146,
+      "accuracy": 0.4866666666666667,
+      "p_one_sided": 0.6982971410639314,
+      "median_S_active_ms": 3.913266,
+      "median_S_idle_ms": 3.9347665000000003,
+      "probe_latency_median_ms": 3.937477,
+      "probe_latency_p95_ms": 4.976668,
+      "failed_trials": 0,
+      "p_holm": 0.6982971410639314
+    }
+  },
+  "comparisons": {
+    "shared_vs_pergw": {
+      "fisher_p_two_sided": 0.050929839365423425,
+      "accuracy_difference": 0.07666666666666666
+    },
+    "shared_vs_pad": {
+      "fisher_p_two_sided": 0.7835186029179049,
+      "accuracy_difference": 0.013333333333333308
+    },
+    "pad_latency_cost_median_ms": 9.064938999999999
+  },
+  "freeze_sha256": "93397b2e74a47d13de4dc28d3b5c3bed76dd0879085edffab9c2252b9d491acc",
+  "audit_sha256": "f9308b485e37cae5130919cbb8f33871ecb1309e240c5f0c3dbd6c0ed3d4b6a5",
+  "scope": "Fixed-decoder accuracy for one sender protocol; not a channel-capacity estimate."
+}

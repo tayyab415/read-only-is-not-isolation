@@ -1,0 +1,30 @@
+{
+  "run_id": "p7-g2-squid-150-tenant-keyed-hold",
+  "product": "squid",
+  "delay_ms": 150,
+  "arm": "tenant-keyed",
+  "split": "holdout",
+  "scheduled": 32,
+  "completed": 32,
+  "complete": true,
+  "source_freeze_sha256": "e29bc3a73fb81cce237872d1cc61d771109b4a6ae424d70b8fe0cd1e70e84f5a",
+  "model_freeze_sha256": "7816def9ab488d6057bf5323d47d7c4f155a0f2f706aa8db7befb0a9b2fc247d",
+  "cleanup_absence_proved": true,
+  "request_ledger_sha256_at_seal": "f748cf391d2c8a4248632deeec4ee1367760c4be1cb120fcfb3f5f8ae2052f2c",
+  "sha256": {
+    "cache-stop.json": "7bfcb6b0df60be1c43abfc907c1501c8a996b19d5e3f0c1ab40fa71cd23ad97b",
+    "cleanup.json": "4630450d635291a84dd8dd7fd4d950d333798a8e9404eeaecc775bad54e423bc",
+    "p7-g2-squid-150-tenant-keyed-hold-cache/cache.conf": "001b9c92629bbd218fe22c1e381dc7027d5df9d31ab4fbcef326ab35baf28c24",
+    "p7-g2-squid-150-tenant-keyed-hold-cache/initialize.txt": "4d4d0b20ffd51af806a5d64f3f5d8a2bb1c37d7c40ac646622391b8619dbd283",
+    "p7-g2-squid-150-tenant-keyed-hold-cache/origins.json": "76e26341c95fbc68fa2b7f5b717dea19c1acd87c149f627547a0cd3e739b2de4",
+    "p7-g2-squid-150-tenant-keyed-hold-cache/parse.txt": "abfe856ea3199d595ef0940311f9c98e29171933a4bb9732932a1c07d5822952",
+    "p7-g2-squid-150-tenant-keyed-hold-cache/stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "p7-g2-squid-150-tenant-keyed-hold-cache/stdout.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "provision.json": "a06da16ed19dbcca2c35dea88dbfa88c6ab1324f81b3c875f8ec3c153822d95d",
+    "request-reservations.jsonl": "f748cf391d2c8a4248632deeec4ee1367760c4be1cb120fcfb3f5f8ae2052f2c",
+    "requests.jsonl": "9055d56fef681f680d8be2c68fdadd4b5c45bdbadbbe2fd5b353c1c38bc95200",
+    "schedule.json": "23d26cc3dcb96a42c3b6982acbf2991b12b4f8fe3a293b0d78a63f9d1e11cb06",
+    "server.json": "e8e47562870d11c55313de50bf983293288397df959fd36c3fc98dac163efd57",
+    "trials.jsonl": "27e3bae61297dc3551abd7c97752fb6d0beffce8da31f5b76e0310a8bb5b5645"
+  }
+}

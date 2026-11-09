@@ -1,0 +1,186 @@
+[
+  {
+    "name": "h-sender",
+    "image": "sha256:4840d514c583a4d3d8cad3940e68dee6f0f6f3635c12fcd0a3d74c21a5b93a54",
+    "user": "20001:20001",
+    "settings": {
+      "Privileged": false,
+      "ReadonlyRootfs": true,
+      "CapDrop": [
+        "ALL"
+      ],
+      "SecurityOpt": [
+        "no-new-privileges:true"
+      ],
+      "Memory": 134217728,
+      "MemorySwap": 134217728,
+      "PidsLimit": 32,
+      "Binds": null
+    },
+    "networks": {
+      "h-net-sender": {
+        "IPAMConfig": null,
+        "Links": null,
+        "Aliases": [
+          "h-sender",
+          "sender"
+        ],
+        "DriverOpts": null,
+        "GwPriority": 0,
+        "NetworkID": "24f73cdf5d906a48c62b0c51975c08049d7f9cbc8d357346bac79500958142d2",
+        "EndpointID": "4b4539926be952b7841ac7bcaed6f5ecca0f385c0bff2d9faa0120dc79801eb7",
+        "Gateway": "",
+        "IPAddress": "172.19.0.1",
+        "MacAddress": "92:3d:bd:30:db:cb",
+        "IPPrefixLen": 16,
+        "IPv6Gateway": "",
+        "GlobalIPv6Address": "",
+        "GlobalIPv6PrefixLen": 0,
+        "DNSNames": [
+          "h-sender",
+          "sender",
+          "eaf631ba078a"
+        ]
+      }
+    }
+  },
+  {
+    "name": "h-receiver",
+    "image": "sha256:4840d514c583a4d3d8cad3940e68dee6f0f6f3635c12fcd0a3d74c21a5b93a54",
+    "user": "20001:20001",
+    "settings": {
+      "Privileged": false,
+      "ReadonlyRootfs": true,
+      "CapDrop": [
+        "ALL"
+      ],
+      "SecurityOpt": [
+        "no-new-privileges:true"
+      ],
+      "Memory": 134217728,
+      "MemorySwap": 134217728,
+      "PidsLimit": 32,
+      "Binds": null
+    },
+    "networks": {
+      "h-net-receiver": {
+        "IPAMConfig": null,
+        "Links": null,
+        "Aliases": [
+          "h-receiver",
+          "receiver"
+        ],
+        "DriverOpts": null,
+        "GwPriority": 0,
+        "NetworkID": "6a0bba40cc3054d1763320149de5e5801fdd50b414a0e0fd26a66efe969a1d20",
+        "EndpointID": "291a0d5da7a5c9f3a2ffc1b02bc91faa1568f911d6b2ca2bdf69e7c8faa6696d",
+        "Gateway": "",
+        "IPAddress": "172.20.0.1",
+        "MacAddress": "86:fd:49:fb:27:7d",
+        "IPPrefixLen": 16,
+        "IPv6Gateway": "",
+        "GlobalIPv6Address": "",
+        "GlobalIPv6PrefixLen": 0,
+        "DNSNames": [
+          "h-receiver",
+          "receiver",
+          "4b45d27a1ec1"
+        ]
+      }
+    }
+  },
+  {
+    "name": "h-upstream",
+    "image": "sha256:4840d514c583a4d3d8cad3940e68dee6f0f6f3635c12fcd0a3d74c21a5b93a54",
+    "user": "20001:20001",
+    "settings": {
+      "Privileged": false,
+      "ReadonlyRootfs": true,
+      "CapDrop": [
+        "ALL"
+      ],
+      "SecurityOpt": [
+        "no-new-privileges:true"
+      ],
+      "Memory": 134217728,
+      "MemorySwap": 134217728,
+      "PidsLimit": 32,
+      "Binds": [
+        "/home/<user>/workspaces/artifactory-lab/h/scripts/fake_upstream.py:/fixture.py:ro"
+      ]
+    },
+    "networks": {
+      "h-net-services": {
+        "IPAMConfig": null,
+        "Links": null,
+        "Aliases": [
+          "h-upstream",
+          "upstream"
+        ],
+        "DriverOpts": null,
+        "GwPriority": 0,
+        "NetworkID": "8b1336f5673d00755522394329753ccdd15d5dc4a9a624cc4bc48c6a4e929131",
+        "EndpointID": "d950767d146d7dc973cb8b0c6cbff8645145838423d7d9555b7277ee2c192754",
+        "Gateway": "",
+        "IPAddress": "172.21.0.2",
+        "MacAddress": "92:95:9b:62:21:70",
+        "IPPrefixLen": 16,
+        "IPv6Gateway": "",
+        "GlobalIPv6Address": "",
+        "GlobalIPv6PrefixLen": 0,
+        "DNSNames": [
+          "h-upstream",
+          "upstream",
+          "0b034329c206"
+        ]
+      }
+    }
+  },
+  {
+    "name": "h-target",
+    "image": "sha256:4840d514c583a4d3d8cad3940e68dee6f0f6f3635c12fcd0a3d74c21a5b93a54",
+    "user": "20001:20001",
+    "settings": {
+      "Privileged": false,
+      "ReadonlyRootfs": true,
+      "CapDrop": [
+        "ALL"
+      ],
+      "SecurityOpt": [
+        "no-new-privileges:true"
+      ],
+      "Memory": 134217728,
+      "MemorySwap": 134217728,
+      "PidsLimit": 32,
+      "Binds": [
+        "/home/<user>/workspaces/artifactory-lab/h/scripts/fake_upstream.py:/fixture.py:ro"
+      ]
+    },
+    "networks": {
+      "h-net-services": {
+        "IPAMConfig": null,
+        "Links": null,
+        "Aliases": [
+          "h-target",
+          "target"
+        ],
+        "DriverOpts": null,
+        "GwPriority": 0,
+        "NetworkID": "8b1336f5673d00755522394329753ccdd15d5dc4a9a624cc4bc48c6a4e929131",
+        "EndpointID": "f564c54578e1d0aebef7a3e84cd4a7daf7367fee3c7be138fff1034ec0c67051",
+        "Gateway": "",
+        "IPAddress": "172.21.0.1",
+        "MacAddress": "4e:35:d4:34:a4:95",
+        "IPPrefixLen": 16,
+        "IPv6Gateway": "",
+        "GlobalIPv6Address": "",
+        "GlobalIPv6PrefixLen": 0,
+        "DNSNames": [
+          "h-target",
+          "target",
+          "d1b35382d8e9"
+        ]
+      }
+    }
+  }
+]

@@ -1,0 +1,22 @@
+permission-03286dac admin PUT /ui/permissiontargets/a-test 200
+annotate-only-property a-cache PUT /ui/artifactproperties?repoKey=github-remote-cache&path=github%2Fgitignore%2Fraw%2Frefs%2Fheads%2Fmain%2FPython.gitignore 200
+annotate-only-property-read a-cache GET /api/storage/github-remote-cache/github/gitignore/raw/refs/heads/main/Python.gitignore?properties 404
+annotate-only-mkcol a-cache MKCOL /github-remote-cache/zz_A_annotate_only 403
+permission-60a4f9a7 admin PUT /ui/permissiontargets/a-test 200
+chunks-parent a-cache MKCOL /github-remote-cache/zz_A_file_chunks 201
+chunks-write-0 a-cache MKCOL /github-remote-cache/zz_A_file_chunks/0000_QmVuaWduIEEgbGFiIHRlc3Q6 201
+chunks-write-1 a-cache MKCOL /github-remote-cache/zz_A_file_chunks/0001_IGEgc21hbGwgZmlsZSBjYXJy 201
+chunks-write-2 a-cache MKCOL /github-remote-cache/zz_A_file_chunks/0002_aWVkIG9ubHkgaW4gZm9sZGVy 201
+chunks-write-3 a-cache MKCOL /github-remote-cache/zz_A_file_chunks/0003_IG5hbWVzLgo 201
+chunks-read-other a-read GET /api/storage/github-remote-cache/zz_A_file_chunks 200
+encoded-slash-name a-cache MKCOL /github-remote-cache/zz_A_names/note%2Fslash 409
+encoded-slash-metadata admin GET /api/storage/github-remote-cache/zz_A_names/note/slash 404
+dot-name-prepared a-cache MKCOL /github-remote-cache/zz_A_names/%2E 405
+dotdot-name-prepared a-cache MKCOL /github-remote-cache/zz_A_names/%2E%2E 500
+permission-83d4087e admin PUT /ui/permissiontargets/a-test 200
+delete-only-other-user-folder a-cache DELETE /github-remote-cache/zz_A_inbox/zz_note_from_a-cache2 204
+permission-2c38f920 admin PUT /ui/permissiontargets/a-test 200
+final-permission-verified admin GET /ui/permissiontargets/a-test 200
+final-version admin GET /api/system/version 200
+final-health admin GET /api/system/ping 200
+FINAL TESTS DONE

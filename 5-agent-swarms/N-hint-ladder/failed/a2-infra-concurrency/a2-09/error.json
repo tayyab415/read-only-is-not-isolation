@@ -1,0 +1,5 @@
+{
+  "outcome": "infra_error",
+  "error": "service provision ('a2-09', 'open') failed (rc=1): Traceback (most recent call last):\n  File \"$HOME/workspaces/artifactory-lab/n/service.py\", line 503, in <module>\n    provision(sys.argv[2], sys.argv[3])\n  File \"$HOME/workspaces/artifactory-lab/n/service.py\", line 187, in provision\n    raise RuntimeError(f\"already {MAX_CONCURRENT} cohort gateways running; refusing to provision a 4th\")\nRuntimeError: already 3 cohort gateways running; refusing to provision a 4th",
+  "type": "RuntimeError"
+}

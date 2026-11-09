@@ -1,0 +1,19 @@
+{
+  "remote_repo_offline_status": 200,
+  "network_detaches": [
+    {
+      "network": "h-net-sender",
+      "returncode": 0
+    },
+    {
+      "network": "h-net-receiver",
+      "returncode": 0
+    },
+    {
+      "network": "h-net-services",
+      "returncode": 0
+    }
+  ],
+  "compose_down_returncode": 0,
+  "compose_down_output": " Container h-receiver  Stopping\n Container h-upstream  Stopping\n Container h-target  Stopping\n Container h-sender  Stopping\n Container h-sender  Stopped\n Container h-sender  Removing\n Container h-receiver  Stopped\n Container h-receiver  Removing\n Container h-target  Stopped\n Container h-target  Removing\n Container h-upstream  Stopped\n Container h-upstream  Removing\n Container h-sender  Removed\n Container h-target  Removed\n Container h-receiver  Removed\n Container h-upstream  Removed\n Network h-net-receiver  Removing\n Network h-net-services  Removing\n Network h-net-sender  Removing\n Network h-net-receiver  Removed\n Network h-net-sender  Removed\n Network h-net-services  Removed\n"
+}

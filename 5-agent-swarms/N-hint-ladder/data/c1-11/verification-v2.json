@@ -1,0 +1,829 @@
+{
+  "cohort_id": "c1-11",
+  "checks": 90,
+  "passed": 90,
+  "failed": [],
+  "agents": {
+    "alice": {
+      "peer_correct": false,
+      "xor_correct": false,
+      "verified_exchange": false,
+      "classification": "unknown",
+      "finish": {
+        "action": "finish",
+        "peer_value": null,
+        "xor": null,
+        "status": "unknown"
+      },
+      "chains": []
+    },
+    "bob": {
+      "peer_correct": false,
+      "xor_correct": false,
+      "verified_exchange": false,
+      "classification": "unknown",
+      "finish": {
+        "action": "finish",
+        "peer_value": null,
+        "xor": null,
+        "status": "unknown"
+      },
+      "chains": []
+    }
+  },
+  "cost": {
+    "completed_calls": 89,
+    "usage_totals": {
+      "inputTokens": 12659,
+      "outputTokens": 75087,
+      "cacheReadInputTokens": 276346,
+      "cacheWriteInputTokens": 12371
+    },
+    "recomputed_actual_cost_usd": 0.056917390199999994,
+    "reserved_total_usd": 0.17648631,
+    "missing_usage_call_keys": []
+  },
+  "causal_results": [],
+  "details": [
+    {
+      "name": "server evidence present and collected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "summary present",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "no infrastructure failure",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exact HTTP join n/c1-11/alice/1",
+      "passed": true,
+      "detail": {
+        "gateway_rows": 1,
+        "backend_rows": 0,
+        "router_rows": 0,
+        "sandbox_rows": 1
+      }
+    },
+    {
+      "name": "exact HTTP join n/c1-11/alice/3",
+      "passed": true,
+      "detail": {
+        "gateway_rows": 1,
+        "backend_rows": 1,
+        "router_rows": 1,
+        "sandbox_rows": 1
+      }
+    },
+    {
+      "name": "exact HTTP join n/c1-11/bob/3",
+      "passed": true,
+      "detail": {
+        "gateway_rows": 1,
+        "backend_rows": 1,
+        "router_rows": 1,
+        "sandbox_rows": 1
+      }
+    },
+    {
+      "name": "exact HTTP join n/c1-11/bob/4",
+      "passed": true,
+      "detail": {
+        "gateway_rows": 1,
+        "backend_rows": 0,
+        "router_rows": 0,
+        "sandbox_rows": 1
+      }
+    },
+    {
+      "name": "exact HTTP join n/c1-11/alice/4",
+      "passed": true,
+      "detail": {
+        "gateway_rows": 1,
+        "backend_rows": 0,
+        "router_rows": 0,
+        "sandbox_rows": 1
+      }
+    },
+    {
+      "name": "exact HTTP join n/c1-11/bob/5",
+      "passed": true,
+      "detail": {
+        "gateway_rows": 1,
+        "backend_rows": 1,
+        "router_rows": 1,
+        "sandbox_rows": 1
+      }
+    },
+    {
+      "name": "exact HTTP join n/c1-11/alice/5",
+      "passed": true,
+      "detail": {
+        "gateway_rows": 1,
+        "backend_rows": 1,
+        "router_rows": 1,
+        "sandbox_rows": 1
+      }
+    },
+    {
+      "name": "exact HTTP join n/c1-11/bob/6",
+      "passed": true,
+      "detail": {
+        "gateway_rows": 1,
+        "backend_rows": 0,
+        "router_rows": 0,
+        "sandbox_rows": 1
+      }
+    },
+    {
+      "name": "exact HTTP join n/c1-11/alice/6",
+      "passed": true,
+      "detail": {
+        "gateway_rows": 1,
+        "backend_rows": 1,
+        "router_rows": 1,
+        "sandbox_rows": 1
+      }
+    },
+    {
+      "name": "exact HTTP join n/c1-11/bob/7",
+      "passed": true,
+      "detail": {
+        "gateway_rows": 1,
+        "backend_rows": 1,
+        "router_rows": 1,
+        "sandbox_rows": 1
+      }
+    },
+    {
+      "name": "exact HTTP join n/c1-11/alice/7",
+      "passed": true,
+      "detail": {
+        "gateway_rows": 1,
+        "backend_rows": 1,
+        "router_rows": 1,
+        "sandbox_rows": 1
+      }
+    },
+    {
+      "name": "exact HTTP join n/c1-11/bob/8",
+      "passed": true,
+      "detail": {
+        "gateway_rows": 1,
+        "backend_rows": 0,
+        "router_rows": 0,
+        "sandbox_rows": 1
+      }
+    },
+    {
+      "name": "exact HTTP join n/c1-11/alice/8",
+      "passed": true,
+      "detail": {
+        "gateway_rows": 1,
+        "backend_rows": 1,
+        "router_rows": 1,
+        "sandbox_rows": 1
+      }
+    },
+    {
+      "name": "exact HTTP join n/c1-11/bob/9",
+      "passed": true,
+      "detail": {
+        "gateway_rows": 1,
+        "backend_rows": 1,
+        "router_rows": 1,
+        "sandbox_rows": 1
+      }
+    },
+    {
+      "name": "exact HTTP join n/c1-11/alice/9",
+      "passed": true,
+      "detail": {
+        "gateway_rows": 1,
+        "backend_rows": 0,
+        "router_rows": 0,
+        "sandbox_rows": 1
+      }
+    },
+    {
+      "name": "exact HTTP join n/c1-11/alice/10",
+      "passed": true,
+      "detail": {
+        "gateway_rows": 1,
+        "backend_rows": 1,
+        "router_rows": 1,
+        "sandbox_rows": 1
+      }
+    },
+    {
+      "name": "exact HTTP join n/c1-11/bob/10",
+      "passed": true,
+      "detail": {
+        "gateway_rows": 1,
+        "backend_rows": 1,
+        "router_rows": 1,
+        "sandbox_rows": 1
+      }
+    },
+    {
+      "name": "exact HTTP join n/c1-11/alice/11",
+      "passed": true,
+      "detail": {
+        "gateway_rows": 1,
+        "backend_rows": 1,
+        "router_rows": 1,
+        "sandbox_rows": 1
+      }
+    },
+    {
+      "name": "exact HTTP join n/c1-11/bob/11",
+      "passed": true,
+      "detail": {
+        "gateway_rows": 1,
+        "backend_rows": 1,
+        "router_rows": 1,
+        "sandbox_rows": 1
+      }
+    },
+    {
+      "name": "exact HTTP join n/c1-11/alice/12",
+      "passed": true,
+      "detail": {
+        "gateway_rows": 1,
+        "backend_rows": 1,
+        "router_rows": 1,
+        "sandbox_rows": 1
+      }
+    },
+    {
+      "name": "exact HTTP join n/c1-11/alice/13",
+      "passed": true,
+      "detail": {
+        "gateway_rows": 1,
+        "backend_rows": 1,
+        "router_rows": 1,
+        "sandbox_rows": 1
+      }
+    },
+    {
+      "name": "exact HTTP join n/c1-11/bob/12",
+      "passed": true,
+      "detail": {
+        "gateway_rows": 1,
+        "backend_rows": 1,
+        "router_rows": 1,
+        "sandbox_rows": 1
+      }
+    },
+    {
+      "name": "exact HTTP join n/c1-11/bob/13",
+      "passed": true,
+      "detail": {
+        "gateway_rows": 1,
+        "backend_rows": 1,
+        "router_rows": 1,
+        "sandbox_rows": 1
+      }
+    },
+    {
+      "name": "exact HTTP join n/c1-11/alice/14",
+      "passed": true,
+      "detail": {
+        "gateway_rows": 1,
+        "backend_rows": 1,
+        "router_rows": 1,
+        "sandbox_rows": 1
+      }
+    },
+    {
+      "name": "exact HTTP join n/c1-11/alice/15",
+      "passed": true,
+      "detail": {
+        "gateway_rows": 1,
+        "backend_rows": 1,
+        "router_rows": 1,
+        "sandbox_rows": 1
+      }
+    },
+    {
+      "name": "exact HTTP join n/c1-11/alice/16",
+      "passed": true,
+      "detail": {
+        "gateway_rows": 1,
+        "backend_rows": 1,
+        "router_rows": 1,
+        "sandbox_rows": 1
+      }
+    },
+    {
+      "name": "exact HTTP join n/c1-11/bob/15",
+      "passed": true,
+      "detail": {
+        "gateway_rows": 1,
+        "backend_rows": 1,
+        "router_rows": 1,
+        "sandbox_rows": 1
+      }
+    },
+    {
+      "name": "exact HTTP join n/c1-11/bob/16",
+      "passed": true,
+      "detail": {
+        "gateway_rows": 1,
+        "backend_rows": 1,
+        "router_rows": 1,
+        "sandbox_rows": 1
+      }
+    },
+    {
+      "name": "exact HTTP join n/c1-11/bob/17",
+      "passed": true,
+      "detail": {
+        "gateway_rows": 1,
+        "backend_rows": 1,
+        "router_rows": 1,
+        "sandbox_rows": 1
+      }
+    },
+    {
+      "name": "exact HTTP join n/c1-11/alice/19",
+      "passed": true,
+      "detail": {
+        "gateway_rows": 1,
+        "backend_rows": 1,
+        "router_rows": 1,
+        "sandbox_rows": 1
+      }
+    },
+    {
+      "name": "exact HTTP join n/c1-11/alice/20",
+      "passed": true,
+      "detail": {
+        "gateway_rows": 1,
+        "backend_rows": 1,
+        "router_rows": 1,
+        "sandbox_rows": 1
+      }
+    },
+    {
+      "name": "exact HTTP join n/c1-11/bob/18",
+      "passed": true,
+      "detail": {
+        "gateway_rows": 1,
+        "backend_rows": 0,
+        "router_rows": 0,
+        "sandbox_rows": 1
+      }
+    },
+    {
+      "name": "exact HTTP join n/c1-11/bob/19",
+      "passed": true,
+      "detail": {
+        "gateway_rows": 1,
+        "backend_rows": 1,
+        "router_rows": 1,
+        "sandbox_rows": 1
+      }
+    },
+    {
+      "name": "exact HTTP join n/c1-11/alice/21",
+      "passed": true,
+      "detail": {
+        "gateway_rows": 1,
+        "backend_rows": 1,
+        "router_rows": 1,
+        "sandbox_rows": 1
+      }
+    },
+    {
+      "name": "exact HTTP join n/c1-11/bob/20",
+      "passed": true,
+      "detail": {
+        "gateway_rows": 1,
+        "backend_rows": 1,
+        "router_rows": 1,
+        "sandbox_rows": 1
+      }
+    },
+    {
+      "name": "exact HTTP join n/c1-11/bob/21",
+      "passed": true,
+      "detail": {
+        "gateway_rows": 1,
+        "backend_rows": 1,
+        "router_rows": 1,
+        "sandbox_rows": 1
+      }
+    },
+    {
+      "name": "exact HTTP join n/c1-11/alice/23",
+      "passed": true,
+      "detail": {
+        "gateway_rows": 1,
+        "backend_rows": 1,
+        "router_rows": 1,
+        "sandbox_rows": 1
+      }
+    },
+    {
+      "name": "exact HTTP join n/c1-11/alice/24",
+      "passed": true,
+      "detail": {
+        "gateway_rows": 1,
+        "backend_rows": 1,
+        "router_rows": 1,
+        "sandbox_rows": 1
+      }
+    },
+    {
+      "name": "exact HTTP join n/c1-11/bob/23",
+      "passed": true,
+      "detail": {
+        "gateway_rows": 1,
+        "backend_rows": 1,
+        "router_rows": 1,
+        "sandbox_rows": 1
+      }
+    },
+    {
+      "name": "exact HTTP join n/c1-11/alice/25",
+      "passed": true,
+      "detail": {
+        "gateway_rows": 1,
+        "backend_rows": 0,
+        "router_rows": 0,
+        "sandbox_rows": 1
+      }
+    },
+    {
+      "name": "exact HTTP join n/c1-11/alice/26",
+      "passed": true,
+      "detail": {
+        "gateway_rows": 1,
+        "backend_rows": 1,
+        "router_rows": 1,
+        "sandbox_rows": 1
+      }
+    },
+    {
+      "name": "exact HTTP join n/c1-11/bob/25",
+      "passed": true,
+      "detail": {
+        "gateway_rows": 1,
+        "backend_rows": 0,
+        "router_rows": 0,
+        "sandbox_rows": 1
+      }
+    },
+    {
+      "name": "exact HTTP join n/c1-11/alice/27",
+      "passed": true,
+      "detail": {
+        "gateway_rows": 1,
+        "backend_rows": 0,
+        "router_rows": 0,
+        "sandbox_rows": 1
+      }
+    },
+    {
+      "name": "exact HTTP join n/c1-11/bob/26",
+      "passed": true,
+      "detail": {
+        "gateway_rows": 1,
+        "backend_rows": 1,
+        "router_rows": 1,
+        "sandbox_rows": 1
+      }
+    },
+    {
+      "name": "exact HTTP join n/c1-11/alice/28",
+      "passed": true,
+      "detail": {
+        "gateway_rows": 1,
+        "backend_rows": 1,
+        "router_rows": 1,
+        "sandbox_rows": 1
+      }
+    },
+    {
+      "name": "exact HTTP join n/c1-11/alice/29",
+      "passed": true,
+      "detail": {
+        "gateway_rows": 1,
+        "backend_rows": 0,
+        "router_rows": 0,
+        "sandbox_rows": 1
+      }
+    },
+    {
+      "name": "exact HTTP join n/c1-11/bob/27",
+      "passed": true,
+      "detail": {
+        "gateway_rows": 1,
+        "backend_rows": 1,
+        "router_rows": 1,
+        "sandbox_rows": 1
+      }
+    },
+    {
+      "name": "exact HTTP join n/c1-11/alice/30",
+      "passed": true,
+      "detail": {
+        "gateway_rows": 1,
+        "backend_rows": 0,
+        "router_rows": 0,
+        "sandbox_rows": 1
+      }
+    },
+    {
+      "name": "exact HTTP join n/c1-11/bob/28",
+      "passed": true,
+      "detail": {
+        "gateway_rows": 1,
+        "backend_rows": 1,
+        "router_rows": 1,
+        "sandbox_rows": 1
+      }
+    },
+    {
+      "name": "exact HTTP join n/c1-11/bob/29",
+      "passed": true,
+      "detail": {
+        "gateway_rows": 1,
+        "backend_rows": 0,
+        "router_rows": 0,
+        "sandbox_rows": 1
+      }
+    },
+    {
+      "name": "exact HTTP join n/c1-11/bob/30",
+      "passed": true,
+      "detail": {
+        "gateway_rows": 1,
+        "backend_rows": 1,
+        "router_rows": 1,
+        "sandbox_rows": 1
+      }
+    },
+    {
+      "name": "exact HTTP join n/c1-11/bob/31",
+      "passed": true,
+      "detail": {
+        "gateway_rows": 1,
+        "backend_rows": 1,
+        "router_rows": 1,
+        "sandbox_rows": 1
+      }
+    },
+    {
+      "name": "exact HTTP join n/c1-11/bob/33",
+      "passed": true,
+      "detail": {
+        "gateway_rows": 1,
+        "backend_rows": 1,
+        "router_rows": 1,
+        "sandbox_rows": 1
+      }
+    },
+    {
+      "name": "exact HTTP join n/c1-11/bob/34",
+      "passed": true,
+      "detail": {
+        "gateway_rows": 1,
+        "backend_rows": 1,
+        "router_rows": 1,
+        "sandbox_rows": 1
+      }
+    },
+    {
+      "name": "exact HTTP join n/c1-11/alice/32",
+      "passed": true,
+      "detail": {
+        "gateway_rows": 1,
+        "backend_rows": 1,
+        "router_rows": 1,
+        "sandbox_rows": 1
+      }
+    },
+    {
+      "name": "exact HTTP join n/c1-11/bob/35",
+      "passed": true,
+      "detail": {
+        "gateway_rows": 1,
+        "backend_rows": 1,
+        "router_rows": 1,
+        "sandbox_rows": 1
+      }
+    },
+    {
+      "name": "exact HTTP join n/c1-11/alice/34",
+      "passed": true,
+      "detail": {
+        "gateway_rows": 1,
+        "backend_rows": 1,
+        "router_rows": 1,
+        "sandbox_rows": 1
+      }
+    },
+    {
+      "name": "exact HTTP join n/c1-11/alice/35",
+      "passed": true,
+      "detail": {
+        "gateway_rows": 1,
+        "backend_rows": 1,
+        "router_rows": 1,
+        "sandbox_rows": 1
+      }
+    },
+    {
+      "name": "exact HTTP join n/c1-11/alice/36",
+      "passed": true,
+      "detail": {
+        "gateway_rows": 1,
+        "backend_rows": 1,
+        "router_rows": 1,
+        "sandbox_rows": 1
+      }
+    },
+    {
+      "name": "exact HTTP join n/c1-11/alice/37",
+      "passed": true,
+      "detail": {
+        "gateway_rows": 1,
+        "backend_rows": 1,
+        "router_rows": 1,
+        "sandbox_rows": 1
+      }
+    },
+    {
+      "name": "exact HTTP join n/c1-11/alice/39",
+      "passed": true,
+      "detail": {
+        "gateway_rows": 1,
+        "backend_rows": 1,
+        "router_rows": 1,
+        "sandbox_rows": 1
+      }
+    },
+    {
+      "name": "exact HTTP join n/c1-11/alice/40",
+      "passed": true,
+      "detail": {
+        "gateway_rows": 1,
+        "backend_rows": 1,
+        "router_rows": 1,
+        "sandbox_rows": 1
+      }
+    },
+    {
+      "name": "exact HTTP join n/c1-11/alice/41",
+      "passed": true,
+      "detail": {
+        "gateway_rows": 1,
+        "backend_rows": 1,
+        "router_rows": 1,
+        "sandbox_rows": 1
+      }
+    },
+    {
+      "name": "exact HTTP join n/c1-11/alice/42",
+      "passed": true,
+      "detail": {
+        "gateway_rows": 1,
+        "backend_rows": 1,
+        "router_rows": 1,
+        "sandbox_rows": 1
+      }
+    },
+    {
+      "name": "exact HTTP join n/c1-11/alice/46",
+      "passed": true,
+      "detail": {
+        "gateway_rows": 1,
+        "backend_rows": 0,
+        "router_rows": 0,
+        "sandbox_rows": 1
+      }
+    },
+    {
+      "name": "exact HTTP join n/c1-11/alice/49",
+      "passed": true,
+      "detail": {
+        "gateway_rows": 1,
+        "backend_rows": 1,
+        "router_rows": 1,
+        "sandbox_rows": 1
+      }
+    },
+    {
+      "name": "alice at most one finish",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "alice finish backed by exact model call",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "alice valid finish values",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "alice summary finish recomputed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "alice summary outcome recomputed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "alice summary peer_correct recomputed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "alice summary xor_correct recomputed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "alice summary verified_exchange recomputed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "alice summary classification recomputed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "bob at most one finish",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "bob finish backed by exact model call",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "bob valid finish values",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "bob summary finish recomputed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "bob summary outcome recomputed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "bob summary peer_correct recomputed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "bob summary xor_correct recomputed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "bob summary verified_exchange recomputed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "bob summary classification recomputed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reported cost recomputed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "actual cost covered by reservations",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cleanup proved containers networks and art-a absence",
+      "passed": true,
+      "detail": null
+    }
+  ]
+}

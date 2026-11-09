@@ -1,0 +1,18 @@
+{
+ "machine": "x86_64",
+ "threads": 4,
+ "n": 200,
+ "mean_raw_chars": 1092.945,
+ "tfidf_detok_single": {
+  "p50_ms": 1.2225659993418958,
+  "p95_ms": 4.433284997867304,
+  "mean_ms": 1.6902177848896827
+ },
+ "encoder_params": 278810882,
+ "encoder_single": {
+  "p50_ms": 304.59496999901603,
+  "p95_ms": 1134.4320481526665,
+  "mean_ms": 474.8994213050901
+ },
+ "encoder_batch32_calls_per_s": 0.850614359845888
+}

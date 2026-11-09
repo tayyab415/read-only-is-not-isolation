@@ -1,0 +1,47 @@
+{
+  "passed": true,
+  "runs": [
+    {
+      "configuration": "separate",
+      "split": "calibration",
+      "trials": 8,
+      "checks": 6736,
+      "passed": true,
+      "failures": [],
+      "failure_count": 0,
+      "client_requests": 680
+    },
+    {
+      "configuration": "sham",
+      "split": "calibration",
+      "trials": 8,
+      "checks": 5220,
+      "passed": true,
+      "failures": [],
+      "failure_count": 0,
+      "client_requests": 698
+    },
+    {
+      "configuration": "aa",
+      "split": "calibration",
+      "trials": 8,
+      "checks": 1744,
+      "passed": true,
+      "failures": [],
+      "failure_count": 0,
+      "client_requests": 168
+    },
+    {
+      "configuration": "immutable",
+      "split": "calibration",
+      "trials": 8,
+      "checks": 4272,
+      "passed": true,
+      "failures": [],
+      "failure_count": 0,
+      "client_requests": 680
+    }
+  ],
+  "smoke": true,
+  "source_sha256": "c6455655fa0fa58d42f2c55aa3d7fba28a14478967c79685aa503fc787fc42e1"
+}

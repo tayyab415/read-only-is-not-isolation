@@ -1,0 +1,64 @@
+{
+  "type": "remoteRepoConfig",
+  "general": {
+    "repoKey": "j-20261108T000705-partitioned-tx",
+    "projectKey": "default",
+    "environments": []
+  },
+  "basic": {
+    "includesPattern": "**/*",
+    "layout": "simple-default",
+    "url": "http://j-upstream:8000",
+    "offline": false,
+    "contentSynchronisation": {
+      "enabled": false,
+      "statistics": {
+        "enabled": false
+      },
+      "properties": {
+        "enabled": false
+      },
+      "source": {
+        "originAbsenceDetection": false
+      }
+    },
+    "sendContext": false,
+    "passThrough": false,
+    "curated": false
+  },
+  "advanced": {
+    "propertySets": [],
+    "blackedOut": false,
+    "allowContentBrowsing": false,
+    "priorityResolution": false,
+    "signedUrlTtl": 90,
+    "network": {
+      "disableProxy": false,
+      "socketTimeout": 15000,
+      "syncProperties": false,
+      "lenientHostAuth": false,
+      "cookieManagement": false
+    },
+    "cache": {
+      "keepUnusedArtifactsHours": 0,
+      "retrievalCachePeriodSecs": 7200,
+      "assumedOfflineLimitSecs": 300,
+      "missedRetrievalCachePeriodSecs": 1800,
+      "metadataRetrievalTimeoutSecs": 60
+    },
+    "propagateQueryParams": false,
+    "retrieveSha256FromServer": false,
+    "storeArtifactsLocally": true,
+    "synchronizeArtifactProperties": false,
+    "shareConfiguration": false,
+    "blockMismatchingMimeTypes": true,
+    "bypassHeadRequests": false,
+    "disableUrlNormalization": false
+  },
+  "typeSpecific": {
+    "repoType": "Generic",
+    "enableTokenAuthentication": false,
+    "listRemoteFolderItems": false,
+    "url": ""
+  }
+}

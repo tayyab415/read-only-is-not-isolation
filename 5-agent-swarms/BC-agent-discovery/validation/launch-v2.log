@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "$LAB_ROOT/BC/node/launch_fleet.py", line 143, in <module>
+    names = a.provision_only if a.provision_only is not None else launch(a.count, a.first, a.ttl_min, a.image)
+                                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "$LAB_ROOT/BC/node/launch_fleet.py", line 82, in launch
+    r = ec.run_instances(
+        ^^^^^^^^^^^^^^^^^
+  File "$PYTHON_LIB/site-packages/botocore/client.py", line 606, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "$PYTHON_LIB/site-packages/botocore/context.py", line 123, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "$PYTHON_LIB/site-packages/botocore/client.py", line 1094, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (InsufficientInstanceCapacity) when calling the RunInstances operation (reached max retries: 4): Insufficient capacity.

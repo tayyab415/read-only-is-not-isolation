@@ -1,0 +1,94 @@
+{
+  "request_id": "miss-1",
+  "server_trace_ids": [
+    "ce8afabf83a68175ccd2a8916b7aa117"
+  ],
+  "logs": {
+    "access-audit.log": [],
+    "access-metrics.log": [],
+    "access-metrics_events.log": [],
+    "access-request-out.log": [],
+    "access-request.log": [],
+    "access-security-audit.log": [],
+    "access-service.log": [],
+    "access-thread-dump.log": [],
+    "artifactory-access.log": [],
+    "artifactory-binarystore.log": [],
+    "artifactory-cleanup-audit.log": [],
+    "artifactory-conan-v2-migration.log": [],
+    "artifactory-event.log": [],
+    "artifactory-federation-metrics.log": [],
+    "artifactory-federation-metrics_events.log": [],
+    "artifactory-import-export.log": [],
+    "artifactory-metrics.log": [],
+    "artifactory-metrics_events.log": [],
+    "artifactory-path-checksum-migration.log": [],
+    "artifactory-request-out.log": [
+      {
+        "line_number": 21,
+        "line": "2026-11-07T23:02:36.002Z|ce8afabf83a68175ccd2a8916b7aa117|github-remote||HEAD|https://github.com/zz_A_missing_1/invented_discussion_name_1|404|0|0|305"
+      }
+    ],
+    "artifactory-request-trace.log": [],
+    "artifactory-request.log": [
+      {
+        "line_number": 467,
+        "line": "2026-11-07T23:02:36.004Z|ce8afabf83a68175ccd2a8916b7aa117|172.18.0.1|a-cache|GET|/github-remote/zz_A_missing_1/invented_discussion_name_1|404|-1|0|309|art-a-research/miss-1"
+      }
+    ],
+    "artifactory-service-federation.log": [],
+    "artifactory-service.log": [],
+    "artifactory-sha256-migration.log": [],
+    "artifactory-shadow.log": [],
+    "artifactory-storage-request-out.log": [],
+    "artifactory-traffic-v2.log": [],
+    "artifactory-traffic-v3.log": [],
+    "artifactory-traffic.1794091779163.log": [],
+    "artifactory-xray-traffic.1794091779189.log": [],
+    "derby.log": [],
+    "dummy.log": [],
+    "event-metrics.log": [],
+    "event-request.log": [],
+    "event-service.log": [],
+    "event-webhook-request-out.log": [],
+    "frontend-metrics-events.log": [],
+    "frontend-metrics.log": [],
+    "frontend-request.log": [],
+    "frontend-service.log": [],
+    "jfbus-ack-events.log": [],
+    "jfbus-consume-events.log": [],
+    "jfbus-publish-events.log": [],
+    "jfbus-receive-polling.log": [],
+    "jfbus-request.log": [],
+    "jfbus-service.log": [],
+    "jfconfig-metrics.log": [],
+    "jfconfig-request-out.log": [],
+    "jfconfig-request.log": [],
+    "jfconfig-service.log": [],
+    "metadata-metrics.log": [],
+    "metadata-request.log": [],
+    "metadata-service.log": [],
+    "metadata-traffic.log": [],
+    "observability-metrics.log": [],
+    "observability-request-out.log": [],
+    "observability-request.log": [],
+    "observability-service.log": [],
+    "router-request.log": [
+      {
+        "line_number": 1553,
+        "line": "{\"ClientAddr\":\"172.18.0.1:52660\",\"DownstreamContentSize\":139,\"DownstreamStatus\":404,\"Duration\":310264020,\"Overhead\":117753,\"RequestMethod\":\"GET\",\"RequestPath\":\"/artifactory/github-remote/zz_A_missing_1/invented_discussion_name_1\",\"ServiceAddr\":\"localhost:8081\",\"SpanId\":\"3815e304f7eb2a06\",\"StartUTC\":\"2026-11-07T23:02:35.694886541Z\",\"TraceId\":\"ce8afabf83a68175ccd2a8916b7aa117\",\"level\":\"info\",\"msg\":\"\",\"request_User-Agent\":\"art-a-research/miss-1\",\"time\":\"2026-11-07T23:02:36Z\"}"
+      }
+    ],
+    "router-service.log": [],
+    "router-traefik.log": [],
+    "tomcat/tomcat-access-catalina-2026-11-07.log": [],
+    "tomcat/tomcat-access-localhost-2026-11-07.log": [],
+    "tomcat/tomcat-catalina-2026-11-07.log": [],
+    "tomcat/tomcat-localhost-2026-11-07.log": [],
+    "topology-derby.log": [],
+    "topology-metrics.log": [],
+    "topology-request-out.log": [],
+    "topology-request.log": [],
+    "topology-service.log": []
+  }
+}

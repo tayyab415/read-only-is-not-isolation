@@ -1,0 +1,313 @@
+{
+  "timing": {
+    "150": {
+      "both": [
+        16,
+        32,
+        48
+      ],
+      "metadata-blocked": [
+        32,
+        32,
+        32
+      ],
+      "method-only": [
+        32,
+        32,
+        32
+      ],
+      "negative-off": [
+        16,
+        32,
+        48
+      ],
+      "no-store": [
+        32,
+        32,
+        32
+      ],
+      "offline": [
+        16,
+        32,
+        0
+      ],
+      "partitioned": [
+        16,
+        32,
+        48
+      ]
+    },
+    "20": {
+      "both": [
+        16,
+        32,
+        48
+      ],
+      "metadata-blocked": [
+        32,
+        32,
+        32
+      ],
+      "method-only": [
+        32,
+        32,
+        32
+      ],
+      "negative-off": [
+        16,
+        32,
+        48
+      ],
+      "no-store": [
+        32,
+        32,
+        32
+      ],
+      "offline": [
+        16,
+        32,
+        0
+      ],
+      "partitioned": [
+        16,
+        32,
+        48
+      ]
+    }
+  },
+  "statistics": {
+    "both": [
+      0,
+      0,
+      24
+    ],
+    "metadata-blocked": [
+      0,
+      0,
+      24
+    ],
+    "method-only": [
+      24,
+      24,
+      0
+    ],
+    "negative-off": [
+      24,
+      24,
+      0
+    ],
+    "no-store": [
+      0,
+      0,
+      24
+    ],
+    "offline": [
+      24,
+      24,
+      0
+    ],
+    "partitioned": [
+      12,
+      24,
+      0
+    ]
+  },
+  "followup": {
+    "no-sender-20-method-only": [
+      16,
+      16
+    ],
+    "no-sender-150-method-only": [
+      16,
+      16
+    ],
+    "repeat-150-method-only": [
+      32,
+      32
+    ],
+    "head-150-both": [
+      8,
+      16
+    ],
+    "head-150-method-only": [
+      16,
+      16
+    ]
+  },
+  "method_alert": {
+    "scope": "Labelled timing sender requests only, not general coordination detection",
+    "sender_requests": 256,
+    "mutation_method_alerts": 0,
+    "method_counts": {
+      "GET": 240,
+      "HEAD": 16
+    },
+    "status_counts": {
+      "404": 256
+    }
+  },
+  "challenges": {
+    "denied-prime-150-partitioned": [
+      8,
+      16
+    ],
+    "load-20-both": [
+      16,
+      32
+    ],
+    "load-20-method-only": [
+      25,
+      32
+    ]
+  },
+  "counter_methods": {
+    "HEAD": {
+      "trials": 16,
+      "observed": 16,
+      "unavailable": 0,
+      "correct": 8,
+      "accuracy": 0.5,
+      "wilson_95_accuracy": [
+        0.27999563610326017,
+        0.7200043638967398
+      ],
+      "expected_ones": 8,
+      "expected_0_decoded_0": 8,
+      "expected_0_decoded_1": 0,
+      "expected_1_decoded_0": 8,
+      "expected_1_decoded_1": 0,
+      "decoded_ones": 0,
+      "sender_status_counts": {
+        "200": 8
+      },
+      "sender_body_byte_counts": {
+        "0": 8
+      }
+    },
+    "conditional-GET": {
+      "trials": 16,
+      "observed": 16,
+      "unavailable": 0,
+      "correct": 8,
+      "accuracy": 0.5,
+      "wilson_95_accuracy": [
+        0.27999563610326017,
+        0.7200043638967398
+      ],
+      "expected_ones": 8,
+      "expected_0_decoded_0": 8,
+      "expected_0_decoded_1": 0,
+      "expected_1_decoded_0": 8,
+      "expected_1_decoded_1": 0,
+      "decoded_ones": 0,
+      "sender_status_counts": {
+        "304": 8
+      },
+      "sender_body_byte_counts": {
+        "0": 8
+      }
+    },
+    "range-GET": {
+      "trials": 16,
+      "observed": 16,
+      "unavailable": 0,
+      "correct": 16,
+      "accuracy": 1.0,
+      "wilson_95_accuracy": [
+        0.8063923194655637,
+        1.0
+      ],
+      "expected_ones": 8,
+      "expected_0_decoded_0": 8,
+      "expected_0_decoded_1": 0,
+      "expected_1_decoded_0": 0,
+      "expected_1_decoded_1": 8,
+      "decoded_ones": 8,
+      "sender_status_counts": {
+        "206": 8
+      },
+      "sender_body_byte_counts": {
+        "1": 8
+      }
+    }
+  },
+  "load": {
+    "noise_requests": 320,
+    "noise_status_counts": {
+      "200": 320
+    },
+    "receivers_with_noise_request_interval_overlap": 22,
+    "loaded_receiver_trials": 64,
+    "note": "Interval overlap is workload context, not attribution of one request to another."
+  },
+  "identity": {
+    "account-only": {
+      "trials": 16,
+      "borrowed_status_counts": {
+        "200": 16
+      },
+      "own_status_counts": {
+        "200": 16
+      },
+      "own_body_hashes": [
+        "c9018cc100c3627142237160efe8122117443ffd68f2802b6794cd84c5343449"
+      ]
+    },
+    "origin-bound": {
+      "trials": 16,
+      "borrowed_status_counts": {
+        "403": 16
+      },
+      "own_status_counts": {
+        "200": 16
+      },
+      "own_body_hashes": [
+        "c9018cc100c3627142237160efe8122117443ffd68f2802b6794cd84c5343449"
+      ]
+    }
+  },
+  "package_utility": {
+    "trials": 14,
+    "download_successes": 14,
+    "install_successes": 14,
+    "download_hashes": [
+      "8abb2f1d86890a2dfb989f9a77cfcfd3e47c2a354b01111771326f8aa26e0254"
+    ]
+  },
+  "query_audit": {
+    "client_paths": [
+      "/api/storage/j-20261108T000705-method-only-cache/present/common.bin",
+      "/api/storage/j-20261108T000705-method-only-cache/present/common.bin?stats"
+    ],
+    "service_logged_paths": [
+      "/api/storage/j-20261108T000705-method-only-cache/present/common.bin",
+      "/api/storage/j-20261108T000705-method-only-cache/present/common.bin"
+    ],
+    "response_body_keys": [
+      [
+        "checksums",
+        "created",
+        "createdBy",
+        "downloadUri",
+        "lastModified",
+        "lastUpdated",
+        "mimeType",
+        "modifiedBy",
+        "originalChecksums",
+        "path",
+        "remoteUrl",
+        "repo",
+        "size",
+        "uri"
+      ],
+      [
+        "downloadCount",
+        "lastDownloaded",
+        "lastDownloadedBy",
+        "remoteDownloadCount",
+        "remoteLastDownloaded",
+        "uri"
+      ]
+    ]
+  }
+}

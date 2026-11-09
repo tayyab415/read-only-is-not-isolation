@@ -1,0 +1,57 @@
+{
+  "systematic_rule_row_pairs_reviewed": 56,
+  "systematic_unique_rows_reviewed": 55,
+  "sample_method": "Eight evenly spaced indices in row-ID order per nonempty rule; no randomness.",
+  "sample_scope": "Code/text interpretations only. No execution labels or corpus precision/recall estimates.",
+  "systematic_labels_by_rule": {
+    "poll_word": {
+      "local_socket_poll": 4,
+      "local_process_poll": 1,
+      "pod_status_poll": 1,
+      "xhr_transport_setting": 1,
+      "shared_command_poll": 1
+    },
+    "sleep_call": {
+      "file_readiness_wait": 1,
+      "shared_command_poll": 4,
+      "pod_status_poll": 1,
+      "retry_and_file_readiness": 1,
+      "startup_socket_wait": 1
+    },
+    "wait_word": {
+      "display_text": 7,
+      "display_text_with_timer": 1
+    },
+    "board_word": {
+      "shared_file_read_fragment": 1,
+      "truncated_board_function": 2,
+      "directory_message_write": 1,
+      "command_poll_with_summary_word": 1,
+      "ack_request": 1,
+      "shared_file_read": 1,
+      "summary_word_with_encoded_content": 1
+    },
+    "reply_word": {
+      "local_io_reply": 4,
+      "nfs_protocol_reply": 2,
+      "chatbot_test_prompt": 2
+    },
+    "artifactory_and_propfind": {
+      "directory_read": 3,
+      "directory_read_fragment": 4,
+      "command_channel_read_write_fragment": 1
+    },
+    "artifactory_and_mkcol": {
+      "directory_write": 4,
+      "redacted_mkcol_destination": 1,
+      "directory_write_fragment": 3
+    }
+  },
+  "all_reply_candidates_reviewed": 21,
+  "reply_labels": {
+    "local_io_reply": 13,
+    "nfs_protocol_reply": 4,
+    "chatbot_test_prompt": 4
+  },
+  "verified_peer_agent_reply_rows_in_reply_candidates": 0
+}

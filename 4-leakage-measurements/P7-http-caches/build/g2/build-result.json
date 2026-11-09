@@ -1,0 +1,55 @@
+{
+  "started_utc": "2026-11-08T23:53:49.861061+00:00",
+  "command": [
+    "docker",
+    "build",
+    "--force-rm",
+    "--memory",
+    "2g",
+    "--memory-swap",
+    "2g",
+    "--cpu-period",
+    "100000",
+    "--cpu-quota",
+    "50000",
+    "--label",
+    "org.research.source-freeze.sha256=e29bc3a73fb81cce237872d1cc61d771109b4a6ae424d70b8fe0cd1e70e84f5a",
+    "--tag",
+    "p7-cache-fixtures:nginx-1.30.6-squid-7.8",
+    "."
+  ],
+  "source_freeze_sha256": "e29bc3a73fb81cce237872d1cc61d771109b4a6ae424d70b8fe0cd1e70e84f5a",
+  "dockerfile_sha256": "eec36e045b8da84c42fe55f13abc69abc2c61717d22d20ce232068e2bb4682e8",
+  "maximum_wall_seconds": 3600,
+  "memory_limit_bytes": 2147483648,
+  "cpu_limit": 0.5,
+  "complete": true,
+  "exit_code": 0,
+  "readback": {
+    "image_id": "sha256:086611ec46938eb0fb11ddaed22bd294b3498b47d24d28250a6073b0c0e5abf1",
+    "repo_digests": [
+      "p7-cache-fixtures@sha256:086611ec46938eb0fb11ddaed22bd294b3498b47d24d28250a6073b0c0e5abf1"
+    ],
+    "binaries": {
+      "nginx": {
+        "version": "nginx version: nginx/1.30.6\nbuilt by gcc 14.2.0 (Debian 14.2.0-19) \nconfigure arguments: --prefix=/opt/p7/nginx --without-http_rewrite_module --without-http_gzip_module\n",
+        "exit_code": 0,
+        "binary_sha256": "76b92ee9f84414e672bc80bf71f60e8cd11cb3068eb8f5990cfaf0db678ff2e0"
+      },
+      "squid": {
+        "version": "Squid Cache: Version 7.8\nService Name: squid\nconfigure options:  '--prefix=/opt/p7/squid' '--enable-http-violations' '--with-default-user=research' '--disable-auth' '--disable-external-acl-helpers' '--disable-url-rewrite-helpers' '--disable-storeid-rewrite-helpers' '--without-openssl' '--without-gnutls' '--without-nettle'\n",
+        "exit_code": 0,
+        "binary_sha256": "a00da6f0a59015a61adbe9f0e43a5e1aaf461e6af84d030f93a0a1969aa4b92d"
+      }
+    },
+    "image_logical_size_bytes": 76122635,
+    "source_freeze_sha256": "e29bc3a73fb81cce237872d1cc61d771109b4a6ae424d70b8fe0cd1e70e84f5a"
+  },
+  "builder_cleanup": {
+    "owned_build_label": "org.research.p7.build=nginx-1.30.6-squid-7.8-v1",
+    "removed_containers": [],
+    "containers_readback": [],
+    "absence_proved": true
+  },
+  "ended_utc": "2026-11-08T23:53:51.252184+00:00"
+}

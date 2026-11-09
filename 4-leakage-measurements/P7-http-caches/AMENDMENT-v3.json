@@ -1,0 +1,28 @@
+{
+  "edition": 3,
+  "utc": "2026-11-08T23:53:24.898216+00:00",
+  "prior_source_freeze_sha256": "bbca9c7944b4d713d4ac94fbe6c35597ef6ee8721f738b8fe57a0076384a0a31",
+  "prior_source_archive": "archive/v2",
+  "original_failed_cohort": "data/g1-cal/nginx-20-shared",
+  "original_failed_seal_sha256": "894f087afbafc4b03b61ef0d9d181049f358c3327f1ecaba8c27a2982ac24fb3",
+  "original_primary_requests": 0,
+  "original_request_ledger_existed": false,
+  "reason": "NGINX startup on read-only root tried to create default FastCGI temporary directories below the installation. Corrected -p /tmp/ and initial -e /tmp/nginx-error.log parse all four configurations under unchanged confinement.",
+  "native_preflight_sha256": "a36231be1f9e794ce5e54ee6f2c3f69465452d6f54f533204316cfe13765b2f8",
+  "native_preflight_configs_passed": 4,
+  "changes": [
+    "NGINX runtime prefix and initial error log inside private tmpfs.",
+    "Fresh g2 run IDs, data/model/build records and URL prefix; g1 failure retained.",
+    "Rebuild the identical Dockerfile and source archives with the new source label."
+  ],
+  "unchanged": [
+    "Native binary versions and source archives",
+    "Dockerfile",
+    "Sandbox limits and cache policies",
+    "Shuffled labels and sample counts",
+    "Decoder rules and statistical family",
+    "Shared request-ledger path and caps"
+  ],
+  "local_checks_passed": 24,
+  "new_subject_calls": 0
+}

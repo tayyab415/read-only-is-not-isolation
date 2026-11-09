@@ -1,0 +1,94 @@
+{
+  "request_id": "name-isolated-question",
+  "server_trace_ids": [
+    "9475fbe4aad399fc500645c6e5db6707"
+  ],
+  "logs": {
+    "access-audit.log": [],
+    "access-metrics.log": [],
+    "access-metrics_events.log": [],
+    "access-request-out.log": [],
+    "access-request.log": [],
+    "access-security-audit.log": [],
+    "access-service.log": [],
+    "access-thread-dump.log": [],
+    "artifactory-access.log": [],
+    "artifactory-binarystore.log": [],
+    "artifactory-cleanup-audit.log": [],
+    "artifactory-conan-v2-migration.log": [],
+    "artifactory-event.log": [],
+    "artifactory-federation-metrics.log": [],
+    "artifactory-federation-metrics_events.log": [],
+    "artifactory-import-export.log": [],
+    "artifactory-metrics.log": [],
+    "artifactory-metrics_events.log": [],
+    "artifactory-path-checksum-migration.log": [],
+    "artifactory-request-out.log": [],
+    "artifactory-request-trace.log": [],
+    "artifactory-request.log": [
+      {
+        "line_number": 3595,
+        "line": "2026-11-07T23:04:45.522Z|9475fbe4aad399fc500645c6e5db6707|172.18.0.1|non_authenticated_user|MKCOL|/github-remote-cache/zz_A_names/note%3Fquestion|500|-1|0|2|art-a-research/name-isolated-question"
+      }
+    ],
+    "artifactory-service-federation.log": [],
+    "artifactory-service.log": [
+      {
+        "line_number": 3115,
+        "line": "2026-11-07T23:04:45.522Z [jfrt ] [ERROR] [9475fbe4aad399fc500645c6e5db6707] [o.a.w.s.ArtifactoryFilter:211 ] [http-nio-8081-exec-7] - Caught exception in MKCOL, /artifactory/github-remote-cache/zz_A_names/note%3Fquestion"
+      }
+    ],
+    "artifactory-sha256-migration.log": [],
+    "artifactory-shadow.log": [],
+    "artifactory-storage-request-out.log": [],
+    "artifactory-traffic-v2.log": [],
+    "artifactory-traffic-v3.log": [],
+    "artifactory-traffic.1794091779163.log": [],
+    "artifactory-xray-traffic.1794091779189.log": [],
+    "derby.log": [],
+    "dummy.log": [],
+    "event-metrics.log": [],
+    "event-request.log": [],
+    "event-service.log": [],
+    "event-webhook-request-out.log": [],
+    "frontend-metrics-events.log": [],
+    "frontend-metrics.log": [],
+    "frontend-request.log": [],
+    "frontend-service.log": [],
+    "jfbus-ack-events.log": [],
+    "jfbus-consume-events.log": [],
+    "jfbus-publish-events.log": [],
+    "jfbus-receive-polling.log": [],
+    "jfbus-request.log": [],
+    "jfbus-service.log": [],
+    "jfconfig-metrics.log": [],
+    "jfconfig-request-out.log": [],
+    "jfconfig-request.log": [],
+    "jfconfig-service.log": [],
+    "metadata-metrics.log": [],
+    "metadata-request.log": [],
+    "metadata-service.log": [],
+    "metadata-traffic.log": [],
+    "observability-metrics.log": [],
+    "observability-request-out.log": [],
+    "observability-request.log": [],
+    "observability-service.log": [],
+    "router-request.log": [
+      {
+        "line_number": 4861,
+        "line": "{\"ClientAddr\":\"172.18.0.1:44830\",\"DownstreamContentSize\":159,\"DownstreamStatus\":500,\"Duration\":4709495,\"Overhead\":81013,\"RequestMethod\":\"MKCOL\",\"RequestPath\":\"/artifactory/github-remote-cache/zz_A_names/note%3Fquestion\",\"ServiceAddr\":\"localhost:8081\",\"SpanId\":\"d7f85d044550779f\",\"StartUTC\":\"2026-11-07T23:04:45.520263621Z\",\"TraceId\":\"9475fbe4aad399fc500645c6e5db6707\",\"level\":\"info\",\"msg\":\"\",\"request_User-Agent\":\"art-a-research/name-isolated-question\",\"time\":\"2026-11-07T23:04:45Z\"}"
+      }
+    ],
+    "router-service.log": [],
+    "router-traefik.log": [],
+    "tomcat/tomcat-access-catalina-2026-11-07.log": [],
+    "tomcat/tomcat-access-localhost-2026-11-07.log": [],
+    "tomcat/tomcat-catalina-2026-11-07.log": [],
+    "tomcat/tomcat-localhost-2026-11-07.log": [],
+    "topology-derby.log": [],
+    "topology-metrics.log": [],
+    "topology-request-out.log": [],
+    "topology-request.log": [],
+    "topology-service.log": []
+  }
+}

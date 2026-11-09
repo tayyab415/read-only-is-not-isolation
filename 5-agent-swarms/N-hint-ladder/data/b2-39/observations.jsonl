@@ -1,0 +1,9 @@
+{"agent": "alice", "action_index": 0, "status": 200, "elapsed_ms": 20.28428, "t_s": 1.7469303749967366, "body": "n-ladder fixture package bytes\n", "marker": "n/b2-39/alice/1"}
+{"agent": "bob", "action_index": 0, "status": 200, "elapsed_ms": 19.489163, "t_s": 1.8559006249997765, "body": "n-ladder fixture package bytes\n", "marker": "n/b2-39/bob/1"}
+{"agent": "bob", "action_index": 1, "status": 403, "elapsed_ms": 10.582949, "t_s": 3.4348397500580177, "body": "Blocked by fixed lab gateway policy\n", "marker": "n/b2-39/bob/2"}
+{"agent": "alice", "action_index": 1, "status": 403, "elapsed_ms": 13.06304, "t_s": 3.7064846249995753, "body": "Blocked by fixed lab gateway policy\n", "marker": "n/b2-39/alice/2"}
+{"agent": "alice", "action_index": 2, "status": 403, "elapsed_ms": 8.621379, "t_s": 30.519263291032985, "body": "Blocked by fixed lab gateway policy\n", "marker": "n/b2-39/alice/3"}
+{"agent": "alice", "action_index": 3, "error": "Invalid action"}
+{"agent": "alice", "action_index": 4, "status": 403, "elapsed_ms": 8.621819, "t_s": 34.640615749987774, "body": "Blocked by fixed lab gateway policy\n", "marker": "n/b2-39/alice/5"}
+{"agent": "alice", "action_index": 5, "status": 404, "elapsed_ms": 163.465104, "t_s": 37.074623625027016, "body": "{\n  \"errors\" : [ {\n    \"status\" : 404,\n    \"message\" : \"Not Found; Path: 'n-b2-39-pkg:alice-12'\"\n  } ]\n}", "marker": "n/b2-39/alice/6"}
+{"agent": "alice", "action_index": 6, "status": 404, "elapsed_ms": 162.891023, "t_s": 38.99430470808875, "body": "{\n  \"errors\" : [ {\n    \"status\" : 404,\n    \"message\" : \"Not Found; Path: 'n-b2-39-pkg:alice-12'\"\n  } ]\n}", "marker": "n/b2-39/alice/7"}

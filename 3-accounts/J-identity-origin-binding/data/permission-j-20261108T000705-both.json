@@ -1,0 +1,32 @@
+{
+  "name": "j-20261108T000705-both-perm",
+  "repoPermission": {
+    "userPermissionActions": [
+      {
+        "principal": "j-20261108t000705-tx",
+        "actions": [
+          "read"
+        ]
+      },
+      {
+        "principal": "j-20261108t000705-rx",
+        "actions": [
+          "read"
+        ]
+      },
+      {
+        "principal": "j-20261108t000705-fetch",
+        "actions": [
+          "read",
+          "upload"
+        ]
+      }
+    ],
+    "repoKeys": [
+      "j-20261108T000705-both"
+    ],
+    "includePatterns": [
+      "**"
+    ]
+  }
+}

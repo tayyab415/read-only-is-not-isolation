@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "preparation_only": true,
+  "base": "next",
+  "files": {
+    "P3-linux/PROTOCOL.md": "2258bcbaed4e6ac83b3ecdd95b089d56c162629f0f5cc573f8a74d27d744a58f",
+    "P3-linux/README.md": "d01545db3418bcffa33d5fb5205c6d56c8a4d3d84d38350de87e5553bee43589",
+    "P3-linux/adapter.py": "af9901e2c1d1adba57c4e83907b645c0c78929ca38899da617e91b36e7125876",
+    "P3-linux/audit.py": "030d3fb18f56dffdba453b9228d739b6011b2cb72975898d26889642702911f2",
+    "P3-linux/client.py": "47aa5f42207280549d7fd113b08e6da533b3e880cb803257819b5d02ca61c4dc",
+    "P3-linux/deployment.py": "7cdb6a83de2b41177144c7d98d6eea7509e5532e0629ffa1fd8b98e1b53aa1e7",
+    "P3-linux/report.py": "d14ef783bcaa5d0d31959a19dfaa4ec82d9788789bb2f73e89bd7ef550d67557",
+    "P3-linux/test_adapter.py": "65a19cbc237818509f71b743669022ef5197073f89895fd17e442d6cd19bcece",
+    "P3-linux/test_audit.py": "30bb7c168c3a83508589249ad3dbc028e5e753cb6c52064948a2beefe1904a06",
+    "P3-linux/test_deployment.py": "ff21c62a7f9fe07dd5d2520bd64d193d57751cc1db6abc6f9f229f16193c83ab",
+    "P3-linux/AMENDMENT-v2.json": "e8a2060a58cafecfe81f84a9ac811e1c588fca3770dbd65310473a33aa38e751",
+    "P3-linux/AMENDMENT-v3.json": "7bb786c666ea0c0940b1756209e8e9b72de7c452b3c5bebe47db0db4e476f214",
+    "P3-linux/UTILITY-FROZEN.json": "93e268532ededd4060a955df8ac3dfb707cb9d2a80b40894d446020d29b4acc4"
+  },
+  "imports_supplied_by": "P2-residual/deployment-preparation.tar.gz",
+  "excluded": [
+    "credentials",
+    "runtime-config",
+    "data",
+    "__pycache__"
+  ],
+  "edition": 3,
+  "archive_sha256": "ff1fc1e7ce001823419bae0cf0f6db638f81e498bf5e8fdcb3218443c5050a64",
+  "archive_bytes": 32333,
+  "source_freeze_sha256": "93e268532ededd4060a955df8ac3dfb707cb9d2a80b40894d446020d29b4acc4"
+}

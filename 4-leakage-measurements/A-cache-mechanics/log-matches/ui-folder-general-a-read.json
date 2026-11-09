@@ -1,0 +1,103 @@
+{
+  "request_id": "ui-folder-general-a-read",
+  "server_trace_ids": [
+    "d943c546297fa86c84e1ffc6b4bc20ad"
+  ],
+  "logs": {
+    "access-audit.log": [],
+    "access-metrics.log": [],
+    "access-metrics_events.log": [],
+    "access-request-out.log": [],
+    "access-request.log": [
+      {
+        "line_number": 949,
+        "line": "2026-11-07T23:04:45.448Z|d943c546297fa86c84e1ffc6b4bc20ad|/127.0.0.1:54014|jfrt@01m6w3chwnhc4n1xs15bzj1rg6|--UNA|com.jfrog.access.v1.authentication.AuthenticationResource/Authenticate|0|-1|-1|7|grpc-java-netty/1.81.0"
+      }
+    ],
+    "access-security-audit.log": [],
+    "access-service.log": [],
+    "access-thread-dump.log": [],
+    "artifactory-access.log": [
+      {
+        "line_number": 79,
+        "line": "2026-11-07T23:04:45.451Z [d943c546297fa86c84e1ffc6b4bc20ad] [ACCEPTED LOGIN]   for client : a-read / 172.18.0.1"
+      }
+    ],
+    "artifactory-binarystore.log": [],
+    "artifactory-cleanup-audit.log": [],
+    "artifactory-conan-v2-migration.log": [],
+    "artifactory-event.log": [],
+    "artifactory-federation-metrics.log": [],
+    "artifactory-federation-metrics_events.log": [],
+    "artifactory-import-export.log": [],
+    "artifactory-metrics.log": [],
+    "artifactory-metrics_events.log": [],
+    "artifactory-path-checksum-migration.log": [],
+    "artifactory-request-out.log": [],
+    "artifactory-request-trace.log": [],
+    "artifactory-request.log": [
+      {
+        "line_number": 3581,
+        "line": "2026-11-07T23:04:45.451Z|d943c546297fa86c84e1ffc6b4bc20ad|172.18.0.1|a-read|POST|/ui/artifactgeneral|200|96|167|12|art-a-research/ui-folder-general-a-read"
+      }
+    ],
+    "artifactory-service-federation.log": [],
+    "artifactory-service.log": [],
+    "artifactory-sha256-migration.log": [],
+    "artifactory-shadow.log": [],
+    "artifactory-storage-request-out.log": [],
+    "artifactory-traffic-v2.log": [],
+    "artifactory-traffic-v3.log": [],
+    "artifactory-traffic.1794091779163.log": [],
+    "artifactory-xray-traffic.1794091779189.log": [],
+    "derby.log": [],
+    "dummy.log": [],
+    "event-metrics.log": [],
+    "event-request.log": [],
+    "event-service.log": [],
+    "event-webhook-request-out.log": [],
+    "frontend-metrics-events.log": [],
+    "frontend-metrics.log": [],
+    "frontend-request.log": [],
+    "frontend-service.log": [],
+    "jfbus-ack-events.log": [],
+    "jfbus-consume-events.log": [],
+    "jfbus-publish-events.log": [],
+    "jfbus-receive-polling.log": [],
+    "jfbus-request.log": [],
+    "jfbus-service.log": [],
+    "jfconfig-metrics.log": [],
+    "jfconfig-request-out.log": [],
+    "jfconfig-request.log": [],
+    "jfconfig-service.log": [],
+    "metadata-metrics.log": [],
+    "metadata-request.log": [],
+    "metadata-service.log": [],
+    "metadata-traffic.log": [],
+    "observability-metrics.log": [],
+    "observability-request-out.log": [],
+    "observability-request.log": [],
+    "observability-service.log": [],
+    "router-request.log": [
+      {
+        "line_number": 4845,
+        "line": "{\"ClientAddr\":\"127.0.0.1:35280\",\"DownstreamContentSize\":85,\"DownstreamStatus\":200,\"Duration\":8952070,\"Overhead\":95741,\"RequestMethod\":\"POST\",\"RequestPath\":\"/com.jfrog.access.v1.authentication.AuthenticationResource/Authenticate\",\"ServiceAddr\":\"localhost:8045\",\"SpanId\":\"1fe085aa93f14b27\",\"StartUTC\":\"2026-11-07T23:04:45.440450257Z\",\"TraceId\":\"d943c546297fa86c84e1ffc6b4bc20ad\",\"level\":\"info\",\"msg\":\"\",\"request_Traceparent\":\"00-d943c546297fa86c84e1ffc6b4bc20ad-0d88f058aa90f8a1-01\",\"request_Uber-Trace-Id\":\"d943c546297fa86c84e1ffc6b4bc20ad:0d88f058aa90f8a1:0:1\",\"request_User-Agent\":\"grpc-java-netty/1.81.0\",\"time\":\"2026-11-07T23:04:45Z\"}"
+      },
+      {
+        "line_number": 4846,
+        "line": "{\"ClientAddr\":\"172.18.0.1:44830\",\"DownstreamContentSize\":167,\"DownstreamStatus\":200,\"Duration\":13341768,\"Overhead\":103092,\"RequestMethod\":\"POST\",\"RequestPath\":\"/artifactory/ui/artifactgeneral\",\"ServiceAddr\":\"localhost:8081\",\"SpanId\":\"c3c6776fd5ae6bee\",\"StartUTC\":\"2026-11-07T23:04:45.438709802Z\",\"TraceId\":\"d943c546297fa86c84e1ffc6b4bc20ad\",\"level\":\"info\",\"msg\":\"\",\"request_User-Agent\":\"art-a-research/ui-folder-general-a-read\",\"time\":\"2026-11-07T23:04:45Z\"}"
+      }
+    ],
+    "router-service.log": [],
+    "router-traefik.log": [],
+    "tomcat/tomcat-access-catalina-2026-11-07.log": [],
+    "tomcat/tomcat-access-localhost-2026-11-07.log": [],
+    "tomcat/tomcat-catalina-2026-11-07.log": [],
+    "tomcat/tomcat-localhost-2026-11-07.log": [],
+    "topology-derby.log": [],
+    "topology-metrics.log": [],
+    "topology-request-out.log": [],
+    "topology-request.log": [],
+    "topology-service.log": []
+  }
+}

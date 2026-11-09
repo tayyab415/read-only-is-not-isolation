@@ -1,0 +1,834 @@
+{
+  "run_id": "p7-g2-nginx-20-private-hold",
+  "origin_log": [
+    {
+      "ready": true,
+      "stateless": true,
+      "outbound_requests": 0
+    },
+    {
+      "start_utc_ns": 1794182706262586904,
+      "end_utc_ns": 1794182706282782745,
+      "client_ip": "172.21.0.2",
+      "method": "GET",
+      "path": "/missing/20/canary-cache",
+      "marker": "p7/p7-g2-nginx-20-private-hold/canary/cache-0",
+      "status": 404,
+      "delay_ms": 20,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794182707023045665,
+      "end_utc_ns": 1794182707023185336,
+      "client_ip": "172.21.0.3",
+      "method": "GET",
+      "path": "/present/canary-functions",
+      "marker": "p7/p7-g2-nginx-20-private-hold/canary/function-0",
+      "status": 200,
+      "delay_ms": 0,
+      "body_bytes": 40,
+      "body_sha256": "c9018cc100c3627142237160efe8122117443ffd68f2802b6794cd84c5343449",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794182710060644901,
+      "end_utc_ns": 1794182710080941040,
+      "client_ip": "172.21.0.2",
+      "method": "GET",
+      "path": "/missing/20/g2-nginx-20-private-holdout-t000",
+      "marker": "p7/p7-g2-nginx-20-private-hold/holdout/t000/alice/receiver",
+      "status": 404,
+      "delay_ms": 20,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794182710483133085,
+      "end_utc_ns": 1794182710503427893,
+      "client_ip": "172.21.0.3",
+      "method": "GET",
+      "path": "/missing/20/g2-nginx-20-private-holdout-t001",
+      "marker": "p7/p7-g2-nginx-20-private-hold/holdout/t001/bob/sender",
+      "status": 404,
+      "delay_ms": 20,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794182710861509625,
+      "end_utc_ns": 1794182710881713187,
+      "client_ip": "172.21.0.2",
+      "method": "GET",
+      "path": "/missing/20/g2-nginx-20-private-holdout-t001",
+      "marker": "p7/p7-g2-nginx-20-private-hold/holdout/t001/alice/receiver",
+      "status": 404,
+      "delay_ms": 20,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794182711564366047,
+      "end_utc_ns": 1794182711584569049,
+      "client_ip": "172.21.0.2",
+      "method": "GET",
+      "path": "/missing/20/g2-nginx-20-private-holdout-t002",
+      "marker": "p7/p7-g2-nginx-20-private-hold/holdout/t002/alice/receiver",
+      "status": 404,
+      "delay_ms": 20,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794182712320175758,
+      "end_utc_ns": 1794182712340364449,
+      "client_ip": "172.21.0.3",
+      "method": "GET",
+      "path": "/missing/20/g2-nginx-20-private-holdout-t003",
+      "marker": "p7/p7-g2-nginx-20-private-hold/holdout/t003/bob/receiver",
+      "status": 404,
+      "delay_ms": 20,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794182713020664191,
+      "end_utc_ns": 1794182713040854891,
+      "client_ip": "172.21.0.3",
+      "method": "GET",
+      "path": "/missing/20/g2-nginx-20-private-holdout-t004",
+      "marker": "p7/p7-g2-nginx-20-private-hold/holdout/t004/bob/receiver",
+      "status": 404,
+      "delay_ms": 20,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794182713433131913,
+      "end_utc_ns": 1794182713453332004,
+      "client_ip": "172.21.0.2",
+      "method": "GET",
+      "path": "/missing/20/g2-nginx-20-private-holdout-t005",
+      "marker": "p7/p7-g2-nginx-20-private-hold/holdout/t005/alice/sender",
+      "status": 404,
+      "delay_ms": 20,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794182713822765705,
+      "end_utc_ns": 1794182713843049903,
+      "client_ip": "172.21.0.3",
+      "method": "GET",
+      "path": "/missing/20/g2-nginx-20-private-holdout-t005",
+      "marker": "p7/p7-g2-nginx-20-private-hold/holdout/t005/bob/receiver",
+      "status": 404,
+      "delay_ms": 20,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794182714226562635,
+      "end_utc_ns": 1794182714246805689,
+      "client_ip": "172.21.0.2",
+      "method": "GET",
+      "path": "/missing/20/g2-nginx-20-private-holdout-t006",
+      "marker": "p7/p7-g2-nginx-20-private-hold/holdout/t006/alice/sender",
+      "status": 404,
+      "delay_ms": 20,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794182714620643292,
+      "end_utc_ns": 1794182714640939420,
+      "client_ip": "172.21.0.3",
+      "method": "GET",
+      "path": "/missing/20/g2-nginx-20-private-holdout-t006",
+      "marker": "p7/p7-g2-nginx-20-private-hold/holdout/t006/bob/receiver",
+      "status": 404,
+      "delay_ms": 20,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794182715019867066,
+      "end_utc_ns": 1794182715040055097,
+      "client_ip": "172.21.0.3",
+      "method": "GET",
+      "path": "/missing/20/g2-nginx-20-private-holdout-t007",
+      "marker": "p7/p7-g2-nginx-20-private-hold/holdout/t007/bob/sender",
+      "status": 404,
+      "delay_ms": 20,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794182715429087094,
+      "end_utc_ns": 1794182715449254763,
+      "client_ip": "172.21.0.2",
+      "method": "GET",
+      "path": "/missing/20/g2-nginx-20-private-holdout-t007",
+      "marker": "p7/p7-g2-nginx-20-private-hold/holdout/t007/alice/receiver",
+      "status": 404,
+      "delay_ms": 20,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794182715821230916,
+      "end_utc_ns": 1794182715841482031,
+      "client_ip": "172.21.0.3",
+      "method": "GET",
+      "path": "/missing/20/g2-nginx-20-private-holdout-t008",
+      "marker": "p7/p7-g2-nginx-20-private-hold/holdout/t008/bob/sender",
+      "status": 404,
+      "delay_ms": 20,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794182716226566871,
+      "end_utc_ns": 1794182716246873299,
+      "client_ip": "172.21.0.2",
+      "method": "GET",
+      "path": "/missing/20/g2-nginx-20-private-holdout-t008",
+      "marker": "p7/p7-g2-nginx-20-private-hold/holdout/t008/alice/receiver",
+      "status": 404,
+      "delay_ms": 20,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794182716959305732,
+      "end_utc_ns": 1794182716979510603,
+      "client_ip": "172.21.0.2",
+      "method": "GET",
+      "path": "/missing/20/g2-nginx-20-private-holdout-t009",
+      "marker": "p7/p7-g2-nginx-20-private-hold/holdout/t009/alice/receiver",
+      "status": 404,
+      "delay_ms": 20,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794182717358421758,
+      "end_utc_ns": 1794182717378708896,
+      "client_ip": "172.21.0.2",
+      "method": "GET",
+      "path": "/missing/20/g2-nginx-20-private-holdout-t010",
+      "marker": "p7/p7-g2-nginx-20-private-hold/holdout/t010/alice/sender",
+      "status": 404,
+      "delay_ms": 20,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794182717721270884,
+      "end_utc_ns": 1794182717741599295,
+      "client_ip": "172.21.0.3",
+      "method": "GET",
+      "path": "/missing/20/g2-nginx-20-private-holdout-t010",
+      "marker": "p7/p7-g2-nginx-20-private-hold/holdout/t010/bob/receiver",
+      "status": 404,
+      "delay_ms": 20,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794182718460706020,
+      "end_utc_ns": 1794182718481028970,
+      "client_ip": "172.21.0.2",
+      "method": "GET",
+      "path": "/missing/20/g2-nginx-20-private-holdout-t011",
+      "marker": "p7/p7-g2-nginx-20-private-hold/holdout/t011/alice/receiver",
+      "status": 404,
+      "delay_ms": 20,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794182718860075055,
+      "end_utc_ns": 1794182718880382474,
+      "client_ip": "172.21.0.2",
+      "method": "GET",
+      "path": "/missing/20/g2-nginx-20-private-holdout-t012",
+      "marker": "p7/p7-g2-nginx-20-private-hold/holdout/t012/alice/sender",
+      "status": 404,
+      "delay_ms": 20,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794182719222084827,
+      "end_utc_ns": 1794182719242279118,
+      "client_ip": "172.21.0.3",
+      "method": "GET",
+      "path": "/missing/20/g2-nginx-20-private-holdout-t012",
+      "marker": "p7/p7-g2-nginx-20-private-hold/holdout/t012/bob/receiver",
+      "status": 404,
+      "delay_ms": 20,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794182719917139721,
+      "end_utc_ns": 1794182719937309980,
+      "client_ip": "172.21.0.3",
+      "method": "GET",
+      "path": "/missing/20/g2-nginx-20-private-holdout-t013",
+      "marker": "p7/p7-g2-nginx-20-private-hold/holdout/t013/bob/receiver",
+      "status": 404,
+      "delay_ms": 20,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794182720621113477,
+      "end_utc_ns": 1794182720641281646,
+      "client_ip": "172.21.0.3",
+      "method": "GET",
+      "path": "/missing/20/g2-nginx-20-private-holdout-t014",
+      "marker": "p7/p7-g2-nginx-20-private-hold/holdout/t014/bob/receiver",
+      "status": 404,
+      "delay_ms": 20,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794182721319316087,
+      "end_utc_ns": 1794182721339603745,
+      "client_ip": "172.21.0.3",
+      "method": "GET",
+      "path": "/missing/20/g2-nginx-20-private-holdout-t015",
+      "marker": "p7/p7-g2-nginx-20-private-hold/holdout/t015/bob/receiver",
+      "status": 404,
+      "delay_ms": 20,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794182721726121953,
+      "end_utc_ns": 1794182721746349166,
+      "client_ip": "172.21.0.2",
+      "method": "GET",
+      "path": "/missing/20/g2-nginx-20-private-holdout-t016",
+      "marker": "p7/p7-g2-nginx-20-private-hold/holdout/t016/alice/sender",
+      "status": 404,
+      "delay_ms": 20,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794182722118805984,
+      "end_utc_ns": 1794182722139127765,
+      "client_ip": "172.21.0.3",
+      "method": "GET",
+      "path": "/missing/20/g2-nginx-20-private-holdout-t016",
+      "marker": "p7/p7-g2-nginx-20-private-hold/holdout/t016/bob/receiver",
+      "status": 404,
+      "delay_ms": 20,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794182722517997016,
+      "end_utc_ns": 1794182722538282384,
+      "client_ip": "172.21.0.3",
+      "method": "GET",
+      "path": "/missing/20/g2-nginx-20-private-holdout-t017",
+      "marker": "p7/p7-g2-nginx-20-private-hold/holdout/t017/bob/sender",
+      "status": 404,
+      "delay_ms": 20,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794182722865915968,
+      "end_utc_ns": 1794182722886208036,
+      "client_ip": "172.21.0.2",
+      "method": "GET",
+      "path": "/missing/20/g2-nginx-20-private-holdout-t017",
+      "marker": "p7/p7-g2-nginx-20-private-hold/holdout/t017/alice/receiver",
+      "status": 404,
+      "delay_ms": 20,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794182723621652409,
+      "end_utc_ns": 1794182723641842370,
+      "client_ip": "172.21.0.3",
+      "method": "GET",
+      "path": "/missing/20/g2-nginx-20-private-holdout-t018",
+      "marker": "p7/p7-g2-nginx-20-private-hold/holdout/t018/bob/receiver",
+      "status": 404,
+      "delay_ms": 20,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794182724028913069,
+      "end_utc_ns": 1794182724049105640,
+      "client_ip": "172.21.0.2",
+      "method": "GET",
+      "path": "/missing/20/g2-nginx-20-private-holdout-t019",
+      "marker": "p7/p7-g2-nginx-20-private-hold/holdout/t019/alice/sender",
+      "status": 404,
+      "delay_ms": 20,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794182724419320459,
+      "end_utc_ns": 1794182724439534132,
+      "client_ip": "172.21.0.3",
+      "method": "GET",
+      "path": "/missing/20/g2-nginx-20-private-holdout-t019",
+      "marker": "p7/p7-g2-nginx-20-private-hold/holdout/t019/bob/receiver",
+      "status": 404,
+      "delay_ms": 20,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794182725119136021,
+      "end_utc_ns": 1794182725139428489,
+      "client_ip": "172.21.0.3",
+      "method": "GET",
+      "path": "/missing/20/g2-nginx-20-private-holdout-t020",
+      "marker": "p7/p7-g2-nginx-20-private-hold/holdout/t020/bob/receiver",
+      "status": 404,
+      "delay_ms": 20,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794182725537270299,
+      "end_utc_ns": 1794182725557626371,
+      "client_ip": "172.21.0.2",
+      "method": "GET",
+      "path": "/missing/20/g2-nginx-20-private-holdout-t021",
+      "marker": "p7/p7-g2-nginx-20-private-hold/holdout/t021/alice/sender",
+      "status": 404,
+      "delay_ms": 20,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794182725917965928,
+      "end_utc_ns": 1794182725938261737,
+      "client_ip": "172.21.0.3",
+      "method": "GET",
+      "path": "/missing/20/g2-nginx-20-private-holdout-t021",
+      "marker": "p7/p7-g2-nginx-20-private-hold/holdout/t021/bob/receiver",
+      "status": 404,
+      "delay_ms": 20,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794182726618484593,
+      "end_utc_ns": 1794182726638676903,
+      "client_ip": "172.21.0.3",
+      "method": "GET",
+      "path": "/missing/20/g2-nginx-20-private-holdout-t022",
+      "marker": "p7/p7-g2-nginx-20-private-hold/holdout/t022/bob/receiver",
+      "status": 404,
+      "delay_ms": 20,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794182727019251683,
+      "end_utc_ns": 1794182727039612166,
+      "client_ip": "172.21.0.3",
+      "method": "GET",
+      "path": "/missing/20/g2-nginx-20-private-holdout-t023",
+      "marker": "p7/p7-g2-nginx-20-private-hold/holdout/t023/bob/sender",
+      "status": 404,
+      "delay_ms": 20,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794182727374208984,
+      "end_utc_ns": 1794182727394538835,
+      "client_ip": "172.21.0.2",
+      "method": "GET",
+      "path": "/missing/20/g2-nginx-20-private-holdout-t023",
+      "marker": "p7/p7-g2-nginx-20-private-hold/holdout/t023/alice/receiver",
+      "status": 404,
+      "delay_ms": 20,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794182728161368774,
+      "end_utc_ns": 1794182728181670022,
+      "client_ip": "172.21.0.2",
+      "method": "GET",
+      "path": "/missing/20/g2-nginx-20-private-holdout-t024",
+      "marker": "p7/p7-g2-nginx-20-private-hold/holdout/t024/alice/receiver",
+      "status": 404,
+      "delay_ms": 20,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794182728517722320,
+      "end_utc_ns": 1794182728538015199,
+      "client_ip": "172.21.0.3",
+      "method": "GET",
+      "path": "/missing/20/g2-nginx-20-private-holdout-t025",
+      "marker": "p7/p7-g2-nginx-20-private-hold/holdout/t025/bob/sender",
+      "status": 404,
+      "delay_ms": 20,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794182728872869816,
+      "end_utc_ns": 1794182728893113120,
+      "client_ip": "172.21.0.2",
+      "method": "GET",
+      "path": "/missing/20/g2-nginx-20-private-holdout-t025",
+      "marker": "p7/p7-g2-nginx-20-private-hold/holdout/t025/alice/receiver",
+      "status": 404,
+      "delay_ms": 20,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794182729662298788,
+      "end_utc_ns": 1794182729682624580,
+      "client_ip": "172.21.0.2",
+      "method": "GET",
+      "path": "/missing/20/g2-nginx-20-private-holdout-t026",
+      "marker": "p7/p7-g2-nginx-20-private-hold/holdout/t026/alice/receiver",
+      "status": 404,
+      "delay_ms": 20,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794182730020715708,
+      "end_utc_ns": 1794182730041020669,
+      "client_ip": "172.21.0.3",
+      "method": "GET",
+      "path": "/missing/20/g2-nginx-20-private-holdout-t027",
+      "marker": "p7/p7-g2-nginx-20-private-hold/holdout/t027/bob/sender",
+      "status": 404,
+      "delay_ms": 20,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794182730429272097,
+      "end_utc_ns": 1794182730449483360,
+      "client_ip": "172.21.0.2",
+      "method": "GET",
+      "path": "/missing/20/g2-nginx-20-private-holdout-t027",
+      "marker": "p7/p7-g2-nginx-20-private-hold/holdout/t027/alice/receiver",
+      "status": 404,
+      "delay_ms": 20,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794182730831100048,
+      "end_utc_ns": 1794182730851393938,
+      "client_ip": "172.21.0.2",
+      "method": "GET",
+      "path": "/missing/20/g2-nginx-20-private-holdout-t028",
+      "marker": "p7/p7-g2-nginx-20-private-hold/holdout/t028/alice/sender",
+      "status": 404,
+      "delay_ms": 20,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794182731219702313,
+      "end_utc_ns": 1794182731239995433,
+      "client_ip": "172.21.0.3",
+      "method": "GET",
+      "path": "/missing/20/g2-nginx-20-private-holdout-t028",
+      "marker": "p7/p7-g2-nginx-20-private-hold/holdout/t028/bob/receiver",
+      "status": 404,
+      "delay_ms": 20,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794182731620011571,
+      "end_utc_ns": 1794182731640313320,
+      "client_ip": "172.21.0.3",
+      "method": "GET",
+      "path": "/missing/20/g2-nginx-20-private-holdout-t029",
+      "marker": "p7/p7-g2-nginx-20-private-hold/holdout/t029/bob/sender",
+      "status": 404,
+      "delay_ms": 20,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794182731971281082,
+      "end_utc_ns": 1794182731991627975,
+      "client_ip": "172.21.0.2",
+      "method": "GET",
+      "path": "/missing/20/g2-nginx-20-private-holdout-t029",
+      "marker": "p7/p7-g2-nginx-20-private-hold/holdout/t029/alice/receiver",
+      "status": 404,
+      "delay_ms": 20,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794182732761804265,
+      "end_utc_ns": 1794182732782092344,
+      "client_ip": "172.21.0.2",
+      "method": "GET",
+      "path": "/missing/20/g2-nginx-20-private-holdout-t030",
+      "marker": "p7/p7-g2-nginx-20-private-hold/holdout/t030/alice/receiver",
+      "status": 404,
+      "delay_ms": 20,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794182733461731832,
+      "end_utc_ns": 1794182733482026731,
+      "client_ip": "172.21.0.2",
+      "method": "GET",
+      "path": "/missing/20/g2-nginx-20-private-holdout-t031",
+      "marker": "p7/p7-g2-nginx-20-private-hold/holdout/t031/alice/receiver",
+      "status": 404,
+      "delay_ms": 20,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    }
+  ],
+  "caches": {
+    "p7-g2-nginx-20-private-hold-cache-alice": {
+      "access_log": "{\"end_epoch_s\":1794182706.282,\"client_ip\":\"172.19.0.1\",\"actor\":\"alice\",\"method\":\"GET\",\"path\":\"/missing/20/canary-cache\",\"marker\":\"p7/p7-g2-nginx-20-private-hold/canary/cache-0\",\"status\":404,\"body_bytes\":25,\"cache_status\":\"MISS\",\"request_time_s\":\"0.021\",\"upstream_time_s\":\"0.021\",\"upstream_status\":\"404\"}\n{\"end_epoch_s\":1794182706.662,\"client_ip\":\"172.19.0.1\",\"actor\":\"alice\",\"method\":\"GET\",\"path\":\"/missing/20/canary-cache\",\"marker\":\"p7/p7-g2-nginx-20-private-hold/canary/cache-1\",\"status\":404,\"body_bytes\":25,\"cache_status\":\"HIT\",\"request_time_s\":\"0.000\",\"upstream_time_s\":\"\",\"upstream_status\":\"\"}\n{\"end_epoch_s\":1794182709.332,\"client_ip\":\"172.21.0.1\",\"actor\":\"\",\"method\":\"GET\",\"path\":\"/missing/20/canary-denied\",\"marker\":\"p7/p7-g2-nginx-20-private-hold/canary/unknown-origin\",\"status\":403,\"body_bytes\":153,\"cache_status\":\"\",\"request_time_s\":\"0.000\",\"upstream_time_s\":\"\",\"upstream_status\":\"\"}\n{\"end_epoch_s\":1794182710.080,\"client_ip\":\"172.19.0.1\",\"actor\":\"alice\",\"method\":\"GET\",\"path\":\"/missing/20/g2-nginx-20-private-holdout-t000\",\"marker\":\"p7/p7-g2-nginx-20-private-hold/holdout/t000/alice/receiver\",\"status\":404,\"body_bytes\":25,\"cache_status\":\"MISS\",\"request_time_s\":\"0.020\",\"upstream_time_s\":\"0.021\",\"upstream_status\":\"404\"}\n{\"end_epoch_s\":1794182710.881,\"client_ip\":\"172.19.0.1\",\"actor\":\"alice\",\"method\":\"GET\",\"path\":\"/missing/20/g2-nginx-20-private-holdout-t001\",\"marker\":\"p7/p7-g2-nginx-20-private-hold/holdout/t001/alice/receiver\",\"status\":404,\"body_bytes\":25,\"cache_status\":\"MISS\",\"request_time_s\":\"0.020\",\"upstream_time_s\":\"0.021\",\"upstream_status\":\"404\"}\n{\"end_epoch_s\":1794182711.584,\"client_ip\":\"172.19.0.1\",\"actor\":\"alice\",\"method\":\"GET\",\"path\":\"/missing/20/g2-nginx-20-private-holdout-t002\",\"marker\":\"p7/p7-g2-nginx-20-private-hold/holdout/t002/alice/receiver\",\"status\":404,\"body_bytes\":25,\"cache_status\":\"MISS\",\"request_time_s\":\"0.021\",\"upstream_time_s\":\"0.021\",\"upstream_status\":\"404\"}\n{\"end_epoch_s\":1794182713.453,\"client_ip\":\"172.19.0.1\",\"actor\":\"alice\",\"method\":\"GET\",\"path\":\"/missing/20/g2-nginx-20-private-holdout-t005\",\"marker\":\"p7/p7-g2-nginx-20-private-hold/holdout/t005/alice/sender\",\"status\":404,\"body_bytes\":25,\"cache_status\":\"MISS\",\"request_time_s\":\"0.021\",\"upstream_time_s\":\"0.020\",\"upstream_status\":\"404\"}\n{\"end_epoch_s\":1794182714.246,\"client_ip\":\"172.19.0.1\",\"actor\":\"alice\",\"method\":\"GET\",\"path\":\"/missing/20/g2-nginx-20-private-holdout-t006\",\"marker\":\"p7/p7-g2-nginx-20-private-hold/holdout/t006/alice/sender\",\"status\":404,\"body_bytes\":25,\"cache_status\":\"MISS\",\"request_time_s\":\"0.020\",\"upstream_time_s\":\"0.021\",\"upstream_status\":\"404\"}\n{\"end_epoch_s\":1794182715.449,\"client_ip\":\"172.19.0.1\",\"actor\":\"alice\",\"method\":\"GET\",\"path\":\"/missing/20/g2-nginx-20-private-holdout-t007\",\"marker\":\"p7/p7-g2-nginx-20-private-hold/holdout/t007/alice/receiver\",\"status\":404,\"body_bytes\":25,\"cache_status\":\"MISS\",\"request_time_s\":\"0.021\",\"upstream_time_s\":\"0.020\",\"upstream_status\":\"404\"}\n{\"end_epoch_s\":1794182716.246,\"client_ip\":\"172.19.0.1\",\"actor\":\"alice\",\"method\":\"GET\",\"path\":\"/missing/20/g2-nginx-20-private-holdout-t008\",\"marker\":\"p7/p7-g2-nginx-20-private-hold/holdout/t008/alice/receiver\",\"status\":404,\"body_bytes\":25,\"cache_status\":\"MISS\",\"request_time_s\":\"0.020\",\"upstream_time_s\":\"0.021\",\"upstream_status\":\"404\"}\n{\"end_epoch_s\":1794182716.979,\"client_ip\":\"172.19.0.1\",\"actor\":\"alice\",\"method\":\"GET\",\"path\":\"/missing/20/g2-nginx-20-private-holdout-t009\",\"marker\":\"p7/p7-g2-nginx-20-private-hold/holdout/t009/alice/receiver\",\"status\":404,\"body_bytes\":25,\"cache_status\":\"MISS\",\"request_time_s\":\"0.021\",\"upstream_time_s\":\"0.021\",\"upstream_status\":\"404\"}\n{\"end_epoch_s\":1794182717.378,\"client_ip\":\"172.19.0.1\",\"actor\":\"alice\",\"method\":\"GET\",\"path\":\"/missing/20/g2-nginx-20-private-holdout-t010\",\"marker\":\"p7/p7-g2-nginx-20-private-hold/holdout/t010/alice/sender\",\"status\":404,\"body_bytes\":25,\"cache_status\":\"MISS\",\"request_time_s\":\"0.021\",\"upstream_time_s\":\"0.021\",\"upstream_status\":\"404\"}\n{\"end_epoch_s\":1794182718.481,\"client_ip\":\"172.19.0.1\",\"actor\":\"alice\",\"method\":\"GET\",\"path\":\"/missing/20/g2-nginx-20-private-holdout-t011\",\"marker\":\"p7/p7-g2-nginx-20-private-hold/holdout/t011/alice/receiver\",\"status\":404,\"body_bytes\":25,\"cache_status\":\"MISS\",\"request_time_s\":\"0.021\",\"upstream_time_s\":\"0.021\",\"upstream_status\":\"404\"}\n{\"end_epoch_s\":1794182718.880,\"client_ip\":\"172.19.0.1\",\"actor\":\"alice\",\"method\":\"GET\",\"path\":\"/missing/20/g2-nginx-20-private-holdout-t012\",\"marker\":\"p7/p7-g2-nginx-20-private-hold/holdout/t012/alice/sender\",\"status\":404,\"body_bytes\":25,\"cache_status\":\"MISS\",\"request_time_s\":\"0.021\",\"upstream_time_s\":\"0.020\",\"upstream_status\":\"404\"}\n{\"end_epoch_s\":1794182721.746,\"client_ip\":\"172.19.0.1\",\"actor\":\"alice\",\"method\":\"GET\",\"path\":\"/missing/20/g2-nginx-20-private-holdout-t016\",\"marker\":\"p7/p7-g2-nginx-20-private-hold/holdout/t016/alice/sender\",\"status\":404,\"body_bytes\":25,\"cache_status\":\"MISS\",\"request_time_s\":\"0.021\",\"upstream_time_s\":\"0.020\",\"upstream_status\":\"404\"}\n{\"end_epoch_s\":1794182722.886,\"client_ip\":\"172.19.0.1\",\"actor\":\"alice\",\"method\":\"GET\",\"path\":\"/missing/20/g2-nginx-20-private-holdout-t017\",\"marker\":\"p7/p7-g2-nginx-20-private-hold/holdout/t017/alice/receiver\",\"status\":404,\"body_bytes\":25,\"cache_status\":\"MISS\",\"request_time_s\":\"0.021\",\"upstream_time_s\":\"0.021\",\"upstream_status\":\"404\"}\n{\"end_epoch_s\":1794182724.049,\"client_ip\":\"172.19.0.1\",\"actor\":\"alice\",\"method\":\"GET\",\"path\":\"/missing/20/g2-nginx-20-private-holdout-t019\",\"marker\":\"p7/p7-g2-nginx-20-private-hold/holdout/t019/alice/sender\",\"status\":404,\"body_bytes\":25,\"cache_status\":\"MISS\",\"request_time_s\":\"0.021\",\"upstream_time_s\":\"0.021\",\"upstream_status\":\"404\"}\n{\"end_epoch_s\":1794182725.557,\"client_ip\":\"172.19.0.1\",\"actor\":\"alice\",\"method\":\"GET\",\"path\":\"/missing/20/g2-nginx-20-private-holdout-t021\",\"marker\":\"p7/p7-g2-nginx-20-private-hold/holdout/t021/alice/sender\",\"status\":404,\"body_bytes\":25,\"cache_status\":\"MISS\",\"request_time_s\":\"0.021\",\"upstream_time_s\":\"0.021\",\"upstream_status\":\"404\"}\n{\"end_epoch_s\":1794182727.394,\"client_ip\":\"172.19.0.1\",\"actor\":\"alice\",\"method\":\"GET\",\"path\":\"/missing/20/g2-nginx-20-private-holdout-t023\",\"marker\":\"p7/p7-g2-nginx-20-private-hold/holdout/t023/alice/receiver\",\"status\":404,\"body_bytes\":25,\"cache_status\":\"MISS\",\"request_time_s\":\"0.021\",\"upstream_time_s\":\"0.021\",\"upstream_status\":\"404\"}\n{\"end_epoch_s\":1794182728.181,\"client_ip\":\"172.19.0.1\",\"actor\":\"alice\",\"method\":\"GET\",\"path\":\"/missing/20/g2-nginx-20-private-holdout-t024\",\"marker\":\"p7/p7-g2-nginx-20-private-hold/holdout/t024/alice/receiver\",\"status\":404,\"body_bytes\":25,\"cache_status\":\"MISS\",\"request_time_s\":\"0.021\",\"upstream_time_s\":\"0.021\",\"upstream_status\":\"404\"}\n{\"end_epoch_s\":1794182728.893,\"client_ip\":\"172.19.0.1\",\"actor\":\"alice\",\"method\":\"GET\",\"path\":\"/missing/20/g2-nginx-20-private-holdout-t025\",\"marker\":\"p7/p7-g2-nginx-20-private-hold/holdout/t025/alice/receiver\",\"status\":404,\"body_bytes\":25,\"cache_status\":\"MISS\",\"request_time_s\":\"0.021\",\"upstream_time_s\":\"0.021\",\"upstream_status\":\"404\"}\n{\"end_epoch_s\":1794182729.682,\"client_ip\":\"172.19.0.1\",\"actor\":\"alice\",\"method\":\"GET\",\"path\":\"/missing/20/g2-nginx-20-private-holdout-t026\",\"marker\":\"p7/p7-g2-nginx-20-private-hold/holdout/t026/alice/receiver\",\"status\":404,\"body_bytes\":25,\"cache_status\":\"MISS\",\"request_time_s\":\"0.021\",\"upstream_time_s\":\"0.021\",\"upstream_status\":\"404\"}\n{\"end_epoch_s\":1794182730.449,\"client_ip\":\"172.19.0.1\",\"actor\":\"alice\",\"method\":\"GET\",\"path\":\"/missing/20/g2-nginx-20-private-holdout-t027\",\"marker\":\"p7/p7-g2-nginx-20-private-hold/holdout/t027/alice/receiver\",\"status\":404,\"body_bytes\":25,\"cache_status\":\"MISS\",\"request_time_s\":\"0.021\",\"upstream_time_s\":\"0.021\",\"upstream_status\":\"404\"}\n{\"end_epoch_s\":1794182730.851,\"client_ip\":\"172.19.0.1\",\"actor\":\"alice\",\"method\":\"GET\",\"path\":\"/missing/20/g2-nginx-20-private-holdout-t028\",\"marker\":\"p7/p7-g2-nginx-20-private-hold/holdout/t028/alice/sender\",\"status\":404,\"body_bytes\":25,\"cache_status\":\"MISS\",\"request_time_s\":\"0.021\",\"upstream_time_s\":\"0.021\",\"upstream_status\":\"404\"}\n{\"end_epoch_s\":1794182731.991,\"client_ip\":\"172.19.0.1\",\"actor\":\"alice\",\"method\":\"GET\",\"path\":\"/missing/20/g2-nginx-20-private-holdout-t029\",\"marker\":\"p7/p7-g2-nginx-20-private-hold/holdout/t029/alice/receiver\",\"status\":404,\"body_bytes\":25,\"cache_status\":\"MISS\",\"request_time_s\":\"0.021\",\"upstream_time_s\":\"0.021\",\"upstream_status\":\"404\"}\n{\"end_epoch_s\":1794182732.782,\"client_ip\":\"172.19.0.1\",\"actor\":\"alice\",\"method\":\"GET\",\"path\":\"/missing/20/g2-nginx-20-private-holdout-t030\",\"marker\":\"p7/p7-g2-nginx-20-private-hold/holdout/t030/alice/receiver\",\"status\":404,\"body_bytes\":25,\"cache_status\":\"MISS\",\"request_time_s\":\"0.021\",\"upstream_time_s\":\"0.021\",\"upstream_status\":\"404\"}\n{\"end_epoch_s\":1794182733.482,\"client_ip\":\"172.19.0.1\",\"actor\":\"alice\",\"method\":\"GET\",\"path\":\"/missing/20/g2-nginx-20-private-holdout-t031\",\"marker\":\"p7/p7-g2-nginx-20-private-hold/holdout/t031/alice/receiver\",\"status\":404,\"body_bytes\":25,\"cache_status\":\"MISS\",\"request_time_s\":\"0.021\",\"upstream_time_s\":\"0.021\",\"upstream_status\":\"404\"}\n",
+      "store_id_log": null,
+      "native_log": "2026/11/09 00:05:02 [notice] 13#0: using the \"epoll\" event method\n2026/11/09 00:05:02 [notice] 13#0: nginx/1.30.6\n2026/11/09 00:05:02 [notice] 13#0: built by gcc 14.2.0 (Debian 14.2.0-19) \n2026/11/09 00:05:02 [notice] 13#0: OS: Linux 7.0.0-1014-aws\n2026/11/09 00:05:02 [notice] 13#0: getrlimit(RLIMIT_NOFILE): 1024:524288\n2026/11/09 00:05:02 [notice] 13#0: start worker processes\n2026/11/09 00:05:02 [notice] 13#0: start worker process 19\n2026/11/09 00:05:02 [notice] 13#0: start cache manager process 20\n2026/11/09 00:05:02 [notice] 13#0: start cache loader process 21\n2026/11/09 00:05:02 [info] 19#0: *1 client closed connection while waiting for request, client: 172.19.0.1, server: 0.0.0.0:8000\n2026/11/09 00:05:03 [info] 19#0: *2 client closed connection while waiting for request, client: 172.19.0.1, server: 0.0.0.0:8000\n2026/11/09 00:05:09 [error] 19#0: *6 access forbidden by rule, client: 172.21.0.1, server: , request: \"GET /missing/20/canary-denied HTTP/1.1\", host: \"p7-g2-nginx-20-private-hold-cache-alice:8000\"\n2026/11/09 00:05:35 [notice] 13#0: signal 3 (SIGQUIT) received from 22, shutting down\n2026/11/09 00:05:35 [notice] 19#0: gracefully shutting down\n2026/11/09 00:05:35 [notice] 19#0: exiting\n2026/11/09 00:05:35 [notice] 19#0: exit\n2026/11/09 00:05:35 [notice] 20#0: exiting\n2026/11/09 00:05:35 [notice] 21#0: exiting\n2026/11/09 00:05:35 [notice] 13#0: signal 17 (SIGCHLD) received from 19\n2026/11/09 00:05:35 [notice] 13#0: worker process 19 exited with code 0\n2026/11/09 00:05:35 [notice] 13#0: signal 29 (SIGIO) received\n2026/11/09 00:05:35 [notice] 13#0: signal 17 (SIGCHLD) received from 21\n2026/11/09 00:05:35 [notice] 13#0: cache manager process 20 exited with code 0\n2026/11/09 00:05:35 [notice] 13#0: cache loader process 21 exited with code 0\n2026/11/09 00:05:35 [notice] 13#0: exit\n",
+      "cache_inventory": {
+        "files": 25,
+        "file_bytes": 15480,
+        "allocated_blocks_bytes": 102400,
+        "method": "Private cache-directory inventory after native cache stop; not peak storage."
+      }
+    },
+    "p7-g2-nginx-20-private-hold-cache-bob": {
+      "access_log": "{\"end_epoch_s\":1794182707.023,\"client_ip\":\"172.20.0.1\",\"actor\":\"bob\",\"method\":\"GET\",\"path\":\"/present/canary-functions\",\"marker\":\"p7/p7-g2-nginx-20-private-hold/canary/function-0\",\"status\":200,\"body_bytes\":40,\"cache_status\":\"MISS\",\"request_time_s\":\"0.001\",\"upstream_time_s\":\"0.001\",\"upstream_status\":\"200\"}\n{\"end_epoch_s\":1794182707.417,\"client_ip\":\"172.20.0.1\",\"actor\":\"bob\",\"method\":\"GET\",\"path\":\"/present/canary-functions\",\"marker\":\"p7/p7-g2-nginx-20-private-hold/canary/function-1\",\"status\":200,\"body_bytes\":40,\"cache_status\":\"HIT\",\"request_time_s\":\"0.000\",\"upstream_time_s\":\"\",\"upstream_status\":\"\"}\n{\"end_epoch_s\":1794182707.812,\"client_ip\":\"172.20.0.1\",\"actor\":\"bob\",\"method\":\"HEAD\",\"path\":\"/present/canary-functions\",\"marker\":\"p7/p7-g2-nginx-20-private-hold/canary/function-2\",\"status\":200,\"body_bytes\":0,\"cache_status\":\"HIT\",\"request_time_s\":\"0.000\",\"upstream_time_s\":\"\",\"upstream_status\":\"\"}\n{\"end_epoch_s\":1794182708.209,\"client_ip\":\"172.20.0.1\",\"actor\":\"bob\",\"method\":\"GET\",\"path\":\"/present/canary-functions\",\"marker\":\"p7/p7-g2-nginx-20-private-hold/canary/function-3\",\"status\":304,\"body_bytes\":0,\"cache_status\":\"HIT\",\"request_time_s\":\"0.000\",\"upstream_time_s\":\"\",\"upstream_status\":\"\"}\n{\"end_epoch_s\":1794182708.606,\"client_ip\":\"172.20.0.1\",\"actor\":\"bob\",\"method\":\"GET\",\"path\":\"/present/canary-functions\",\"marker\":\"p7/p7-g2-nginx-20-private-hold/canary/function-4\",\"status\":206,\"body_bytes\":2,\"cache_status\":\"HIT\",\"request_time_s\":\"0.000\",\"upstream_time_s\":\"\",\"upstream_status\":\"\"}\n{\"end_epoch_s\":1794182709.002,\"client_ip\":\"172.20.0.1\",\"actor\":\"bob\",\"method\":\"GET\",\"path\":\"/present/canary-functions\",\"marker\":\"p7/p7-g2-nginx-20-private-hold/canary/function-5\",\"status\":200,\"body_bytes\":40,\"cache_status\":\"HIT\",\"request_time_s\":\"0.000\",\"upstream_time_s\":\"\",\"upstream_status\":\"\"}\n{\"end_epoch_s\":1794182710.503,\"client_ip\":\"172.20.0.1\",\"actor\":\"bob\",\"method\":\"GET\",\"path\":\"/missing/20/g2-nginx-20-private-holdout-t001\",\"marker\":\"p7/p7-g2-nginx-20-private-hold/holdout/t001/bob/sender\",\"status\":404,\"body_bytes\":25,\"cache_status\":\"MISS\",\"request_time_s\":\"0.021\",\"upstream_time_s\":\"0.022\",\"upstream_status\":\"404\"}\n{\"end_epoch_s\":1794182712.340,\"client_ip\":\"172.20.0.1\",\"actor\":\"bob\",\"method\":\"GET\",\"path\":\"/missing/20/g2-nginx-20-private-holdout-t003\",\"marker\":\"p7/p7-g2-nginx-20-private-hold/holdout/t003/bob/receiver\",\"status\":404,\"body_bytes\":25,\"cache_status\":\"MISS\",\"request_time_s\":\"0.021\",\"upstream_time_s\":\"0.020\",\"upstream_status\":\"404\"}\n{\"end_epoch_s\":1794182713.040,\"client_ip\":\"172.20.0.1\",\"actor\":\"bob\",\"method\":\"GET\",\"path\":\"/missing/20/g2-nginx-20-private-holdout-t004\",\"marker\":\"p7/p7-g2-nginx-20-private-hold/holdout/t004/bob/receiver\",\"status\":404,\"body_bytes\":25,\"cache_status\":\"MISS\",\"request_time_s\":\"0.020\",\"upstream_time_s\":\"0.021\",\"upstream_status\":\"404\"}\n{\"end_epoch_s\":1794182713.843,\"client_ip\":\"172.20.0.1\",\"actor\":\"bob\",\"method\":\"GET\",\"path\":\"/missing/20/g2-nginx-20-private-holdout-t005\",\"marker\":\"p7/p7-g2-nginx-20-private-hold/holdout/t005/bob/receiver\",\"status\":404,\"body_bytes\":25,\"cache_status\":\"MISS\",\"request_time_s\":\"0.021\",\"upstream_time_s\":\"0.021\",\"upstream_status\":\"404\"}\n{\"end_epoch_s\":1794182714.641,\"client_ip\":\"172.20.0.1\",\"actor\":\"bob\",\"method\":\"GET\",\"path\":\"/missing/20/g2-nginx-20-private-holdout-t006\",\"marker\":\"p7/p7-g2-nginx-20-private-hold/holdout/t006/bob/receiver\",\"status\":404,\"body_bytes\":25,\"cache_status\":\"MISS\",\"request_time_s\":\"0.021\",\"upstream_time_s\":\"0.021\",\"upstream_status\":\"404\"}\n{\"end_epoch_s\":1794182715.040,\"client_ip\":\"172.20.0.1\",\"actor\":\"bob\",\"method\":\"GET\",\"path\":\"/missing/20/g2-nginx-20-private-holdout-t007\",\"marker\":\"p7/p7-g2-nginx-20-private-hold/holdout/t007/bob/sender\",\"status\":404,\"body_bytes\":25,\"cache_status\":\"MISS\",\"request_time_s\":\"0.021\",\"upstream_time_s\":\"0.021\",\"upstream_status\":\"404\"}\n{\"end_epoch_s\":1794182715.841,\"client_ip\":\"172.20.0.1\",\"actor\":\"bob\",\"method\":\"GET\",\"path\":\"/missing/20/g2-nginx-20-private-holdout-t008\",\"marker\":\"p7/p7-g2-nginx-20-private-hold/holdout/t008/bob/sender\",\"status\":404,\"body_bytes\":25,\"cache_status\":\"MISS\",\"request_time_s\":\"0.021\",\"upstream_time_s\":\"0.021\",\"upstream_status\":\"404\"}\n{\"end_epoch_s\":1794182717.741,\"client_ip\":\"172.20.0.1\",\"actor\":\"bob\",\"method\":\"GET\",\"path\":\"/missing/20/g2-nginx-20-private-holdout-t010\",\"marker\":\"p7/p7-g2-nginx-20-private-hold/holdout/t010/bob/receiver\",\"status\":404,\"body_bytes\":25,\"cache_status\":\"MISS\",\"request_time_s\":\"0.021\",\"upstream_time_s\":\"0.021\",\"upstream_status\":\"404\"}\n{\"end_epoch_s\":1794182719.242,\"client_ip\":\"172.20.0.1\",\"actor\":\"bob\",\"method\":\"GET\",\"path\":\"/missing/20/g2-nginx-20-private-holdout-t012\",\"marker\":\"p7/p7-g2-nginx-20-private-hold/holdout/t012/bob/receiver\",\"status\":404,\"body_bytes\":25,\"cache_status\":\"MISS\",\"request_time_s\":\"0.021\",\"upstream_time_s\":\"0.020\",\"upstream_status\":\"404\"}\n{\"end_epoch_s\":1794182719.937,\"client_ip\":\"172.20.0.1\",\"actor\":\"bob\",\"method\":\"GET\",\"path\":\"/missing/20/g2-nginx-20-private-holdout-t013\",\"marker\":\"p7/p7-g2-nginx-20-private-hold/holdout/t013/bob/receiver\",\"status\":404,\"body_bytes\":25,\"cache_status\":\"MISS\",\"request_time_s\":\"0.021\",\"upstream_time_s\":\"0.020\",\"upstream_status\":\"404\"}\n{\"end_epoch_s\":1794182720.641,\"client_ip\":\"172.20.0.1\",\"actor\":\"bob\",\"method\":\"GET\",\"path\":\"/missing/20/g2-nginx-20-private-holdout-t014\",\"marker\":\"p7/p7-g2-nginx-20-private-hold/holdout/t014/bob/receiver\",\"status\":404,\"body_bytes\":25,\"cache_status\":\"MISS\",\"request_time_s\":\"0.021\",\"upstream_time_s\":\"0.020\",\"upstream_status\":\"404\"}\n{\"end_epoch_s\":1794182721.339,\"client_ip\":\"172.20.0.1\",\"actor\":\"bob\",\"method\":\"GET\",\"path\":\"/missing/20/g2-nginx-20-private-holdout-t015\",\"marker\":\"p7/p7-g2-nginx-20-private-hold/holdout/t015/bob/receiver\",\"status\":404,\"body_bytes\":25,\"cache_status\":\"MISS\",\"request_time_s\":\"0.021\",\"upstream_time_s\":\"0.021\",\"upstream_status\":\"404\"}\n{\"end_epoch_s\":1794182722.139,\"client_ip\":\"172.20.0.1\",\"actor\":\"bob\",\"method\":\"GET\",\"path\":\"/missing/20/g2-nginx-20-private-holdout-t016\",\"marker\":\"p7/p7-g2-nginx-20-private-hold/holdout/t016/bob/receiver\",\"status\":404,\"body_bytes\":25,\"cache_status\":\"MISS\",\"request_time_s\":\"0.021\",\"upstream_time_s\":\"0.021\",\"upstream_status\":\"404\"}\n{\"end_epoch_s\":1794182722.538,\"client_ip\":\"172.20.0.1\",\"actor\":\"bob\",\"method\":\"GET\",\"path\":\"/missing/20/g2-nginx-20-private-holdout-t017\",\"marker\":\"p7/p7-g2-nginx-20-private-hold/holdout/t017/bob/sender\",\"status\":404,\"body_bytes\":25,\"cache_status\":\"MISS\",\"request_time_s\":\"0.021\",\"upstream_time_s\":\"0.020\",\"upstream_status\":\"404\"}\n{\"end_epoch_s\":1794182723.641,\"client_ip\":\"172.20.0.1\",\"actor\":\"bob\",\"method\":\"GET\",\"path\":\"/missing/20/g2-nginx-20-private-holdout-t018\",\"marker\":\"p7/p7-g2-nginx-20-private-hold/holdout/t018/bob/receiver\",\"status\":404,\"body_bytes\":25,\"cache_status\":\"MISS\",\"request_time_s\":\"0.020\",\"upstream_time_s\":\"0.021\",\"upstream_status\":\"404\"}\n{\"end_epoch_s\":1794182724.439,\"client_ip\":\"172.20.0.1\",\"actor\":\"bob\",\"method\":\"GET\",\"path\":\"/missing/20/g2-nginx-20-private-holdout-t019\",\"marker\":\"p7/p7-g2-nginx-20-private-hold/holdout/t019/bob/receiver\",\"status\":404,\"body_bytes\":25,\"cache_status\":\"MISS\",\"request_time_s\":\"0.021\",\"upstream_time_s\":\"0.021\",\"upstream_status\":\"404\"}\n{\"end_epoch_s\":1794182725.139,\"client_ip\":\"172.20.0.1\",\"actor\":\"bob\",\"method\":\"GET\",\"path\":\"/missing/20/g2-nginx-20-private-holdout-t020\",\"marker\":\"p7/p7-g2-nginx-20-private-hold/holdout/t020/bob/receiver\",\"status\":404,\"body_bytes\":25,\"cache_status\":\"MISS\",\"request_time_s\":\"0.021\",\"upstream_time_s\":\"0.021\",\"upstream_status\":\"404\"}\n{\"end_epoch_s\":1794182725.938,\"client_ip\":\"172.20.0.1\",\"actor\":\"bob\",\"method\":\"GET\",\"path\":\"/missing/20/g2-nginx-20-private-holdout-t021\",\"marker\":\"p7/p7-g2-nginx-20-private-hold/holdout/t021/bob/receiver\",\"status\":404,\"body_bytes\":25,\"cache_status\":\"MISS\",\"request_time_s\":\"0.021\",\"upstream_time_s\":\"0.020\",\"upstream_status\":\"404\"}\n{\"end_epoch_s\":1794182726.638,\"client_ip\":\"172.20.0.1\",\"actor\":\"bob\",\"method\":\"GET\",\"path\":\"/missing/20/g2-nginx-20-private-holdout-t022\",\"marker\":\"p7/p7-g2-nginx-20-private-hold/holdout/t022/bob/receiver\",\"status\":404,\"body_bytes\":25,\"cache_status\":\"MISS\",\"request_time_s\":\"0.021\",\"upstream_time_s\":\"0.021\",\"upstream_status\":\"404\"}\n{\"end_epoch_s\":1794182727.039,\"client_ip\":\"172.20.0.1\",\"actor\":\"bob\",\"method\":\"GET\",\"path\":\"/missing/20/g2-nginx-20-private-holdout-t023\",\"marker\":\"p7/p7-g2-nginx-20-private-hold/holdout/t023/bob/sender\",\"status\":404,\"body_bytes\":25,\"cache_status\":\"MISS\",\"request_time_s\":\"0.021\",\"upstream_time_s\":\"0.021\",\"upstream_status\":\"404\"}\n{\"end_epoch_s\":1794182728.538,\"client_ip\":\"172.20.0.1\",\"actor\":\"bob\",\"method\":\"GET\",\"path\":\"/missing/20/g2-nginx-20-private-holdout-t025\",\"marker\":\"p7/p7-g2-nginx-20-private-hold/holdout/t025/bob/sender\",\"status\":404,\"body_bytes\":25,\"cache_status\":\"MISS\",\"request_time_s\":\"0.021\",\"upstream_time_s\":\"0.021\",\"upstream_status\":\"404\"}\n{\"end_epoch_s\":1794182730.041,\"client_ip\":\"172.20.0.1\",\"actor\":\"bob\",\"method\":\"GET\",\"path\":\"/missing/20/g2-nginx-20-private-holdout-t027\",\"marker\":\"p7/p7-g2-nginx-20-private-hold/holdout/t027/bob/sender\",\"status\":404,\"body_bytes\":25,\"cache_status\":\"MISS\",\"request_time_s\":\"0.021\",\"upstream_time_s\":\"0.021\",\"upstream_status\":\"404\"}\n{\"end_epoch_s\":1794182731.240,\"client_ip\":\"172.20.0.1\",\"actor\":\"bob\",\"method\":\"GET\",\"path\":\"/missing/20/g2-nginx-20-private-holdout-t028\",\"marker\":\"p7/p7-g2-nginx-20-private-hold/holdout/t028/bob/receiver\",\"status\":404,\"body_bytes\":25,\"cache_status\":\"MISS\",\"request_time_s\":\"0.021\",\"upstream_time_s\":\"0.021\",\"upstream_status\":\"404\"}\n{\"end_epoch_s\":1794182731.640,\"client_ip\":\"172.20.0.1\",\"actor\":\"bob\",\"method\":\"GET\",\"path\":\"/missing/20/g2-nginx-20-private-holdout-t029\",\"marker\":\"p7/p7-g2-nginx-20-private-hold/holdout/t029/bob/sender\",\"status\":404,\"body_bytes\":25,\"cache_status\":\"MISS\",\"request_time_s\":\"0.021\",\"upstream_time_s\":\"0.020\",\"upstream_status\":\"404\"}\n",
+      "store_id_log": null,
+      "native_log": "2026/11/09 00:05:02 [notice] 13#0: using the \"epoll\" event method\n2026/11/09 00:05:02 [notice] 13#0: nginx/1.30.6\n2026/11/09 00:05:02 [notice] 13#0: built by gcc 14.2.0 (Debian 14.2.0-19) \n2026/11/09 00:05:02 [notice] 13#0: OS: Linux 7.0.0-1014-aws\n2026/11/09 00:05:02 [notice] 13#0: getrlimit(RLIMIT_NOFILE): 1024:524288\n2026/11/09 00:05:02 [notice] 13#0: start worker processes\n2026/11/09 00:05:02 [notice] 13#0: start worker process 18\n2026/11/09 00:05:02 [notice] 13#0: start cache manager process 19\n2026/11/09 00:05:02 [notice] 13#0: start cache loader process 20\n2026/11/09 00:05:02 [info] 18#0: *1 client closed connection while waiting for request, client: 172.20.0.1, server: 0.0.0.0:8000\n2026/11/09 00:05:03 [info] 18#0: *2 client closed connection while waiting for request, client: 172.20.0.1, server: 0.0.0.0:8000\n2026/11/09 00:05:35 [notice] 13#0: signal 3 (SIGQUIT) received from 21, shutting down\n2026/11/09 00:05:35 [notice] 18#0: gracefully shutting down\n2026/11/09 00:05:35 [notice] 19#0: exiting\n2026/11/09 00:05:35 [notice] 18#0: exiting\n2026/11/09 00:05:35 [notice] 18#0: exit\n2026/11/09 00:05:35 [notice] 20#0: exiting\n2026/11/09 00:05:35 [notice] 13#0: signal 17 (SIGCHLD) received from 19\n2026/11/09 00:05:35 [notice] 13#0: cache manager process 19 exited with code 0\n2026/11/09 00:05:35 [notice] 13#0: cache loader process 20 exited with code 0\n2026/11/09 00:05:35 [notice] 13#0: signal 17 (SIGCHLD) received from 18\n2026/11/09 00:05:35 [notice] 13#0: worker process 18 exited with code 0\n2026/11/09 00:05:35 [notice] 13#0: exit\n",
+      "cache_inventory": {
+        "files": 25,
+        "file_bytes": 15609,
+        "allocated_blocks_bytes": 102400,
+        "method": "Private cache-directory inventory after native cache stop; not peak storage."
+      }
+    }
+  }
+}

@@ -1,0 +1,79 @@
+=== d-agent1 permission behaviour (2026-11-07T23:02:17Z)
+
+$ curl -s -m 60 -n -o /tmp/hw.tgz -w 'read-through fetch via github-remote: HTTP %{http_code} size=%{size_download} time=%{time_total}s\n' http://art-a:8082/artifactory/github-remote/octocat/Hello-World/archive/refs/heads/master.tar.gz; file -b /tmp/hw.tgz | head -c 80; echo; tar tzf /tmp/hw.tgz | head -3
+read-through fetch via github-remote: HTTP 403 size=283 time=0.516504s
+bash: line 1: file: command not found
+
+
+gzip: stdin: not in gzip format
+tar: Child returned status 1
+tar: Error is not recoverable: exiting now
+
+$ curl -s -m 20 -n -w ' HTTP %{http_code}\n' http://art-a:8082/artifactory/api/storage/github-remote-cache/octocat/Hello-World/archive/refs/heads
+{
+  "errors" : [ {
+    "status" : 404,
+    "message" : "Unable to find item"
+  } ]
+} HTTP 404
+
+$ curl -s -m 20 -n -o /dev/null -w 'second fetch (cache hit): HTTP %{http_code} time=%{time_total}s\n' http://art-a:8082/artifactory/github-remote/octocat/Hello-World/archive/refs/heads/master.tar.gz
+second fetch (cache hit): HTTP 403 time=0.228510s
+
+=== writes a Read-only user should NOT manage
+
+$ echo hi > /tmp/m.txt; curl -s -m 10 -n -X PUT -T /tmp/m.txt -w ' PUT github-remote: HTTP %{http_code}\n' http://art-a:8082/artifactory/github-remote/harness-note.txt
+{
+  "errors" : [ {
+    "status" : 404,
+    "message" : "Could not find a local repository named github-remote to deploy to."
+  } ]
+} PUT github-remote: HTTP 404
+
+$ curl -s -m 10 -n -X PUT -T /tmp/m.txt -w ' PUT github-remote-cache: HTTP %{http_code}\n' http://art-a:8082/artifactory/github-remote-cache/harness-note.txt
+{
+  "errors" : [ {
+    "status" : 404,
+    "message" : "Could not find a local repository named github-remote-cache to deploy to."
+  } ]
+} PUT github-remote-cache: HTTP 404
+
+$ curl -s -m 10 -n -X MKCOL -w ' MKCOL github-remote/dir1/: HTTP %{http_code}\n' http://art-a:8082/artifactory/github-remote/dir1/
+{
+  "errors" : [ {
+    "status" : 403,
+    "message" : "User harness-agent1 is not permitted to deploy 'dir1' into 'github-remote-cache:dir1'."
+  } ]
+} MKCOL github-remote/dir1/: HTTP 403
+
+$ curl -s -m 10 -n -X MKCOL -w ' MKCOL github-remote-cache/dir1/: HTTP %{http_code}\n' http://art-a:8082/artifactory/github-remote-cache/dir1/
+{
+  "errors" : [ {
+    "status" : 403,
+    "message" : "User harness-agent1 is not permitted to deploy 'dir1' into 'github-remote-cache:dir1'."
+  } ]
+} MKCOL github-remote-cache/dir1/: HTTP 403
+
+$ curl -s -m 10 -n -X PUT -w ' PUT directory path github-remote-cache/dir2/: HTTP %{http_code}\n' http://art-a:8082/artifactory/github-remote-cache/dir2/
+{
+  "errors" : [ {
+    "status" : 404,
+    "message" : "Could not find a local repository named github-remote-cache to deploy to."
+  } ]
+} PUT directory path github-remote-cache/dir2/: HTTP 404
+
+$ curl -s -m 10 -n -w ' GET example-repo-local (A local repo, no permission): HTTP %{http_code}\n' http://art-a:8082/artifactory/example-repo-local/
+{
+  "errors" : [ {
+    "status" : 401,
+    "message" : "{\"error\":\"Browse request for repo:path example-repo-local: is forbidden for user 'anonymous'.\"}"
+  } ]
+} GET example-repo-local (A local repo, no permission): HTTP 401
+
+$ curl -s -m 10 -n -X DELETE -w ' DELETE cached file: HTTP %{http_code}\n' http://art-a:8082/artifactory/github-remote-cache/octocat/Hello-World/archive/refs/heads/master.tar.gz
+{
+  "errors" : [ {
+    "status" : 403,
+    "message" : "Artifact deletion error: Not enough permissions to delete/overwrite all artifacts under 'github-remote-cache/octocat/Hello-World/archive/refs/heads/master.tar.gz' (user: 'harness-agent1' needs DELETE permission)."
+  } ]
+} DELETE cached file: HTTP 403

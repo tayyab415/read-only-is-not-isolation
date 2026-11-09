@@ -1,0 +1,2458 @@
+{
+  "source_freeze_sha256": "e29bc3a73fb81cce237872d1cc61d771109b4a6ae424d70b8fe0cd1e70e84f5a",
+  "model_freeze_sha256": "7816def9ab488d6057bf5323d47d7c4f155a0f2f706aa8db7befb0a9b2fc247d",
+  "audit_sha256": "913fc34700cff4e8ea95b4d180c783d9382839772fa802f6f22ed0b0385c93f5",
+  "results": [
+    {
+      "product": "nginx",
+      "delay_ms": 20,
+      "arm": "shared",
+      "split": "holdout",
+      "trials": 32,
+      "correct": 31,
+      "accuracy": 0.96875,
+      "wilson95_accuracy": [
+        0.8425573617998744,
+        0.9944621398359969
+      ],
+      "confusion_true_then_prediction": {
+        "00": 16,
+        "01": 0,
+        "10": 1,
+        "11": 15
+      },
+      "one_sided_blocked_randomization_p": 5.4335718671383004e-08,
+      "idle_receiver_median_ms": 29.236731,
+      "active_label_receiver_median_ms": 8.188526,
+      "controller_http_requests": 57,
+      "origin_http_requests": 34,
+      "total_http_requests": 91,
+      "resource_snapshots": {
+        "resource_before": {
+          "utc_ns": 1794182669428592233,
+          "method": "Docker CLI usage snapshots, not peak memory or process RSS",
+          "records": [
+            {
+              "Name": "p7-g2-nginx-20-shared-hold-alice",
+              "MemUsage": "4.289MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "1",
+              "NetIO": "1.49kB / 712B",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-nginx-20-shared-hold-bob",
+              "MemUsage": "4.375MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "1",
+              "NetIO": "1.4kB / 440B",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-nginx-20-shared-hold-origin",
+              "MemUsage": "14.24MiB / 128MiB",
+              "CPUPerc": "0.01%",
+              "PIDs": "1",
+              "NetIO": "1.22kB / 126B",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-nginx-20-shared-hold-cache",
+              "MemUsage": "5.805MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "5",
+              "NetIO": "3.41kB / 882B",
+              "BlockIO": "0B / 0B"
+            }
+          ]
+        },
+        "resource_after_live": {
+          "utc_ns": 1794182699296602128,
+          "method": "Docker CLI usage snapshots, not peak memory or process RSS",
+          "records": [
+            {
+              "Name": "p7-g2-nginx-20-shared-hold-alice",
+              "MemUsage": "5.254MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "1",
+              "NetIO": "15.4kB / 15.2kB",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-nginx-20-shared-hold-bob",
+              "MemUsage": "5.891MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "1",
+              "NetIO": "18.2kB / 17.1kB",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-nginx-20-shared-hold-origin",
+              "MemUsage": "14.3MiB / 128MiB",
+              "CPUPerc": "0.01%",
+              "PIDs": "1",
+              "NetIO": "23.3kB / 20.9kB",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-nginx-20-shared-hold-cache",
+              "MemUsage": "6.32MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "5",
+              "NetIO": "56kB / 53kB",
+              "BlockIO": "0B / 0B"
+            }
+          ]
+        }
+      },
+      "cache_directory_inventories": {
+        "p7-g2-nginx-20-shared-hold-cache": {
+          "files": 34,
+          "file_bytes": 21103,
+          "allocated_blocks_bytes": 139264,
+          "method": "Private cache-directory inventory after native cache stop; not peak storage."
+        }
+      },
+      "cache_image_logical_size_bytes": 76122635,
+      "body_bytes_to_clients": 1525,
+      "body_bytes_from_origin": 865,
+      "application_cache_cause_audited": true,
+      "model_sha256": "6ead66e300f08552ba8ee5ea6fda5e0d74e5d551143bfced78834a7eee5aa7eb",
+      "primary_holm_p": 1.0867143734276601e-07,
+      "shared_timing_decoder_confirmed": true
+    },
+    {
+      "product": "nginx",
+      "delay_ms": 20,
+      "arm": "tenant-keyed",
+      "split": "holdout",
+      "trials": 32,
+      "correct": 16,
+      "accuracy": 0.5,
+      "wilson95_accuracy": [
+        0.33630882869327483,
+        0.6636911713067252
+      ],
+      "confusion_true_then_prediction": {
+        "00": 16,
+        "01": 0,
+        "10": 16,
+        "11": 0
+      },
+      "one_sided_blocked_randomization_p": 1.0,
+      "idle_receiver_median_ms": 29.271558499999998,
+      "active_label_receiver_median_ms": 29.1708635,
+      "controller_http_requests": 57,
+      "origin_http_requests": 50,
+      "total_http_requests": 107,
+      "resource_snapshots": {
+        "resource_before": {
+          "utc_ns": 1794182573707110210,
+          "method": "Docker CLI usage snapshots, not peak memory or process RSS",
+          "records": [
+            {
+              "Name": "p7-g2-nginx-20-tenant-keyed-hold-alice",
+              "MemUsage": "4.543MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "1",
+              "NetIO": "1.49kB / 712B",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-nginx-20-tenant-keyed-hold-bob",
+              "MemUsage": "4.383MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "1",
+              "NetIO": "1.35kB / 440B",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-nginx-20-tenant-keyed-hold-origin",
+              "MemUsage": "14.23MiB / 128MiB",
+              "CPUPerc": "0.01%",
+              "PIDs": "1",
+              "NetIO": "1.17kB / 126B",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-nginx-20-tenant-keyed-hold-cache",
+              "MemUsage": "5.781MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "5",
+              "NetIO": "3.78kB / 882B",
+              "BlockIO": "0B / 0B"
+            }
+          ]
+        },
+        "resource_after_live": {
+          "utc_ns": 1794182603698987299,
+          "method": "Docker CLI usage snapshots, not peak memory or process RSS",
+          "records": [
+            {
+              "Name": "p7-g2-nginx-20-tenant-keyed-hold-alice",
+              "MemUsage": "5.484MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "1",
+              "NetIO": "15.4kB / 15.6kB",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-nginx-20-tenant-keyed-hold-bob",
+              "MemUsage": "6.027MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "1",
+              "NetIO": "18.1kB / 17.6kB",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-nginx-20-tenant-keyed-hold-origin",
+              "MemUsage": "14.35MiB / 128MiB",
+              "CPUPerc": "0.01%",
+              "PIDs": "1",
+              "NetIO": "34.2kB / 30.3kB",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-nginx-20-tenant-keyed-hold-cache",
+              "MemUsage": "6.391MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "5",
+              "NetIO": "66.6kB / 64kB",
+              "BlockIO": "0B / 0B"
+            }
+          ]
+        }
+      },
+      "cache_directory_inventories": {
+        "p7-g2-nginx-20-tenant-keyed-hold-cache": {
+          "files": 50,
+          "file_bytes": 31829,
+          "allocated_blocks_bytes": 204800,
+          "method": "Private cache-directory inventory after native cache stop; not peak storage."
+        }
+      },
+      "cache_image_logical_size_bytes": 76122635,
+      "body_bytes_to_clients": 1525,
+      "body_bytes_from_origin": 1265,
+      "application_cache_cause_audited": true,
+      "model_sha256": "6ead66e300f08552ba8ee5ea6fda5e0d74e5d551143bfced78834a7eee5aa7eb"
+    },
+    {
+      "product": "nginx",
+      "delay_ms": 20,
+      "arm": "private",
+      "split": "holdout",
+      "trials": 32,
+      "correct": 16,
+      "accuracy": 0.5,
+      "wilson95_accuracy": [
+        0.33630882869327483,
+        0.6636911713067252
+      ],
+      "confusion_true_then_prediction": {
+        "00": 16,
+        "01": 0,
+        "10": 16,
+        "11": 0
+      },
+      "one_sided_blocked_randomization_p": 1.0,
+      "idle_receiver_median_ms": 29.104927500000002,
+      "active_label_receiver_median_ms": 29.3929285,
+      "controller_http_requests": 57,
+      "origin_http_requests": 50,
+      "total_http_requests": 107,
+      "resource_snapshots": {
+        "resource_before": {
+          "utc_ns": 1794182705914460891,
+          "method": "Docker CLI usage snapshots, not peak memory or process RSS",
+          "records": [
+            {
+              "Name": "p7-g2-nginx-20-private-hold-alice",
+              "MemUsage": "4.285MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "1",
+              "NetIO": "1.54kB / 712B",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-nginx-20-private-hold-bob",
+              "MemUsage": "4.305MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "1",
+              "NetIO": "1.54kB / 712B",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-nginx-20-private-hold-origin",
+              "MemUsage": "14.23MiB / 128MiB",
+              "CPUPerc": "0.01%",
+              "PIDs": "1",
+              "NetIO": "1.29kB / 126B",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-nginx-20-private-hold-cache-alice",
+              "MemUsage": "5.777MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "5",
+              "NetIO": "2.55kB / 574B",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-nginx-20-private-hold-cache-bob",
+              "MemUsage": "5.773MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "5",
+              "NetIO": "2.4kB / 574B",
+              "BlockIO": "0B / 0B"
+            }
+          ]
+        },
+        "resource_after_live": {
+          "utc_ns": 1794182735527594735,
+          "method": "Docker CLI usage snapshots, not peak memory or process RSS",
+          "records": [
+            {
+              "Name": "p7-g2-nginx-20-private-hold-alice",
+              "MemUsage": "5.508MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "1",
+              "NetIO": "15.5kB / 15.4kB",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-nginx-20-private-hold-bob",
+              "MemUsage": "5.375MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "1",
+              "NetIO": "18.3kB / 17.6kB",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-nginx-20-private-hold-origin",
+              "MemUsage": "14.54MiB / 128MiB",
+              "CPUPerc": "0.01%",
+              "PIDs": "1",
+              "NetIO": "33.7kB / 30.3kB",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-nginx-20-private-hold-cache-alice",
+              "MemUsage": "6.469MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "5",
+              "NetIO": "33kB / 30.7kB",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-nginx-20-private-hold-cache-bob",
+              "MemUsage": "5.977MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "5",
+              "NetIO": "34.6kB / 32.8kB",
+              "BlockIO": "0B / 0B"
+            }
+          ]
+        }
+      },
+      "cache_directory_inventories": {
+        "p7-g2-nginx-20-private-hold-cache-alice": {
+          "files": 25,
+          "file_bytes": 15480,
+          "allocated_blocks_bytes": 102400,
+          "method": "Private cache-directory inventory after native cache stop; not peak storage."
+        },
+        "p7-g2-nginx-20-private-hold-cache-bob": {
+          "files": 25,
+          "file_bytes": 15609,
+          "allocated_blocks_bytes": 102400,
+          "method": "Private cache-directory inventory after native cache stop; not peak storage."
+        }
+      },
+      "cache_image_logical_size_bytes": 76122635,
+      "body_bytes_to_clients": 1525,
+      "body_bytes_from_origin": 1265,
+      "application_cache_cause_audited": true,
+      "model_sha256": "6ead66e300f08552ba8ee5ea6fda5e0d74e5d551143bfced78834a7eee5aa7eb"
+    },
+    {
+      "product": "nginx",
+      "delay_ms": 20,
+      "arm": "disabled",
+      "split": "holdout",
+      "trials": 32,
+      "correct": 16,
+      "accuracy": 0.5,
+      "wilson95_accuracy": [
+        0.33630882869327483,
+        0.6636911713067252
+      ],
+      "confusion_true_then_prediction": {
+        "00": 16,
+        "01": 0,
+        "10": 16,
+        "11": 0
+      },
+      "one_sided_blocked_randomization_p": 1.0,
+      "idle_receiver_median_ms": 29.0828055,
+      "active_label_receiver_median_ms": 29.179293,
+      "controller_http_requests": 57,
+      "origin_http_requests": 56,
+      "total_http_requests": 113,
+      "resource_snapshots": {
+        "resource_before": {
+          "utc_ns": 1794182633461099251,
+          "method": "Docker CLI usage snapshots, not peak memory or process RSS",
+          "records": [
+            {
+              "Name": "p7-g2-nginx-20-disabled-hold-alice",
+              "MemUsage": "4.293MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "1",
+              "NetIO": "1.54kB / 712B",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-nginx-20-disabled-hold-bob",
+              "MemUsage": "4.297MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "1",
+              "NetIO": "1.47kB / 440B",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-nginx-20-disabled-hold-origin",
+              "MemUsage": "14.23MiB / 128MiB",
+              "CPUPerc": "0.01%",
+              "PIDs": "1",
+              "NetIO": "1.22kB / 126B",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-nginx-20-disabled-hold-cache",
+              "MemUsage": "6.016MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "5",
+              "NetIO": "3.78kB / 948B",
+              "BlockIO": "0B / 0B"
+            }
+          ]
+        },
+        "resource_after_live": {
+          "utc_ns": 1794182663159047166,
+          "method": "Docker CLI usage snapshots, not peak memory or process RSS",
+          "records": [
+            {
+              "Name": "p7-g2-nginx-20-disabled-hold-alice",
+              "MemUsage": "5.508MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "1",
+              "NetIO": "15.5kB / 15.3kB",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-nginx-20-disabled-hold-bob",
+              "MemUsage": "5.734MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "1",
+              "NetIO": "18.3kB / 17.3kB",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-nginx-20-disabled-hold-origin",
+              "MemUsage": "14.75MiB / 128MiB",
+              "CPUPerc": "0.01%",
+              "PIDs": "1",
+              "NetIO": "41kB / 30.7kB",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-nginx-20-disabled-hold-cache",
+              "MemUsage": "6.09MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "5",
+              "NetIO": "66.4kB / 70.8kB",
+              "BlockIO": "0B / 0B"
+            }
+          ]
+        }
+      },
+      "cache_directory_inventories": {
+        "p7-g2-nginx-20-disabled-hold-cache": {
+          "files": 0,
+          "file_bytes": 0,
+          "allocated_blocks_bytes": 0,
+          "method": "Private cache-directory inventory after native cache stop; not peak storage."
+        }
+      },
+      "cache_image_logical_size_bytes": 76122635,
+      "body_bytes_to_clients": 1565,
+      "body_bytes_from_origin": 1450,
+      "application_cache_cause_audited": true,
+      "model_sha256": "6ead66e300f08552ba8ee5ea6fda5e0d74e5d551143bfced78834a7eee5aa7eb"
+    },
+    {
+      "product": "nginx",
+      "delay_ms": 20,
+      "arm": "no-sender",
+      "split": "holdout",
+      "trials": 16,
+      "correct": 8,
+      "accuracy": 0.5,
+      "wilson95_accuracy": [
+        0.27999563610326017,
+        0.7200043638967398
+      ],
+      "confusion_true_then_prediction": {
+        "00": 8,
+        "01": 0,
+        "10": 8,
+        "11": 0
+      },
+      "one_sided_blocked_randomization_p": 1.0,
+      "idle_receiver_median_ms": 29.187827,
+      "active_label_receiver_median_ms": 29.1800925,
+      "controller_http_requests": 25,
+      "origin_http_requests": 18,
+      "total_http_requests": 43,
+      "resource_snapshots": {
+        "resource_before": {
+          "utc_ns": 1794182609914770871,
+          "method": "Docker CLI usage snapshots, not peak memory or process RSS",
+          "records": [
+            {
+              "Name": "p7-g2-nginx-20-no-sender-hold-alice",
+              "MemUsage": "4.285MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "1",
+              "NetIO": "1.54kB / 712B",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-nginx-20-no-sender-hold-bob",
+              "MemUsage": "4.293MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "1",
+              "NetIO": "1.35kB / 440B",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-nginx-20-no-sender-hold-origin",
+              "MemUsage": "14.23MiB / 128MiB",
+              "CPUPerc": "0.01%",
+              "PIDs": "1",
+              "NetIO": "1.17kB / 126B",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-nginx-20-no-sender-hold-cache",
+              "MemUsage": "5.785MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "5",
+              "NetIO": "3.58kB / 882B",
+              "BlockIO": "0B / 0B"
+            }
+          ]
+        },
+        "resource_after_live": {
+          "utc_ns": 1794182627216397763,
+          "method": "Docker CLI usage snapshots, not peak memory or process RSS",
+          "records": [
+            {
+              "Name": "p7-g2-nginx-20-no-sender-hold-alice",
+              "MemUsage": "5.031MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "1",
+              "NetIO": "6.95kB / 6.33kB",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-nginx-20-no-sender-hold-bob",
+              "MemUsage": "5.625MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "1",
+              "NetIO": "9.6kB / 8.31kB",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-nginx-20-no-sender-hold-origin",
+              "MemUsage": "14.5MiB / 128MiB",
+              "CPUPerc": "0.01%",
+              "PIDs": "1",
+              "NetIO": "13.4kB / 11.4kB",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-nginx-20-no-sender-hold-cache",
+              "MemUsage": "5.949MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "5",
+              "NetIO": "28.9kB / 26.3kB",
+              "BlockIO": "0B / 0B"
+            }
+          ]
+        }
+      },
+      "cache_directory_inventories": {
+        "p7-g2-nginx-20-no-sender-hold-cache": {
+          "files": 18,
+          "file_bytes": 11317,
+          "allocated_blocks_bytes": 73728,
+          "method": "Private cache-directory inventory after native cache stop; not peak storage."
+        }
+      },
+      "cache_image_logical_size_bytes": 76122635,
+      "body_bytes_to_clients": 725,
+      "body_bytes_from_origin": 465,
+      "application_cache_cause_audited": true,
+      "model_sha256": "6ead66e300f08552ba8ee5ea6fda5e0d74e5d551143bfced78834a7eee5aa7eb",
+      "no_sender_false_positive_count": 0,
+      "no_sender_false_positive_fraction": 0.0,
+      "no_sender_false_positive_wilson95": [
+        0.0,
+        0.1936076805344365
+      ]
+    },
+    {
+      "product": "nginx",
+      "delay_ms": 150,
+      "arm": "shared",
+      "split": "holdout",
+      "trials": 32,
+      "correct": 32,
+      "accuracy": 1.0,
+      "wilson95_accuracy": [
+        0.8928208017449293,
+        1.0
+      ],
+      "confusion_true_then_prediction": {
+        "00": 16,
+        "01": 0,
+        "10": 0,
+        "11": 16
+      },
+      "one_sided_blocked_randomization_p": 6.037302074598112e-09,
+      "idle_receiver_median_ms": 159.4325935,
+      "active_label_receiver_median_ms": 8.178536999999999,
+      "controller_http_requests": 57,
+      "origin_http_requests": 34,
+      "total_http_requests": 91,
+      "resource_snapshots": {
+        "resource_before": {
+          "utc_ns": 1794182785514111493,
+          "method": "Docker CLI usage snapshots, not peak memory or process RSS",
+          "records": [
+            {
+              "Name": "p7-g2-nginx-150-shared-hold-alice",
+              "MemUsage": "4.285MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "1",
+              "NetIO": "1.49kB / 712B",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-nginx-150-shared-hold-bob",
+              "MemUsage": "4.434MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "1",
+              "NetIO": "1.4kB / 440B",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-nginx-150-shared-hold-origin",
+              "MemUsage": "14.23MiB / 128MiB",
+              "CPUPerc": "0.01%",
+              "PIDs": "1",
+              "NetIO": "1.17kB / 126B",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-nginx-150-shared-hold-cache",
+              "MemUsage": "5.773MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "5",
+              "NetIO": "3.64kB / 882B",
+              "BlockIO": "0B / 0B"
+            }
+          ]
+        },
+        "resource_after_live": {
+          "utc_ns": 1794182819132188181,
+          "method": "Docker CLI usage snapshots, not peak memory or process RSS",
+          "records": [
+            {
+              "Name": "p7-g2-nginx-150-shared-hold-alice",
+              "MemUsage": "5.426MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "1",
+              "NetIO": "15.4kB / 15.3kB",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-nginx-150-shared-hold-bob",
+              "MemUsage": "5.871MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "1",
+              "NetIO": "18.2kB / 17.2kB",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-nginx-150-shared-hold-origin",
+              "MemUsage": "14.3MiB / 128MiB",
+              "CPUPerc": "0.01%",
+              "PIDs": "1",
+              "NetIO": "23.4kB / 20.9kB",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-nginx-150-shared-hold-cache",
+              "MemUsage": "6.281MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "5",
+              "NetIO": "56.6kB / 53.1kB",
+              "BlockIO": "0B / 0B"
+            }
+          ]
+        }
+      },
+      "cache_directory_inventories": {
+        "p7-g2-nginx-150-shared-hold-cache": {
+          "files": 34,
+          "file_bytes": 21202,
+          "allocated_blocks_bytes": 139264,
+          "method": "Private cache-directory inventory after native cache stop; not peak storage."
+        }
+      },
+      "cache_image_logical_size_bytes": 76122635,
+      "body_bytes_to_clients": 1525,
+      "body_bytes_from_origin": 865,
+      "application_cache_cause_audited": true,
+      "model_sha256": "10e0833db973f1495576c34eee1ae024ed18f8288b70cde0b632874792451ab3",
+      "primary_holm_p": 2.414920829839245e-08,
+      "shared_timing_decoder_confirmed": true
+    },
+    {
+      "product": "nginx",
+      "delay_ms": 150,
+      "arm": "tenant-keyed",
+      "split": "holdout",
+      "trials": 32,
+      "correct": 16,
+      "accuracy": 0.5,
+      "wilson95_accuracy": [
+        0.33630882869327483,
+        0.6636911713067252
+      ],
+      "confusion_true_then_prediction": {
+        "00": 16,
+        "01": 0,
+        "10": 16,
+        "11": 0
+      },
+      "one_sided_blocked_randomization_p": 1.0,
+      "idle_receiver_median_ms": 159.4029615,
+      "active_label_receiver_median_ms": 159.54424749999998,
+      "controller_http_requests": 57,
+      "origin_http_requests": 50,
+      "total_http_requests": 107,
+      "resource_snapshots": {
+        "resource_before": {
+          "utc_ns": 1794182893662387705,
+          "method": "Docker CLI usage snapshots, not peak memory or process RSS",
+          "records": [
+            {
+              "Name": "p7-g2-nginx-150-tenant-keyed-hold-alice",
+              "MemUsage": "4.293MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "1",
+              "NetIO": "1.56kB / 712B",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-nginx-150-tenant-keyed-hold-bob",
+              "MemUsage": "4.402MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "1",
+              "NetIO": "1.4kB / 440B",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-nginx-150-tenant-keyed-hold-origin",
+              "MemUsage": "14.24MiB / 128MiB",
+              "CPUPerc": "0.01%",
+              "PIDs": "1",
+              "NetIO": "1.22kB / 126B",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-nginx-150-tenant-keyed-hold-cache",
+              "MemUsage": "5.789MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "5",
+              "NetIO": "3.83kB / 948B",
+              "BlockIO": "0B / 0B"
+            }
+          ]
+        },
+        "resource_after_live": {
+          "utc_ns": 1794182929691928435,
+          "method": "Docker CLI usage snapshots, not peak memory or process RSS",
+          "records": [
+            {
+              "Name": "p7-g2-nginx-150-tenant-keyed-hold-alice",
+              "MemUsage": "5.602MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "1",
+              "NetIO": "15.5kB / 15.8kB",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-nginx-150-tenant-keyed-hold-bob",
+              "MemUsage": "5.941MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "1",
+              "NetIO": "18.2kB / 17.7kB",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-nginx-150-tenant-keyed-hold-origin",
+              "MemUsage": "14.56MiB / 128MiB",
+              "CPUPerc": "0.01%",
+              "PIDs": "1",
+              "NetIO": "34.4kB / 30.3kB",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-nginx-150-tenant-keyed-hold-cache",
+              "MemUsage": "6.383MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "5",
+              "NetIO": "67kB / 64.2kB",
+              "BlockIO": "0B / 0B"
+            }
+          ]
+        }
+      },
+      "cache_directory_inventories": {
+        "p7-g2-nginx-150-tenant-keyed-hold-cache": {
+          "files": 50,
+          "file_bytes": 31976,
+          "allocated_blocks_bytes": 204800,
+          "method": "Private cache-directory inventory after native cache stop; not peak storage."
+        }
+      },
+      "cache_image_logical_size_bytes": 76122635,
+      "body_bytes_to_clients": 1525,
+      "body_bytes_from_origin": 1265,
+      "application_cache_cause_audited": true,
+      "model_sha256": "10e0833db973f1495576c34eee1ae024ed18f8288b70cde0b632874792451ab3"
+    },
+    {
+      "product": "nginx",
+      "delay_ms": 150,
+      "arm": "private",
+      "split": "holdout",
+      "trials": 32,
+      "correct": 16,
+      "accuracy": 0.5,
+      "wilson95_accuracy": [
+        0.33630882869327483,
+        0.6636911713067252
+      ],
+      "confusion_true_then_prediction": {
+        "00": 16,
+        "01": 0,
+        "10": 16,
+        "11": 0
+      },
+      "one_sided_blocked_randomization_p": 1.0,
+      "idle_receiver_median_ms": 159.375941,
+      "active_label_receiver_median_ms": 159.44649049999998,
+      "controller_http_requests": 57,
+      "origin_http_requests": 50,
+      "total_http_requests": 107,
+      "resource_snapshots": {
+        "resource_before": {
+          "utc_ns": 1794182742631352554,
+          "method": "Docker CLI usage snapshots, not peak memory or process RSS",
+          "records": [
+            {
+              "Name": "p7-g2-nginx-150-private-hold-alice",
+              "MemUsage": "4.285MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "1",
+              "NetIO": "1.54kB / 712B",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-nginx-150-private-hold-bob",
+              "MemUsage": "4.305MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "1",
+              "NetIO": "1.54kB / 712B",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-nginx-150-private-hold-origin",
+              "MemUsage": "14.23MiB / 128MiB",
+              "CPUPerc": "0.01%",
+              "PIDs": "1",
+              "NetIO": "1.35kB / 126B",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-nginx-150-private-hold-cache-alice",
+              "MemUsage": "5.801MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "5",
+              "NetIO": "2.55kB / 574B",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-nginx-150-private-hold-cache-bob",
+              "MemUsage": "6.023MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "5",
+              "NetIO": "2.4kB / 574B",
+              "BlockIO": "0B / 0B"
+            }
+          ]
+        },
+        "resource_after_live": {
+          "utc_ns": 1794182778945387544,
+          "method": "Docker CLI usage snapshots, not peak memory or process RSS",
+          "records": [
+            {
+              "Name": "p7-g2-nginx-150-private-hold-alice",
+              "MemUsage": "5.434MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "1",
+              "NetIO": "15.5kB / 15.5kB",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-nginx-150-private-hold-bob",
+              "MemUsage": "5.773MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "1",
+              "NetIO": "18.3kB / 17.7kB",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-nginx-150-private-hold-origin",
+              "MemUsage": "14.54MiB / 128MiB",
+              "CPUPerc": "0.01%",
+              "PIDs": "1",
+              "NetIO": "33.8kB / 30.3kB",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-nginx-150-private-hold-cache-alice",
+              "MemUsage": "6.004MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "5",
+              "NetIO": "33.1kB / 30.8kB",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-nginx-150-private-hold-cache-bob",
+              "MemUsage": "5.984MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "5",
+              "NetIO": "34.7kB / 32.9kB",
+              "BlockIO": "0B / 0B"
+            }
+          ]
+        }
+      },
+      "cache_directory_inventories": {
+        "p7-g2-nginx-150-private-hold-cache-alice": {
+          "files": 25,
+          "file_bytes": 15554,
+          "allocated_blocks_bytes": 102400,
+          "method": "Private cache-directory inventory after native cache stop; not peak storage."
+        },
+        "p7-g2-nginx-150-private-hold-cache-bob": {
+          "files": 25,
+          "file_bytes": 15682,
+          "allocated_blocks_bytes": 102400,
+          "method": "Private cache-directory inventory after native cache stop; not peak storage."
+        }
+      },
+      "cache_image_logical_size_bytes": 76122635,
+      "body_bytes_to_clients": 1525,
+      "body_bytes_from_origin": 1265,
+      "application_cache_cause_audited": true,
+      "model_sha256": "10e0833db973f1495576c34eee1ae024ed18f8288b70cde0b632874792451ab3"
+    },
+    {
+      "product": "nginx",
+      "delay_ms": 150,
+      "arm": "disabled",
+      "split": "holdout",
+      "trials": 32,
+      "correct": 16,
+      "accuracy": 0.5,
+      "wilson95_accuracy": [
+        0.33630882869327483,
+        0.6636911713067252
+      ],
+      "confusion_true_then_prediction": {
+        "00": 16,
+        "01": 0,
+        "10": 16,
+        "11": 0
+      },
+      "one_sided_blocked_randomization_p": 1.0,
+      "idle_receiver_median_ms": 159.617033,
+      "active_label_receiver_median_ms": 159.195894,
+      "controller_http_requests": 57,
+      "origin_http_requests": 56,
+      "total_http_requests": 113,
+      "resource_snapshots": {
+        "resource_before": {
+          "utc_ns": 1794182825261916074,
+          "method": "Docker CLI usage snapshots, not peak memory or process RSS",
+          "records": [
+            {
+              "Name": "p7-g2-nginx-150-disabled-hold-alice",
+              "MemUsage": "4.289MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "1",
+              "NetIO": "1.54kB / 712B",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-nginx-150-disabled-hold-bob",
+              "MemUsage": "4.527MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "1",
+              "NetIO": "1.35kB / 440B",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-nginx-150-disabled-hold-origin",
+              "MemUsage": "14.23MiB / 128MiB",
+              "CPUPerc": "0.01%",
+              "PIDs": "1",
+              "NetIO": "1.22kB / 126B",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-nginx-150-disabled-hold-cache",
+              "MemUsage": "5.781MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "5",
+              "NetIO": "3.47kB / 882B",
+              "BlockIO": "0B / 0B"
+            }
+          ]
+        },
+        "resource_after_live": {
+          "utc_ns": 1794182861418562552,
+          "method": "Docker CLI usage snapshots, not peak memory or process RSS",
+          "records": [
+            {
+              "Name": "p7-g2-nginx-150-disabled-hold-alice",
+              "MemUsage": "5.258MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "1",
+              "NetIO": "15.5kB / 15.4kB",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-nginx-150-disabled-hold-bob",
+              "MemUsage": "5.375MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "1",
+              "NetIO": "18.2kB / 17.4kB",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-nginx-150-disabled-hold-origin",
+              "MemUsage": "14.55MiB / 128MiB",
+              "CPUPerc": "0.01%",
+              "PIDs": "1",
+              "NetIO": "41.2kB / 30.7kB",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-nginx-150-disabled-hold-cache",
+              "MemUsage": "6.102MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "5",
+              "NetIO": "66.4kB / 71kB",
+              "BlockIO": "0B / 0B"
+            }
+          ]
+        }
+      },
+      "cache_directory_inventories": {
+        "p7-g2-nginx-150-disabled-hold-cache": {
+          "files": 0,
+          "file_bytes": 0,
+          "allocated_blocks_bytes": 0,
+          "method": "Private cache-directory inventory after native cache stop; not peak storage."
+        }
+      },
+      "cache_image_logical_size_bytes": 76122635,
+      "body_bytes_to_clients": 1565,
+      "body_bytes_from_origin": 1450,
+      "application_cache_cause_audited": true,
+      "model_sha256": "10e0833db973f1495576c34eee1ae024ed18f8288b70cde0b632874792451ab3"
+    },
+    {
+      "product": "nginx",
+      "delay_ms": 150,
+      "arm": "no-sender",
+      "split": "holdout",
+      "trials": 16,
+      "correct": 8,
+      "accuracy": 0.5,
+      "wilson95_accuracy": [
+        0.27999563610326017,
+        0.7200043638967398
+      ],
+      "confusion_true_then_prediction": {
+        "00": 8,
+        "01": 0,
+        "10": 8,
+        "11": 0
+      },
+      "one_sided_blocked_randomization_p": 1.0,
+      "idle_receiver_median_ms": 159.1605905,
+      "active_label_receiver_median_ms": 159.22588050000002,
+      "controller_http_requests": 25,
+      "origin_http_requests": 18,
+      "total_http_requests": 43,
+      "resource_snapshots": {
+        "resource_before": {
+          "utc_ns": 1794182867612537638,
+          "method": "Docker CLI usage snapshots, not peak memory or process RSS",
+          "records": [
+            {
+              "Name": "p7-g2-nginx-150-no-sender-hold-alice",
+              "MemUsage": "4.543MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "1",
+              "NetIO": "1.54kB / 712B",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-nginx-150-no-sender-hold-bob",
+              "MemUsage": "4.566MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "1",
+              "NetIO": "1.4kB / 440B",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-nginx-150-no-sender-hold-origin",
+              "MemUsage": "14.24MiB / 128MiB",
+              "CPUPerc": "0.01%",
+              "PIDs": "1",
+              "NetIO": "1.17kB / 126B",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-nginx-150-no-sender-hold-cache",
+              "MemUsage": "5.777MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "5",
+              "NetIO": "3.72kB / 882B",
+              "BlockIO": "0B / 0B"
+            }
+          ]
+        },
+        "resource_after_live": {
+          "utc_ns": 1794182887356464259,
+          "method": "Docker CLI usage snapshots, not peak memory or process RSS",
+          "records": [
+            {
+              "Name": "p7-g2-nginx-150-no-sender-hold-alice",
+              "MemUsage": "5.125MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "1",
+              "NetIO": "6.95kB / 6.37kB",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-nginx-150-no-sender-hold-bob",
+              "MemUsage": "5.184MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "1",
+              "NetIO": "9.65kB / 8.35kB",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-nginx-150-no-sender-hold-origin",
+              "MemUsage": "14.57MiB / 128MiB",
+              "CPUPerc": "0.01%",
+              "PIDs": "1",
+              "NetIO": "13.4kB / 11.4kB",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-nginx-150-no-sender-hold-cache",
+              "MemUsage": "5.953MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "5",
+              "NetIO": "29kB / 26.4kB",
+              "BlockIO": "0B / 0B"
+            }
+          ]
+        }
+      },
+      "cache_directory_inventories": {
+        "p7-g2-nginx-150-no-sender-hold-cache": {
+          "files": 18,
+          "file_bytes": 11368,
+          "allocated_blocks_bytes": 73728,
+          "method": "Private cache-directory inventory after native cache stop; not peak storage."
+        }
+      },
+      "cache_image_logical_size_bytes": 76122635,
+      "body_bytes_to_clients": 725,
+      "body_bytes_from_origin": 465,
+      "application_cache_cause_audited": true,
+      "model_sha256": "10e0833db973f1495576c34eee1ae024ed18f8288b70cde0b632874792451ab3",
+      "no_sender_false_positive_count": 0,
+      "no_sender_false_positive_fraction": 0.0,
+      "no_sender_false_positive_wilson95": [
+        0.0,
+        0.1936076805344365
+      ]
+    },
+    {
+      "product": "squid",
+      "delay_ms": 20,
+      "arm": "shared",
+      "split": "holdout",
+      "trials": 32,
+      "correct": 29,
+      "accuracy": 0.90625,
+      "wilson95_accuracy": [
+        0.7578184527161212,
+        0.9675984487016337
+      ],
+      "confusion_true_then_prediction": {
+        "00": 16,
+        "01": 0,
+        "10": 3,
+        "11": 13
+      },
+      "one_sided_blocked_randomization_p": 9.961548423086884e-07,
+      "idle_receiver_median_ms": 29.4996145,
+      "active_label_receiver_median_ms": 8.406849,
+      "controller_http_requests": 57,
+      "origin_http_requests": 39,
+      "total_http_requests": 96,
+      "resource_snapshots": {
+        "resource_before": {
+          "utc_ns": 1794182936341924933,
+          "method": "Docker CLI usage snapshots, not peak memory or process RSS",
+          "records": [
+            {
+              "Name": "p7-g2-squid-20-shared-hold-alice",
+              "MemUsage": "4.301MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "1",
+              "NetIO": "1.6kB / 786B",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-squid-20-shared-hold-bob",
+              "MemUsage": "4.301MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "1",
+              "NetIO": "1.4kB / 440B",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-squid-20-shared-hold-origin",
+              "MemUsage": "14.23MiB / 128MiB",
+              "CPUPerc": "0.01%",
+              "PIDs": "1",
+              "NetIO": "1.17kB / 126B",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-squid-20-shared-hold-cache",
+              "MemUsage": "10.75MiB / 256MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "4",
+              "NetIO": "3.94kB / 936B",
+              "BlockIO": "0B / 0B"
+            }
+          ]
+        },
+        "resource_after_live": {
+          "utc_ns": 1794182966054655876,
+          "method": "Docker CLI usage snapshots, not peak memory or process RSS",
+          "records": [
+            {
+              "Name": "p7-g2-squid-20-shared-hold-alice",
+              "MemUsage": "5.668MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "1",
+              "NetIO": "19.9kB / 18.3kB",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-squid-20-shared-hold-bob",
+              "MemUsage": "5.59MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "1",
+              "NetIO": "23.2kB / 20.6kB",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-squid-20-shared-hold-origin",
+              "MemUsage": "14.54MiB / 128MiB",
+              "CPUPerc": "0.01%",
+              "PIDs": "1",
+              "NetIO": "33.6kB / 24.4kB",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-squid-20-shared-hold-cache",
+              "MemUsage": "11.5MiB / 256MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "4",
+              "NetIO": "66.5kB / 72.9kB",
+              "BlockIO": "0B / 0B"
+            }
+          ]
+        }
+      },
+      "cache_directory_inventories": {
+        "p7-g2-squid-20-shared-hold-cache": {
+          "files": 36,
+          "file_bytes": 15089,
+          "allocated_blocks_bytes": 143360,
+          "method": "Private cache-directory inventory after native cache stop; not peak storage."
+        }
+      },
+      "cache_image_logical_size_bytes": 76122635,
+      "body_bytes_to_clients": 4573,
+      "body_bytes_from_origin": 1025,
+      "application_cache_cause_audited": true,
+      "model_sha256": "3f62b988e85a828a740bfcc9b1e276215247dca31dbc4cf9ac6319bd81303b43",
+      "primary_holm_p": 9.961548423086884e-07,
+      "shared_timing_decoder_confirmed": true
+    },
+    {
+      "product": "squid",
+      "delay_ms": 20,
+      "arm": "tenant-keyed",
+      "split": "holdout",
+      "trials": 32,
+      "correct": 16,
+      "accuracy": 0.5,
+      "wilson95_accuracy": [
+        0.33630882869327483,
+        0.6636911713067252
+      ],
+      "confusion_true_then_prediction": {
+        "00": 16,
+        "01": 0,
+        "10": 16,
+        "11": 0
+      },
+      "one_sided_blocked_randomization_p": 1.0,
+      "idle_receiver_median_ms": 29.7041165,
+      "active_label_receiver_median_ms": 29.820267,
+      "controller_http_requests": 57,
+      "origin_http_requests": 55,
+      "total_http_requests": 112,
+      "resource_snapshots": {
+        "resource_before": {
+          "utc_ns": 1794183078878342029,
+          "method": "Docker CLI usage snapshots, not peak memory or process RSS",
+          "records": [
+            {
+              "Name": "p7-g2-squid-20-tenant-keyed-hold-alice",
+              "MemUsage": "4.301MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "1",
+              "NetIO": "1.6kB / 786B",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-squid-20-tenant-keyed-hold-bob",
+              "MemUsage": "4.32MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "1",
+              "NetIO": "1.47kB / 440B",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-squid-20-tenant-keyed-hold-origin",
+              "MemUsage": "14.24MiB / 128MiB",
+              "CPUPerc": "0.01%",
+              "PIDs": "1",
+              "NetIO": "1.22kB / 126B",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-squid-20-tenant-keyed-hold-cache",
+              "MemUsage": "20.85MiB / 256MiB",
+              "CPUPerc": "0.01%",
+              "PIDs": "5",
+              "NetIO": "3.68kB / 1kB",
+              "BlockIO": "0B / 0B"
+            }
+          ]
+        },
+        "resource_after_live": {
+          "utc_ns": 1794183108362386804,
+          "method": "Docker CLI usage snapshots, not peak memory or process RSS",
+          "records": [
+            {
+              "Name": "p7-g2-squid-20-tenant-keyed-hold-alice",
+              "MemUsage": "5.355MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "1",
+              "NetIO": "19.7kB / 19.3kB",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-squid-20-tenant-keyed-hold-bob",
+              "MemUsage": "5.926MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "1",
+              "NetIO": "22.9kB / 21.9kB",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-squid-20-tenant-keyed-hold-origin",
+              "MemUsage": "14.5MiB / 128MiB",
+              "CPUPerc": "0.01%",
+              "PIDs": "1",
+              "NetIO": "46.1kB / 33.9kB",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-squid-20-tenant-keyed-hold-cache",
+              "MemUsage": "21.58MiB / 256MiB",
+              "CPUPerc": "0.01%",
+              "PIDs": "5",
+              "NetIO": "78.1kB / 84.9kB",
+              "BlockIO": "0B / 0B"
+            }
+          ]
+        }
+      },
+      "cache_directory_inventories": {
+        "p7-g2-squid-20-tenant-keyed-hold-cache": {
+          "files": 52,
+          "file_bytes": 22300,
+          "allocated_blocks_bytes": 208896,
+          "method": "Private cache-directory inventory after native cache stop; not peak storage."
+        }
+      },
+      "cache_image_logical_size_bytes": 76122635,
+      "body_bytes_to_clients": 4585,
+      "body_bytes_from_origin": 1425,
+      "application_cache_cause_audited": true,
+      "model_sha256": "3f62b988e85a828a740bfcc9b1e276215247dca31dbc4cf9ac6319bd81303b43"
+    },
+    {
+      "product": "squid",
+      "delay_ms": 20,
+      "arm": "private",
+      "split": "holdout",
+      "trials": 32,
+      "correct": 16,
+      "accuracy": 0.5,
+      "wilson95_accuracy": [
+        0.33630882869327483,
+        0.6636911713067252
+      ],
+      "confusion_true_then_prediction": {
+        "00": 16,
+        "01": 0,
+        "10": 16,
+        "11": 0
+      },
+      "one_sided_blocked_randomization_p": 1.0,
+      "idle_receiver_median_ms": 29.371277999999997,
+      "active_label_receiver_median_ms": 29.412211499999998,
+      "controller_http_requests": 57,
+      "origin_http_requests": 55,
+      "total_http_requests": 112,
+      "resource_snapshots": {
+        "resource_before": {
+          "utc_ns": 1794183038157154265,
+          "method": "Docker CLI usage snapshots, not peak memory or process RSS",
+          "records": [
+            {
+              "Name": "p7-g2-squid-20-private-hold-alice",
+              "MemUsage": "4.547MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "1",
+              "NetIO": "1.6kB / 786B",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-squid-20-private-hold-bob",
+              "MemUsage": "4.445MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "1",
+              "NetIO": "1.6kB / 786B",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-squid-20-private-hold-origin",
+              "MemUsage": "14.23MiB / 128MiB",
+              "CPUPerc": "0.01%",
+              "PIDs": "1",
+              "NetIO": "1.35kB / 126B",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-squid-20-private-hold-cache-alice",
+              "MemUsage": "10.73MiB / 256MiB",
+              "CPUPerc": "0.01%",
+              "PIDs": "4",
+              "NetIO": "2.7kB / 628B",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-squid-20-private-hold-cache-bob",
+              "MemUsage": "10.75MiB / 256MiB",
+              "CPUPerc": "0.01%",
+              "PIDs": "4",
+              "NetIO": "2.3kB / 628B",
+              "BlockIO": "0B / 0B"
+            }
+          ]
+        },
+        "resource_after_live": {
+          "utc_ns": 1794183068206785462,
+          "method": "Docker CLI usage snapshots, not peak memory or process RSS",
+          "records": [
+            {
+              "Name": "p7-g2-squid-20-private-hold-alice",
+              "MemUsage": "5.512MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "1",
+              "NetIO": "19.7kB / 18.9kB",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-squid-20-private-hold-bob",
+              "MemUsage": "6.07MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "1",
+              "NetIO": "23.4kB / 21.7kB",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-squid-20-private-hold-origin",
+              "MemUsage": "14.32MiB / 128MiB",
+              "CPUPerc": "0.01%",
+              "PIDs": "1",
+              "NetIO": "45.5kB / 33.9kB",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-squid-20-private-hold-cache-alice",
+              "MemUsage": "11.12MiB / 256MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "4",
+              "NetIO": "36.7kB / 40.5kB",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-squid-20-private-hold-cache-bob",
+              "MemUsage": "11.63MiB / 256MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "4",
+              "NetIO": "42kB / 44.2kB",
+              "BlockIO": "0B / 0B"
+            }
+          ]
+        }
+      },
+      "cache_directory_inventories": {
+        "p7-g2-squid-20-private-hold-cache-alice": {
+          "files": 27,
+          "file_bytes": 11077,
+          "allocated_blocks_bytes": 106496,
+          "method": "Private cache-directory inventory after native cache stop; not peak storage."
+        },
+        "p7-g2-squid-20-private-hold-cache-bob": {
+          "files": 27,
+          "file_bytes": 11206,
+          "allocated_blocks_bytes": 106496,
+          "method": "Private cache-directory inventory after native cache stop; not peak storage."
+        }
+      },
+      "cache_image_logical_size_bytes": 76122635,
+      "body_bytes_to_clients": 4575,
+      "body_bytes_from_origin": 1425,
+      "application_cache_cause_audited": true,
+      "model_sha256": "3f62b988e85a828a740bfcc9b1e276215247dca31dbc4cf9ac6319bd81303b43"
+    },
+    {
+      "product": "squid",
+      "delay_ms": 20,
+      "arm": "disabled",
+      "split": "holdout",
+      "trials": 32,
+      "correct": 16,
+      "accuracy": 0.5,
+      "wilson95_accuracy": [
+        0.33630882869327483,
+        0.6636911713067252
+      ],
+      "confusion_true_then_prediction": {
+        "00": 16,
+        "01": 0,
+        "10": 16,
+        "11": 0
+      },
+      "one_sided_blocked_randomization_p": 1.0,
+      "idle_receiver_median_ms": 29.307188500000002,
+      "active_label_receiver_median_ms": 29.3869695,
+      "controller_http_requests": 57,
+      "origin_http_requests": 56,
+      "total_http_requests": 113,
+      "resource_snapshots": {
+        "resource_before": {
+          "utc_ns": 1794182998990773038,
+          "method": "Docker CLI usage snapshots, not peak memory or process RSS",
+          "records": [
+            {
+              "Name": "p7-g2-squid-20-disabled-hold-alice",
+              "MemUsage": "4.301MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "1",
+              "NetIO": "1.6kB / 786B",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-squid-20-disabled-hold-bob",
+              "MemUsage": "4.297MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "1",
+              "NetIO": "1.4kB / 440B",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-squid-20-disabled-hold-origin",
+              "MemUsage": "14.23MiB / 128MiB",
+              "CPUPerc": "0.01%",
+              "PIDs": "1",
+              "NetIO": "1.17kB / 126B",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-squid-20-disabled-hold-cache",
+              "MemUsage": "10.76MiB / 256MiB",
+              "CPUPerc": "0.01%",
+              "PIDs": "4",
+              "NetIO": "3.63kB / 936B",
+              "BlockIO": "0B / 0B"
+            }
+          ]
+        },
+        "resource_after_live": {
+          "utc_ns": 1794183028808072516,
+          "method": "Docker CLI usage snapshots, not peak memory or process RSS",
+          "records": [
+            {
+              "Name": "p7-g2-squid-20-disabled-hold-alice",
+              "MemUsage": "5.656MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "1",
+              "NetIO": "20kB / 18.4kB",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-squid-20-disabled-hold-bob",
+              "MemUsage": "5.633MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "1",
+              "NetIO": "23.2kB / 20.7kB",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-squid-20-disabled-hold-origin",
+              "MemUsage": "14.54MiB / 128MiB",
+              "CPUPerc": "0.01%",
+              "PIDs": "1",
+              "NetIO": "48.2kB / 32.7kB",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-squid-20-disabled-hold-cache",
+              "MemUsage": "10.89MiB / 256MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "4",
+              "NetIO": "74.7kB / 87.6kB",
+              "BlockIO": "0B / 0B"
+            }
+          ]
+        }
+      },
+      "cache_directory_inventories": {
+        "p7-g2-squid-20-disabled-hold-cache": {
+          "files": 2,
+          "file_bytes": 72,
+          "allocated_blocks_bytes": 4096,
+          "method": "Private cache-directory inventory after native cache stop; not peak storage."
+        }
+      },
+      "cache_image_logical_size_bytes": 76122635,
+      "body_bytes_to_clients": 4577,
+      "body_bytes_from_origin": 1450,
+      "application_cache_cause_audited": true,
+      "model_sha256": "3f62b988e85a828a740bfcc9b1e276215247dca31dbc4cf9ac6319bd81303b43"
+    },
+    {
+      "product": "squid",
+      "delay_ms": 20,
+      "arm": "no-sender",
+      "split": "holdout",
+      "trials": 16,
+      "correct": 8,
+      "accuracy": 0.5,
+      "wilson95_accuracy": [
+        0.27999563610326017,
+        0.7200043638967398
+      ],
+      "confusion_true_then_prediction": {
+        "00": 8,
+        "01": 0,
+        "10": 8,
+        "11": 0
+      },
+      "one_sided_blocked_randomization_p": 1.0,
+      "idle_receiver_median_ms": 29.471094,
+      "active_label_receiver_median_ms": 29.705302,
+      "controller_http_requests": 25,
+      "origin_http_requests": 23,
+      "total_http_requests": 48,
+      "resource_snapshots": {
+        "resource_before": {
+          "utc_ns": 1794182973680127779,
+          "method": "Docker CLI usage snapshots, not peak memory or process RSS",
+          "records": [
+            {
+              "Name": "p7-g2-squid-20-no-sender-hold-alice",
+              "MemUsage": "4.297MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "1",
+              "NetIO": "1.54kB / 786B",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-squid-20-no-sender-hold-bob",
+              "MemUsage": "4.566MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "1",
+              "NetIO": "1.35kB / 440B",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-squid-20-no-sender-hold-origin",
+              "MemUsage": "14.23MiB / 128MiB",
+              "CPUPerc": "0.01%",
+              "PIDs": "1",
+              "NetIO": "1.22kB / 126B",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-squid-20-no-sender-hold-cache",
+              "MemUsage": "11MiB / 256MiB",
+              "CPUPerc": "0.01%",
+              "PIDs": "4",
+              "NetIO": "3.83kB / 936B",
+              "BlockIO": "0B / 0B"
+            }
+          ]
+        },
+        "resource_after_live": {
+          "utc_ns": 1794182990793023174,
+          "method": "Docker CLI usage snapshots, not peak memory or process RSS",
+          "records": [
+            {
+              "Name": "p7-g2-squid-20-no-sender-hold-alice",
+              "MemUsage": "5.227MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "1",
+              "NetIO": "8.68kB / 7.62kB",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-squid-20-no-sender-hold-bob",
+              "MemUsage": "5.285MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "1",
+              "NetIO": "11.8kB / 9.98kB",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-squid-20-no-sender-hold-origin",
+              "MemUsage": "14.54MiB / 128MiB",
+              "CPUPerc": "0.01%",
+              "PIDs": "1",
+              "NetIO": "22.4kB / 15kB",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-squid-20-no-sender-hold-cache",
+              "MemUsage": "11.31MiB / 256MiB",
+              "CPUPerc": "0.01%",
+              "PIDs": "4",
+              "NetIO": "35.5kB / 39.3kB",
+              "BlockIO": "0B / 0B"
+            }
+          ]
+        }
+      },
+      "cache_directory_inventories": {
+        "p7-g2-squid-20-no-sender-hold-cache": {
+          "files": 20,
+          "file_bytes": 8167,
+          "allocated_blocks_bytes": 77824,
+          "method": "Private cache-directory inventory after native cache stop; not peak storage."
+        }
+      },
+      "cache_image_logical_size_bytes": 76122635,
+      "body_bytes_to_clients": 3779,
+      "body_bytes_from_origin": 625,
+      "application_cache_cause_audited": true,
+      "model_sha256": "3f62b988e85a828a740bfcc9b1e276215247dca31dbc4cf9ac6319bd81303b43",
+      "no_sender_false_positive_count": 0,
+      "no_sender_false_positive_fraction": 0.0,
+      "no_sender_false_positive_wilson95": [
+        0.0,
+        0.1936076805344365
+      ]
+    },
+    {
+      "product": "squid",
+      "delay_ms": 150,
+      "arm": "shared",
+      "split": "holdout",
+      "trials": 32,
+      "correct": 32,
+      "accuracy": 1.0,
+      "wilson95_accuracy": [
+        0.8928208017449293,
+        1.0
+      ],
+      "confusion_true_then_prediction": {
+        "00": 16,
+        "01": 0,
+        "10": 0,
+        "11": 16
+      },
+      "one_sided_blocked_randomization_p": 6.037302074598112e-09,
+      "idle_receiver_median_ms": 159.54650850000002,
+      "active_label_receiver_median_ms": 8.449167,
+      "controller_http_requests": 57,
+      "origin_http_requests": 39,
+      "total_http_requests": 96,
+      "resource_snapshots": {
+        "resource_before": {
+          "utc_ns": 1794183116350322725,
+          "method": "Docker CLI usage snapshots, not peak memory or process RSS",
+          "records": [
+            {
+              "Name": "p7-g2-squid-150-shared-hold-alice",
+              "MemUsage": "4.305MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "1",
+              "NetIO": "1.6kB / 786B",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-squid-150-shared-hold-bob",
+              "MemUsage": "4.391MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "1",
+              "NetIO": "1.4kB / 440B",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-squid-150-shared-hold-origin",
+              "MemUsage": "14.23MiB / 128MiB",
+              "CPUPerc": "0.01%",
+              "PIDs": "1",
+              "NetIO": "1.22kB / 126B",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-squid-150-shared-hold-cache",
+              "MemUsage": "10.77MiB / 256MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "4",
+              "NetIO": "3.63kB / 936B",
+              "BlockIO": "0B / 0B"
+            }
+          ]
+        },
+        "resource_after_live": {
+          "utc_ns": 1794183150682128298,
+          "method": "Docker CLI usage snapshots, not peak memory or process RSS",
+          "records": [
+            {
+              "Name": "p7-g2-squid-150-shared-hold-alice",
+              "MemUsage": "5.574MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "1",
+              "NetIO": "20kB / 18.4kB",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-squid-150-shared-hold-bob",
+              "MemUsage": "5.551MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "1",
+              "NetIO": "23.1kB / 20.7kB",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-squid-150-shared-hold-origin",
+              "MemUsage": "14.79MiB / 128MiB",
+              "CPUPerc": "0.01%",
+              "PIDs": "1",
+              "NetIO": "33.8kB / 24.5kB",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-squid-150-shared-hold-cache",
+              "MemUsage": "11.27MiB / 256MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "4",
+              "NetIO": "66.4kB / 73.1kB",
+              "BlockIO": "0B / 0B"
+            }
+          ]
+        }
+      },
+      "cache_directory_inventories": {
+        "p7-g2-squid-150-shared-hold-cache": {
+          "files": 36,
+          "file_bytes": 15188,
+          "allocated_blocks_bytes": 143360,
+          "method": "Private cache-directory inventory after native cache stop; not peak storage."
+        }
+      },
+      "cache_image_logical_size_bytes": 76122635,
+      "body_bytes_to_clients": 4577,
+      "body_bytes_from_origin": 1025,
+      "application_cache_cause_audited": true,
+      "model_sha256": "5524255dce3b06798e582939f27c35db83fe59000b780d11eb020cd3218dfd41",
+      "primary_holm_p": 2.414920829839245e-08,
+      "shared_timing_decoder_confirmed": true
+    },
+    {
+      "product": "squid",
+      "delay_ms": 150,
+      "arm": "tenant-keyed",
+      "split": "holdout",
+      "trials": 32,
+      "correct": 16,
+      "accuracy": 0.5,
+      "wilson95_accuracy": [
+        0.33630882869327483,
+        0.6636911713067252
+      ],
+      "confusion_true_then_prediction": {
+        "00": 16,
+        "01": 0,
+        "10": 16,
+        "11": 0
+      },
+      "one_sided_blocked_randomization_p": 1.0,
+      "idle_receiver_median_ms": 159.9670115,
+      "active_label_receiver_median_ms": 159.870546,
+      "controller_http_requests": 57,
+      "origin_http_requests": 55,
+      "total_http_requests": 112,
+      "resource_snapshots": {
+        "resource_before": {
+          "utc_ns": 1794183279355182466,
+          "method": "Docker CLI usage snapshots, not peak memory or process RSS",
+          "records": [
+            {
+              "Name": "p7-g2-squid-150-tenant-keyed-hold-alice",
+              "MemUsage": "4.621MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "1",
+              "NetIO": "1.6kB / 786B",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-squid-150-tenant-keyed-hold-bob",
+              "MemUsage": "4.539MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "1",
+              "NetIO": "1.35kB / 440B",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-squid-150-tenant-keyed-hold-origin",
+              "MemUsage": "14.23MiB / 128MiB",
+              "CPUPerc": "0.01%",
+              "PIDs": "1",
+              "NetIO": "1.17kB / 126B",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-squid-150-tenant-keyed-hold-cache",
+              "MemUsage": "20.62MiB / 256MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "5",
+              "NetIO": "3.63kB / 936B",
+              "BlockIO": "0B / 0B"
+            }
+          ]
+        },
+        "resource_after_live": {
+          "utc_ns": 1794183315440559267,
+          "method": "Docker CLI usage snapshots, not peak memory or process RSS",
+          "records": [
+            {
+              "Name": "p7-g2-squid-150-tenant-keyed-hold-alice",
+              "MemUsage": "5.594MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "1",
+              "NetIO": "19.9kB / 19.1kB",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-squid-150-tenant-keyed-hold-bob",
+              "MemUsage": "5.367MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "1",
+              "NetIO": "23kB / 21.6kB",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-squid-150-tenant-keyed-hold-origin",
+              "MemUsage": "14.52MiB / 128MiB",
+              "CPUPerc": "0.01%",
+              "PIDs": "1",
+              "NetIO": "46.3kB / 33.9kB",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-squid-150-tenant-keyed-hold-cache",
+              "MemUsage": "21.84MiB / 256MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "5",
+              "NetIO": "77.5kB / 85.5kB",
+              "BlockIO": "0B / 0B"
+            }
+          ]
+        }
+      },
+      "cache_directory_inventories": {
+        "p7-g2-squid-150-tenant-keyed-hold-cache": {
+          "files": 52,
+          "file_bytes": 22300,
+          "allocated_blocks_bytes": 208896,
+          "method": "Private cache-directory inventory after native cache stop; not peak storage."
+        }
+      },
+      "cache_image_logical_size_bytes": 76122635,
+      "body_bytes_to_clients": 4589,
+      "body_bytes_from_origin": 1425,
+      "application_cache_cause_audited": true,
+      "model_sha256": "5524255dce3b06798e582939f27c35db83fe59000b780d11eb020cd3218dfd41"
+    },
+    {
+      "product": "squid",
+      "delay_ms": 150,
+      "arm": "private",
+      "split": "holdout",
+      "trials": 32,
+      "correct": 16,
+      "accuracy": 0.5,
+      "wilson95_accuracy": [
+        0.33630882869327483,
+        0.6636911713067252
+      ],
+      "confusion_true_then_prediction": {
+        "00": 16,
+        "01": 0,
+        "10": 16,
+        "11": 0
+      },
+      "one_sided_blocked_randomization_p": 1.0,
+      "idle_receiver_median_ms": 159.6448995,
+      "active_label_receiver_median_ms": 159.621467,
+      "controller_http_requests": 57,
+      "origin_http_requests": 55,
+      "total_http_requests": 112,
+      "resource_snapshots": {
+        "resource_before": {
+          "utc_ns": 1794183232441166465,
+          "method": "Docker CLI usage snapshots, not peak memory or process RSS",
+          "records": [
+            {
+              "Name": "p7-g2-squid-150-private-hold-alice",
+              "MemUsage": "4.359MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "1",
+              "NetIO": "1.54kB / 786B",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-squid-150-private-hold-bob",
+              "MemUsage": "4.559MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "1",
+              "NetIO": "1.54kB / 786B",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-squid-150-private-hold-origin",
+              "MemUsage": "14.24MiB / 128MiB",
+              "CPUPerc": "0.01%",
+              "PIDs": "1",
+              "NetIO": "1.29kB / 126B",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-squid-150-private-hold-cache-alice",
+              "MemUsage": "10.75MiB / 256MiB",
+              "CPUPerc": "0.01%",
+              "PIDs": "4",
+              "NetIO": "2.51kB / 628B",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-squid-150-private-hold-cache-bob",
+              "MemUsage": "10.75MiB / 256MiB",
+              "CPUPerc": "0.01%",
+              "PIDs": "4",
+              "NetIO": "2.3kB / 628B",
+              "BlockIO": "0B / 0B"
+            }
+          ]
+        },
+        "resource_after_live": {
+          "utc_ns": 1794183268754829669,
+          "method": "Docker CLI usage snapshots, not peak memory or process RSS",
+          "records": [
+            {
+              "Name": "p7-g2-squid-150-private-hold-alice",
+              "MemUsage": "5.277MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "1",
+              "NetIO": "19.8kB / 18.6kB",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-squid-150-private-hold-bob",
+              "MemUsage": "5.793MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "1",
+              "NetIO": "23.3kB / 21.2kB",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-squid-150-private-hold-origin",
+              "MemUsage": "14.34MiB / 128MiB",
+              "CPUPerc": "0.01%",
+              "PIDs": "1",
+              "NetIO": "45.7kB / 33.9kB",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-squid-150-private-hold-cache-alice",
+              "MemUsage": "11.12MiB / 256MiB",
+              "CPUPerc": "0.01%",
+              "PIDs": "4",
+              "NetIO": "36.2kB / 40.7kB",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-squid-150-private-hold-cache-bob",
+              "MemUsage": "11.63MiB / 256MiB",
+              "CPUPerc": "0.01%",
+              "PIDs": "4",
+              "NetIO": "41.5kB / 44.3kB",
+              "BlockIO": "0B / 0B"
+            }
+          ]
+        }
+      },
+      "cache_directory_inventories": {
+        "p7-g2-squid-150-private-hold-cache-alice": {
+          "files": 27,
+          "file_bytes": 11151,
+          "allocated_blocks_bytes": 106496,
+          "method": "Private cache-directory inventory after native cache stop; not peak storage."
+        },
+        "p7-g2-squid-150-private-hold-cache-bob": {
+          "files": 27,
+          "file_bytes": 11279,
+          "allocated_blocks_bytes": 106496,
+          "method": "Private cache-directory inventory after native cache stop; not peak storage."
+        }
+      },
+      "cache_image_logical_size_bytes": 76122635,
+      "body_bytes_to_clients": 4579,
+      "body_bytes_from_origin": 1425,
+      "application_cache_cause_audited": true,
+      "model_sha256": "5524255dce3b06798e582939f27c35db83fe59000b780d11eb020cd3218dfd41"
+    },
+    {
+      "product": "squid",
+      "delay_ms": 150,
+      "arm": "disabled",
+      "split": "holdout",
+      "trials": 32,
+      "correct": 16,
+      "accuracy": 0.5,
+      "wilson95_accuracy": [
+        0.33630882869327483,
+        0.6636911713067252
+      ],
+      "confusion_true_then_prediction": {
+        "00": 16,
+        "01": 0,
+        "10": 16,
+        "11": 0
+      },
+      "one_sided_blocked_randomization_p": 1.0,
+      "idle_receiver_median_ms": 159.4910425,
+      "active_label_receiver_median_ms": 159.6252905,
+      "controller_http_requests": 57,
+      "origin_http_requests": 56,
+      "total_http_requests": 113,
+      "resource_snapshots": {
+        "resource_before": {
+          "utc_ns": 1794183187030600223,
+          "method": "Docker CLI usage snapshots, not peak memory or process RSS",
+          "records": [
+            {
+              "Name": "p7-g2-squid-150-disabled-hold-alice",
+              "MemUsage": "4.301MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "1",
+              "NetIO": "1.6kB / 786B",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-squid-150-disabled-hold-bob",
+              "MemUsage": "4.43MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "1",
+              "NetIO": "1.47kB / 440B",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-squid-150-disabled-hold-origin",
+              "MemUsage": "14.23MiB / 128MiB",
+              "CPUPerc": "0.01%",
+              "PIDs": "1",
+              "NetIO": "1.17kB / 126B",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-squid-150-disabled-hold-cache",
+              "MemUsage": "10.75MiB / 256MiB",
+              "CPUPerc": "0.01%",
+              "PIDs": "4",
+              "NetIO": "3.94kB / 1kB",
+              "BlockIO": "0B / 0B"
+            }
+          ]
+        },
+        "resource_after_live": {
+          "utc_ns": 1794183223508987261,
+          "method": "Docker CLI usage snapshots, not peak memory or process RSS",
+          "records": [
+            {
+              "Name": "p7-g2-squid-150-disabled-hold-alice",
+              "MemUsage": "5.266MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "1",
+              "NetIO": "20kB / 18.5kB",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-squid-150-disabled-hold-bob",
+              "MemUsage": "5.836MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "1",
+              "NetIO": "23.3kB / 20.8kB",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-squid-150-disabled-hold-origin",
+              "MemUsage": "14.3MiB / 128MiB",
+              "CPUPerc": "0.01%",
+              "PIDs": "1",
+              "NetIO": "48.6kB / 33.9kB",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-squid-150-disabled-hold-cache",
+              "MemUsage": "11.38MiB / 256MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "4",
+              "NetIO": "76.4kB / 88.1kB",
+              "BlockIO": "0B / 0B"
+            }
+          ]
+        }
+      },
+      "cache_directory_inventories": {
+        "p7-g2-squid-150-disabled-hold-cache": {
+          "files": 2,
+          "file_bytes": 72,
+          "allocated_blocks_bytes": 4096,
+          "method": "Private cache-directory inventory after native cache stop; not peak storage."
+        }
+      },
+      "cache_image_logical_size_bytes": 76122635,
+      "body_bytes_to_clients": 4581,
+      "body_bytes_from_origin": 1450,
+      "application_cache_cause_audited": true,
+      "model_sha256": "5524255dce3b06798e582939f27c35db83fe59000b780d11eb020cd3218dfd41"
+    },
+    {
+      "product": "squid",
+      "delay_ms": 150,
+      "arm": "no-sender",
+      "split": "holdout",
+      "trials": 16,
+      "correct": 8,
+      "accuracy": 0.5,
+      "wilson95_accuracy": [
+        0.27999563610326017,
+        0.7200043638967398
+      ],
+      "confusion_true_then_prediction": {
+        "00": 8,
+        "01": 0,
+        "10": 8,
+        "11": 0
+      },
+      "one_sided_blocked_randomization_p": 1.0,
+      "idle_receiver_median_ms": 184.762907,
+      "active_label_receiver_median_ms": 159.8021755,
+      "controller_http_requests": 25,
+      "origin_http_requests": 23,
+      "total_http_requests": 48,
+      "resource_snapshots": {
+        "resource_before": {
+          "utc_ns": 1794183158646398603,
+          "method": "Docker CLI usage snapshots, not peak memory or process RSS",
+          "records": [
+            {
+              "Name": "p7-g2-squid-150-no-sender-hold-alice",
+              "MemUsage": "4.586MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "1",
+              "NetIO": "1.54kB / 786B",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-squid-150-no-sender-hold-bob",
+              "MemUsage": "4.508MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "1",
+              "NetIO": "1.4kB / 440B",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-squid-150-no-sender-hold-origin",
+              "MemUsage": "14.23MiB / 128MiB",
+              "CPUPerc": "0.01%",
+              "PIDs": "1",
+              "NetIO": "1.22kB / 126B",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-squid-150-no-sender-hold-cache",
+              "MemUsage": "10.74MiB / 256MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "4",
+              "NetIO": "3.63kB / 936B",
+              "BlockIO": "0B / 0B"
+            }
+          ]
+        },
+        "resource_after_live": {
+          "utc_ns": 1794183178702251057,
+          "method": "Docker CLI usage snapshots, not peak memory or process RSS",
+          "records": [
+            {
+              "Name": "p7-g2-squid-150-no-sender-hold-alice",
+              "MemUsage": "5.184MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "1",
+              "NetIO": "8.68kB / 7.6kB",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-squid-150-no-sender-hold-bob",
+              "MemUsage": "5.23MiB / 128MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "1",
+              "NetIO": "11.9kB / 9.97kB",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-squid-150-no-sender-hold-origin",
+              "MemUsage": "14.74MiB / 128MiB",
+              "CPUPerc": "0.01%",
+              "PIDs": "1",
+              "NetIO": "22.4kB / 15kB",
+              "BlockIO": "0B / 0B"
+            },
+            {
+              "Name": "p7-g2-squid-150-no-sender-hold-cache",
+              "MemUsage": "11.31MiB / 256MiB",
+              "CPUPerc": "0.00%",
+              "PIDs": "4",
+              "NetIO": "35.3kB / 39.4kB",
+              "BlockIO": "0B / 0B"
+            }
+          ]
+        }
+      },
+      "cache_directory_inventories": {
+        "p7-g2-squid-150-no-sender-hold-cache": {
+          "files": 20,
+          "file_bytes": 8218,
+          "allocated_blocks_bytes": 77824,
+          "method": "Private cache-directory inventory after native cache stop; not peak storage."
+        }
+      },
+      "cache_image_logical_size_bytes": 76122635,
+      "body_bytes_to_clients": 3783,
+      "body_bytes_from_origin": 625,
+      "application_cache_cause_audited": true,
+      "model_sha256": "5524255dce3b06798e582939f27c35db83fe59000b780d11eb020cd3218dfd41",
+      "no_sender_false_positive_count": 0,
+      "no_sender_false_positive_fraction": 0.0,
+      "no_sender_false_positive_wilson95": [
+        0.0,
+        0.1936076805344365
+      ]
+    }
+  ],
+  "all_four_shared_timing_controls_confirmed": true,
+  "controller_reserved_requests": 1120,
+  "reserved_http_upper_bound": 2240,
+  "limitations": [
+    "One fixed timing decoder per product/delay, 32 trials per arm, 16 no-sender trials.",
+    "Configured negative caching, including nondefault Squid build and TTL.",
+    "Generic HTTP caches, not native package services or a deployment of the full P1 meter.",
+    "Wilson intervals are approximate binomial descriptions; shared-host trials do not give independent-deployment intervals.",
+    "Application-cache causes are independently joined; defended timing is exploratory.",
+    "Chance-like decoding does not bound capacity; private instances still share their host."
+  ]
+}

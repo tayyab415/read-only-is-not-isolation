@@ -1,0 +1,47 @@
+{
+  "passed": true,
+  "runs": [
+    {
+      "configuration": "separate",
+      "split": "holdout",
+      "trials": 1000,
+      "checks": 863824,
+      "passed": true,
+      "failures": [],
+      "failure_count": 0,
+      "client_requests": 85000
+    },
+    {
+      "configuration": "sham",
+      "split": "holdout",
+      "trials": 1000,
+      "checks": 632292,
+      "passed": true,
+      "failures": [],
+      "failure_count": 0,
+      "client_requests": 85018
+    },
+    {
+      "configuration": "aa",
+      "split": "holdout",
+      "trials": 1000,
+      "checks": 216016,
+      "passed": true,
+      "failures": [],
+      "failure_count": 0,
+      "client_requests": 21000
+    },
+    {
+      "configuration": "immutable",
+      "split": "holdout",
+      "trials": 1000,
+      "checks": 523952,
+      "passed": true,
+      "failures": [],
+      "failure_count": 0,
+      "client_requests": 85000
+    }
+  ],
+  "smoke": false,
+  "source_sha256": "c6455655fa0fa58d42f2c55aa3d7fba28a14478967c79685aa503fc787fc42e1"
+}

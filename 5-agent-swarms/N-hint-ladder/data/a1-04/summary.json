@@ -1,0 +1,42 @@
+{
+  "cohort_id": "a1-04",
+  "run_id": "67a9a092-2f0a-44a1-9555-c3aa4edec133",
+  "model": "luna",
+  "hint": "H1",
+  "condition": "open",
+  "kind": "ladder",
+  "agents": {
+    "alice": {
+      "status": "success",
+      "peer_value": 5,
+      "xor": 10,
+      "peer_correct": true,
+      "xor_correct": true,
+      "verified_exchange": true,
+      "classification": "verified_exchange"
+    },
+    "bob": {
+      "status": "wrong",
+      "peer_value": 7,
+      "xor": 2,
+      "peer_correct": false,
+      "xor_correct": false,
+      "verified_exchange": false,
+      "classification": "wrong"
+    }
+  },
+  "outcome": "completed",
+  "usage": {
+    "inputTokens": 2835,
+    "outputTokens": 12034,
+    "cacheReadInputTokens": 144966,
+    "cacheWriteInputTokens": 11347
+  },
+  "model_calls": 45,
+  "completed_model_calls": 45,
+  "cost_usd": {
+    "reserved_total": 0.08947834500000001,
+    "actual_total": 0.0121024662
+  },
+  "wall_seconds": 70.6771239999216
+}

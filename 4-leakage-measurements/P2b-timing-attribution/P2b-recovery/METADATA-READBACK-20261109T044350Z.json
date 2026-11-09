@@ -1,0 +1,67 @@
+{
+  "utc": "2026-11-09T04:43:50.170121+00:00",
+  "process": "1175370    01:19:48 S+   python3 -u sequence.py",
+  "sequence_status": {
+    "utc": "2026-11-09T03:51:33.328061+00:00",
+    "stage": "decoders_frozen",
+    "decoders": {
+      "shared": {
+        "threshold_ms": 3.59074575,
+        "active_is_below": true,
+        "calibration_median_active_ms": 3.2401255,
+        "calibration_median_idle_ms": 3.9413660000000004,
+        "calibration_trials": 100
+      },
+      "pergw": {
+        "threshold_ms": 3.70459125,
+        "active_is_below": true,
+        "calibration_median_active_ms": 3.440281,
+        "calibration_median_idle_ms": 3.9689015,
+        "calibration_trials": 100
+      },
+      "pad": {
+        "threshold_ms": 13.615945,
+        "active_is_below": true,
+        "calibration_median_active_ms": 13.554573000000001,
+        "calibration_median_idle_ms": 13.677316999999999,
+        "calibration_trials": 100
+      },
+      "aa": {
+        "threshold_ms": 3.90706575,
+        "active_is_below": false,
+        "calibration_median_active_ms": 3.907831,
+        "calibration_median_idle_ms": 3.9063005,
+        "calibration_trials": 100
+      }
+    }
+  },
+  "source_manifest_sha256": "755154d688bfffc0b4cce9ae97bfad83b9ef16c38745c7d7b09b27817269736a",
+  "model_sha256": "93397b2e74a47d13de4dc28d3b5c3bed76dd0879085edffab9c2252b9d491acc",
+  "arms": {
+    "shared": {
+      "complete": true,
+      "retained": 300,
+      "cleanup_absence_proved": true,
+      "sha256": "969c3f27e4e87c005fedc89567f335c320adda1ffab0a9e6554196cb24759341",
+      "trials": 300,
+      "sealed_utc_ns": 1794197400219645382
+    },
+    "pergw": {
+      "complete": true,
+      "retained": 300,
+      "cleanup_absence_proved": true,
+      "sha256": "8d4cbf94e18b9d898ec6d1c473891a3d61f529c2c272a3bcd94b1accdeb671f4",
+      "trials": 300,
+      "sealed_utc_ns": 1794198510710682747
+    },
+    "pad": {
+      "sealed": false
+    },
+    "aa": {
+      "sealed": false
+    }
+  },
+  "complete_audit_exists": false,
+  "p8_gate_exists": false,
+  "held_observations_opened": 0
+}

@@ -1,0 +1,149 @@
+{
+  "run_id": "m1-open",
+  "configuration": "open",
+  "repositories": {
+    "shared": "p1-m1-open-shared"
+  },
+  "users": {
+    "alice": "p1-m1-open-alice",
+    "bob": "p1-m1-open-bob",
+    "prefetch": "p1-m1-open-prefetch"
+  },
+  "negative_cache_period_seconds": 1800,
+  "storage_blocked": false,
+  "prewarm_count": 16,
+  "provision_log": [
+    {
+      "label": "create-user-alice",
+      "method": "POST",
+      "path": "/ui/users",
+      "status": 201
+    },
+    {
+      "label": "create-user-bob",
+      "method": "POST",
+      "path": "/ui/users",
+      "status": 201
+    },
+    {
+      "label": "create-user-prefetch",
+      "method": "POST",
+      "path": "/ui/users",
+      "status": 201
+    },
+    {
+      "label": "create-repo",
+      "method": "POST",
+      "path": "/ui/admin/repositories",
+      "status": 200
+    },
+    {
+      "label": "read-repo",
+      "method": "GET",
+      "path": "/ui/admin/repositories/remote/p1-m1-open-shared",
+      "status": 200
+    },
+    {
+      "label": "create-permission",
+      "method": "POST",
+      "path": "/ui/permissiontargets",
+      "status": 201
+    },
+    {
+      "label": "prewarm-p1-m1-open-shared-00",
+      "method": "GET",
+      "path": "/p1-m1-open-shared/pkg-00.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-m1-open-shared-01",
+      "method": "GET",
+      "path": "/p1-m1-open-shared/pkg-01.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-m1-open-shared-02",
+      "method": "GET",
+      "path": "/p1-m1-open-shared/pkg-02.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-m1-open-shared-03",
+      "method": "GET",
+      "path": "/p1-m1-open-shared/pkg-03.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-m1-open-shared-04",
+      "method": "GET",
+      "path": "/p1-m1-open-shared/pkg-04.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-m1-open-shared-05",
+      "method": "GET",
+      "path": "/p1-m1-open-shared/pkg-05.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-m1-open-shared-06",
+      "method": "GET",
+      "path": "/p1-m1-open-shared/pkg-06.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-m1-open-shared-07",
+      "method": "GET",
+      "path": "/p1-m1-open-shared/pkg-07.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-m1-open-shared-08",
+      "method": "GET",
+      "path": "/p1-m1-open-shared/pkg-08.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-m1-open-shared-09",
+      "method": "GET",
+      "path": "/p1-m1-open-shared/pkg-09.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-m1-open-shared-10",
+      "method": "GET",
+      "path": "/p1-m1-open-shared/pkg-10.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-m1-open-shared-11",
+      "method": "GET",
+      "path": "/p1-m1-open-shared/pkg-11.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-m1-open-shared-12",
+      "method": "GET",
+      "path": "/p1-m1-open-shared/pkg-12.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-m1-open-shared-13",
+      "method": "GET",
+      "path": "/p1-m1-open-shared/pkg-13.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-m1-open-shared-14",
+      "method": "GET",
+      "path": "/p1-m1-open-shared/pkg-14.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-m1-open-shared-15",
+      "method": "GET",
+      "path": "/p1-m1-open-shared/pkg-15.bin",
+      "status": 200
+    }
+  ]
+}

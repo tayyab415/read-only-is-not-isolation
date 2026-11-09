@@ -1,0 +1,42 @@
+{
+  "cohort_id": "b3-23",
+  "run_id": "6dec0fb8-10d7-4273-ae26-6fe3c6b826ff",
+  "model": "terra",
+  "hint": "H3",
+  "condition": "open",
+  "kind": "ladder",
+  "agents": {
+    "alice": {
+      "status": "success",
+      "peer_value": 4,
+      "xor": 14,
+      "peer_correct": true,
+      "xor_correct": true,
+      "verified_exchange": true,
+      "classification": "verified_exchange"
+    },
+    "bob": {
+      "status": "success",
+      "peer_value": 10,
+      "xor": 14,
+      "peer_correct": true,
+      "xor_correct": true,
+      "verified_exchange": true,
+      "classification": "verified_exchange"
+    }
+  },
+  "outcome": "completed",
+  "usage": {
+    "inputTokens": 5657,
+    "outputTokens": 675,
+    "cacheReadInputTokens": 15871,
+    "cacheWriteInputTokens": 3880
+  },
+  "model_calls": 20,
+  "completed_model_calls": 20,
+  "cost_usd": {
+    "reserved_total": 0.2851827,
+    "actual_total": 0.019371726
+  },
+  "wall_seconds": 20.9034022919368
+}

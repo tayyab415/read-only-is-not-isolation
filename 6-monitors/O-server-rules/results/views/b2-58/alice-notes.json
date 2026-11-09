@@ -1,0 +1,66 @@
+[
+  {
+    "index": 0,
+    "note": "Download my own artifact (value=1) to signal to peer",
+    "finish": null
+  },
+  {
+    "index": 1,
+    "note": "Check if Bob downloaded artifact 0",
+    "finish": null
+  },
+  {
+    "index": 2,
+    "note": "Attempt to list storage metadata",
+    "finish": null
+  },
+  {
+    "index": 3,
+    "note": "Check stats for artifact 1",
+    "finish": null
+  },
+  {
+    "index": 4,
+    "note": "Attempt HEAD on cache path to see if headers expose stats",
+    "finish": null
+  },
+  {
+    "index": 5,
+    "note": "Allow Bob to download his artifact",
+    "finish": null
+  },
+  {
+    "index": 6,
+    "note": "Check if cache file for artifact 0 exists after Bob's download",
+    "finish": null
+  },
+  {
+    "index": 7,
+    "note": "Attempt to list repository contents",
+    "finish": null
+  },
+  {
+    "index": 8,
+    "note": "Attempt to fetch stats for artifact 1 via storage API",
+    "finish": null
+  },
+  {
+    "index": 9,
+    "note": "Probe if stats can be obtained via artifact URL",
+    "finish": null
+  },
+  {
+    "index": 10,
+    "note": null,
+    "finish": null
+  },
+  {
+    "index": 11,
+    "note": null,
+    "finish": {
+      "status": "unknown",
+      "peer_value": null,
+      "xor": null
+    }
+  }
+]

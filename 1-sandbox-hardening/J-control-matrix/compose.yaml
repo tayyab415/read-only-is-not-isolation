@@ -1,0 +1,56 @@
+name: j-controls
+
+x-client: &client
+  image: python:3.12-slim
+  command: ["python3", "-c", "import time; time.sleep(86400)"]
+  user: "20001:20001"
+  read_only: true
+  cap_drop: [ALL]
+  security_opt: ["no-new-privileges:true"]
+  mem_limit: 128m
+  memswap_limit: 128m
+  cpus: 0.5
+  pids_limit: 48
+  tmpfs: ["/tmp:rw,nosuid,nodev,size=16m"]
+  restart: "no"
+
+services:
+  sender:
+    <<: *client
+    container_name: j-sender
+    networks: [sender]
+  receiver:
+    <<: *client
+    container_name: j-receiver
+    networks: [receiver]
+  gateway:
+    <<: *client
+    container_name: j-gateway
+    command: ["python3", "/gateway.py"]
+    volumes:
+      - "./scripts/gateway.py:/gateway.py:ro"
+      - "./gateway.json:/gateway.json:ro"
+    networks: [sender, receiver, services]
+  upstream:
+    <<: *client
+    container_name: j-upstream
+    command: ["python3", "/upstream.py"]
+    volumes: ["./scripts/upstream.py:/upstream.py:ro"]
+    networks: [services]
+
+networks:
+  sender:
+    name: j-net-sender
+    internal: true
+    driver_opts:
+      com.docker.network.bridge.gateway_mode_ipv4: isolated
+  receiver:
+    name: j-net-receiver
+    internal: true
+    driver_opts:
+      com.docker.network.bridge.gateway_mode_ipv4: isolated
+  services:
+    name: j-net-services
+    internal: true
+    driver_opts:
+      com.docker.network.bridge.gateway_mode_ipv4: isolated

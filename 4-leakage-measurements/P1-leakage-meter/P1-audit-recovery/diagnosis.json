@@ -1,0 +1,236 @@
+{
+  "recovery_sha256": "51d4a696a1a76c4c4eead6a57f395a5084a9048d8aeb91f0583c2c966a25fe3f",
+  "sources": [
+    {
+      "kind": "source",
+      "source": "archived/artifactory-request.2026-11-08T17-33-56.832.log.gz",
+      "decoded_bytes": 26214888,
+      "decoded_lines": 149444,
+      "decoded_sha256": "4e9fcfe2d2ef7b24a8e6535db7e8f72af0ebb2cafee01ee06542b6ac80278921",
+      "matched_rows": 117161
+    },
+    {
+      "kind": "source",
+      "source": "archived/artifactory-request.2026-11-08T18-56-59.628.log",
+      "decoded_bytes": 26219432,
+      "decoded_lines": 147980,
+      "decoded_sha256": "f2245d9ff05ed8fb505fd406baf866c2625253b80007f27131123d1167009ce5",
+      "matched_rows": 146878
+    },
+    {
+      "kind": "source",
+      "source": "archived/router-request-2026-11-08T18-03-28.995.log.gz",
+      "decoded_bytes": 104857583,
+      "decoded_lines": 216737,
+      "decoded_sha256": "d7f541e6529adf2f8998e25dc1f3f1d8942a23eec24ab7118b9c9227be9b0128",
+      "matched_rows": 169472
+    },
+    {
+      "kind": "source",
+      "source": "archived/router-request-2026-11-08T20-49-27.622.log",
+      "decoded_bytes": 104857464,
+      "decoded_lines": 220122,
+      "decoded_sha256": "523b446e10d68f3981ac0ae93674fe1c42b860e16b0e113747e1c5e9766d8e3c",
+      "matched_rows": 215245
+    },
+    {
+      "kind": "source",
+      "source": "artifactory-request.log",
+      "decoded_bytes": 23948399,
+      "decoded_lines": 133708,
+      "decoded_sha256": "b7e2fca0648c2027c2067357e2c83f85365dd1e6a60208c7b0f4bf85a756ed14",
+      "matched_rows": 131920
+    },
+    {
+      "kind": "source",
+      "source": "router-request.log",
+      "decoded_bytes": 5558125,
+      "decoded_lines": 11782,
+      "decoded_sha256": "7c0e105298d5e66fcf696d57ea0d06641845dfe90029dd0bf7bab6113f66aff5",
+      "matched_rows": 11242
+    }
+  ],
+  "runs": {
+    "open": {
+      "counts": {
+        "forwarded": 107985,
+        "art_stamp_outside_client": 2
+      },
+      "failures": [],
+      "duplicate_markers": [],
+      "recovered_rows": 215970,
+      "original_rows": 215970,
+      "new_rows": 0,
+      "original_rows_absent_from_recovery": 0,
+      "emission_examples": [
+        {
+          "marker": "p1/m1-open/t0274/bob/post.timed.0",
+          "art_stamp": "2026-11-08T16:46:01.250Z",
+          "router_start": "2026-11-08T16:46:01.240762328Z",
+          "router_duration_ns": 1638498,
+          "client_end_utc_ns": 1794156361243108777,
+          "stamp_after_client_end_ms": 6.891095,
+          "trace": "ab9e59d5c9f4ea627f18d52cfcb39d0e"
+        },
+        {
+          "marker": "p1/m1-open/t1033/bob/s-load-32-2",
+          "art_stamp": "2026-11-08T17:17:36.117Z",
+          "router_start": "2026-11-08T17:17:36.11133322Z",
+          "router_duration_ns": 2145624,
+          "client_end_utc_ns": 1794158256114549986,
+          "stamp_after_client_end_ms": 2.450206,
+          "trace": "e5976b0686aa35d400f1a8b124fe258d"
+        }
+      ]
+    },
+    "combined": {
+      "counts": {
+        "policy_denials": 63859,
+        "forwarded": 45285,
+        "art_stamp_outside_client": 1
+      },
+      "failures": [],
+      "duplicate_markers": [],
+      "recovered_rows": 90570,
+      "original_rows": 90570,
+      "new_rows": 0,
+      "original_rows_absent_from_recovery": 0,
+      "emission_examples": [
+        {
+          "marker": "p1/m1-combined/t0985/alice/post.timed.4",
+          "art_stamp": "2026-11-08T19:57:08.762Z",
+          "router_start": "2026-11-08T19:57:08.757145543Z",
+          "router_duration_ns": 1327699,
+          "client_end_utc_ns": 1794167828759220033,
+          "stamp_after_client_end_ms": 2.780095,
+          "trace": "c87a3447156177aa740ec8613f9fb473"
+        }
+      ]
+    },
+    "separate": {
+      "counts": {
+        "policy_denials": 63850,
+        "forwarded": 50289,
+        "art_stamp_outside_client": 6
+      },
+      "failures": [],
+      "duplicate_markers": [],
+      "recovered_rows": 100578,
+      "original_rows": 98259,
+      "new_rows": 2319,
+      "original_rows_absent_from_recovery": 0,
+      "emission_examples": [
+        {
+          "marker": "p1/m1-separate/t0013/alice/post.timed.2",
+          "art_stamp": "2026-11-08T20:10:29.595Z",
+          "router_start": "2026-11-08T20:10:29.589047035Z",
+          "router_duration_ns": 1183155,
+          "client_end_utc_ns": 1794168629590842069,
+          "stamp_after_client_end_ms": 4.157995,
+          "trace": "9eb05f9b56249063a6a3e99137a25b1d"
+        },
+        {
+          "marker": "p1/m1-separate/t0053/bob/s-load-21-0",
+          "art_stamp": "2026-11-08T20:12:03.730Z",
+          "router_start": "2026-11-08T20:12:03.722113618Z",
+          "router_duration_ns": 2177565,
+          "client_end_utc_ns": 1794168723727175638,
+          "stamp_after_client_end_ms": 2.82449,
+          "trace": "239d0d161d043df5e1798f5ca07dcbf1"
+        },
+        {
+          "marker": "p1/m1-separate/t0220/bob/post.timed.4",
+          "art_stamp": "2026-11-08T20:18:54.795Z",
+          "router_start": "2026-11-08T20:18:54.789358593Z",
+          "router_duration_ns": 1264378,
+          "client_end_utc_ns": 1794169134791397584,
+          "stamp_after_client_end_ms": 3.60248,
+          "trace": "be8ce11002d7bb1d8c609940c946707e"
+        },
+        {
+          "marker": "p1/m1-separate/t0304/alice/s-load-29-7",
+          "art_stamp": "2026-11-08T20:22:22.114Z",
+          "router_start": "2026-11-08T20:22:22.100741987Z",
+          "router_duration_ns": 1956638,
+          "client_end_utc_ns": 1794169342103985162,
+          "stamp_after_client_end_ms": 10.014966,
+          "trace": "9830ea4c61ee9913bea79064a7333fca"
+        },
+        {
+          "marker": "p1/m1-separate/t1180/alice/s-load-7-0",
+          "art_stamp": "2026-11-08T20:57:39.750Z",
+          "router_start": "2026-11-08T20:57:39.743285421Z",
+          "router_duration_ns": 2988278,
+          "client_end_utc_ns": 1794171459747702711,
+          "stamp_after_client_end_ms": 2.297417,
+          "trace": "778195dfbd6e99c93e4444050371579a"
+        },
+        {
+          "marker": "p1/m1-separate/t1263/bob/s-load-9-3",
+          "art_stamp": "2026-11-08T21:01:01.221Z",
+          "router_start": "2026-11-08T21:01:01.213908242Z",
+          "router_duration_ns": 3592105,
+          "client_end_utc_ns": 1794171661218252299,
+          "stamp_after_client_end_ms": 2.747637,
+          "trace": "e05a7ec52f10df7adb4b06682700fb51"
+        }
+      ]
+    },
+    "aa": {
+      "counts": {
+        "forwarded": 96200,
+        "art_stamp_outside_client": 2
+      },
+      "failures": [],
+      "duplicate_markers": [],
+      "recovered_rows": 192400,
+      "original_rows": 188337,
+      "new_rows": 4063,
+      "original_rows_absent_from_recovery": 0,
+      "emission_examples": [
+        {
+          "marker": "p1/m1-aa/t1153/alice/post.timed.3",
+          "art_stamp": "2026-11-08T18:17:03.013Z",
+          "router_start": "2026-11-08T18:17:03.008680568Z",
+          "router_duration_ns": 1164594,
+          "client_end_utc_ns": 1794161823010428449,
+          "stamp_after_client_end_ms": 2.571487,
+          "trace": "4c92b9198ad9c5187cd95f2e5d5502a7"
+        },
+        {
+          "marker": "p1/m1-aa/t1214/bob/post.timed.1",
+          "art_stamp": "2026-11-08T18:19:35.333Z",
+          "router_start": "2026-11-08T18:19:35.328456315Z",
+          "router_duration_ns": 1256818,
+          "client_end_utc_ns": 1794161975330324811,
+          "stamp_after_client_end_ms": 2.675125,
+          "trace": "bd68b31f5ce6448c7746ab3564b3f6a1"
+        }
+      ]
+    },
+    "sham": {
+      "counts": {
+        "forwarded": 96200,
+        "art_stamp_outside_client": 1
+      },
+      "failures": [],
+      "duplicate_markers": [],
+      "recovered_rows": 192400,
+      "original_rows": 191746,
+      "new_rows": 654,
+      "original_rows_absent_from_recovery": 0,
+      "emission_examples": [
+        {
+          "marker": "p1/m1-sham/t0417/alice/post.timed.2",
+          "art_stamp": "2026-11-08T18:40:39.243Z",
+          "router_start": "2026-11-08T18:40:39.23531668Z",
+          "router_duration_ns": 1363138,
+          "client_end_utc_ns": 1794163239237298696,
+          "stamp_after_client_end_ms": 5.701368,
+          "trace": "93e815c13e8df4c2eb7ae5be2b0fba77"
+        }
+      ]
+    }
+  },
+  "scope": "Exact unchanged client data; no observation, label, fit, or statistic edits."
+}

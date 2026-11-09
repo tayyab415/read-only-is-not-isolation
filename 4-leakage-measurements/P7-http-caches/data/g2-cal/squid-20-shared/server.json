@@ -1,0 +1,327 @@
+{
+  "run_id": "p7-g2-squid-20-shared-cal",
+  "origin_log": [
+    {
+      "ready": true,
+      "stateless": true,
+      "outbound_requests": 0
+    },
+    {
+      "start_utc_ns": 1794182080574545643,
+      "end_utc_ns": 1794182080594882204,
+      "client_ip": "172.21.0.2",
+      "method": "GET",
+      "path": "/missing/20/canary-cache",
+      "marker": "p7/p7-g2-squid-20-shared-cal/canary/cache-0",
+      "status": 404,
+      "delay_ms": 20,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794182081367817473,
+      "end_utc_ns": 1794182081367947573,
+      "client_ip": "172.21.0.2",
+      "method": "GET",
+      "path": "/present/canary-functions",
+      "marker": "p7/p7-g2-squid-20-shared-cal/canary/function-0",
+      "status": 200,
+      "delay_ms": 0,
+      "body_bytes": 40,
+      "body_sha256": "c9018cc100c3627142237160efe8122117443ffd68f2802b6794cd84c5343449",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794182081764606874,
+      "end_utc_ns": 1794182081764726853,
+      "client_ip": "172.21.0.2",
+      "method": "GET",
+      "path": "/present/canary-functions",
+      "marker": "p7/p7-g2-squid-20-shared-cal/canary/function-1",
+      "status": 200,
+      "delay_ms": 0,
+      "body_bytes": 40,
+      "body_sha256": "c9018cc100c3627142237160efe8122117443ffd68f2802b6794cd84c5343449",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": "\"c9018cc100c3627142237160efe8122117443ffd68f2802b6794cd84c5343449\""
+      }
+    },
+    {
+      "start_utc_ns": 1794182082162840744,
+      "end_utc_ns": 1794182082162943192,
+      "client_ip": "172.21.0.2",
+      "method": "HEAD",
+      "path": "/present/canary-functions",
+      "marker": "p7/p7-g2-squid-20-shared-cal/canary/function-2",
+      "status": 200,
+      "delay_ms": 0,
+      "body_bytes": 0,
+      "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": "\"c9018cc100c3627142237160efe8122117443ffd68f2802b6794cd84c5343449\""
+      }
+    },
+    {
+      "start_utc_ns": 1794182082559107296,
+      "end_utc_ns": 1794182082559231025,
+      "client_ip": "172.21.0.2",
+      "method": "GET",
+      "path": "/present/canary-functions",
+      "marker": "p7/p7-g2-squid-20-shared-cal/canary/function-3",
+      "status": 200,
+      "delay_ms": 0,
+      "body_bytes": 40,
+      "body_sha256": "c9018cc100c3627142237160efe8122117443ffd68f2802b6794cd84c5343449",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": "\"c9018cc100c3627142237160efe8122117443ffd68f2802b6794cd84c5343449\""
+      }
+    },
+    {
+      "start_utc_ns": 1794182082957642998,
+      "end_utc_ns": 1794182082957776798,
+      "client_ip": "172.21.0.2",
+      "method": "GET",
+      "path": "/present/canary-functions",
+      "marker": "p7/p7-g2-squid-20-shared-cal/canary/function-4",
+      "status": 200,
+      "delay_ms": 0,
+      "body_bytes": 40,
+      "body_sha256": "c9018cc100c3627142237160efe8122117443ffd68f2802b6794cd84c5343449",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": "\"c9018cc100c3627142237160efe8122117443ffd68f2802b6794cd84c5343449\""
+      }
+    },
+    {
+      "start_utc_ns": 1794182083358791888,
+      "end_utc_ns": 1794182083358924978,
+      "client_ip": "172.21.0.2",
+      "method": "GET",
+      "path": "/present/canary-functions",
+      "marker": "p7/p7-g2-squid-20-shared-cal/canary/function-5",
+      "status": 200,
+      "delay_ms": 0,
+      "body_bytes": 40,
+      "body_sha256": "c9018cc100c3627142237160efe8122117443ffd68f2802b6794cd84c5343449",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": "\"c9018cc100c3627142237160efe8122117443ffd68f2802b6794cd84c5343449\""
+      }
+    },
+    {
+      "start_utc_ns": 1794182084091820304,
+      "end_utc_ns": 1794182084112124013,
+      "client_ip": "172.21.0.2",
+      "method": "GET",
+      "path": "/missing/20/g2-squid-20-shared-calibration-t000",
+      "marker": "p7/p7-g2-squid-20-shared-cal/calibration/t000/bob/sender",
+      "status": 404,
+      "delay_ms": 20,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794182084891818091,
+      "end_utc_ns": 1794182084912114480,
+      "client_ip": "172.21.0.2",
+      "method": "GET",
+      "path": "/missing/20/g2-squid-20-shared-calibration-t001",
+      "marker": "p7/p7-g2-squid-20-shared-cal/calibration/t001/alice/sender",
+      "status": 404,
+      "delay_ms": 20,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794182085694923183,
+      "end_utc_ns": 1794182085715248273,
+      "client_ip": "172.21.0.2",
+      "method": "GET",
+      "path": "/missing/20/g2-squid-20-shared-calibration-t002",
+      "marker": "p7/p7-g2-squid-20-shared-cal/calibration/t002/bob/sender",
+      "status": 404,
+      "delay_ms": 20,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794182086782946331,
+      "end_utc_ns": 1794182086803194375,
+      "client_ip": "172.21.0.2",
+      "method": "GET",
+      "path": "/missing/20/g2-squid-20-shared-calibration-t003",
+      "marker": "p7/p7-g2-squid-20-shared-cal/calibration/t003/alice/receiver",
+      "status": 404,
+      "delay_ms": 20,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794182087557818957,
+      "end_utc_ns": 1794182087578062761,
+      "client_ip": "172.21.0.2",
+      "method": "GET",
+      "path": "/missing/20/g2-squid-20-shared-calibration-t004",
+      "marker": "p7/p7-g2-squid-20-shared-cal/calibration/t004/alice/receiver",
+      "status": 404,
+      "delay_ms": 20,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794182088292905469,
+      "end_utc_ns": 1794182088313091698,
+      "client_ip": "172.21.0.2",
+      "method": "GET",
+      "path": "/missing/20/g2-squid-20-shared-calibration-t005",
+      "marker": "p7/p7-g2-squid-20-shared-cal/calibration/t005/bob/receiver",
+      "status": 404,
+      "delay_ms": 20,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794182088691085061,
+      "end_utc_ns": 1794182088711384009,
+      "client_ip": "172.21.0.2",
+      "method": "GET",
+      "path": "/missing/20/g2-squid-20-shared-calibration-t006",
+      "marker": "p7/p7-g2-squid-20-shared-cal/calibration/t006/bob/sender",
+      "status": 404,
+      "delay_ms": 20,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794182089479500897,
+      "end_utc_ns": 1794182089499779903,
+      "client_ip": "172.21.0.2",
+      "method": "GET",
+      "path": "/missing/20/g2-squid-20-shared-calibration-t007",
+      "marker": "p7/p7-g2-squid-20-shared-cal/calibration/t007/alice/sender",
+      "status": 404,
+      "delay_ms": 20,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794182090265905190,
+      "end_utc_ns": 1794182090286190388,
+      "client_ip": "172.21.0.2",
+      "method": "GET",
+      "path": "/missing/20/g2-squid-20-shared-calibration-t008",
+      "marker": "p7/p7-g2-squid-20-shared-cal/calibration/t008/alice/sender",
+      "status": 404,
+      "delay_ms": 20,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794182091369075149,
+      "end_utc_ns": 1794182091389373487,
+      "client_ip": "172.21.0.2",
+      "method": "GET",
+      "path": "/missing/20/g2-squid-20-shared-calibration-t009",
+      "marker": "p7/p7-g2-squid-20-shared-cal/calibration/t009/bob/receiver",
+      "status": 404,
+      "delay_ms": 20,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794182092091190675,
+      "end_utc_ns": 1794182092111475602,
+      "client_ip": "172.21.0.2",
+      "method": "GET",
+      "path": "/missing/20/g2-squid-20-shared-calibration-t010",
+      "marker": "p7/p7-g2-squid-20-shared-cal/calibration/t010/alice/receiver",
+      "status": 404,
+      "delay_ms": 20,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794182092857384738,
+      "end_utc_ns": 1794182092877703888,
+      "client_ip": "172.21.0.2",
+      "method": "GET",
+      "path": "/missing/20/g2-squid-20-shared-calibration-t011",
+      "marker": "p7/p7-g2-squid-20-shared-cal/calibration/t011/bob/receiver",
+      "status": 404,
+      "delay_ms": 20,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    }
+  ],
+  "caches": {
+    "p7-g2-squid-20-shared-cal-cache": {
+      "access_log": "1794182077.265 172.19.0.1 - error:transaction-end-before-headers 0 NONE_NONE 0 -\n1794182077.764 172.19.0.1 - error:transaction-end-before-headers 0 NONE_NONE 0 -\n1794182077.903 172.20.0.1 - error:transaction-end-before-headers 0 NONE_NONE 0 -\n1794182080.595 172.19.0.1 GET http://p7-g2-squid-20-shared-cal-origin:8000/missing/20/canary-cache 404 TCP_MISS 21 p7/p7-g2-squid-20-shared-cal/canary/cache-0\n1794182080.970 172.19.0.1 GET http://p7-g2-squid-20-shared-cal-origin:8000/missing/20/canary-cache 404 TCP_NEGATIVE_HIT 0 p7/p7-g2-squid-20-shared-cal/canary/cache-1\n1794182081.368 172.20.0.1 GET http://p7-g2-squid-20-shared-cal-origin:8000/present/canary-functions 200 TCP_MISS 1 p7/p7-g2-squid-20-shared-cal/canary/function-0\n1794182081.765 172.20.0.1 GET http://p7-g2-squid-20-shared-cal-origin:8000/present/canary-functions 200 TCP_REFRESH_MODIFIED 1 p7/p7-g2-squid-20-shared-cal/canary/function-1\n1794182082.163 172.20.0.1 HEAD http://p7-g2-squid-20-shared-cal-origin:8000/present/canary-functions 200 TCP_REFRESH_MODIFIED 0 p7/p7-g2-squid-20-shared-cal/canary/function-2\n1794182082.559 172.20.0.1 GET http://p7-g2-squid-20-shared-cal-origin:8000/present/canary-functions 200 TCP_MISS 0 p7/p7-g2-squid-20-shared-cal/canary/function-3\n1794182082.958 172.20.0.1 GET http://p7-g2-squid-20-shared-cal-origin:8000/present/canary-functions 206 TCP_REFRESH_MODIFIED 1 p7/p7-g2-squid-20-shared-cal/canary/function-4\n1794182083.359 172.20.0.1 GET http://p7-g2-squid-20-shared-cal-origin:8000/present/canary-functions 200 TCP_REFRESH_MODIFIED 1 p7/p7-g2-squid-20-shared-cal/canary/function-5\n1794182083.749 172.21.0.1 GET http://p7-g2-squid-20-shared-cal-origin:8000/missing/20/canary-denied 403 TCP_DENIED 0 p7/p7-g2-squid-20-shared-cal/canary/unknown-origin\n1794182084.112 172.20.0.1 GET http://p7-g2-squid-20-shared-cal-origin:8000/missing/20/g2-squid-20-shared-calibration-t000 404 TCP_MISS 21 p7/p7-g2-squid-20-shared-cal/calibration/t000/bob/sender\n1794182084.487 172.19.0.1 GET http://p7-g2-squid-20-shared-cal-origin:8000/missing/20/g2-squid-20-shared-calibration-t000 404 TCP_NEGATIVE_HIT 0 p7/p7-g2-squid-20-shared-cal/calibration/t000/alice/receiver\n1794182084.912 172.19.0.1 GET http://p7-g2-squid-20-shared-cal-origin:8000/missing/20/g2-squid-20-shared-calibration-t001 404 TCP_MISS 21 p7/p7-g2-squid-20-shared-cal/calibration/t001/alice/sender\n1794182085.297 172.20.0.1 GET http://p7-g2-squid-20-shared-cal-origin:8000/missing/20/g2-squid-20-shared-calibration-t001 404 TCP_NEGATIVE_HIT 0 p7/p7-g2-squid-20-shared-cal/calibration/t001/bob/receiver\n1794182085.715 172.20.0.1 GET http://p7-g2-squid-20-shared-cal-origin:8000/missing/20/g2-squid-20-shared-calibration-t002 404 TCP_MISS 21 p7/p7-g2-squid-20-shared-cal/calibration/t002/bob/sender\n1794182086.079 172.19.0.1 GET http://p7-g2-squid-20-shared-cal-origin:8000/missing/20/g2-squid-20-shared-calibration-t002 404 TCP_NEGATIVE_HIT 0 p7/p7-g2-squid-20-shared-cal/calibration/t002/alice/receiver\n1794182086.803 172.19.0.1 GET http://p7-g2-squid-20-shared-cal-origin:8000/missing/20/g2-squid-20-shared-calibration-t003 404 TCP_MISS 21 p7/p7-g2-squid-20-shared-cal/calibration/t003/alice/receiver\n1794182087.578 172.19.0.1 GET http://p7-g2-squid-20-shared-cal-origin:8000/missing/20/g2-squid-20-shared-calibration-t004 404 TCP_MISS 21 p7/p7-g2-squid-20-shared-cal/calibration/t004/alice/receiver\n1794182088.313 172.20.0.1 GET http://p7-g2-squid-20-shared-cal-origin:8000/missing/20/g2-squid-20-shared-calibration-t005 404 TCP_MISS 21 p7/p7-g2-squid-20-shared-cal/calibration/t005/bob/receiver\n1794182088.711 172.20.0.1 GET http://p7-g2-squid-20-shared-cal-origin:8000/missing/20/g2-squid-20-shared-calibration-t006 404 TCP_MISS 21 p7/p7-g2-squid-20-shared-cal/calibration/t006/bob/sender\n1794182089.084 172.19.0.1 GET http://p7-g2-squid-20-shared-cal-origin:8000/missing/20/g2-squid-20-shared-calibration-t006 404 TCP_NEGATIVE_HIT 0 p7/p7-g2-squid-20-shared-cal/calibration/t006/alice/receiver\n1794182089.500 172.19.0.1 GET http://p7-g2-squid-20-shared-cal-origin:8000/missing/20/g2-squid-20-shared-calibration-t007 404 TCP_MISS 21 p7/p7-g2-squid-20-shared-cal/calibration/t007/alice/sender\n1794182089.877 172.20.0.1 GET http://p7-g2-squid-20-shared-cal-origin:8000/missing/20/g2-squid-20-shared-calibration-t007 404 TCP_NEGATIVE_HIT 0 p7/p7-g2-squid-20-shared-cal/calibration/t007/bob/receiver\n1794182090.286 172.19.0.1 GET http://p7-g2-squid-20-shared-cal-origin:8000/missing/20/g2-squid-20-shared-calibration-t008 404 TCP_MISS 21 p7/p7-g2-squid-20-shared-cal/calibration/t008/alice/sender\n1794182090.662 172.20.0.1 GET http://p7-g2-squid-20-shared-cal-origin:8000/missing/20/g2-squid-20-shared-calibration-t008 404 TCP_NEGATIVE_HIT 0 p7/p7-g2-squid-20-shared-cal/calibration/t008/bob/receiver\n1794182091.389 172.20.0.1 GET http://p7-g2-squid-20-shared-cal-origin:8000/missing/20/g2-squid-20-shared-calibration-t009 404 TCP_MISS 21 p7/p7-g2-squid-20-shared-cal/calibration/t009/bob/receiver\n1794182092.111 172.19.0.1 GET http://p7-g2-squid-20-shared-cal-origin:8000/missing/20/g2-squid-20-shared-calibration-t010 404 TCP_MISS 21 p7/p7-g2-squid-20-shared-cal/calibration/t010/alice/receiver\n1794182092.878 172.20.0.1 GET http://p7-g2-squid-20-shared-cal-origin:8000/missing/20/g2-squid-20-shared-calibration-t011 404 TCP_MISS 21 p7/p7-g2-squid-20-shared-cal/calibration/t011/bob/receiver\n",
+      "store_id_log": null,
+      "native_log": "2026/11/08 23:54:36| Processing Configuration File: /config/cache.conf (depth 0)\n2026/11/08 23:54:36| Created PID file (/tmp/squid.pid)\n2026/11/08 23:54:36 kid1| Processing Configuration File: /config/cache.conf (depth 0)\n2026/11/08 23:54:36 kid1| Set Current Directory to /tmp\n2026/11/08 23:54:36 kid1| Creating missing swap directories\n2026/11/08 23:54:36 kid1| Making directories in /tmp/cache/00\n2026/11/08 23:54:36 kid1| Making directories in /tmp/cache/01\n2026/11/08 23:54:36 kid1| Making directories in /tmp/cache/02\n2026/11/08 23:54:36 kid1| Making directories in /tmp/cache/03\n2026/11/08 23:54:36| Removing PID file (/tmp/squid.pid)\n2026/11/08 23:54:36| Processing Configuration File: /config/cache.conf (depth 0)\n2026/11/08 23:54:36| Created PID file (/tmp/squid.pid)\n2026/11/08 23:54:36| Set Current Directory to /tmp\n2026/11/08 23:54:36| Starting Squid Cache version 7.8 for x86_64-pc-linux-gnu...\n2026/11/08 23:54:36| Service Name: squid\n2026/11/08 23:54:36| Process ID 22\n2026/11/08 23:54:36| Process Roles: master worker\n2026/11/08 23:54:36| With 1024 file descriptors available\n2026/11/08 23:54:36| Initializing IP Cache...\n2026/11/08 23:54:36| DNS IPv6 socket created at [::], FD 8\n2026/11/08 23:54:36| DNS IPv4 socket created at 0.0.0.0, FD 9\n2026/11/08 23:54:36| Adding nameserver 127.0.0.11 from /etc/resolv.conf\n2026/11/08 23:54:36| Adding domain ap-south-1.compute.internal from /etc/resolv.conf\n2026/11/08 23:54:36| Adding ndots 1 from /etc/resolv.conf\n2026/11/08 23:54:36| Logfile: opening log stdio:/tmp/cache-access.txt\n2026/11/08 23:54:36| WARNING: no_suid: setuid(0): (1) Operation not permitted\n2026/11/08 23:54:36| Unlinkd pipe opened on FD 14\n2026/11/08 23:54:36| Store logging disabled\n2026/11/08 23:54:36| Swap maxSize 16384 + 4096 KB, estimated 1575 objects\n2026/11/08 23:54:36| Target number of buckets: 78\n2026/11/08 23:54:36| Using 8192 Store buckets\n2026/11/08 23:54:36| Max Mem  size: 4096 KB\n2026/11/08 23:54:36| Max Swap size: 16384 KB\n2026/11/08 23:54:36| Rebuilding storage in /tmp/cache (no log)\n2026/11/08 23:54:36| Using Least Load store dir selection\n2026/11/08 23:54:36| Set Current Directory to /tmp\n2026/11/08 23:54:36| Finished loading MIME types and icons.\n2026/11/08 23:54:36| HTCP Disabled.\n2026/11/08 23:54:36| Squid plugin modules loaded: 0\n2026/11/08 23:54:36| Adaptation support is off.\n2026/11/08 23:54:36| Accepting HTTP Socket connections at conn3 local=[::]:8000 remote=[::] FD 16 flags=9\n    listening port: 8000\n2026/11/08 23:54:36| Done scanning /tmp/cache dir (0 entries)\n2026/11/08 23:54:36| Finished rebuilding storage from disk.\n          0 Entries scanned\n          0 Invalid entries\n          0 With invalid flags\n          0 Objects loaded\n          0 Objects expired\n          0 Objects canceled\n          0 Duplicate URLs purged\n          0 Swapfile clashes avoided\n    Took 0.01 seconds (0.00 objects/sec).\n2026/11/08 23:54:36| Beginning Validation Procedure\n2026/11/08 23:54:36| Completed Validation Procedure\n    Validated 0 Entries\n    store_swap_size = 0.00 KB\n2026/11/08 23:54:37| storeLateRelease: released 0 objects\n2026/11/08 23:54:54| Preparing for shutdown after 27 requests\n2026/11/08 23:54:54| Waiting 0 seconds for active connections to finish\n2026/11/08 23:54:54| Closing HTTP(S) port [::]:8000\n    listening port: 8000\n2026/11/08 23:54:56| Shutting down...\n2026/11/08 23:54:56| Closing unlinkd pipe on FD 14\n2026/11/08 23:54:56| storeDirWriteCleanLogs: Starting...\n2026/11/08 23:54:56|   Finished.  Wrote 14 entries.\n2026/11/08 23:54:56|   Took 0.00 seconds (49122.81 entries/sec).\nCPU Usage: 0.065 seconds = 0.042 user + 0.023 sys\nMaximum Resident Size: 61600 KB\nPage faults with physical i/o: 0\n2026/11/08 23:54:56| Logfile: closing log stdio:/tmp/cache-access.txt\n2026/11/08 23:54:56| Open FD UNSTARTED     0 stdin\n2026/11/08 23:54:56| Open FD UNSTARTED     1 stdout\n2026/11/08 23:54:56| Open FD UNSTARTED     2 stderr\n2026/11/08 23:54:56| Squid Cache (Version 7.8): Exiting normally.\n2026/11/08 23:54:56| Removing PID file (/tmp/squid.pid)\n",
+      "cache_inventory": {
+        "files": 16,
+        "file_bytes": 6343,
+        "allocated_blocks_bytes": 61440,
+        "method": "Private cache-directory inventory after native cache stop; not peak storage."
+      }
+    }
+  }
+}

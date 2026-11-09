@@ -1,0 +1,59 @@
+name: h-infra
+
+x-client: &client
+  image: python:3.12-slim
+  command: ["python3", "-c", "import time; time.sleep(86400)"]
+  user: "20001:20001"
+  read_only: true
+  cap_drop: [ALL]
+  security_opt: ["no-new-privileges:true"]
+  mem_limit: 128m
+  memswap_limit: 128m
+  cpus: 0.25
+  pids_limit: 32
+  tmpfs: ["/tmp:rw,nosuid,nodev,size=16m"]
+  restart: "no"
+
+services:
+  sender:
+    <<: *client
+    container_name: h-sender
+    networks: [sender]
+  receiver:
+    <<: *client
+    container_name: h-receiver
+    networks: [receiver]
+  upstream:
+    <<: *client
+    container_name: h-upstream
+    command: ["python3", "/fixture.py"]
+    environment: {FIXTURE_ROLE: upstream}
+    volumes: ["./scripts/fake_upstream.py:/fixture.py:ro"]
+    networks: [services]
+  target:
+    <<: *client
+    container_name: h-target
+    command: ["python3", "/fixture.py"]
+    environment: {FIXTURE_ROLE: target}
+    volumes: ["./scripts/fake_upstream.py:/fixture.py:ro"]
+    networks: [services]
+
+networks:
+  sender:
+    name: h-net-sender
+    internal: true
+    driver: bridge
+    driver_opts:
+      com.docker.network.bridge.gateway_mode_ipv4: isolated
+  receiver:
+    name: h-net-receiver
+    internal: true
+    driver: bridge
+    driver_opts:
+      com.docker.network.bridge.gateway_mode_ipv4: isolated
+  services:
+    name: h-net-services
+    internal: true
+    driver: bridge
+    driver_opts:
+      com.docker.network.bridge.gateway_mode_ipv4: isolated

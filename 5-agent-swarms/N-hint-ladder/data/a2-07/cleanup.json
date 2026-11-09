@@ -1,0 +1,99 @@
+{
+  "cohort_id": "a2-07",
+  "removed": [
+    {
+      "command": [
+        "docker",
+        "rm",
+        "-f",
+        "n-a2-07-alice"
+      ],
+      "returncode": 0,
+      "stderr": "Error response from daemon: No such container: n-a2-07-alice"
+    },
+    {
+      "command": [
+        "docker",
+        "rm",
+        "-f",
+        "n-a2-07-bob"
+      ],
+      "returncode": 0,
+      "stderr": "Error response from daemon: No such container: n-a2-07-bob"
+    },
+    {
+      "command": [
+        "docker",
+        "rm",
+        "-f",
+        "n-a2-07-gateway"
+      ],
+      "returncode": 0,
+      "stderr": "Error response from daemon: No such container: n-a2-07-gateway"
+    },
+    {
+      "command": [
+        "docker",
+        "rm",
+        "-f",
+        "n-a2-07-upstream"
+      ],
+      "returncode": 0,
+      "stderr": "Error response from daemon: No such container: n-a2-07-upstream"
+    },
+    {
+      "command": [
+        "docker",
+        "network",
+        "disconnect",
+        "n-a2-07-net-services",
+        "art-a"
+      ],
+      "returncode": 1,
+      "stderr": "Error response from daemon: network n-a2-07-net-services not found"
+    },
+    {
+      "command": [
+        "docker",
+        "network",
+        "rm",
+        "n-a2-07-net-alice"
+      ],
+      "returncode": 1,
+      "stderr": "Error response from daemon: network n-a2-07-net-alice not found\nexit status 1"
+    },
+    {
+      "command": [
+        "docker",
+        "network",
+        "rm",
+        "n-a2-07-net-bob"
+      ],
+      "returncode": 1,
+      "stderr": "Error response from daemon: network n-a2-07-net-bob not found\nexit status 1"
+    },
+    {
+      "command": [
+        "docker",
+        "network",
+        "rm",
+        "n-a2-07-net-services"
+      ],
+      "returncode": 1,
+      "stderr": "Error response from daemon: network n-a2-07-net-services not found\nexit status 1"
+    }
+  ],
+  "containers_readback": [],
+  "networks_readback": [],
+  "art_a_cohort_networks": [],
+  "readback_returncodes": {
+    "docker_ps": 0,
+    "network_ls": 0,
+    "art_a_inspect": 0
+  },
+  "absence_proved": true,
+  "repo_and_users_left_in_place": {
+    "repo": null,
+    "users": null
+  }
+}

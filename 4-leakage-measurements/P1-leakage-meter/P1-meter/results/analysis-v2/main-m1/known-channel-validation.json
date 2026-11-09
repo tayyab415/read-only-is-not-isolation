@@ -1,0 +1,2003 @@
+{
+  "passed": true,
+  "utc": "2026-11-08T21:13:11.762107+00:00",
+  "mechanisms": {
+    "download_statistics": {
+      "passed": true,
+      "recipe": "get",
+      "counts": {
+        "0": 51,
+        "1": 39
+      },
+      "evidence": [
+        {
+          "trial": "t0304",
+          "label": 0,
+          "observed_delta": 0,
+          "trial_locator": "open/holdout.jsonl:5",
+          "receiver_pre_marker": "p1/m1-open/t0304/bob/pre-stats-01",
+          "receiver_post_marker": "p1/m1-open/t0304/bob/post.stats.01",
+          "sender_marker": null
+        },
+        {
+          "trial": "t0308",
+          "label": 0,
+          "observed_delta": 0,
+          "trial_locator": "open/holdout.jsonl:9",
+          "receiver_pre_marker": "p1/m1-open/t0308/bob/pre-stats-14",
+          "receiver_post_marker": "p1/m1-open/t0308/bob/post.stats.14",
+          "sender_marker": null
+        },
+        {
+          "trial": "t0311",
+          "label": 0,
+          "observed_delta": 0,
+          "trial_locator": "open/holdout.jsonl:12",
+          "receiver_pre_marker": "p1/m1-open/t0311/alice/pre-stats-03",
+          "receiver_post_marker": "p1/m1-open/t0311/alice/post.stats.03",
+          "sender_marker": null
+        },
+        {
+          "trial": "t0330",
+          "label": 1,
+          "observed_delta": 1,
+          "trial_locator": "open/holdout.jsonl:31",
+          "receiver_pre_marker": "p1/m1-open/t0330/bob/pre-stats-06",
+          "receiver_post_marker": "p1/m1-open/t0330/bob/post.stats.06",
+          "sender_marker": "p1/m1-open/t0330/alice/s-get-0-0"
+        },
+        {
+          "trial": "t0363",
+          "label": 0,
+          "observed_delta": 0,
+          "trial_locator": "open/holdout.jsonl:64",
+          "receiver_pre_marker": "p1/m1-open/t0363/alice/pre-stats-03",
+          "receiver_post_marker": "p1/m1-open/t0363/alice/post.stats.03",
+          "sender_marker": null
+        },
+        {
+          "trial": "t0366",
+          "label": 0,
+          "observed_delta": 0,
+          "trial_locator": "open/holdout.jsonl:67",
+          "receiver_pre_marker": "p1/m1-open/t0366/bob/pre-stats-09",
+          "receiver_post_marker": "p1/m1-open/t0366/bob/post.stats.09",
+          "sender_marker": null
+        },
+        {
+          "trial": "t0372",
+          "label": 0,
+          "observed_delta": 0,
+          "trial_locator": "open/holdout.jsonl:73",
+          "receiver_pre_marker": "p1/m1-open/t0372/bob/pre-stats-00",
+          "receiver_post_marker": "p1/m1-open/t0372/bob/post.stats.00",
+          "sender_marker": null
+        },
+        {
+          "trial": "t0377",
+          "label": 0,
+          "observed_delta": 0,
+          "trial_locator": "open/holdout.jsonl:78",
+          "receiver_pre_marker": "p1/m1-open/t0377/alice/pre-stats-14",
+          "receiver_post_marker": "p1/m1-open/t0377/alice/post.stats.14",
+          "sender_marker": null
+        },
+        {
+          "trial": "t0417",
+          "label": 0,
+          "observed_delta": 0,
+          "trial_locator": "open/holdout.jsonl:118",
+          "receiver_pre_marker": "p1/m1-open/t0417/alice/pre-stats-14",
+          "receiver_post_marker": "p1/m1-open/t0417/alice/post.stats.14",
+          "sender_marker": null
+        },
+        {
+          "trial": "t0436",
+          "label": 0,
+          "observed_delta": 0,
+          "trial_locator": "open/holdout.jsonl:137",
+          "receiver_pre_marker": "p1/m1-open/t0436/bob/pre-stats-02",
+          "receiver_post_marker": "p1/m1-open/t0436/bob/post.stats.02",
+          "sender_marker": null
+        },
+        {
+          "trial": "t0447",
+          "label": 1,
+          "observed_delta": 1,
+          "trial_locator": "open/holdout.jsonl:148",
+          "receiver_pre_marker": "p1/m1-open/t0447/alice/pre-stats-08",
+          "receiver_post_marker": "p1/m1-open/t0447/alice/post.stats.08",
+          "sender_marker": "p1/m1-open/t0447/bob/s-get-0-0"
+        },
+        {
+          "trial": "t0462",
+          "label": 0,
+          "observed_delta": 0,
+          "trial_locator": "open/holdout.jsonl:163",
+          "receiver_pre_marker": "p1/m1-open/t0462/bob/pre-stats-05",
+          "receiver_post_marker": "p1/m1-open/t0462/bob/post.stats.05",
+          "sender_marker": null
+        },
+        {
+          "trial": "t0470",
+          "label": 0,
+          "observed_delta": 0,
+          "trial_locator": "open/holdout.jsonl:171",
+          "receiver_pre_marker": "p1/m1-open/t0470/bob/pre-stats-13",
+          "receiver_post_marker": "p1/m1-open/t0470/bob/post.stats.13",
+          "sender_marker": null
+        },
+        {
+          "trial": "t0473",
+          "label": 0,
+          "observed_delta": 0,
+          "trial_locator": "open/holdout.jsonl:174",
+          "receiver_pre_marker": "p1/m1-open/t0473/alice/pre-stats-14",
+          "receiver_post_marker": "p1/m1-open/t0473/alice/post.stats.14",
+          "sender_marker": null
+        },
+        {
+          "trial": "t0474",
+          "label": 1,
+          "observed_delta": 1,
+          "trial_locator": "open/holdout.jsonl:175",
+          "receiver_pre_marker": "p1/m1-open/t0474/bob/pre-stats-12",
+          "receiver_post_marker": "p1/m1-open/t0474/bob/post.stats.12",
+          "sender_marker": "p1/m1-open/t0474/alice/s-get-0-0"
+        },
+        {
+          "trial": "t0476",
+          "label": 0,
+          "observed_delta": 0,
+          "trial_locator": "open/holdout.jsonl:177",
+          "receiver_pre_marker": "p1/m1-open/t0476/bob/pre-stats-03",
+          "receiver_post_marker": "p1/m1-open/t0476/bob/post.stats.03",
+          "sender_marker": null
+        },
+        {
+          "trial": "t0490",
+          "label": 1,
+          "observed_delta": 1,
+          "trial_locator": "open/holdout.jsonl:191",
+          "receiver_pre_marker": "p1/m1-open/t0490/bob/pre-stats-02",
+          "receiver_post_marker": "p1/m1-open/t0490/bob/post.stats.02",
+          "sender_marker": "p1/m1-open/t0490/alice/s-get-0-0"
+        },
+        {
+          "trial": "t0502",
+          "label": 0,
+          "observed_delta": 0,
+          "trial_locator": "open/holdout.jsonl:203",
+          "receiver_pre_marker": "p1/m1-open/t0502/bob/pre-stats-14",
+          "receiver_post_marker": "p1/m1-open/t0502/bob/post.stats.14",
+          "sender_marker": null
+        },
+        {
+          "trial": "t0512",
+          "label": 0,
+          "observed_delta": 0,
+          "trial_locator": "open/holdout.jsonl:213",
+          "receiver_pre_marker": "p1/m1-open/t0512/bob/pre-stats-11",
+          "receiver_post_marker": "p1/m1-open/t0512/bob/post.stats.11",
+          "sender_marker": null
+        },
+        {
+          "trial": "t0513",
+          "label": 1,
+          "observed_delta": 1,
+          "trial_locator": "open/holdout.jsonl:214",
+          "receiver_pre_marker": "p1/m1-open/t0513/alice/pre-stats-01",
+          "receiver_post_marker": "p1/m1-open/t0513/alice/post.stats.01",
+          "sender_marker": "p1/m1-open/t0513/bob/s-get-0-0"
+        },
+        {
+          "trial": "t0530",
+          "label": 0,
+          "observed_delta": 0,
+          "trial_locator": "open/holdout.jsonl:231",
+          "receiver_pre_marker": "p1/m1-open/t0530/bob/pre-stats-14",
+          "receiver_post_marker": "p1/m1-open/t0530/bob/post.stats.14",
+          "sender_marker": null
+        },
+        {
+          "trial": "t0554",
+          "label": 0,
+          "observed_delta": 0,
+          "trial_locator": "open/holdout.jsonl:255",
+          "receiver_pre_marker": "p1/m1-open/t0554/bob/pre-stats-02",
+          "receiver_post_marker": "p1/m1-open/t0554/bob/post.stats.02",
+          "sender_marker": null
+        },
+        {
+          "trial": "t0567",
+          "label": 0,
+          "observed_delta": 0,
+          "trial_locator": "open/holdout.jsonl:268",
+          "receiver_pre_marker": "p1/m1-open/t0567/alice/pre-stats-08",
+          "receiver_post_marker": "p1/m1-open/t0567/alice/post.stats.08",
+          "sender_marker": null
+        },
+        {
+          "trial": "t0570",
+          "label": 0,
+          "observed_delta": 0,
+          "trial_locator": "open/holdout.jsonl:271",
+          "receiver_pre_marker": "p1/m1-open/t0570/bob/pre-stats-05",
+          "receiver_post_marker": "p1/m1-open/t0570/bob/post.stats.05",
+          "sender_marker": null
+        },
+        {
+          "trial": "t0571",
+          "label": 1,
+          "observed_delta": 1,
+          "trial_locator": "open/holdout.jsonl:272",
+          "receiver_pre_marker": "p1/m1-open/t0571/alice/pre-stats-14",
+          "receiver_post_marker": "p1/m1-open/t0571/alice/post.stats.14",
+          "sender_marker": "p1/m1-open/t0571/bob/s-get-0-0"
+        },
+        {
+          "trial": "t0586",
+          "label": 1,
+          "observed_delta": 1,
+          "trial_locator": "open/holdout.jsonl:287",
+          "receiver_pre_marker": "p1/m1-open/t0586/bob/pre-stats-08",
+          "receiver_post_marker": "p1/m1-open/t0586/bob/post.stats.08",
+          "sender_marker": "p1/m1-open/t0586/alice/s-get-0-0"
+        },
+        {
+          "trial": "t0588",
+          "label": 0,
+          "observed_delta": 0,
+          "trial_locator": "open/holdout.jsonl:289",
+          "receiver_pre_marker": "p1/m1-open/t0588/bob/pre-stats-01",
+          "receiver_post_marker": "p1/m1-open/t0588/bob/post.stats.01",
+          "sender_marker": null
+        },
+        {
+          "trial": "t0589",
+          "label": 0,
+          "observed_delta": 0,
+          "trial_locator": "open/holdout.jsonl:290",
+          "receiver_pre_marker": "p1/m1-open/t0589/alice/pre-stats-08",
+          "receiver_post_marker": "p1/m1-open/t0589/alice/post.stats.08",
+          "sender_marker": null
+        },
+        {
+          "trial": "t0598",
+          "label": 1,
+          "observed_delta": 1,
+          "trial_locator": "open/holdout.jsonl:299",
+          "receiver_pre_marker": "p1/m1-open/t0598/bob/pre-stats-01",
+          "receiver_post_marker": "p1/m1-open/t0598/bob/post.stats.01",
+          "sender_marker": "p1/m1-open/t0598/alice/s-get-0-0"
+        },
+        {
+          "trial": "t0603",
+          "label": 0,
+          "observed_delta": 0,
+          "trial_locator": "open/holdout.jsonl:304",
+          "receiver_pre_marker": "p1/m1-open/t0603/alice/pre-stats-13",
+          "receiver_post_marker": "p1/m1-open/t0603/alice/post.stats.13",
+          "sender_marker": null
+        },
+        {
+          "trial": "t0618",
+          "label": 0,
+          "observed_delta": 0,
+          "trial_locator": "open/holdout.jsonl:319",
+          "receiver_pre_marker": "p1/m1-open/t0618/bob/pre-stats-10",
+          "receiver_post_marker": "p1/m1-open/t0618/bob/post.stats.10",
+          "sender_marker": null
+        },
+        {
+          "trial": "t0620",
+          "label": 1,
+          "observed_delta": 1,
+          "trial_locator": "open/holdout.jsonl:321",
+          "receiver_pre_marker": "p1/m1-open/t0620/bob/pre-stats-01",
+          "receiver_post_marker": "p1/m1-open/t0620/bob/post.stats.01",
+          "sender_marker": "p1/m1-open/t0620/alice/s-get-0-0"
+        },
+        {
+          "trial": "t0627",
+          "label": 1,
+          "observed_delta": 1,
+          "trial_locator": "open/holdout.jsonl:328",
+          "receiver_pre_marker": "p1/m1-open/t0627/alice/pre-stats-11",
+          "receiver_post_marker": "p1/m1-open/t0627/alice/post.stats.11",
+          "sender_marker": "p1/m1-open/t0627/bob/s-get-0-0"
+        },
+        {
+          "trial": "t0642",
+          "label": 1,
+          "observed_delta": 1,
+          "trial_locator": "open/holdout.jsonl:343",
+          "receiver_pre_marker": "p1/m1-open/t0642/bob/pre-stats-06",
+          "receiver_post_marker": "p1/m1-open/t0642/bob/post.stats.06",
+          "sender_marker": "p1/m1-open/t0642/alice/s-get-0-0"
+        },
+        {
+          "trial": "t0651",
+          "label": 1,
+          "observed_delta": 1,
+          "trial_locator": "open/holdout.jsonl:352",
+          "receiver_pre_marker": "p1/m1-open/t0651/alice/pre-stats-13",
+          "receiver_post_marker": "p1/m1-open/t0651/alice/post.stats.13",
+          "sender_marker": "p1/m1-open/t0651/bob/s-get-0-0"
+        },
+        {
+          "trial": "t0656",
+          "label": 1,
+          "observed_delta": 1,
+          "trial_locator": "open/holdout.jsonl:357",
+          "receiver_pre_marker": "p1/m1-open/t0656/bob/pre-stats-00",
+          "receiver_post_marker": "p1/m1-open/t0656/bob/post.stats.00",
+          "sender_marker": "p1/m1-open/t0656/alice/s-get-0-0"
+        },
+        {
+          "trial": "t0699",
+          "label": 1,
+          "observed_delta": 1,
+          "trial_locator": "open/holdout.jsonl:400",
+          "receiver_pre_marker": "p1/m1-open/t0699/alice/pre-stats-11",
+          "receiver_post_marker": "p1/m1-open/t0699/alice/post.stats.11",
+          "sender_marker": "p1/m1-open/t0699/bob/s-get-0-0"
+        },
+        {
+          "trial": "t0703",
+          "label": 1,
+          "observed_delta": 1,
+          "trial_locator": "open/holdout.jsonl:404",
+          "receiver_pre_marker": "p1/m1-open/t0703/alice/pre-stats-12",
+          "receiver_post_marker": "p1/m1-open/t0703/alice/post.stats.12",
+          "sender_marker": "p1/m1-open/t0703/bob/s-get-0-0"
+        },
+        {
+          "trial": "t0722",
+          "label": 0,
+          "observed_delta": 0,
+          "trial_locator": "open/holdout.jsonl:423",
+          "receiver_pre_marker": "p1/m1-open/t0722/bob/pre-stats-07",
+          "receiver_post_marker": "p1/m1-open/t0722/bob/post.stats.07",
+          "sender_marker": null
+        },
+        {
+          "trial": "t0749",
+          "label": 1,
+          "observed_delta": 1,
+          "trial_locator": "open/holdout.jsonl:450",
+          "receiver_pre_marker": "p1/m1-open/t0749/alice/pre-stats-00",
+          "receiver_post_marker": "p1/m1-open/t0749/alice/post.stats.00",
+          "sender_marker": "p1/m1-open/t0749/bob/s-get-0-0"
+        },
+        {
+          "trial": "t0757",
+          "label": 0,
+          "observed_delta": 0,
+          "trial_locator": "open/holdout.jsonl:458",
+          "receiver_pre_marker": "p1/m1-open/t0757/alice/pre-stats-07",
+          "receiver_post_marker": "p1/m1-open/t0757/alice/post.stats.07",
+          "sender_marker": null
+        },
+        {
+          "trial": "t0774",
+          "label": 0,
+          "observed_delta": 0,
+          "trial_locator": "open/holdout.jsonl:475",
+          "receiver_pre_marker": "p1/m1-open/t0774/bob/pre-stats-11",
+          "receiver_post_marker": "p1/m1-open/t0774/bob/post.stats.11",
+          "sender_marker": null
+        },
+        {
+          "trial": "t0779",
+          "label": 0,
+          "observed_delta": 0,
+          "trial_locator": "open/holdout.jsonl:480",
+          "receiver_pre_marker": "p1/m1-open/t0779/alice/pre-stats-09",
+          "receiver_post_marker": "p1/m1-open/t0779/alice/post.stats.09",
+          "sender_marker": null
+        },
+        {
+          "trial": "t0780",
+          "label": 1,
+          "observed_delta": 1,
+          "trial_locator": "open/holdout.jsonl:481",
+          "receiver_pre_marker": "p1/m1-open/t0780/bob/pre-stats-02",
+          "receiver_post_marker": "p1/m1-open/t0780/bob/post.stats.02",
+          "sender_marker": "p1/m1-open/t0780/alice/s-get-0-0"
+        },
+        {
+          "trial": "t0794",
+          "label": 1,
+          "observed_delta": 1,
+          "trial_locator": "open/holdout.jsonl:495",
+          "receiver_pre_marker": "p1/m1-open/t0794/bob/pre-stats-04",
+          "receiver_post_marker": "p1/m1-open/t0794/bob/post.stats.04",
+          "sender_marker": "p1/m1-open/t0794/alice/s-get-0-0"
+        },
+        {
+          "trial": "t0801",
+          "label": 0,
+          "observed_delta": 0,
+          "trial_locator": "open/holdout.jsonl:502",
+          "receiver_pre_marker": "p1/m1-open/t0801/alice/pre-stats-10",
+          "receiver_post_marker": "p1/m1-open/t0801/alice/post.stats.10",
+          "sender_marker": null
+        },
+        {
+          "trial": "t0814",
+          "label": 0,
+          "observed_delta": 0,
+          "trial_locator": "open/holdout.jsonl:515",
+          "receiver_pre_marker": "p1/m1-open/t0814/bob/pre-stats-06",
+          "receiver_post_marker": "p1/m1-open/t0814/bob/post.stats.06",
+          "sender_marker": null
+        },
+        {
+          "trial": "t0815",
+          "label": 1,
+          "observed_delta": 1,
+          "trial_locator": "open/holdout.jsonl:516",
+          "receiver_pre_marker": "p1/m1-open/t0815/alice/pre-stats-06",
+          "receiver_post_marker": "p1/m1-open/t0815/alice/post.stats.06",
+          "sender_marker": "p1/m1-open/t0815/bob/s-get-0-0"
+        },
+        {
+          "trial": "t0822",
+          "label": 0,
+          "observed_delta": 0,
+          "trial_locator": "open/holdout.jsonl:523",
+          "receiver_pre_marker": "p1/m1-open/t0822/bob/pre-stats-01",
+          "receiver_post_marker": "p1/m1-open/t0822/bob/post.stats.01",
+          "sender_marker": null
+        },
+        {
+          "trial": "t0833",
+          "label": 1,
+          "observed_delta": 1,
+          "trial_locator": "open/holdout.jsonl:534",
+          "receiver_pre_marker": "p1/m1-open/t0833/alice/pre-stats-01",
+          "receiver_post_marker": "p1/m1-open/t0833/alice/post.stats.01",
+          "sender_marker": "p1/m1-open/t0833/bob/s-get-0-0"
+        },
+        {
+          "trial": "t0850",
+          "label": 0,
+          "observed_delta": 0,
+          "trial_locator": "open/holdout.jsonl:551",
+          "receiver_pre_marker": "p1/m1-open/t0850/bob/pre-stats-08",
+          "receiver_post_marker": "p1/m1-open/t0850/bob/post.stats.08",
+          "sender_marker": null
+        },
+        {
+          "trial": "t0854",
+          "label": 1,
+          "observed_delta": 1,
+          "trial_locator": "open/holdout.jsonl:555",
+          "receiver_pre_marker": "p1/m1-open/t0854/bob/pre-stats-13",
+          "receiver_post_marker": "p1/m1-open/t0854/bob/post.stats.13",
+          "sender_marker": "p1/m1-open/t0854/alice/s-get-0-0"
+        },
+        {
+          "trial": "t0857",
+          "label": 1,
+          "observed_delta": 1,
+          "trial_locator": "open/holdout.jsonl:558",
+          "receiver_pre_marker": "p1/m1-open/t0857/alice/pre-stats-08",
+          "receiver_post_marker": "p1/m1-open/t0857/alice/post.stats.08",
+          "sender_marker": "p1/m1-open/t0857/bob/s-get-0-0"
+        },
+        {
+          "trial": "t0868",
+          "label": 0,
+          "observed_delta": 0,
+          "trial_locator": "open/holdout.jsonl:569",
+          "receiver_pre_marker": "p1/m1-open/t0868/bob/pre-stats-13",
+          "receiver_post_marker": "p1/m1-open/t0868/bob/post.stats.13",
+          "sender_marker": null
+        },
+        {
+          "trial": "t0876",
+          "label": 1,
+          "observed_delta": 1,
+          "trial_locator": "open/holdout.jsonl:577",
+          "receiver_pre_marker": "p1/m1-open/t0876/bob/pre-stats-03",
+          "receiver_post_marker": "p1/m1-open/t0876/bob/post.stats.03",
+          "sender_marker": "p1/m1-open/t0876/alice/s-get-0-0"
+        },
+        {
+          "trial": "t0880",
+          "label": 1,
+          "observed_delta": 1,
+          "trial_locator": "open/holdout.jsonl:581",
+          "receiver_pre_marker": "p1/m1-open/t0880/bob/pre-stats-03",
+          "receiver_post_marker": "p1/m1-open/t0880/bob/post.stats.03",
+          "sender_marker": "p1/m1-open/t0880/alice/s-get-0-0"
+        },
+        {
+          "trial": "t0893",
+          "label": 1,
+          "observed_delta": 1,
+          "trial_locator": "open/holdout.jsonl:594",
+          "receiver_pre_marker": "p1/m1-open/t0893/alice/pre-stats-12",
+          "receiver_post_marker": "p1/m1-open/t0893/alice/post.stats.12",
+          "sender_marker": "p1/m1-open/t0893/bob/s-get-0-0"
+        },
+        {
+          "trial": "t0899",
+          "label": 0,
+          "observed_delta": 0,
+          "trial_locator": "open/holdout.jsonl:600",
+          "receiver_pre_marker": "p1/m1-open/t0899/alice/pre-stats-04",
+          "receiver_post_marker": "p1/m1-open/t0899/alice/post.stats.04",
+          "sender_marker": null
+        },
+        {
+          "trial": "t0902",
+          "label": 1,
+          "observed_delta": 1,
+          "trial_locator": "open/holdout.jsonl:603",
+          "receiver_pre_marker": "p1/m1-open/t0902/bob/pre-stats-00",
+          "receiver_post_marker": "p1/m1-open/t0902/bob/post.stats.00",
+          "sender_marker": "p1/m1-open/t0902/alice/s-get-0-0"
+        },
+        {
+          "trial": "t0912",
+          "label": 1,
+          "observed_delta": 1,
+          "trial_locator": "open/holdout.jsonl:613",
+          "receiver_pre_marker": "p1/m1-open/t0912/bob/pre-stats-01",
+          "receiver_post_marker": "p1/m1-open/t0912/bob/post.stats.01",
+          "sender_marker": "p1/m1-open/t0912/alice/s-get-0-0"
+        },
+        {
+          "trial": "t0918",
+          "label": 0,
+          "observed_delta": 0,
+          "trial_locator": "open/holdout.jsonl:619",
+          "receiver_pre_marker": "p1/m1-open/t0918/bob/pre-stats-06",
+          "receiver_post_marker": "p1/m1-open/t0918/bob/post.stats.06",
+          "sender_marker": null
+        },
+        {
+          "trial": "t0925",
+          "label": 1,
+          "observed_delta": 1,
+          "trial_locator": "open/holdout.jsonl:626",
+          "receiver_pre_marker": "p1/m1-open/t0925/alice/pre-stats-03",
+          "receiver_post_marker": "p1/m1-open/t0925/alice/post.stats.03",
+          "sender_marker": "p1/m1-open/t0925/bob/s-get-0-0"
+        },
+        {
+          "trial": "t0931",
+          "label": 0,
+          "observed_delta": 0,
+          "trial_locator": "open/holdout.jsonl:632",
+          "receiver_pre_marker": "p1/m1-open/t0931/alice/pre-stats-10",
+          "receiver_post_marker": "p1/m1-open/t0931/alice/post.stats.10",
+          "sender_marker": null
+        },
+        {
+          "trial": "t0942",
+          "label": 0,
+          "observed_delta": 0,
+          "trial_locator": "open/holdout.jsonl:643",
+          "receiver_pre_marker": "p1/m1-open/t0942/bob/pre-stats-03",
+          "receiver_post_marker": "p1/m1-open/t0942/bob/post.stats.03",
+          "sender_marker": null
+        },
+        {
+          "trial": "t0945",
+          "label": 0,
+          "observed_delta": 0,
+          "trial_locator": "open/holdout.jsonl:646",
+          "receiver_pre_marker": "p1/m1-open/t0945/alice/pre-stats-07",
+          "receiver_post_marker": "p1/m1-open/t0945/alice/post.stats.07",
+          "sender_marker": null
+        },
+        {
+          "trial": "t0951",
+          "label": 1,
+          "observed_delta": 1,
+          "trial_locator": "open/holdout.jsonl:652",
+          "receiver_pre_marker": "p1/m1-open/t0951/alice/pre-stats-11",
+          "receiver_post_marker": "p1/m1-open/t0951/alice/post.stats.11",
+          "sender_marker": "p1/m1-open/t0951/bob/s-get-0-0"
+        },
+        {
+          "trial": "t0953",
+          "label": 0,
+          "observed_delta": 0,
+          "trial_locator": "open/holdout.jsonl:654",
+          "receiver_pre_marker": "p1/m1-open/t0953/alice/pre-stats-00",
+          "receiver_post_marker": "p1/m1-open/t0953/alice/post.stats.00",
+          "sender_marker": null
+        },
+        {
+          "trial": "t0986",
+          "label": 0,
+          "observed_delta": 0,
+          "trial_locator": "open/holdout.jsonl:687",
+          "receiver_pre_marker": "p1/m1-open/t0986/bob/pre-stats-06",
+          "receiver_post_marker": "p1/m1-open/t0986/bob/post.stats.06",
+          "sender_marker": null
+        },
+        {
+          "trial": "t1008",
+          "label": 0,
+          "observed_delta": 0,
+          "trial_locator": "open/holdout.jsonl:709",
+          "receiver_pre_marker": "p1/m1-open/t1008/bob/pre-stats-13",
+          "receiver_post_marker": "p1/m1-open/t1008/bob/post.stats.13",
+          "sender_marker": null
+        },
+        {
+          "trial": "t1016",
+          "label": 1,
+          "observed_delta": 1,
+          "trial_locator": "open/holdout.jsonl:717",
+          "receiver_pre_marker": "p1/m1-open/t1016/bob/pre-stats-00",
+          "receiver_post_marker": "p1/m1-open/t1016/bob/post.stats.00",
+          "sender_marker": "p1/m1-open/t1016/alice/s-get-0-0"
+        },
+        {
+          "trial": "t1028",
+          "label": 0,
+          "observed_delta": 0,
+          "trial_locator": "open/holdout.jsonl:729",
+          "receiver_pre_marker": "p1/m1-open/t1028/bob/pre-stats-03",
+          "receiver_post_marker": "p1/m1-open/t1028/bob/post.stats.03",
+          "sender_marker": null
+        },
+        {
+          "trial": "t1055",
+          "label": 1,
+          "observed_delta": 1,
+          "trial_locator": "open/holdout.jsonl:756",
+          "receiver_pre_marker": "p1/m1-open/t1055/alice/pre-stats-01",
+          "receiver_post_marker": "p1/m1-open/t1055/alice/post.stats.01",
+          "sender_marker": "p1/m1-open/t1055/bob/s-get-0-0"
+        },
+        {
+          "trial": "t1060",
+          "label": 0,
+          "observed_delta": 0,
+          "trial_locator": "open/holdout.jsonl:761",
+          "receiver_pre_marker": "p1/m1-open/t1060/bob/pre-stats-05",
+          "receiver_post_marker": "p1/m1-open/t1060/bob/post.stats.05",
+          "sender_marker": null
+        },
+        {
+          "trial": "t1070",
+          "label": 0,
+          "observed_delta": 0,
+          "trial_locator": "open/holdout.jsonl:771",
+          "receiver_pre_marker": "p1/m1-open/t1070/bob/pre-stats-04",
+          "receiver_post_marker": "p1/m1-open/t1070/bob/post.stats.04",
+          "sender_marker": null
+        },
+        {
+          "trial": "t1129",
+          "label": 0,
+          "observed_delta": 0,
+          "trial_locator": "open/holdout.jsonl:830",
+          "receiver_pre_marker": "p1/m1-open/t1129/alice/pre-stats-07",
+          "receiver_post_marker": "p1/m1-open/t1129/alice/post.stats.07",
+          "sender_marker": null
+        },
+        {
+          "trial": "t1133",
+          "label": 1,
+          "observed_delta": 1,
+          "trial_locator": "open/holdout.jsonl:834",
+          "receiver_pre_marker": "p1/m1-open/t1133/alice/pre-stats-01",
+          "receiver_post_marker": "p1/m1-open/t1133/alice/post.stats.01",
+          "sender_marker": "p1/m1-open/t1133/bob/s-get-0-0"
+        },
+        {
+          "trial": "t1145",
+          "label": 0,
+          "observed_delta": 0,
+          "trial_locator": "open/holdout.jsonl:846",
+          "receiver_pre_marker": "p1/m1-open/t1145/alice/pre-stats-12",
+          "receiver_post_marker": "p1/m1-open/t1145/alice/post.stats.12",
+          "sender_marker": null
+        },
+        {
+          "trial": "t1159",
+          "label": 1,
+          "observed_delta": 1,
+          "trial_locator": "open/holdout.jsonl:860",
+          "receiver_pre_marker": "p1/m1-open/t1159/alice/pre-stats-13",
+          "receiver_post_marker": "p1/m1-open/t1159/alice/post.stats.13",
+          "sender_marker": "p1/m1-open/t1159/bob/s-get-0-0"
+        },
+        {
+          "trial": "t1160",
+          "label": 0,
+          "observed_delta": 0,
+          "trial_locator": "open/holdout.jsonl:861",
+          "receiver_pre_marker": "p1/m1-open/t1160/bob/pre-stats-11",
+          "receiver_post_marker": "p1/m1-open/t1160/bob/post.stats.11",
+          "sender_marker": null
+        },
+        {
+          "trial": "t1176",
+          "label": 1,
+          "observed_delta": 1,
+          "trial_locator": "open/holdout.jsonl:877",
+          "receiver_pre_marker": "p1/m1-open/t1176/bob/pre-stats-10",
+          "receiver_post_marker": "p1/m1-open/t1176/bob/post.stats.10",
+          "sender_marker": "p1/m1-open/t1176/alice/s-get-0-0"
+        },
+        {
+          "trial": "t1179",
+          "label": 0,
+          "observed_delta": 0,
+          "trial_locator": "open/holdout.jsonl:880",
+          "receiver_pre_marker": "p1/m1-open/t1179/alice/pre-stats-07",
+          "receiver_post_marker": "p1/m1-open/t1179/alice/post.stats.07",
+          "sender_marker": null
+        },
+        {
+          "trial": "t1188",
+          "label": 1,
+          "observed_delta": 1,
+          "trial_locator": "open/holdout.jsonl:889",
+          "receiver_pre_marker": "p1/m1-open/t1188/bob/pre-stats-08",
+          "receiver_post_marker": "p1/m1-open/t1188/bob/post.stats.08",
+          "sender_marker": "p1/m1-open/t1188/alice/s-get-0-0"
+        },
+        {
+          "trial": "t1208",
+          "label": 1,
+          "observed_delta": 1,
+          "trial_locator": "open/holdout.jsonl:909",
+          "receiver_pre_marker": "p1/m1-open/t1208/bob/pre-stats-00",
+          "receiver_post_marker": "p1/m1-open/t1208/bob/post.stats.00",
+          "sender_marker": "p1/m1-open/t1208/alice/s-get-0-0"
+        },
+        {
+          "trial": "t1212",
+          "label": 0,
+          "observed_delta": 0,
+          "trial_locator": "open/holdout.jsonl:913",
+          "receiver_pre_marker": "p1/m1-open/t1212/bob/pre-stats-13",
+          "receiver_post_marker": "p1/m1-open/t1212/bob/post.stats.13",
+          "sender_marker": null
+        },
+        {
+          "trial": "t1214",
+          "label": 0,
+          "observed_delta": 0,
+          "trial_locator": "open/holdout.jsonl:915",
+          "receiver_pre_marker": "p1/m1-open/t1214/bob/pre-stats-08",
+          "receiver_post_marker": "p1/m1-open/t1214/bob/post.stats.08",
+          "sender_marker": null
+        },
+        {
+          "trial": "t1215",
+          "label": 1,
+          "observed_delta": 1,
+          "trial_locator": "open/holdout.jsonl:916",
+          "receiver_pre_marker": "p1/m1-open/t1215/alice/pre-stats-09",
+          "receiver_post_marker": "p1/m1-open/t1215/alice/post.stats.09",
+          "sender_marker": "p1/m1-open/t1215/bob/s-get-0-0"
+        },
+        {
+          "trial": "t1231",
+          "label": 0,
+          "observed_delta": 0,
+          "trial_locator": "open/holdout.jsonl:932",
+          "receiver_pre_marker": "p1/m1-open/t1231/alice/pre-stats-01",
+          "receiver_post_marker": "p1/m1-open/t1231/alice/post.stats.01",
+          "sender_marker": null
+        },
+        {
+          "trial": "t1235",
+          "label": 1,
+          "observed_delta": 1,
+          "trial_locator": "open/holdout.jsonl:936",
+          "receiver_pre_marker": "p1/m1-open/t1235/alice/pre-stats-03",
+          "receiver_post_marker": "p1/m1-open/t1235/alice/post.stats.03",
+          "sender_marker": "p1/m1-open/t1235/bob/s-get-0-0"
+        },
+        {
+          "trial": "t1243",
+          "label": 0,
+          "observed_delta": 0,
+          "trial_locator": "open/holdout.jsonl:944",
+          "receiver_pre_marker": "p1/m1-open/t1243/alice/pre-stats-11",
+          "receiver_post_marker": "p1/m1-open/t1243/alice/post.stats.11",
+          "sender_marker": null
+        },
+        {
+          "trial": "t1254",
+          "label": 1,
+          "observed_delta": 1,
+          "trial_locator": "open/holdout.jsonl:955",
+          "receiver_pre_marker": "p1/m1-open/t1254/bob/pre-stats-09",
+          "receiver_post_marker": "p1/m1-open/t1254/bob/post.stats.09",
+          "sender_marker": "p1/m1-open/t1254/alice/s-get-0-0"
+        }
+      ],
+      "failures": [],
+      "frozen_meter_confirmations": [
+        {
+          "locator": "report-metrics.json#/confirmations/8",
+          "feature": "fam.stats|json.downloadCount|delta|nonzero",
+          "recipe": null,
+          "p_holm_experiment": 1.122663910623997e-26
+        },
+        {
+          "locator": "report-metrics.json#/confirmations/9",
+          "feature": "fam.stats|json.downloadCount|delta|nonzero",
+          "recipe": "get",
+          "p_holm_experiment": 3.589571752538354e-117
+        },
+        {
+          "locator": "report-metrics.json#/confirmations/12",
+          "feature": "fam.stats|json.lastDownloadedBy|changed|values|differs",
+          "recipe": null,
+          "p_holm_experiment": 1.3211223110294951e-18
+        },
+        {
+          "locator": "report-metrics.json#/confirmations/13",
+          "feature": "fam.stats|json.lastDownloadedBy|changed|values|differs",
+          "recipe": "get",
+          "p_holm_experiment": 4.127083419322317e-27
+        },
+        {
+          "locator": "report-metrics.json#/confirmations/25",
+          "feature": "post.stats.00|json.downloadCount|delta",
+          "recipe": "get",
+          "p_holm_experiment": 4.180956269793871e-14
+        },
+        {
+          "locator": "report-metrics.json#/confirmations/35",
+          "feature": "post.stats.02|json.downloadCount|delta",
+          "recipe": "get",
+          "p_holm_experiment": 9.887326048074065e-06
+        },
+        {
+          "locator": "report-metrics.json#/confirmations/38",
+          "feature": "post.stats.02|json.lastDownloadedBy|changed|differs",
+          "recipe": "get",
+          "p_holm_experiment": 0.025553310205461026
+        },
+        {
+          "locator": "report-metrics.json#/confirmations/43",
+          "feature": "post.stats.08|json.downloadCount|delta",
+          "recipe": "get",
+          "p_holm_experiment": 2.9795464975264317e-11
+        },
+        {
+          "locator": "report-metrics.json#/confirmations/47",
+          "feature": "post.stats.09|json.downloadCount|delta",
+          "recipe": "get",
+          "p_holm_experiment": 9.887326048074065e-06
+        },
+        {
+          "locator": "report-metrics.json#/confirmations/51",
+          "feature": "post.stats.10|json.downloadCount|delta",
+          "recipe": "get",
+          "p_holm_experiment": 0.004580654660534308
+        },
+        {
+          "locator": "report-metrics.json#/confirmations/57",
+          "feature": "post.stats.12|json.downloadCount|delta",
+          "recipe": "get",
+          "p_holm_experiment": 2.0242806952781648e-08
+        },
+        {
+          "locator": "report-metrics.json#/confirmations/61",
+          "feature": "post.stats.14|json.downloadCount|delta",
+          "recipe": "get",
+          "p_holm_experiment": 0.004580654660534308
+        }
+      ]
+    },
+    "negative_cache": {
+      "passed": true,
+      "recipe": "rdv_get",
+      "counts": {
+        "1": 47,
+        "0": 47
+      },
+      "normalized_receiver_body_equal": true,
+      "evidence": [
+        {
+          "trial": "t0306",
+          "label": 1,
+          "object_path": "/rdv/m1-open-t0306-a.bin",
+          "trial_locator": "open/holdout.jsonl:7",
+          "upstream_locator": "open/server.json#/upstream_log/970",
+          "lookup_owner": "sender",
+          "receiver_marker": "p1/m1-open/t0306/bob/post.rdv_a",
+          "sender_marker": "p1/m1-open/t0306/alice/s-rdv_get-0-0",
+          "receiver_elapsed_ms": 2.118612
+        },
+        {
+          "trial": "t0309",
+          "label": 1,
+          "object_path": "/rdv/m1-open-t0309-a.bin",
+          "trial_locator": "open/holdout.jsonl:10",
+          "upstream_locator": "open/server.json#/upstream_log/979",
+          "lookup_owner": "sender",
+          "receiver_marker": "p1/m1-open/t0309/alice/post.rdv_a",
+          "sender_marker": "p1/m1-open/t0309/bob/s-rdv_get-0-0",
+          "receiver_elapsed_ms": 2.487083
+        },
+        {
+          "trial": "t0326",
+          "label": 1,
+          "object_path": "/rdv/m1-open-t0326-a.bin",
+          "trial_locator": "open/holdout.jsonl:27",
+          "upstream_locator": "open/server.json#/upstream_log/1032",
+          "lookup_owner": "sender",
+          "receiver_marker": "p1/m1-open/t0326/bob/post.rdv_a",
+          "sender_marker": "p1/m1-open/t0326/alice/s-rdv_get-0-0",
+          "receiver_elapsed_ms": 2.201494
+        },
+        {
+          "trial": "t0335",
+          "label": 1,
+          "object_path": "/rdv/m1-open-t0335-a.bin",
+          "trial_locator": "open/holdout.jsonl:36",
+          "upstream_locator": "open/server.json#/upstream_log/1060",
+          "lookup_owner": "sender",
+          "receiver_marker": "p1/m1-open/t0335/alice/post.rdv_a",
+          "sender_marker": "p1/m1-open/t0335/bob/s-rdv_get-0-0",
+          "receiver_elapsed_ms": 2.190874
+        },
+        {
+          "trial": "t0350",
+          "label": 0,
+          "object_path": "/rdv/m1-open-t0350-a.bin",
+          "trial_locator": "open/holdout.jsonl:51",
+          "upstream_locator": "open/server.json#/upstream_log/1106",
+          "lookup_owner": "receiver",
+          "receiver_marker": "p1/m1-open/t0350/bob/post.rdv_a",
+          "sender_marker": null,
+          "receiver_elapsed_ms": 156.700431
+        },
+        {
+          "trial": "t0353",
+          "label": 1,
+          "object_path": "/rdv/m1-open-t0353-a.bin",
+          "trial_locator": "open/holdout.jsonl:54",
+          "upstream_locator": "open/server.json#/upstream_log/1115",
+          "lookup_owner": "sender",
+          "receiver_marker": "p1/m1-open/t0353/alice/post.rdv_a",
+          "sender_marker": "p1/m1-open/t0353/bob/s-rdv_get-0-0",
+          "receiver_elapsed_ms": 2.278497
+        },
+        {
+          "trial": "t0361",
+          "label": 1,
+          "object_path": "/rdv/m1-open-t0361-a.bin",
+          "trial_locator": "open/holdout.jsonl:62",
+          "upstream_locator": "open/server.json#/upstream_log/1140",
+          "lookup_owner": "sender",
+          "receiver_marker": "p1/m1-open/t0361/alice/post.rdv_a",
+          "sender_marker": "p1/m1-open/t0361/bob/s-rdv_get-0-0",
+          "receiver_elapsed_ms": 2.170934
+        },
+        {
+          "trial": "t0379",
+          "label": 0,
+          "object_path": "/rdv/m1-open-t0379-a.bin",
+          "trial_locator": "open/holdout.jsonl:80",
+          "upstream_locator": "open/server.json#/upstream_log/1195",
+          "lookup_owner": "receiver",
+          "receiver_marker": "p1/m1-open/t0379/alice/post.rdv_a",
+          "sender_marker": null,
+          "receiver_elapsed_ms": 154.100923
+        },
+        {
+          "trial": "t0385",
+          "label": 0,
+          "object_path": "/rdv/m1-open-t0385-a.bin",
+          "trial_locator": "open/holdout.jsonl:86",
+          "upstream_locator": "open/server.json#/upstream_log/1213",
+          "lookup_owner": "receiver",
+          "receiver_marker": "p1/m1-open/t0385/alice/post.rdv_a",
+          "sender_marker": null,
+          "receiver_elapsed_ms": 154.357096
+        },
+        {
+          "trial": "t0395",
+          "label": 1,
+          "object_path": "/rdv/m1-open-t0395-a.bin",
+          "trial_locator": "open/holdout.jsonl:96",
+          "upstream_locator": "open/server.json#/upstream_log/1243",
+          "lookup_owner": "sender",
+          "receiver_marker": "p1/m1-open/t0395/alice/post.rdv_a",
+          "sender_marker": "p1/m1-open/t0395/bob/s-rdv_get-0-0",
+          "receiver_elapsed_ms": 2.642528
+        },
+        {
+          "trial": "t0399",
+          "label": 0,
+          "object_path": "/rdv/m1-open-t0399-a.bin",
+          "trial_locator": "open/holdout.jsonl:100",
+          "upstream_locator": "open/server.json#/upstream_log/1256",
+          "lookup_owner": "receiver",
+          "receiver_marker": "p1/m1-open/t0399/alice/post.rdv_a",
+          "sender_marker": null,
+          "receiver_elapsed_ms": 154.174131
+        },
+        {
+          "trial": "t0409",
+          "label": 1,
+          "object_path": "/rdv/m1-open-t0409-a.bin",
+          "trial_locator": "open/holdout.jsonl:110",
+          "upstream_locator": "open/server.json#/upstream_log/1286",
+          "lookup_owner": "sender",
+          "receiver_marker": "p1/m1-open/t0409/alice/post.rdv_a",
+          "sender_marker": "p1/m1-open/t0409/bob/s-rdv_get-0-0",
+          "receiver_elapsed_ms": 2.183495
+        },
+        {
+          "trial": "t0413",
+          "label": 1,
+          "object_path": "/rdv/m1-open-t0413-a.bin",
+          "trial_locator": "open/holdout.jsonl:114",
+          "upstream_locator": "open/server.json#/upstream_log/1298",
+          "lookup_owner": "sender",
+          "receiver_marker": "p1/m1-open/t0413/alice/post.rdv_a",
+          "sender_marker": "p1/m1-open/t0413/bob/s-rdv_get-0-0",
+          "receiver_elapsed_ms": 2.121372
+        },
+        {
+          "trial": "t0420",
+          "label": 0,
+          "object_path": "/rdv/m1-open-t0420-a.bin",
+          "trial_locator": "open/holdout.jsonl:121",
+          "upstream_locator": "open/server.json#/upstream_log/1319",
+          "lookup_owner": "receiver",
+          "receiver_marker": "p1/m1-open/t0420/bob/post.rdv_a",
+          "sender_marker": null,
+          "receiver_elapsed_ms": 154.351652
+        },
+        {
+          "trial": "t0426",
+          "label": 1,
+          "object_path": "/rdv/m1-open-t0426-a.bin",
+          "trial_locator": "open/holdout.jsonl:127",
+          "upstream_locator": "open/server.json#/upstream_log/1337",
+          "lookup_owner": "sender",
+          "receiver_marker": "p1/m1-open/t0426/bob/post.rdv_a",
+          "sender_marker": "p1/m1-open/t0426/alice/s-rdv_get-0-0",
+          "receiver_elapsed_ms": 2.206965
+        },
+        {
+          "trial": "t0428",
+          "label": 1,
+          "object_path": "/rdv/m1-open-t0428-a.bin",
+          "trial_locator": "open/holdout.jsonl:129",
+          "upstream_locator": "open/server.json#/upstream_log/1343",
+          "lookup_owner": "sender",
+          "receiver_marker": "p1/m1-open/t0428/bob/post.rdv_a",
+          "sender_marker": "p1/m1-open/t0428/alice/s-rdv_get-0-0",
+          "receiver_elapsed_ms": 2.137002
+        },
+        {
+          "trial": "t0433",
+          "label": 0,
+          "object_path": "/rdv/m1-open-t0433-a.bin",
+          "trial_locator": "open/holdout.jsonl:134",
+          "upstream_locator": "open/server.json#/upstream_log/1358",
+          "lookup_owner": "receiver",
+          "receiver_marker": "p1/m1-open/t0433/alice/post.rdv_a",
+          "sender_marker": null,
+          "receiver_elapsed_ms": 154.567803
+        },
+        {
+          "trial": "t0434",
+          "label": 0,
+          "object_path": "/rdv/m1-open-t0434-a.bin",
+          "trial_locator": "open/holdout.jsonl:135",
+          "upstream_locator": "open/server.json#/upstream_log/1361",
+          "lookup_owner": "receiver",
+          "receiver_marker": "p1/m1-open/t0434/bob/post.rdv_a",
+          "sender_marker": null,
+          "receiver_elapsed_ms": 154.326967
+        },
+        {
+          "trial": "t0449",
+          "label": 0,
+          "object_path": "/rdv/m1-open-t0449-a.bin",
+          "trial_locator": "open/holdout.jsonl:150",
+          "upstream_locator": "open/server.json#/upstream_log/1407",
+          "lookup_owner": "receiver",
+          "receiver_marker": "p1/m1-open/t0449/alice/post.rdv_a",
+          "sender_marker": null,
+          "receiver_elapsed_ms": 154.555899
+        },
+        {
+          "trial": "t0459",
+          "label": 1,
+          "object_path": "/rdv/m1-open-t0459-a.bin",
+          "trial_locator": "open/holdout.jsonl:160",
+          "upstream_locator": "open/server.json#/upstream_log/1438",
+          "lookup_owner": "sender",
+          "receiver_marker": "p1/m1-open/t0459/alice/post.rdv_a",
+          "sender_marker": "p1/m1-open/t0459/bob/s-rdv_get-0-0",
+          "receiver_elapsed_ms": 2.236456
+        },
+        {
+          "trial": "t0461",
+          "label": 1,
+          "object_path": "/rdv/m1-open-t0461-a.bin",
+          "trial_locator": "open/holdout.jsonl:162",
+          "upstream_locator": "open/server.json#/upstream_log/1444",
+          "lookup_owner": "sender",
+          "receiver_marker": "p1/m1-open/t0461/alice/post.rdv_a",
+          "sender_marker": "p1/m1-open/t0461/bob/s-rdv_get-0-0",
+          "receiver_elapsed_ms": 2.507864
+        },
+        {
+          "trial": "t0482",
+          "label": 0,
+          "object_path": "/rdv/m1-open-t0482-a.bin",
+          "trial_locator": "open/holdout.jsonl:183",
+          "upstream_locator": "open/server.json#/upstream_log/1508",
+          "lookup_owner": "receiver",
+          "receiver_marker": "p1/m1-open/t0482/bob/post.rdv_a",
+          "sender_marker": null,
+          "receiver_elapsed_ms": 154.528975
+        },
+        {
+          "trial": "t0487",
+          "label": 0,
+          "object_path": "/rdv/m1-open-t0487-a.bin",
+          "trial_locator": "open/holdout.jsonl:188",
+          "upstream_locator": "open/server.json#/upstream_log/1523",
+          "lookup_owner": "receiver",
+          "receiver_marker": "p1/m1-open/t0487/alice/post.rdv_a",
+          "sender_marker": null,
+          "receiver_elapsed_ms": 154.204219
+        },
+        {
+          "trial": "t0493",
+          "label": 0,
+          "object_path": "/rdv/m1-open-t0493-a.bin",
+          "trial_locator": "open/holdout.jsonl:194",
+          "upstream_locator": "open/server.json#/upstream_log/1541",
+          "lookup_owner": "receiver",
+          "receiver_marker": "p1/m1-open/t0493/alice/post.rdv_a",
+          "sender_marker": null,
+          "receiver_elapsed_ms": 154.148413
+        },
+        {
+          "trial": "t0514",
+          "label": 1,
+          "object_path": "/rdv/m1-open-t0514-a.bin",
+          "trial_locator": "open/holdout.jsonl:215",
+          "upstream_locator": "open/server.json#/upstream_log/1604",
+          "lookup_owner": "sender",
+          "receiver_marker": "p1/m1-open/t0514/bob/post.rdv_a",
+          "sender_marker": "p1/m1-open/t0514/alice/s-rdv_get-0-0",
+          "receiver_elapsed_ms": 2.230526
+        },
+        {
+          "trial": "t0521",
+          "label": 0,
+          "object_path": "/rdv/m1-open-t0521-a.bin",
+          "trial_locator": "open/holdout.jsonl:222",
+          "upstream_locator": "open/server.json#/upstream_log/1625",
+          "lookup_owner": "receiver",
+          "receiver_marker": "p1/m1-open/t0521/alice/post.rdv_a",
+          "sender_marker": null,
+          "receiver_elapsed_ms": 154.810024
+        },
+        {
+          "trial": "t0525",
+          "label": 1,
+          "object_path": "/rdv/m1-open-t0525-a.bin",
+          "trial_locator": "open/holdout.jsonl:226",
+          "upstream_locator": "open/server.json#/upstream_log/1637",
+          "lookup_owner": "sender",
+          "receiver_marker": "p1/m1-open/t0525/alice/post.rdv_a",
+          "sender_marker": "p1/m1-open/t0525/bob/s-rdv_get-0-0",
+          "receiver_elapsed_ms": 2.175282
+        },
+        {
+          "trial": "t0543",
+          "label": 0,
+          "object_path": "/rdv/m1-open-t0543-a.bin",
+          "trial_locator": "open/holdout.jsonl:244",
+          "upstream_locator": "open/server.json#/upstream_log/1691",
+          "lookup_owner": "receiver",
+          "receiver_marker": "p1/m1-open/t0543/alice/post.rdv_a",
+          "sender_marker": null,
+          "receiver_elapsed_ms": 154.018
+        },
+        {
+          "trial": "t0556",
+          "label": 1,
+          "object_path": "/rdv/m1-open-t0556-a.bin",
+          "trial_locator": "open/holdout.jsonl:257",
+          "upstream_locator": "open/server.json#/upstream_log/1730",
+          "lookup_owner": "sender",
+          "receiver_marker": "p1/m1-open/t0556/bob/post.rdv_a",
+          "sender_marker": "p1/m1-open/t0556/alice/s-rdv_get-0-0",
+          "receiver_elapsed_ms": 2.091512
+        },
+        {
+          "trial": "t0561",
+          "label": 0,
+          "object_path": "/rdv/m1-open-t0561-a.bin",
+          "trial_locator": "open/holdout.jsonl:262",
+          "upstream_locator": "open/server.json#/upstream_log/1745",
+          "lookup_owner": "receiver",
+          "receiver_marker": "p1/m1-open/t0561/alice/post.rdv_a",
+          "sender_marker": null,
+          "receiver_elapsed_ms": 153.89623
+        },
+        {
+          "trial": "t0568",
+          "label": 0,
+          "object_path": "/rdv/m1-open-t0568-a.bin",
+          "trial_locator": "open/holdout.jsonl:269",
+          "upstream_locator": "open/server.json#/upstream_log/1766",
+          "lookup_owner": "receiver",
+          "receiver_marker": "p1/m1-open/t0568/bob/post.rdv_a",
+          "sender_marker": null,
+          "receiver_elapsed_ms": 153.977485
+        },
+        {
+          "trial": "t0583",
+          "label": 0,
+          "object_path": "/rdv/m1-open-t0583-a.bin",
+          "trial_locator": "open/holdout.jsonl:284",
+          "upstream_locator": "open/server.json#/upstream_log/1812",
+          "lookup_owner": "receiver",
+          "receiver_marker": "p1/m1-open/t0583/alice/post.rdv_a",
+          "sender_marker": null,
+          "receiver_elapsed_ms": 153.894557
+        },
+        {
+          "trial": "t0593",
+          "label": 1,
+          "object_path": "/rdv/m1-open-t0593-a.bin",
+          "trial_locator": "open/holdout.jsonl:294",
+          "upstream_locator": "open/server.json#/upstream_log/1842",
+          "lookup_owner": "sender",
+          "receiver_marker": "p1/m1-open/t0593/alice/post.rdv_a",
+          "sender_marker": "p1/m1-open/t0593/bob/s-rdv_get-0-0",
+          "receiver_elapsed_ms": 2.411851
+        },
+        {
+          "trial": "t0609",
+          "label": 1,
+          "object_path": "/rdv/m1-open-t0609-a.bin",
+          "trial_locator": "open/holdout.jsonl:310",
+          "upstream_locator": "open/server.json#/upstream_log/1891",
+          "lookup_owner": "sender",
+          "receiver_marker": "p1/m1-open/t0609/alice/post.rdv_a",
+          "sender_marker": "p1/m1-open/t0609/bob/s-rdv_get-0-0",
+          "receiver_elapsed_ms": 2.103911
+        },
+        {
+          "trial": "t0632",
+          "label": 0,
+          "object_path": "/rdv/m1-open-t0632-a.bin",
+          "trial_locator": "open/holdout.jsonl:333",
+          "upstream_locator": "open/server.json#/upstream_log/1960",
+          "lookup_owner": "receiver",
+          "receiver_marker": "p1/m1-open/t0632/bob/post.rdv_a",
+          "sender_marker": null,
+          "receiver_elapsed_ms": 154.073759
+        },
+        {
+          "trial": "t0640",
+          "label": 1,
+          "object_path": "/rdv/m1-open-t0640-a.bin",
+          "trial_locator": "open/holdout.jsonl:341",
+          "upstream_locator": "open/server.json#/upstream_log/1985",
+          "lookup_owner": "sender",
+          "receiver_marker": "p1/m1-open/t0640/bob/post.rdv_a",
+          "sender_marker": "p1/m1-open/t0640/alice/s-rdv_get-0-0",
+          "receiver_elapsed_ms": 2.112322
+        },
+        {
+          "trial": "t0647",
+          "label": 1,
+          "object_path": "/rdv/m1-open-t0647-a.bin",
+          "trial_locator": "open/holdout.jsonl:348",
+          "upstream_locator": "open/server.json#/upstream_log/2007",
+          "lookup_owner": "sender",
+          "receiver_marker": "p1/m1-open/t0647/alice/post.rdv_a",
+          "sender_marker": "p1/m1-open/t0647/bob/s-rdv_get-0-0",
+          "receiver_elapsed_ms": 2.070431
+        },
+        {
+          "trial": "t0650",
+          "label": 0,
+          "object_path": "/rdv/m1-open-t0650-a.bin",
+          "trial_locator": "open/holdout.jsonl:351",
+          "upstream_locator": "open/server.json#/upstream_log/2016",
+          "lookup_owner": "receiver",
+          "receiver_marker": "p1/m1-open/t0650/bob/post.rdv_a",
+          "sender_marker": null,
+          "receiver_elapsed_ms": 154.070952
+        },
+        {
+          "trial": "t0654",
+          "label": 1,
+          "object_path": "/rdv/m1-open-t0654-a.bin",
+          "trial_locator": "open/holdout.jsonl:355",
+          "upstream_locator": "open/server.json#/upstream_log/2028",
+          "lookup_owner": "sender",
+          "receiver_marker": "p1/m1-open/t0654/bob/post.rdv_a",
+          "sender_marker": "p1/m1-open/t0654/alice/s-rdv_get-0-0",
+          "receiver_elapsed_ms": 2.353249
+        },
+        {
+          "trial": "t0661",
+          "label": 1,
+          "object_path": "/rdv/m1-open-t0661-a.bin",
+          "trial_locator": "open/holdout.jsonl:362",
+          "upstream_locator": "open/server.json#/upstream_log/2049",
+          "lookup_owner": "sender",
+          "receiver_marker": "p1/m1-open/t0661/alice/post.rdv_a",
+          "sender_marker": "p1/m1-open/t0661/bob/s-rdv_get-0-0",
+          "receiver_elapsed_ms": 2.135262
+        },
+        {
+          "trial": "t0662",
+          "label": 0,
+          "object_path": "/rdv/m1-open-t0662-a.bin",
+          "trial_locator": "open/holdout.jsonl:363",
+          "upstream_locator": "open/server.json#/upstream_log/2052",
+          "lookup_owner": "receiver",
+          "receiver_marker": "p1/m1-open/t0662/bob/post.rdv_a",
+          "sender_marker": null,
+          "receiver_elapsed_ms": 154.187746
+        },
+        {
+          "trial": "t0680",
+          "label": 1,
+          "object_path": "/rdv/m1-open-t0680-a.bin",
+          "trial_locator": "open/holdout.jsonl:381",
+          "upstream_locator": "open/server.json#/upstream_log/2108",
+          "lookup_owner": "sender",
+          "receiver_marker": "p1/m1-open/t0680/bob/post.rdv_a",
+          "sender_marker": "p1/m1-open/t0680/alice/s-rdv_get-0-0",
+          "receiver_elapsed_ms": 2.173954
+        },
+        {
+          "trial": "t0687",
+          "label": 1,
+          "object_path": "/rdv/m1-open-t0687-a.bin",
+          "trial_locator": "open/holdout.jsonl:388",
+          "upstream_locator": "open/server.json#/upstream_log/2129",
+          "lookup_owner": "sender",
+          "receiver_marker": "p1/m1-open/t0687/alice/post.rdv_a",
+          "sender_marker": "p1/m1-open/t0687/bob/s-rdv_get-0-0",
+          "receiver_elapsed_ms": 2.103132
+        },
+        {
+          "trial": "t0710",
+          "label": 1,
+          "object_path": "/rdv/m1-open-t0710-a.bin",
+          "trial_locator": "open/holdout.jsonl:411",
+          "upstream_locator": "open/server.json#/upstream_log/2200",
+          "lookup_owner": "sender",
+          "receiver_marker": "p1/m1-open/t0710/bob/post.rdv_a",
+          "sender_marker": "p1/m1-open/t0710/alice/s-rdv_get-0-0",
+          "receiver_elapsed_ms": 2.260557
+        },
+        {
+          "trial": "t0713",
+          "label": 0,
+          "object_path": "/rdv/m1-open-t0713-a.bin",
+          "trial_locator": "open/holdout.jsonl:414",
+          "upstream_locator": "open/server.json#/upstream_log/2210",
+          "lookup_owner": "receiver",
+          "receiver_marker": "p1/m1-open/t0713/alice/post.rdv_a",
+          "sender_marker": null,
+          "receiver_elapsed_ms": 154.486278
+        },
+        {
+          "trial": "t0732",
+          "label": 0,
+          "object_path": "/rdv/m1-open-t0732-a.bin",
+          "trial_locator": "open/holdout.jsonl:433",
+          "upstream_locator": "open/server.json#/upstream_log/2268",
+          "lookup_owner": "receiver",
+          "receiver_marker": "p1/m1-open/t0732/bob/post.rdv_a",
+          "sender_marker": null,
+          "receiver_elapsed_ms": 154.538963
+        },
+        {
+          "trial": "t0736",
+          "label": 0,
+          "object_path": "/rdv/m1-open-t0736-a.bin",
+          "trial_locator": "open/holdout.jsonl:437",
+          "upstream_locator": "open/server.json#/upstream_log/2280",
+          "lookup_owner": "receiver",
+          "receiver_marker": "p1/m1-open/t0736/bob/post.rdv_a",
+          "sender_marker": null,
+          "receiver_elapsed_ms": 153.927098
+        },
+        {
+          "trial": "t0742",
+          "label": 1,
+          "object_path": "/rdv/m1-open-t0742-a.bin",
+          "trial_locator": "open/holdout.jsonl:443",
+          "upstream_locator": "open/server.json#/upstream_log/2298",
+          "lookup_owner": "sender",
+          "receiver_marker": "p1/m1-open/t0742/bob/post.rdv_a",
+          "sender_marker": "p1/m1-open/t0742/alice/s-rdv_get-0-0",
+          "receiver_elapsed_ms": 2.148173
+        },
+        {
+          "trial": "t0767",
+          "label": 1,
+          "object_path": "/rdv/m1-open-t0767-a.bin",
+          "trial_locator": "open/holdout.jsonl:468",
+          "upstream_locator": "open/server.json#/upstream_log/2375",
+          "lookup_owner": "sender",
+          "receiver_marker": "p1/m1-open/t0767/alice/post.rdv_a",
+          "sender_marker": "p1/m1-open/t0767/bob/s-rdv_get-0-0",
+          "receiver_elapsed_ms": 2.176754
+        },
+        {
+          "trial": "t0790",
+          "label": 0,
+          "object_path": "/rdv/m1-open-t0790-a.bin",
+          "trial_locator": "open/holdout.jsonl:491",
+          "upstream_locator": "open/server.json#/upstream_log/2446",
+          "lookup_owner": "receiver",
+          "receiver_marker": "p1/m1-open/t0790/bob/post.rdv_a",
+          "sender_marker": null,
+          "receiver_elapsed_ms": 154.14277
+        },
+        {
+          "trial": "t0809",
+          "label": 0,
+          "object_path": "/rdv/m1-open-t0809-a.bin",
+          "trial_locator": "open/holdout.jsonl:510",
+          "upstream_locator": "open/server.json#/upstream_log/2504",
+          "lookup_owner": "receiver",
+          "receiver_marker": "p1/m1-open/t0809/alice/post.rdv_a",
+          "sender_marker": null,
+          "receiver_elapsed_ms": 153.998456
+        },
+        {
+          "trial": "t0817",
+          "label": 1,
+          "object_path": "/rdv/m1-open-t0817-a.bin",
+          "trial_locator": "open/holdout.jsonl:518",
+          "upstream_locator": "open/server.json#/upstream_log/2528",
+          "lookup_owner": "sender",
+          "receiver_marker": "p1/m1-open/t0817/alice/post.rdv_a",
+          "sender_marker": "p1/m1-open/t0817/bob/s-rdv_get-0-0",
+          "receiver_elapsed_ms": 2.163393
+        },
+        {
+          "trial": "t0848",
+          "label": 0,
+          "object_path": "/rdv/m1-open-t0848-a.bin",
+          "trial_locator": "open/holdout.jsonl:549",
+          "upstream_locator": "open/server.json#/upstream_log/2622",
+          "lookup_owner": "receiver",
+          "receiver_marker": "p1/m1-open/t0848/bob/post.rdv_a",
+          "sender_marker": null,
+          "receiver_elapsed_ms": 154.087896
+        },
+        {
+          "trial": "t0853",
+          "label": 0,
+          "object_path": "/rdv/m1-open-t0853-a.bin",
+          "trial_locator": "open/holdout.jsonl:554",
+          "upstream_locator": "open/server.json#/upstream_log/2637",
+          "lookup_owner": "receiver",
+          "receiver_marker": "p1/m1-open/t0853/alice/post.rdv_a",
+          "sender_marker": null,
+          "receiver_elapsed_ms": 156.420938
+        },
+        {
+          "trial": "t0858",
+          "label": 0,
+          "object_path": "/rdv/m1-open-t0858-a.bin",
+          "trial_locator": "open/holdout.jsonl:559",
+          "upstream_locator": "open/server.json#/upstream_log/2652",
+          "lookup_owner": "receiver",
+          "receiver_marker": "p1/m1-open/t0858/bob/post.rdv_a",
+          "sender_marker": null,
+          "receiver_elapsed_ms": 154.559803
+        },
+        {
+          "trial": "t0861",
+          "label": 1,
+          "object_path": "/rdv/m1-open-t0861-a.bin",
+          "trial_locator": "open/holdout.jsonl:562",
+          "upstream_locator": "open/server.json#/upstream_log/2661",
+          "lookup_owner": "sender",
+          "receiver_marker": "p1/m1-open/t0861/alice/post.rdv_a",
+          "sender_marker": "p1/m1-open/t0861/bob/s-rdv_get-0-0",
+          "receiver_elapsed_ms": 2.115913
+        },
+        {
+          "trial": "t0883",
+          "label": 1,
+          "object_path": "/rdv/m1-open-t0883-a.bin",
+          "trial_locator": "open/holdout.jsonl:584",
+          "upstream_locator": "open/server.json#/upstream_log/2728",
+          "lookup_owner": "sender",
+          "receiver_marker": "p1/m1-open/t0883/alice/post.rdv_a",
+          "sender_marker": "p1/m1-open/t0883/bob/s-rdv_get-0-0",
+          "receiver_elapsed_ms": 2.099652
+        },
+        {
+          "trial": "t0890",
+          "label": 1,
+          "object_path": "/rdv/m1-open-t0890-a.bin",
+          "trial_locator": "open/holdout.jsonl:591",
+          "upstream_locator": "open/server.json#/upstream_log/2750",
+          "lookup_owner": "sender",
+          "receiver_marker": "p1/m1-open/t0890/bob/post.rdv_a",
+          "sender_marker": "p1/m1-open/t0890/alice/s-rdv_get-0-0",
+          "receiver_elapsed_ms": 2.097252
+        },
+        {
+          "trial": "t0897",
+          "label": 0,
+          "object_path": "/rdv/m1-open-t0897-a.bin",
+          "trial_locator": "open/holdout.jsonl:598",
+          "upstream_locator": "open/server.json#/upstream_log/2771",
+          "lookup_owner": "receiver",
+          "receiver_marker": "p1/m1-open/t0897/alice/post.rdv_a",
+          "sender_marker": null,
+          "receiver_elapsed_ms": 154.05239
+        },
+        {
+          "trial": "t0909",
+          "label": 0,
+          "object_path": "/rdv/m1-open-t0909-a.bin",
+          "trial_locator": "open/holdout.jsonl:610",
+          "upstream_locator": "open/server.json#/upstream_log/2808",
+          "lookup_owner": "receiver",
+          "receiver_marker": "p1/m1-open/t0909/alice/post.rdv_a",
+          "sender_marker": null,
+          "receiver_elapsed_ms": 156.453355
+        },
+        {
+          "trial": "t0913",
+          "label": 0,
+          "object_path": "/rdv/m1-open-t0913-a.bin",
+          "trial_locator": "open/holdout.jsonl:614",
+          "upstream_locator": "open/server.json#/upstream_log/2820",
+          "lookup_owner": "receiver",
+          "receiver_marker": "p1/m1-open/t0913/alice/post.rdv_a",
+          "sender_marker": null,
+          "receiver_elapsed_ms": 154.054692
+        },
+        {
+          "trial": "t0924",
+          "label": 1,
+          "object_path": "/rdv/m1-open-t0924-a.bin",
+          "trial_locator": "open/holdout.jsonl:625",
+          "upstream_locator": "open/server.json#/upstream_log/2855",
+          "lookup_owner": "sender",
+          "receiver_marker": "p1/m1-open/t0924/bob/post.rdv_a",
+          "sender_marker": "p1/m1-open/t0924/alice/s-rdv_get-0-0",
+          "receiver_elapsed_ms": 2.06134
+        },
+        {
+          "trial": "t0932",
+          "label": 0,
+          "object_path": "/rdv/m1-open-t0932-a.bin",
+          "trial_locator": "open/holdout.jsonl:633",
+          "upstream_locator": "open/server.json#/upstream_log/2879",
+          "lookup_owner": "receiver",
+          "receiver_marker": "p1/m1-open/t0932/bob/post.rdv_a",
+          "sender_marker": null,
+          "receiver_elapsed_ms": 155.901938
+        },
+        {
+          "trial": "t0938",
+          "label": 1,
+          "object_path": "/rdv/m1-open-t0938-a.bin",
+          "trial_locator": "open/holdout.jsonl:639",
+          "upstream_locator": "open/server.json#/upstream_log/2897",
+          "lookup_owner": "sender",
+          "receiver_marker": "p1/m1-open/t0938/bob/post.rdv_a",
+          "sender_marker": "p1/m1-open/t0938/alice/s-rdv_get-0-0",
+          "receiver_elapsed_ms": 2.094202
+        },
+        {
+          "trial": "t0946",
+          "label": 0,
+          "object_path": "/rdv/m1-open-t0946-a.bin",
+          "trial_locator": "open/holdout.jsonl:647",
+          "upstream_locator": "open/server.json#/upstream_log/2921",
+          "lookup_owner": "receiver",
+          "receiver_marker": "p1/m1-open/t0946/bob/post.rdv_a",
+          "sender_marker": null,
+          "receiver_elapsed_ms": 154.385913
+        },
+        {
+          "trial": "t0957",
+          "label": 0,
+          "object_path": "/rdv/m1-open-t0957-a.bin",
+          "trial_locator": "open/holdout.jsonl:658",
+          "upstream_locator": "open/server.json#/upstream_log/2954",
+          "lookup_owner": "receiver",
+          "receiver_marker": "p1/m1-open/t0957/alice/post.rdv_a",
+          "sender_marker": null,
+          "receiver_elapsed_ms": 153.969695
+        },
+        {
+          "trial": "t0969",
+          "label": 0,
+          "object_path": "/rdv/m1-open-t0969-a.bin",
+          "trial_locator": "open/holdout.jsonl:670",
+          "upstream_locator": "open/server.json#/upstream_log/2991",
+          "lookup_owner": "receiver",
+          "receiver_marker": "p1/m1-open/t0969/alice/post.rdv_a",
+          "sender_marker": null,
+          "receiver_elapsed_ms": 154.143352
+        },
+        {
+          "trial": "t0975",
+          "label": 0,
+          "object_path": "/rdv/m1-open-t0975-a.bin",
+          "trial_locator": "open/holdout.jsonl:676",
+          "upstream_locator": "open/server.json#/upstream_log/3010",
+          "lookup_owner": "receiver",
+          "receiver_marker": "p1/m1-open/t0975/alice/post.rdv_a",
+          "sender_marker": null,
+          "receiver_elapsed_ms": 153.873656
+        },
+        {
+          "trial": "t0996",
+          "label": 1,
+          "object_path": "/rdv/m1-open-t0996-a.bin",
+          "trial_locator": "open/holdout.jsonl:697",
+          "upstream_locator": "open/server.json#/upstream_log/3075",
+          "lookup_owner": "sender",
+          "receiver_marker": "p1/m1-open/t0996/bob/post.rdv_a",
+          "sender_marker": "p1/m1-open/t0996/alice/s-rdv_get-0-0",
+          "receiver_elapsed_ms": 2.052541
+        },
+        {
+          "trial": "t1025",
+          "label": 1,
+          "object_path": "/rdv/m1-open-t1025-a.bin",
+          "trial_locator": "open/holdout.jsonl:726",
+          "upstream_locator": "open/server.json#/upstream_log/3163",
+          "lookup_owner": "sender",
+          "receiver_marker": "p1/m1-open/t1025/alice/post.rdv_a",
+          "sender_marker": "p1/m1-open/t1025/bob/s-rdv_get-0-0",
+          "receiver_elapsed_ms": 2.03822
+        },
+        {
+          "trial": "t1051",
+          "label": 1,
+          "object_path": "/rdv/m1-open-t1051-a.bin",
+          "trial_locator": "open/holdout.jsonl:752",
+          "upstream_locator": "open/server.json#/upstream_log/3242",
+          "lookup_owner": "sender",
+          "receiver_marker": "p1/m1-open/t1051/alice/post.rdv_a",
+          "sender_marker": "p1/m1-open/t1051/bob/s-rdv_get-0-0",
+          "receiver_elapsed_ms": 2.054171
+        },
+        {
+          "trial": "t1065",
+          "label": 1,
+          "object_path": "/rdv/m1-open-t1065-a.bin",
+          "trial_locator": "open/holdout.jsonl:766",
+          "upstream_locator": "open/server.json#/upstream_log/3284",
+          "lookup_owner": "sender",
+          "receiver_marker": "p1/m1-open/t1065/alice/post.rdv_a",
+          "sender_marker": "p1/m1-open/t1065/bob/s-rdv_get-0-0",
+          "receiver_elapsed_ms": 4.39564
+        },
+        {
+          "trial": "t1106",
+          "label": 1,
+          "object_path": "/rdv/m1-open-t1106-a.bin",
+          "trial_locator": "open/holdout.jsonl:807",
+          "upstream_locator": "open/server.json#/upstream_log/3407",
+          "lookup_owner": "sender",
+          "receiver_marker": "p1/m1-open/t1106/bob/post.rdv_a",
+          "sender_marker": "p1/m1-open/t1106/alice/s-rdv_get-0-0",
+          "receiver_elapsed_ms": 2.128703
+        },
+        {
+          "trial": "t1116",
+          "label": 0,
+          "object_path": "/rdv/m1-open-t1116-a.bin",
+          "trial_locator": "open/holdout.jsonl:817",
+          "upstream_locator": "open/server.json#/upstream_log/3437",
+          "lookup_owner": "receiver",
+          "receiver_marker": "p1/m1-open/t1116/bob/post.rdv_a",
+          "sender_marker": null,
+          "receiver_elapsed_ms": 153.685931
+        },
+        {
+          "trial": "t1127",
+          "label": 1,
+          "object_path": "/rdv/m1-open-t1127-a.bin",
+          "trial_locator": "open/holdout.jsonl:828",
+          "upstream_locator": "open/server.json#/upstream_log/3470",
+          "lookup_owner": "sender",
+          "receiver_marker": "p1/m1-open/t1127/alice/post.rdv_a",
+          "sender_marker": "p1/m1-open/t1127/bob/s-rdv_get-0-0",
+          "receiver_elapsed_ms": 2.092212
+        },
+        {
+          "trial": "t1132",
+          "label": 0,
+          "object_path": "/rdv/m1-open-t1132-a.bin",
+          "trial_locator": "open/holdout.jsonl:833",
+          "upstream_locator": "open/server.json#/upstream_log/3485",
+          "lookup_owner": "receiver",
+          "receiver_marker": "p1/m1-open/t1132/bob/post.rdv_a",
+          "sender_marker": null,
+          "receiver_elapsed_ms": 154.134053
+        },
+        {
+          "trial": "t1154",
+          "label": 0,
+          "object_path": "/rdv/m1-open-t1154-a.bin",
+          "trial_locator": "open/holdout.jsonl:855",
+          "upstream_locator": "open/server.json#/upstream_log/3553",
+          "lookup_owner": "receiver",
+          "receiver_marker": "p1/m1-open/t1154/bob/post.rdv_a",
+          "sender_marker": null,
+          "receiver_elapsed_ms": 153.84199
+        },
+        {
+          "trial": "t1168",
+          "label": 1,
+          "object_path": "/rdv/m1-open-t1168-a.bin",
+          "trial_locator": "open/holdout.jsonl:869",
+          "upstream_locator": "open/server.json#/upstream_log/3595",
+          "lookup_owner": "sender",
+          "receiver_marker": "p1/m1-open/t1168/bob/post.rdv_a",
+          "sender_marker": "p1/m1-open/t1168/alice/s-rdv_get-0-0",
+          "receiver_elapsed_ms": 2.00359
+        },
+        {
+          "trial": "t1172",
+          "label": 0,
+          "object_path": "/rdv/m1-open-t1172-a.bin",
+          "trial_locator": "open/holdout.jsonl:873",
+          "upstream_locator": "open/server.json#/upstream_log/3607",
+          "lookup_owner": "receiver",
+          "receiver_marker": "p1/m1-open/t1172/bob/post.rdv_a",
+          "sender_marker": null,
+          "receiver_elapsed_ms": 154.050414
+        },
+        {
+          "trial": "t1186",
+          "label": 0,
+          "object_path": "/rdv/m1-open-t1186-a.bin",
+          "trial_locator": "open/holdout.jsonl:887",
+          "upstream_locator": "open/server.json#/upstream_log/3649",
+          "lookup_owner": "receiver",
+          "receiver_marker": "p1/m1-open/t1186/bob/post.rdv_a",
+          "sender_marker": null,
+          "receiver_elapsed_ms": 154.678111
+        },
+        {
+          "trial": "t1187",
+          "label": 1,
+          "object_path": "/rdv/m1-open-t1187-a.bin",
+          "trial_locator": "open/holdout.jsonl:888",
+          "upstream_locator": "open/server.json#/upstream_log/3652",
+          "lookup_owner": "sender",
+          "receiver_marker": "p1/m1-open/t1187/alice/post.rdv_a",
+          "sender_marker": "p1/m1-open/t1187/bob/s-rdv_get-0-0",
+          "receiver_elapsed_ms": 2.115442
+        },
+        {
+          "trial": "t1190",
+          "label": 1,
+          "object_path": "/rdv/m1-open-t1190-a.bin",
+          "trial_locator": "open/holdout.jsonl:891",
+          "upstream_locator": "open/server.json#/upstream_log/3661",
+          "lookup_owner": "sender",
+          "receiver_marker": "p1/m1-open/t1190/bob/post.rdv_a",
+          "sender_marker": "p1/m1-open/t1190/alice/s-rdv_get-0-0",
+          "receiver_elapsed_ms": 2.03594
+        },
+        {
+          "trial": "t1204",
+          "label": 0,
+          "object_path": "/rdv/m1-open-t1204-a.bin",
+          "trial_locator": "open/holdout.jsonl:905",
+          "upstream_locator": "open/server.json#/upstream_log/3703",
+          "lookup_owner": "receiver",
+          "receiver_marker": "p1/m1-open/t1204/bob/post.rdv_a",
+          "sender_marker": null,
+          "receiver_elapsed_ms": 153.906486
+        },
+        {
+          "trial": "t1205",
+          "label": 0,
+          "object_path": "/rdv/m1-open-t1205-a.bin",
+          "trial_locator": "open/holdout.jsonl:906",
+          "upstream_locator": "open/server.json#/upstream_log/3706",
+          "lookup_owner": "receiver",
+          "receiver_marker": "p1/m1-open/t1205/alice/post.rdv_a",
+          "sender_marker": null,
+          "receiver_elapsed_ms": 153.903216
+        },
+        {
+          "trial": "t1206",
+          "label": 0,
+          "object_path": "/rdv/m1-open-t1206-a.bin",
+          "trial_locator": "open/holdout.jsonl:907",
+          "upstream_locator": "open/server.json#/upstream_log/3709",
+          "lookup_owner": "receiver",
+          "receiver_marker": "p1/m1-open/t1206/bob/post.rdv_a",
+          "sender_marker": null,
+          "receiver_elapsed_ms": 154.182025
+        },
+        {
+          "trial": "t1216",
+          "label": 1,
+          "object_path": "/rdv/m1-open-t1216-a.bin",
+          "trial_locator": "open/holdout.jsonl:917",
+          "upstream_locator": "open/server.json#/upstream_log/3739",
+          "lookup_owner": "sender",
+          "receiver_marker": "p1/m1-open/t1216/bob/post.rdv_a",
+          "sender_marker": "p1/m1-open/t1216/alice/s-rdv_get-0-0",
+          "receiver_elapsed_ms": 2.225216
+        },
+        {
+          "trial": "t1227",
+          "label": 0,
+          "object_path": "/rdv/m1-open-t1227-a.bin",
+          "trial_locator": "open/holdout.jsonl:928",
+          "upstream_locator": "open/server.json#/upstream_log/3772",
+          "lookup_owner": "receiver",
+          "receiver_marker": "p1/m1-open/t1227/alice/post.rdv_a",
+          "sender_marker": null,
+          "receiver_elapsed_ms": 154.813299
+        },
+        {
+          "trial": "t1237",
+          "label": 1,
+          "object_path": "/rdv/m1-open-t1237-a.bin",
+          "trial_locator": "open/holdout.jsonl:938",
+          "upstream_locator": "open/server.json#/upstream_log/3802",
+          "lookup_owner": "sender",
+          "receiver_marker": "p1/m1-open/t1237/alice/post.rdv_a",
+          "sender_marker": "p1/m1-open/t1237/bob/s-rdv_get-0-0",
+          "receiver_elapsed_ms": 2.060171
+        },
+        {
+          "trial": "t1246",
+          "label": 1,
+          "object_path": "/rdv/m1-open-t1246-a.bin",
+          "trial_locator": "open/holdout.jsonl:947",
+          "upstream_locator": "open/server.json#/upstream_log/3829",
+          "lookup_owner": "sender",
+          "receiver_marker": "p1/m1-open/t1246/bob/post.rdv_a",
+          "sender_marker": "p1/m1-open/t1246/alice/s-rdv_get-0-0",
+          "receiver_elapsed_ms": 2.122952
+        },
+        {
+          "trial": "t1247",
+          "label": 1,
+          "object_path": "/rdv/m1-open-t1247-a.bin",
+          "trial_locator": "open/holdout.jsonl:948",
+          "upstream_locator": "open/server.json#/upstream_log/3832",
+          "lookup_owner": "sender",
+          "receiver_marker": "p1/m1-open/t1247/alice/post.rdv_a",
+          "sender_marker": "p1/m1-open/t1247/bob/s-rdv_get-0-0",
+          "receiver_elapsed_ms": 3.270816
+        },
+        {
+          "trial": "t1253",
+          "label": 0,
+          "object_path": "/rdv/m1-open-t1253-a.bin",
+          "trial_locator": "open/holdout.jsonl:954",
+          "upstream_locator": "open/server.json#/upstream_log/3850",
+          "lookup_owner": "receiver",
+          "receiver_marker": "p1/m1-open/t1253/alice/post.rdv_a",
+          "sender_marker": null,
+          "receiver_elapsed_ms": 153.983015
+        },
+        {
+          "trial": "t1268",
+          "label": 0,
+          "object_path": "/rdv/m1-open-t1268-a.bin",
+          "trial_locator": "open/holdout.jsonl:969",
+          "upstream_locator": "open/server.json#/upstream_log/3896",
+          "lookup_owner": "receiver",
+          "receiver_marker": "p1/m1-open/t1268/bob/post.rdv_a",
+          "sender_marker": null,
+          "receiver_elapsed_ms": 156.086578
+        },
+        {
+          "trial": "t1269",
+          "label": 1,
+          "object_path": "/rdv/m1-open-t1269-a.bin",
+          "trial_locator": "open/holdout.jsonl:970",
+          "upstream_locator": "open/server.json#/upstream_log/3899",
+          "lookup_owner": "sender",
+          "receiver_marker": "p1/m1-open/t1269/alice/post.rdv_a",
+          "sender_marker": "p1/m1-open/t1269/bob/s-rdv_get-0-0",
+          "receiver_elapsed_ms": 2.076531
+        },
+        {
+          "trial": "t1279",
+          "label": 0,
+          "object_path": "/rdv/m1-open-t1279-a.bin",
+          "trial_locator": "open/holdout.jsonl:980",
+          "upstream_locator": "open/server.json#/upstream_log/3929",
+          "lookup_owner": "receiver",
+          "receiver_marker": "p1/m1-open/t1279/alice/post.rdv_a",
+          "sender_marker": null,
+          "receiver_elapsed_ms": 154.095537
+        }
+      ],
+      "failures": [],
+      "frozen_meter_confirmations": [
+        {
+          "locator": "report-metrics.json#/confirmations/20",
+          "feature": "post.rdv_a|elapsed_ms",
+          "recipe": null,
+          "p_holm_experiment": 8.334044711950528e-05
+        },
+        {
+          "locator": "report-metrics.json#/confirmations/21",
+          "feature": "post.rdv_a|elapsed_ms",
+          "recipe": "rdv_get",
+          "p_holm_experiment": 4.800169416820522e-28
+        }
+      ]
+    }
+  },
+  "validation_freeze_sha256": "0d81f5ff96d25b3bb7650ec46848ef62ee852605e67556bd7bc88a86d0548032",
+  "audit_results_sha256": "10cc441fb3dbd779c5170ee40032567a9b9edea56ce96b75fc55cdcf882303f4",
+  "report_metrics_sha256": "21e234419d0bad9cbbfc171cc0445accabe6d944dee6c0dfed519009fd22d5a0",
+  "input_sha256": {
+    "aa/sealed.json": "4a27e3bf8bdc3b54de52b4c36da439c2947a2a7168aa7e8b3a6b76fbcb7bb3bb",
+    "aa/calibration.jsonl": "03bfb3de4c1cc42459131a24eddb39c956860d8b2a69c2aa6c0a1d9625d8b4f6",
+    "aa/holdout.jsonl": "31e265a5bcb4e075602e71e374800fd4a02afd3966e1756a0e9c5c941362f641",
+    "aa/provision.json": "c4a4e2c994936747368078afc35c8ea8e2a0d5e66e2c208e25aed6351d285864",
+    "aa/server.json": "c4160e60787751f88f8964e3c00f37836921cee9f89c3073f15d54146f5d77ee",
+    "aa/server-log-lines.txt": "67611de2f228cd86f391a8e8aa51dc783c1fcfdb5eb180d4743648cd99dad41e",
+    "aa/cleanup.json": "9e08bc19a9934f8a71f9236002272dace184848ccbe7ab2d0f912fb888e80870",
+    "combined/sealed.json": "43fd974bddec6f09b31cf0db7d4e7f4c8aa69d3f067dcecc6480a0745d32d394",
+    "combined/calibration.jsonl": "790162ccccc507a5aafdb982594297db640a5c779426a82b3a47f32627a8e4bc",
+    "combined/holdout.jsonl": "9558ce8aa92d5a9ff4b054a515d76af1bdb609b8f2b6bfc932d0585475c158d9",
+    "combined/provision.json": "83f780f2a0e9d2d3be526e2dc62a153226faed040f7c4e22b7b4c0a17058487a",
+    "combined/server.json": "d2ba19d43e61f17a10bb504b76c2eec9561547515877561449cbe84ae1f8acc2",
+    "combined/server-log-lines.txt": "c9def3becfa46af865e677c4fd4982ff38ca00b51b72d0974c0e8ab133c410bf",
+    "combined/cleanup.json": "8dabe48b1c9517fcf1474a4cb49bb86ce55064727f087fa5cb64a2d91f38a0dd",
+    "open/sealed.json": "4b7e941c655f13a0bd4d3d35a3bc948a3b508c6d494ef3466b59e8482387ef7f",
+    "open/calibration.jsonl": "ffc4d7868ff827180d2b0edc0333fd25a6d5281fb7a08d6d2c466889950a2660",
+    "open/holdout.jsonl": "f7b90511af5f36d7a6154bd695b921923513d711d9255f9fdfa20e5906fe5334",
+    "open/provision.json": "354a9115147a12e7ab6c71f1bb1d6058ed61a25f221ac3dbe956779cb3f26657",
+    "open/server.json": "5882ad11037248dd1ae3769c9cf294008e2f1a8ee80ab41775e001b52dce4847",
+    "open/server-log-lines.txt": "ed05e6708d3afbad4789db63c1a5d80e3ca527f77a2da9cf908a436f26c04244",
+    "open/cleanup.json": "2bb114f11877c362646504a770b874cdc72930c60269e47f4807f35c50597edc",
+    "separate/sealed.json": "f3e806f5ef886927c47c8c979210e5efa7ed76813bddf02a979305ca645f916c",
+    "separate/calibration.jsonl": "52ddc23f9f424b395c7bad448aba46ac77d9ce32b0f54d31fc3b2cd585f5e174",
+    "separate/holdout.jsonl": "1f1f70ad6c4c63996aed035f31b63396c993a63b0f5b36c348794a070985d86e",
+    "separate/provision.json": "8b9a9c48c5fd8ab71263178bcfdc8abb48714f84d88ac7fa6f8db7d1a987292a",
+    "separate/server.json": "ed0f8d937b74af72626a5d0034134b7e431656452eb91d94164815587b37d2c8",
+    "separate/server-log-lines.txt": "3401f8d29fc29ad4f4c558029e888ce8b8093146f4f372e89c476282d3d26715",
+    "separate/cleanup.json": "5ce5acc300b32d1c16833fa651a26ce3028fa29b1739dd30bc60be98e8602c69",
+    "sham/sealed.json": "ccb458303efc5561f8eeb5572d45a464a5ef90c1605463a1905b4b5be574aa6e",
+    "sham/calibration.jsonl": "de0d942db07be215e6ac7c53fcf424e6b3dfbd81e6831e34156679af10e49a57",
+    "sham/holdout.jsonl": "6d2e3d797172f707b3bbaaf054d0b5f54bb4c47b5385f6bf5ee2ab126b28cb6f",
+    "sham/provision.json": "b3557906383f5d0e10c4c6a23bd165ed660fe362d37746acd22cf7e6c3e42c11",
+    "sham/server.json": "90c758757554db57319c77fc192c6dc0109d623e600880d6153812e0fb808856",
+    "sham/server-log-lines.txt": "dfb2212c14fd281f6f0545b1773fd851f53d6e091a10eaea1f13df1cb50f1c5b",
+    "sham/cleanup.json": "735d32b0bbff6e199232559ba85ba2fbbd4b327b27c24df99e1f5e64591e84db"
+  },
+  "null_gate_passed": true,
+  "scope": "Known causal mechanisms and prior frozen meter confirmations; post-holdout operational audit amendment disclosed; no new decoder."
+}

@@ -1,0 +1,23 @@
+{
+  "edition": 6,
+  "utc": "2026-11-08T23:48:18.809735+00:00",
+  "prior_source_freeze_sha256": "b962b6747614065235249598e315b0c14c90be0120a95ab70a53bc30fba7478f",
+  "prior_source_archive": "archive/v5",
+  "provider_calls": 0,
+  "reason": "First native smoke reproduced missing mutable public container/network maps required by strict audit. A red regression failed in both mutable configurations before repair.",
+  "changes": [
+    "Copy only owned public containers/networks maps; no private state copied.",
+    "Fresh smoke p4-s2 run IDs; original p4-s1 evidence unchanged."
+  ],
+  "unchanged": [
+    "Auditor",
+    "Assigned plan",
+    "Prompts",
+    "Models",
+    "Budget",
+    "Scientific outcomes"
+  ],
+  "tests_passed": 31,
+  "original_smoke_failure_sha256": "12ded280ecccada19ee31297cb2ebe96a6419158f4d8b928a0ee7c2e6a60bfc5",
+  "fresh_smoke_required_before_paid_calls": true
+}

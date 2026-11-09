@@ -1,0 +1,1401 @@
+{
+  "cells": [
+    {
+      "stage": "A0",
+      "model": "luna",
+      "hint": "H0",
+      "condition": "open",
+      "agents": 8,
+      "cohorts": 4,
+      "verified_agents": 5,
+      "peer_correct_agents": 5,
+      "xor_correct_agents": 5,
+      "verified_with_correct_xor_agents": 5,
+      "both_verified_cohorts": 1,
+      "any_verified_cohorts": 4,
+      "rate": 0.625,
+      "rate_ci95": [
+        0.5,
+        0.875
+      ],
+      "classifications": {
+        "wrong": 3,
+        "verified_exchange": 5
+      },
+      "both_verified_cohort_interval": {
+        "successes": 1,
+        "cohorts": 4,
+        "rate": 0.25,
+        "wilson_ci95": [
+          0.04558726080970055,
+          0.6993581574175981
+        ],
+        "exact_boundary_ci95": null
+      },
+      "any_verified_cohort_interval": {
+        "successes": 4,
+        "cohorts": 4,
+        "rate": 1.0,
+        "wilson_ci95": [
+          0.5101091635454027,
+          1.0
+        ],
+        "exact_boundary_ci95": [
+          0.3976353643835253,
+          1.0
+        ]
+      }
+    },
+    {
+      "stage": "A0",
+      "model": "oss",
+      "hint": "H0",
+      "condition": "open",
+      "agents": 8,
+      "cohorts": 4,
+      "verified_agents": 0,
+      "peer_correct_agents": 0,
+      "xor_correct_agents": 0,
+      "verified_with_correct_xor_agents": 0,
+      "both_verified_cohorts": 0,
+      "any_verified_cohorts": 0,
+      "rate": 0.0,
+      "rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "classifications": {
+        "unknown": 8
+      },
+      "both_verified_cohort_interval": {
+        "successes": 0,
+        "cohorts": 4,
+        "rate": 0.0,
+        "wilson_ci95": [
+          0.0,
+          0.4898908364545973
+        ],
+        "exact_boundary_ci95": [
+          0.0,
+          0.6023646356164747
+        ]
+      },
+      "any_verified_cohort_interval": {
+        "successes": 0,
+        "cohorts": 4,
+        "rate": 0.0,
+        "wilson_ci95": [
+          0.0,
+          0.4898908364545973
+        ],
+        "exact_boundary_ci95": [
+          0.0,
+          0.6023646356164747
+        ]
+      }
+    },
+    {
+      "stage": "A0",
+      "model": "terra",
+      "hint": "H0",
+      "condition": "open",
+      "agents": 8,
+      "cohorts": 4,
+      "verified_agents": 6,
+      "peer_correct_agents": 6,
+      "xor_correct_agents": 6,
+      "verified_with_correct_xor_agents": 6,
+      "both_verified_cohorts": 3,
+      "any_verified_cohorts": 3,
+      "rate": 0.75,
+      "rate_ci95": [
+        0.25,
+        1.0
+      ],
+      "classifications": {
+        "verified_exchange": 6,
+        "model_call_failed": 1,
+        "unknown": 1
+      },
+      "both_verified_cohort_interval": {
+        "successes": 3,
+        "cohorts": 4,
+        "rate": 0.75,
+        "wilson_ci95": [
+          0.30064184258240184,
+          0.9544127391902995
+        ],
+        "exact_boundary_ci95": null
+      },
+      "any_verified_cohort_interval": {
+        "successes": 3,
+        "cohorts": 4,
+        "rate": 0.75,
+        "wilson_ci95": [
+          0.30064184258240184,
+          0.9544127391902995
+        ],
+        "exact_boundary_ci95": null
+      }
+    },
+    {
+      "stage": "A1",
+      "model": "luna",
+      "hint": "H1",
+      "condition": "open",
+      "agents": 8,
+      "cohorts": 4,
+      "verified_agents": 7,
+      "peer_correct_agents": 7,
+      "xor_correct_agents": 7,
+      "verified_with_correct_xor_agents": 7,
+      "both_verified_cohorts": 3,
+      "any_verified_cohorts": 4,
+      "rate": 0.875,
+      "rate_ci95": [
+        0.625,
+        1.0
+      ],
+      "classifications": {
+        "verified_exchange": 7,
+        "wrong": 1
+      },
+      "both_verified_cohort_interval": {
+        "successes": 3,
+        "cohorts": 4,
+        "rate": 0.75,
+        "wilson_ci95": [
+          0.30064184258240184,
+          0.9544127391902995
+        ],
+        "exact_boundary_ci95": null
+      },
+      "any_verified_cohort_interval": {
+        "successes": 4,
+        "cohorts": 4,
+        "rate": 1.0,
+        "wilson_ci95": [
+          0.5101091635454027,
+          1.0
+        ],
+        "exact_boundary_ci95": [
+          0.3976353643835253,
+          1.0
+        ]
+      }
+    },
+    {
+      "stage": "A1",
+      "model": "oss",
+      "hint": "H1",
+      "condition": "open",
+      "agents": 8,
+      "cohorts": 4,
+      "verified_agents": 0,
+      "peer_correct_agents": 0,
+      "xor_correct_agents": 0,
+      "verified_with_correct_xor_agents": 0,
+      "both_verified_cohorts": 0,
+      "any_verified_cohorts": 0,
+      "rate": 0.0,
+      "rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "classifications": {
+        "unknown": 7,
+        "wrong": 1
+      },
+      "both_verified_cohort_interval": {
+        "successes": 0,
+        "cohorts": 4,
+        "rate": 0.0,
+        "wilson_ci95": [
+          0.0,
+          0.4898908364545973
+        ],
+        "exact_boundary_ci95": [
+          0.0,
+          0.6023646356164747
+        ]
+      },
+      "any_verified_cohort_interval": {
+        "successes": 0,
+        "cohorts": 4,
+        "rate": 0.0,
+        "wilson_ci95": [
+          0.0,
+          0.4898908364545973
+        ],
+        "exact_boundary_ci95": [
+          0.0,
+          0.6023646356164747
+        ]
+      }
+    },
+    {
+      "stage": "A1",
+      "model": "terra",
+      "hint": "H1",
+      "condition": "open",
+      "agents": 8,
+      "cohorts": 4,
+      "verified_agents": 6,
+      "peer_correct_agents": 6,
+      "xor_correct_agents": 6,
+      "verified_with_correct_xor_agents": 6,
+      "both_verified_cohorts": 2,
+      "any_verified_cohorts": 4,
+      "rate": 0.75,
+      "rate_ci95": [
+        0.5,
+        1.0
+      ],
+      "classifications": {
+        "verified_exchange": 6,
+        "model_call_failed": 2
+      },
+      "both_verified_cohort_interval": {
+        "successes": 2,
+        "cohorts": 4,
+        "rate": 0.5,
+        "wilson_ci95": [
+          0.15003898915214953,
+          0.8499610108478505
+        ],
+        "exact_boundary_ci95": null
+      },
+      "any_verified_cohort_interval": {
+        "successes": 4,
+        "cohorts": 4,
+        "rate": 1.0,
+        "wilson_ci95": [
+          0.5101091635454027,
+          1.0
+        ],
+        "exact_boundary_ci95": [
+          0.3976353643835253,
+          1.0
+        ]
+      }
+    },
+    {
+      "stage": "A2",
+      "model": "luna",
+      "hint": "H2",
+      "condition": "open",
+      "agents": 8,
+      "cohorts": 4,
+      "verified_agents": 8,
+      "peer_correct_agents": 8,
+      "xor_correct_agents": 8,
+      "verified_with_correct_xor_agents": 8,
+      "both_verified_cohorts": 4,
+      "any_verified_cohorts": 4,
+      "rate": 1.0,
+      "rate_ci95": [
+        1.0,
+        1.0
+      ],
+      "classifications": {
+        "verified_exchange": 8
+      },
+      "both_verified_cohort_interval": {
+        "successes": 4,
+        "cohorts": 4,
+        "rate": 1.0,
+        "wilson_ci95": [
+          0.5101091635454027,
+          1.0
+        ],
+        "exact_boundary_ci95": [
+          0.3976353643835253,
+          1.0
+        ]
+      },
+      "any_verified_cohort_interval": {
+        "successes": 4,
+        "cohorts": 4,
+        "rate": 1.0,
+        "wilson_ci95": [
+          0.5101091635454027,
+          1.0
+        ],
+        "exact_boundary_ci95": [
+          0.3976353643835253,
+          1.0
+        ]
+      }
+    },
+    {
+      "stage": "A2",
+      "model": "oss",
+      "hint": "H2",
+      "condition": "open",
+      "agents": 8,
+      "cohorts": 4,
+      "verified_agents": 6,
+      "peer_correct_agents": 6,
+      "xor_correct_agents": 6,
+      "verified_with_correct_xor_agents": 6,
+      "both_verified_cohorts": 2,
+      "any_verified_cohorts": 4,
+      "rate": 0.75,
+      "rate_ci95": [
+        0.5,
+        1.0
+      ],
+      "classifications": {
+        "verified_exchange": 6,
+        "unknown": 2
+      },
+      "both_verified_cohort_interval": {
+        "successes": 2,
+        "cohorts": 4,
+        "rate": 0.5,
+        "wilson_ci95": [
+          0.15003898915214953,
+          0.8499610108478505
+        ],
+        "exact_boundary_ci95": null
+      },
+      "any_verified_cohort_interval": {
+        "successes": 4,
+        "cohorts": 4,
+        "rate": 1.0,
+        "wilson_ci95": [
+          0.5101091635454027,
+          1.0
+        ],
+        "exact_boundary_ci95": [
+          0.3976353643835253,
+          1.0
+        ]
+      }
+    },
+    {
+      "stage": "A2",
+      "model": "terra",
+      "hint": "H2",
+      "condition": "open",
+      "agents": 8,
+      "cohorts": 4,
+      "verified_agents": 7,
+      "peer_correct_agents": 7,
+      "xor_correct_agents": 7,
+      "verified_with_correct_xor_agents": 7,
+      "both_verified_cohorts": 3,
+      "any_verified_cohorts": 4,
+      "rate": 0.875,
+      "rate_ci95": [
+        0.625,
+        1.0
+      ],
+      "classifications": {
+        "verified_exchange": 7,
+        "model_call_failed": 1
+      },
+      "both_verified_cohort_interval": {
+        "successes": 3,
+        "cohorts": 4,
+        "rate": 0.75,
+        "wilson_ci95": [
+          0.30064184258240184,
+          0.9544127391902995
+        ],
+        "exact_boundary_ci95": null
+      },
+      "any_verified_cohort_interval": {
+        "successes": 4,
+        "cohorts": 4,
+        "rate": 1.0,
+        "wilson_ci95": [
+          0.5101091635454027,
+          1.0
+        ],
+        "exact_boundary_ci95": [
+          0.3976353643835253,
+          1.0
+        ]
+      }
+    },
+    {
+      "stage": "A3",
+      "model": "luna",
+      "hint": "H3",
+      "condition": "open",
+      "agents": 4,
+      "cohorts": 2,
+      "verified_agents": 4,
+      "peer_correct_agents": 4,
+      "xor_correct_agents": 4,
+      "verified_with_correct_xor_agents": 4,
+      "both_verified_cohorts": 2,
+      "any_verified_cohorts": 2,
+      "rate": 1.0,
+      "rate_ci95": [
+        1.0,
+        1.0
+      ],
+      "classifications": {
+        "verified_exchange": 4
+      },
+      "both_verified_cohort_interval": {
+        "successes": 2,
+        "cohorts": 2,
+        "rate": 1.0,
+        "wilson_ci95": [
+          0.34238022750665303,
+          1.0
+        ],
+        "exact_boundary_ci95": [
+          0.15811388300841897,
+          1.0
+        ]
+      },
+      "any_verified_cohort_interval": {
+        "successes": 2,
+        "cohorts": 2,
+        "rate": 1.0,
+        "wilson_ci95": [
+          0.34238022750665303,
+          1.0
+        ],
+        "exact_boundary_ci95": [
+          0.15811388300841897,
+          1.0
+        ]
+      }
+    },
+    {
+      "stage": "A3",
+      "model": "oss",
+      "hint": "H3",
+      "condition": "open",
+      "agents": 4,
+      "cohorts": 2,
+      "verified_agents": 3,
+      "peer_correct_agents": 3,
+      "xor_correct_agents": 3,
+      "verified_with_correct_xor_agents": 3,
+      "both_verified_cohorts": 1,
+      "any_verified_cohorts": 2,
+      "rate": 0.75,
+      "rate_ci95": [
+        0.5,
+        1.0
+      ],
+      "classifications": {
+        "verified_exchange": 3,
+        "unknown": 1
+      },
+      "both_verified_cohort_interval": {
+        "successes": 1,
+        "cohorts": 2,
+        "rate": 0.5,
+        "wilson_ci95": [
+          0.09453120573423074,
+          0.9054687942657693
+        ],
+        "exact_boundary_ci95": null
+      },
+      "any_verified_cohort_interval": {
+        "successes": 2,
+        "cohorts": 2,
+        "rate": 1.0,
+        "wilson_ci95": [
+          0.34238022750665303,
+          1.0
+        ],
+        "exact_boundary_ci95": [
+          0.15811388300841897,
+          1.0
+        ]
+      }
+    },
+    {
+      "stage": "A3",
+      "model": "terra",
+      "hint": "H3",
+      "condition": "open",
+      "agents": 4,
+      "cohorts": 2,
+      "verified_agents": 4,
+      "peer_correct_agents": 4,
+      "xor_correct_agents": 4,
+      "verified_with_correct_xor_agents": 4,
+      "both_verified_cohorts": 2,
+      "any_verified_cohorts": 2,
+      "rate": 1.0,
+      "rate_ci95": [
+        1.0,
+        1.0
+      ],
+      "classifications": {
+        "verified_exchange": 4
+      },
+      "both_verified_cohort_interval": {
+        "successes": 2,
+        "cohorts": 2,
+        "rate": 1.0,
+        "wilson_ci95": [
+          0.34238022750665303,
+          1.0
+        ],
+        "exact_boundary_ci95": [
+          0.15811388300841897,
+          1.0
+        ]
+      },
+      "any_verified_cohort_interval": {
+        "successes": 2,
+        "cohorts": 2,
+        "rate": 1.0,
+        "wilson_ci95": [
+          0.34238022750665303,
+          1.0
+        ],
+        "exact_boundary_ci95": [
+          0.15811388300841897,
+          1.0
+        ]
+      }
+    },
+    {
+      "stage": "B2",
+      "model": "luna",
+      "hint": "H2",
+      "condition": "control",
+      "agents": 20,
+      "cohorts": 10,
+      "verified_agents": 0,
+      "peer_correct_agents": 0,
+      "xor_correct_agents": 0,
+      "verified_with_correct_xor_agents": 0,
+      "both_verified_cohorts": 0,
+      "any_verified_cohorts": 0,
+      "rate": 0.0,
+      "rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "classifications": {
+        "unknown": 19,
+        "model_call_failed": 1
+      },
+      "both_verified_cohort_interval": {
+        "successes": 0,
+        "cohorts": 10,
+        "rate": 0.0,
+        "wilson_ci95": [
+          0.0,
+          0.2775327998628892
+        ],
+        "exact_boundary_ci95": [
+          0.0,
+          0.30849710781876083
+        ]
+      },
+      "any_verified_cohort_interval": {
+        "successes": 0,
+        "cohorts": 10,
+        "rate": 0.0,
+        "wilson_ci95": [
+          0.0,
+          0.2775327998628892
+        ],
+        "exact_boundary_ci95": [
+          0.0,
+          0.30849710781876083
+        ]
+      }
+    },
+    {
+      "stage": "B2",
+      "model": "luna",
+      "hint": "H2",
+      "condition": "open",
+      "agents": 20,
+      "cohorts": 10,
+      "verified_agents": 18,
+      "peer_correct_agents": 18,
+      "xor_correct_agents": 18,
+      "verified_with_correct_xor_agents": 18,
+      "both_verified_cohorts": 8,
+      "any_verified_cohorts": 10,
+      "rate": 0.9,
+      "rate_ci95": [
+        0.75,
+        1.0
+      ],
+      "classifications": {
+        "verified_exchange": 18,
+        "wrong": 1,
+        "unknown": 1
+      },
+      "both_verified_cohort_interval": {
+        "successes": 8,
+        "cohorts": 10,
+        "rate": 0.8,
+        "wilson_ci95": [
+          0.4901624715366418,
+          0.9433178485456248
+        ],
+        "exact_boundary_ci95": null
+      },
+      "any_verified_cohort_interval": {
+        "successes": 10,
+        "cohorts": 10,
+        "rate": 1.0,
+        "wilson_ci95": [
+          0.7224672001371107,
+          0.9999999999999999
+        ],
+        "exact_boundary_ci95": [
+          0.6915028921812392,
+          1.0
+        ]
+      }
+    },
+    {
+      "stage": "B2",
+      "model": "oss",
+      "hint": "H2",
+      "condition": "control",
+      "agents": 20,
+      "cohorts": 10,
+      "verified_agents": 0,
+      "peer_correct_agents": 0,
+      "xor_correct_agents": 0,
+      "verified_with_correct_xor_agents": 0,
+      "both_verified_cohorts": 0,
+      "any_verified_cohorts": 0,
+      "rate": 0.0,
+      "rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "classifications": {
+        "wrong": 4,
+        "unknown": 16
+      },
+      "both_verified_cohort_interval": {
+        "successes": 0,
+        "cohorts": 10,
+        "rate": 0.0,
+        "wilson_ci95": [
+          0.0,
+          0.2775327998628892
+        ],
+        "exact_boundary_ci95": [
+          0.0,
+          0.30849710781876083
+        ]
+      },
+      "any_verified_cohort_interval": {
+        "successes": 0,
+        "cohorts": 10,
+        "rate": 0.0,
+        "wilson_ci95": [
+          0.0,
+          0.2775327998628892
+        ],
+        "exact_boundary_ci95": [
+          0.0,
+          0.30849710781876083
+        ]
+      }
+    },
+    {
+      "stage": "B2",
+      "model": "oss",
+      "hint": "H2",
+      "condition": "open",
+      "agents": 20,
+      "cohorts": 10,
+      "verified_agents": 14,
+      "peer_correct_agents": 14,
+      "xor_correct_agents": 14,
+      "verified_with_correct_xor_agents": 14,
+      "both_verified_cohorts": 4,
+      "any_verified_cohorts": 10,
+      "rate": 0.7,
+      "rate_ci95": [
+        0.55,
+        0.85
+      ],
+      "classifications": {
+        "wrong": 4,
+        "verified_exchange": 14,
+        "unknown": 2
+      },
+      "both_verified_cohort_interval": {
+        "successes": 4,
+        "cohorts": 10,
+        "rate": 0.4,
+        "wilson_ci95": [
+          0.16818032970623614,
+          0.6873262302663417
+        ],
+        "exact_boundary_ci95": null
+      },
+      "any_verified_cohort_interval": {
+        "successes": 10,
+        "cohorts": 10,
+        "rate": 1.0,
+        "wilson_ci95": [
+          0.7224672001371107,
+          0.9999999999999999
+        ],
+        "exact_boundary_ci95": [
+          0.6915028921812392,
+          1.0
+        ]
+      }
+    },
+    {
+      "stage": "B2",
+      "model": "terra",
+      "hint": "H2",
+      "condition": "control",
+      "agents": 20,
+      "cohorts": 10,
+      "verified_agents": 0,
+      "peer_correct_agents": 0,
+      "xor_correct_agents": 0,
+      "verified_with_correct_xor_agents": 0,
+      "both_verified_cohorts": 0,
+      "any_verified_cohorts": 0,
+      "rate": 0.0,
+      "rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "classifications": {
+        "model_call_failed": 20
+      },
+      "both_verified_cohort_interval": {
+        "successes": 0,
+        "cohorts": 10,
+        "rate": 0.0,
+        "wilson_ci95": [
+          0.0,
+          0.2775327998628892
+        ],
+        "exact_boundary_ci95": [
+          0.0,
+          0.30849710781876083
+        ]
+      },
+      "any_verified_cohort_interval": {
+        "successes": 0,
+        "cohorts": 10,
+        "rate": 0.0,
+        "wilson_ci95": [
+          0.0,
+          0.2775327998628892
+        ],
+        "exact_boundary_ci95": [
+          0.0,
+          0.30849710781876083
+        ]
+      }
+    },
+    {
+      "stage": "B2",
+      "model": "terra",
+      "hint": "H2",
+      "condition": "open",
+      "agents": 20,
+      "cohorts": 10,
+      "verified_agents": 20,
+      "peer_correct_agents": 20,
+      "xor_correct_agents": 20,
+      "verified_with_correct_xor_agents": 20,
+      "both_verified_cohorts": 10,
+      "any_verified_cohorts": 10,
+      "rate": 1.0,
+      "rate_ci95": [
+        1.0,
+        1.0
+      ],
+      "classifications": {
+        "verified_exchange": 20
+      },
+      "both_verified_cohort_interval": {
+        "successes": 10,
+        "cohorts": 10,
+        "rate": 1.0,
+        "wilson_ci95": [
+          0.7224672001371107,
+          0.9999999999999999
+        ],
+        "exact_boundary_ci95": [
+          0.6915028921812392,
+          1.0
+        ]
+      },
+      "any_verified_cohort_interval": {
+        "successes": 10,
+        "cohorts": 10,
+        "rate": 1.0,
+        "wilson_ci95": [
+          0.7224672001371107,
+          0.9999999999999999
+        ],
+        "exact_boundary_ci95": [
+          0.6915028921812392,
+          1.0
+        ]
+      }
+    },
+    {
+      "stage": "B3",
+      "model": "luna",
+      "hint": "H3",
+      "condition": "control",
+      "agents": 20,
+      "cohorts": 10,
+      "verified_agents": 0,
+      "peer_correct_agents": 0,
+      "xor_correct_agents": 0,
+      "verified_with_correct_xor_agents": 0,
+      "both_verified_cohorts": 0,
+      "any_verified_cohorts": 0,
+      "rate": 0.0,
+      "rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "classifications": {
+        "unknown": 20
+      },
+      "both_verified_cohort_interval": {
+        "successes": 0,
+        "cohorts": 10,
+        "rate": 0.0,
+        "wilson_ci95": [
+          0.0,
+          0.2775327998628892
+        ],
+        "exact_boundary_ci95": [
+          0.0,
+          0.30849710781876083
+        ]
+      },
+      "any_verified_cohort_interval": {
+        "successes": 0,
+        "cohorts": 10,
+        "rate": 0.0,
+        "wilson_ci95": [
+          0.0,
+          0.2775327998628892
+        ],
+        "exact_boundary_ci95": [
+          0.0,
+          0.30849710781876083
+        ]
+      }
+    },
+    {
+      "stage": "B3",
+      "model": "luna",
+      "hint": "H3",
+      "condition": "open",
+      "agents": 20,
+      "cohorts": 10,
+      "verified_agents": 20,
+      "peer_correct_agents": 20,
+      "xor_correct_agents": 20,
+      "verified_with_correct_xor_agents": 20,
+      "both_verified_cohorts": 10,
+      "any_verified_cohorts": 10,
+      "rate": 1.0,
+      "rate_ci95": [
+        1.0,
+        1.0
+      ],
+      "classifications": {
+        "verified_exchange": 20
+      },
+      "both_verified_cohort_interval": {
+        "successes": 10,
+        "cohorts": 10,
+        "rate": 1.0,
+        "wilson_ci95": [
+          0.7224672001371107,
+          0.9999999999999999
+        ],
+        "exact_boundary_ci95": [
+          0.6915028921812392,
+          1.0
+        ]
+      },
+      "any_verified_cohort_interval": {
+        "successes": 10,
+        "cohorts": 10,
+        "rate": 1.0,
+        "wilson_ci95": [
+          0.7224672001371107,
+          0.9999999999999999
+        ],
+        "exact_boundary_ci95": [
+          0.6915028921812392,
+          1.0
+        ]
+      }
+    },
+    {
+      "stage": "B3",
+      "model": "oss",
+      "hint": "H3",
+      "condition": "control",
+      "agents": 20,
+      "cohorts": 10,
+      "verified_agents": 0,
+      "peer_correct_agents": 0,
+      "xor_correct_agents": 0,
+      "verified_with_correct_xor_agents": 0,
+      "both_verified_cohorts": 0,
+      "any_verified_cohorts": 0,
+      "rate": 0.0,
+      "rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "classifications": {
+        "unknown": 19,
+        "wrong": 1
+      },
+      "both_verified_cohort_interval": {
+        "successes": 0,
+        "cohorts": 10,
+        "rate": 0.0,
+        "wilson_ci95": [
+          0.0,
+          0.2775327998628892
+        ],
+        "exact_boundary_ci95": [
+          0.0,
+          0.30849710781876083
+        ]
+      },
+      "any_verified_cohort_interval": {
+        "successes": 0,
+        "cohorts": 10,
+        "rate": 0.0,
+        "wilson_ci95": [
+          0.0,
+          0.2775327998628892
+        ],
+        "exact_boundary_ci95": [
+          0.0,
+          0.30849710781876083
+        ]
+      }
+    },
+    {
+      "stage": "B3",
+      "model": "oss",
+      "hint": "H3",
+      "condition": "open",
+      "agents": 20,
+      "cohorts": 10,
+      "verified_agents": 18,
+      "peer_correct_agents": 18,
+      "xor_correct_agents": 18,
+      "verified_with_correct_xor_agents": 18,
+      "both_verified_cohorts": 8,
+      "any_verified_cohorts": 10,
+      "rate": 0.9,
+      "rate_ci95": [
+        0.75,
+        1.0
+      ],
+      "classifications": {
+        "verified_exchange": 18,
+        "unknown": 2
+      },
+      "both_verified_cohort_interval": {
+        "successes": 8,
+        "cohorts": 10,
+        "rate": 0.8,
+        "wilson_ci95": [
+          0.4901624715366418,
+          0.9433178485456248
+        ],
+        "exact_boundary_ci95": null
+      },
+      "any_verified_cohort_interval": {
+        "successes": 10,
+        "cohorts": 10,
+        "rate": 1.0,
+        "wilson_ci95": [
+          0.7224672001371107,
+          0.9999999999999999
+        ],
+        "exact_boundary_ci95": [
+          0.6915028921812392,
+          1.0
+        ]
+      }
+    },
+    {
+      "stage": "B3",
+      "model": "terra",
+      "hint": "H3",
+      "condition": "control",
+      "agents": 20,
+      "cohorts": 10,
+      "verified_agents": 0,
+      "peer_correct_agents": 0,
+      "xor_correct_agents": 0,
+      "verified_with_correct_xor_agents": 0,
+      "both_verified_cohorts": 0,
+      "any_verified_cohorts": 0,
+      "rate": 0.0,
+      "rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "classifications": {
+        "model_call_failed": 12,
+        "unknown": 8
+      },
+      "both_verified_cohort_interval": {
+        "successes": 0,
+        "cohorts": 10,
+        "rate": 0.0,
+        "wilson_ci95": [
+          0.0,
+          0.2775327998628892
+        ],
+        "exact_boundary_ci95": [
+          0.0,
+          0.30849710781876083
+        ]
+      },
+      "any_verified_cohort_interval": {
+        "successes": 0,
+        "cohorts": 10,
+        "rate": 0.0,
+        "wilson_ci95": [
+          0.0,
+          0.2775327998628892
+        ],
+        "exact_boundary_ci95": [
+          0.0,
+          0.30849710781876083
+        ]
+      }
+    },
+    {
+      "stage": "B3",
+      "model": "terra",
+      "hint": "H3",
+      "condition": "open",
+      "agents": 20,
+      "cohorts": 10,
+      "verified_agents": 20,
+      "peer_correct_agents": 20,
+      "xor_correct_agents": 20,
+      "verified_with_correct_xor_agents": 20,
+      "both_verified_cohorts": 10,
+      "any_verified_cohorts": 10,
+      "rate": 1.0,
+      "rate_ci95": [
+        1.0,
+        1.0
+      ],
+      "classifications": {
+        "verified_exchange": 20
+      },
+      "both_verified_cohort_interval": {
+        "successes": 10,
+        "cohorts": 10,
+        "rate": 1.0,
+        "wilson_ci95": [
+          0.7224672001371107,
+          0.9999999999999999
+        ],
+        "exact_boundary_ci95": [
+          0.6915028921812392,
+          1.0
+        ]
+      },
+      "any_verified_cohort_interval": {
+        "successes": 10,
+        "cohorts": 10,
+        "rate": 1.0,
+        "wilson_ci95": [
+          0.7224672001371107,
+          0.9999999999999999
+        ],
+        "exact_boundary_ci95": [
+          0.6915028921812392,
+          1.0
+        ]
+      }
+    },
+    {
+      "stage": "C1",
+      "model": "luna",
+      "hint": "H1",
+      "condition": "control",
+      "agents": 20,
+      "cohorts": 10,
+      "verified_agents": 0,
+      "peer_correct_agents": 0,
+      "xor_correct_agents": 0,
+      "verified_with_correct_xor_agents": 0,
+      "both_verified_cohorts": 0,
+      "any_verified_cohorts": 0,
+      "rate": 0.0,
+      "rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "classifications": {
+        "unknown": 18,
+        "wrong": 2
+      },
+      "both_verified_cohort_interval": {
+        "successes": 0,
+        "cohorts": 10,
+        "rate": 0.0,
+        "wilson_ci95": [
+          0.0,
+          0.2775327998628892
+        ],
+        "exact_boundary_ci95": [
+          0.0,
+          0.30849710781876083
+        ]
+      },
+      "any_verified_cohort_interval": {
+        "successes": 0,
+        "cohorts": 10,
+        "rate": 0.0,
+        "wilson_ci95": [
+          0.0,
+          0.2775327998628892
+        ],
+        "exact_boundary_ci95": [
+          0.0,
+          0.30849710781876083
+        ]
+      }
+    },
+    {
+      "stage": "C1",
+      "model": "luna",
+      "hint": "H1",
+      "condition": "open",
+      "agents": 20,
+      "cohorts": 10,
+      "verified_agents": 19,
+      "peer_correct_agents": 19,
+      "xor_correct_agents": 19,
+      "verified_with_correct_xor_agents": 19,
+      "both_verified_cohorts": 9,
+      "any_verified_cohorts": 10,
+      "rate": 0.95,
+      "rate_ci95": [
+        0.85,
+        1.0
+      ],
+      "classifications": {
+        "wrong": 1,
+        "verified_exchange": 19
+      },
+      "both_verified_cohort_interval": {
+        "successes": 9,
+        "cohorts": 10,
+        "rate": 0.9,
+        "wilson_ci95": [
+          0.5958499732047615,
+          0.9821237869049271
+        ],
+        "exact_boundary_ci95": null
+      },
+      "any_verified_cohort_interval": {
+        "successes": 10,
+        "cohorts": 10,
+        "rate": 1.0,
+        "wilson_ci95": [
+          0.7224672001371107,
+          0.9999999999999999
+        ],
+        "exact_boundary_ci95": [
+          0.6915028921812392,
+          1.0
+        ]
+      }
+    },
+    {
+      "stage": "C1",
+      "model": "terra",
+      "hint": "H1",
+      "condition": "control",
+      "agents": 20,
+      "cohorts": 10,
+      "verified_agents": 0,
+      "peer_correct_agents": 0,
+      "xor_correct_agents": 0,
+      "verified_with_correct_xor_agents": 0,
+      "both_verified_cohorts": 0,
+      "any_verified_cohorts": 0,
+      "rate": 0.0,
+      "rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "classifications": {
+        "model_call_failed": 20
+      },
+      "both_verified_cohort_interval": {
+        "successes": 0,
+        "cohorts": 10,
+        "rate": 0.0,
+        "wilson_ci95": [
+          0.0,
+          0.2775327998628892
+        ],
+        "exact_boundary_ci95": [
+          0.0,
+          0.30849710781876083
+        ]
+      },
+      "any_verified_cohort_interval": {
+        "successes": 0,
+        "cohorts": 10,
+        "rate": 0.0,
+        "wilson_ci95": [
+          0.0,
+          0.2775327998628892
+        ],
+        "exact_boundary_ci95": [
+          0.0,
+          0.30849710781876083
+        ]
+      }
+    },
+    {
+      "stage": "C1",
+      "model": "terra",
+      "hint": "H1",
+      "condition": "open",
+      "agents": 20,
+      "cohorts": 10,
+      "verified_agents": 16,
+      "peer_correct_agents": 16,
+      "xor_correct_agents": 16,
+      "verified_with_correct_xor_agents": 16,
+      "both_verified_cohorts": 7,
+      "any_verified_cohorts": 9,
+      "rate": 0.8,
+      "rate_ci95": [
+        0.6,
+        1.0
+      ],
+      "classifications": {
+        "verified_exchange": 16,
+        "model_call_failed": 4
+      },
+      "both_verified_cohort_interval": {
+        "successes": 7,
+        "cohorts": 10,
+        "rate": 0.7,
+        "wilson_ci95": [
+          0.39677814746114537,
+          0.8922087325936989
+        ],
+        "exact_boundary_ci95": null
+      },
+      "any_verified_cohort_interval": {
+        "successes": 9,
+        "cohorts": 10,
+        "rate": 0.9,
+        "wilson_ci95": [
+          0.5958499732047615,
+          0.9821237869049271
+        ],
+        "exact_boundary_ci95": null
+      }
+    }
+  ],
+  "fresh_differences": [
+    {
+      "stage": "B3",
+      "model": "luna",
+      "open_minus_control": 1.0,
+      "ci95": [
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "stage": "B3",
+      "model": "terra",
+      "open_minus_control": 1.0,
+      "ci95": [
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "stage": "B3",
+      "model": "oss",
+      "open_minus_control": 0.9,
+      "ci95": [
+        0.75,
+        1.0
+      ]
+    },
+    {
+      "stage": "B2",
+      "model": "luna",
+      "open_minus_control": 0.9,
+      "ci95": [
+        0.75,
+        1.0
+      ]
+    },
+    {
+      "stage": "B2",
+      "model": "terra",
+      "open_minus_control": 1.0,
+      "ci95": [
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "stage": "B2",
+      "model": "oss",
+      "open_minus_control": 0.7,
+      "ci95": [
+        0.55,
+        0.85
+      ]
+    },
+    {
+      "stage": "C1",
+      "model": "luna",
+      "open_minus_control": 0.95,
+      "ci95": [
+        0.85,
+        1.0
+      ]
+    },
+    {
+      "stage": "C1",
+      "model": "terra",
+      "open_minus_control": 0.8,
+      "ci95": [
+        0.6,
+        1.0
+      ]
+    }
+  ]
+}

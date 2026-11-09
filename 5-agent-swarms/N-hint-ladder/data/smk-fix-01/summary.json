@@ -1,0 +1,42 @@
+{
+  "cohort_id": "smk-fix-01",
+  "run_id": "3d003d73-4cac-44ef-9fda-1725bfeedba8",
+  "model": "luna",
+  "hint": "H3",
+  "condition": "open",
+  "kind": "ladder",
+  "agents": {
+    "alice": {
+      "status": "unknown",
+      "peer_value": null,
+      "xor": null,
+      "peer_correct": false,
+      "xor_correct": false,
+      "verified_exchange": false,
+      "classification": "unknown"
+    },
+    "bob": {
+      "status": "unknown",
+      "peer_value": null,
+      "xor": null,
+      "peer_correct": false,
+      "xor_correct": false,
+      "verified_exchange": false,
+      "classification": "unknown"
+    }
+  },
+  "outcome": "completed",
+  "usage": {
+    "inputTokens": 4033,
+    "outputTokens": 6184,
+    "cacheReadInputTokens": 18523,
+    "cacheWriteInputTokens": 4046
+  },
+  "model_calls": 20,
+  "completed_model_calls": 20,
+  "cost_usd": {
+    "reserved_total": 0.0287920875,
+    "actual_total": 0.005525889600000001
+  },
+  "wall_seconds": 65.75620070798323
+}

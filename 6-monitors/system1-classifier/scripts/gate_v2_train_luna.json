@@ -1,0 +1,74 @@
+{
+ "train_pos": [
+  "../data/positives.parquet"
+ ],
+ "train_neg": [
+  "../data/neg_local_npm.parquet",
+  "../data/neg_hf_docs_other.parquet",
+  "../data/neg_nebius_bash.parquet",
+  "../data/neg_csn_js.parquet",
+  "../data/neg_xlam_calls.parquet",
+  "../data/eval_gen_luna.parquet"
+ ],
+ "evals": {
+  "B_hf_docs_api": {
+   "path": "../data/eval_hf_docs_api.parquet",
+   "label": 0
+  },
+  "B_swegym_bash": {
+   "path": "../data/eval_swegym_bash.parquet",
+   "label": 0
+  },
+  "B_glaive_calls": {
+   "path": "../data/eval_glaive_calls.parquet",
+   "label": 0
+  },
+  "B_agentapprove": {
+   "path": "../data/eval_agentapprove_benign.parquet",
+   "label": 0
+  },
+  "B_tomng_allow": {
+   "path": "../data/eval_tomng_allow.parquet",
+   "label": 0
+  },
+  "B_rogue_safe": {
+   "path": "../data/eval_rogue_safe.parquet",
+   "label": 0
+  },
+  "A_agentapprove": {
+   "path": "../data/eval_agentapprove_attack.parquet",
+   "label": 1
+  },
+  "A_tomng_deny": {
+   "path": "../data/eval_tomng_deny.parquet",
+   "label": 1
+  },
+  "A_rogue_unsafe": {
+   "path": "../data/eval_rogue_unsafe.parquet",
+   "label": 1
+  },
+  "A_revshell": {
+   "path": "../data/eval_revshell.parquet",
+   "label": 1
+  },
+  "B_gen_glm5": {
+   "path": "../data/eval_gen_glm5.parquet",
+   "label": 0
+  }
+ },
+ "seeds": [
+  0,
+  1,
+  2
+ ],
+ "cap_per_cluster": 3,
+ "max_per_class": 20000,
+ "length_match": true,
+ "fractions": [
+  0.7,
+  0.1,
+  0.2
+ ],
+ "eval_cap_per_cluster": 10,
+ "eval_max": 3000
+}

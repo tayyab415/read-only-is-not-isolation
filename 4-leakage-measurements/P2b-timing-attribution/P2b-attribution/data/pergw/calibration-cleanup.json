@@ -1,0 +1,65 @@
+{
+  "run_id": "p2b-c2-pergw",
+  "removed": [
+    {
+      "name": "p1-p2b-c2-pergw-alice",
+      "returncode": 0
+    },
+    {
+      "name": "p1-p2b-c2-pergw-bob",
+      "returncode": 0
+    },
+    {
+      "name": "p1-p2b-c2-pergw-gateway",
+      "returncode": 0
+    },
+    {
+      "name": "p1-p2b-c2-pergw-upstream",
+      "returncode": 0
+    },
+    {
+      "name": "p1-p2b-c2-pergw-dummy-alice",
+      "returncode": 0
+    },
+    {
+      "name": "p1-p2b-c2-pergw-dummy-bob",
+      "returncode": 0
+    },
+    {
+      "name": "p1-p2b-c2-pergw-net-services->art-a",
+      "returncode": 0
+    },
+    {
+      "name": "p1-p2b-c2-pergw-net-alice",
+      "returncode": 0
+    },
+    {
+      "name": "p1-p2b-c2-pergw-net-bob",
+      "returncode": 0
+    },
+    {
+      "name": "p1-p2b-c2-pergw-net-services",
+      "returncode": 0
+    },
+    {
+      "name": "p1-p2b-c2-pergw-net-dummy-alice",
+      "returncode": 1
+    },
+    {
+      "name": "p1-p2b-c2-pergw-net-dummy-bob",
+      "returncode": 1
+    }
+  ],
+  "containers_readback": [],
+  "networks_readback": [],
+  "art_a_p1_networks": [],
+  "absence_proved": true,
+  "fixtures_left_in_place": {
+    "alice": "p1-p2b-c2-pergw-alice",
+    "bob": "p1-p2b-c2-pergw-bob"
+  },
+  "mirror_removal_codes": [
+    0,
+    0
+  ]
+}

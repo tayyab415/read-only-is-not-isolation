@@ -1,0 +1,76 @@
+{
+  "verified_utc": "2026-11-08T22:17:40.550630+00:00",
+  "method": "Direct HTTP, immutable commit URLs, exact bytes checked against source reader report",
+  "sources": [
+    {
+      "source": "K1",
+      "url": "https://raw.githubusercontent.com/torvalds/linux/adc218676eef25575469234709c2d87185ca223a/Documentation/filesystems/proc.rst",
+      "sha256": "4577fa50db8fadbce338af1b64535608da42316208c962aeb08f4d91fe68636e",
+      "bytes": 100384,
+      "local": "sources/K1.txt"
+    },
+    {
+      "source": "K2",
+      "url": "https://raw.githubusercontent.com/torvalds/linux/adc218676eef25575469234709c2d87185ca223a/fs/proc/stat.c",
+      "sha256": "d4692d68f90f318cc6d09d182baffffb36f7d0a3367da2c77b1e654d08cd0382",
+      "bytes": 5897,
+      "local": "sources/K2.txt"
+    },
+    {
+      "source": "K3",
+      "url": "https://raw.githubusercontent.com/torvalds/linux/adc218676eef25575469234709c2d87185ca223a/Documentation/admin-guide/cgroup-v2.rst",
+      "sha256": "ad3bd37498a57cc249326fd5c2d609669b32611fe69d126df3c3abec1539f572",
+      "bytes": 122258,
+      "local": "sources/K3.txt"
+    },
+    {
+      "source": "K4",
+      "url": "https://raw.githubusercontent.com/torvalds/linux/adc218676eef25575469234709c2d87185ca223a/Documentation/scheduler/sched-bwc.rst",
+      "sha256": "f92b07b078474b90269cdf795ca257b803dedb525d4dd0e722206c9a7a57c57f",
+      "bytes": 11048,
+      "local": "sources/K4.txt"
+    },
+    {
+      "source": "K5",
+      "url": "https://raw.githubusercontent.com/torvalds/linux/adc218676eef25575469234709c2d87185ca223a/kernel/cgroup/rstat.c",
+      "sha256": "f9d0c24d28f32f4c258f0019f5b819baf852401830f2b6ebf32e242d9d66779d",
+      "bytes": 18859,
+      "local": "sources/K5.txt"
+    },
+    {
+      "source": "M1",
+      "url": "https://raw.githubusercontent.com/moby/moby/cd048300a48700294339c9c91d2dcc691cb8f63b/oci/defaults.go",
+      "sha256": "668e2ccde5bdc04612a8980039b4700e2efb9a035478b9840455a64808e60f72",
+      "bytes": 5879,
+      "local": "sources/M1.txt"
+    },
+    {
+      "source": "M2",
+      "url": "https://raw.githubusercontent.com/moby/moby/cd048300a48700294339c9c91d2dcc691cb8f63b/daemon/oci_linux.go",
+      "sha256": "9761f2351e3c03e861dab0d42c2f7d1b9c0ddad02612f7350cbabfd2291e5c75",
+      "bytes": 33791,
+      "local": "sources/M2.txt"
+    },
+    {
+      "source": "O1",
+      "url": "https://raw.githubusercontent.com/opencontainers/runtime-spec/524fc0e1b8ab0180e2fc9abd31837a0f4ed1fd6b/config-linux.md",
+      "sha256": "7a5dbcef4b61857e30a5dd049af85f89ed6c3d77c0532df4e415565b745121d5",
+      "bytes": 43684,
+      "local": "sources/O1.txt"
+    },
+    {
+      "source": "L1",
+      "url": "https://raw.githubusercontent.com/lxc/lxcfs/d837e798fca50629992d38ed3f935116740d3401/README.md",
+      "sha256": "20ef61995bc54a5b2298ea765b88e516caa125ad21b5d314bc583d63ff3dbf0b",
+      "bytes": 6924,
+      "local": "sources/L1.txt"
+    },
+    {
+      "source": "L2",
+      "url": "https://raw.githubusercontent.com/lxc/lxcfs/d837e798fca50629992d38ed3f935116740d3401/src/proc_fuse.c",
+      "sha256": "5e5176b0ad0ee9c570ffe94ff644b2d45d8b686648b7300994d36fa6b73c6915",
+      "bytes": 50472,
+      "local": "sources/L2.txt"
+    }
+  ]
+}

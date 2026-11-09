@@ -1,0 +1,145 @@
+{
+  "source_sha256": {
+    "requests.jsonl": "0aefee3416bf2e9f3c2a09e527c94249b0b4bfad877f7c2924b3c1db57de639d",
+    "log-matches.json": "ba75da461d7d086c0591e29b589197018ba6d4686904b943c641bbd06681b2f4",
+    "timing-trials.jsonl": "9760d7e89ca93fbb0f0f9f72eb0bef3913588e4676f176b098a7a1bb24208125",
+    "stat-trials.jsonl": "1a04f19dbf95403c66e58c63ff942ce2c8e86c64199adf318ba27e27027a0d5b",
+    "preregister.json": "d60ca707fae217b840e7d7d5e46363737d27c7eb95d57b94abb9c299c0204fe2",
+    "frozen-thresholds.json": "006c89a302f5e60b571b77ef842c1186d269b853ae26150eb531c526d83b1c3c",
+    "package-trials.jsonl": "49c345c5b97705d5ed8e70e6c165ad5a446b703f70ca67bf7ae1f4fe8f428640"
+  },
+  "verified_response_bodies": 2045,
+  "gateway_events": 1946,
+  "trusted_cache_aliases": {
+    "j-20261108T000705-method-only-cache": "j-20261108T000705-method-only",
+    "j-20261108T000705-metadata-blocked-cache": "j-20261108T000705-metadata-blocked",
+    "j-20261108T000705-negative-off-cache": "j-20261108T000705-negative-off",
+    "j-20261108T000705-both-cache": "j-20261108T000705-both",
+    "j-20261108T000705-partitioned-rx-cache": "j-20261108T000705-partitioned-rx",
+    "j-20261108T000705-partitioned-tx-cache": "j-20261108T000705-partitioned-tx",
+    "j-20261108T000705-no-store-cache": "j-20261108T000705-no-store",
+    "j-20261108T000705-offline-cache": "j-20261108T000705-offline"
+  },
+  "monitor_rule_counts": {
+    "fast_failed_artifact_request": 594,
+    "possible_shared_miss_state": 288,
+    "statistics_observation": 433,
+    "possible_download_statistics_exposure": 2394
+  },
+  "timing": {
+    "150/both": {
+      "correct": 16,
+      "trials": 32,
+      "decoded_ones": 0
+    },
+    "150/metadata-blocked": {
+      "correct": 32,
+      "trials": 32,
+      "decoded_ones": 16
+    },
+    "150/method-only": {
+      "correct": 32,
+      "trials": 32,
+      "decoded_ones": 16
+    },
+    "150/negative-off": {
+      "correct": 16,
+      "trials": 32,
+      "decoded_ones": 0
+    },
+    "150/no-store": {
+      "correct": 32,
+      "trials": 32,
+      "decoded_ones": 16
+    },
+    "150/offline": {
+      "correct": 16,
+      "trials": 32,
+      "decoded_ones": 32
+    },
+    "150/partitioned": {
+      "correct": 16,
+      "trials": 32,
+      "decoded_ones": 0
+    },
+    "20/both": {
+      "correct": 16,
+      "trials": 32,
+      "decoded_ones": 0
+    },
+    "20/metadata-blocked": {
+      "correct": 32,
+      "trials": 32,
+      "decoded_ones": 16
+    },
+    "20/method-only": {
+      "correct": 32,
+      "trials": 32,
+      "decoded_ones": 16
+    },
+    "20/negative-off": {
+      "correct": 16,
+      "trials": 32,
+      "decoded_ones": 0
+    },
+    "20/no-store": {
+      "correct": 32,
+      "trials": 32,
+      "decoded_ones": 16
+    },
+    "20/offline": {
+      "correct": 16,
+      "trials": 32,
+      "decoded_ones": 26
+    },
+    "20/partitioned": {
+      "correct": 16,
+      "trials": 32,
+      "decoded_ones": 0
+    }
+  },
+  "statistics": {
+    "both": {
+      "observed": 0,
+      "correct": 0,
+      "trials": 24
+    },
+    "metadata-blocked": {
+      "observed": 0,
+      "correct": 0,
+      "trials": 24
+    },
+    "method-only": {
+      "observed": 24,
+      "correct": 24,
+      "trials": 24
+    },
+    "negative-off": {
+      "observed": 24,
+      "correct": 24,
+      "trials": 24
+    },
+    "no-store": {
+      "observed": 0,
+      "correct": 0,
+      "trials": 24
+    },
+    "offline": {
+      "observed": 24,
+      "correct": 24,
+      "trials": 24
+    },
+    "partitioned": {
+      "observed": 24,
+      "correct": 12,
+      "trials": 24
+    }
+  },
+  "verified_package_installs": 14,
+  "limits": [
+    "Main controlled cohorts; no operational false-positive rate.",
+    "Repeated shared paths cause associations on later zero trials too.",
+    "Fast failures alone also occur on an offline service.",
+    "No live collector arrival or alert delivery time was measured."
+  ]
+}

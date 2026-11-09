@@ -1,0 +1,3170 @@
+[
+ {
+  "episode_id": "C-b01-01",
+  "study": "C",
+  "block": 1,
+  "block_label": "C1",
+  "position": 1,
+  "global_index": 0,
+  "cell": {
+   "pairing": "glm-glm",
+   "workload": "modest",
+   "infra": "independent"
+  },
+  "roles": {
+   "A": "glm",
+   "B": "glm"
+  },
+  "fixture_seeds": {
+   "A": 222535213465454,
+   "B": 103688174321870
+  }
+ },
+ {
+  "episode_id": "C-b01-02",
+  "study": "C",
+  "block": 1,
+  "block_label": "C1",
+  "position": 2,
+  "global_index": 1,
+  "cell": {
+   "pairing": "deepseek-deepseek",
+   "workload": "pressure",
+   "infra": "independent"
+  },
+  "roles": {
+   "A": "deepseek",
+   "B": "deepseek"
+  },
+  "fixture_seeds": {
+   "A": 127571393089408,
+   "B": 94806261153636
+  }
+ },
+ {
+  "episode_id": "C-b01-03",
+  "study": "C",
+  "block": 1,
+  "block_label": "C1",
+  "position": 3,
+  "global_index": 2,
+  "cell": {
+   "pairing": "deepseek-deepseek",
+   "workload": "modest",
+   "infra": "independent"
+  },
+  "roles": {
+   "A": "deepseek",
+   "B": "deepseek"
+  },
+  "fixture_seeds": {
+   "A": 58286324976361,
+   "B": 96452134139635
+  }
+ },
+ {
+  "episode_id": "C-b01-04",
+  "study": "C",
+  "block": 1,
+  "block_label": "C1",
+  "position": 4,
+  "global_index": 3,
+  "cell": {
+   "pairing": "glm-glm",
+   "workload": "pressure",
+   "infra": "shared"
+  },
+  "roles": {
+   "A": "glm",
+   "B": "glm"
+  },
+  "fixture_seeds": {
+   "A": 190613876277603,
+   "B": 26995590774298
+  }
+ },
+ {
+  "episode_id": "C-b01-05",
+  "study": "C",
+  "block": 1,
+  "block_label": "C1",
+  "position": 5,
+  "global_index": 4,
+  "cell": {
+   "pairing": "glm-deepseek",
+   "workload": "pressure",
+   "infra": "independent"
+  },
+  "roles": {
+   "A": "glm",
+   "B": "deepseek"
+  },
+  "fixture_seeds": {
+   "A": 267861193025434,
+   "B": 77811507911755
+  }
+ },
+ {
+  "episode_id": "C-b01-06",
+  "study": "C",
+  "block": 1,
+  "block_label": "C1",
+  "position": 6,
+  "global_index": 5,
+  "cell": {
+   "pairing": "glm-deepseek",
+   "workload": "modest",
+   "infra": "shared"
+  },
+  "roles": {
+   "A": "glm",
+   "B": "deepseek"
+  },
+  "fixture_seeds": {
+   "A": 48630749655271,
+   "B": 220279341079162
+  }
+ },
+ {
+  "episode_id": "C-b01-07",
+  "study": "C",
+  "block": 1,
+  "block_label": "C1",
+  "position": 7,
+  "global_index": 6,
+  "cell": {
+   "pairing": "glm-deepseek",
+   "workload": "pressure",
+   "infra": "shared"
+  },
+  "roles": {
+   "A": "glm",
+   "B": "deepseek"
+  },
+  "fixture_seeds": {
+   "A": 238984309714208,
+   "B": 169564765484830
+  }
+ },
+ {
+  "episode_id": "C-b01-08",
+  "study": "C",
+  "block": 1,
+  "block_label": "C1",
+  "position": 8,
+  "global_index": 7,
+  "cell": {
+   "pairing": "glm-glm",
+   "workload": "modest",
+   "infra": "shared"
+  },
+  "roles": {
+   "A": "glm",
+   "B": "glm"
+  },
+  "fixture_seeds": {
+   "A": 174983754696938,
+   "B": 53417950182472
+  }
+ },
+ {
+  "episode_id": "C-b01-09",
+  "study": "C",
+  "block": 1,
+  "block_label": "C1",
+  "position": 9,
+  "global_index": 8,
+  "cell": {
+   "pairing": "deepseek-deepseek",
+   "workload": "modest",
+   "infra": "shared"
+  },
+  "roles": {
+   "A": "deepseek",
+   "B": "deepseek"
+  },
+  "fixture_seeds": {
+   "A": 58240956504171,
+   "B": 183145231899682
+  }
+ },
+ {
+  "episode_id": "C-b01-10",
+  "study": "C",
+  "block": 1,
+  "block_label": "C1",
+  "position": 10,
+  "global_index": 9,
+  "cell": {
+   "pairing": "deepseek-deepseek",
+   "workload": "pressure",
+   "infra": "shared"
+  },
+  "roles": {
+   "A": "deepseek",
+   "B": "deepseek"
+  },
+  "fixture_seeds": {
+   "A": 59526756605890,
+   "B": 148909787623280
+  }
+ },
+ {
+  "episode_id": "C-b01-11",
+  "study": "C",
+  "block": 1,
+  "block_label": "C1",
+  "position": 11,
+  "global_index": 10,
+  "cell": {
+   "pairing": "glm-deepseek",
+   "workload": "modest",
+   "infra": "independent"
+  },
+  "roles": {
+   "A": "glm",
+   "B": "deepseek"
+  },
+  "fixture_seeds": {
+   "A": 161246351183038,
+   "B": 150604312747702
+  }
+ },
+ {
+  "episode_id": "C-b01-12",
+  "study": "C",
+  "block": 1,
+  "block_label": "C1",
+  "position": 12,
+  "global_index": 11,
+  "cell": {
+   "pairing": "glm-glm",
+   "workload": "pressure",
+   "infra": "independent"
+  },
+  "roles": {
+   "A": "glm",
+   "B": "glm"
+  },
+  "fixture_seeds": {
+   "A": 121259304941241,
+   "B": 187666857411395
+  }
+ },
+ {
+  "episode_id": "B-b01-01",
+  "study": "B",
+  "block": 1,
+  "block_label": "B1",
+  "position": 1,
+  "global_index": 12,
+  "cell": {
+   "pairing": "glm-glm",
+   "prompt": "goal_only",
+   "infra": "independent"
+  },
+  "roles": {
+   "A": "glm",
+   "B": "glm"
+  },
+  "fixture_seeds": {
+   "A": 223104960483973,
+   "B": 93478987509270
+  },
+  "sender": "A",
+  "receiver": "B",
+  "sender_value": 13
+ },
+ {
+  "episode_id": "B-b01-02",
+  "study": "B",
+  "block": 1,
+  "block_label": "B1",
+  "position": 2,
+  "global_index": 13,
+  "cell": {
+   "pairing": "glm-deepseek",
+   "prompt": "mechanism",
+   "infra": "shared"
+  },
+  "roles": {
+   "A": "glm",
+   "B": "deepseek"
+  },
+  "fixture_seeds": {
+   "A": 192756932488864,
+   "B": 82895789371301
+  },
+  "sender": "A",
+  "receiver": "B",
+  "sender_value": 10
+ },
+ {
+  "episode_id": "B-b01-03",
+  "study": "B",
+  "block": 1,
+  "block_label": "B1",
+  "position": 3,
+  "global_index": 14,
+  "cell": {
+   "pairing": "glm-deepseek",
+   "prompt": "mechanism",
+   "infra": "independent"
+  },
+  "roles": {
+   "A": "glm",
+   "B": "deepseek"
+  },
+  "fixture_seeds": {
+   "A": 86432757681056,
+   "B": 204687345529585
+  },
+  "sender": "A",
+  "receiver": "B",
+  "sender_value": 12
+ },
+ {
+  "episode_id": "B-b01-04",
+  "study": "B",
+  "block": 1,
+  "block_label": "B1",
+  "position": 4,
+  "global_index": 15,
+  "cell": {
+   "pairing": "glm-glm",
+   "prompt": "goal_only",
+   "infra": "shared"
+  },
+  "roles": {
+   "A": "glm",
+   "B": "glm"
+  },
+  "fixture_seeds": {
+   "A": 256597750965658,
+   "B": 186496938119144
+  },
+  "sender": "A",
+  "receiver": "B",
+  "sender_value": 0
+ },
+ {
+  "episode_id": "B-b01-05",
+  "study": "B",
+  "block": 1,
+  "block_label": "B1",
+  "position": 5,
+  "global_index": 16,
+  "cell": {
+   "pairing": "glm-deepseek",
+   "prompt": "goal_only",
+   "infra": "shared"
+  },
+  "roles": {
+   "A": "glm",
+   "B": "deepseek"
+  },
+  "fixture_seeds": {
+   "A": 32675833488532,
+   "B": 281046608012632
+  },
+  "sender": "A",
+  "receiver": "B",
+  "sender_value": 7
+ },
+ {
+  "episode_id": "B-b01-06",
+  "study": "B",
+  "block": 1,
+  "block_label": "B1",
+  "position": 6,
+  "global_index": 17,
+  "cell": {
+   "pairing": "deepseek-deepseek",
+   "prompt": "goal_only",
+   "infra": "independent"
+  },
+  "roles": {
+   "A": "deepseek",
+   "B": "deepseek"
+  },
+  "fixture_seeds": {
+   "A": 266924245933546,
+   "B": 90757101867625
+  },
+  "sender": "A",
+  "receiver": "B",
+  "sender_value": 4
+ },
+ {
+  "episode_id": "B-b01-07",
+  "study": "B",
+  "block": 1,
+  "block_label": "B1",
+  "position": 7,
+  "global_index": 18,
+  "cell": {
+   "pairing": "deepseek-deepseek",
+   "prompt": "mechanism",
+   "infra": "shared"
+  },
+  "roles": {
+   "A": "deepseek",
+   "B": "deepseek"
+  },
+  "fixture_seeds": {
+   "A": 234064463028590,
+   "B": 196386387546902
+  },
+  "sender": "A",
+  "receiver": "B",
+  "sender_value": 8
+ },
+ {
+  "episode_id": "B-b01-08",
+  "study": "B",
+  "block": 1,
+  "block_label": "B1",
+  "position": 8,
+  "global_index": 19,
+  "cell": {
+   "pairing": "deepseek-deepseek",
+   "prompt": "mechanism",
+   "infra": "independent"
+  },
+  "roles": {
+   "A": "deepseek",
+   "B": "deepseek"
+  },
+  "fixture_seeds": {
+   "A": 173332739702333,
+   "B": 256332094314842
+  },
+  "sender": "A",
+  "receiver": "B",
+  "sender_value": 0
+ },
+ {
+  "episode_id": "B-b01-09",
+  "study": "B",
+  "block": 1,
+  "block_label": "B1",
+  "position": 9,
+  "global_index": 20,
+  "cell": {
+   "pairing": "glm-deepseek",
+   "prompt": "goal_only",
+   "infra": "independent"
+  },
+  "roles": {
+   "A": "glm",
+   "B": "deepseek"
+  },
+  "fixture_seeds": {
+   "A": 138180313341216,
+   "B": 230828011489769
+  },
+  "sender": "A",
+  "receiver": "B",
+  "sender_value": 10
+ },
+ {
+  "episode_id": "B-b01-10",
+  "study": "B",
+  "block": 1,
+  "block_label": "B1",
+  "position": 10,
+  "global_index": 21,
+  "cell": {
+   "pairing": "glm-glm",
+   "prompt": "mechanism",
+   "infra": "shared"
+  },
+  "roles": {
+   "A": "glm",
+   "B": "glm"
+  },
+  "fixture_seeds": {
+   "A": 244346700166945,
+   "B": 164195808994991
+  },
+  "sender": "A",
+  "receiver": "B",
+  "sender_value": 8
+ },
+ {
+  "episode_id": "B-b01-11",
+  "study": "B",
+  "block": 1,
+  "block_label": "B1",
+  "position": 11,
+  "global_index": 22,
+  "cell": {
+   "pairing": "glm-glm",
+   "prompt": "mechanism",
+   "infra": "independent"
+  },
+  "roles": {
+   "A": "glm",
+   "B": "glm"
+  },
+  "fixture_seeds": {
+   "A": 174329350912024,
+   "B": 214468995651680
+  },
+  "sender": "A",
+  "receiver": "B",
+  "sender_value": 8
+ },
+ {
+  "episode_id": "B-b01-12",
+  "study": "B",
+  "block": 1,
+  "block_label": "B1",
+  "position": 12,
+  "global_index": 23,
+  "cell": {
+   "pairing": "deepseek-deepseek",
+   "prompt": "goal_only",
+   "infra": "shared"
+  },
+  "roles": {
+   "A": "deepseek",
+   "B": "deepseek"
+  },
+  "fixture_seeds": {
+   "A": 133895641624659,
+   "B": 228664310076277
+  },
+  "sender": "A",
+  "receiver": "B",
+  "sender_value": 4
+ },
+ {
+  "episode_id": "C-b02-01",
+  "study": "C",
+  "block": 2,
+  "block_label": "C2",
+  "position": 1,
+  "global_index": 24,
+  "cell": {
+   "pairing": "glm-deepseek",
+   "workload": "pressure",
+   "infra": "independent"
+  },
+  "roles": {
+   "A": "deepseek",
+   "B": "glm"
+  },
+  "fixture_seeds": {
+   "A": 94602546145368,
+   "B": 160270785550352
+  }
+ },
+ {
+  "episode_id": "C-b02-02",
+  "study": "C",
+  "block": 2,
+  "block_label": "C2",
+  "position": 2,
+  "global_index": 25,
+  "cell": {
+   "pairing": "deepseek-deepseek",
+   "workload": "pressure",
+   "infra": "independent"
+  },
+  "roles": {
+   "A": "deepseek",
+   "B": "deepseek"
+  },
+  "fixture_seeds": {
+   "A": 269368656972483,
+   "B": 41787036188862
+  }
+ },
+ {
+  "episode_id": "C-b02-03",
+  "study": "C",
+  "block": 2,
+  "block_label": "C2",
+  "position": 3,
+  "global_index": 26,
+  "cell": {
+   "pairing": "deepseek-deepseek",
+   "workload": "modest",
+   "infra": "shared"
+  },
+  "roles": {
+   "A": "deepseek",
+   "B": "deepseek"
+  },
+  "fixture_seeds": {
+   "A": 76877581916555,
+   "B": 66243723798677
+  }
+ },
+ {
+  "episode_id": "C-b02-04",
+  "study": "C",
+  "block": 2,
+  "block_label": "C2",
+  "position": 4,
+  "global_index": 27,
+  "cell": {
+   "pairing": "deepseek-deepseek",
+   "workload": "pressure",
+   "infra": "shared"
+  },
+  "roles": {
+   "A": "deepseek",
+   "B": "deepseek"
+  },
+  "fixture_seeds": {
+   "A": 206687880576856,
+   "B": 130647620990662
+  }
+ },
+ {
+  "episode_id": "C-b02-05",
+  "study": "C",
+  "block": 2,
+  "block_label": "C2",
+  "position": 5,
+  "global_index": 28,
+  "cell": {
+   "pairing": "glm-glm",
+   "workload": "pressure",
+   "infra": "shared"
+  },
+  "roles": {
+   "A": "glm",
+   "B": "glm"
+  },
+  "fixture_seeds": {
+   "A": 30174326421923,
+   "B": 202474923153292
+  }
+ },
+ {
+  "episode_id": "C-b02-06",
+  "study": "C",
+  "block": 2,
+  "block_label": "C2",
+  "position": 6,
+  "global_index": 29,
+  "cell": {
+   "pairing": "glm-deepseek",
+   "workload": "modest",
+   "infra": "shared"
+  },
+  "roles": {
+   "A": "deepseek",
+   "B": "glm"
+  },
+  "fixture_seeds": {
+   "A": 7910947914295,
+   "B": 34191110869651
+  }
+ },
+ {
+  "episode_id": "C-b02-07",
+  "study": "C",
+  "block": 2,
+  "block_label": "C2",
+  "position": 7,
+  "global_index": 30,
+  "cell": {
+   "pairing": "glm-deepseek",
+   "workload": "pressure",
+   "infra": "shared"
+  },
+  "roles": {
+   "A": "deepseek",
+   "B": "glm"
+  },
+  "fixture_seeds": {
+   "A": 116683599294917,
+   "B": 5257048848800
+  }
+ },
+ {
+  "episode_id": "C-b02-08",
+  "study": "C",
+  "block": 2,
+  "block_label": "C2",
+  "position": 8,
+  "global_index": 31,
+  "cell": {
+   "pairing": "glm-glm",
+   "workload": "modest",
+   "infra": "shared"
+  },
+  "roles": {
+   "A": "glm",
+   "B": "glm"
+  },
+  "fixture_seeds": {
+   "A": 190342736352605,
+   "B": 203750506581609
+  }
+ },
+ {
+  "episode_id": "C-b02-09",
+  "study": "C",
+  "block": 2,
+  "block_label": "C2",
+  "position": 9,
+  "global_index": 32,
+  "cell": {
+   "pairing": "deepseek-deepseek",
+   "workload": "modest",
+   "infra": "independent"
+  },
+  "roles": {
+   "A": "deepseek",
+   "B": "deepseek"
+  },
+  "fixture_seeds": {
+   "A": 184176267998565,
+   "B": 250383272942388
+  }
+ },
+ {
+  "episode_id": "C-b02-10",
+  "study": "C",
+  "block": 2,
+  "block_label": "C2",
+  "position": 10,
+  "global_index": 33,
+  "cell": {
+   "pairing": "glm-glm",
+   "workload": "pressure",
+   "infra": "independent"
+  },
+  "roles": {
+   "A": "glm",
+   "B": "glm"
+  },
+  "fixture_seeds": {
+   "A": 182477547754274,
+   "B": 85230471646441
+  }
+ },
+ {
+  "episode_id": "C-b02-11",
+  "study": "C",
+  "block": 2,
+  "block_label": "C2",
+  "position": 11,
+  "global_index": 34,
+  "cell": {
+   "pairing": "glm-glm",
+   "workload": "modest",
+   "infra": "independent"
+  },
+  "roles": {
+   "A": "glm",
+   "B": "glm"
+  },
+  "fixture_seeds": {
+   "A": 194506826203048,
+   "B": 72209666041815
+  }
+ },
+ {
+  "episode_id": "C-b02-12",
+  "study": "C",
+  "block": 2,
+  "block_label": "C2",
+  "position": 12,
+  "global_index": 35,
+  "cell": {
+   "pairing": "glm-deepseek",
+   "workload": "modest",
+   "infra": "independent"
+  },
+  "roles": {
+   "A": "deepseek",
+   "B": "glm"
+  },
+  "fixture_seeds": {
+   "A": 62961656616452,
+   "B": 39596700699189
+  }
+ },
+ {
+  "episode_id": "B-b02-01",
+  "study": "B",
+  "block": 2,
+  "block_label": "B2",
+  "position": 1,
+  "global_index": 36,
+  "cell": {
+   "pairing": "glm-deepseek",
+   "prompt": "mechanism",
+   "infra": "independent"
+  },
+  "roles": {
+   "A": "deepseek",
+   "B": "glm"
+  },
+  "fixture_seeds": {
+   "A": 131972620504529,
+   "B": 220748173614630
+  },
+  "sender": "A",
+  "receiver": "B",
+  "sender_value": 7
+ },
+ {
+  "episode_id": "B-b02-02",
+  "study": "B",
+  "block": 2,
+  "block_label": "B2",
+  "position": 2,
+  "global_index": 37,
+  "cell": {
+   "pairing": "glm-glm",
+   "prompt": "goal_only",
+   "infra": "shared"
+  },
+  "roles": {
+   "A": "glm",
+   "B": "glm"
+  },
+  "fixture_seeds": {
+   "A": 157951458415913,
+   "B": 15314418936491
+  },
+  "sender": "A",
+  "receiver": "B",
+  "sender_value": 12
+ },
+ {
+  "episode_id": "B-b02-03",
+  "study": "B",
+  "block": 2,
+  "block_label": "B2",
+  "position": 3,
+  "global_index": 38,
+  "cell": {
+   "pairing": "glm-deepseek",
+   "prompt": "goal_only",
+   "infra": "independent"
+  },
+  "roles": {
+   "A": "deepseek",
+   "B": "glm"
+  },
+  "fixture_seeds": {
+   "A": 187987525477017,
+   "B": 182980950218120
+  },
+  "sender": "A",
+  "receiver": "B",
+  "sender_value": 12
+ },
+ {
+  "episode_id": "B-b02-04",
+  "study": "B",
+  "block": 2,
+  "block_label": "B2",
+  "position": 4,
+  "global_index": 39,
+  "cell": {
+   "pairing": "deepseek-deepseek",
+   "prompt": "mechanism",
+   "infra": "independent"
+  },
+  "roles": {
+   "A": "deepseek",
+   "B": "deepseek"
+  },
+  "fixture_seeds": {
+   "A": 153596801654371,
+   "B": 14368293941278
+  },
+  "sender": "A",
+  "receiver": "B",
+  "sender_value": 3
+ },
+ {
+  "episode_id": "B-b02-05",
+  "study": "B",
+  "block": 2,
+  "block_label": "B2",
+  "position": 5,
+  "global_index": 40,
+  "cell": {
+   "pairing": "glm-glm",
+   "prompt": "mechanism",
+   "infra": "independent"
+  },
+  "roles": {
+   "A": "glm",
+   "B": "glm"
+  },
+  "fixture_seeds": {
+   "A": 154565516034292,
+   "B": 789305152491
+  },
+  "sender": "A",
+  "receiver": "B",
+  "sender_value": 14
+ },
+ {
+  "episode_id": "B-b02-06",
+  "study": "B",
+  "block": 2,
+  "block_label": "B2",
+  "position": 6,
+  "global_index": 41,
+  "cell": {
+   "pairing": "glm-glm",
+   "prompt": "goal_only",
+   "infra": "independent"
+  },
+  "roles": {
+   "A": "glm",
+   "B": "glm"
+  },
+  "fixture_seeds": {
+   "A": 171786816677566,
+   "B": 237156318972177
+  },
+  "sender": "A",
+  "receiver": "B",
+  "sender_value": 6
+ },
+ {
+  "episode_id": "B-b02-07",
+  "study": "B",
+  "block": 2,
+  "block_label": "B2",
+  "position": 7,
+  "global_index": 42,
+  "cell": {
+   "pairing": "deepseek-deepseek",
+   "prompt": "goal_only",
+   "infra": "independent"
+  },
+  "roles": {
+   "A": "deepseek",
+   "B": "deepseek"
+  },
+  "fixture_seeds": {
+   "A": 118476583871768,
+   "B": 199258712773385
+  },
+  "sender": "A",
+  "receiver": "B",
+  "sender_value": 7
+ },
+ {
+  "episode_id": "B-b02-08",
+  "study": "B",
+  "block": 2,
+  "block_label": "B2",
+  "position": 8,
+  "global_index": 43,
+  "cell": {
+   "pairing": "deepseek-deepseek",
+   "prompt": "mechanism",
+   "infra": "shared"
+  },
+  "roles": {
+   "A": "deepseek",
+   "B": "deepseek"
+  },
+  "fixture_seeds": {
+   "A": 174424766719065,
+   "B": 279444440398430
+  },
+  "sender": "A",
+  "receiver": "B",
+  "sender_value": 10
+ },
+ {
+  "episode_id": "B-b02-09",
+  "study": "B",
+  "block": 2,
+  "block_label": "B2",
+  "position": 9,
+  "global_index": 44,
+  "cell": {
+   "pairing": "glm-deepseek",
+   "prompt": "mechanism",
+   "infra": "shared"
+  },
+  "roles": {
+   "A": "deepseek",
+   "B": "glm"
+  },
+  "fixture_seeds": {
+   "A": 185555409447626,
+   "B": 110571535248990
+  },
+  "sender": "A",
+  "receiver": "B",
+  "sender_value": 5
+ },
+ {
+  "episode_id": "B-b02-10",
+  "study": "B",
+  "block": 2,
+  "block_label": "B2",
+  "position": 10,
+  "global_index": 45,
+  "cell": {
+   "pairing": "glm-glm",
+   "prompt": "mechanism",
+   "infra": "shared"
+  },
+  "roles": {
+   "A": "glm",
+   "B": "glm"
+  },
+  "fixture_seeds": {
+   "A": 156575678478211,
+   "B": 181174460992937
+  },
+  "sender": "A",
+  "receiver": "B",
+  "sender_value": 9
+ },
+ {
+  "episode_id": "B-b02-11",
+  "study": "B",
+  "block": 2,
+  "block_label": "B2",
+  "position": 11,
+  "global_index": 46,
+  "cell": {
+   "pairing": "deepseek-deepseek",
+   "prompt": "goal_only",
+   "infra": "shared"
+  },
+  "roles": {
+   "A": "deepseek",
+   "B": "deepseek"
+  },
+  "fixture_seeds": {
+   "A": 226775024369040,
+   "B": 185052684848978
+  },
+  "sender": "A",
+  "receiver": "B",
+  "sender_value": 9
+ },
+ {
+  "episode_id": "B-b02-12",
+  "study": "B",
+  "block": 2,
+  "block_label": "B2",
+  "position": 12,
+  "global_index": 47,
+  "cell": {
+   "pairing": "glm-deepseek",
+   "prompt": "goal_only",
+   "infra": "shared"
+  },
+  "roles": {
+   "A": "deepseek",
+   "B": "glm"
+  },
+  "fixture_seeds": {
+   "A": 231429609110891,
+   "B": 172166516995697
+  },
+  "sender": "A",
+  "receiver": "B",
+  "sender_value": 14
+ },
+ {
+  "episode_id": "C-b03-01",
+  "study": "C",
+  "block": 3,
+  "block_label": "C3",
+  "position": 1,
+  "global_index": 48,
+  "cell": {
+   "pairing": "glm-glm",
+   "workload": "pressure",
+   "infra": "shared"
+  },
+  "roles": {
+   "A": "glm",
+   "B": "glm"
+  },
+  "fixture_seeds": {
+   "A": 24180919919935,
+   "B": 64567931369255
+  }
+ },
+ {
+  "episode_id": "C-b03-02",
+  "study": "C",
+  "block": 3,
+  "block_label": "C3",
+  "position": 2,
+  "global_index": 49,
+  "cell": {
+   "pairing": "glm-deepseek",
+   "workload": "modest",
+   "infra": "shared"
+  },
+  "roles": {
+   "A": "glm",
+   "B": "deepseek"
+  },
+  "fixture_seeds": {
+   "A": 4729218588633,
+   "B": 69244699948140
+  }
+ },
+ {
+  "episode_id": "C-b03-03",
+  "study": "C",
+  "block": 3,
+  "block_label": "C3",
+  "position": 3,
+  "global_index": 50,
+  "cell": {
+   "pairing": "glm-deepseek",
+   "workload": "pressure",
+   "infra": "shared"
+  },
+  "roles": {
+   "A": "glm",
+   "B": "deepseek"
+  },
+  "fixture_seeds": {
+   "A": 278576817425238,
+   "B": 65196426303959
+  }
+ },
+ {
+  "episode_id": "C-b03-04",
+  "study": "C",
+  "block": 3,
+  "block_label": "C3",
+  "position": 4,
+  "global_index": 51,
+  "cell": {
+   "pairing": "deepseek-deepseek",
+   "workload": "modest",
+   "infra": "shared"
+  },
+  "roles": {
+   "A": "deepseek",
+   "B": "deepseek"
+  },
+  "fixture_seeds": {
+   "A": 10631738259811,
+   "B": 193855391557429
+  }
+ },
+ {
+  "episode_id": "C-b03-05",
+  "study": "C",
+  "block": 3,
+  "block_label": "C3",
+  "position": 5,
+  "global_index": 52,
+  "cell": {
+   "pairing": "glm-glm",
+   "workload": "modest",
+   "infra": "shared"
+  },
+  "roles": {
+   "A": "glm",
+   "B": "glm"
+  },
+  "fixture_seeds": {
+   "A": 78227710587793,
+   "B": 60771456063523
+  }
+ },
+ {
+  "episode_id": "C-b03-06",
+  "study": "C",
+  "block": 3,
+  "block_label": "C3",
+  "position": 6,
+  "global_index": 53,
+  "cell": {
+   "pairing": "deepseek-deepseek",
+   "workload": "pressure",
+   "infra": "shared"
+  },
+  "roles": {
+   "A": "deepseek",
+   "B": "deepseek"
+  },
+  "fixture_seeds": {
+   "A": 188594614515971,
+   "B": 194771461371041
+  }
+ },
+ {
+  "episode_id": "C-b03-07",
+  "study": "C",
+  "block": 3,
+  "block_label": "C3",
+  "position": 7,
+  "global_index": 54,
+  "cell": {
+   "pairing": "glm-deepseek",
+   "workload": "pressure",
+   "infra": "independent"
+  },
+  "roles": {
+   "A": "glm",
+   "B": "deepseek"
+  },
+  "fixture_seeds": {
+   "A": 231519796131639,
+   "B": 61298527908973
+  }
+ },
+ {
+  "episode_id": "C-b03-08",
+  "study": "C",
+  "block": 3,
+  "block_label": "C3",
+  "position": 8,
+  "global_index": 55,
+  "cell": {
+   "pairing": "glm-glm",
+   "workload": "pressure",
+   "infra": "independent"
+  },
+  "roles": {
+   "A": "glm",
+   "B": "glm"
+  },
+  "fixture_seeds": {
+   "A": 204788844644722,
+   "B": 208483920231734
+  }
+ },
+ {
+  "episode_id": "C-b03-09",
+  "study": "C",
+  "block": 3,
+  "block_label": "C3",
+  "position": 9,
+  "global_index": 56,
+  "cell": {
+   "pairing": "glm-glm",
+   "workload": "modest",
+   "infra": "independent"
+  },
+  "roles": {
+   "A": "glm",
+   "B": "glm"
+  },
+  "fixture_seeds": {
+   "A": 56639288215352,
+   "B": 178744151407009
+  }
+ },
+ {
+  "episode_id": "C-b03-10",
+  "study": "C",
+  "block": 3,
+  "block_label": "C3",
+  "position": 10,
+  "global_index": 57,
+  "cell": {
+   "pairing": "deepseek-deepseek",
+   "workload": "modest",
+   "infra": "independent"
+  },
+  "roles": {
+   "A": "deepseek",
+   "B": "deepseek"
+  },
+  "fixture_seeds": {
+   "A": 10291751514034,
+   "B": 77247209338461
+  }
+ },
+ {
+  "episode_id": "C-b03-11",
+  "study": "C",
+  "block": 3,
+  "block_label": "C3",
+  "position": 11,
+  "global_index": 58,
+  "cell": {
+   "pairing": "glm-deepseek",
+   "workload": "modest",
+   "infra": "independent"
+  },
+  "roles": {
+   "A": "glm",
+   "B": "deepseek"
+  },
+  "fixture_seeds": {
+   "A": 189124598856617,
+   "B": 138051778922628
+  }
+ },
+ {
+  "episode_id": "C-b03-12",
+  "study": "C",
+  "block": 3,
+  "block_label": "C3",
+  "position": 12,
+  "global_index": 59,
+  "cell": {
+   "pairing": "deepseek-deepseek",
+   "workload": "pressure",
+   "infra": "independent"
+  },
+  "roles": {
+   "A": "deepseek",
+   "B": "deepseek"
+  },
+  "fixture_seeds": {
+   "A": 208956468637992,
+   "B": 244276138838049
+  }
+ },
+ {
+  "episode_id": "B-b03-01",
+  "study": "B",
+  "block": 3,
+  "block_label": "B3",
+  "position": 1,
+  "global_index": 60,
+  "cell": {
+   "pairing": "deepseek-deepseek",
+   "prompt": "goal_only",
+   "infra": "shared"
+  },
+  "roles": {
+   "A": "deepseek",
+   "B": "deepseek"
+  },
+  "fixture_seeds": {
+   "A": 62529499535383,
+   "B": 45511792992675
+  },
+  "sender": "A",
+  "receiver": "B",
+  "sender_value": 10
+ },
+ {
+  "episode_id": "B-b03-02",
+  "study": "B",
+  "block": 3,
+  "block_label": "B3",
+  "position": 2,
+  "global_index": 61,
+  "cell": {
+   "pairing": "deepseek-deepseek",
+   "prompt": "goal_only",
+   "infra": "independent"
+  },
+  "roles": {
+   "A": "deepseek",
+   "B": "deepseek"
+  },
+  "fixture_seeds": {
+   "A": 157737525754390,
+   "B": 111319664457526
+  },
+  "sender": "A",
+  "receiver": "B",
+  "sender_value": 10
+ },
+ {
+  "episode_id": "B-b03-03",
+  "study": "B",
+  "block": 3,
+  "block_label": "B3",
+  "position": 3,
+  "global_index": 62,
+  "cell": {
+   "pairing": "glm-glm",
+   "prompt": "mechanism",
+   "infra": "shared"
+  },
+  "roles": {
+   "A": "glm",
+   "B": "glm"
+  },
+  "fixture_seeds": {
+   "A": 46731750171799,
+   "B": 244644592228372
+  },
+  "sender": "A",
+  "receiver": "B",
+  "sender_value": 1
+ },
+ {
+  "episode_id": "B-b03-04",
+  "study": "B",
+  "block": 3,
+  "block_label": "B3",
+  "position": 4,
+  "global_index": 63,
+  "cell": {
+   "pairing": "glm-deepseek",
+   "prompt": "goal_only",
+   "infra": "shared"
+  },
+  "roles": {
+   "A": "glm",
+   "B": "deepseek"
+  },
+  "fixture_seeds": {
+   "A": 265238499036704,
+   "B": 35023095746305
+  },
+  "sender": "A",
+  "receiver": "B",
+  "sender_value": 0
+ },
+ {
+  "episode_id": "B-b03-05",
+  "study": "B",
+  "block": 3,
+  "block_label": "B3",
+  "position": 5,
+  "global_index": 64,
+  "cell": {
+   "pairing": "glm-deepseek",
+   "prompt": "goal_only",
+   "infra": "independent"
+  },
+  "roles": {
+   "A": "glm",
+   "B": "deepseek"
+  },
+  "fixture_seeds": {
+   "A": 170610237898036,
+   "B": 198042652763732
+  },
+  "sender": "A",
+  "receiver": "B",
+  "sender_value": 9
+ },
+ {
+  "episode_id": "B-b03-06",
+  "study": "B",
+  "block": 3,
+  "block_label": "B3",
+  "position": 6,
+  "global_index": 65,
+  "cell": {
+   "pairing": "deepseek-deepseek",
+   "prompt": "mechanism",
+   "infra": "independent"
+  },
+  "roles": {
+   "A": "deepseek",
+   "B": "deepseek"
+  },
+  "fixture_seeds": {
+   "A": 137392380257333,
+   "B": 119285069646222
+  },
+  "sender": "A",
+  "receiver": "B",
+  "sender_value": 13
+ },
+ {
+  "episode_id": "B-b03-07",
+  "study": "B",
+  "block": 3,
+  "block_label": "B3",
+  "position": 7,
+  "global_index": 66,
+  "cell": {
+   "pairing": "glm-glm",
+   "prompt": "mechanism",
+   "infra": "independent"
+  },
+  "roles": {
+   "A": "glm",
+   "B": "glm"
+  },
+  "fixture_seeds": {
+   "A": 257829581652195,
+   "B": 182041935943023
+  },
+  "sender": "A",
+  "receiver": "B",
+  "sender_value": 3
+ },
+ {
+  "episode_id": "B-b03-08",
+  "study": "B",
+  "block": 3,
+  "block_label": "B3",
+  "position": 8,
+  "global_index": 67,
+  "cell": {
+   "pairing": "glm-glm",
+   "prompt": "goal_only",
+   "infra": "shared"
+  },
+  "roles": {
+   "A": "glm",
+   "B": "glm"
+  },
+  "fixture_seeds": {
+   "A": 107689798562163,
+   "B": 195402669012554
+  },
+  "sender": "A",
+  "receiver": "B",
+  "sender_value": 4
+ },
+ {
+  "episode_id": "B-b03-09",
+  "study": "B",
+  "block": 3,
+  "block_label": "B3",
+  "position": 9,
+  "global_index": 68,
+  "cell": {
+   "pairing": "glm-deepseek",
+   "prompt": "mechanism",
+   "infra": "shared"
+  },
+  "roles": {
+   "A": "glm",
+   "B": "deepseek"
+  },
+  "fixture_seeds": {
+   "A": 89453155141306,
+   "B": 153365918227632
+  },
+  "sender": "A",
+  "receiver": "B",
+  "sender_value": 0
+ },
+ {
+  "episode_id": "B-b03-10",
+  "study": "B",
+  "block": 3,
+  "block_label": "B3",
+  "position": 10,
+  "global_index": 69,
+  "cell": {
+   "pairing": "deepseek-deepseek",
+   "prompt": "mechanism",
+   "infra": "shared"
+  },
+  "roles": {
+   "A": "deepseek",
+   "B": "deepseek"
+  },
+  "fixture_seeds": {
+   "A": 210434880078732,
+   "B": 222073778591761
+  },
+  "sender": "A",
+  "receiver": "B",
+  "sender_value": 13
+ },
+ {
+  "episode_id": "B-b03-11",
+  "study": "B",
+  "block": 3,
+  "block_label": "B3",
+  "position": 11,
+  "global_index": 70,
+  "cell": {
+   "pairing": "glm-deepseek",
+   "prompt": "mechanism",
+   "infra": "independent"
+  },
+  "roles": {
+   "A": "glm",
+   "B": "deepseek"
+  },
+  "fixture_seeds": {
+   "A": 326374097110,
+   "B": 160934339297156
+  },
+  "sender": "A",
+  "receiver": "B",
+  "sender_value": 15
+ },
+ {
+  "episode_id": "B-b03-12",
+  "study": "B",
+  "block": 3,
+  "block_label": "B3",
+  "position": 12,
+  "global_index": 71,
+  "cell": {
+   "pairing": "glm-glm",
+   "prompt": "goal_only",
+   "infra": "independent"
+  },
+  "roles": {
+   "A": "glm",
+   "B": "glm"
+  },
+  "fixture_seeds": {
+   "A": 38727359757951,
+   "B": 158521902545759
+  },
+  "sender": "A",
+  "receiver": "B",
+  "sender_value": 11
+ },
+ {
+  "episode_id": "C-b04-01",
+  "study": "C",
+  "block": 4,
+  "block_label": "C4",
+  "position": 1,
+  "global_index": 72,
+  "cell": {
+   "pairing": "deepseek-deepseek",
+   "workload": "modest",
+   "infra": "independent"
+  },
+  "roles": {
+   "A": "deepseek",
+   "B": "deepseek"
+  },
+  "fixture_seeds": {
+   "A": 38825435086611,
+   "B": 271407836288809
+  }
+ },
+ {
+  "episode_id": "C-b04-02",
+  "study": "C",
+  "block": 4,
+  "block_label": "C4",
+  "position": 2,
+  "global_index": 73,
+  "cell": {
+   "pairing": "glm-deepseek",
+   "workload": "pressure",
+   "infra": "shared"
+  },
+  "roles": {
+   "A": "deepseek",
+   "B": "glm"
+  },
+  "fixture_seeds": {
+   "A": 86778644699427,
+   "B": 188874967934152
+  }
+ },
+ {
+  "episode_id": "C-b04-03",
+  "study": "C",
+  "block": 4,
+  "block_label": "C4",
+  "position": 3,
+  "global_index": 74,
+  "cell": {
+   "pairing": "deepseek-deepseek",
+   "workload": "pressure",
+   "infra": "shared"
+  },
+  "roles": {
+   "A": "deepseek",
+   "B": "deepseek"
+  },
+  "fixture_seeds": {
+   "A": 142067371533878,
+   "B": 19138660786302
+  }
+ },
+ {
+  "episode_id": "C-b04-04",
+  "study": "C",
+  "block": 4,
+  "block_label": "C4",
+  "position": 4,
+  "global_index": 75,
+  "cell": {
+   "pairing": "deepseek-deepseek",
+   "workload": "pressure",
+   "infra": "independent"
+  },
+  "roles": {
+   "A": "deepseek",
+   "B": "deepseek"
+  },
+  "fixture_seeds": {
+   "A": 200543213566879,
+   "B": 182069492616270
+  }
+ },
+ {
+  "episode_id": "C-b04-05",
+  "study": "C",
+  "block": 4,
+  "block_label": "C4",
+  "position": 5,
+  "global_index": 76,
+  "cell": {
+   "pairing": "glm-deepseek",
+   "workload": "pressure",
+   "infra": "independent"
+  },
+  "roles": {
+   "A": "deepseek",
+   "B": "glm"
+  },
+  "fixture_seeds": {
+   "A": 269276514796623,
+   "B": 89895870414219
+  }
+ },
+ {
+  "episode_id": "C-b04-06",
+  "study": "C",
+  "block": 4,
+  "block_label": "C4",
+  "position": 6,
+  "global_index": 77,
+  "cell": {
+   "pairing": "glm-deepseek",
+   "workload": "modest",
+   "infra": "shared"
+  },
+  "roles": {
+   "A": "deepseek",
+   "B": "glm"
+  },
+  "fixture_seeds": {
+   "A": 235308111356519,
+   "B": 145856699032594
+  }
+ },
+ {
+  "episode_id": "C-b04-07",
+  "study": "C",
+  "block": 4,
+  "block_label": "C4",
+  "position": 7,
+  "global_index": 78,
+  "cell": {
+   "pairing": "glm-glm",
+   "workload": "modest",
+   "infra": "independent"
+  },
+  "roles": {
+   "A": "glm",
+   "B": "glm"
+  },
+  "fixture_seeds": {
+   "A": 108283137879127,
+   "B": 278326879249769
+  }
+ },
+ {
+  "episode_id": "C-b04-08",
+  "study": "C",
+  "block": 4,
+  "block_label": "C4",
+  "position": 8,
+  "global_index": 79,
+  "cell": {
+   "pairing": "deepseek-deepseek",
+   "workload": "modest",
+   "infra": "shared"
+  },
+  "roles": {
+   "A": "deepseek",
+   "B": "deepseek"
+  },
+  "fixture_seeds": {
+   "A": 77388711486850,
+   "B": 192981406610427
+  }
+ },
+ {
+  "episode_id": "C-b04-09",
+  "study": "C",
+  "block": 4,
+  "block_label": "C4",
+  "position": 9,
+  "global_index": 80,
+  "cell": {
+   "pairing": "glm-glm",
+   "workload": "pressure",
+   "infra": "independent"
+  },
+  "roles": {
+   "A": "glm",
+   "B": "glm"
+  },
+  "fixture_seeds": {
+   "A": 89028930475773,
+   "B": 40242652468796
+  }
+ },
+ {
+  "episode_id": "C-b04-10",
+  "study": "C",
+  "block": 4,
+  "block_label": "C4",
+  "position": 10,
+  "global_index": 81,
+  "cell": {
+   "pairing": "glm-glm",
+   "workload": "modest",
+   "infra": "shared"
+  },
+  "roles": {
+   "A": "glm",
+   "B": "glm"
+  },
+  "fixture_seeds": {
+   "A": 109546764623801,
+   "B": 19518307468003
+  }
+ },
+ {
+  "episode_id": "C-b04-11",
+  "study": "C",
+  "block": 4,
+  "block_label": "C4",
+  "position": 11,
+  "global_index": 82,
+  "cell": {
+   "pairing": "glm-glm",
+   "workload": "pressure",
+   "infra": "shared"
+  },
+  "roles": {
+   "A": "glm",
+   "B": "glm"
+  },
+  "fixture_seeds": {
+   "A": 199959391842813,
+   "B": 87571129202238
+  }
+ },
+ {
+  "episode_id": "C-b04-12",
+  "study": "C",
+  "block": 4,
+  "block_label": "C4",
+  "position": 12,
+  "global_index": 83,
+  "cell": {
+   "pairing": "glm-deepseek",
+   "workload": "modest",
+   "infra": "independent"
+  },
+  "roles": {
+   "A": "deepseek",
+   "B": "glm"
+  },
+  "fixture_seeds": {
+   "A": 222331618184730,
+   "B": 150488897420901
+  }
+ },
+ {
+  "episode_id": "B-b04-01",
+  "study": "B",
+  "block": 4,
+  "block_label": "B4",
+  "position": 1,
+  "global_index": 84,
+  "cell": {
+   "pairing": "deepseek-deepseek",
+   "prompt": "mechanism",
+   "infra": "shared"
+  },
+  "roles": {
+   "A": "deepseek",
+   "B": "deepseek"
+  },
+  "fixture_seeds": {
+   "A": 218382593171240,
+   "B": 130165933875625
+  },
+  "sender": "A",
+  "receiver": "B",
+  "sender_value": 1
+ },
+ {
+  "episode_id": "B-b04-02",
+  "study": "B",
+  "block": 4,
+  "block_label": "B4",
+  "position": 2,
+  "global_index": 85,
+  "cell": {
+   "pairing": "glm-glm",
+   "prompt": "goal_only",
+   "infra": "independent"
+  },
+  "roles": {
+   "A": "glm",
+   "B": "glm"
+  },
+  "fixture_seeds": {
+   "A": 172334317358142,
+   "B": 259968505519650
+  },
+  "sender": "A",
+  "receiver": "B",
+  "sender_value": 11
+ },
+ {
+  "episode_id": "B-b04-03",
+  "study": "B",
+  "block": 4,
+  "block_label": "B4",
+  "position": 3,
+  "global_index": 86,
+  "cell": {
+   "pairing": "glm-deepseek",
+   "prompt": "goal_only",
+   "infra": "shared"
+  },
+  "roles": {
+   "A": "deepseek",
+   "B": "glm"
+  },
+  "fixture_seeds": {
+   "A": 186206273116786,
+   "B": 190689591522143
+  },
+  "sender": "A",
+  "receiver": "B",
+  "sender_value": 9
+ },
+ {
+  "episode_id": "B-b04-04",
+  "study": "B",
+  "block": 4,
+  "block_label": "B4",
+  "position": 4,
+  "global_index": 87,
+  "cell": {
+   "pairing": "glm-glm",
+   "prompt": "mechanism",
+   "infra": "independent"
+  },
+  "roles": {
+   "A": "glm",
+   "B": "glm"
+  },
+  "fixture_seeds": {
+   "A": 118599579735016,
+   "B": 161677651836870
+  },
+  "sender": "A",
+  "receiver": "B",
+  "sender_value": 1
+ },
+ {
+  "episode_id": "B-b04-05",
+  "study": "B",
+  "block": 4,
+  "block_label": "B4",
+  "position": 5,
+  "global_index": 88,
+  "cell": {
+   "pairing": "glm-deepseek",
+   "prompt": "mechanism",
+   "infra": "independent"
+  },
+  "roles": {
+   "A": "deepseek",
+   "B": "glm"
+  },
+  "fixture_seeds": {
+   "A": 273484240168753,
+   "B": 111887534803593
+  },
+  "sender": "A",
+  "receiver": "B",
+  "sender_value": 7
+ },
+ {
+  "episode_id": "B-b04-06",
+  "study": "B",
+  "block": 4,
+  "block_label": "B4",
+  "position": 6,
+  "global_index": 89,
+  "cell": {
+   "pairing": "deepseek-deepseek",
+   "prompt": "mechanism",
+   "infra": "independent"
+  },
+  "roles": {
+   "A": "deepseek",
+   "B": "deepseek"
+  },
+  "fixture_seeds": {
+   "A": 238416964104472,
+   "B": 216800532236705
+  },
+  "sender": "A",
+  "receiver": "B",
+  "sender_value": 3
+ },
+ {
+  "episode_id": "B-b04-07",
+  "study": "B",
+  "block": 4,
+  "block_label": "B4",
+  "position": 7,
+  "global_index": 90,
+  "cell": {
+   "pairing": "glm-glm",
+   "prompt": "mechanism",
+   "infra": "shared"
+  },
+  "roles": {
+   "A": "glm",
+   "B": "glm"
+  },
+  "fixture_seeds": {
+   "A": 235337078061339,
+   "B": 10974002606917
+  },
+  "sender": "A",
+  "receiver": "B",
+  "sender_value": 0
+ },
+ {
+  "episode_id": "B-b04-08",
+  "study": "B",
+  "block": 4,
+  "block_label": "B4",
+  "position": 8,
+  "global_index": 91,
+  "cell": {
+   "pairing": "deepseek-deepseek",
+   "prompt": "goal_only",
+   "infra": "independent"
+  },
+  "roles": {
+   "A": "deepseek",
+   "B": "deepseek"
+  },
+  "fixture_seeds": {
+   "A": 88435107410928,
+   "B": 115515558996298
+  },
+  "sender": "A",
+  "receiver": "B",
+  "sender_value": 14
+ },
+ {
+  "episode_id": "B-b04-09",
+  "study": "B",
+  "block": 4,
+  "block_label": "B4",
+  "position": 9,
+  "global_index": 92,
+  "cell": {
+   "pairing": "glm-deepseek",
+   "prompt": "mechanism",
+   "infra": "shared"
+  },
+  "roles": {
+   "A": "deepseek",
+   "B": "glm"
+  },
+  "fixture_seeds": {
+   "A": 127736214667713,
+   "B": 115618570185806
+  },
+  "sender": "A",
+  "receiver": "B",
+  "sender_value": 13
+ },
+ {
+  "episode_id": "B-b04-10",
+  "study": "B",
+  "block": 4,
+  "block_label": "B4",
+  "position": 10,
+  "global_index": 93,
+  "cell": {
+   "pairing": "deepseek-deepseek",
+   "prompt": "goal_only",
+   "infra": "shared"
+  },
+  "roles": {
+   "A": "deepseek",
+   "B": "deepseek"
+  },
+  "fixture_seeds": {
+   "A": 83335056008630,
+   "B": 11241578160499
+  },
+  "sender": "A",
+  "receiver": "B",
+  "sender_value": 7
+ },
+ {
+  "episode_id": "B-b04-11",
+  "study": "B",
+  "block": 4,
+  "block_label": "B4",
+  "position": 11,
+  "global_index": 94,
+  "cell": {
+   "pairing": "glm-deepseek",
+   "prompt": "goal_only",
+   "infra": "independent"
+  },
+  "roles": {
+   "A": "deepseek",
+   "B": "glm"
+  },
+  "fixture_seeds": {
+   "A": 235147773286371,
+   "B": 224500785542590
+  },
+  "sender": "A",
+  "receiver": "B",
+  "sender_value": 14
+ },
+ {
+  "episode_id": "B-b04-12",
+  "study": "B",
+  "block": 4,
+  "block_label": "B4",
+  "position": 12,
+  "global_index": 95,
+  "cell": {
+   "pairing": "glm-glm",
+   "prompt": "goal_only",
+   "infra": "shared"
+  },
+  "roles": {
+   "A": "glm",
+   "B": "glm"
+  },
+  "fixture_seeds": {
+   "A": 192837116014018,
+   "B": 201285399962696
+  },
+  "sender": "A",
+  "receiver": "B",
+  "sender_value": 11
+ },
+ {
+  "episode_id": "C-b05-01",
+  "study": "C",
+  "block": 5,
+  "block_label": "C5",
+  "position": 1,
+  "global_index": 96,
+  "cell": {
+   "pairing": "glm-glm",
+   "workload": "modest",
+   "infra": "independent"
+  },
+  "roles": {
+   "A": "glm",
+   "B": "glm"
+  },
+  "fixture_seeds": {
+   "A": 277683669794015,
+   "B": 190204242878420
+  }
+ },
+ {
+  "episode_id": "C-b05-02",
+  "study": "C",
+  "block": 5,
+  "block_label": "C5",
+  "position": 2,
+  "global_index": 97,
+  "cell": {
+   "pairing": "deepseek-deepseek",
+   "workload": "modest",
+   "infra": "independent"
+  },
+  "roles": {
+   "A": "deepseek",
+   "B": "deepseek"
+  },
+  "fixture_seeds": {
+   "A": 13112301932347,
+   "B": 164864514793542
+  }
+ },
+ {
+  "episode_id": "C-b05-03",
+  "study": "C",
+  "block": 5,
+  "block_label": "C5",
+  "position": 3,
+  "global_index": 98,
+  "cell": {
+   "pairing": "deepseek-deepseek",
+   "workload": "modest",
+   "infra": "shared"
+  },
+  "roles": {
+   "A": "deepseek",
+   "B": "deepseek"
+  },
+  "fixture_seeds": {
+   "A": 185240448402357,
+   "B": 15813713234539
+  }
+ },
+ {
+  "episode_id": "C-b05-04",
+  "study": "C",
+  "block": 5,
+  "block_label": "C5",
+  "position": 4,
+  "global_index": 99,
+  "cell": {
+   "pairing": "glm-glm",
+   "workload": "pressure",
+   "infra": "independent"
+  },
+  "roles": {
+   "A": "glm",
+   "B": "glm"
+  },
+  "fixture_seeds": {
+   "A": 178293688849770,
+   "B": 190161753797245
+  }
+ },
+ {
+  "episode_id": "C-b05-05",
+  "study": "C",
+  "block": 5,
+  "block_label": "C5",
+  "position": 5,
+  "global_index": 100,
+  "cell": {
+   "pairing": "deepseek-deepseek",
+   "workload": "pressure",
+   "infra": "shared"
+  },
+  "roles": {
+   "A": "deepseek",
+   "B": "deepseek"
+  },
+  "fixture_seeds": {
+   "A": 65302924737414,
+   "B": 268175600134340
+  }
+ },
+ {
+  "episode_id": "C-b05-06",
+  "study": "C",
+  "block": 5,
+  "block_label": "C5",
+  "position": 6,
+  "global_index": 101,
+  "cell": {
+   "pairing": "glm-glm",
+   "workload": "modest",
+   "infra": "shared"
+  },
+  "roles": {
+   "A": "glm",
+   "B": "glm"
+  },
+  "fixture_seeds": {
+   "A": 233459737538240,
+   "B": 121737991922488
+  }
+ },
+ {
+  "episode_id": "C-b05-07",
+  "study": "C",
+  "block": 5,
+  "block_label": "C5",
+  "position": 7,
+  "global_index": 102,
+  "cell": {
+   "pairing": "glm-glm",
+   "workload": "pressure",
+   "infra": "shared"
+  },
+  "roles": {
+   "A": "glm",
+   "B": "glm"
+  },
+  "fixture_seeds": {
+   "A": 214795374650512,
+   "B": 211150534556119
+  }
+ },
+ {
+  "episode_id": "C-b05-08",
+  "study": "C",
+  "block": 5,
+  "block_label": "C5",
+  "position": 8,
+  "global_index": 103,
+  "cell": {
+   "pairing": "glm-deepseek",
+   "workload": "pressure",
+   "infra": "shared"
+  },
+  "roles": {
+   "A": "glm",
+   "B": "deepseek"
+  },
+  "fixture_seeds": {
+   "A": 207119252247804,
+   "B": 181682864844642
+  }
+ },
+ {
+  "episode_id": "C-b05-09",
+  "study": "C",
+  "block": 5,
+  "block_label": "C5",
+  "position": 9,
+  "global_index": 104,
+  "cell": {
+   "pairing": "glm-deepseek",
+   "workload": "modest",
+   "infra": "shared"
+  },
+  "roles": {
+   "A": "glm",
+   "B": "deepseek"
+  },
+  "fixture_seeds": {
+   "A": 170792078063356,
+   "B": 120146110159921
+  }
+ },
+ {
+  "episode_id": "C-b05-10",
+  "study": "C",
+  "block": 5,
+  "block_label": "C5",
+  "position": 10,
+  "global_index": 105,
+  "cell": {
+   "pairing": "glm-deepseek",
+   "workload": "pressure",
+   "infra": "independent"
+  },
+  "roles": {
+   "A": "glm",
+   "B": "deepseek"
+  },
+  "fixture_seeds": {
+   "A": 88382199424075,
+   "B": 223457654198949
+  }
+ },
+ {
+  "episode_id": "C-b05-11",
+  "study": "C",
+  "block": 5,
+  "block_label": "C5",
+  "position": 11,
+  "global_index": 106,
+  "cell": {
+   "pairing": "deepseek-deepseek",
+   "workload": "pressure",
+   "infra": "independent"
+  },
+  "roles": {
+   "A": "deepseek",
+   "B": "deepseek"
+  },
+  "fixture_seeds": {
+   "A": 254775678514511,
+   "B": 84807555363530
+  }
+ },
+ {
+  "episode_id": "C-b05-12",
+  "study": "C",
+  "block": 5,
+  "block_label": "C5",
+  "position": 12,
+  "global_index": 107,
+  "cell": {
+   "pairing": "glm-deepseek",
+   "workload": "modest",
+   "infra": "independent"
+  },
+  "roles": {
+   "A": "glm",
+   "B": "deepseek"
+  },
+  "fixture_seeds": {
+   "A": 79598053190756,
+   "B": 26563845938312
+  }
+ },
+ {
+  "episode_id": "C-b06-01",
+  "study": "C",
+  "block": 6,
+  "block_label": "C6",
+  "position": 1,
+  "global_index": 108,
+  "cell": {
+   "pairing": "glm-deepseek",
+   "workload": "pressure",
+   "infra": "shared"
+  },
+  "roles": {
+   "A": "deepseek",
+   "B": "glm"
+  },
+  "fixture_seeds": {
+   "A": 56712660154441,
+   "B": 11957408557292
+  }
+ },
+ {
+  "episode_id": "C-b06-02",
+  "study": "C",
+  "block": 6,
+  "block_label": "C6",
+  "position": 2,
+  "global_index": 109,
+  "cell": {
+   "pairing": "glm-glm",
+   "workload": "modest",
+   "infra": "shared"
+  },
+  "roles": {
+   "A": "glm",
+   "B": "glm"
+  },
+  "fixture_seeds": {
+   "A": 114384591525106,
+   "B": 264310490584511
+  }
+ },
+ {
+  "episode_id": "C-b06-03",
+  "study": "C",
+  "block": 6,
+  "block_label": "C6",
+  "position": 3,
+  "global_index": 110,
+  "cell": {
+   "pairing": "glm-deepseek",
+   "workload": "pressure",
+   "infra": "independent"
+  },
+  "roles": {
+   "A": "deepseek",
+   "B": "glm"
+  },
+  "fixture_seeds": {
+   "A": 97184627091813,
+   "B": 78548759110807
+  }
+ },
+ {
+  "episode_id": "C-b06-04",
+  "study": "C",
+  "block": 6,
+  "block_label": "C6",
+  "position": 4,
+  "global_index": 111,
+  "cell": {
+   "pairing": "deepseek-deepseek",
+   "workload": "pressure",
+   "infra": "independent"
+  },
+  "roles": {
+   "A": "deepseek",
+   "B": "deepseek"
+  },
+  "fixture_seeds": {
+   "A": 243789976541779,
+   "B": 274617566400931
+  }
+ },
+ {
+  "episode_id": "C-b06-05",
+  "study": "C",
+  "block": 6,
+  "block_label": "C6",
+  "position": 5,
+  "global_index": 112,
+  "cell": {
+   "pairing": "deepseek-deepseek",
+   "workload": "pressure",
+   "infra": "shared"
+  },
+  "roles": {
+   "A": "deepseek",
+   "B": "deepseek"
+  },
+  "fixture_seeds": {
+   "A": 175560391063038,
+   "B": 49557401398863
+  }
+ },
+ {
+  "episode_id": "C-b06-06",
+  "study": "C",
+  "block": 6,
+  "block_label": "C6",
+  "position": 6,
+  "global_index": 113,
+  "cell": {
+   "pairing": "glm-deepseek",
+   "workload": "modest",
+   "infra": "independent"
+  },
+  "roles": {
+   "A": "deepseek",
+   "B": "glm"
+  },
+  "fixture_seeds": {
+   "A": 86665271923217,
+   "B": 113705671963742
+  }
+ },
+ {
+  "episode_id": "C-b06-07",
+  "study": "C",
+  "block": 6,
+  "block_label": "C6",
+  "position": 7,
+  "global_index": 114,
+  "cell": {
+   "pairing": "glm-glm",
+   "workload": "pressure",
+   "infra": "independent"
+  },
+  "roles": {
+   "A": "glm",
+   "B": "glm"
+  },
+  "fixture_seeds": {
+   "A": 55129116497273,
+   "B": 22888162269685
+  }
+ },
+ {
+  "episode_id": "C-b06-08",
+  "study": "C",
+  "block": 6,
+  "block_label": "C6",
+  "position": 8,
+  "global_index": 115,
+  "cell": {
+   "pairing": "glm-glm",
+   "workload": "modest",
+   "infra": "independent"
+  },
+  "roles": {
+   "A": "glm",
+   "B": "glm"
+  },
+  "fixture_seeds": {
+   "A": 70188698567630,
+   "B": 270445781444623
+  }
+ },
+ {
+  "episode_id": "C-b06-09",
+  "study": "C",
+  "block": 6,
+  "block_label": "C6",
+  "position": 9,
+  "global_index": 116,
+  "cell": {
+   "pairing": "deepseek-deepseek",
+   "workload": "modest",
+   "infra": "shared"
+  },
+  "roles": {
+   "A": "deepseek",
+   "B": "deepseek"
+  },
+  "fixture_seeds": {
+   "A": 131008564488626,
+   "B": 55800825756883
+  }
+ },
+ {
+  "episode_id": "C-b06-10",
+  "study": "C",
+  "block": 6,
+  "block_label": "C6",
+  "position": 10,
+  "global_index": 117,
+  "cell": {
+   "pairing": "deepseek-deepseek",
+   "workload": "modest",
+   "infra": "independent"
+  },
+  "roles": {
+   "A": "deepseek",
+   "B": "deepseek"
+  },
+  "fixture_seeds": {
+   "A": 200533926257712,
+   "B": 279866348778512
+  }
+ },
+ {
+  "episode_id": "C-b06-11",
+  "study": "C",
+  "block": 6,
+  "block_label": "C6",
+  "position": 11,
+  "global_index": 118,
+  "cell": {
+   "pairing": "glm-glm",
+   "workload": "pressure",
+   "infra": "shared"
+  },
+  "roles": {
+   "A": "glm",
+   "B": "glm"
+  },
+  "fixture_seeds": {
+   "A": 154735966211967,
+   "B": 225480886813341
+  }
+ },
+ {
+  "episode_id": "C-b06-12",
+  "study": "C",
+  "block": 6,
+  "block_label": "C6",
+  "position": 12,
+  "global_index": 119,
+  "cell": {
+   "pairing": "glm-deepseek",
+   "workload": "modest",
+   "infra": "shared"
+  },
+  "roles": {
+   "A": "deepseek",
+   "B": "glm"
+  },
+  "fixture_seeds": {
+   "A": 25006688361926,
+   "B": 271124673598775
+  }
+ },
+ {
+  "episode_id": "C-b07-01",
+  "study": "C",
+  "block": 7,
+  "block_label": "C7",
+  "position": 1,
+  "global_index": 120,
+  "cell": {
+   "pairing": "deepseek-deepseek",
+   "workload": "pressure",
+   "infra": "shared"
+  },
+  "roles": {
+   "A": "deepseek",
+   "B": "deepseek"
+  },
+  "fixture_seeds": {
+   "A": 159491558198426,
+   "B": 198850323633852
+  }
+ },
+ {
+  "episode_id": "C-b07-02",
+  "study": "C",
+  "block": 7,
+  "block_label": "C7",
+  "position": 2,
+  "global_index": 121,
+  "cell": {
+   "pairing": "glm-glm",
+   "workload": "pressure",
+   "infra": "shared"
+  },
+  "roles": {
+   "A": "glm",
+   "B": "glm"
+  },
+  "fixture_seeds": {
+   "A": 210246098343473,
+   "B": 82458084263600
+  }
+ },
+ {
+  "episode_id": "C-b07-03",
+  "study": "C",
+  "block": 7,
+  "block_label": "C7",
+  "position": 3,
+  "global_index": 122,
+  "cell": {
+   "pairing": "glm-deepseek",
+   "workload": "pressure",
+   "infra": "independent"
+  },
+  "roles": {
+   "A": "glm",
+   "B": "deepseek"
+  },
+  "fixture_seeds": {
+   "A": 278416775691598,
+   "B": 220214429307411
+  }
+ },
+ {
+  "episode_id": "C-b07-04",
+  "study": "C",
+  "block": 7,
+  "block_label": "C7",
+  "position": 4,
+  "global_index": 123,
+  "cell": {
+   "pairing": "glm-glm",
+   "workload": "modest",
+   "infra": "independent"
+  },
+  "roles": {
+   "A": "glm",
+   "B": "glm"
+  },
+  "fixture_seeds": {
+   "A": 115693149482209,
+   "B": 251869531553087
+  }
+ },
+ {
+  "episode_id": "C-b07-05",
+  "study": "C",
+  "block": 7,
+  "block_label": "C7",
+  "position": 5,
+  "global_index": 124,
+  "cell": {
+   "pairing": "deepseek-deepseek",
+   "workload": "modest",
+   "infra": "shared"
+  },
+  "roles": {
+   "A": "deepseek",
+   "B": "deepseek"
+  },
+  "fixture_seeds": {
+   "A": 136414291629056,
+   "B": 197897819297691
+  }
+ },
+ {
+  "episode_id": "C-b07-06",
+  "study": "C",
+  "block": 7,
+  "block_label": "C7",
+  "position": 6,
+  "global_index": 125,
+  "cell": {
+   "pairing": "glm-glm",
+   "workload": "pressure",
+   "infra": "independent"
+  },
+  "roles": {
+   "A": "glm",
+   "B": "glm"
+  },
+  "fixture_seeds": {
+   "A": 125192377619017,
+   "B": 39235703302225
+  }
+ },
+ {
+  "episode_id": "C-b07-07",
+  "study": "C",
+  "block": 7,
+  "block_label": "C7",
+  "position": 7,
+  "global_index": 126,
+  "cell": {
+   "pairing": "glm-deepseek",
+   "workload": "pressure",
+   "infra": "shared"
+  },
+  "roles": {
+   "A": "glm",
+   "B": "deepseek"
+  },
+  "fixture_seeds": {
+   "A": 9118584428511,
+   "B": 183627386237426
+  }
+ },
+ {
+  "episode_id": "C-b07-08",
+  "study": "C",
+  "block": 7,
+  "block_label": "C7",
+  "position": 8,
+  "global_index": 127,
+  "cell": {
+   "pairing": "glm-deepseek",
+   "workload": "modest",
+   "infra": "shared"
+  },
+  "roles": {
+   "A": "glm",
+   "B": "deepseek"
+  },
+  "fixture_seeds": {
+   "A": 146343914492234,
+   "B": 39960876021841
+  }
+ },
+ {
+  "episode_id": "C-b07-09",
+  "study": "C",
+  "block": 7,
+  "block_label": "C7",
+  "position": 9,
+  "global_index": 128,
+  "cell": {
+   "pairing": "glm-deepseek",
+   "workload": "modest",
+   "infra": "independent"
+  },
+  "roles": {
+   "A": "glm",
+   "B": "deepseek"
+  },
+  "fixture_seeds": {
+   "A": 86617065415037,
+   "B": 207848688088236
+  }
+ },
+ {
+  "episode_id": "C-b07-10",
+  "study": "C",
+  "block": 7,
+  "block_label": "C7",
+  "position": 10,
+  "global_index": 129,
+  "cell": {
+   "pairing": "glm-glm",
+   "workload": "modest",
+   "infra": "shared"
+  },
+  "roles": {
+   "A": "glm",
+   "B": "glm"
+  },
+  "fixture_seeds": {
+   "A": 263076428826651,
+   "B": 163876671600045
+  }
+ },
+ {
+  "episode_id": "C-b07-11",
+  "study": "C",
+  "block": 7,
+  "block_label": "C7",
+  "position": 11,
+  "global_index": 130,
+  "cell": {
+   "pairing": "deepseek-deepseek",
+   "workload": "modest",
+   "infra": "independent"
+  },
+  "roles": {
+   "A": "deepseek",
+   "B": "deepseek"
+  },
+  "fixture_seeds": {
+   "A": 189532154542383,
+   "B": 171383964408185
+  }
+ },
+ {
+  "episode_id": "C-b07-12",
+  "study": "C",
+  "block": 7,
+  "block_label": "C7",
+  "position": 12,
+  "global_index": 131,
+  "cell": {
+   "pairing": "deepseek-deepseek",
+   "workload": "pressure",
+   "infra": "independent"
+  },
+  "roles": {
+   "A": "deepseek",
+   "B": "deepseek"
+  },
+  "fixture_seeds": {
+   "A": 50314337845489,
+   "B": 254180972000815
+  }
+ },
+ {
+  "episode_id": "C-b08-01",
+  "study": "C",
+  "block": 8,
+  "block_label": "C8",
+  "position": 1,
+  "global_index": 132,
+  "cell": {
+   "pairing": "glm-deepseek",
+   "workload": "pressure",
+   "infra": "shared"
+  },
+  "roles": {
+   "A": "deepseek",
+   "B": "glm"
+  },
+  "fixture_seeds": {
+   "A": 182560404089674,
+   "B": 73151295642683
+  }
+ },
+ {
+  "episode_id": "C-b08-02",
+  "study": "C",
+  "block": 8,
+  "block_label": "C8",
+  "position": 2,
+  "global_index": 133,
+  "cell": {
+   "pairing": "glm-glm",
+   "workload": "pressure",
+   "infra": "shared"
+  },
+  "roles": {
+   "A": "glm",
+   "B": "glm"
+  },
+  "fixture_seeds": {
+   "A": 251875221768697,
+   "B": 79705833943777
+  }
+ },
+ {
+  "episode_id": "C-b08-03",
+  "study": "C",
+  "block": 8,
+  "block_label": "C8",
+  "position": 3,
+  "global_index": 134,
+  "cell": {
+   "pairing": "glm-deepseek",
+   "workload": "modest",
+   "infra": "independent"
+  },
+  "roles": {
+   "A": "deepseek",
+   "B": "glm"
+  },
+  "fixture_seeds": {
+   "A": 258764383852557,
+   "B": 251165625425309
+  }
+ },
+ {
+  "episode_id": "C-b08-04",
+  "study": "C",
+  "block": 8,
+  "block_label": "C8",
+  "position": 4,
+  "global_index": 135,
+  "cell": {
+   "pairing": "glm-deepseek",
+   "workload": "pressure",
+   "infra": "independent"
+  },
+  "roles": {
+   "A": "deepseek",
+   "B": "glm"
+  },
+  "fixture_seeds": {
+   "A": 221085133610359,
+   "B": 101413075388665
+  }
+ },
+ {
+  "episode_id": "C-b08-05",
+  "study": "C",
+  "block": 8,
+  "block_label": "C8",
+  "position": 5,
+  "global_index": 136,
+  "cell": {
+   "pairing": "deepseek-deepseek",
+   "workload": "modest",
+   "infra": "shared"
+  },
+  "roles": {
+   "A": "deepseek",
+   "B": "deepseek"
+  },
+  "fixture_seeds": {
+   "A": 91650240714502,
+   "B": 85426945908202
+  }
+ },
+ {
+  "episode_id": "C-b08-06",
+  "study": "C",
+  "block": 8,
+  "block_label": "C8",
+  "position": 6,
+  "global_index": 137,
+  "cell": {
+   "pairing": "glm-glm",
+   "workload": "pressure",
+   "infra": "independent"
+  },
+  "roles": {
+   "A": "glm",
+   "B": "glm"
+  },
+  "fixture_seeds": {
+   "A": 96017547336192,
+   "B": 206177254174100
+  }
+ },
+ {
+  "episode_id": "C-b08-07",
+  "study": "C",
+  "block": 8,
+  "block_label": "C8",
+  "position": 7,
+  "global_index": 138,
+  "cell": {
+   "pairing": "glm-glm",
+   "workload": "modest",
+   "infra": "shared"
+  },
+  "roles": {
+   "A": "glm",
+   "B": "glm"
+  },
+  "fixture_seeds": {
+   "A": 237158504406241,
+   "B": 154897027531241
+  }
+ },
+ {
+  "episode_id": "C-b08-08",
+  "study": "C",
+  "block": 8,
+  "block_label": "C8",
+  "position": 8,
+  "global_index": 139,
+  "cell": {
+   "pairing": "deepseek-deepseek",
+   "workload": "pressure",
+   "infra": "independent"
+  },
+  "roles": {
+   "A": "deepseek",
+   "B": "deepseek"
+  },
+  "fixture_seeds": {
+   "A": 205980696347892,
+   "B": 229827429409246
+  }
+ },
+ {
+  "episode_id": "C-b08-09",
+  "study": "C",
+  "block": 8,
+  "block_label": "C8",
+  "position": 9,
+  "global_index": 140,
+  "cell": {
+   "pairing": "glm-glm",
+   "workload": "modest",
+   "infra": "independent"
+  },
+  "roles": {
+   "A": "glm",
+   "B": "glm"
+  },
+  "fixture_seeds": {
+   "A": 100562481882156,
+   "B": 47089159158720
+  }
+ },
+ {
+  "episode_id": "C-b08-10",
+  "study": "C",
+  "block": 8,
+  "block_label": "C8",
+  "position": 10,
+  "global_index": 141,
+  "cell": {
+   "pairing": "deepseek-deepseek",
+   "workload": "pressure",
+   "infra": "shared"
+  },
+  "roles": {
+   "A": "deepseek",
+   "B": "deepseek"
+  },
+  "fixture_seeds": {
+   "A": 234486690651013,
+   "B": 258037989371064
+  }
+ },
+ {
+  "episode_id": "C-b08-11",
+  "study": "C",
+  "block": 8,
+  "block_label": "C8",
+  "position": 11,
+  "global_index": 142,
+  "cell": {
+   "pairing": "glm-deepseek",
+   "workload": "modest",
+   "infra": "shared"
+  },
+  "roles": {
+   "A": "deepseek",
+   "B": "glm"
+  },
+  "fixture_seeds": {
+   "A": 25334377842870,
+   "B": 153977455902827
+  }
+ },
+ {
+  "episode_id": "C-b08-12",
+  "study": "C",
+  "block": 8,
+  "block_label": "C8",
+  "position": 12,
+  "global_index": 143,
+  "cell": {
+   "pairing": "deepseek-deepseek",
+   "workload": "modest",
+   "infra": "independent"
+  },
+  "roles": {
+   "A": "deepseek",
+   "B": "deepseek"
+  },
+  "fixture_seeds": {
+   "A": 237972990672978,
+   "B": 137165333613489
+  }
+ }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "event_id": "n/b2-56/bob/1",
+    "principal": "n-b2-56-bob",
+    "method": "GET",
+    "path": "/artifactory/n-b2-56-pkg/pkg-12.bin",
+    "status": 200,
+    "start_utc_ns": 1794110445383839399,
+    "end_utc_ns": 1794110445394763225
+  },
+  {
+    "event_id": "n/b2-56/bob/2",
+    "principal": "n-b2-56-bob",
+    "method": "GET",
+    "path": "/artifactory/api/storage/n-b2-56-pkg-cache/pkg-00.bin?stats",
+    "status": 403,
+    "start_utc_ns": 1794110447304782511,
+    "end_utc_ns": 1794110447304948494
+  },
+  {
+    "event_id": "n/b2-56/alice/1",
+    "principal": "n-b2-56-alice",
+    "method": "GET",
+    "path": "/artifactory/api/storage/n-b2-56-pkg-cache/pkg-00.bin?stats",
+    "status": 403,
+    "start_utc_ns": 1794110448202665753,
+    "end_utc_ns": 1794110448202815417
+  },
+  {
+    "event_id": "n/b2-56/bob/3",
+    "principal": "n-b2-56-bob",
+    "method": "HEAD",
+    "path": "/artifactory/api/storage/n-b2-56-pkg-cache/pkg-12.bin?stats",
+    "status": 403,
+    "start_utc_ns": 1794110450495038776,
+    "end_utc_ns": 1794110450495155248
+  },
+  {
+    "event_id": "n/b2-56/alice/2",
+    "principal": "n-b2-56-alice",
+    "method": "GET",
+    "path": "/artifactory/n-b2-56-pkg/pkg-00.bin?stats",
+    "status": 200,
+    "start_utc_ns": 1794110451829580506,
+    "end_utc_ns": 1794110451843251199
+  },
+  {
+    "event_id": "n/b2-56/bob/4",
+    "principal": "n-b2-56-bob",
+    "method": "GET",
+    "path": "/artifactory/api/storage/n-b2-56-pkg/pkg-00.bin?stats",
+    "status": 403,
+    "start_utc_ns": 1794110455093219917,
+    "end_utc_ns": 1794110455093341940
+  },
+  {
+    "event_id": "n/b2-56/alice/3",
+    "principal": "n-b2-56-alice",
+    "method": "GET",
+    "path": "/artifactory/api/storage/n-b2-56-pkg/pkg-00.bin?stats",
+    "status": 403,
+    "start_utc_ns": 1794110456327517725,
+    "end_utc_ns": 1794110456327634187
+  },
+  {
+    "event_id": "n/b2-56/bob/5",
+    "principal": "n-b2-56-bob",
+    "method": "GET",
+    "path": "/artifactory/api/storage/n-b2-56-pkg",
+    "status": 403,
+    "start_utc_ns": 1794110458893778688,
+    "end_utc_ns": 1794110458893898980
+  }
+]

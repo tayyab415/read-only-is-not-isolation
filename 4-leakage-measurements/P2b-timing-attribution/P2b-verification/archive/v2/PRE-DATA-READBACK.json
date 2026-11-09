@@ -1,0 +1,22 @@
+{
+  "utc_ns": 1794186466912889756,
+  "panes": [
+    "914019 bash 0"
+  ],
+  "child_processes": [
+    {
+      "pid": 914021,
+      "returncode": 0,
+      "process": "914021  914019    01:29:34 python3 -u sequence.py"
+    }
+  ],
+  "sequence_status": {
+    "utc": "2026-11-09T01:06:12.216043+00:00",
+    "stage": "waiting_for_p2",
+    "reason": "P2 holdout for aa is not sealed; refusing to share the labhost"
+  },
+  "p2_gate_exists": false,
+  "decoder_freeze_exists": false,
+  "data_files": [],
+  "source_manifest_sha256": "0e3ba047d1298e739595acbdfa6884fc7d269103a941b956f848db4d896fea54"
+}

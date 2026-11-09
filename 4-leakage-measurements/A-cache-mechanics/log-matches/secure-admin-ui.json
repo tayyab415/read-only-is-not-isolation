@@ -1,0 +1,135 @@
+{
+  "request_id": "secure-admin-ui",
+  "server_trace_ids": [
+    "9a7fa41e300b1facef04a09d496159b7"
+  ],
+  "logs": {
+    "access-audit.log": [],
+    "access-metrics.log": [],
+    "access-metrics_events.log": [],
+    "access-request-out.log": [],
+    "access-request.log": [
+      {
+        "line_number": 355,
+        "line": "2026-11-07T22:56:40.475Z|9a7fa41e300b1facef04a09d496159b7|127.0.0.1|jfrt@01m6w3chwnhc4n1xs15bzj1rg6|GET|/access/api/v1/users/admin|200|460|-1|4|JFrog Access Java Client/7.191.14 89114900  Artifactory/7.161.15 86115900"
+      },
+      {
+        "line_number": 356,
+        "line": "2026-11-07T22:56:40.479Z|9a7fa41e300b1facef04a09d496159b7|127.0.0.1|jfrt@01m6w3chwnhc4n1xs15bzj1rg6|DELETE|/access/api/v1/oauth/token/username/admin/authentication:remember-me|204|-1|-1|2|JFrog Access Java Client/7.191.14 89114900  Artifactory/7.161.15 86115900"
+      },
+      {
+        "line_number": 357,
+        "line": "2026-11-07T22:56:40.517Z|9a7fa41e300b1facef04a09d496159b7|127.0.0.1|jfrt@01m6w3chwnhc4n1xs15bzj1rg6|PATCH|/access/api/v1/users/admin|200|492|1068|34|JFrog Access Java Client/7.191.14 89114900  Artifactory/7.161.15 86115900"
+      },
+      {
+        "line_number": 358,
+        "line": "2026-11-07T22:56:40.538Z|9a7fa41e300b1facef04a09d496159b7|127.0.0.1|jfrt@01m6w3chwnhc4n1xs15bzj1rg6|GET|/access/api/v1/users/admin|200|492|-1|15|JFrog Access Java Client/7.191.14 89114900  Artifactory/7.161.15 86115900"
+      },
+      {
+        "line_number": 359,
+        "line": "2026-11-07T22:56:40.544Z|9a7fa41e300b1facef04a09d496159b7|127.0.0.1|jfrt@01m6w3chwnhc4n1xs15bzj1rg6|GET|/access/api/v1/users/admin|200|492|-1|4|JFrog Access Java Client/7.191.14 89114900  Artifactory/7.161.15 86115900"
+      }
+    ],
+    "access-security-audit.log": [
+      {
+        "line_number": 26,
+        "line": "2026-11-07T22:56:40.514Z|9a7fa41e300b1facef04a09d496159b7|172.18.0.1|admin|jfrt@01m6w3chwnhc4n1xs15bzj1rg6|admin|U|USR|{\"added\":{\"customData.email_verified_shash\":\"J1aqqJ\"},\"updated\":{\"password\":{\"oldEntry\":\"*\",\"newEntry\":\"*\"},\"customData.email_verified\":{\"oldEntry\":\"false\",\"newEntry\":\"true\"}}}"
+      }
+    ],
+    "access-service.log": [],
+    "access-thread-dump.log": [],
+    "artifactory-access.log": [],
+    "artifactory-binarystore.log": [],
+    "artifactory-cleanup-audit.log": [],
+    "artifactory-conan-v2-migration.log": [],
+    "artifactory-event.log": [],
+    "artifactory-federation-metrics.log": [],
+    "artifactory-federation-metrics_events.log": [],
+    "artifactory-import-export.log": [],
+    "artifactory-metrics.log": [],
+    "artifactory-metrics_events.log": [],
+    "artifactory-path-checksum-migration.log": [],
+    "artifactory-request-out.log": [],
+    "artifactory-request-trace.log": [],
+    "artifactory-request.log": [
+      {
+        "line_number": 80,
+        "line": "2026-11-07T22:56:40.547Z|9a7fa41e300b1facef04a09d496159b7|172.18.0.1|admin|PUT|/ui/users/admin|200|209|44|87|art-a-research/secure-admin-ui"
+      }
+    ],
+    "artifactory-service-federation.log": [],
+    "artifactory-service.log": [],
+    "artifactory-sha256-migration.log": [],
+    "artifactory-shadow.log": [],
+    "artifactory-storage-request-out.log": [],
+    "artifactory-traffic-v2.log": [],
+    "artifactory-traffic-v3.log": [],
+    "artifactory-traffic.1794091779163.log": [],
+    "artifactory-xray-traffic.1794091779189.log": [],
+    "derby.log": [],
+    "dummy.log": [],
+    "event-metrics.log": [],
+    "event-request.log": [],
+    "event-service.log": [],
+    "event-webhook-request-out.log": [],
+    "frontend-metrics-events.log": [],
+    "frontend-metrics.log": [],
+    "frontend-request.log": [],
+    "frontend-service.log": [],
+    "jfbus-ack-events.log": [],
+    "jfbus-consume-events.log": [],
+    "jfbus-publish-events.log": [],
+    "jfbus-receive-polling.log": [],
+    "jfbus-request.log": [],
+    "jfbus-service.log": [],
+    "jfconfig-metrics.log": [],
+    "jfconfig-request-out.log": [],
+    "jfconfig-request.log": [],
+    "jfconfig-service.log": [],
+    "metadata-metrics.log": [],
+    "metadata-request.log": [],
+    "metadata-service.log": [],
+    "metadata-traffic.log": [],
+    "observability-metrics.log": [],
+    "observability-request-out.log": [],
+    "observability-request.log": [],
+    "observability-service.log": [],
+    "router-request.log": [
+      {
+        "line_number": 743,
+        "line": "{\"ClientAddr\":\"127.0.0.1:43776\",\"DownstreamContentSize\":460,\"DownstreamStatus\":200,\"Duration\":4866008,\"Overhead\":83083,\"RequestMethod\":\"GET\",\"RequestPath\":\"/access/api/v1/users/admin?expand=groups\",\"ServiceAddr\":\"localhost:8040\",\"SpanId\":\"61a945c1b519e83a\",\"StartUTC\":\"2026-11-07T22:56:40.470232437Z\",\"TraceId\":\"9a7fa41e300b1facef04a09d496159b7\",\"level\":\"info\",\"msg\":\"\",\"request_Traceparent\":\"00-9a7fa41e300b1facef04a09d496159b7-d623b3d7d10bdf32-01\",\"request_Uber-Trace-Id\":\"9a7fa41e300b1facef04a09d496159b7:d623b3d7d10bdf32:0:1\",\"request_User-Agent\":\"JFrog Access Java Client/7.191.14 89114900  Artifactory/7.161.15 86115900\",\"time\":\"2026-11-07T22:56:40Z\"}"
+      },
+      {
+        "line_number": 744,
+        "line": "{\"ClientAddr\":\"127.0.0.1:43776\",\"DownstreamContentSize\":0,\"DownstreamStatus\":204,\"Duration\":3519441,\"Overhead\":71342,\"RequestMethod\":\"DELETE\",\"RequestPath\":\"/access/api/v1/oauth/token/username/admin/authentication:remember-me\",\"ServiceAddr\":\"localhost:8040\",\"SpanId\":\"b1a1076389c644eb\",\"StartUTC\":\"2026-11-07T22:56:40.476816459Z\",\"TraceId\":\"9a7fa41e300b1facef04a09d496159b7\",\"level\":\"info\",\"msg\":\"\",\"request_Traceparent\":\"00-9a7fa41e300b1facef04a09d496159b7-d623b3d7d10bdf32-01\",\"request_Uber-Trace-Id\":\"9a7fa41e300b1facef04a09d496159b7:d623b3d7d10bdf32:0:1\",\"request_User-Agent\":\"JFrog Access Java Client/7.191.14 89114900  Artifactory/7.161.15 86115900\",\"time\":\"2026-11-07T22:56:40Z\"}"
+      },
+      {
+        "line_number": 745,
+        "line": "{\"ClientAddr\":\"127.0.0.1:43776\",\"DownstreamContentSize\":492,\"DownstreamStatus\":200,\"Duration\":35588444,\"Overhead\":125662,\"RequestMethod\":\"PATCH\",\"RequestPath\":\"/access/api/v1/users/admin\",\"ServiceAddr\":\"localhost:8040\",\"SpanId\":\"29aab7a9c4341322\",\"StartUTC\":\"2026-11-07T22:56:40.482409932Z\",\"TraceId\":\"9a7fa41e300b1facef04a09d496159b7\",\"level\":\"info\",\"msg\":\"\",\"request_Traceparent\":\"00-9a7fa41e300b1facef04a09d496159b7-d623b3d7d10bdf32-01\",\"request_Uber-Trace-Id\":\"9a7fa41e300b1facef04a09d496159b7:d623b3d7d10bdf32:0:1\",\"request_User-Agent\":\"JFrog Access Java Client/7.191.14 89114900  Artifactory/7.161.15 86115900\",\"time\":\"2026-11-07T22:56:40Z\"}"
+      },
+      {
+        "line_number": 746,
+        "line": "{\"ClientAddr\":\"127.0.0.1:43776\",\"DownstreamContentSize\":492,\"DownstreamStatus\":200,\"Duration\":16039322,\"Overhead\":91412,\"RequestMethod\":\"GET\",\"RequestPath\":\"/access/api/v1/users/admin\",\"ServiceAddr\":\"localhost:8040\",\"SpanId\":\"64d4f7b00bf28e7d\",\"StartUTC\":\"2026-11-07T22:56:40.522280552Z\",\"TraceId\":\"9a7fa41e300b1facef04a09d496159b7\",\"level\":\"info\",\"msg\":\"\",\"request_Traceparent\":\"00-9a7fa41e300b1facef04a09d496159b7-d623b3d7d10bdf32-01\",\"request_Uber-Trace-Id\":\"9a7fa41e300b1facef04a09d496159b7:d623b3d7d10bdf32:0:1\",\"request_User-Agent\":\"JFrog Access Java Client/7.191.14 89114900  Artifactory/7.161.15 86115900\",\"time\":\"2026-11-07T22:56:40Z\"}"
+      },
+      {
+        "line_number": 747,
+        "line": "{\"ClientAddr\":\"127.0.0.1:43776\",\"DownstreamContentSize\":492,\"DownstreamStatus\":200,\"Duration\":4881418,\"Overhead\":71471,\"RequestMethod\":\"GET\",\"RequestPath\":\"/access/api/v1/users/admin?expand=groups\",\"ServiceAddr\":\"localhost:8040\",\"SpanId\":\"46df8360b9239095\",\"StartUTC\":\"2026-11-07T22:56:40.539906036Z\",\"TraceId\":\"9a7fa41e300b1facef04a09d496159b7\",\"level\":\"info\",\"msg\":\"\",\"request_Traceparent\":\"00-9a7fa41e300b1facef04a09d496159b7-d623b3d7d10bdf32-01\",\"request_Uber-Trace-Id\":\"9a7fa41e300b1facef04a09d496159b7:d623b3d7d10bdf32:0:1\",\"request_User-Agent\":\"JFrog Access Java Client/7.191.14 89114900  Artifactory/7.161.15 86115900\",\"time\":\"2026-11-07T22:56:40Z\"}"
+      },
+      {
+        "line_number": 748,
+        "line": "{\"ClientAddr\":\"172.18.0.1:36678\",\"DownstreamContentSize\":44,\"DownstreamStatus\":200,\"Duration\":90476157,\"Overhead\":138103,\"RequestMethod\":\"PUT\",\"RequestPath\":\"/artifactory/ui/users/admin\",\"ServiceAddr\":\"localhost:8081\",\"SpanId\":\"d2030fc7cbcd71d3\",\"StartUTC\":\"2026-11-07T22:56:40.457779397Z\",\"TraceId\":\"9a7fa41e300b1facef04a09d496159b7\",\"level\":\"info\",\"msg\":\"\",\"request_User-Agent\":\"art-a-research/secure-admin-ui\",\"time\":\"2026-11-07T22:56:40Z\"}"
+      }
+    ],
+    "router-service.log": [],
+    "router-traefik.log": [],
+    "tomcat/tomcat-access-catalina-2026-11-07.log": [],
+    "tomcat/tomcat-access-localhost-2026-11-07.log": [],
+    "tomcat/tomcat-catalina-2026-11-07.log": [],
+    "tomcat/tomcat-localhost-2026-11-07.log": [],
+    "topology-derby.log": [],
+    "topology-metrics.log": [],
+    "topology-request-out.log": [],
+    "topology-request.log": [],
+    "topology-service.log": []
+  }
+}

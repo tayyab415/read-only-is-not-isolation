@@ -1,0 +1,6 @@
+{"stagger_s": 0.2,
+ "agents": {
+  "agent1": [{"cmd": "echo hello; id -u"}, {"cmd": "python3 -c 'print(sum(range(10**6)))'"}, {"cmd": "ls /nonexistent"}, {"cmd": "sleep 5", "timeout": 2}],
+  "agent2": [{"cmd": "date +%s.%N; head -c 100000 /dev/urandom | base64 | wc -c"}, {"cmd": "exit 7"}],
+  "agent3": [{"cmd": "hostname; ip -4 -o addr show eth0 | awk '{print $4}'"}]
+ }}

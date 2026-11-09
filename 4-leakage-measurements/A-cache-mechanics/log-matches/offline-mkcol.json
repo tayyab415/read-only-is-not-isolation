@@ -1,0 +1,106 @@
+{
+  "request_id": "offline-mkcol",
+  "server_trace_ids": [
+    "7131e3397fc5bde20bbc647d3cf1d655"
+  ],
+  "logs": {
+    "access-audit.log": [],
+    "access-metrics.log": [],
+    "access-metrics_events.log": [],
+    "access-request-out.log": [],
+    "access-request.log": [],
+    "access-security-audit.log": [],
+    "access-service.log": [],
+    "access-thread-dump.log": [],
+    "artifactory-access.log": [],
+    "artifactory-binarystore.log": [],
+    "artifactory-cleanup-audit.log": [],
+    "artifactory-conan-v2-migration.log": [],
+    "artifactory-event.log": [],
+    "artifactory-federation-metrics.log": [],
+    "artifactory-federation-metrics_events.log": [],
+    "artifactory-import-export.log": [],
+    "artifactory-metrics.log": [],
+    "artifactory-metrics_events.log": [],
+    "artifactory-path-checksum-migration.log": [],
+    "artifactory-request-out.log": [],
+    "artifactory-request-trace.log": [],
+    "artifactory-request.log": [
+      {
+        "line_number": 487,
+        "line": "2026-11-07T23:02:37.623Z|7131e3397fc5bde20bbc647d3cf1d655|172.18.0.1|a-cache|MKCOL|/github-remote-cache/zz_A_offline|201|-1|0|10|art-a-research/offline-mkcol"
+      }
+    ],
+    "artifactory-service-federation.log": [],
+    "artifactory-service.log": [
+      {
+        "line_number": 3083,
+        "line": "2026-11-07T23:02:37.615Z [jfrt ] [INFO ] [7131e3397fc5bde20bbc647d3cf1d655] [r.s.RepositoryServiceImpl:4191] [http-nio-8081-exec-9] - Rebuild release bundle repositories took: 0ms"
+      },
+      {
+        "line_number": 3084,
+        "line": "2026-11-07T23:02:37.615Z [jfrt ] [INFO ] [7131e3397fc5bde20bbc647d3cf1d655] [r.s.RepositoryServiceImpl:4196] [http-nio-8081-exec-9] - Rebuild all repo keys cache took: 0ms"
+      },
+      {
+        "line_number": 3085,
+        "line": "2026-11-07T23:02:37.616Z [jfrt ] [INFO ] [7131e3397fc5bde20bbc647d3cf1d655] [r.s.RepositoryServiceImpl:4198] [http-nio-8081-exec-9] - Rebuild repo type repositories map took: 0ms"
+      },
+      {
+        "line_number": 3086,
+        "line": "2026-11-07T23:02:37.616Z [jfrt ] [INFO ] [7131e3397fc5bde20bbc647d3cf1d655] [r.s.RepositoryServiceImpl:2345] [http-nio-8081-exec-9] - Rebuilt repositories cache in 2 ms"
+      }
+    ],
+    "artifactory-sha256-migration.log": [],
+    "artifactory-shadow.log": [],
+    "artifactory-storage-request-out.log": [],
+    "artifactory-traffic-v2.log": [],
+    "artifactory-traffic-v3.log": [],
+    "artifactory-traffic.1794091779163.log": [],
+    "artifactory-xray-traffic.1794091779189.log": [],
+    "derby.log": [],
+    "dummy.log": [],
+    "event-metrics.log": [],
+    "event-request.log": [],
+    "event-service.log": [],
+    "event-webhook-request-out.log": [],
+    "frontend-metrics-events.log": [],
+    "frontend-metrics.log": [],
+    "frontend-request.log": [],
+    "frontend-service.log": [],
+    "jfbus-ack-events.log": [],
+    "jfbus-consume-events.log": [],
+    "jfbus-publish-events.log": [],
+    "jfbus-receive-polling.log": [],
+    "jfbus-request.log": [],
+    "jfbus-service.log": [],
+    "jfconfig-metrics.log": [],
+    "jfconfig-request-out.log": [],
+    "jfconfig-request.log": [],
+    "jfconfig-service.log": [],
+    "metadata-metrics.log": [],
+    "metadata-request.log": [],
+    "metadata-service.log": [],
+    "metadata-traffic.log": [],
+    "observability-metrics.log": [],
+    "observability-request-out.log": [],
+    "observability-request.log": [],
+    "observability-service.log": [],
+    "router-request.log": [
+      {
+        "line_number": 1605,
+        "line": "{\"ClientAddr\":\"172.18.0.1:52660\",\"DownstreamContentSize\":0,\"DownstreamStatus\":201,\"Duration\":10573943,\"Overhead\":111392,\"RequestMethod\":\"MKCOL\",\"RequestPath\":\"/artifactory/github-remote-cache/zz_A_offline\",\"ServiceAddr\":\"localhost:8081\",\"SpanId\":\"517be77d251a5113\",\"StartUTC\":\"2026-11-07T23:02:37.612834727Z\",\"TraceId\":\"7131e3397fc5bde20bbc647d3cf1d655\",\"level\":\"info\",\"msg\":\"\",\"request_User-Agent\":\"art-a-research/offline-mkcol\",\"time\":\"2026-11-07T23:02:37Z\"}"
+      }
+    ],
+    "router-service.log": [],
+    "router-traefik.log": [],
+    "tomcat/tomcat-access-catalina-2026-11-07.log": [],
+    "tomcat/tomcat-access-localhost-2026-11-07.log": [],
+    "tomcat/tomcat-catalina-2026-11-07.log": [],
+    "tomcat/tomcat-localhost-2026-11-07.log": [],
+    "topology-derby.log": [],
+    "topology-metrics.log": [],
+    "topology-request-out.log": [],
+    "topology-request.log": [],
+    "topology-service.log": []
+  }
+}

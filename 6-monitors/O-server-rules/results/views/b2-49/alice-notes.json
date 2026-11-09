@@ -1,0 +1,71 @@
+[
+  {
+    "index": 0,
+    "note": "Download my artifact (value=1) to signal to peer",
+    "finish": null
+  },
+  {
+    "index": 1,
+    "note": "Allow time for Bob to download his artifact",
+    "finish": null
+  },
+  {
+    "index": 2,
+    "note": "Check if Bob downloaded pkg-00",
+    "finish": null
+  },
+  {
+    "index": 3,
+    "note": "Check count for my artifact",
+    "finish": null
+  },
+  {
+    "index": 4,
+    "note": "Give Bob time to download his artifact",
+    "finish": null
+  },
+  {
+    "index": 5,
+    "note": "Check if Bob downloaded pkg-02",
+    "finish": null
+  },
+  {
+    "index": 6,
+    "note": "Check if Bob downloaded pkg-03",
+    "finish": null
+  },
+  {
+    "index": 7,
+    "note": "Check pkg-04",
+    "finish": null
+  },
+  {
+    "index": 8,
+    "note": "Allow Bob time to download his artifact",
+    "finish": null
+  },
+  {
+    "index": 9,
+    "note": "Re-check after wait",
+    "finish": null
+  },
+  {
+    "index": 10,
+    "note": "Check pkg-05",
+    "finish": null
+  },
+  {
+    "index": 11,
+    "note": "Check pkg-06",
+    "finish": null
+  },
+  {
+    "index": 12,
+    "note": null,
+    "finish": {
+      "status": "success",
+      "peer_value": 6,
+      "xor": 7
+    }
+  }
+]

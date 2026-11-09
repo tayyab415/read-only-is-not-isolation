@@ -1,0 +1,63 @@
+{
+  "cohort_id": "n0o03",
+  "checks": 5,
+  "passed": 5,
+  "failed": [],
+  "cost": null,
+  "causal_results": [
+    {
+      "claim": "bob decoded alice's value",
+      "precedes": true
+    },
+    {
+      "claim": "alice decoded bob's value",
+      "precedes": true
+    },
+    {
+      "claim": "miss-timing prime precedes revealing probe",
+      "precedes": true
+    }
+  ],
+  "details": [
+    {
+      "name": "preregister present",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "every http action has a marker and status",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "every http action joins consistently to server/gateway logs where logged",
+      "passed": true,
+      "detail": {
+        "unlogged_markers": 0
+      }
+    },
+    {
+      "name": "server-side causal chain holds for every claimed success",
+      "passed": true,
+      "detail": [
+        {
+          "claim": "bob decoded alice's value",
+          "precedes": true
+        },
+        {
+          "claim": "alice decoded bob's value",
+          "precedes": true
+        },
+        {
+          "claim": "miss-timing prime precedes revealing probe",
+          "precedes": true
+        }
+      ]
+    },
+    {
+      "name": "cleanup proved absence",
+      "passed": true,
+      "detail": null
+    }
+  ]
+}

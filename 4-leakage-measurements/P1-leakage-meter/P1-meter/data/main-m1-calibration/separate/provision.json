@@ -1,0 +1,264 @@
+{
+  "run_id": "m1-separate",
+  "configuration": "separate",
+  "repositories": {
+    "alice": "p1-m1-separate-alice",
+    "bob": "p1-m1-separate-bob"
+  },
+  "users": {
+    "alice": "p1-m1-separate-alice",
+    "bob": "p1-m1-separate-bob",
+    "prefetch": "p1-m1-separate-prefetch"
+  },
+  "negative_cache_period_seconds": 1800,
+  "storage_blocked": true,
+  "prewarm_count": 32,
+  "provision_log": [
+    {
+      "label": "create-user-alice",
+      "method": "POST",
+      "path": "/ui/users",
+      "status": 201
+    },
+    {
+      "label": "create-user-bob",
+      "method": "POST",
+      "path": "/ui/users",
+      "status": 201
+    },
+    {
+      "label": "create-user-prefetch",
+      "method": "POST",
+      "path": "/ui/users",
+      "status": 201
+    },
+    {
+      "label": "create-repo",
+      "method": "POST",
+      "path": "/ui/admin/repositories",
+      "status": 200
+    },
+    {
+      "label": "read-repo",
+      "method": "GET",
+      "path": "/ui/admin/repositories/remote/p1-m1-separate-alice",
+      "status": 200
+    },
+    {
+      "label": "create-permission",
+      "method": "POST",
+      "path": "/ui/permissiontargets",
+      "status": 201
+    },
+    {
+      "label": "create-repo",
+      "method": "POST",
+      "path": "/ui/admin/repositories",
+      "status": 200
+    },
+    {
+      "label": "read-repo",
+      "method": "GET",
+      "path": "/ui/admin/repositories/remote/p1-m1-separate-bob",
+      "status": 200
+    },
+    {
+      "label": "create-permission",
+      "method": "POST",
+      "path": "/ui/permissiontargets",
+      "status": 201
+    },
+    {
+      "label": "prewarm-p1-m1-separate-alice-00",
+      "method": "GET",
+      "path": "/p1-m1-separate-alice/pkg-00.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-m1-separate-alice-01",
+      "method": "GET",
+      "path": "/p1-m1-separate-alice/pkg-01.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-m1-separate-alice-02",
+      "method": "GET",
+      "path": "/p1-m1-separate-alice/pkg-02.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-m1-separate-alice-03",
+      "method": "GET",
+      "path": "/p1-m1-separate-alice/pkg-03.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-m1-separate-alice-04",
+      "method": "GET",
+      "path": "/p1-m1-separate-alice/pkg-04.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-m1-separate-alice-05",
+      "method": "GET",
+      "path": "/p1-m1-separate-alice/pkg-05.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-m1-separate-alice-06",
+      "method": "GET",
+      "path": "/p1-m1-separate-alice/pkg-06.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-m1-separate-alice-07",
+      "method": "GET",
+      "path": "/p1-m1-separate-alice/pkg-07.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-m1-separate-alice-08",
+      "method": "GET",
+      "path": "/p1-m1-separate-alice/pkg-08.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-m1-separate-alice-09",
+      "method": "GET",
+      "path": "/p1-m1-separate-alice/pkg-09.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-m1-separate-alice-10",
+      "method": "GET",
+      "path": "/p1-m1-separate-alice/pkg-10.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-m1-separate-alice-11",
+      "method": "GET",
+      "path": "/p1-m1-separate-alice/pkg-11.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-m1-separate-alice-12",
+      "method": "GET",
+      "path": "/p1-m1-separate-alice/pkg-12.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-m1-separate-alice-13",
+      "method": "GET",
+      "path": "/p1-m1-separate-alice/pkg-13.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-m1-separate-alice-14",
+      "method": "GET",
+      "path": "/p1-m1-separate-alice/pkg-14.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-m1-separate-alice-15",
+      "method": "GET",
+      "path": "/p1-m1-separate-alice/pkg-15.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-m1-separate-bob-00",
+      "method": "GET",
+      "path": "/p1-m1-separate-bob/pkg-00.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-m1-separate-bob-01",
+      "method": "GET",
+      "path": "/p1-m1-separate-bob/pkg-01.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-m1-separate-bob-02",
+      "method": "GET",
+      "path": "/p1-m1-separate-bob/pkg-02.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-m1-separate-bob-03",
+      "method": "GET",
+      "path": "/p1-m1-separate-bob/pkg-03.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-m1-separate-bob-04",
+      "method": "GET",
+      "path": "/p1-m1-separate-bob/pkg-04.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-m1-separate-bob-05",
+      "method": "GET",
+      "path": "/p1-m1-separate-bob/pkg-05.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-m1-separate-bob-06",
+      "method": "GET",
+      "path": "/p1-m1-separate-bob/pkg-06.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-m1-separate-bob-07",
+      "method": "GET",
+      "path": "/p1-m1-separate-bob/pkg-07.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-m1-separate-bob-08",
+      "method": "GET",
+      "path": "/p1-m1-separate-bob/pkg-08.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-m1-separate-bob-09",
+      "method": "GET",
+      "path": "/p1-m1-separate-bob/pkg-09.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-m1-separate-bob-10",
+      "method": "GET",
+      "path": "/p1-m1-separate-bob/pkg-10.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-m1-separate-bob-11",
+      "method": "GET",
+      "path": "/p1-m1-separate-bob/pkg-11.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-m1-separate-bob-12",
+      "method": "GET",
+      "path": "/p1-m1-separate-bob/pkg-12.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-m1-separate-bob-13",
+      "method": "GET",
+      "path": "/p1-m1-separate-bob/pkg-13.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-m1-separate-bob-14",
+      "method": "GET",
+      "path": "/p1-m1-separate-bob/pkg-14.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-m1-separate-bob-15",
+      "method": "GET",
+      "path": "/p1-m1-separate-bob/pkg-15.bin",
+      "status": 200
+    }
+  ]
+}

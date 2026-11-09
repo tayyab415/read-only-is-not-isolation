@@ -1,0 +1,28 @@
+legacy-user-api-oss-gate-retry-2 admin PUT /api/security/users/admin 400
+secure-admin-ui-retry-2 admin PUT /ui/users/admin 200
+secured-admin-version-retry-2 admin GET /api/system/version 200
+Administrator password changed
+default-permissions-legacy-retry-2 admin GET /api/security/permissions 400
+default-permission-anything-retry-2 admin GET /ui/permissiontargets/Anything 200
+default-permission-remote-retry-2 admin GET /ui/permissiontargets/Any%20Remote 200
+existing-a-read-retry-1 admin GET /ui/users/a-read 200
+existing-a-cache-retry-1 admin GET /ui/users/a-cache 200
+existing-a-cache2-retry-1 admin GET /ui/users/a-cache2 200
+create-github-remote-legacy-retry-1 admin PUT /api/repositories/github-remote 400
+existing-repository-ui-retry-1 admin GET /ui/admin/repositories/remote/github-remote 200
+existing-permission-ui admin GET /ui/permissiontargets/a-test 200
+permission-c97b84de admin PUT /ui/permissiontargets 405
+Traceback (most recent call last):
+  File "$LAB_HOME/a/scripts/provision.py", line 63, in <module>
+    permission()
+  File "$LAB_HOME/a/scripts/common.py", line 97, in permission
+    return ok(req("permission-" + uuid.uuid4().hex[:8], "PUT",
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "$LAB_HOME/a/scripts/common.py", line 83, in ok
+    raise RuntimeError("Request failed: " + (r.text[:500] if r is not None else "network"))
+RuntimeError: Request failed: {
+  "errors" : [ {
+    "status" : 405,
+    "message" : "Method Not Allowed"
+  } ]
+}

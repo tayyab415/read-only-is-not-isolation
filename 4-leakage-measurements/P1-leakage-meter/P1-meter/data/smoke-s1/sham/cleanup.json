@@ -1,0 +1,60 @@
+{
+  "run_id": "s1-sham",
+  "removed": [
+    {
+      "name": "p1-s1-sham-alice",
+      "returncode": 0
+    },
+    {
+      "name": "p1-s1-sham-bob",
+      "returncode": 0
+    },
+    {
+      "name": "p1-s1-sham-gateway",
+      "returncode": 0
+    },
+    {
+      "name": "p1-s1-sham-upstream",
+      "returncode": 0
+    },
+    {
+      "name": "p1-s1-sham-dummy-alice",
+      "returncode": 0
+    },
+    {
+      "name": "p1-s1-sham-dummy-bob",
+      "returncode": 0
+    },
+    {
+      "name": "p1-s1-sham-net-services->art-a",
+      "returncode": 0
+    },
+    {
+      "name": "p1-s1-sham-net-alice",
+      "returncode": 0
+    },
+    {
+      "name": "p1-s1-sham-net-bob",
+      "returncode": 0
+    },
+    {
+      "name": "p1-s1-sham-net-services",
+      "returncode": 0
+    },
+    {
+      "name": "p1-s1-sham-net-dummy-alice",
+      "returncode": 0
+    },
+    {
+      "name": "p1-s1-sham-net-dummy-bob",
+      "returncode": 0
+    }
+  ],
+  "containers_readback": [],
+  "networks_readback": [],
+  "art_a_p1_networks": [],
+  "absence_proved": true,
+  "fixtures_left_in_place": {
+    "shared": "p1-s1-sham-shared"
+  }
+}

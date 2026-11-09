@@ -1,0 +1,418 @@
+{
+  "run_id": "p4-s2-immutable",
+  "requests": [
+    {
+      "id": 1,
+      "actor": "alice",
+      "request": {
+        "op": "batch",
+        "id": 1,
+        "actor": "alice",
+        "requests": [
+          {
+            "method": "GET",
+            "path": "/fixture/pkg-01.bin"
+          },
+          {
+            "method": "HEAD",
+            "path": "/fixture/pkg-01.bin"
+          },
+          {
+            "method": "GET",
+            "path": "/fixture/pkg-01.bin",
+            "headers": {
+              "Range": "bytes=0-0"
+            }
+          },
+          {
+            "method": "GET",
+            "path": "/fixture/pkg-01.bin",
+            "headers": {
+              "If-None-Match": "\"deliberately-not-current\""
+            }
+          }
+        ]
+      },
+      "return_utc_ns": 1794181731360905420,
+      "complete": true,
+      "records": [
+        {
+          "method": "GET",
+          "path": "/fixture/pkg-01.bin",
+          "marker": "p1/p4-s2-immutable/a00/alice/r00",
+          "probe": "subject.turn00.r00",
+          "request_headers": {},
+          "scheduled_offset_s": 0.0,
+          "schedule_epoch_utc_ns": 1794181731346084882,
+          "schedule_setup_utc_ns": 1794181731196679366,
+          "start_lag_ms": 0.62473,
+          "start_utc_ns": 1794181731346713062,
+          "status": 200,
+          "headers": [
+            [
+              "Content-Type",
+              "application/octet-stream"
+            ],
+            [
+              "Content-Length",
+              "31"
+            ],
+            [
+              "ETag",
+              "\"85c7795747cf1f3ac1e7d7f53d3faa6b9d9f3dc961aa9b692aaaddb943ace870\""
+            ],
+            [
+              "Cache-Control",
+              "private, max-age=31536000, immutable"
+            ]
+          ],
+          "body_length": 31,
+          "body_sha256": "85c7795747cf1f3ac1e7d7f53d3faa6b9d9f3dc961aa9b692aaaddb943ace870",
+          "body_text": null,
+          "end_utc_ns": 1794181731359165760,
+          "elapsed_ms": 12.453558,
+          "actor": "alice",
+          "target": "gateway"
+        },
+        {
+          "method": "HEAD",
+          "path": "/fixture/pkg-01.bin",
+          "marker": "p1/p4-s2-immutable/a00/alice/r01",
+          "probe": "subject.turn00.r01",
+          "request_headers": {},
+          "scheduled_offset_s": 0.0,
+          "schedule_epoch_utc_ns": 1794181731346084882,
+          "schedule_setup_utc_ns": 1794181731196679366,
+          "start_lag_ms": 0.540964,
+          "start_utc_ns": 1794181731346629406,
+          "status": 200,
+          "headers": [
+            [
+              "Content-Type",
+              "application/octet-stream"
+            ],
+            [
+              "Content-Length",
+              "31"
+            ],
+            [
+              "ETag",
+              "\"85c7795747cf1f3ac1e7d7f53d3faa6b9d9f3dc961aa9b692aaaddb943ace870\""
+            ],
+            [
+              "Cache-Control",
+              "private, max-age=31536000, immutable"
+            ]
+          ],
+          "body_length": 0,
+          "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "body_text": null,
+          "end_utc_ns": 1794181731358746128,
+          "elapsed_ms": 12.117772,
+          "actor": "alice",
+          "target": "gateway"
+        },
+        {
+          "method": "GET",
+          "path": "/fixture/pkg-01.bin",
+          "marker": "p1/p4-s2-immutable/a00/alice/r02",
+          "probe": "subject.turn00.r02",
+          "request_headers": {
+            "Range": "bytes=0-0"
+          },
+          "scheduled_offset_s": 0.0,
+          "schedule_epoch_utc_ns": 1794181731346084882,
+          "schedule_setup_utc_ns": 1794181731196679366,
+          "start_lag_ms": 0.445986,
+          "start_utc_ns": 1794181731346534609,
+          "status": 206,
+          "headers": [
+            [
+              "Content-Type",
+              "application/octet-stream"
+            ],
+            [
+              "Content-Length",
+              "1"
+            ],
+            [
+              "ETag",
+              "\"85c7795747cf1f3ac1e7d7f53d3faa6b9d9f3dc961aa9b692aaaddb943ace870\""
+            ],
+            [
+              "Cache-Control",
+              "private, max-age=31536000, immutable"
+            ],
+            [
+              "Content-Range",
+              "bytes 0-0/31"
+            ]
+          ],
+          "body_length": 1,
+          "body_sha256": "148de9c5a7a44d19e56cd9ae1a554bf67847afb0c58f6e12fa29ac7ddfca9940",
+          "body_text": null,
+          "end_utc_ns": 1794181731359744753,
+          "elapsed_ms": 13.211205,
+          "actor": "alice",
+          "target": "gateway"
+        },
+        {
+          "method": "GET",
+          "path": "/fixture/pkg-01.bin",
+          "marker": "p1/p4-s2-immutable/a00/alice/r03",
+          "probe": "subject.turn00.r03",
+          "request_headers": {
+            "If-None-Match": "\"deliberately-not-current\""
+          },
+          "scheduled_offset_s": 0.0,
+          "schedule_epoch_utc_ns": 1794181731346084882,
+          "schedule_setup_utc_ns": 1794181731196679366,
+          "start_lag_ms": 0.118592,
+          "start_utc_ns": 1794181731346209194,
+          "status": 200,
+          "headers": [
+            [
+              "Content-Type",
+              "application/octet-stream"
+            ],
+            [
+              "Content-Length",
+              "31"
+            ],
+            [
+              "ETag",
+              "\"85c7795747cf1f3ac1e7d7f53d3faa6b9d9f3dc961aa9b692aaaddb943ace870\""
+            ],
+            [
+              "Cache-Control",
+              "private, max-age=31536000, immutable"
+            ]
+          ],
+          "body_length": 31,
+          "body_sha256": "85c7795747cf1f3ac1e7d7f53d3faa6b9d9f3dc961aa9b692aaaddb943ace870",
+          "body_text": null,
+          "end_utc_ns": 1794181731360364050,
+          "elapsed_ms": 14.157866,
+          "actor": "alice",
+          "target": "gateway"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "actor": "bob",
+      "request": {
+        "op": "batch",
+        "id": 2,
+        "actor": "bob",
+        "requests": [
+          {
+            "method": "GET",
+            "path": "/fixture/pkg-01.bin"
+          },
+          {
+            "method": "HEAD",
+            "path": "/fixture/pkg-01.bin"
+          },
+          {
+            "method": "GET",
+            "path": "/fixture/pkg-01.bin",
+            "headers": {
+              "Range": "bytes=0-0"
+            }
+          },
+          {
+            "method": "GET",
+            "path": "/fixture/pkg-01.bin",
+            "headers": {
+              "If-None-Match": "\"deliberately-not-current\""
+            }
+          }
+        ]
+      },
+      "return_utc_ns": 1794181731560671671,
+      "complete": true,
+      "records": [
+        {
+          "method": "GET",
+          "path": "/fixture/pkg-01.bin",
+          "marker": "p1/p4-s2-immutable/a00/bob/r00",
+          "probe": "subject.turn00.r00",
+          "request_headers": {},
+          "scheduled_offset_s": 0.0,
+          "schedule_epoch_utc_ns": 1794181731546121762,
+          "schedule_setup_utc_ns": 1794181731396686604,
+          "start_lag_ms": 0.62308,
+          "start_utc_ns": 1794181731546749172,
+          "status": 200,
+          "headers": [
+            [
+              "Content-Type",
+              "application/octet-stream"
+            ],
+            [
+              "Content-Length",
+              "31"
+            ],
+            [
+              "ETag",
+              "\"85c7795747cf1f3ac1e7d7f53d3faa6b9d9f3dc961aa9b692aaaddb943ace870\""
+            ],
+            [
+              "Cache-Control",
+              "private, max-age=31536000, immutable"
+            ]
+          ],
+          "body_length": 31,
+          "body_sha256": "85c7795747cf1f3ac1e7d7f53d3faa6b9d9f3dc961aa9b692aaaddb943ace870",
+          "body_text": null,
+          "end_utc_ns": 1794181731559385484,
+          "elapsed_ms": 12.637502,
+          "actor": "bob",
+          "target": "gateway"
+        },
+        {
+          "method": "HEAD",
+          "path": "/fixture/pkg-01.bin",
+          "marker": "p1/p4-s2-immutable/a00/bob/r01",
+          "probe": "subject.turn00.r01",
+          "request_headers": {},
+          "scheduled_offset_s": 0.0,
+          "schedule_epoch_utc_ns": 1794181731546121762,
+          "schedule_setup_utc_ns": 1794181731396686604,
+          "start_lag_ms": 0.49099,
+          "start_utc_ns": 1794181731546617192,
+          "status": 200,
+          "headers": [
+            [
+              "Content-Type",
+              "application/octet-stream"
+            ],
+            [
+              "Content-Length",
+              "31"
+            ],
+            [
+              "ETag",
+              "\"85c7795747cf1f3ac1e7d7f53d3faa6b9d9f3dc961aa9b692aaaddb943ace870\""
+            ],
+            [
+              "Cache-Control",
+              "private, max-age=31536000, immutable"
+            ]
+          ],
+          "body_length": 0,
+          "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "body_text": null,
+          "end_utc_ns": 1794181731559702018,
+          "elapsed_ms": 13.085976,
+          "actor": "bob",
+          "target": "gateway"
+        },
+        {
+          "method": "GET",
+          "path": "/fixture/pkg-01.bin",
+          "marker": "p1/p4-s2-immutable/a00/bob/r02",
+          "probe": "subject.turn00.r02",
+          "request_headers": {
+            "Range": "bytes=0-0"
+          },
+          "scheduled_offset_s": 0.0,
+          "schedule_epoch_utc_ns": 1794181731546121762,
+          "schedule_setup_utc_ns": 1794181731396686604,
+          "start_lag_ms": 0.333878,
+          "start_utc_ns": 1794181731546460510,
+          "status": 206,
+          "headers": [
+            [
+              "Content-Type",
+              "application/octet-stream"
+            ],
+            [
+              "Content-Length",
+              "1"
+            ],
+            [
+              "ETag",
+              "\"85c7795747cf1f3ac1e7d7f53d3faa6b9d9f3dc961aa9b692aaaddb943ace870\""
+            ],
+            [
+              "Cache-Control",
+              "private, max-age=31536000, immutable"
+            ],
+            [
+              "Content-Range",
+              "bytes 0-0/31"
+            ]
+          ],
+          "body_length": 1,
+          "body_sha256": "148de9c5a7a44d19e56cd9ae1a554bf67847afb0c58f6e12fa29ac7ddfca9940",
+          "body_text": null,
+          "end_utc_ns": 1794181731559059089,
+          "elapsed_ms": 12.600449,
+          "actor": "bob",
+          "target": "gateway"
+        },
+        {
+          "method": "GET",
+          "path": "/fixture/pkg-01.bin",
+          "marker": "p1/p4-s2-immutable/a00/bob/r03",
+          "probe": "subject.turn00.r03",
+          "request_headers": {
+            "If-None-Match": "\"deliberately-not-current\""
+          },
+          "scheduled_offset_s": 0.0,
+          "schedule_epoch_utc_ns": 1794181731546121762,
+          "schedule_setup_utc_ns": 1794181731396686604,
+          "start_lag_ms": 0.085859,
+          "start_utc_ns": 1794181731546212472,
+          "status": 200,
+          "headers": [
+            [
+              "Content-Type",
+              "application/octet-stream"
+            ],
+            [
+              "Content-Length",
+              "31"
+            ],
+            [
+              "ETag",
+              "\"85c7795747cf1f3ac1e7d7f53d3faa6b9d9f3dc961aa9b692aaaddb943ace870\""
+            ],
+            [
+              "Cache-Control",
+              "private, max-age=31536000, immutable"
+            ]
+          ],
+          "body_length": 31,
+          "body_sha256": "85c7795747cf1f3ac1e7d7f53d3faa6b9d9f3dc961aa9b692aaaddb943ace870",
+          "body_text": null,
+          "end_utc_ns": 1794181731560192155,
+          "elapsed_ms": 13.981224,
+          "actor": "bob",
+          "target": "gateway"
+        }
+      ]
+    }
+  ],
+  "closed": {
+    "closed": true,
+    "status": {
+      "complete": true,
+      "run_id": "p4-s2-immutable",
+      "scripted": true,
+      "source_freeze_sha256": "e7a83ecdc2d725ccc6fbf9663f5aa7bc53eb1dd82da54039f4554902763aabbc",
+      "cleanup_absence_proved": true,
+      "batches": 2,
+      "http_requests": 8,
+      "file_sha256": {
+        "provision.json": "a228c3c93f6f56c998c93de48d1f32e92ef23185e8e92bd94b785d80c032ecaa",
+        "server-log-lines.txt": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "cleanup.json": "e84475af7fa2fa1a7cbee55acddf28d473627547298a28c0ad50f4227fa9141f",
+        "server.json": "77f4f56c55dfbd62da60a811030dae4aa0bb0410ecee822ed514dbcaac162185",
+        "actions.jsonl": "b876a38e0e09357476ad5697c89882c3454b6a084972fcde15831c75a51cca03"
+      }
+    }
+  }
+}

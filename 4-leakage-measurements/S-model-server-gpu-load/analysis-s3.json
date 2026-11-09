@@ -1,0 +1,137 @@
+{
+ "T50": {
+  "period_s": 0.05,
+  "n": 600,
+  "failed_probes": 0,
+  "accuracy": 0.7783333333333333,
+  "wilson95": [
+   0.7433855124215509,
+   0.809739807291977
+  ],
+  "binom_p": 1.8543574206996985e-44,
+  "auc": 0.7725666666666666,
+  "median_ms": {
+   "0": 46.653131,
+   "1": 119.37755200000001
+  },
+  "bits_per_symbol_point": 0.23680086844756976,
+  "bits_per_symbol_lower": 0.17840550615400708,
+  "bits_per_second_point": 4.736017368951395,
+  "bits_per_second_lower": 3.5681101230801415,
+  "audit": {
+   "trials": 600,
+   "receiver_once": 600,
+   "sender_as_expected": 600,
+   "tenant_ok": 600,
+   "salted": 600
+  }
+ },
+ "T100": {
+  "period_s": 0.1,
+  "n": 600,
+  "failed_probes": 0,
+  "accuracy": 1.0,
+  "wilson95": [
+   0.9936382988865771,
+   0.9999999999999998
+  ],
+  "binom_p": 4.819839730205768e-181,
+  "auc": 1.0,
+  "median_ms": {
+   "0": 24.6170455,
+   "1": 64.572164
+  },
+  "bits_per_symbol_point": 1.0,
+  "bits_per_symbol_lower": 0.9444339253686902,
+  "bits_per_second_point": 10.0,
+  "bits_per_second_lower": 9.444339253686902,
+  "audit": {
+   "trials": 600,
+   "receiver_once": 600,
+   "sender_as_expected": 600,
+   "tenant_ok": 600,
+   "salted": 600
+  }
+ },
+ "T200": {
+  "period_s": 0.2,
+  "n": 600,
+  "failed_probes": 0,
+  "accuracy": 1.0,
+  "wilson95": [
+   0.9936382988865771,
+   0.9999999999999998
+  ],
+  "binom_p": 4.819839730205768e-181,
+  "auc": 1.0,
+  "median_ms": {
+   "0": 24.5716155,
+   "1": 63.8477825
+  },
+  "bits_per_symbol_point": 1.0,
+  "bits_per_symbol_lower": 0.9444339253686902,
+  "bits_per_second_point": 5.0,
+  "bits_per_second_lower": 4.722169626843451,
+  "audit": {
+   "trials": 600,
+   "receiver_once": 600,
+   "sender_as_expected": 600,
+   "tenant_ok": 600,
+   "salted": 600
+  }
+ },
+ "T400": {
+  "period_s": 0.4,
+  "n": 600,
+  "failed_probes": 0,
+  "accuracy": 1.0,
+  "wilson95": [
+   0.9936382988865771,
+   0.9999999999999998
+  ],
+  "binom_p": 4.819839730205768e-181,
+  "auc": 1.0,
+  "median_ms": {
+   "0": 24.816357,
+   "1": 64.3087075
+  },
+  "bits_per_symbol_point": 1.0,
+  "bits_per_symbol_lower": 0.9444339253686902,
+  "bits_per_second_point": 2.5,
+  "bits_per_second_lower": 2.3610848134217255,
+  "audit": {
+   "trials": 600,
+   "receiver_once": 600,
+   "sender_as_expected": 600,
+   "tenant_ok": 600,
+   "salted": 600
+  }
+ },
+ "T200_busy": {
+  "period_s": 0.2,
+  "n": 600,
+  "failed_probes": 0,
+  "accuracy": 0.735,
+  "wilson95": [
+   0.6982724107982509,
+   0.7687375896784404
+  ],
+  "binom_p": 1.2987573229559235e-31,
+  "auc": 0.7561777777777777,
+  "median_ms": {
+   "0": 88.0188765,
+   "1": 142.1026155
+  },
+  "bits_per_symbol_point": 0.1658019041392509,
+  "bits_per_symbol_lower": 0.11660754956303343,
+  "bits_per_second_point": 0.8290095206962544,
+  "bits_per_second_lower": 0.5830377478151672,
+  "audit": {
+   "trials": 600,
+   "receiver_once": 600,
+   "sender_as_expected": 600,
+   "tenant_ok": 600,
+   "salted": 600
+  }
+ }
+}

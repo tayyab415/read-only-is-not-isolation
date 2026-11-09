@@ -1,0 +1,29 @@
+{
+  "created_utc": "2026-11-08T23:39:05.666168+00:00",
+  "scope": "Supplemental reservation for the explicitly approved lab2. Frozen P-budget base and shared subject cap remain unchanged.",
+  "instance_id": "i-0de32c76945e63b44",
+  "region": "ap-south-1",
+  "reservation_hours": 16,
+  "all_in_hourly_allowance_usd": "0.20",
+  "lab2_reserved_usd": "3.20",
+  "verified_compute_hourly_usd": "0.1111",
+  "includes": "Compute, 60 GiB gp3 at baseline IOPS/throughput, public IPv4 and contingency. The allowance is conservative and is not a settled invoice.",
+  "price_source": "J-controls/aws-price.json",
+  "price_source_sha256": "8033fb6f7df692e6512f6231f7831ddeae183b05c218575a8f9cf8089e479aa3",
+  "resource_readback_sha256": "d7e333725f168a4b20276c8dc3a6390311629e19e0321c1216e96cc42cb073e5",
+  "instance_metadata_sha256": "fbefcf07b73ec98153066255837c3fee04cd51c4d7debc40ced4e6153490cc02",
+  "canonical_guard_sha256": "2cf6a1681a39ad765d6141c8838b75bee03793f65ace93390847dcdee3157aba",
+  "base_reserved_usd": "28.995980067200",
+  "shared_subject_ceiling_usd": "6",
+  "all_in_project_reserved_usd": "38.195980067200",
+  "authorized_ceiling_usd": "50",
+  "remaining_after_full_reservations_usd": "11.804019932800",
+  "reserve_end_utc": "2026-11-09T15:05:47.759593+00:00",
+  "accounting_rules": [
+    "Retain failed-call reservations; no guard or ledger reset.",
+    "Use this supplemental total before any paid subject call.",
+    "Read back termination and DeleteOnTermination; storage beyond the reserved window needs explicit reconciliation."
+  ],
+  "subject_calls_at_reservation": 0,
+  "invoice_reconciled": false
+}

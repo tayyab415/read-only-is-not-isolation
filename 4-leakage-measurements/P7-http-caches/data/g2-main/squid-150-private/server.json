@@ -1,0 +1,914 @@
+{
+  "run_id": "p7-g2-squid-150-private-hold",
+  "origin_log": [
+    {
+      "ready": true,
+      "stateless": true,
+      "outbound_requests": 0
+    },
+    {
+      "start_utc_ns": 1794183232794709309,
+      "end_utc_ns": 1794183232945027289,
+      "client_ip": "172.21.0.2",
+      "method": "GET",
+      "path": "/missing/150/canary-cache",
+      "marker": "p7/p7-g2-squid-150-private-hold/canary/cache-0",
+      "status": 404,
+      "delay_ms": 150,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794183233662201766,
+      "end_utc_ns": 1794183233662347217,
+      "client_ip": "172.21.0.3",
+      "method": "GET",
+      "path": "/present/canary-functions",
+      "marker": "p7/p7-g2-squid-150-private-hold/canary/function-0",
+      "status": 200,
+      "delay_ms": 0,
+      "body_bytes": 40,
+      "body_sha256": "c9018cc100c3627142237160efe8122117443ffd68f2802b6794cd84c5343449",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794183234058383671,
+      "end_utc_ns": 1794183234058523332,
+      "client_ip": "172.21.0.3",
+      "method": "GET",
+      "path": "/present/canary-functions",
+      "marker": "p7/p7-g2-squid-150-private-hold/canary/function-1",
+      "status": 200,
+      "delay_ms": 0,
+      "body_bytes": 40,
+      "body_sha256": "c9018cc100c3627142237160efe8122117443ffd68f2802b6794cd84c5343449",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": "\"c9018cc100c3627142237160efe8122117443ffd68f2802b6794cd84c5343449\""
+      }
+    },
+    {
+      "start_utc_ns": 1794183234455474025,
+      "end_utc_ns": 1794183234455580063,
+      "client_ip": "172.21.0.3",
+      "method": "HEAD",
+      "path": "/present/canary-functions",
+      "marker": "p7/p7-g2-squid-150-private-hold/canary/function-2",
+      "status": 200,
+      "delay_ms": 0,
+      "body_bytes": 0,
+      "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": "\"c9018cc100c3627142237160efe8122117443ffd68f2802b6794cd84c5343449\""
+      }
+    },
+    {
+      "start_utc_ns": 1794183234850323439,
+      "end_utc_ns": 1794183234850464640,
+      "client_ip": "172.21.0.3",
+      "method": "GET",
+      "path": "/present/canary-functions",
+      "marker": "p7/p7-g2-squid-150-private-hold/canary/function-3",
+      "status": 200,
+      "delay_ms": 0,
+      "body_bytes": 40,
+      "body_sha256": "c9018cc100c3627142237160efe8122117443ffd68f2802b6794cd84c5343449",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": "\"c9018cc100c3627142237160efe8122117443ffd68f2802b6794cd84c5343449\""
+      }
+    },
+    {
+      "start_utc_ns": 1794183235246899234,
+      "end_utc_ns": 1794183235247038634,
+      "client_ip": "172.21.0.3",
+      "method": "GET",
+      "path": "/present/canary-functions",
+      "marker": "p7/p7-g2-squid-150-private-hold/canary/function-4",
+      "status": 200,
+      "delay_ms": 0,
+      "body_bytes": 40,
+      "body_sha256": "c9018cc100c3627142237160efe8122117443ffd68f2802b6794cd84c5343449",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": "\"c9018cc100c3627142237160efe8122117443ffd68f2802b6794cd84c5343449\""
+      }
+    },
+    {
+      "start_utc_ns": 1794183235641742478,
+      "end_utc_ns": 1794183235641860938,
+      "client_ip": "172.21.0.3",
+      "method": "GET",
+      "path": "/present/canary-functions",
+      "marker": "p7/p7-g2-squid-150-private-hold/canary/function-5",
+      "status": 200,
+      "delay_ms": 0,
+      "body_bytes": 40,
+      "body_sha256": "c9018cc100c3627142237160efe8122117443ffd68f2802b6794cd84c5343449",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": "\"c9018cc100c3627142237160efe8122117443ffd68f2802b6794cd84c5343449\""
+      }
+    },
+    {
+      "start_utc_ns": 1794183236396348745,
+      "end_utc_ns": 1794183236546667075,
+      "client_ip": "172.21.0.2",
+      "method": "GET",
+      "path": "/missing/150/g2-squid-150-private-holdout-t000",
+      "marker": "p7/p7-g2-squid-150-private-hold/holdout/t000/alice/sender",
+      "status": 404,
+      "delay_ms": 150,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794183236930929222,
+      "end_utc_ns": 1794183237081248273,
+      "client_ip": "172.21.0.3",
+      "method": "GET",
+      "path": "/missing/150/g2-squid-150-private-holdout-t000",
+      "marker": "p7/p7-g2-squid-150-private-hold/holdout/t000/bob/receiver",
+      "status": 404,
+      "delay_ms": 150,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794183237844597698,
+      "end_utc_ns": 1794183237994871605,
+      "client_ip": "172.21.0.3",
+      "method": "GET",
+      "path": "/missing/150/g2-squid-150-private-holdout-t001",
+      "marker": "p7/p7-g2-squid-150-private-hold/holdout/t001/bob/receiver",
+      "status": 404,
+      "delay_ms": 150,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794183238358205907,
+      "end_utc_ns": 1794183238508589022,
+      "client_ip": "172.21.0.3",
+      "method": "GET",
+      "path": "/missing/150/g2-squid-150-private-holdout-t002",
+      "marker": "p7/p7-g2-squid-150-private-hold/holdout/t002/bob/sender",
+      "status": 404,
+      "delay_ms": 150,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794183238893834093,
+      "end_utc_ns": 1794183239044138772,
+      "client_ip": "172.21.0.2",
+      "method": "GET",
+      "path": "/missing/150/g2-squid-150-private-holdout-t002",
+      "marker": "p7/p7-g2-squid-150-private-hold/holdout/t002/alice/receiver",
+      "status": 404,
+      "delay_ms": 150,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794183239793094414,
+      "end_utc_ns": 1794183239943407573,
+      "client_ip": "172.21.0.2",
+      "method": "GET",
+      "path": "/missing/150/g2-squid-150-private-holdout-t003",
+      "marker": "p7/p7-g2-squid-150-private-hold/holdout/t003/alice/receiver",
+      "status": 404,
+      "delay_ms": 150,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794183240659485299,
+      "end_utc_ns": 1794183240809792778,
+      "client_ip": "172.21.0.3",
+      "method": "GET",
+      "path": "/missing/150/g2-squid-150-private-holdout-t004",
+      "marker": "p7/p7-g2-squid-150-private-hold/holdout/t004/bob/receiver",
+      "status": 404,
+      "delay_ms": 150,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794183241559005929,
+      "end_utc_ns": 1794183241709212101,
+      "client_ip": "172.21.0.3",
+      "method": "GET",
+      "path": "/missing/150/g2-squid-150-private-holdout-t005",
+      "marker": "p7/p7-g2-squid-150-private-hold/holdout/t005/bob/receiver",
+      "status": 404,
+      "delay_ms": 150,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794183242058479084,
+      "end_utc_ns": 1794183242208668294,
+      "client_ip": "172.21.0.3",
+      "method": "GET",
+      "path": "/missing/150/g2-squid-150-private-holdout-t006",
+      "marker": "p7/p7-g2-squid-150-private-hold/holdout/t006/bob/sender",
+      "status": 404,
+      "delay_ms": 150,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794183242592408712,
+      "end_utc_ns": 1794183242742738893,
+      "client_ip": "172.21.0.2",
+      "method": "GET",
+      "path": "/missing/150/g2-squid-150-private-holdout-t006",
+      "marker": "p7/p7-g2-squid-150-private-hold/holdout/t006/alice/receiver",
+      "status": 404,
+      "delay_ms": 150,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794183243133906920,
+      "end_utc_ns": 1794183243284148184,
+      "client_ip": "172.21.0.3",
+      "method": "GET",
+      "path": "/missing/150/g2-squid-150-private-holdout-t007",
+      "marker": "p7/p7-g2-squid-150-private-hold/holdout/t007/bob/sender",
+      "status": 404,
+      "delay_ms": 150,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794183243671026588,
+      "end_utc_ns": 1794183243821223798,
+      "client_ip": "172.21.0.2",
+      "method": "GET",
+      "path": "/missing/150/g2-squid-150-private-holdout-t007",
+      "marker": "p7/p7-g2-squid-150-private-hold/holdout/t007/alice/receiver",
+      "status": 404,
+      "delay_ms": 150,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794183244161366083,
+      "end_utc_ns": 1794183244311689053,
+      "client_ip": "172.21.0.3",
+      "method": "GET",
+      "path": "/missing/150/g2-squid-150-private-holdout-t008",
+      "marker": "p7/p7-g2-squid-150-private-hold/holdout/t008/bob/sender",
+      "status": 404,
+      "delay_ms": 150,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794183244693952310,
+      "end_utc_ns": 1794183244844274009,
+      "client_ip": "172.21.0.2",
+      "method": "GET",
+      "path": "/missing/150/g2-squid-150-private-holdout-t008",
+      "marker": "p7/p7-g2-squid-150-private-hold/holdout/t008/alice/receiver",
+      "status": 404,
+      "delay_ms": 150,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794183245498304102,
+      "end_utc_ns": 1794183245648518704,
+      "client_ip": "172.21.0.2",
+      "method": "GET",
+      "path": "/missing/150/g2-squid-150-private-holdout-t009",
+      "marker": "p7/p7-g2-squid-150-private-hold/holdout/t009/alice/receiver",
+      "status": 404,
+      "delay_ms": 150,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794183246031374585,
+      "end_utc_ns": 1794183246181668293,
+      "client_ip": "172.21.0.3",
+      "method": "GET",
+      "path": "/missing/150/g2-squid-150-private-holdout-t010",
+      "marker": "p7/p7-g2-squid-150-private-hold/holdout/t010/bob/sender",
+      "status": 404,
+      "delay_ms": 150,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794183246564983499,
+      "end_utc_ns": 1794183246715318314,
+      "client_ip": "172.21.0.2",
+      "method": "GET",
+      "path": "/missing/150/g2-squid-150-private-holdout-t010",
+      "marker": "p7/p7-g2-squid-150-private-hold/holdout/t010/alice/receiver",
+      "status": 404,
+      "delay_ms": 150,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794183247059152315,
+      "end_utc_ns": 1794183247209357639,
+      "client_ip": "172.21.0.3",
+      "method": "GET",
+      "path": "/missing/150/g2-squid-150-private-holdout-t011",
+      "marker": "p7/p7-g2-squid-150-private-hold/holdout/t011/bob/sender",
+      "status": 404,
+      "delay_ms": 150,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794183247594592981,
+      "end_utc_ns": 1794183247744920845,
+      "client_ip": "172.21.0.2",
+      "method": "GET",
+      "path": "/missing/150/g2-squid-150-private-holdout-t011",
+      "marker": "p7/p7-g2-squid-150-private-hold/holdout/t011/alice/receiver",
+      "status": 404,
+      "delay_ms": 150,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794183248398179753,
+      "end_utc_ns": 1794183248548592413,
+      "client_ip": "172.21.0.2",
+      "method": "GET",
+      "path": "/missing/150/g2-squid-150-private-holdout-t012",
+      "marker": "p7/p7-g2-squid-150-private-hold/holdout/t012/alice/receiver",
+      "status": 404,
+      "delay_ms": 150,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794183249260577433,
+      "end_utc_ns": 1794183249410912527,
+      "client_ip": "172.21.0.3",
+      "method": "GET",
+      "path": "/missing/150/g2-squid-150-private-holdout-t013",
+      "marker": "p7/p7-g2-squid-150-private-hold/holdout/t013/bob/receiver",
+      "status": 404,
+      "delay_ms": 150,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794183250161001849,
+      "end_utc_ns": 1794183250311382436,
+      "client_ip": "172.21.0.3",
+      "method": "GET",
+      "path": "/missing/150/g2-squid-150-private-holdout-t014",
+      "marker": "p7/p7-g2-squid-150-private-hold/holdout/t014/bob/receiver",
+      "status": 404,
+      "delay_ms": 150,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794183250694063386,
+      "end_utc_ns": 1794183250844388600,
+      "client_ip": "172.21.0.2",
+      "method": "GET",
+      "path": "/missing/150/g2-squid-150-private-holdout-t015",
+      "marker": "p7/p7-g2-squid-150-private-hold/holdout/t015/alice/sender",
+      "status": 404,
+      "delay_ms": 150,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794183251231498122,
+      "end_utc_ns": 1794183251381682455,
+      "client_ip": "172.21.0.3",
+      "method": "GET",
+      "path": "/missing/150/g2-squid-150-private-holdout-t015",
+      "marker": "p7/p7-g2-squid-150-private-hold/holdout/t015/bob/receiver",
+      "status": 404,
+      "delay_ms": 150,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794183252137578433,
+      "end_utc_ns": 1794183252287819301,
+      "client_ip": "172.21.0.3",
+      "method": "GET",
+      "path": "/missing/150/g2-squid-150-private-holdout-t016",
+      "marker": "p7/p7-g2-squid-150-private-hold/holdout/t016/bob/receiver",
+      "status": 404,
+      "delay_ms": 150,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794183252658684573,
+      "end_utc_ns": 1794183252809002716,
+      "client_ip": "172.21.0.3",
+      "method": "GET",
+      "path": "/missing/150/g2-squid-150-private-holdout-t017",
+      "marker": "p7/p7-g2-squid-150-private-hold/holdout/t017/bob/sender",
+      "status": 404,
+      "delay_ms": 150,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794183253194850424,
+      "end_utc_ns": 1794183253345164406,
+      "client_ip": "172.21.0.2",
+      "method": "GET",
+      "path": "/missing/150/g2-squid-150-private-holdout-t017",
+      "marker": "p7/p7-g2-squid-150-private-hold/holdout/t017/alice/receiver",
+      "status": 404,
+      "delay_ms": 150,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794183254130393089,
+      "end_utc_ns": 1794183254280660139,
+      "client_ip": "172.21.0.3",
+      "method": "GET",
+      "path": "/missing/150/g2-squid-150-private-holdout-t018",
+      "marker": "p7/p7-g2-squid-150-private-hold/holdout/t018/bob/receiver",
+      "status": 404,
+      "delay_ms": 150,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794183254670360616,
+      "end_utc_ns": 1794183254820673429,
+      "client_ip": "172.21.0.2",
+      "method": "GET",
+      "path": "/missing/150/g2-squid-150-private-holdout-t019",
+      "marker": "p7/p7-g2-squid-150-private-hold/holdout/t019/alice/sender",
+      "status": 404,
+      "delay_ms": 150,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794183255160577336,
+      "end_utc_ns": 1794183255310947993,
+      "client_ip": "172.21.0.3",
+      "method": "GET",
+      "path": "/missing/150/g2-squid-150-private-holdout-t019",
+      "marker": "p7/p7-g2-squid-150-private-hold/holdout/t019/bob/receiver",
+      "status": 404,
+      "delay_ms": 150,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794183255994178803,
+      "end_utc_ns": 1794183256144531169,
+      "client_ip": "172.21.0.2",
+      "method": "GET",
+      "path": "/missing/150/g2-squid-150-private-holdout-t020",
+      "marker": "p7/p7-g2-squid-150-private-hold/holdout/t020/alice/receiver",
+      "status": 404,
+      "delay_ms": 150,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794183256860472606,
+      "end_utc_ns": 1794183257010709874,
+      "client_ip": "172.21.0.3",
+      "method": "GET",
+      "path": "/missing/150/g2-squid-150-private-holdout-t021",
+      "marker": "p7/p7-g2-squid-150-private-hold/holdout/t021/bob/receiver",
+      "status": 404,
+      "delay_ms": 150,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794183257359392889,
+      "end_utc_ns": 1794183257509651247,
+      "client_ip": "172.21.0.3",
+      "method": "GET",
+      "path": "/missing/150/g2-squid-150-private-holdout-t022",
+      "marker": "p7/p7-g2-squid-150-private-hold/holdout/t022/bob/sender",
+      "status": 404,
+      "delay_ms": 150,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794183257892265132,
+      "end_utc_ns": 1794183258042489558,
+      "client_ip": "172.21.0.2",
+      "method": "GET",
+      "path": "/missing/150/g2-squid-150-private-holdout-t022",
+      "marker": "p7/p7-g2-squid-150-private-hold/holdout/t022/alice/receiver",
+      "status": 404,
+      "delay_ms": 150,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794183258393472876,
+      "end_utc_ns": 1794183258543673230,
+      "client_ip": "172.21.0.2",
+      "method": "GET",
+      "path": "/missing/150/g2-squid-150-private-holdout-t023",
+      "marker": "p7/p7-g2-squid-150-private-hold/holdout/t023/alice/sender",
+      "status": 404,
+      "delay_ms": 150,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794183258929852202,
+      "end_utc_ns": 1794183259080236140,
+      "client_ip": "172.21.0.3",
+      "method": "GET",
+      "path": "/missing/150/g2-squid-150-private-holdout-t023",
+      "marker": "p7/p7-g2-squid-150-private-hold/holdout/t023/bob/receiver",
+      "status": 404,
+      "delay_ms": 150,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794183259469886573,
+      "end_utc_ns": 1794183259620093008,
+      "client_ip": "172.21.0.2",
+      "method": "GET",
+      "path": "/missing/150/g2-squid-150-private-holdout-t024",
+      "marker": "p7/p7-g2-squid-150-private-hold/holdout/t024/alice/sender",
+      "status": 404,
+      "delay_ms": 150,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794183259963387699,
+      "end_utc_ns": 1794183260113689021,
+      "client_ip": "172.21.0.3",
+      "method": "GET",
+      "path": "/missing/150/g2-squid-150-private-holdout-t024",
+      "marker": "p7/p7-g2-squid-150-private-hold/holdout/t024/bob/receiver",
+      "status": 404,
+      "delay_ms": 150,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794183260495413339,
+      "end_utc_ns": 1794183260645674257,
+      "client_ip": "172.21.0.2",
+      "method": "GET",
+      "path": "/missing/150/g2-squid-150-private-holdout-t025",
+      "marker": "p7/p7-g2-squid-150-private-hold/holdout/t025/alice/sender",
+      "status": 404,
+      "delay_ms": 150,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794183261030530551,
+      "end_utc_ns": 1794183261180740866,
+      "client_ip": "172.21.0.3",
+      "method": "GET",
+      "path": "/missing/150/g2-squid-150-private-holdout-t025",
+      "marker": "p7/p7-g2-squid-150-private-hold/holdout/t025/bob/receiver",
+      "status": 404,
+      "delay_ms": 150,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794183261893357363,
+      "end_utc_ns": 1794183262043668636,
+      "client_ip": "172.21.0.2",
+      "method": "GET",
+      "path": "/missing/150/g2-squid-150-private-holdout-t026",
+      "marker": "p7/p7-g2-squid-150-private-hold/holdout/t026/alice/receiver",
+      "status": 404,
+      "delay_ms": 150,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794183262698213291,
+      "end_utc_ns": 1794183262848652682,
+      "client_ip": "172.21.0.2",
+      "method": "GET",
+      "path": "/missing/150/g2-squid-150-private-holdout-t027",
+      "marker": "p7/p7-g2-squid-150-private-hold/holdout/t027/alice/receiver",
+      "status": 404,
+      "delay_ms": 150,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794183263595080256,
+      "end_utc_ns": 1794183263745468783,
+      "client_ip": "172.21.0.2",
+      "method": "GET",
+      "path": "/missing/150/g2-squid-150-private-holdout-t028",
+      "marker": "p7/p7-g2-squid-150-private-hold/holdout/t028/alice/receiver",
+      "status": 404,
+      "delay_ms": 150,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794183264495110169,
+      "end_utc_ns": 1794183264645467405,
+      "client_ip": "172.21.0.2",
+      "method": "GET",
+      "path": "/missing/150/g2-squid-150-private-holdout-t029",
+      "marker": "p7/p7-g2-squid-150-private-hold/holdout/t029/alice/receiver",
+      "status": 404,
+      "delay_ms": 150,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794183264991935592,
+      "end_utc_ns": 1794183265142237824,
+      "client_ip": "172.21.0.2",
+      "method": "GET",
+      "path": "/missing/150/g2-squid-150-private-holdout-t030",
+      "marker": "p7/p7-g2-squid-150-private-hold/holdout/t030/alice/sender",
+      "status": 404,
+      "delay_ms": 150,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794183265531385956,
+      "end_utc_ns": 1794183265681778644,
+      "client_ip": "172.21.0.3",
+      "method": "GET",
+      "path": "/missing/150/g2-squid-150-private-holdout-t030",
+      "marker": "p7/p7-g2-squid-150-private-hold/holdout/t030/bob/receiver",
+      "status": 404,
+      "delay_ms": 150,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794183266070387806,
+      "end_utc_ns": 1794183266220634803,
+      "client_ip": "172.21.0.2",
+      "method": "GET",
+      "path": "/missing/150/g2-squid-150-private-holdout-t031",
+      "marker": "p7/p7-g2-squid-150-private-hold/holdout/t031/alice/sender",
+      "status": 404,
+      "delay_ms": 150,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    },
+    {
+      "start_utc_ns": 1794183266557831792,
+      "end_utc_ns": 1794183266708100971,
+      "client_ip": "172.21.0.3",
+      "method": "GET",
+      "path": "/missing/150/g2-squid-150-private-holdout-t031",
+      "marker": "p7/p7-g2-squid-150-private-hold/holdout/t031/bob/receiver",
+      "status": 404,
+      "delay_ms": 150,
+      "body_bytes": 25,
+      "body_sha256": "b2099736ad755dce96805aaecfb20940b9618d2aeb41d1d1448b0dacb284b756",
+      "request_headers": {
+        "Range": null,
+        "If-None-Match": null
+      }
+    }
+  ],
+  "caches": {
+    "p7-g2-squid-150-private-hold-cache-alice": {
+      "access_log": "1794183228.582 172.19.0.1 - error:transaction-end-before-headers 0 NONE_NONE 0 -\n1794183229.903 172.19.0.1 - error:transaction-end-before-headers 0 NONE_NONE 0 -\n1794183232.945 172.19.0.1 GET http://p7-g2-squid-150-private-hold-origin:8000/missing/150/canary-cache 404 TCP_MISS 151 p7/p7-g2-squid-150-private-hold/canary/cache-0\n1794183233.294 172.19.0.1 GET http://p7-g2-squid-150-private-hold-origin:8000/missing/150/canary-cache 404 TCP_NEGATIVE_HIT 0 p7/p7-g2-squid-150-private-hold/canary/cache-1\n1794183236.019 172.21.0.1 GET http://p7-g2-squid-150-private-hold-origin:8000/missing/150/canary-denied 403 TCP_DENIED 0 p7/p7-g2-squid-150-private-hold/canary/unknown-origin\n1794183236.547 172.19.0.1 GET http://p7-g2-squid-150-private-hold-origin:8000/missing/150/g2-squid-150-private-holdout-t000 404 TCP_MISS 151 p7/p7-g2-squid-150-private-hold/holdout/t000/alice/sender\n1794183239.044 172.19.0.1 GET http://p7-g2-squid-150-private-hold-origin:8000/missing/150/g2-squid-150-private-holdout-t002 404 TCP_MISS 151 p7/p7-g2-squid-150-private-hold/holdout/t002/alice/receiver\n1794183239.943 172.19.0.1 GET http://p7-g2-squid-150-private-hold-origin:8000/missing/150/g2-squid-150-private-holdout-t003 404 TCP_MISS 151 p7/p7-g2-squid-150-private-hold/holdout/t003/alice/receiver\n1794183242.743 172.19.0.1 GET http://p7-g2-squid-150-private-hold-origin:8000/missing/150/g2-squid-150-private-holdout-t006 404 TCP_MISS 151 p7/p7-g2-squid-150-private-hold/holdout/t006/alice/receiver\n1794183243.821 172.19.0.1 GET http://p7-g2-squid-150-private-hold-origin:8000/missing/150/g2-squid-150-private-holdout-t007 404 TCP_MISS 151 p7/p7-g2-squid-150-private-hold/holdout/t007/alice/receiver\n1794183244.844 172.19.0.1 GET http://p7-g2-squid-150-private-hold-origin:8000/missing/150/g2-squid-150-private-holdout-t008 404 TCP_MISS 151 p7/p7-g2-squid-150-private-hold/holdout/t008/alice/receiver\n1794183245.648 172.19.0.1 GET http://p7-g2-squid-150-private-hold-origin:8000/missing/150/g2-squid-150-private-holdout-t009 404 TCP_MISS 151 p7/p7-g2-squid-150-private-hold/holdout/t009/alice/receiver\n1794183246.715 172.19.0.1 GET http://p7-g2-squid-150-private-hold-origin:8000/missing/150/g2-squid-150-private-holdout-t010 404 TCP_MISS 151 p7/p7-g2-squid-150-private-hold/holdout/t010/alice/receiver\n1794183247.745 172.19.0.1 GET http://p7-g2-squid-150-private-hold-origin:8000/missing/150/g2-squid-150-private-holdout-t011 404 TCP_MISS 151 p7/p7-g2-squid-150-private-hold/holdout/t011/alice/receiver\n1794183248.549 172.19.0.1 GET http://p7-g2-squid-150-private-hold-origin:8000/missing/150/g2-squid-150-private-holdout-t012 404 TCP_MISS 151 p7/p7-g2-squid-150-private-hold/holdout/t012/alice/receiver\n1794183250.844 172.19.0.1 GET http://p7-g2-squid-150-private-hold-origin:8000/missing/150/g2-squid-150-private-holdout-t015 404 TCP_MISS 151 p7/p7-g2-squid-150-private-hold/holdout/t015/alice/sender\n1794183253.345 172.19.0.1 GET http://p7-g2-squid-150-private-hold-origin:8000/missing/150/g2-squid-150-private-holdout-t017 404 TCP_MISS 151 p7/p7-g2-squid-150-private-hold/holdout/t017/alice/receiver\n1794183254.821 172.19.0.1 GET http://p7-g2-squid-150-private-hold-origin:8000/missing/150/g2-squid-150-private-holdout-t019 404 TCP_MISS 151 p7/p7-g2-squid-150-private-hold/holdout/t019/alice/sender\n1794183256.144 172.19.0.1 GET http://p7-g2-squid-150-private-hold-origin:8000/missing/150/g2-squid-150-private-holdout-t020 404 TCP_MISS 151 p7/p7-g2-squid-150-private-hold/holdout/t020/alice/receiver\n1794183258.042 172.19.0.1 GET http://p7-g2-squid-150-private-hold-origin:8000/missing/150/g2-squid-150-private-holdout-t022 404 TCP_MISS 151 p7/p7-g2-squid-150-private-hold/holdout/t022/alice/receiver\n1794183258.544 172.19.0.1 GET http://p7-g2-squid-150-private-hold-origin:8000/missing/150/g2-squid-150-private-holdout-t023 404 TCP_MISS 151 p7/p7-g2-squid-150-private-hold/holdout/t023/alice/sender\n1794183259.620 172.19.0.1 GET http://p7-g2-squid-150-private-hold-origin:8000/missing/150/g2-squid-150-private-holdout-t024 404 TCP_MISS 151 p7/p7-g2-squid-150-private-hold/holdout/t024/alice/sender\n1794183260.646 172.19.0.1 GET http://p7-g2-squid-150-private-hold-origin:8000/missing/150/g2-squid-150-private-holdout-t025 404 TCP_MISS 151 p7/p7-g2-squid-150-private-hold/holdout/t025/alice/sender\n1794183262.044 172.19.0.1 GET http://p7-g2-squid-150-private-hold-origin:8000/missing/150/g2-squid-150-private-holdout-t026 404 TCP_MISS 151 p7/p7-g2-squid-150-private-hold/holdout/t026/alice/receiver\n1794183262.849 172.19.0.1 GET http://p7-g2-squid-150-private-hold-origin:8000/missing/150/g2-squid-150-private-holdout-t027 404 TCP_MISS 151 p7/p7-g2-squid-150-private-hold/holdout/t027/alice/receiver\n1794183263.746 172.19.0.1 GET http://p7-g2-squid-150-private-hold-origin:8000/missing/150/g2-squid-150-private-holdout-t028 404 TCP_MISS 151 p7/p7-g2-squid-150-private-hold/holdout/t028/alice/receiver\n1794183264.646 172.19.0.1 GET http://p7-g2-squid-150-private-hold-origin:8000/missing/150/g2-squid-150-private-holdout-t029 404 TCP_MISS 151 p7/p7-g2-squid-150-private-hold/holdout/t029/alice/receiver\n1794183265.142 172.19.0.1 GET http://p7-g2-squid-150-private-hold-origin:8000/missing/150/g2-squid-150-private-holdout-t030 404 TCP_MISS 151 p7/p7-g2-squid-150-private-hold/holdout/t030/alice/sender\n1794183266.221 172.19.0.1 GET http://p7-g2-squid-150-private-hold-origin:8000/missing/150/g2-squid-150-private-holdout-t031 404 TCP_MISS 151 p7/p7-g2-squid-150-private-hold/holdout/t031/alice/sender\n",
+      "store_id_log": null,
+      "native_log": "2026/11/09 00:13:47| Processing Configuration File: /config/cache.conf (depth 0)\n2026/11/09 00:13:47| Created PID file (/tmp/squid.pid)\n2026/11/09 00:13:47 kid1| Processing Configuration File: /config/cache.conf (depth 0)\n2026/11/09 00:13:47 kid1| Set Current Directory to /tmp\n2026/11/09 00:13:47 kid1| Creating missing swap directories\n2026/11/09 00:13:47 kid1| Making directories in /tmp/cache/00\n2026/11/09 00:13:47 kid1| Making directories in /tmp/cache/01\n2026/11/09 00:13:47 kid1| Making directories in /tmp/cache/02\n2026/11/09 00:13:47 kid1| Making directories in /tmp/cache/03\n2026/11/09 00:13:47| Removing PID file (/tmp/squid.pid)\n2026/11/09 00:13:48| Processing Configuration File: /config/cache.conf (depth 0)\n2026/11/09 00:13:48| Created PID file (/tmp/squid.pid)\n2026/11/09 00:13:48| Set Current Directory to /tmp\n2026/11/09 00:13:48| Starting Squid Cache version 7.8 for x86_64-pc-linux-gnu...\n2026/11/09 00:13:48| Service Name: squid\n2026/11/09 00:13:48| Process ID 22\n2026/11/09 00:13:48| Process Roles: master worker\n2026/11/09 00:13:48| With 1024 file descriptors available\n2026/11/09 00:13:48| Initializing IP Cache...\n2026/11/09 00:13:48| DNS IPv6 socket created at [::], FD 8\n2026/11/09 00:13:48| DNS IPv4 socket created at 0.0.0.0, FD 9\n2026/11/09 00:13:48| Adding nameserver 127.0.0.11 from /etc/resolv.conf\n2026/11/09 00:13:48| Adding domain ap-south-1.compute.internal from /etc/resolv.conf\n2026/11/09 00:13:48| Adding ndots 1 from /etc/resolv.conf\n2026/11/09 00:13:48| Logfile: opening log stdio:/tmp/cache-access.txt\n2026/11/09 00:13:48| WARNING: no_suid: setuid(0): (1) Operation not permitted\n2026/11/09 00:13:48| Unlinkd pipe opened on FD 14\n2026/11/09 00:13:48| Store logging disabled\n2026/11/09 00:13:48| Swap maxSize 16384 + 4096 KB, estimated 1575 objects\n2026/11/09 00:13:48| Target number of buckets: 78\n2026/11/09 00:13:48| Using 8192 Store buckets\n2026/11/09 00:13:48| Max Mem  size: 4096 KB\n2026/11/09 00:13:48| Max Swap size: 16384 KB\n2026/11/09 00:13:48| Rebuilding storage in /tmp/cache (no log)\n2026/11/09 00:13:48| Using Least Load store dir selection\n2026/11/09 00:13:48| Set Current Directory to /tmp\n2026/11/09 00:13:48| Finished loading MIME types and icons.\n2026/11/09 00:13:48| HTCP Disabled.\n2026/11/09 00:13:48| Squid plugin modules loaded: 0\n2026/11/09 00:13:48| Adaptation support is off.\n2026/11/09 00:13:48| Accepting HTTP Socket connections at conn3 local=[::]:8000 remote=[::] FD 16 flags=9\n    listening port: 8000\n2026/11/09 00:13:48| Done scanning /tmp/cache dir (0 entries)\n2026/11/09 00:13:48| Finished rebuilding storage from disk.\n          0 Entries scanned\n          0 Invalid entries\n          0 With invalid flags\n          0 Objects loaded\n          0 Objects expired\n          0 Objects canceled\n          0 Duplicate URLs purged\n          0 Swapfile clashes avoided\n    Took 0.01 seconds (0.00 objects/sec).\n2026/11/09 00:13:48| Beginning Validation Procedure\n2026/11/09 00:13:48| Completed Validation Procedure\n    Validated 0 Entries\n    store_swap_size = 0.00 KB\n2026/11/09 00:13:49| storeLateRelease: released 0 objects\n2026/11/09 00:14:28| Preparing for shutdown after 27 requests\n2026/11/09 00:14:28| Waiting 0 seconds for active connections to finish\n2026/11/09 00:14:28| Closing HTTP(S) port [::]:8000\n    listening port: 8000\n2026/11/09 00:14:30| Shutting down...\n2026/11/09 00:14:30| Closing unlinkd pipe on FD 14\n2026/11/09 00:14:30| storeDirWriteCleanLogs: Starting...\n2026/11/09 00:14:30|   Finished.  Wrote 25 entries.\n2026/11/09 00:14:30|   Took 0.00 seconds (105485.23 entries/sec).\nCPU Usage: 0.065 seconds = 0.037 user + 0.029 sys\nMaximum Resident Size: 62240 KB\nPage faults with physical i/o: 0\n2026/11/09 00:14:30| Logfile: closing log stdio:/tmp/cache-access.txt\n2026/11/09 00:14:30| Open FD UNSTARTED     0 stdin\n2026/11/09 00:14:30| Open FD UNSTARTED     1 stdout\n2026/11/09 00:14:30| Open FD UNSTARTED     2 stderr\n2026/11/09 00:14:30| Squid Cache (Version 7.8): Exiting normally.\n2026/11/09 00:14:30| Removing PID file (/tmp/squid.pid)\n",
+      "cache_inventory": {
+        "files": 27,
+        "file_bytes": 11151,
+        "allocated_blocks_bytes": 106496,
+        "method": "Private cache-directory inventory after native cache stop; not peak storage."
+      }
+    },
+    "p7-g2-squid-150-private-hold-cache-bob": {
+      "access_log": "1794183229.465 172.20.0.1 - error:transaction-end-before-headers 0 NONE_NONE 0 -\n1794183230.136 172.20.0.1 - error:transaction-end-before-headers 0 NONE_NONE 0 -\n1794183233.662 172.20.0.1 GET http://p7-g2-squid-150-private-hold-origin:8000/present/canary-functions 200 TCP_MISS 1 p7/p7-g2-squid-150-private-hold/canary/function-0\n1794183234.058 172.20.0.1 GET http://p7-g2-squid-150-private-hold-origin:8000/present/canary-functions 200 TCP_REFRESH_MODIFIED 0 p7/p7-g2-squid-150-private-hold/canary/function-1\n1794183234.455 172.20.0.1 HEAD http://p7-g2-squid-150-private-hold-origin:8000/present/canary-functions 200 TCP_REFRESH_MODIFIED 0 p7/p7-g2-squid-150-private-hold/canary/function-2\n1794183234.850 172.20.0.1 GET http://p7-g2-squid-150-private-hold-origin:8000/present/canary-functions 200 TCP_MISS 0 p7/p7-g2-squid-150-private-hold/canary/function-3\n1794183235.247 172.20.0.1 GET http://p7-g2-squid-150-private-hold-origin:8000/present/canary-functions 206 TCP_REFRESH_MODIFIED 1 p7/p7-g2-squid-150-private-hold/canary/function-4\n1794183235.642 172.20.0.1 GET http://p7-g2-squid-150-private-hold-origin:8000/present/canary-functions 200 TCP_REFRESH_MODIFIED 1 p7/p7-g2-squid-150-private-hold/canary/function-5\n1794183237.081 172.20.0.1 GET http://p7-g2-squid-150-private-hold-origin:8000/missing/150/g2-squid-150-private-holdout-t000 404 TCP_MISS 151 p7/p7-g2-squid-150-private-hold/holdout/t000/bob/receiver\n1794183237.995 172.20.0.1 GET http://p7-g2-squid-150-private-hold-origin:8000/missing/150/g2-squid-150-private-holdout-t001 404 TCP_MISS 151 p7/p7-g2-squid-150-private-hold/holdout/t001/bob/receiver\n1794183238.509 172.20.0.1 GET http://p7-g2-squid-150-private-hold-origin:8000/missing/150/g2-squid-150-private-holdout-t002 404 TCP_MISS 151 p7/p7-g2-squid-150-private-hold/holdout/t002/bob/sender\n1794183240.810 172.20.0.1 GET http://p7-g2-squid-150-private-hold-origin:8000/missing/150/g2-squid-150-private-holdout-t004 404 TCP_MISS 151 p7/p7-g2-squid-150-private-hold/holdout/t004/bob/receiver\n1794183241.709 172.20.0.1 GET http://p7-g2-squid-150-private-hold-origin:8000/missing/150/g2-squid-150-private-holdout-t005 404 TCP_MISS 151 p7/p7-g2-squid-150-private-hold/holdout/t005/bob/receiver\n1794183242.208 172.20.0.1 GET http://p7-g2-squid-150-private-hold-origin:8000/missing/150/g2-squid-150-private-holdout-t006 404 TCP_MISS 151 p7/p7-g2-squid-150-private-hold/holdout/t006/bob/sender\n1794183243.284 172.20.0.1 GET http://p7-g2-squid-150-private-hold-origin:8000/missing/150/g2-squid-150-private-holdout-t007 404 TCP_MISS 151 p7/p7-g2-squid-150-private-hold/holdout/t007/bob/sender\n1794183244.312 172.20.0.1 GET http://p7-g2-squid-150-private-hold-origin:8000/missing/150/g2-squid-150-private-holdout-t008 404 TCP_MISS 151 p7/p7-g2-squid-150-private-hold/holdout/t008/bob/sender\n1794183246.182 172.20.0.1 GET http://p7-g2-squid-150-private-hold-origin:8000/missing/150/g2-squid-150-private-holdout-t010 404 TCP_MISS 151 p7/p7-g2-squid-150-private-hold/holdout/t010/bob/sender\n1794183247.209 172.20.0.1 GET http://p7-g2-squid-150-private-hold-origin:8000/missing/150/g2-squid-150-private-holdout-t011 404 TCP_MISS 151 p7/p7-g2-squid-150-private-hold/holdout/t011/bob/sender\n1794183249.411 172.20.0.1 GET http://p7-g2-squid-150-private-hold-origin:8000/missing/150/g2-squid-150-private-holdout-t013 404 TCP_MISS 151 p7/p7-g2-squid-150-private-hold/holdout/t013/bob/receiver\n1794183250.311 172.20.0.1 GET http://p7-g2-squid-150-private-hold-origin:8000/missing/150/g2-squid-150-private-holdout-t014 404 TCP_MISS 151 p7/p7-g2-squid-150-private-hold/holdout/t014/bob/receiver\n1794183251.381 172.20.0.1 GET http://p7-g2-squid-150-private-hold-origin:8000/missing/150/g2-squid-150-private-holdout-t015 404 TCP_MISS 151 p7/p7-g2-squid-150-private-hold/holdout/t015/bob/receiver\n1794183252.288 172.20.0.1 GET http://p7-g2-squid-150-private-hold-origin:8000/missing/150/g2-squid-150-private-holdout-t016 404 TCP_MISS 151 p7/p7-g2-squid-150-private-hold/holdout/t016/bob/receiver\n1794183252.809 172.20.0.1 GET http://p7-g2-squid-150-private-hold-origin:8000/missing/150/g2-squid-150-private-holdout-t017 404 TCP_MISS 151 p7/p7-g2-squid-150-private-hold/holdout/t017/bob/sender\n1794183254.281 172.20.0.1 GET http://p7-g2-squid-150-private-hold-origin:8000/missing/150/g2-squid-150-private-holdout-t018 404 TCP_MISS 151 p7/p7-g2-squid-150-private-hold/holdout/t018/bob/receiver\n1794183255.311 172.20.0.1 GET http://p7-g2-squid-150-private-hold-origin:8000/missing/150/g2-squid-150-private-holdout-t019 404 TCP_MISS 151 p7/p7-g2-squid-150-private-hold/holdout/t019/bob/receiver\n1794183257.011 172.20.0.1 GET http://p7-g2-squid-150-private-hold-origin:8000/missing/150/g2-squid-150-private-holdout-t021 404 TCP_MISS 151 p7/p7-g2-squid-150-private-hold/holdout/t021/bob/receiver\n1794183257.510 172.20.0.1 GET http://p7-g2-squid-150-private-hold-origin:8000/missing/150/g2-squid-150-private-holdout-t022 404 TCP_MISS 151 p7/p7-g2-squid-150-private-hold/holdout/t022/bob/sender\n1794183259.080 172.20.0.1 GET http://p7-g2-squid-150-private-hold-origin:8000/missing/150/g2-squid-150-private-holdout-t023 404 TCP_MISS 151 p7/p7-g2-squid-150-private-hold/holdout/t023/bob/receiver\n1794183260.114 172.20.0.1 GET http://p7-g2-squid-150-private-hold-origin:8000/missing/150/g2-squid-150-private-holdout-t024 404 TCP_MISS 151 p7/p7-g2-squid-150-private-hold/holdout/t024/bob/receiver\n1794183261.181 172.20.0.1 GET http://p7-g2-squid-150-private-hold-origin:8000/missing/150/g2-squid-150-private-holdout-t025 404 TCP_MISS 151 p7/p7-g2-squid-150-private-hold/holdout/t025/bob/receiver\n1794183265.682 172.20.0.1 GET http://p7-g2-squid-150-private-hold-origin:8000/missing/150/g2-squid-150-private-holdout-t030 404 TCP_MISS 151 p7/p7-g2-squid-150-private-hold/holdout/t030/bob/receiver\n1794183266.708 172.20.0.1 GET http://p7-g2-squid-150-private-hold-origin:8000/missing/150/g2-squid-150-private-holdout-t031 404 TCP_MISS 151 p7/p7-g2-squid-150-private-hold/holdout/t031/bob/receiver\n",
+      "store_id_log": null,
+      "native_log": "2026/11/09 00:13:48| Processing Configuration File: /config/cache.conf (depth 0)\n2026/11/09 00:13:48| Created PID file (/tmp/squid.pid)\n2026/11/09 00:13:48 kid1| Processing Configuration File: /config/cache.conf (depth 0)\n2026/11/09 00:13:48 kid1| Set Current Directory to /tmp\n2026/11/09 00:13:48 kid1| Creating missing swap directories\n2026/11/09 00:13:48 kid1| Making directories in /tmp/cache/00\n2026/11/09 00:13:48 kid1| Making directories in /tmp/cache/01\n2026/11/09 00:13:48 kid1| Making directories in /tmp/cache/02\n2026/11/09 00:13:48 kid1| Making directories in /tmp/cache/03\n2026/11/09 00:13:48| Removing PID file (/tmp/squid.pid)\n2026/11/09 00:13:48| Processing Configuration File: /config/cache.conf (depth 0)\n2026/11/09 00:13:48| Created PID file (/tmp/squid.pid)\n2026/11/09 00:13:48| Set Current Directory to /tmp\n2026/11/09 00:13:48| Starting Squid Cache version 7.8 for x86_64-pc-linux-gnu...\n2026/11/09 00:13:48| Service Name: squid\n2026/11/09 00:13:48| Process ID 22\n2026/11/09 00:13:48| Process Roles: master worker\n2026/11/09 00:13:48| With 1024 file descriptors available\n2026/11/09 00:13:48| Initializing IP Cache...\n2026/11/09 00:13:48| DNS IPv6 socket created at [::], FD 8\n2026/11/09 00:13:48| DNS IPv4 socket created at 0.0.0.0, FD 9\n2026/11/09 00:13:48| Adding nameserver 127.0.0.11 from /etc/resolv.conf\n2026/11/09 00:13:48| Adding domain ap-south-1.compute.internal from /etc/resolv.conf\n2026/11/09 00:13:48| Adding ndots 1 from /etc/resolv.conf\n2026/11/09 00:13:48| Logfile: opening log stdio:/tmp/cache-access.txt\n2026/11/09 00:13:48| WARNING: no_suid: setuid(0): (1) Operation not permitted\n2026/11/09 00:13:49| Unlinkd pipe opened on FD 14\n2026/11/09 00:13:49| Store logging disabled\n2026/11/09 00:13:49| Swap maxSize 16384 + 4096 KB, estimated 1575 objects\n2026/11/09 00:13:49| Target number of buckets: 78\n2026/11/09 00:13:49| Using 8192 Store buckets\n2026/11/09 00:13:49| Max Mem  size: 4096 KB\n2026/11/09 00:13:49| Max Swap size: 16384 KB\n2026/11/09 00:13:49| Rebuilding storage in /tmp/cache (no log)\n2026/11/09 00:13:49| Using Least Load store dir selection\n2026/11/09 00:13:49| Set Current Directory to /tmp\n2026/11/09 00:13:49| Finished loading MIME types and icons.\n2026/11/09 00:13:49| HTCP Disabled.\n2026/11/09 00:13:49| Squid plugin modules loaded: 0\n2026/11/09 00:13:49| Adaptation support is off.\n2026/11/09 00:13:49| Accepting HTTP Socket connections at conn3 local=[::]:8000 remote=[::] FD 16 flags=9\n    listening port: 8000\n2026/11/09 00:13:49| Done scanning /tmp/cache dir (0 entries)\n2026/11/09 00:13:49| Finished rebuilding storage from disk.\n          0 Entries scanned\n          0 Invalid entries\n          0 With invalid flags\n          0 Objects loaded\n          0 Objects expired\n          0 Objects canceled\n          0 Duplicate URLs purged\n          0 Swapfile clashes avoided\n    Took 0.01 seconds (0.00 objects/sec).\n2026/11/09 00:13:49| Beginning Validation Procedure\n2026/11/09 00:13:49| Completed Validation Procedure\n    Validated 0 Entries\n    store_swap_size = 0.00 KB\n2026/11/09 00:13:50| storeLateRelease: released 0 objects\n2026/11/09 00:14:30| Preparing for shutdown after 30 requests\n2026/11/09 00:14:30| Waiting 0 seconds for active connections to finish\n2026/11/09 00:14:30| Closing HTTP(S) port [::]:8000\n    listening port: 8000\n2026/11/09 00:14:32| Shutting down...\n2026/11/09 00:14:32| Closing unlinkd pipe on FD 14\n2026/11/09 00:14:32| storeDirWriteCleanLogs: Starting...\n2026/11/09 00:14:32|   Finished.  Wrote 25 entries.\n2026/11/09 00:14:32|   Took 0.00 seconds (94696.97 entries/sec).\nCPU Usage: 0.068 seconds = 0.037 user + 0.031 sys\nMaximum Resident Size: 63312 KB\nPage faults with physical i/o: 0\n2026/11/09 00:14:32| Logfile: closing log stdio:/tmp/cache-access.txt\n2026/11/09 00:14:32| Open FD UNSTARTED     0 stdin\n2026/11/09 00:14:32| Open FD UNSTARTED     1 stdout\n2026/11/09 00:14:32| Open FD UNSTARTED     2 stderr\n2026/11/09 00:14:32| Squid Cache (Version 7.8): Exiting normally.\n2026/11/09 00:14:32| Removing PID file (/tmp/squid.pid)\n",
+      "cache_inventory": {
+        "files": 27,
+        "file_bytes": 11279,
+        "allocated_blocks_bytes": 106496,
+        "method": "Private cache-directory inventory after native cache stop; not peak storage."
+      }
+    }
+  }
+}

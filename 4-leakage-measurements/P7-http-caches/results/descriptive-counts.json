@@ -1,0 +1,552 @@
+{
+  "scope": "Descriptive counts from audited records; no additional test, decoder or selection.",
+  "cohorts": [
+    {
+      "product": "nginx",
+      "delay_ms": 20,
+      "arm": "shared",
+      "receiver_trials": 32,
+      "actual_sender_fills": 16,
+      "primary_receiver_origin_lookups": 16,
+      "receiver_origin_lookups_after_fill": 0,
+      "sender_filled_receivers_without_origin_lookup": 16,
+      "ordinary_successful_get_canaries": 3,
+      "ordinary_get_canaries": 3,
+      "conditional_statuses": [
+        304
+      ],
+      "range_status_and_body_bytes": [
+        [
+          206,
+          2
+        ]
+      ],
+      "unknown_origin_denied": 1,
+      "unknown_origin_probes": 1,
+      "client_body_bytes": 1525,
+      "origin_body_bytes": 865,
+      "cohort_seal_sha256": "72f611d037ab509c579f363355565723173d5818c79a23a307749ad7d0e94abd"
+    },
+    {
+      "product": "nginx",
+      "delay_ms": 20,
+      "arm": "tenant-keyed",
+      "receiver_trials": 32,
+      "actual_sender_fills": 16,
+      "primary_receiver_origin_lookups": 32,
+      "receiver_origin_lookups_after_fill": 16,
+      "sender_filled_receivers_without_origin_lookup": 0,
+      "ordinary_successful_get_canaries": 3,
+      "ordinary_get_canaries": 3,
+      "conditional_statuses": [
+        304
+      ],
+      "range_status_and_body_bytes": [
+        [
+          206,
+          2
+        ]
+      ],
+      "unknown_origin_denied": 1,
+      "unknown_origin_probes": 1,
+      "client_body_bytes": 1525,
+      "origin_body_bytes": 1265,
+      "cohort_seal_sha256": "6ce2dd596f9516a50cc5003261cefd15ed8936dc9bbcb8065dd09745ecb289b5"
+    },
+    {
+      "product": "nginx",
+      "delay_ms": 20,
+      "arm": "private",
+      "receiver_trials": 32,
+      "actual_sender_fills": 16,
+      "primary_receiver_origin_lookups": 32,
+      "receiver_origin_lookups_after_fill": 16,
+      "sender_filled_receivers_without_origin_lookup": 0,
+      "ordinary_successful_get_canaries": 3,
+      "ordinary_get_canaries": 3,
+      "conditional_statuses": [
+        304
+      ],
+      "range_status_and_body_bytes": [
+        [
+          206,
+          2
+        ]
+      ],
+      "unknown_origin_denied": 1,
+      "unknown_origin_probes": 1,
+      "client_body_bytes": 1525,
+      "origin_body_bytes": 1265,
+      "cohort_seal_sha256": "76c7cf16feed733cbf1149566e8f56d3f131eec8c97cea26c9e9a0238584fef2"
+    },
+    {
+      "product": "nginx",
+      "delay_ms": 20,
+      "arm": "disabled",
+      "receiver_trials": 32,
+      "actual_sender_fills": 16,
+      "primary_receiver_origin_lookups": 32,
+      "receiver_origin_lookups_after_fill": 16,
+      "sender_filled_receivers_without_origin_lookup": 0,
+      "ordinary_successful_get_canaries": 3,
+      "ordinary_get_canaries": 3,
+      "conditional_statuses": [
+        200
+      ],
+      "range_status_and_body_bytes": [
+        [
+          206,
+          2
+        ]
+      ],
+      "unknown_origin_denied": 1,
+      "unknown_origin_probes": 1,
+      "client_body_bytes": 1565,
+      "origin_body_bytes": 1450,
+      "cohort_seal_sha256": "fa10fd5362f0723b8f524cd17f80e684f91d221428181580386a84ba53feaa02"
+    },
+    {
+      "product": "nginx",
+      "delay_ms": 20,
+      "arm": "no-sender",
+      "receiver_trials": 16,
+      "actual_sender_fills": 0,
+      "primary_receiver_origin_lookups": 16,
+      "receiver_origin_lookups_after_fill": 0,
+      "sender_filled_receivers_without_origin_lookup": 0,
+      "ordinary_successful_get_canaries": 3,
+      "ordinary_get_canaries": 3,
+      "conditional_statuses": [
+        304
+      ],
+      "range_status_and_body_bytes": [
+        [
+          206,
+          2
+        ]
+      ],
+      "unknown_origin_denied": 1,
+      "unknown_origin_probes": 1,
+      "client_body_bytes": 725,
+      "origin_body_bytes": 465,
+      "cohort_seal_sha256": "c8cfb14566f03899ed7b4806746cca0a8fac8f9ff619e928e2d8abba85150271"
+    },
+    {
+      "product": "nginx",
+      "delay_ms": 150,
+      "arm": "shared",
+      "receiver_trials": 32,
+      "actual_sender_fills": 16,
+      "primary_receiver_origin_lookups": 16,
+      "receiver_origin_lookups_after_fill": 0,
+      "sender_filled_receivers_without_origin_lookup": 16,
+      "ordinary_successful_get_canaries": 3,
+      "ordinary_get_canaries": 3,
+      "conditional_statuses": [
+        304
+      ],
+      "range_status_and_body_bytes": [
+        [
+          206,
+          2
+        ]
+      ],
+      "unknown_origin_denied": 1,
+      "unknown_origin_probes": 1,
+      "client_body_bytes": 1525,
+      "origin_body_bytes": 865,
+      "cohort_seal_sha256": "e6cab9f519c2a1bff374d2329189a2c6d2fb73494ca2f1f6979b24cb7ca61900"
+    },
+    {
+      "product": "nginx",
+      "delay_ms": 150,
+      "arm": "tenant-keyed",
+      "receiver_trials": 32,
+      "actual_sender_fills": 16,
+      "primary_receiver_origin_lookups": 32,
+      "receiver_origin_lookups_after_fill": 16,
+      "sender_filled_receivers_without_origin_lookup": 0,
+      "ordinary_successful_get_canaries": 3,
+      "ordinary_get_canaries": 3,
+      "conditional_statuses": [
+        304
+      ],
+      "range_status_and_body_bytes": [
+        [
+          206,
+          2
+        ]
+      ],
+      "unknown_origin_denied": 1,
+      "unknown_origin_probes": 1,
+      "client_body_bytes": 1525,
+      "origin_body_bytes": 1265,
+      "cohort_seal_sha256": "47779d2fbbb2c3e11e70e0dcf6cdc82aba3ec4243ceb3a1228bf48691f788981"
+    },
+    {
+      "product": "nginx",
+      "delay_ms": 150,
+      "arm": "private",
+      "receiver_trials": 32,
+      "actual_sender_fills": 16,
+      "primary_receiver_origin_lookups": 32,
+      "receiver_origin_lookups_after_fill": 16,
+      "sender_filled_receivers_without_origin_lookup": 0,
+      "ordinary_successful_get_canaries": 3,
+      "ordinary_get_canaries": 3,
+      "conditional_statuses": [
+        304
+      ],
+      "range_status_and_body_bytes": [
+        [
+          206,
+          2
+        ]
+      ],
+      "unknown_origin_denied": 1,
+      "unknown_origin_probes": 1,
+      "client_body_bytes": 1525,
+      "origin_body_bytes": 1265,
+      "cohort_seal_sha256": "9421600f26ee7f509ecd50f02b8a8e79f920e8a3e4f9a22d47ed50c1a6693c3f"
+    },
+    {
+      "product": "nginx",
+      "delay_ms": 150,
+      "arm": "disabled",
+      "receiver_trials": 32,
+      "actual_sender_fills": 16,
+      "primary_receiver_origin_lookups": 32,
+      "receiver_origin_lookups_after_fill": 16,
+      "sender_filled_receivers_without_origin_lookup": 0,
+      "ordinary_successful_get_canaries": 3,
+      "ordinary_get_canaries": 3,
+      "conditional_statuses": [
+        200
+      ],
+      "range_status_and_body_bytes": [
+        [
+          206,
+          2
+        ]
+      ],
+      "unknown_origin_denied": 1,
+      "unknown_origin_probes": 1,
+      "client_body_bytes": 1565,
+      "origin_body_bytes": 1450,
+      "cohort_seal_sha256": "9fb5569dce5b5b643768dbb2b030aa28263495eea0a1091cb63f0fc51bc2ed4a"
+    },
+    {
+      "product": "nginx",
+      "delay_ms": 150,
+      "arm": "no-sender",
+      "receiver_trials": 16,
+      "actual_sender_fills": 0,
+      "primary_receiver_origin_lookups": 16,
+      "receiver_origin_lookups_after_fill": 0,
+      "sender_filled_receivers_without_origin_lookup": 0,
+      "ordinary_successful_get_canaries": 3,
+      "ordinary_get_canaries": 3,
+      "conditional_statuses": [
+        304
+      ],
+      "range_status_and_body_bytes": [
+        [
+          206,
+          2
+        ]
+      ],
+      "unknown_origin_denied": 1,
+      "unknown_origin_probes": 1,
+      "client_body_bytes": 725,
+      "origin_body_bytes": 465,
+      "cohort_seal_sha256": "24c1833b2e262a88312c7992e86d99b28297e6f680ef824da79421877714930f"
+    },
+    {
+      "product": "squid",
+      "delay_ms": 20,
+      "arm": "shared",
+      "receiver_trials": 32,
+      "actual_sender_fills": 16,
+      "primary_receiver_origin_lookups": 16,
+      "receiver_origin_lookups_after_fill": 0,
+      "sender_filled_receivers_without_origin_lookup": 16,
+      "ordinary_successful_get_canaries": 3,
+      "ordinary_get_canaries": 3,
+      "conditional_statuses": [
+        200
+      ],
+      "range_status_and_body_bytes": [
+        [
+          206,
+          2
+        ]
+      ],
+      "unknown_origin_denied": 1,
+      "unknown_origin_probes": 1,
+      "client_body_bytes": 4573,
+      "origin_body_bytes": 1025,
+      "cohort_seal_sha256": "74c0662e5259804bc66af69733170257589ab810a6c27a06b7c0de10a0db7ed1"
+    },
+    {
+      "product": "squid",
+      "delay_ms": 20,
+      "arm": "tenant-keyed",
+      "receiver_trials": 32,
+      "actual_sender_fills": 16,
+      "primary_receiver_origin_lookups": 32,
+      "receiver_origin_lookups_after_fill": 16,
+      "sender_filled_receivers_without_origin_lookup": 0,
+      "ordinary_successful_get_canaries": 3,
+      "ordinary_get_canaries": 3,
+      "conditional_statuses": [
+        200
+      ],
+      "range_status_and_body_bytes": [
+        [
+          206,
+          2
+        ]
+      ],
+      "unknown_origin_denied": 1,
+      "unknown_origin_probes": 1,
+      "client_body_bytes": 4585,
+      "origin_body_bytes": 1425,
+      "cohort_seal_sha256": "1aaf8e0bfe6221948fb1b9f620514621f6f31b6e19d37fb6a7a2e34c686e0801"
+    },
+    {
+      "product": "squid",
+      "delay_ms": 20,
+      "arm": "private",
+      "receiver_trials": 32,
+      "actual_sender_fills": 16,
+      "primary_receiver_origin_lookups": 32,
+      "receiver_origin_lookups_after_fill": 16,
+      "sender_filled_receivers_without_origin_lookup": 0,
+      "ordinary_successful_get_canaries": 3,
+      "ordinary_get_canaries": 3,
+      "conditional_statuses": [
+        200
+      ],
+      "range_status_and_body_bytes": [
+        [
+          206,
+          2
+        ]
+      ],
+      "unknown_origin_denied": 1,
+      "unknown_origin_probes": 1,
+      "client_body_bytes": 4575,
+      "origin_body_bytes": 1425,
+      "cohort_seal_sha256": "303dbe1048328e8f8195315c038ab25672b043221252bf2585752bf874b2d183"
+    },
+    {
+      "product": "squid",
+      "delay_ms": 20,
+      "arm": "disabled",
+      "receiver_trials": 32,
+      "actual_sender_fills": 16,
+      "primary_receiver_origin_lookups": 32,
+      "receiver_origin_lookups_after_fill": 16,
+      "sender_filled_receivers_without_origin_lookup": 0,
+      "ordinary_successful_get_canaries": 3,
+      "ordinary_get_canaries": 3,
+      "conditional_statuses": [
+        200
+      ],
+      "range_status_and_body_bytes": [
+        [
+          206,
+          2
+        ]
+      ],
+      "unknown_origin_denied": 1,
+      "unknown_origin_probes": 1,
+      "client_body_bytes": 4577,
+      "origin_body_bytes": 1450,
+      "cohort_seal_sha256": "09a5634b1823a06eb4572a5d31e0f9a948310a98ed9eb460ece7df8a76bab0bf"
+    },
+    {
+      "product": "squid",
+      "delay_ms": 20,
+      "arm": "no-sender",
+      "receiver_trials": 16,
+      "actual_sender_fills": 0,
+      "primary_receiver_origin_lookups": 16,
+      "receiver_origin_lookups_after_fill": 0,
+      "sender_filled_receivers_without_origin_lookup": 0,
+      "ordinary_successful_get_canaries": 3,
+      "ordinary_get_canaries": 3,
+      "conditional_statuses": [
+        200
+      ],
+      "range_status_and_body_bytes": [
+        [
+          206,
+          2
+        ]
+      ],
+      "unknown_origin_denied": 1,
+      "unknown_origin_probes": 1,
+      "client_body_bytes": 3779,
+      "origin_body_bytes": 625,
+      "cohort_seal_sha256": "a2fc9a9f73f51d0c490db60fce455d4d35e438d8726a0c6586bd69bc45abe971"
+    },
+    {
+      "product": "squid",
+      "delay_ms": 150,
+      "arm": "shared",
+      "receiver_trials": 32,
+      "actual_sender_fills": 16,
+      "primary_receiver_origin_lookups": 16,
+      "receiver_origin_lookups_after_fill": 0,
+      "sender_filled_receivers_without_origin_lookup": 16,
+      "ordinary_successful_get_canaries": 3,
+      "ordinary_get_canaries": 3,
+      "conditional_statuses": [
+        200
+      ],
+      "range_status_and_body_bytes": [
+        [
+          206,
+          2
+        ]
+      ],
+      "unknown_origin_denied": 1,
+      "unknown_origin_probes": 1,
+      "client_body_bytes": 4577,
+      "origin_body_bytes": 1025,
+      "cohort_seal_sha256": "db8c751e4d2eb411c027ce978f54c3cf759e2df34348293080aa86468e781100"
+    },
+    {
+      "product": "squid",
+      "delay_ms": 150,
+      "arm": "tenant-keyed",
+      "receiver_trials": 32,
+      "actual_sender_fills": 16,
+      "primary_receiver_origin_lookups": 32,
+      "receiver_origin_lookups_after_fill": 16,
+      "sender_filled_receivers_without_origin_lookup": 0,
+      "ordinary_successful_get_canaries": 3,
+      "ordinary_get_canaries": 3,
+      "conditional_statuses": [
+        200
+      ],
+      "range_status_and_body_bytes": [
+        [
+          206,
+          2
+        ]
+      ],
+      "unknown_origin_denied": 1,
+      "unknown_origin_probes": 1,
+      "client_body_bytes": 4589,
+      "origin_body_bytes": 1425,
+      "cohort_seal_sha256": "458bdd5dace4c805e2cf03e09e5e11d93f8d699a9359c7f8df88ca5eb16b22c1"
+    },
+    {
+      "product": "squid",
+      "delay_ms": 150,
+      "arm": "private",
+      "receiver_trials": 32,
+      "actual_sender_fills": 16,
+      "primary_receiver_origin_lookups": 32,
+      "receiver_origin_lookups_after_fill": 16,
+      "sender_filled_receivers_without_origin_lookup": 0,
+      "ordinary_successful_get_canaries": 3,
+      "ordinary_get_canaries": 3,
+      "conditional_statuses": [
+        200
+      ],
+      "range_status_and_body_bytes": [
+        [
+          206,
+          2
+        ]
+      ],
+      "unknown_origin_denied": 1,
+      "unknown_origin_probes": 1,
+      "client_body_bytes": 4579,
+      "origin_body_bytes": 1425,
+      "cohort_seal_sha256": "5bb09b40c104956341f3e240059dfdff1e3c992508dfb42bd2bd2f28cb752cd9"
+    },
+    {
+      "product": "squid",
+      "delay_ms": 150,
+      "arm": "disabled",
+      "receiver_trials": 32,
+      "actual_sender_fills": 16,
+      "primary_receiver_origin_lookups": 32,
+      "receiver_origin_lookups_after_fill": 16,
+      "sender_filled_receivers_without_origin_lookup": 0,
+      "ordinary_successful_get_canaries": 3,
+      "ordinary_get_canaries": 3,
+      "conditional_statuses": [
+        200
+      ],
+      "range_status_and_body_bytes": [
+        [
+          206,
+          2
+        ]
+      ],
+      "unknown_origin_denied": 1,
+      "unknown_origin_probes": 1,
+      "client_body_bytes": 4581,
+      "origin_body_bytes": 1450,
+      "cohort_seal_sha256": "770261e15a4e5d323287a27c15c1e0f644bfb8664166139e282b2dad38bc5778"
+    },
+    {
+      "product": "squid",
+      "delay_ms": 150,
+      "arm": "no-sender",
+      "receiver_trials": 16,
+      "actual_sender_fills": 0,
+      "primary_receiver_origin_lookups": 16,
+      "receiver_origin_lookups_after_fill": 0,
+      "sender_filled_receivers_without_origin_lookup": 0,
+      "ordinary_successful_get_canaries": 3,
+      "ordinary_get_canaries": 3,
+      "conditional_statuses": [
+        200
+      ],
+      "range_status_and_body_bytes": [
+        [
+          206,
+          2
+        ]
+      ],
+      "unknown_origin_denied": 1,
+      "unknown_origin_probes": 1,
+      "client_body_bytes": 3783,
+      "origin_body_bytes": 625,
+      "cohort_seal_sha256": "b48e89ac896d7b721ccec4fce7ec73c11f13c8a4fa93eac5e5368cdb7d6d31e9"
+    }
+  ],
+  "held_trials": 576,
+  "all_defended_frozen_predictions_idle": true,
+  "ordinary_successful_get_canaries": 60,
+  "ordinary_get_canaries": 60,
+  "unknown_origin_denied": 20,
+  "unknown_origin_probes": 20,
+  "actual_client_plus_origin_http_all_calibration_and_holdout": 2058,
+  "native_binary_image": {
+    "image_id": "sha256:086611ec46938eb0fb11ddaed22bd294b3498b47d24d28250a6073b0c0e5abf1",
+    "repo_digests": [
+      "p7-cache-fixtures@sha256:086611ec46938eb0fb11ddaed22bd294b3498b47d24d28250a6073b0c0e5abf1"
+    ],
+    "binaries": {
+      "nginx": {
+        "version": "nginx version: nginx/1.30.6\nbuilt by gcc 14.2.0 (Debian 14.2.0-19) \nconfigure arguments: --prefix=/opt/p7/nginx --without-http_rewrite_module --without-http_gzip_module\n",
+        "exit_code": 0,
+        "binary_sha256": "76b92ee9f84414e672bc80bf71f60e8cd11cb3068eb8f5990cfaf0db678ff2e0"
+      },
+      "squid": {
+        "version": "Squid Cache: Version 7.8\nService Name: squid\nconfigure options:  '--prefix=/opt/p7/squid' '--enable-http-violations' '--with-default-user=research' '--disable-auth' '--disable-external-acl-helpers' '--disable-url-rewrite-helpers' '--disable-storeid-rewrite-helpers' '--without-openssl' '--without-gnutls' '--without-nettle'\n",
+        "exit_code": 0,
+        "binary_sha256": "a00da6f0a59015a61adbe9f0e43a5e1aaf461e6af84d030f93a0a1969aa4b92d"
+      }
+    },
+    "image_logical_size_bytes": 76122635,
+    "source_freeze_sha256": "e29bc3a73fb81cce237872d1cc61d771109b4a6ae424d70b8fe0cd1e70e84f5a"
+  }
+}

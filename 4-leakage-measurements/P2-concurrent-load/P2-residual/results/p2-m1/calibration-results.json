@@ -1,0 +1,597 @@
+{
+  "separate": {
+    "trials": 300,
+    "features": 454,
+    "model": "boosting",
+    "cv_accuracy": {
+      "logistic": 0.8566666666666667,
+      "boosting": 0.9366666666666668
+    },
+    "selected_for_confirmation": [
+      {
+        "feature": "fam.schedule|start_lag_ms|max",
+        "recipe": null
+      },
+      {
+        "feature": "fam.timed|elapsed_ms|max",
+        "recipe": null
+      },
+      {
+        "feature": "fam.timed|elapsed_ms|max",
+        "recipe": "cond_get"
+      },
+      {
+        "feature": "fam.timed|elapsed_ms|max",
+        "recipe": "folder_html"
+      },
+      {
+        "feature": "fam.timed|elapsed_ms|max",
+        "recipe": "head"
+      },
+      {
+        "feature": "fam.timed|elapsed_ms|max",
+        "recipe": "range_get"
+      },
+      {
+        "feature": "fam.timed|elapsed_ms|max",
+        "recipe": "repeated_get"
+      },
+      {
+        "feature": "fam.timed|elapsed_ms|mean",
+        "recipe": null
+      },
+      {
+        "feature": "fam.timed|elapsed_ms|mean",
+        "recipe": "cond_get"
+      },
+      {
+        "feature": "fam.timed|elapsed_ms|mean",
+        "recipe": "folder_html"
+      },
+      {
+        "feature": "fam.timed|elapsed_ms|mean",
+        "recipe": "get"
+      },
+      {
+        "feature": "fam.timed|elapsed_ms|mean",
+        "recipe": "head"
+      },
+      {
+        "feature": "fam.timed|elapsed_ms|mean",
+        "recipe": "range_get"
+      },
+      {
+        "feature": "fam.timed|elapsed_ms|mean",
+        "recipe": "repeated_get"
+      },
+      {
+        "feature": "fam.timed|elapsed_ms|median",
+        "recipe": null
+      },
+      {
+        "feature": "fam.timed|elapsed_ms|median",
+        "recipe": "cond_get"
+      },
+      {
+        "feature": "fam.timed|elapsed_ms|median",
+        "recipe": "folder_html"
+      },
+      {
+        "feature": "fam.timed|elapsed_ms|median",
+        "recipe": "fresh_get"
+      },
+      {
+        "feature": "fam.timed|elapsed_ms|median",
+        "recipe": "get"
+      },
+      {
+        "feature": "fam.timed|elapsed_ms|median",
+        "recipe": "head"
+      },
+      {
+        "feature": "fam.timed|elapsed_ms|median",
+        "recipe": "range_get"
+      },
+      {
+        "feature": "fam.timed|elapsed_ms|median",
+        "recipe": "repeated_get"
+      },
+      {
+        "feature": "post.after.fresh|start_lag_ms",
+        "recipe": null
+      },
+      {
+        "feature": "post.after.head|elapsed_ms",
+        "recipe": "fresh_get"
+      },
+      {
+        "feature": "post.timed.00|elapsed_ms",
+        "recipe": null
+      },
+      {
+        "feature": "post.timed.00|elapsed_ms",
+        "recipe": "cond_get"
+      },
+      {
+        "feature": "post.timed.00|elapsed_ms",
+        "recipe": "folder_html"
+      },
+      {
+        "feature": "post.timed.00|elapsed_ms",
+        "recipe": "fresh_get"
+      },
+      {
+        "feature": "post.timed.00|elapsed_ms",
+        "recipe": "get"
+      },
+      {
+        "feature": "post.timed.00|elapsed_ms",
+        "recipe": "head"
+      },
+      {
+        "feature": "post.timed.00|elapsed_ms",
+        "recipe": "range_get"
+      },
+      {
+        "feature": "post.timed.00|elapsed_ms",
+        "recipe": "repeated_get"
+      },
+      {
+        "feature": "post.timed.00|elapsed_ms",
+        "recipe": "stats"
+      },
+      {
+        "feature": "post.timed.01|elapsed_ms",
+        "recipe": null
+      },
+      {
+        "feature": "post.timed.01|elapsed_ms",
+        "recipe": "cond_get"
+      },
+      {
+        "feature": "post.timed.01|elapsed_ms",
+        "recipe": "folder_html"
+      },
+      {
+        "feature": "post.timed.01|elapsed_ms",
+        "recipe": "fresh_get"
+      },
+      {
+        "feature": "post.timed.01|elapsed_ms",
+        "recipe": "get"
+      },
+      {
+        "feature": "post.timed.01|elapsed_ms",
+        "recipe": "head"
+      },
+      {
+        "feature": "post.timed.01|elapsed_ms",
+        "recipe": "range_get"
+      },
+      {
+        "feature": "post.timed.01|elapsed_ms",
+        "recipe": "repeated_get"
+      },
+      {
+        "feature": "post.timed.02|elapsed_ms",
+        "recipe": null
+      },
+      {
+        "feature": "post.timed.02|elapsed_ms",
+        "recipe": "folder_html"
+      },
+      {
+        "feature": "post.timed.02|elapsed_ms",
+        "recipe": "get"
+      },
+      {
+        "feature": "post.timed.02|elapsed_ms",
+        "recipe": "head"
+      },
+      {
+        "feature": "post.timed.02|elapsed_ms",
+        "recipe": "range_get"
+      },
+      {
+        "feature": "post.timed.02|elapsed_ms",
+        "recipe": "repeated_get"
+      },
+      {
+        "feature": "post.timed.03|elapsed_ms",
+        "recipe": null
+      },
+      {
+        "feature": "post.timed.03|elapsed_ms",
+        "recipe": "cond_get"
+      },
+      {
+        "feature": "post.timed.03|elapsed_ms",
+        "recipe": "get"
+      },
+      {
+        "feature": "post.timed.03|elapsed_ms",
+        "recipe": "head"
+      },
+      {
+        "feature": "post.timed.04|elapsed_ms",
+        "recipe": null
+      },
+      {
+        "feature": "post.timed.04|elapsed_ms",
+        "recipe": "cond_get"
+      },
+      {
+        "feature": "post.timed.04|elapsed_ms",
+        "recipe": "get"
+      },
+      {
+        "feature": "post.timed.04|elapsed_ms",
+        "recipe": "head"
+      },
+      {
+        "feature": "post.timed.05|elapsed_ms",
+        "recipe": null
+      },
+      {
+        "feature": "post.timed.05|elapsed_ms",
+        "recipe": "cond_get"
+      },
+      {
+        "feature": "post.timed.05|elapsed_ms",
+        "recipe": "fresh_get"
+      },
+      {
+        "feature": "post.timed.05|elapsed_ms",
+        "recipe": "get"
+      },
+      {
+        "feature": "post.timed.05|elapsed_ms",
+        "recipe": "head"
+      },
+      {
+        "feature": "post.timed.05|elapsed_ms",
+        "recipe": "range_get"
+      },
+      {
+        "feature": "post.timed.06|elapsed_ms",
+        "recipe": null
+      },
+      {
+        "feature": "post.timed.06|elapsed_ms",
+        "recipe": "folder_html"
+      },
+      {
+        "feature": "post.timed.06|elapsed_ms",
+        "recipe": "get"
+      },
+      {
+        "feature": "post.timed.06|elapsed_ms",
+        "recipe": "head"
+      },
+      {
+        "feature": "post.timed.06|elapsed_ms",
+        "recipe": "range_get"
+      },
+      {
+        "feature": "post.timed.06|elapsed_ms",
+        "recipe": "repeated_get"
+      },
+      {
+        "feature": "post.timed.07|elapsed_ms",
+        "recipe": null
+      },
+      {
+        "feature": "post.timed.07|elapsed_ms",
+        "recipe": "cond_get"
+      },
+      {
+        "feature": "post.timed.07|elapsed_ms",
+        "recipe": "folder_html"
+      },
+      {
+        "feature": "post.timed.07|elapsed_ms",
+        "recipe": "get"
+      },
+      {
+        "feature": "post.timed.07|elapsed_ms",
+        "recipe": "head"
+      },
+      {
+        "feature": "post.timed.07|elapsed_ms",
+        "recipe": "range_get"
+      },
+      {
+        "feature": "post.timed.08|elapsed_ms",
+        "recipe": null
+      },
+      {
+        "feature": "post.timed.08|elapsed_ms",
+        "recipe": "cond_get"
+      },
+      {
+        "feature": "post.timed.08|elapsed_ms",
+        "recipe": "folder_html"
+      },
+      {
+        "feature": "post.timed.08|elapsed_ms",
+        "recipe": "get"
+      },
+      {
+        "feature": "post.timed.08|elapsed_ms",
+        "recipe": "head"
+      },
+      {
+        "feature": "post.timed.08|elapsed_ms",
+        "recipe": "range_get"
+      },
+      {
+        "feature": "post.timed.08|elapsed_ms",
+        "recipe": "repeated_get"
+      },
+      {
+        "feature": "post.timed.09|elapsed_ms",
+        "recipe": null
+      },
+      {
+        "feature": "post.timed.09|elapsed_ms",
+        "recipe": "cond_get"
+      },
+      {
+        "feature": "post.timed.09|elapsed_ms",
+        "recipe": "get"
+      },
+      {
+        "feature": "post.timed.09|elapsed_ms",
+        "recipe": "head"
+      },
+      {
+        "feature": "post.timed.09|elapsed_ms",
+        "recipe": "range_get"
+      },
+      {
+        "feature": "post.timed.09|elapsed_ms",
+        "recipe": "repeated_get"
+      },
+      {
+        "feature": "post.timed.10|elapsed_ms",
+        "recipe": null
+      },
+      {
+        "feature": "post.timed.10|elapsed_ms",
+        "recipe": "cond_get"
+      },
+      {
+        "feature": "post.timed.10|elapsed_ms",
+        "recipe": "folder_html"
+      },
+      {
+        "feature": "post.timed.10|elapsed_ms",
+        "recipe": "fresh_get"
+      },
+      {
+        "feature": "post.timed.10|elapsed_ms",
+        "recipe": "get"
+      },
+      {
+        "feature": "post.timed.10|elapsed_ms",
+        "recipe": "head"
+      },
+      {
+        "feature": "post.timed.10|elapsed_ms",
+        "recipe": "range_get"
+      },
+      {
+        "feature": "post.timed.10|elapsed_ms",
+        "recipe": "repeated_get"
+      },
+      {
+        "feature": "post.timed.11|elapsed_ms",
+        "recipe": null
+      },
+      {
+        "feature": "post.timed.11|elapsed_ms",
+        "recipe": "cond_get"
+      },
+      {
+        "feature": "post.timed.11|elapsed_ms",
+        "recipe": "folder_html"
+      },
+      {
+        "feature": "post.timed.11|elapsed_ms",
+        "recipe": "fresh_get"
+      },
+      {
+        "feature": "post.timed.11|elapsed_ms",
+        "recipe": "get"
+      },
+      {
+        "feature": "post.timed.11|elapsed_ms",
+        "recipe": "head"
+      },
+      {
+        "feature": "post.timed.11|elapsed_ms",
+        "recipe": "range_get"
+      },
+      {
+        "feature": "post.timed.11|elapsed_ms",
+        "recipe": "repeated_get"
+      },
+      {
+        "feature": "post.timed.12|elapsed_ms",
+        "recipe": null
+      },
+      {
+        "feature": "post.timed.12|elapsed_ms",
+        "recipe": "cond_get"
+      },
+      {
+        "feature": "post.timed.12|elapsed_ms",
+        "recipe": "get"
+      },
+      {
+        "feature": "post.timed.12|elapsed_ms",
+        "recipe": "head"
+      },
+      {
+        "feature": "post.timed.12|elapsed_ms",
+        "recipe": "range_get"
+      },
+      {
+        "feature": "post.timed.12|elapsed_ms",
+        "recipe": "repeated_get"
+      },
+      {
+        "feature": "post.timed.13|elapsed_ms",
+        "recipe": null
+      },
+      {
+        "feature": "post.timed.13|elapsed_ms",
+        "recipe": "cond_get"
+      },
+      {
+        "feature": "post.timed.13|elapsed_ms",
+        "recipe": "folder_html"
+      },
+      {
+        "feature": "post.timed.13|elapsed_ms",
+        "recipe": "get"
+      },
+      {
+        "feature": "post.timed.13|elapsed_ms",
+        "recipe": "head"
+      },
+      {
+        "feature": "post.timed.13|elapsed_ms",
+        "recipe": "range_get"
+      },
+      {
+        "feature": "post.timed.14|elapsed_ms",
+        "recipe": null
+      },
+      {
+        "feature": "post.timed.14|elapsed_ms",
+        "recipe": "cond_get"
+      },
+      {
+        "feature": "post.timed.14|elapsed_ms",
+        "recipe": "folder_html"
+      },
+      {
+        "feature": "post.timed.14|elapsed_ms",
+        "recipe": "get"
+      },
+      {
+        "feature": "post.timed.14|elapsed_ms",
+        "recipe": "head"
+      },
+      {
+        "feature": "post.timed.14|elapsed_ms",
+        "recipe": "range_get"
+      },
+      {
+        "feature": "post.timed.14|elapsed_ms",
+        "recipe": "repeated_get"
+      }
+    ],
+    "calibration_sha256": "2533dfabba49effce3e3d9ea1616777a96d0f0626daa6cbd4adb7bb08dc70dd3",
+    "provision_sha256": "6eba24831909de4118a0df9aa97d7c75da805bb34c9b754adc2150d4999cc1f0"
+  },
+  "sham": {
+    "trials": 300,
+    "features": 454,
+    "model": "boosting",
+    "cv_accuracy": {
+      "logistic": 0.5266666666666666,
+      "boosting": 0.5800000000000001
+    },
+    "selected_for_confirmation": [
+      {
+        "feature": "post.timed.00|elapsed_ms",
+        "recipe": null
+      },
+      {
+        "feature": "post.timed.13|elapsed_ms",
+        "recipe": null
+      }
+    ],
+    "calibration_sha256": "6126aecfe3458cd1752e169e8f7d3ccc1a41063d899baf99add14013e0a18e0e",
+    "provision_sha256": "ddb3cdede113272bf20992d1e60bafe6da376272f3728f4aad7c7af8d84c0972"
+  },
+  "aa": {
+    "trials": 300,
+    "features": 454,
+    "model": "logistic",
+    "cv_accuracy": {
+      "logistic": 0.51,
+      "boosting": 0.45999999999999996
+    },
+    "selected_for_confirmation": [],
+    "calibration_sha256": "643b4b2e9a1a5af63da1dd20a556650c2f9d265eb33ecd86bb51056882e48ea8",
+    "provision_sha256": "4305eb893f373d03c62ef55b48b7c7531053b73b42730ed71965183aeb549e93"
+  },
+  "immutable": {
+    "trials": 300,
+    "features": 242,
+    "model": "boosting",
+    "cv_accuracy": {
+      "logistic": 0.6699999999999999,
+      "boosting": 0.7033333333333334
+    },
+    "selected_for_confirmation": [
+      {
+        "feature": "fam.timed|elapsed_ms|max",
+        "recipe": null
+      },
+      {
+        "feature": "fam.timed|elapsed_ms|max",
+        "recipe": "range_get"
+      },
+      {
+        "feature": "fam.timed|elapsed_ms|mean",
+        "recipe": null
+      },
+      {
+        "feature": "fam.timed|elapsed_ms|mean",
+        "recipe": "range_get"
+      },
+      {
+        "feature": "fam.timed|elapsed_ms|median",
+        "recipe": null
+      },
+      {
+        "feature": "post.after.head|elapsed_ms",
+        "recipe": null
+      },
+      {
+        "feature": "post.after.head|start_lag_ms",
+        "recipe": null
+      },
+      {
+        "feature": "post.after.head|start_lag_ms",
+        "recipe": "fresh_get"
+      },
+      {
+        "feature": "post.after.stats|elapsed_ms",
+        "recipe": "range_get"
+      },
+      {
+        "feature": "post.timed.00|elapsed_ms",
+        "recipe": null
+      },
+      {
+        "feature": "post.timed.00|elapsed_ms",
+        "recipe": "folder_html"
+      },
+      {
+        "feature": "post.timed.00|elapsed_ms",
+        "recipe": "range_get"
+      },
+      {
+        "feature": "post.timed.12|elapsed_ms",
+        "recipe": "range_get"
+      }
+    ],
+    "calibration_sha256": "a77d1b63bc245b1b29e7d8e7a4f5ed6f76415e205846ea30aed70eface416ec8",
+    "provision_sha256": "946be703635e9c84914c75b3e334324c72d791972fef96cd50938b97af299e8b"
+  }
+}

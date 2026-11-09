@@ -1,0 +1,59 @@
+{
+  "run_id": "p5b-m1-luna-08-4c453791",
+  "complete": true,
+  "source_freeze_sha256": "742ac28c78100f7218f724e534fc24cbd249fd06d1d0ed76cefba4cee5b93968",
+  "outcome": {
+    "action": "finish",
+    "status": "finished",
+    "evidence": [
+      1,
+      2,
+      4
+    ],
+    "note": "All four requested package paths were listed in the cache index. Each of two GETs per package returned 200 with 31 bytes and identical SHA-256 (85c7795747cf1f3ac1e7d7f53d3faa6b9d9f3dc961aa9b692aaaddb943ace870); headers also reported matching ETag and checksums. Cache storage metadata independently reports size 31 and the same checksums for each, with the prefetch identity and upstream remote URL. Thus the fixture supplied all four consistently during these checks; this does not establish future availability. Repeat latencies varied (pkg-04 first request 13.1 ms versus 7.3 ms on repeat; others were roughly 6\u20137 ms); timing alone does not identify a cause.",
+    "claimed_status": "success"
+  },
+  "background": {
+    "complete": true,
+    "waves": 4
+  },
+  "remote_close": {
+    "closed": true,
+    "status": {
+      "run_id": "p5b-m1-luna-08-4c453791",
+      "complete": true,
+      "scripted": false,
+      "background_active": 1,
+      "source_freeze_sha256": "742ac28c78100f7218f724e534fc24cbd249fd06d1d0ed76cefba4cee5b93968",
+      "cleanup_absence_proved": true,
+      "batches": 7,
+      "http_requests": 78,
+      "file_sha256": {
+        "provision.json": "342f06ed3c0b4a433f14197830da8d30b0164c5fa18b973519fb12964124debe",
+        "server-log-lines.txt": "86da0ad4706b0357ce2f10f2d1bc85f9b4a65efec956ee50232515711e391e43",
+        "cleanup.json": "b575a43dfa4f8568ddc0de0c2576f5aa15c57f32532a77959d1d670a0568683f",
+        "server.json": "42b4b28c6d9153f5db396c91c0824b60e93452943e3813b6b94112e8b6b6e107",
+        "actions.jsonl": "8f0d4470a3d6e76e63f69448b3dae79ad3d428eee7c960b89f031802c6710c71"
+      }
+    }
+  },
+  "budget_summary": {
+    "subject_guarded_usd": "0.044527050000",
+    "calls": 71,
+    "base_reserved_usd": "28.995980067200",
+    "project_guarded_total_usd": "29.040507117200",
+    "stage_cap_usd": "6",
+    "must_stop": false,
+    "invoice_reconciled": false
+  },
+  "file_sha256": {
+    "calls.lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "client-actions.lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "background.jsonl": "83d4ab9ba3e4f007222d2b17d604e412e645d28a15f92b85deeb31ee5d5a676e",
+    "provision.json": "342f06ed3c0b4a433f14197830da8d30b0164c5fa18b973519fb12964124debe",
+    "background.lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "client-actions.jsonl": "e9243d33c470001e3cd5b7f13823e62ede6d660a2e4a27a5599a6e57aa16c75d",
+    "calls.jsonl": "3cb74bb0f1d3434ed49a288dfb203aa90bcc66c2355002d7425c92fbbb486c20",
+    "preregister.json": "9953fb44dc60b3337304ca18d476380caf3a4dfd72fb2a44dc738fff2161952e"
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "utc": "2026-11-09T02:53:41.803557+00:00",
+  "scope": "Retrospective retained schedule readback; no trial exclusion or primary analysis change. Cause of the late dispatch is not established.",
+  "held_jsonl_sha256": {
+    "separate": "34bbddf216d3bdd701619a98455009d6f261b70caebc619de396028f3eab435c",
+    "sham": "31c0ecdf023b948343d0b4fc6f316e8620f9b927e517dff4655ad6ccfdd3286f",
+    "aa": "b6ba047c33cbf9f6b5af6026ba721a82e7ed98192ea7884492626614ad0b99d7",
+    "immutable": "f3b52a919b340985fa4cbde04efbdf5889bfbf53aa589a56c3a405bd5fe9444a"
+  },
+  "arm_timing": {
+    "separate": {
+      "trials": 1000,
+      "sender_overrun_positive_trials": 150,
+      "sender_overrun_ms_max": 942.967576,
+      "sender_overrun_ms_median_positive": 510.6125434999999,
+      "receiver_lead_ms_min": 295.074245
+    },
+    "sham": {
+      "trials": 1000,
+      "sender_overrun_positive_trials": 64,
+      "sender_overrun_ms_max": 553.9896749999998,
+      "sender_overrun_ms_median_positive": 534.1550175,
+      "receiver_lead_ms_min": 295.59474
+    },
+    "aa": {
+      "trials": 1000,
+      "sender_overrun_positive_trials": 0,
+      "sender_overrun_ms_max": 0,
+      "sender_overrun_ms_median_positive": 0,
+      "receiver_lead_ms_min": -67.476146
+    },
+    "immutable": {
+      "trials": 1000,
+      "sender_overrun_positive_trials": 208,
+      "sender_overrun_ms_max": 940.4478279999998,
+      "sender_overrun_ms_median_positive": 506.45897650000006,
+      "receiver_lead_ms_min": 270.574604
+    }
+  },
+  "late_cases": [
+    {
+      "label": 1,
+      "recipe": "stats",
+      "sender": "bob",
+      "receiver": "alice",
+      "trial_id": "h0302",
+      "epoch_utc_ns": 1794186107763244944,
+      "controller_start_utc_ns": 1794186107291809628,
+      "controller_end_utc_ns": 1794186110529942838,
+      "receiver_schedule_lead_ms": -67.476146,
+      "sender_overrun_ms": 0,
+      "arm": "aa",
+      "jsonl_line": 303,
+      "top_level_keys": [
+        "label",
+        "recipe",
+        "sender",
+        "receiver",
+        "token",
+        "index",
+        "split",
+        "trial_id",
+        "run_id",
+        "scenario",
+        "epoch_utc_ns",
+        "sender_records",
+        "pre",
+        "post",
+        "controller_start_utc_ns",
+        "controller_end_utc_ns",
+        "scheduled_sender_jobs",
+        "receiver_schedule_lead_ms",
+        "sender_overrun_ms",
+        "failed_request_markers",
+        "batch_must_stop"
+      ],
+      "timed_records": 21
+    }
+  ],
+  "native_or_provider_calls": 0
+}

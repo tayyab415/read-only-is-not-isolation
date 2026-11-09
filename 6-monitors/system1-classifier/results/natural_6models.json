@@ -1,0 +1,1871 @@
+{
+ "max_task": 400,
+ "runs": [
+  {
+   "seed": 0,
+   "model": "tfidf:detok",
+   "set": "luna",
+   "family": "openai",
+   "n": 333,
+   "flagged": 284,
+   "fpr": 0.8528528528528528,
+   "ci95": [
+    0.8108,
+    0.8869
+   ]
+  },
+  {
+   "seed": 0,
+   "model": "tfidf:detok",
+   "set": "luna|js",
+   "family": "openai|js",
+   "n": 265,
+   "flagged": 228,
+   "fpr": 0.8603773584905661,
+   "ci95": [
+    0.8135,
+    0.897
+   ]
+  },
+  {
+   "seed": 0,
+   "model": "tfidf:detok",
+   "set": "terra",
+   "family": "openai",
+   "n": 342,
+   "flagged": 255,
+   "fpr": 0.7456140350877193,
+   "ci95": [
+    0.6969,
+    0.7889
+   ]
+  },
+  {
+   "seed": 0,
+   "model": "tfidf:detok",
+   "set": "terra|js",
+   "family": "openai|js",
+   "n": 261,
+   "flagged": 193,
+   "fpr": 0.7394636015325671,
+   "ci95": [
+    0.683,
+    0.789
+   ]
+  },
+  {
+   "seed": 0,
+   "model": "tfidf:detok",
+   "set": "gptoss",
+   "family": "openai",
+   "n": 172,
+   "flagged": 88,
+   "fpr": 0.5116279069767442,
+   "ci95": [
+    0.4375,
+    0.5853
+   ]
+  },
+  {
+   "seed": 0,
+   "model": "tfidf:detok",
+   "set": "gptoss|js",
+   "family": "openai|js",
+   "n": 63,
+   "flagged": 14,
+   "fpr": 0.2222222222222222,
+   "ci95": [
+    0.1372,
+    0.3391
+   ]
+  },
+  {
+   "seed": 0,
+   "model": "tfidf:detok",
+   "set": "glm5",
+   "family": "other",
+   "n": 219,
+   "flagged": 47,
+   "fpr": 0.2146118721461187,
+   "ci95": [
+    0.1654,
+    0.2737
+   ]
+  },
+  {
+   "seed": 0,
+   "model": "tfidf:detok",
+   "set": "glm5|js",
+   "family": "other|js",
+   "n": 112,
+   "flagged": 7,
+   "fpr": 0.0625,
+   "ci95": [
+    0.0306,
+    0.1234
+   ]
+  },
+  {
+   "seed": 0,
+   "model": "tfidf:detok",
+   "set": "llama4",
+   "family": "other",
+   "n": 267,
+   "flagged": 207,
+   "fpr": 0.7752808988764045,
+   "ci95": [
+    0.7215,
+    0.8212
+   ]
+  },
+  {
+   "seed": 0,
+   "model": "tfidf:detok",
+   "set": "llama4|js",
+   "family": "other|js",
+   "n": 95,
+   "flagged": 83,
+   "fpr": 0.8736842105263158,
+   "ci95": [
+    0.7921,
+    0.9262
+   ]
+  },
+  {
+   "seed": 0,
+   "model": "tfidf:detok",
+   "set": "mistral",
+   "family": "other",
+   "n": 306,
+   "flagged": 162,
+   "fpr": 0.5294117647058824,
+   "ci95": [
+    0.4735,
+    0.5846
+   ]
+  },
+  {
+   "seed": 0,
+   "model": "tfidf:detok",
+   "set": "mistral|js",
+   "family": "other|js",
+   "n": 141,
+   "flagged": 96,
+   "fpr": 0.6808510638297872,
+   "ci95": [
+    0.6,
+    0.7521
+   ]
+  },
+  {
+   "seed": 0,
+   "model": "tfidf:struct",
+   "set": "luna",
+   "family": "openai",
+   "n": 333,
+   "flagged": 268,
+   "fpr": 0.8048048048048048,
+   "ci95": [
+    0.7589,
+    0.8438
+   ]
+  },
+  {
+   "seed": 0,
+   "model": "tfidf:struct",
+   "set": "luna|js",
+   "family": "openai|js",
+   "n": 265,
+   "flagged": 215,
+   "fpr": 0.8113207547169812,
+   "ci95": [
+    0.7599,
+    0.8539
+   ]
+  },
+  {
+   "seed": 0,
+   "model": "tfidf:struct",
+   "set": "terra",
+   "family": "openai",
+   "n": 342,
+   "flagged": 264,
+   "fpr": 0.7719298245614035,
+   "ci95": [
+    0.7246,
+    0.8132
+   ]
+  },
+  {
+   "seed": 0,
+   "model": "tfidf:struct",
+   "set": "terra|js",
+   "family": "openai|js",
+   "n": 261,
+   "flagged": 210,
+   "fpr": 0.8045977011494253,
+   "ci95": [
+    0.7522,
+    0.8481
+   ]
+  },
+  {
+   "seed": 0,
+   "model": "tfidf:struct",
+   "set": "gptoss",
+   "family": "openai",
+   "n": 172,
+   "flagged": 86,
+   "fpr": 0.5,
+   "ci95": [
+    0.4261,
+    0.5739
+   ]
+  },
+  {
+   "seed": 0,
+   "model": "tfidf:struct",
+   "set": "gptoss|js",
+   "family": "openai|js",
+   "n": 63,
+   "flagged": 23,
+   "fpr": 0.36507936507936506,
+   "ci95": [
+    0.2572,
+    0.4885
+   ]
+  },
+  {
+   "seed": 0,
+   "model": "tfidf:struct",
+   "set": "glm5",
+   "family": "other",
+   "n": 219,
+   "flagged": 42,
+   "fpr": 0.1917808219178082,
+   "ci95": [
+    0.1451,
+    0.2491
+   ]
+  },
+  {
+   "seed": 0,
+   "model": "tfidf:struct",
+   "set": "glm5|js",
+   "family": "other|js",
+   "n": 112,
+   "flagged": 15,
+   "fpr": 0.13392857142857142,
+   "ci95": [
+    0.0829,
+    0.2093
+   ]
+  },
+  {
+   "seed": 0,
+   "model": "tfidf:struct",
+   "set": "llama4",
+   "family": "other",
+   "n": 267,
+   "flagged": 136,
+   "fpr": 0.5093632958801498,
+   "ci95": [
+    0.4497,
+    0.5688
+   ]
+  },
+  {
+   "seed": 0,
+   "model": "tfidf:struct",
+   "set": "llama4|js",
+   "family": "other|js",
+   "n": 95,
+   "flagged": 81,
+   "fpr": 0.8526315789473684,
+   "ci95": [
+    0.7677,
+    0.9101
+   ]
+  },
+  {
+   "seed": 0,
+   "model": "tfidf:struct",
+   "set": "mistral",
+   "family": "other",
+   "n": 306,
+   "flagged": 152,
+   "fpr": 0.49673202614379086,
+   "ci95": [
+    0.4411,
+    0.5524
+   ]
+  },
+  {
+   "seed": 0,
+   "model": "tfidf:struct",
+   "set": "mistral|js",
+   "family": "other|js",
+   "n": 141,
+   "flagged": 106,
+   "fpr": 0.75177304964539,
+   "ci95": [
+    0.6744,
+    0.8158
+   ]
+  },
+  {
+   "seed": 0,
+   "model": "probe:style",
+   "set": "luna",
+   "family": "openai",
+   "n": 333,
+   "flagged": 140,
+   "fpr": 0.42042042042042044,
+   "ci95": [
+    0.3686,
+    0.4741
+   ]
+  },
+  {
+   "seed": 0,
+   "model": "probe:style",
+   "set": "luna|js",
+   "family": "openai|js",
+   "n": 265,
+   "flagged": 136,
+   "fpr": 0.5132075471698113,
+   "ci95": [
+    0.4533,
+    0.5728
+   ]
+  },
+  {
+   "seed": 0,
+   "model": "probe:style",
+   "set": "terra",
+   "family": "openai",
+   "n": 342,
+   "flagged": 109,
+   "fpr": 0.31871345029239767,
+   "ci95": [
+    0.2716,
+    0.3699
+   ]
+  },
+  {
+   "seed": 0,
+   "model": "probe:style",
+   "set": "terra|js",
+   "family": "openai|js",
+   "n": 261,
+   "flagged": 99,
+   "fpr": 0.3793103448275862,
+   "ci95": [
+    0.3226,
+    0.4395
+   ]
+  },
+  {
+   "seed": 0,
+   "model": "probe:style",
+   "set": "gptoss",
+   "family": "openai",
+   "n": 172,
+   "flagged": 7,
+   "fpr": 0.040697674418604654,
+   "ci95": [
+    0.0199,
+    0.0816
+   ]
+  },
+  {
+   "seed": 0,
+   "model": "probe:style",
+   "set": "gptoss|js",
+   "family": "openai|js",
+   "n": 63,
+   "flagged": 3,
+   "fpr": 0.047619047619047616,
+   "ci95": [
+    0.0163,
+    0.1309
+   ]
+  },
+  {
+   "seed": 0,
+   "model": "probe:style",
+   "set": "glm5",
+   "family": "other",
+   "n": 219,
+   "flagged": 4,
+   "fpr": 0.0182648401826484,
+   "ci95": [
+    0.0071,
+    0.046
+   ]
+  },
+  {
+   "seed": 0,
+   "model": "probe:style",
+   "set": "glm5|js",
+   "family": "other|js",
+   "n": 112,
+   "flagged": 0,
+   "fpr": 0.0,
+   "ci95": [
+    0.0,
+    0.0332
+   ]
+  },
+  {
+   "seed": 0,
+   "model": "probe:style",
+   "set": "llama4",
+   "family": "other",
+   "n": 267,
+   "flagged": 19,
+   "fpr": 0.07116104868913857,
+   "ci95": [
+    0.046,
+    0.1085
+   ]
+  },
+  {
+   "seed": 0,
+   "model": "probe:style",
+   "set": "llama4|js",
+   "family": "other|js",
+   "n": 95,
+   "flagged": 4,
+   "fpr": 0.042105263157894736,
+   "ci95": [
+    0.0165,
+    0.1033
+   ]
+  },
+  {
+   "seed": 0,
+   "model": "probe:style",
+   "set": "mistral",
+   "family": "other",
+   "n": 306,
+   "flagged": 21,
+   "fpr": 0.06862745098039216,
+   "ci95": [
+    0.0453,
+    0.1026
+   ]
+  },
+  {
+   "seed": 0,
+   "model": "probe:style",
+   "set": "mistral|js",
+   "family": "other|js",
+   "n": 141,
+   "flagged": 10,
+   "fpr": 0.07092198581560284,
+   "ci95": [
+    0.039,
+    0.1256
+   ]
+  },
+  {
+   "seed": 1,
+   "model": "tfidf:detok",
+   "set": "luna",
+   "family": "openai",
+   "n": 333,
+   "flagged": 289,
+   "fpr": 0.8678678678678678,
+   "ci95": [
+    0.8273,
+    0.9001
+   ]
+  },
+  {
+   "seed": 1,
+   "model": "tfidf:detok",
+   "set": "luna|js",
+   "family": "openai|js",
+   "n": 265,
+   "flagged": 234,
+   "fpr": 0.8830188679245283,
+   "ci95": [
+    0.8387,
+    0.9164
+   ]
+  },
+  {
+   "seed": 1,
+   "model": "tfidf:detok",
+   "set": "terra",
+   "family": "openai",
+   "n": 342,
+   "flagged": 264,
+   "fpr": 0.7719298245614035,
+   "ci95": [
+    0.7246,
+    0.8132
+   ]
+  },
+  {
+   "seed": 1,
+   "model": "tfidf:detok",
+   "set": "terra|js",
+   "family": "openai|js",
+   "n": 261,
+   "flagged": 200,
+   "fpr": 0.7662835249042146,
+   "ci95": [
+    0.7113,
+    0.8135
+   ]
+  },
+  {
+   "seed": 1,
+   "model": "tfidf:detok",
+   "set": "gptoss",
+   "family": "openai",
+   "n": 172,
+   "flagged": 91,
+   "fpr": 0.5290697674418605,
+   "ci95": [
+    0.4547,
+    0.6022
+   ]
+  },
+  {
+   "seed": 1,
+   "model": "tfidf:detok",
+   "set": "gptoss|js",
+   "family": "openai|js",
+   "n": 63,
+   "flagged": 14,
+   "fpr": 0.2222222222222222,
+   "ci95": [
+    0.1372,
+    0.3391
+   ]
+  },
+  {
+   "seed": 1,
+   "model": "tfidf:detok",
+   "set": "glm5",
+   "family": "other",
+   "n": 219,
+   "flagged": 52,
+   "fpr": 0.2374429223744292,
+   "ci95": [
+    0.1859,
+    0.298
+   ]
+  },
+  {
+   "seed": 1,
+   "model": "tfidf:detok",
+   "set": "glm5|js",
+   "family": "other|js",
+   "n": 112,
+   "flagged": 11,
+   "fpr": 0.09821428571428571,
+   "ci95": [
+    0.0557,
+    0.1673
+   ]
+  },
+  {
+   "seed": 1,
+   "model": "tfidf:detok",
+   "set": "llama4",
+   "family": "other",
+   "n": 267,
+   "flagged": 212,
+   "fpr": 0.7940074906367042,
+   "ci95": [
+    0.7415,
+    0.8382
+   ]
+  },
+  {
+   "seed": 1,
+   "model": "tfidf:detok",
+   "set": "llama4|js",
+   "family": "other|js",
+   "n": 95,
+   "flagged": 85,
+   "fpr": 0.8947368421052632,
+   "ci95": [
+    0.817,
+    0.9418
+   ]
+  },
+  {
+   "seed": 1,
+   "model": "tfidf:detok",
+   "set": "mistral",
+   "family": "other",
+   "n": 306,
+   "flagged": 169,
+   "fpr": 0.5522875816993464,
+   "ci95": [
+    0.4963,
+    0.607
+   ]
+  },
+  {
+   "seed": 1,
+   "model": "tfidf:detok",
+   "set": "mistral|js",
+   "family": "other|js",
+   "n": 141,
+   "flagged": 98,
+   "fpr": 0.6950354609929078,
+   "ci95": [
+    0.6147,
+    0.765
+   ]
+  },
+  {
+   "seed": 1,
+   "model": "tfidf:struct",
+   "set": "luna",
+   "family": "openai",
+   "n": 333,
+   "flagged": 291,
+   "fpr": 0.8738738738738738,
+   "ci95": [
+    0.8339,
+    0.9053
+   ]
+  },
+  {
+   "seed": 1,
+   "model": "tfidf:struct",
+   "set": "luna|js",
+   "family": "openai|js",
+   "n": 265,
+   "flagged": 233,
+   "fpr": 0.879245283018868,
+   "ci95": [
+    0.8345,
+    0.9132
+   ]
+  },
+  {
+   "seed": 1,
+   "model": "tfidf:struct",
+   "set": "terra",
+   "family": "openai",
+   "n": 342,
+   "flagged": 288,
+   "fpr": 0.8421052631578947,
+   "ci95": [
+    0.7997,
+    0.8769
+   ]
+  },
+  {
+   "seed": 1,
+   "model": "tfidf:struct",
+   "set": "terra|js",
+   "family": "openai|js",
+   "n": 261,
+   "flagged": 229,
+   "fpr": 0.8773946360153256,
+   "ci95": [
+    0.832,
+    0.9118
+   ]
+  },
+  {
+   "seed": 1,
+   "model": "tfidf:struct",
+   "set": "gptoss",
+   "family": "openai",
+   "n": 172,
+   "flagged": 94,
+   "fpr": 0.5465116279069767,
+   "ci95": [
+    0.4719,
+    0.6191
+   ]
+  },
+  {
+   "seed": 1,
+   "model": "tfidf:struct",
+   "set": "gptoss|js",
+   "family": "openai|js",
+   "n": 63,
+   "flagged": 25,
+   "fpr": 0.3968253968253968,
+   "ci95": [
+    0.2853,
+    0.5202
+   ]
+  },
+  {
+   "seed": 1,
+   "model": "tfidf:struct",
+   "set": "glm5",
+   "family": "other",
+   "n": 219,
+   "flagged": 50,
+   "fpr": 0.228310502283105,
+   "ci95": [
+    0.1777,
+    0.2883
+   ]
+  },
+  {
+   "seed": 1,
+   "model": "tfidf:struct",
+   "set": "glm5|js",
+   "family": "other|js",
+   "n": 112,
+   "flagged": 19,
+   "fpr": 0.16964285714285715,
+   "ci95": [
+    0.1114,
+    0.2498
+   ]
+  },
+  {
+   "seed": 1,
+   "model": "tfidf:struct",
+   "set": "llama4",
+   "family": "other",
+   "n": 267,
+   "flagged": 145,
+   "fpr": 0.5430711610486891,
+   "ci95": [
+    0.4831,
+    0.6018
+   ]
+  },
+  {
+   "seed": 1,
+   "model": "tfidf:struct",
+   "set": "llama4|js",
+   "family": "other|js",
+   "n": 95,
+   "flagged": 80,
+   "fpr": 0.8421052631578947,
+   "ci95": [
+    0.7557,
+    0.9019
+   ]
+  },
+  {
+   "seed": 1,
+   "model": "tfidf:struct",
+   "set": "mistral",
+   "family": "other",
+   "n": 306,
+   "flagged": 171,
+   "fpr": 0.5588235294117647,
+   "ci95": [
+    0.5028,
+    0.6134
+   ]
+  },
+  {
+   "seed": 1,
+   "model": "tfidf:struct",
+   "set": "mistral|js",
+   "family": "other|js",
+   "n": 141,
+   "flagged": 112,
+   "fpr": 0.7943262411347518,
+   "ci95": [
+    0.7202,
+    0.8528
+   ]
+  },
+  {
+   "seed": 1,
+   "model": "probe:style",
+   "set": "luna",
+   "family": "openai",
+   "n": 333,
+   "flagged": 151,
+   "fpr": 0.45345345345345345,
+   "ci95": [
+    0.4008,
+    0.5072
+   ]
+  },
+  {
+   "seed": 1,
+   "model": "probe:style",
+   "set": "luna|js",
+   "family": "openai|js",
+   "n": 265,
+   "flagged": 146,
+   "fpr": 0.5509433962264151,
+   "ci95": [
+    0.4908,
+    0.6097
+   ]
+  },
+  {
+   "seed": 1,
+   "model": "probe:style",
+   "set": "terra",
+   "family": "openai",
+   "n": 342,
+   "flagged": 130,
+   "fpr": 0.38011695906432746,
+   "ci95": [
+    0.3303,
+    0.4326
+   ]
+  },
+  {
+   "seed": 1,
+   "model": "probe:style",
+   "set": "terra|js",
+   "family": "openai|js",
+   "n": 261,
+   "flagged": 119,
+   "fpr": 0.4559386973180077,
+   "ci95": [
+    0.3966,
+    0.5166
+   ]
+  },
+  {
+   "seed": 1,
+   "model": "probe:style",
+   "set": "gptoss",
+   "family": "openai",
+   "n": 172,
+   "flagged": 8,
+   "fpr": 0.046511627906976744,
+   "ci95": [
+    0.0238,
+    0.0891
+   ]
+  },
+  {
+   "seed": 1,
+   "model": "probe:style",
+   "set": "gptoss|js",
+   "family": "openai|js",
+   "n": 63,
+   "flagged": 3,
+   "fpr": 0.047619047619047616,
+   "ci95": [
+    0.0163,
+    0.1309
+   ]
+  },
+  {
+   "seed": 1,
+   "model": "probe:style",
+   "set": "glm5",
+   "family": "other",
+   "n": 219,
+   "flagged": 4,
+   "fpr": 0.0182648401826484,
+   "ci95": [
+    0.0071,
+    0.046
+   ]
+  },
+  {
+   "seed": 1,
+   "model": "probe:style",
+   "set": "glm5|js",
+   "family": "other|js",
+   "n": 112,
+   "flagged": 0,
+   "fpr": 0.0,
+   "ci95": [
+    0.0,
+    0.0332
+   ]
+  },
+  {
+   "seed": 1,
+   "model": "probe:style",
+   "set": "llama4",
+   "family": "other",
+   "n": 267,
+   "flagged": 28,
+   "fpr": 0.10486891385767791,
+   "ci95": [
+    0.0736,
+    0.1474
+   ]
+  },
+  {
+   "seed": 1,
+   "model": "probe:style",
+   "set": "llama4|js",
+   "family": "other|js",
+   "n": 95,
+   "flagged": 9,
+   "fpr": 0.09473684210526316,
+   "ci95": [
+    0.0506,
+    0.1703
+   ]
+  },
+  {
+   "seed": 1,
+   "model": "probe:style",
+   "set": "mistral",
+   "family": "other",
+   "n": 306,
+   "flagged": 34,
+   "fpr": 0.1111111111111111,
+   "ci95": [
+    0.0806,
+    0.1513
+   ]
+  },
+  {
+   "seed": 1,
+   "model": "probe:style",
+   "set": "mistral|js",
+   "family": "other|js",
+   "n": 141,
+   "flagged": 16,
+   "fpr": 0.11347517730496454,
+   "ci95": [
+    0.0711,
+    0.1764
+   ]
+  },
+  {
+   "seed": 2,
+   "model": "tfidf:detok",
+   "set": "luna",
+   "family": "openai",
+   "n": 333,
+   "flagged": 283,
+   "fpr": 0.8498498498498499,
+   "ci95": [
+    0.8075,
+    0.8842
+   ]
+  },
+  {
+   "seed": 2,
+   "model": "tfidf:detok",
+   "set": "luna|js",
+   "family": "openai|js",
+   "n": 265,
+   "flagged": 230,
+   "fpr": 0.8679245283018868,
+   "ci95": [
+    0.8219,
+    0.9035
+   ]
+  },
+  {
+   "seed": 2,
+   "model": "tfidf:detok",
+   "set": "terra",
+   "family": "openai",
+   "n": 342,
+   "flagged": 256,
+   "fpr": 0.7485380116959064,
+   "ci95": [
+    0.7,
+    0.7916
+   ]
+  },
+  {
+   "seed": 2,
+   "model": "tfidf:detok",
+   "set": "terra|js",
+   "family": "openai|js",
+   "n": 261,
+   "flagged": 195,
+   "fpr": 0.7471264367816092,
+   "ci95": [
+    0.6911,
+    0.796
+   ]
+  },
+  {
+   "seed": 2,
+   "model": "tfidf:detok",
+   "set": "gptoss",
+   "family": "openai",
+   "n": 172,
+   "flagged": 86,
+   "fpr": 0.5,
+   "ci95": [
+    0.4261,
+    0.5739
+   ]
+  },
+  {
+   "seed": 2,
+   "model": "tfidf:detok",
+   "set": "gptoss|js",
+   "family": "openai|js",
+   "n": 63,
+   "flagged": 13,
+   "fpr": 0.20634920634920634,
+   "ci95": [
+    0.1248,
+    0.3217
+   ]
+  },
+  {
+   "seed": 2,
+   "model": "tfidf:detok",
+   "set": "glm5",
+   "family": "other",
+   "n": 219,
+   "flagged": 46,
+   "fpr": 0.2100456621004566,
+   "ci95": [
+    0.1613,
+    0.2688
+   ]
+  },
+  {
+   "seed": 2,
+   "model": "tfidf:detok",
+   "set": "glm5|js",
+   "family": "other|js",
+   "n": 112,
+   "flagged": 8,
+   "fpr": 0.07142857142857142,
+   "ci95": [
+    0.0366,
+    0.1346
+   ]
+  },
+  {
+   "seed": 2,
+   "model": "tfidf:detok",
+   "set": "llama4",
+   "family": "other",
+   "n": 267,
+   "flagged": 210,
+   "fpr": 0.7865168539325843,
+   "ci95": [
+    0.7335,
+    0.8314
+   ]
+  },
+  {
+   "seed": 2,
+   "model": "tfidf:detok",
+   "set": "llama4|js",
+   "family": "other|js",
+   "n": 95,
+   "flagged": 85,
+   "fpr": 0.8947368421052632,
+   "ci95": [
+    0.817,
+    0.9418
+   ]
+  },
+  {
+   "seed": 2,
+   "model": "tfidf:detok",
+   "set": "mistral",
+   "family": "other",
+   "n": 306,
+   "flagged": 165,
+   "fpr": 0.5392156862745098,
+   "ci95": [
+    0.4832,
+    0.5942
+   ]
+  },
+  {
+   "seed": 2,
+   "model": "tfidf:detok",
+   "set": "mistral|js",
+   "family": "other|js",
+   "n": 141,
+   "flagged": 97,
+   "fpr": 0.6879432624113475,
+   "ci95": [
+    0.6073,
+    0.7586
+   ]
+  },
+  {
+   "seed": 2,
+   "model": "tfidf:struct",
+   "set": "luna",
+   "family": "openai",
+   "n": 333,
+   "flagged": 267,
+   "fpr": 0.8018018018018018,
+   "ci95": [
+    0.7556,
+    0.8411
+   ]
+  },
+  {
+   "seed": 2,
+   "model": "tfidf:struct",
+   "set": "luna|js",
+   "family": "openai|js",
+   "n": 265,
+   "flagged": 216,
+   "fpr": 0.8150943396226416,
+   "ci95": [
+    0.764,
+    0.8572
+   ]
+  },
+  {
+   "seed": 2,
+   "model": "tfidf:struct",
+   "set": "terra",
+   "family": "openai",
+   "n": 342,
+   "flagged": 264,
+   "fpr": 0.7719298245614035,
+   "ci95": [
+    0.7246,
+    0.8132
+   ]
+  },
+  {
+   "seed": 2,
+   "model": "tfidf:struct",
+   "set": "terra|js",
+   "family": "openai|js",
+   "n": 261,
+   "flagged": 214,
+   "fpr": 0.8199233716475096,
+   "ci95": [
+    0.7688,
+    0.8618
+   ]
+  },
+  {
+   "seed": 2,
+   "model": "tfidf:struct",
+   "set": "gptoss",
+   "family": "openai",
+   "n": 172,
+   "flagged": 77,
+   "fpr": 0.4476744186046512,
+   "ci95": [
+    0.3753,
+    0.5223
+   ]
+  },
+  {
+   "seed": 2,
+   "model": "tfidf:struct",
+   "set": "gptoss|js",
+   "family": "openai|js",
+   "n": 63,
+   "flagged": 22,
+   "fpr": 0.3492063492063492,
+   "ci95": [
+    0.2433,
+    0.4725
+   ]
+  },
+  {
+   "seed": 2,
+   "model": "tfidf:struct",
+   "set": "glm5",
+   "family": "other",
+   "n": 219,
+   "flagged": 41,
+   "fpr": 0.1872146118721461,
+   "ci95": [
+    0.1411,
+    0.2441
+   ]
+  },
+  {
+   "seed": 2,
+   "model": "tfidf:struct",
+   "set": "glm5|js",
+   "family": "other|js",
+   "n": 112,
+   "flagged": 17,
+   "fpr": 0.15178571428571427,
+   "ci95": [
+    0.097,
+    0.2297
+   ]
+  },
+  {
+   "seed": 2,
+   "model": "tfidf:struct",
+   "set": "llama4",
+   "family": "other",
+   "n": 267,
+   "flagged": 134,
+   "fpr": 0.50187265917603,
+   "ci95": [
+    0.4423,
+    0.5614
+   ]
+  },
+  {
+   "seed": 2,
+   "model": "tfidf:struct",
+   "set": "llama4|js",
+   "family": "other|js",
+   "n": 95,
+   "flagged": 78,
+   "fpr": 0.8210526315789474,
+   "ci95": [
+    0.732,
+    0.8852
+   ]
+  },
+  {
+   "seed": 2,
+   "model": "tfidf:struct",
+   "set": "mistral",
+   "family": "other",
+   "n": 306,
+   "flagged": 146,
+   "fpr": 0.477124183006536,
+   "ci95": [
+    0.4218,
+    0.533
+   ]
+  },
+  {
+   "seed": 2,
+   "model": "tfidf:struct",
+   "set": "mistral|js",
+   "family": "other|js",
+   "n": 141,
+   "flagged": 104,
+   "fpr": 0.7375886524822695,
+   "ci95": [
+    0.6594,
+    0.8032
+   ]
+  },
+  {
+   "seed": 2,
+   "model": "probe:style",
+   "set": "luna",
+   "family": "openai",
+   "n": 333,
+   "flagged": 146,
+   "fpr": 0.43843843843843844,
+   "ci95": [
+    0.3861,
+    0.4921
+   ]
+  },
+  {
+   "seed": 2,
+   "model": "probe:style",
+   "set": "luna|js",
+   "family": "openai|js",
+   "n": 265,
+   "flagged": 141,
+   "fpr": 0.5320754716981132,
+   "ci95": [
+    0.472,
+    0.5913
+   ]
+  },
+  {
+   "seed": 2,
+   "model": "probe:style",
+   "set": "terra",
+   "family": "openai",
+   "n": 342,
+   "flagged": 123,
+   "fpr": 0.35964912280701755,
+   "ci95": [
+    0.3106,
+    0.4118
+   ]
+  },
+  {
+   "seed": 2,
+   "model": "probe:style",
+   "set": "terra|js",
+   "family": "openai|js",
+   "n": 261,
+   "flagged": 113,
+   "fpr": 0.4329501915708812,
+   "ci95": [
+    0.3742,
+    0.4936
+   ]
+  },
+  {
+   "seed": 2,
+   "model": "probe:style",
+   "set": "gptoss",
+   "family": "openai",
+   "n": 172,
+   "flagged": 8,
+   "fpr": 0.046511627906976744,
+   "ci95": [
+    0.0238,
+    0.0891
+   ]
+  },
+  {
+   "seed": 2,
+   "model": "probe:style",
+   "set": "gptoss|js",
+   "family": "openai|js",
+   "n": 63,
+   "flagged": 3,
+   "fpr": 0.047619047619047616,
+   "ci95": [
+    0.0163,
+    0.1309
+   ]
+  },
+  {
+   "seed": 2,
+   "model": "probe:style",
+   "set": "glm5",
+   "family": "other",
+   "n": 219,
+   "flagged": 4,
+   "fpr": 0.0182648401826484,
+   "ci95": [
+    0.0071,
+    0.046
+   ]
+  },
+  {
+   "seed": 2,
+   "model": "probe:style",
+   "set": "glm5|js",
+   "family": "other|js",
+   "n": 112,
+   "flagged": 0,
+   "fpr": 0.0,
+   "ci95": [
+    0.0,
+    0.0332
+   ]
+  },
+  {
+   "seed": 2,
+   "model": "probe:style",
+   "set": "llama4",
+   "family": "other",
+   "n": 267,
+   "flagged": 25,
+   "fpr": 0.09363295880149813,
+   "ci95": [
+    0.0642,
+    0.1346
+   ]
+  },
+  {
+   "seed": 2,
+   "model": "probe:style",
+   "set": "llama4|js",
+   "family": "other|js",
+   "n": 95,
+   "flagged": 6,
+   "fpr": 0.06315789473684211,
+   "ci95": [
+    0.0293,
+    0.131
+   ]
+  },
+  {
+   "seed": 2,
+   "model": "probe:style",
+   "set": "mistral",
+   "family": "other",
+   "n": 306,
+   "flagged": 27,
+   "fpr": 0.08823529411764706,
+   "ci95": [
+    0.0613,
+    0.1253
+   ]
+  },
+  {
+   "seed": 2,
+   "model": "probe:style",
+   "set": "mistral|js",
+   "family": "other|js",
+   "n": 141,
+   "flagged": 12,
+   "fpr": 0.0851063829787234,
+   "ci95": [
+    0.0494,
+    0.1429
+   ]
+  }
+ ],
+ "summary": [
+  {
+   "model": "probe:style",
+   "set": "glm5",
+   "family": "other",
+   "fpr_mean": 0.0183,
+   "fpr_std": 0.0,
+   "n": 219
+  },
+  {
+   "model": "probe:style",
+   "set": "glm5|js",
+   "family": "other|js",
+   "fpr_mean": 0.0,
+   "fpr_std": 0.0,
+   "n": 112
+  },
+  {
+   "model": "probe:style",
+   "set": "gptoss",
+   "family": "openai",
+   "fpr_mean": 0.0446,
+   "fpr_std": 0.0034,
+   "n": 172
+  },
+  {
+   "model": "probe:style",
+   "set": "gptoss|js",
+   "family": "openai|js",
+   "fpr_mean": 0.0476,
+   "fpr_std": 0.0,
+   "n": 63
+  },
+  {
+   "model": "probe:style",
+   "set": "llama4",
+   "family": "other",
+   "fpr_mean": 0.0899,
+   "fpr_std": 0.0172,
+   "n": 267
+  },
+  {
+   "model": "probe:style",
+   "set": "llama4|js",
+   "family": "other|js",
+   "fpr_mean": 0.0667,
+   "fpr_std": 0.0265,
+   "n": 95
+  },
+  {
+   "model": "probe:style",
+   "set": "luna",
+   "family": "openai",
+   "fpr_mean": 0.4374,
+   "fpr_std": 0.0165,
+   "n": 333
+  },
+  {
+   "model": "probe:style",
+   "set": "luna|js",
+   "family": "openai|js",
+   "fpr_mean": 0.5321,
+   "fpr_std": 0.0189,
+   "n": 265
+  },
+  {
+   "model": "probe:style",
+   "set": "mistral",
+   "family": "other",
+   "fpr_mean": 0.0893,
+   "fpr_std": 0.0213,
+   "n": 306
+  },
+  {
+   "model": "probe:style",
+   "set": "mistral|js",
+   "family": "other|js",
+   "fpr_mean": 0.0898,
+   "fpr_std": 0.0217,
+   "n": 141
+  },
+  {
+   "model": "probe:style",
+   "set": "terra",
+   "family": "openai",
+   "fpr_mean": 0.3528,
+   "fpr_std": 0.0313,
+   "n": 342
+  },
+  {
+   "model": "probe:style",
+   "set": "terra|js",
+   "family": "openai|js",
+   "fpr_mean": 0.4227,
+   "fpr_std": 0.0393,
+   "n": 261
+  },
+  {
+   "model": "tfidf:detok",
+   "set": "glm5",
+   "family": "other",
+   "fpr_mean": 0.2207,
+   "fpr_std": 0.0147,
+   "n": 219
+  },
+  {
+   "model": "tfidf:detok",
+   "set": "glm5|js",
+   "family": "other|js",
+   "fpr_mean": 0.0774,
+   "fpr_std": 0.0186,
+   "n": 112
+  },
+  {
+   "model": "tfidf:detok",
+   "set": "gptoss",
+   "family": "openai",
+   "fpr_mean": 0.5136,
+   "fpr_std": 0.0146,
+   "n": 172
+  },
+  {
+   "model": "tfidf:detok",
+   "set": "gptoss|js",
+   "family": "openai|js",
+   "fpr_mean": 0.2169,
+   "fpr_std": 0.0092,
+   "n": 63
+  },
+  {
+   "model": "tfidf:detok",
+   "set": "llama4",
+   "family": "other",
+   "fpr_mean": 0.7853,
+   "fpr_std": 0.0094,
+   "n": 267
+  },
+  {
+   "model": "tfidf:detok",
+   "set": "llama4|js",
+   "family": "other|js",
+   "fpr_mean": 0.8877,
+   "fpr_std": 0.0122,
+   "n": 95
+  },
+  {
+   "model": "tfidf:detok",
+   "set": "luna",
+   "family": "openai",
+   "fpr_mean": 0.8569,
+   "fpr_std": 0.0097,
+   "n": 333
+  },
+  {
+   "model": "tfidf:detok",
+   "set": "luna|js",
+   "family": "openai|js",
+   "fpr_mean": 0.8704,
+   "fpr_std": 0.0115,
+   "n": 265
+  },
+  {
+   "model": "tfidf:detok",
+   "set": "mistral",
+   "family": "other",
+   "fpr_mean": 0.5403,
+   "fpr_std": 0.0115,
+   "n": 306
+  },
+  {
+   "model": "tfidf:detok",
+   "set": "mistral|js",
+   "family": "other|js",
+   "fpr_mean": 0.6879,
+   "fpr_std": 0.0071,
+   "n": 141
+  },
+  {
+   "model": "tfidf:detok",
+   "set": "terra",
+   "family": "openai",
+   "fpr_mean": 0.7554,
+   "fpr_std": 0.0144,
+   "n": 342
+  },
+  {
+   "model": "tfidf:detok",
+   "set": "terra|js",
+   "family": "openai|js",
+   "fpr_mean": 0.751,
+   "fpr_std": 0.0138,
+   "n": 261
+  },
+  {
+   "model": "tfidf:struct",
+   "set": "glm5",
+   "family": "other",
+   "fpr_mean": 0.2024,
+   "fpr_std": 0.0225,
+   "n": 219
+  },
+  {
+   "model": "tfidf:struct",
+   "set": "glm5|js",
+   "family": "other|js",
+   "fpr_mean": 0.1518,
+   "fpr_std": 0.0179,
+   "n": 112
+  },
+  {
+   "model": "tfidf:struct",
+   "set": "gptoss",
+   "family": "openai",
+   "fpr_mean": 0.4981,
+   "fpr_std": 0.0494,
+   "n": 172
+  },
+  {
+   "model": "tfidf:struct",
+   "set": "gptoss|js",
+   "family": "openai|js",
+   "fpr_mean": 0.3704,
+   "fpr_std": 0.0242,
+   "n": 63
+  },
+  {
+   "model": "tfidf:struct",
+   "set": "llama4",
+   "family": "other",
+   "fpr_mean": 0.5181,
+   "fpr_std": 0.0219,
+   "n": 267
+  },
+  {
+   "model": "tfidf:struct",
+   "set": "llama4|js",
+   "family": "other|js",
+   "fpr_mean": 0.8386,
+   "fpr_std": 0.0161,
+   "n": 95
+  },
+  {
+   "model": "tfidf:struct",
+   "set": "luna",
+   "family": "openai",
+   "fpr_mean": 0.8268,
+   "fpr_std": 0.0408,
+   "n": 333
+  },
+  {
+   "model": "tfidf:struct",
+   "set": "luna|js",
+   "family": "openai|js",
+   "fpr_mean": 0.8352,
+   "fpr_std": 0.0382,
+   "n": 265
+  },
+  {
+   "model": "tfidf:struct",
+   "set": "mistral",
+   "family": "other",
+   "fpr_mean": 0.5109,
+   "fpr_std": 0.0427,
+   "n": 306
+  },
+  {
+   "model": "tfidf:struct",
+   "set": "mistral|js",
+   "family": "other|js",
+   "fpr_mean": 0.7612,
+   "fpr_std": 0.0295,
+   "n": 141
+  },
+  {
+   "model": "tfidf:struct",
+   "set": "terra",
+   "family": "openai",
+   "fpr_mean": 0.7953,
+   "fpr_std": 0.0405,
+   "n": 342
+  },
+  {
+   "model": "tfidf:struct",
+   "set": "terra|js",
+   "family": "openai|js",
+   "fpr_mean": 0.834,
+   "fpr_std": 0.0384,
+   "n": 261
+  }
+ ],
+ "family_means": [
+  {
+   "model": "probe:style",
+   "family": "openai",
+   "mean": 0.2783,
+   "std": 0.0169
+  },
+  {
+   "model": "probe:style",
+   "family": "openai|js",
+   "mean": 0.3341,
+   "std": 0.0193
+  },
+  {
+   "model": "probe:style",
+   "family": "other",
+   "mean": 0.0658,
+   "std": 0.0127
+  },
+  {
+   "model": "probe:style",
+   "family": "other|js",
+   "mean": 0.0522,
+   "std": 0.016
+  },
+  {
+   "model": "tfidf:detok",
+   "family": "openai",
+   "mean": 0.7086,
+   "std": 0.0126
+  },
+  {
+   "model": "tfidf:detok",
+   "family": "openai|js",
+   "mean": 0.6128,
+   "std": 0.0096
+  },
+  {
+   "model": "tfidf:detok",
+   "family": "other",
+   "mean": 0.5154,
+   "std": 0.0112
+  },
+  {
+   "model": "tfidf:detok",
+   "family": "other|js",
+   "mean": 0.551,
+   "std": 0.0118
+  },
+  {
+   "model": "tfidf:struct",
+   "family": "openai",
+   "mean": 0.7067,
+   "std": 0.0421
+  },
+  {
+   "model": "tfidf:struct",
+   "family": "openai|js",
+   "mean": 0.6799,
+   "std": 0.0329
+  },
+  {
+   "model": "tfidf:struct",
+   "family": "other",
+   "mean": 0.4105,
+   "std": 0.029
+  },
+  {
+   "model": "tfidf:struct",
+   "family": "other|js",
+   "mean": 0.5839,
+   "std": 0.0164
+  }
+ ],
+ "lengths": {
+  "luna": {
+   "median_chars": 444,
+   "n": 333,
+   "by_lang": {
+    "js": 265,
+    "py": 62,
+    "sh": 6
+   }
+  },
+  "luna|js": {
+   "median_chars": 450,
+   "n": 265,
+   "by_lang": {
+    "js": 265
+   }
+  },
+  "terra": {
+   "median_chars": 624,
+   "n": 342,
+   "by_lang": {
+    "js": 261,
+    "py": 58,
+    "sh": 23
+   }
+  },
+  "terra|js": {
+   "median_chars": 776,
+   "n": 261,
+   "by_lang": {
+    "js": 261
+   }
+  },
+  "gptoss": {
+   "median_chars": 339,
+   "n": 172,
+   "by_lang": {
+    "py": 85,
+    "js": 63,
+    "sh": 24
+   }
+  },
+  "gptoss|js": {
+   "median_chars": 517,
+   "n": 63,
+   "by_lang": {
+    "js": 63
+   }
+  },
+  "glm5": {
+   "median_chars": 596,
+   "n": 219,
+   "by_lang": {
+    "js": 112,
+    "sh": 69,
+    "py": 38
+   }
+  },
+  "glm5|js": {
+   "median_chars": 1084,
+   "n": 112,
+   "by_lang": {
+    "js": 112
+   }
+  },
+  "llama4": {
+   "median_chars": 118,
+   "n": 267,
+   "by_lang": {
+    "py": 97,
+    "js": 95,
+    "sh": 75
+   }
+  },
+  "llama4|js": {
+   "median_chars": 112,
+   "n": 95,
+   "by_lang": {
+    "js": 95
+   }
+  },
+  "mistral": {
+   "median_chars": 229,
+   "n": 306,
+   "by_lang": {
+    "js": 141,
+    "py": 87,
+    "sh": 78
+   }
+  },
+  "mistral|js": {
+   "median_chars": 229,
+   "n": 141,
+   "by_lang": {
+    "js": 141
+   }
+  }
+ }
+}

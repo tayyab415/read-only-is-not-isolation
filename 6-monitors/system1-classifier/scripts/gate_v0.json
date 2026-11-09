@@ -1,0 +1,3 @@
+{"train_pos": ["../data/positives.parquet"], "train_neg": ["../data/neg_local_npm.parquet", "../data/neg_hf_docs_other.parquet"],
+ "evals": {"hf_docs_api": {"path": "../data/eval_hf_docs_api.parquet", "label": 0}},
+ "seeds": [0, 1, 2], "cap_per_cluster": 3, "max_per_class": 20000, "length_match": true, "fractions": [0.7, 0.1, 0.2], "eval_max": 5000}

@@ -1,0 +1,1141 @@
+{
+  "utc": "2026-11-09T05:10:35.686787+00:00",
+  "passed": true,
+  "scope": "Complete held chronology and descriptive timing; original primary family unchanged",
+  "model_frozen_utc": "2026-11-09T03:51:33.322785+00:00",
+  "model_sha256": "93397b2e74a47d13de4dc28d3b5c3bed76dd0879085edffab9c2252b9d491acc",
+  "all_calibration_seals_precede_model": true,
+  "all_models_precede_all_held_trials": true,
+  "trials": 1200,
+  "native_checks": 552674,
+  "arms": {
+    "shared": {
+      "trials": 300,
+      "first_controller_start_utc_ns": 1794196299811528889,
+      "last_controller_end_utc_ns": 1794197387778941012,
+      "sealed_utc_ns": 1794197400219645382,
+      "model_precedes_first_held_trial": true,
+      "receiver_schedule_lead_ms": {
+        "count": 300,
+        "min": 287.76533,
+        "median": 298.134705,
+        "p95_nearest_rank": 298.606039,
+        "max": 298.728462
+      },
+      "late_receiver_setup_trials": [],
+      "sender_overrun_ms_all_trials": {
+        "count": 300,
+        "min": 0.0,
+        "median": 0.0,
+        "p95_nearest_rank": 695.393745,
+        "max": 940.238942
+      },
+      "positive_sender_overrun_trials": [
+        {
+          "trial": "h0008",
+          "label": 1,
+          "sender": "bob",
+          "receiver": "alice",
+          "jsonl_line": 9,
+          "receiver_schedule_lead_ms": 298.389892,
+          "sender_overrun_ms": 159.203914
+        },
+        {
+          "trial": "h0009",
+          "label": 1,
+          "sender": "bob",
+          "receiver": "alice",
+          "jsonl_line": 10,
+          "receiver_schedule_lead_ms": 298.365862,
+          "sender_overrun_ms": 692.620926
+        },
+        {
+          "trial": "h0016",
+          "label": 1,
+          "sender": "bob",
+          "receiver": "alice",
+          "jsonl_line": 17,
+          "receiver_schedule_lead_ms": 298.452684,
+          "sender_overrun_ms": 525.914087
+        },
+        {
+          "trial": "h0054",
+          "label": 1,
+          "sender": "bob",
+          "receiver": "alice",
+          "jsonl_line": 55,
+          "receiver_schedule_lead_ms": 298.174296,
+          "sender_overrun_ms": 153.852282
+        },
+        {
+          "trial": "h0056",
+          "label": 1,
+          "sender": "alice",
+          "receiver": "bob",
+          "jsonl_line": 57,
+          "receiver_schedule_lead_ms": 298.482425,
+          "sender_overrun_ms": 773.321915
+        },
+        {
+          "trial": "h0060",
+          "label": 1,
+          "sender": "alice",
+          "receiver": "bob",
+          "jsonl_line": 61,
+          "receiver_schedule_lead_ms": 298.068513,
+          "sender_overrun_ms": 904.790551
+        },
+        {
+          "trial": "h0083",
+          "label": 1,
+          "sender": "alice",
+          "receiver": "bob",
+          "jsonl_line": 84,
+          "receiver_schedule_lead_ms": 298.511716,
+          "sender_overrun_ms": 173.01478
+        },
+        {
+          "trial": "h0087",
+          "label": 1,
+          "sender": "alice",
+          "receiver": "bob",
+          "jsonl_line": 88,
+          "receiver_schedule_lead_ms": 298.171406,
+          "sender_overrun_ms": 134.292274
+        },
+        {
+          "trial": "h0090",
+          "label": 1,
+          "sender": "alice",
+          "receiver": "bob",
+          "jsonl_line": 91,
+          "receiver_schedule_lead_ms": 298.543497,
+          "sender_overrun_ms": 778.273651
+        },
+        {
+          "trial": "h0096",
+          "label": 1,
+          "sender": "bob",
+          "receiver": "alice",
+          "jsonl_line": 97,
+          "receiver_schedule_lead_ms": 298.401123,
+          "sender_overrun_ms": 818.881257
+        },
+        {
+          "trial": "h0102",
+          "label": 1,
+          "sender": "bob",
+          "receiver": "alice",
+          "jsonl_line": 103,
+          "receiver_schedule_lead_ms": 298.241398,
+          "sender_overrun_ms": 423.364701
+        },
+        {
+          "trial": "h0105",
+          "label": 1,
+          "sender": "alice",
+          "receiver": "bob",
+          "jsonl_line": 106,
+          "receiver_schedule_lead_ms": 298.549657,
+          "sender_overrun_ms": 810.210218
+        },
+        {
+          "trial": "h0108",
+          "label": 1,
+          "sender": "alice",
+          "receiver": "bob",
+          "jsonl_line": 109,
+          "receiver_schedule_lead_ms": 298.663821,
+          "sender_overrun_ms": 885.113262
+        },
+        {
+          "trial": "h0110",
+          "label": 1,
+          "sender": "alice",
+          "receiver": "bob",
+          "jsonl_line": 111,
+          "receiver_schedule_lead_ms": 298.485635,
+          "sender_overrun_ms": 409.294298
+        },
+        {
+          "trial": "h0113",
+          "label": 1,
+          "sender": "alice",
+          "receiver": "bob",
+          "jsonl_line": 114,
+          "receiver_schedule_lead_ms": 298.541297,
+          "sender_overrun_ms": 796.329749
+        },
+        {
+          "trial": "h0118",
+          "label": 1,
+          "sender": "alice",
+          "receiver": "bob",
+          "jsonl_line": 119,
+          "receiver_schedule_lead_ms": 298.618469,
+          "sender_overrun_ms": 416.742371
+        },
+        {
+          "trial": "h0125",
+          "label": 1,
+          "sender": "bob",
+          "receiver": "alice",
+          "jsonl_line": 126,
+          "receiver_schedule_lead_ms": 298.32648,
+          "sender_overrun_ms": 894.054952
+        },
+        {
+          "trial": "h0136",
+          "label": 1,
+          "sender": "bob",
+          "receiver": "alice",
+          "jsonl_line": 137,
+          "receiver_schedule_lead_ms": 298.469645,
+          "sender_overrun_ms": 157.174262
+        },
+        {
+          "trial": "h0140",
+          "label": 1,
+          "sender": "bob",
+          "receiver": "alice",
+          "jsonl_line": 141,
+          "receiver_schedule_lead_ms": 298.370652,
+          "sender_overrun_ms": 686.854917
+        },
+        {
+          "trial": "h0151",
+          "label": 1,
+          "sender": "alice",
+          "receiver": "bob",
+          "jsonl_line": 152,
+          "receiver_schedule_lead_ms": 298.531486,
+          "sender_overrun_ms": 138.320079
+        },
+        {
+          "trial": "h0152",
+          "label": 1,
+          "sender": "bob",
+          "receiver": "alice",
+          "jsonl_line": 153,
+          "receiver_schedule_lead_ms": 294.555459,
+          "sender_overrun_ms": 31.359213
+        },
+        {
+          "trial": "h0154",
+          "label": 1,
+          "sender": "bob",
+          "receiver": "alice",
+          "jsonl_line": 155,
+          "receiver_schedule_lead_ms": 298.257689,
+          "sender_overrun_ms": 10.029744
+        },
+        {
+          "trial": "h0156",
+          "label": 1,
+          "sender": "bob",
+          "receiver": "alice",
+          "jsonl_line": 157,
+          "receiver_schedule_lead_ms": 297.96257,
+          "sender_overrun_ms": 307.709014
+        },
+        {
+          "trial": "h0176",
+          "label": 1,
+          "sender": "alice",
+          "receiver": "bob",
+          "jsonl_line": 177,
+          "receiver_schedule_lead_ms": 298.185627,
+          "sender_overrun_ms": 899.128187
+        },
+        {
+          "trial": "h0179",
+          "label": 1,
+          "sender": "alice",
+          "receiver": "bob",
+          "jsonl_line": 180,
+          "receiver_schedule_lead_ms": 298.494086,
+          "sender_overrun_ms": 940.238942
+        },
+        {
+          "trial": "h0181",
+          "label": 1,
+          "sender": "bob",
+          "receiver": "alice",
+          "jsonl_line": 182,
+          "receiver_schedule_lead_ms": 294.811828,
+          "sender_overrun_ms": 538.044467
+        },
+        {
+          "trial": "h0197",
+          "label": 1,
+          "sender": "bob",
+          "receiver": "alice",
+          "jsonl_line": 198,
+          "receiver_schedule_lead_ms": 287.76533,
+          "sender_overrun_ms": 296.950794
+        },
+        {
+          "trial": "h0202",
+          "label": 1,
+          "sender": "alice",
+          "receiver": "bob",
+          "jsonl_line": 203,
+          "receiver_schedule_lead_ms": 297.793015,
+          "sender_overrun_ms": 804.647042
+        },
+        {
+          "trial": "h0207",
+          "label": 1,
+          "sender": "alice",
+          "receiver": "bob",
+          "jsonl_line": 208,
+          "receiver_schedule_lead_ms": 298.064742,
+          "sender_overrun_ms": 897.422304
+        },
+        {
+          "trial": "h0219",
+          "label": 1,
+          "sender": "bob",
+          "receiver": "alice",
+          "jsonl_line": 220,
+          "receiver_schedule_lead_ms": 297.986991,
+          "sender_overrun_ms": 695.393745
+        },
+        {
+          "trial": "h0221",
+          "label": 1,
+          "sender": "alice",
+          "receiver": "bob",
+          "jsonl_line": 222,
+          "receiver_schedule_lead_ms": 297.982711,
+          "sender_overrun_ms": 269.037709
+        },
+        {
+          "trial": "h0226",
+          "label": 1,
+          "sender": "alice",
+          "receiver": "bob",
+          "jsonl_line": 227,
+          "receiver_schedule_lead_ms": 295.849778,
+          "sender_overrun_ms": 288.994713
+        },
+        {
+          "trial": "h0229",
+          "label": 1,
+          "sender": "bob",
+          "receiver": "alice",
+          "jsonl_line": 230,
+          "receiver_schedule_lead_ms": 297.465686,
+          "sender_overrun_ms": 774.605283
+        },
+        {
+          "trial": "h0238",
+          "label": 1,
+          "sender": "alice",
+          "receiver": "bob",
+          "jsonl_line": 239,
+          "receiver_schedule_lead_ms": 293.90031,
+          "sender_overrun_ms": 199.134817
+        },
+        {
+          "trial": "h0239",
+          "label": 1,
+          "sender": "alice",
+          "receiver": "bob",
+          "jsonl_line": 240,
+          "receiver_schedule_lead_ms": 297.722233,
+          "sender_overrun_ms": 523.983743
+        },
+        {
+          "trial": "h0244",
+          "label": 1,
+          "sender": "bob",
+          "receiver": "alice",
+          "jsonl_line": 245,
+          "receiver_schedule_lead_ms": 295.402054,
+          "sender_overrun_ms": 675.443711
+        },
+        {
+          "trial": "h0248",
+          "label": 1,
+          "sender": "alice",
+          "receiver": "bob",
+          "jsonl_line": 249,
+          "receiver_schedule_lead_ms": 295.267091,
+          "sender_overrun_ms": 162.582012
+        },
+        {
+          "trial": "h0251",
+          "label": 1,
+          "sender": "bob",
+          "receiver": "alice",
+          "jsonl_line": 252,
+          "receiver_schedule_lead_ms": 297.807306,
+          "sender_overrun_ms": 423.24501
+        },
+        {
+          "trial": "h0256",
+          "label": 1,
+          "sender": "bob",
+          "receiver": "alice",
+          "jsonl_line": 257,
+          "receiver_schedule_lead_ms": 297.368193,
+          "sender_overrun_ms": 59.264786
+        },
+        {
+          "trial": "h0260",
+          "label": 1,
+          "sender": "alice",
+          "receiver": "bob",
+          "jsonl_line": 261,
+          "receiver_schedule_lead_ms": 294.316392,
+          "sender_overrun_ms": 769.86997
+        },
+        {
+          "trial": "h0282",
+          "label": 1,
+          "sender": "alice",
+          "receiver": "bob",
+          "jsonl_line": 283,
+          "receiver_schedule_lead_ms": 298.044022,
+          "sender_overrun_ms": 915.921463
+        },
+        {
+          "trial": "h0288",
+          "label": 1,
+          "sender": "alice",
+          "receiver": "bob",
+          "jsonl_line": 289,
+          "receiver_schedule_lead_ms": 295.517448,
+          "sender_overrun_ms": 157.628892
+        }
+      ],
+      "controller_trial_wall_seconds": {
+        "count": 300,
+        "min": 3.054783893,
+        "median": 3.0569143765,
+        "p95_nearest_rank": 3.073142335,
+        "max": 3.244833126
+      },
+      "failed_trials": 0,
+      "sender_http_requests": 19200,
+      "receiver_http_requests": 6300
+    },
+    "pergw": {
+      "trials": 300,
+      "first_controller_start_utc_ns": 1794197411058781668,
+      "last_controller_end_utc_ns": 1794198501723922792,
+      "sealed_utc_ns": 1794198510710682747,
+      "model_precedes_first_held_trial": true,
+      "receiver_schedule_lead_ms": {
+        "count": 300,
+        "min": 290.50723,
+        "median": 297.5945685,
+        "p95_nearest_rank": 298.549387,
+        "max": 298.703362
+      },
+      "late_receiver_setup_trials": [],
+      "sender_overrun_ms_all_trials": {
+        "count": 300,
+        "min": 0.0,
+        "median": 0.0,
+        "p95_nearest_rank": 560.634822,
+        "max": 928.977398
+      },
+      "positive_sender_overrun_trials": [
+        {
+          "trial": "h0002",
+          "label": 1,
+          "sender": "bob",
+          "receiver": "alice",
+          "jsonl_line": 3,
+          "receiver_schedule_lead_ms": 297.810015,
+          "sender_overrun_ms": 901.412914
+        },
+        {
+          "trial": "h0019",
+          "label": 1,
+          "sender": "alice",
+          "receiver": "bob",
+          "jsonl_line": 20,
+          "receiver_schedule_lead_ms": 295.692473,
+          "sender_overrun_ms": 386.64309
+        },
+        {
+          "trial": "h0024",
+          "label": 1,
+          "sender": "bob",
+          "receiver": "alice",
+          "jsonl_line": 25,
+          "receiver_schedule_lead_ms": 295.028233,
+          "sender_overrun_ms": 529.83738
+        },
+        {
+          "trial": "h0027",
+          "label": 1,
+          "sender": "alice",
+          "receiver": "bob",
+          "jsonl_line": 28,
+          "receiver_schedule_lead_ms": 297.62777,
+          "sender_overrun_ms": 887.322595
+        },
+        {
+          "trial": "h0038",
+          "label": 1,
+          "sender": "alice",
+          "receiver": "bob",
+          "jsonl_line": 39,
+          "receiver_schedule_lead_ms": 297.908798,
+          "sender_overrun_ms": 417.609414
+        },
+        {
+          "trial": "h0040",
+          "label": 1,
+          "sender": "bob",
+          "receiver": "alice",
+          "jsonl_line": 41,
+          "receiver_schedule_lead_ms": 297.357322,
+          "sender_overrun_ms": 511.757859
+        },
+        {
+          "trial": "h0049",
+          "label": 1,
+          "sender": "bob",
+          "receiver": "alice",
+          "jsonl_line": 50,
+          "receiver_schedule_lead_ms": 295.686262,
+          "sender_overrun_ms": 781.95155
+        },
+        {
+          "trial": "h0053",
+          "label": 1,
+          "sender": "bob",
+          "receiver": "alice",
+          "jsonl_line": 54,
+          "receiver_schedule_lead_ms": 293.862306,
+          "sender_overrun_ms": 553.140484
+        },
+        {
+          "trial": "h0063",
+          "label": 1,
+          "sender": "bob",
+          "receiver": "alice",
+          "jsonl_line": 64,
+          "receiver_schedule_lead_ms": 297.71092,
+          "sender_overrun_ms": 914.367255
+        },
+        {
+          "trial": "h0072",
+          "label": 1,
+          "sender": "bob",
+          "receiver": "alice",
+          "jsonl_line": 73,
+          "receiver_schedule_lead_ms": 296.074713,
+          "sender_overrun_ms": 770.623891
+        },
+        {
+          "trial": "h0083",
+          "label": 1,
+          "sender": "bob",
+          "receiver": "alice",
+          "jsonl_line": 84,
+          "receiver_schedule_lead_ms": 296.049693,
+          "sender_overrun_ms": 50.749269
+        },
+        {
+          "trial": "h0095",
+          "label": 1,
+          "sender": "alice",
+          "receiver": "bob",
+          "jsonl_line": 96,
+          "receiver_schedule_lead_ms": 294.621578,
+          "sender_overrun_ms": 560.634822
+        },
+        {
+          "trial": "h0106",
+          "label": 1,
+          "sender": "bob",
+          "receiver": "alice",
+          "jsonl_line": 107,
+          "receiver_schedule_lead_ms": 297.780224,
+          "sender_overrun_ms": 568.276717
+        },
+        {
+          "trial": "h0109",
+          "label": 1,
+          "sender": "bob",
+          "receiver": "alice",
+          "jsonl_line": 110,
+          "receiver_schedule_lead_ms": 295.822026,
+          "sender_overrun_ms": 784.173753
+        },
+        {
+          "trial": "h0112",
+          "label": 1,
+          "sender": "bob",
+          "receiver": "alice",
+          "jsonl_line": 113,
+          "receiver_schedule_lead_ms": 297.732883,
+          "sender_overrun_ms": 422.997807
+        },
+        {
+          "trial": "h0117",
+          "label": 1,
+          "sender": "alice",
+          "receiver": "bob",
+          "jsonl_line": 118,
+          "receiver_schedule_lead_ms": 297.024912,
+          "sender_overrun_ms": 765.475653
+        },
+        {
+          "trial": "h0121",
+          "label": 1,
+          "sender": "bob",
+          "receiver": "alice",
+          "jsonl_line": 122,
+          "receiver_schedule_lead_ms": 297.900108,
+          "sender_overrun_ms": 299.191465
+        },
+        {
+          "trial": "h0125",
+          "label": 1,
+          "sender": "bob",
+          "receiver": "alice",
+          "jsonl_line": 126,
+          "receiver_schedule_lead_ms": 295.222348,
+          "sender_overrun_ms": 306.577535
+        },
+        {
+          "trial": "h0127",
+          "label": 1,
+          "sender": "alice",
+          "receiver": "bob",
+          "jsonl_line": 128,
+          "receiver_schedule_lead_ms": 294.530068,
+          "sender_overrun_ms": 658.548271
+        },
+        {
+          "trial": "h0155",
+          "label": 1,
+          "sender": "alice",
+          "receiver": "bob",
+          "jsonl_line": 156,
+          "receiver_schedule_lead_ms": 297.64003,
+          "sender_overrun_ms": 418.322103
+        },
+        {
+          "trial": "h0176",
+          "label": 1,
+          "sender": "bob",
+          "receiver": "alice",
+          "jsonl_line": 177,
+          "receiver_schedule_lead_ms": 294.205068,
+          "sender_overrun_ms": 650.195997
+        },
+        {
+          "trial": "h0201",
+          "label": 1,
+          "sender": "alice",
+          "receiver": "bob",
+          "jsonl_line": 202,
+          "receiver_schedule_lead_ms": 297.139055,
+          "sender_overrun_ms": 428.584814
+        },
+        {
+          "trial": "h0208",
+          "label": 1,
+          "sender": "alice",
+          "receiver": "bob",
+          "jsonl_line": 209,
+          "receiver_schedule_lead_ms": 298.597258,
+          "sender_overrun_ms": 389.254678
+        },
+        {
+          "trial": "h0210",
+          "label": 1,
+          "sender": "alice",
+          "receiver": "bob",
+          "jsonl_line": 211,
+          "receiver_schedule_lead_ms": 298.478405,
+          "sender_overrun_ms": 305.198195
+        },
+        {
+          "trial": "h0215",
+          "label": 1,
+          "sender": "alice",
+          "receiver": "bob",
+          "jsonl_line": 216,
+          "receiver_schedule_lead_ms": 298.568037,
+          "sender_overrun_ms": 928.977398
+        },
+        {
+          "trial": "h0216",
+          "label": 1,
+          "sender": "bob",
+          "receiver": "alice",
+          "jsonl_line": 217,
+          "receiver_schedule_lead_ms": 298.237158,
+          "sender_overrun_ms": 131.892795
+        },
+        {
+          "trial": "h0217",
+          "label": 1,
+          "sender": "alice",
+          "receiver": "bob",
+          "jsonl_line": 218,
+          "receiver_schedule_lead_ms": 298.524507,
+          "sender_overrun_ms": 153.034722
+        },
+        {
+          "trial": "h0223",
+          "label": 1,
+          "sender": "bob",
+          "receiver": "alice",
+          "jsonl_line": 224,
+          "receiver_schedule_lead_ms": 298.512696,
+          "sender_overrun_ms": 157.41605
+        },
+        {
+          "trial": "h0232",
+          "label": 1,
+          "sender": "alice",
+          "receiver": "bob",
+          "jsonl_line": 233,
+          "receiver_schedule_lead_ms": 298.33483,
+          "sender_overrun_ms": 551.185238
+        },
+        {
+          "trial": "h0246",
+          "label": 1,
+          "sender": "alice",
+          "receiver": "bob",
+          "jsonl_line": 247,
+          "receiver_schedule_lead_ms": 298.332911,
+          "sender_overrun_ms": 540.884396
+        },
+        {
+          "trial": "h0248",
+          "label": 1,
+          "sender": "bob",
+          "receiver": "alice",
+          "jsonl_line": 249,
+          "receiver_schedule_lead_ms": 298.482325,
+          "sender_overrun_ms": 648.107391
+        },
+        {
+          "trial": "h0262",
+          "label": 1,
+          "sender": "bob",
+          "receiver": "alice",
+          "jsonl_line": 263,
+          "receiver_schedule_lead_ms": 298.103164,
+          "sender_overrun_ms": 24.54328
+        },
+        {
+          "trial": "h0272",
+          "label": 1,
+          "sender": "alice",
+          "receiver": "bob",
+          "jsonl_line": 273,
+          "receiver_schedule_lead_ms": 298.563407,
+          "sender_overrun_ms": 631.210831
+        },
+        {
+          "trial": "h0273",
+          "label": 1,
+          "sender": "bob",
+          "receiver": "alice",
+          "jsonl_line": 274,
+          "receiver_schedule_lead_ms": 297.743073,
+          "sender_overrun_ms": 780.346995
+        },
+        {
+          "trial": "h0274",
+          "label": 1,
+          "sender": "alice",
+          "receiver": "bob",
+          "jsonl_line": 275,
+          "receiver_schedule_lead_ms": 298.298769,
+          "sender_overrun_ms": 388.751775
+        },
+        {
+          "trial": "h0280",
+          "label": 1,
+          "sender": "bob",
+          "receiver": "alice",
+          "jsonl_line": 281,
+          "receiver_schedule_lead_ms": 298.495575,
+          "sender_overrun_ms": 12.425782
+        },
+        {
+          "trial": "h0283",
+          "label": 1,
+          "sender": "alice",
+          "receiver": "bob",
+          "jsonl_line": 284,
+          "receiver_schedule_lead_ms": 298.203907,
+          "sender_overrun_ms": 528.473915
+        },
+        {
+          "trial": "h0294",
+          "label": 1,
+          "sender": "alice",
+          "receiver": "bob",
+          "jsonl_line": 295,
+          "receiver_schedule_lead_ms": 298.65453,
+          "sender_overrun_ms": 639.323834
+        }
+      ],
+      "controller_trial_wall_seconds": {
+        "count": 300,
+        "min": 3.055186596,
+        "median": 3.0600191199999998,
+        "p95_nearest_rank": 3.065172394,
+        "max": 3.233663966
+      },
+      "failed_trials": 0,
+      "sender_http_requests": 19200,
+      "receiver_http_requests": 6300
+    },
+    "pad": {
+      "trials": 300,
+      "first_controller_start_utc_ns": 1794198516547157363,
+      "last_controller_end_utc_ns": 1794199601333097492,
+      "sealed_utc_ns": 1794199610543260233,
+      "model_precedes_first_held_trial": true,
+      "receiver_schedule_lead_ms": {
+        "count": 300,
+        "min": 296.940959,
+        "median": 298.401017,
+        "p95_nearest_rank": 298.611209,
+        "max": 298.682961
+      },
+      "late_receiver_setup_trials": [],
+      "sender_overrun_ms_all_trials": {
+        "count": 300,
+        "min": 0.0,
+        "median": 0.0,
+        "p95_nearest_rank": 402.364585,
+        "max": 924.304526
+      },
+      "positive_sender_overrun_trials": [
+        {
+          "trial": "h0002",
+          "label": 1,
+          "sender": "bob",
+          "receiver": "alice",
+          "jsonl_line": 3,
+          "receiver_schedule_lead_ms": 298.374821,
+          "sender_overrun_ms": 777.893461
+        },
+        {
+          "trial": "h0013",
+          "label": 1,
+          "sender": "bob",
+          "receiver": "alice",
+          "jsonl_line": 14,
+          "receiver_schedule_lead_ms": 298.375422,
+          "sender_overrun_ms": 148.36103
+        },
+        {
+          "trial": "h0024",
+          "label": 1,
+          "sender": "bob",
+          "receiver": "alice",
+          "jsonl_line": 25,
+          "receiver_schedule_lead_ms": 298.412863,
+          "sender_overrun_ms": 528.945235
+        },
+        {
+          "trial": "h0030",
+          "label": 1,
+          "sender": "bob",
+          "receiver": "alice",
+          "jsonl_line": 31,
+          "receiver_schedule_lead_ms": 298.681911,
+          "sender_overrun_ms": 154.155467
+        },
+        {
+          "trial": "h0035",
+          "label": 1,
+          "sender": "alice",
+          "receiver": "bob",
+          "jsonl_line": 36,
+          "receiver_schedule_lead_ms": 298.423794,
+          "sender_overrun_ms": 900.573784
+        },
+        {
+          "trial": "h0042",
+          "label": 1,
+          "sender": "bob",
+          "receiver": "alice",
+          "jsonl_line": 43,
+          "receiver_schedule_lead_ms": 298.474655,
+          "sender_overrun_ms": 520.42129
+        },
+        {
+          "trial": "h0045",
+          "label": 1,
+          "sender": "alice",
+          "receiver": "bob",
+          "jsonl_line": 46,
+          "receiver_schedule_lead_ms": 298.225147,
+          "sender_overrun_ms": 780.514836
+        },
+        {
+          "trial": "h0050",
+          "label": 1,
+          "sender": "bob",
+          "receiver": "alice",
+          "jsonl_line": 51,
+          "receiver_schedule_lead_ms": 298.364262,
+          "sender_overrun_ms": 799.580655
+        },
+        {
+          "trial": "h0064",
+          "label": 1,
+          "sender": "bob",
+          "receiver": "alice",
+          "jsonl_line": 65,
+          "receiver_schedule_lead_ms": 298.558207,
+          "sender_overrun_ms": 300.805523
+        },
+        {
+          "trial": "h0086",
+          "label": 1,
+          "sender": "bob",
+          "receiver": "alice",
+          "jsonl_line": 87,
+          "receiver_schedule_lead_ms": 298.531806,
+          "sender_overrun_ms": 654.359955
+        },
+        {
+          "trial": "h0107",
+          "label": 1,
+          "sender": "bob",
+          "receiver": "alice",
+          "jsonl_line": 108,
+          "receiver_schedule_lead_ms": 298.162475,
+          "sender_overrun_ms": 402.364585
+        },
+        {
+          "trial": "h0110",
+          "label": 1,
+          "sender": "bob",
+          "receiver": "alice",
+          "jsonl_line": 111,
+          "receiver_schedule_lead_ms": 298.368341,
+          "sender_overrun_ms": 20.223403
+        },
+        {
+          "trial": "h0113",
+          "label": 1,
+          "sender": "bob",
+          "receiver": "alice",
+          "jsonl_line": 114,
+          "receiver_schedule_lead_ms": 298.618479,
+          "sender_overrun_ms": 274.330639
+        },
+        {
+          "trial": "h0123",
+          "label": 1,
+          "sender": "bob",
+          "receiver": "alice",
+          "jsonl_line": 124,
+          "receiver_schedule_lead_ms": 298.584678,
+          "sender_overrun_ms": 310.773954
+        },
+        {
+          "trial": "h0147",
+          "label": 1,
+          "sender": "alice",
+          "receiver": "bob",
+          "jsonl_line": 148,
+          "receiver_schedule_lead_ms": 298.483415,
+          "sender_overrun_ms": 141.385562
+        },
+        {
+          "trial": "h0160",
+          "label": 1,
+          "sender": "alice",
+          "receiver": "bob",
+          "jsonl_line": 161,
+          "receiver_schedule_lead_ms": 298.401653,
+          "sender_overrun_ms": 519.722999
+        },
+        {
+          "trial": "h0174",
+          "label": 1,
+          "sender": "bob",
+          "receiver": "alice",
+          "jsonl_line": 175,
+          "receiver_schedule_lead_ms": 297.750493,
+          "sender_overrun_ms": 819.914342
+        },
+        {
+          "trial": "h0176",
+          "label": 1,
+          "sender": "alice",
+          "receiver": "bob",
+          "jsonl_line": 177,
+          "receiver_schedule_lead_ms": 298.31601,
+          "sender_overrun_ms": 924.304526
+        },
+        {
+          "trial": "h0207",
+          "label": 1,
+          "sender": "alice",
+          "receiver": "bob",
+          "jsonl_line": 208,
+          "receiver_schedule_lead_ms": 298.321971,
+          "sender_overrun_ms": 174.058606
+        },
+        {
+          "trial": "h0211",
+          "label": 1,
+          "sender": "bob",
+          "receiver": "alice",
+          "jsonl_line": 212,
+          "receiver_schedule_lead_ms": 298.429173,
+          "sender_overrun_ms": 774.967209
+        },
+        {
+          "trial": "h0214",
+          "label": 1,
+          "sender": "bob",
+          "receiver": "alice",
+          "jsonl_line": 215,
+          "receiver_schedule_lead_ms": 298.390202,
+          "sender_overrun_ms": 555.738661
+        },
+        {
+          "trial": "h0222",
+          "label": 1,
+          "sender": "alice",
+          "receiver": "bob",
+          "jsonl_line": 223,
+          "receiver_schedule_lead_ms": 298.377792,
+          "sender_overrun_ms": 406.18857
+        },
+        {
+          "trial": "h0246",
+          "label": 1,
+          "sender": "bob",
+          "receiver": "alice",
+          "jsonl_line": 247,
+          "receiver_schedule_lead_ms": 298.427183,
+          "sender_overrun_ms": 524.753796
+        },
+        {
+          "trial": "h0265",
+          "label": 1,
+          "sender": "alice",
+          "receiver": "bob",
+          "jsonl_line": 266,
+          "receiver_schedule_lead_ms": 298.359262,
+          "sender_overrun_ms": 425.50938
+        }
+      ],
+      "controller_trial_wall_seconds": {
+        "count": 300,
+        "min": 3.05512397,
+        "median": 3.05609313,
+        "p95_nearest_rank": 3.057435761,
+        "max": 3.228931033
+      },
+      "failed_trials": 0,
+      "sender_http_requests": 19200,
+      "receiver_http_requests": 6300,
+      "native_headers_begin_delay_ms": {
+        "count": 25500,
+        "min": 12.012926,
+        "median": 12.073798,
+        "p95_nearest_rank": 12.291415,
+        "max": 161.97924
+      },
+      "primary_gateway_floor_checked_requests": 25500
+    },
+    "aa": {
+      "trials": 300,
+      "first_controller_start_utc_ns": 1794199616360424442,
+      "last_controller_end_utc_ns": 1794200700483472500,
+      "sealed_utc_ns": 1794200709317000854,
+      "model_precedes_first_held_trial": true,
+      "receiver_schedule_lead_ms": {
+        "count": 300,
+        "min": 297.210607,
+        "median": 298.3893375,
+        "p95_nearest_rank": 298.609329,
+        "max": 298.703332
+      },
+      "late_receiver_setup_trials": [],
+      "sender_overrun_ms_all_trials": {
+        "count": 300,
+        "min": 0.0,
+        "median": 0.0,
+        "p95_nearest_rank": 0.0,
+        "max": 0.0
+      },
+      "positive_sender_overrun_trials": [],
+      "controller_trial_wall_seconds": {
+        "count": 300,
+        "min": 3.05515589,
+        "median": 3.0560544165000003,
+        "p95_nearest_rank": 3.056905317,
+        "max": 3.059956215
+      },
+      "failed_trials": 0,
+      "sender_http_requests": 0,
+      "receiver_http_requests": 6300
+    }
+  },
+  "input_sha256": {
+    "P2b-recovery/CALIBRATION-REVIEW.json": "a5fd41181374605cab413556774ef05f6f5f3b7a1e725d4d298bb555868180d0",
+    "P2b-recovery/TRANSPORT-holdout.json": "354f2ccf3de15036dd9d6e4db265bd9a95b6a2f57e21ebeae6ab870ab1d6997c",
+    "P2b-verification/RESULT.json": "223dd7050413c6dc72a74ac2cf8c536818c562d3009056d6e274b1ca7a678aec",
+    "P2b-attribution/DECODERS-FROZEN.json": "93397b2e74a47d13de4dc28d3b5c3bed76dd0879085edffab9c2252b9d491acc",
+    "P2b-attribution/results.json": "b38af191c9260a5111dc4fb648a2aad31156abf832d5bf5784c0f9573f2bb7e0",
+    "P2b-attribution/data/audit-holdout.json": "f9308b485e37cae5130919cbb8f33871ecb1309e240c5f0c3dbd6c0ed3d4b6a5",
+    "P2b-attribution/data/shared/holdout-provision.json": "290af405e6598855b8f618242dc9fe9fb6f16926b9f8dc8a73efecb50a7cad1b",
+    "P2b-attribution/data/shared/holdout-schedule.json": "0ff7f6bc797b38193e133320c99df50c53961b9324806ad48c324e1f8dbec8b2",
+    "P2b-attribution/data/shared/holdout-server.json": "3b0bef90cc7abd39fb0662265ad2a7f7a842b939a907da82eff9e652b14f5b2e",
+    "P2b-attribution/data/shared/holdout-server-log-lines.txt": "dd7d732c06ef5e341bc1ba1b9da0981ff683077dba7a3d87295d75b33853752b",
+    "P2b-attribution/data/shared/holdout-cleanup.json": "1e982fe8e34cb7eca9a13fce82cca4a74ee7456127aa2712717ce691481e2264",
+    "P2b-attribution/data/shared/holdout.jsonl": "969c3f27e4e87c005fedc89567f335c320adda1ffab0a9e6554196cb24759341",
+    "P2b-attribution/data/shared/holdout-sealed.json": "67721eda53de9312a9df5d406ea2c3ee6d9ae7195d93cbb73f1a3f26f7986bb4",
+    "P2b-attribution/data/pergw/holdout-provision.json": "18e10ecee026a2b5ec8f7d97443698889459aef7d7dd3cba293089d43e431463",
+    "P2b-attribution/data/pergw/holdout-schedule.json": "321451f234b810d68c9abeda110535ec6ee8b58fb8fd137b29f0a0f77de9f91a",
+    "P2b-attribution/data/pergw/holdout-server.json": "9a33fcda619e427fa277369c4baf236c35a971b3b8f686115eb9127a7c484ba1",
+    "P2b-attribution/data/pergw/holdout-server-log-lines.txt": "a5148bd1e0392d6d0be3964bfd03c89515e4d23f0d7f548064f859442625373d",
+    "P2b-attribution/data/pergw/holdout-cleanup.json": "7da0052d93234e5d66d594dd2af5fd0e08d4298f60f394182b27aac369fd3520",
+    "P2b-attribution/data/pergw/holdout.jsonl": "8d4cbf94e18b9d898ec6d1c473891a3d61f529c2c272a3bcd94b1accdeb671f4",
+    "P2b-attribution/data/pergw/holdout-sealed.json": "da2d8c976fe994480f58c94b42851466d698938b473dccd9d4b575c252f2eda8",
+    "P2b-attribution/data/pad/holdout-provision.json": "5de43281a3fc9a5e9048419a66ed25671eb0223a41fdbd95219fec2ba659f4cf",
+    "P2b-attribution/data/pad/holdout-schedule.json": "3148a6e58909ba4c93a260063e78dc94a6b4feb1604245526b7ae2dea96dfca2",
+    "P2b-attribution/data/pad/holdout-server.json": "c05576b61ce8525fae43d8b5f34fb3e2f30f8d530509f47e7496864fa799873b",
+    "P2b-attribution/data/pad/holdout-server-log-lines.txt": "b967b3c28a9423b9257669f65270d71f11890a559f6b4e3552043e27ee7cca18",
+    "P2b-attribution/data/pad/holdout-cleanup.json": "8982d08bf04e24b47a131dacdb154fd03cb4f33af0bd86b2cf528b8cf4c0086e",
+    "P2b-attribution/data/pad/holdout.jsonl": "d1d911020d5ed69816a3a089628c827ceb4f5f8999a82a73d8fcab20c444fdcc",
+    "P2b-attribution/data/pad/holdout-sealed.json": "6d2874c3fe0722292c6045b68e8827c46c6738d9847f1ce9a6b3e019354f001f",
+    "P2b-attribution/data/aa/holdout-provision.json": "1bfd4e63e270beda827cdd705895bcc2d7eb520206a645997aa190ed7de9e0f6",
+    "P2b-attribution/data/aa/holdout-schedule.json": "c7cc64fd0a80d69c183c0445c770b40a76b40a45e07e499f4b951733540f03e4",
+    "P2b-attribution/data/aa/holdout-server.json": "19a15bdd9e4ee4c6c2de006c14fcd09dd4261e04613c0e10c6477040c3783cbb",
+    "P2b-attribution/data/aa/holdout-server-log-lines.txt": "fdf08d610d55841653d0dc50d88b6ce92e81043be46038b4bd0331a1a73825f9",
+    "P2b-attribution/data/aa/holdout-cleanup.json": "5c451bd6897e5ae813a3c3feefbb3a937aa2316a0e40f9c3a6b96fa7cfdfcdc4",
+    "P2b-attribution/data/aa/holdout.jsonl": "3b2d7f62af9646b212f349d3d4248ef300f429446be5c118a787326b007a9b8d",
+    "P2b-attribution/data/aa/holdout-sealed.json": "4c6953d99efff64d4d50f44e96c95ed474d52c6848d449ed7c22c9f7f2cd4bf4"
+  },
+  "primary_aa_raw_nominal_pass": true,
+  "primary_aa_holm_pass": true,
+  "conditional_aa_sensitivity_pass": true,
+  "review_source_sha256": "3dc3d88770b87cf833d2b430134539663b1ff81ca0fe1558be900ec890a53d38",
+  "original_outputs_overwritten": false,
+  "trials_excluded": 0,
+  "native_or_provider_requests": 0,
+  "limits": [
+    "Scheduling and overruns are descriptive and do not select or exclude trials.",
+    "The 12 ms floor constrains header delivery, not all latency variation.",
+    "Per-tenant gateways double total gateway CPU and do not isolate one internal cause.",
+    "Arithmetic agreement does not repair a failed primary or idle-control result."
+  ]
+}

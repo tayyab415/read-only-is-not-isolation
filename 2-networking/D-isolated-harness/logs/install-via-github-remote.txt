@@ -1,0 +1,32 @@
+=== 2026-11-07T23:51:18Z
+--- npm: install jonschlinkert/is-number 7.0.0 from a GitHub tag archive
+
+$ mkdir -p ~/nm && cd ~/nm && rm -rf node_modules package*.json && npm init -y >/dev/null && npm install --no-audit --no-fund http://art-a:8082/artifactory/github-remote/jonschlinkert/is-number/archive/refs/tags/7.0.0.tar.gz 2>&1 | tail -4; ls node_modules; node -e "console.log('is-number(5)=',require('is-number')(5), 'is-number(\"x\")=',require('is-number')('x'))"
+
+added 1 package in 1s
+is-number
+is-number(5)= true is-number("x")= false
+--- pip: install benjaminp/six 1.16.0 from a GitHub tag archive (no build isolation, no deps)
+
+$ rm -rf ~/pylib; pip install --no-cache-dir --disable-pip-version-check --no-build-isolation --no-deps --target ~/pylib http://art-a:8082/artifactory/github-remote/benjaminp/six/archive/refs/tags/1.16.0.tar.gz 2>&1 | tail -4; PYTHONPATH=~/pylib python3 -c 'import six; print("six", six.__version__, six.__file__)'
+  Stored in directory: /tmp/pip-ephem-wheel-cache-fskqknle/wheels/de/d8/c7/78d42d4b8444d593c1d6693a53ddcec102f98c11984ce68e63
+Successfully built six
+Installing collected packages: six
+Successfully installed six-1.16.0
+six 1.16.0 /home/agent/pylib/six.py
+--- second npm install of the same tag: should be served from Artifactory's cache
+
+$ cd ~/nm && rm -rf node_modules package-lock.json && npm install --no-audit --no-fund http://art-a:8082/artifactory/github-remote/jonschlinkert/is-number/archive/refs/tags/7.0.0.tar.gz 2>&1 | tail -2
+
+added 1 package in 177ms
+--- what Artifactory logged for these installs (art-a request log, client 172.30.11.1)
+2026-11-07T23:51:20.137Z|GET|/github-remote/jonschlinkert/is-number/archive/refs/tags/7.0.0.tar.gz|200|-1|7648|939|npm/9.2.0 node/v20.19.2 linux x64 workspaces/false
+2026-11-07T23:51:21.496Z|GET|/github-remote/benjaminp/six/archive/refs/tags/1.16.0.tar.gz|200|-1|33933|811|pip/25.0.1 {"ci":null,"cpu":"x86_64","distro":{"id":"trixie","libc":{"lib":"glibc","version":"2.41"},"name":"Debian GNU/Linux","version":"13"},"implementation":{"name":"CPython","version":"3.12.16"},"installer":{"name":"pip","version":"25.0.1"},"openssl_version":"OpenSSL 3.5.7 9 Jun 2026","python":"3.12.16","setuptools_version":"84.2.1","system":{"name":"Linux","release":"7.0.0-1014-aws"}}
+2026-11-07T23:51:22.535Z|GET|/github-remote/jonschlinkert/is-number/archive/refs/tags/7.0.0.tar.gz|304|-1|0|3|npm/9.2.0 node/v20.19.2 linux x64 workspaces/false
+--- cache entries created
+
+
+
+
+
+7.0.0.tar.gz   07-Nov-2026 23:51  7.47 KB

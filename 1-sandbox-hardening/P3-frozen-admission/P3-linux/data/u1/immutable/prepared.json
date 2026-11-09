@@ -1,0 +1,882 @@
+{
+  "run_id": "p3u-m1-immutable",
+  "mode": "immutable",
+  "schedule": [
+    {
+      "actor": "bob",
+      "requirement": "rich==13.9.4",
+      "task_id": "u00-bob-rich"
+    },
+    {
+      "actor": "bob",
+      "requirement": "requests==2.32.3",
+      "task_id": "u01-bob-requests"
+    },
+    {
+      "actor": "alice",
+      "requirement": "pytest==8.3.5",
+      "task_id": "u02-alice-pytest"
+    },
+    {
+      "actor": "bob",
+      "requirement": "click==8.1.8",
+      "task_id": "u03-bob-click"
+    },
+    {
+      "actor": "alice",
+      "requirement": "pluggy==1.5.0",
+      "task_id": "u04-alice-pluggy"
+    },
+    {
+      "actor": "alice",
+      "requirement": "typing_extensions==4.12.2",
+      "task_id": "u05-alice-typing_extensions"
+    },
+    {
+      "actor": "alice",
+      "requirement": "rich==13.9.4",
+      "task_id": "u06-alice-rich"
+    },
+    {
+      "actor": "bob",
+      "requirement": "pluggy==1.5.0",
+      "task_id": "u07-bob-pluggy"
+    },
+    {
+      "actor": "bob",
+      "requirement": "networkx==3.4.2",
+      "task_id": "u08-bob-networkx"
+    },
+    {
+      "actor": "bob",
+      "requirement": "packaging==24.2",
+      "task_id": "u09-bob-packaging"
+    },
+    {
+      "actor": "bob",
+      "requirement": "python-dateutil==2.9.0.post0",
+      "task_id": "u10-bob-python-dateutil"
+    },
+    {
+      "actor": "alice",
+      "requirement": "click==8.1.8",
+      "task_id": "u11-alice-click"
+    },
+    {
+      "actor": "bob",
+      "requirement": "tenacity==9.0.0",
+      "task_id": "u12-bob-tenacity"
+    },
+    {
+      "actor": "alice",
+      "requirement": "networkx==3.4.2",
+      "task_id": "u13-alice-networkx"
+    },
+    {
+      "actor": "alice",
+      "requirement": "requests==2.32.3",
+      "task_id": "u14-alice-requests"
+    },
+    {
+      "actor": "bob",
+      "requirement": "more-itertools==10.6.0",
+      "task_id": "u15-bob-more-itertools"
+    },
+    {
+      "actor": "bob",
+      "requirement": "typing_extensions==4.12.2",
+      "task_id": "u16-bob-typing_extensions"
+    },
+    {
+      "actor": "bob",
+      "requirement": "beautifulsoup4==4.13.3",
+      "task_id": "u17-bob-beautifulsoup4"
+    },
+    {
+      "actor": "alice",
+      "requirement": "beautifulsoup4==4.13.3",
+      "task_id": "u18-alice-beautifulsoup4"
+    },
+    {
+      "actor": "bob",
+      "requirement": "pytest==8.3.5",
+      "task_id": "u19-bob-pytest"
+    },
+    {
+      "actor": "alice",
+      "requirement": "tenacity==9.0.0",
+      "task_id": "u20-alice-tenacity"
+    },
+    {
+      "actor": "alice",
+      "requirement": "attrs==24.3.0",
+      "task_id": "u21-alice-attrs"
+    },
+    {
+      "actor": "alice",
+      "requirement": "more-itertools==10.6.0",
+      "task_id": "u22-alice-more-itertools"
+    },
+    {
+      "actor": "alice",
+      "requirement": "python-dateutil==2.9.0.post0",
+      "task_id": "u23-alice-python-dateutil"
+    },
+    {
+      "actor": "bob",
+      "requirement": "attrs==24.3.0",
+      "task_id": "u24-bob-attrs"
+    },
+    {
+      "actor": "bob",
+      "requirement": "toolz==1.0.0",
+      "task_id": "u25-bob-toolz"
+    },
+    {
+      "actor": "alice",
+      "requirement": "packaging==24.2",
+      "task_id": "u26-alice-packaging"
+    },
+    {
+      "actor": "alice",
+      "requirement": "toolz==1.0.0",
+      "task_id": "u27-alice-toolz"
+    }
+  ],
+  "p1_gate": {
+    "utc": "2026-11-08T21:28:13.433708+00:00",
+    "p1_validated": true,
+    "known_statistics_validated": true,
+    "known_negative_cache_validated": true,
+    "p1_causal_audit_passed": true,
+    "p1_nulls_passed": true,
+    "p2_source_freeze_sha256": "a94a7883b207bd1ea9f6b6b83d9581f8370b975561cfb9be43ff8ff2d50f7e42",
+    "evidence_sha256": {
+      "audit-results.json": "10cc441fb3dbd779c5170ee40032567a9b9edea56ce96b75fc55cdcf882303f4",
+      "report-metrics.json": "21e234419d0bad9cbbfc171cc0445accabe6d944dee6c0dfed519009fd22d5a0",
+      "holdout-results.json": "cd484b141a0ed8c7e4dfae688fa9e7203ebd140916f5b8136f4b073c48ed9ba1",
+      "FROZEN.json": "018285c6496c02b391c42ff3475bd914f7d89014a736b5a47e7846c1f47288df",
+      "REPORTING-FROZEN.json": "035b44a4fb53e4005a51e27f34682d76a0e58b6a4d6c095492939a49ffd764e1",
+      "known-channel-validation.json": "38b8e72197fbf4b97339a08b55042305a11f5f5932cbd396cac9f7fed98ca1c2",
+      "AUDIT-AMENDMENT-FROZEN.json": "47bd293f4f83c1619401fc9a4854dfb2049994e0c3ee44fb0e9d40cc78e06ac2",
+      "VALIDATION-FROZEN-v3.json": "0d81f5ff96d25b3bb7650ec46848ef62ee852605e67556bd7bc88a86d0548032",
+      "original-failed-audit-results.json": "efdbb32377f899bc040ac1b185c3ee6de654064d7d9b42f752e1fa2fef94c6de",
+      "p2-implementation-smoke-audit.json": "59dd5ef02bfc5cc3389dd7e7e4945426a1d3e4f4bacd6f6fe723c47e38fd9c66"
+    },
+    "post_holdout_operational_amendment_disclosed": true,
+    "interpretation": "P1 known mechanisms and nulls pass using recovered complete native logs and the declared trace/interval audit amendment. Original failed audit remains evidence. Fixed statistical analysis unchanged. Combined load timing association requires fresh P2 investigation; it is not proven channel capacity.",
+    "p2_native_preparation_amendment": "AMENDMENT-v3.json",
+    "p2_implementation_smoke_validated": true,
+    "p2_implementation_smoke_source_sha256": "c6455655fa0fa58d42f2c55aa3d7fba28a14478967c79685aa503fc787fc42e1"
+  },
+  "p1_gate_sha256": "3a4cf2f2a2571af4665ee147b10f512541ef19e1b65a085d42d1dff4bf2f3cc3",
+  "initial_provision": {
+    "run_id": "p3u-m1-immutable",
+    "kind": "immutable",
+    "configuration": "immutable",
+    "networks": {
+      "alice": "p1-p3u-m1-immutable-net-alice",
+      "bob": "p1-p3u-m1-immutable-net-bob"
+    },
+    "containers": {
+      "alice": "p1-p3u-m1-immutable-alice",
+      "bob": "p1-p3u-m1-immutable-bob",
+      "mirror_alice": "p1-p3u-m1-immutable-mirror-alice",
+      "mirror_bob": "p1-p3u-m1-immutable-mirror-bob"
+    },
+    "users": {
+      "alice": "p1-p3u-m1-immutable-alice",
+      "bob": "p1-p3u-m1-immutable-bob"
+    },
+    "repositories": {
+      "alice": "p1-p3u-m1-immutable-alice",
+      "bob": "p1-p3u-m1-immutable-bob"
+    },
+    "repository_names_are": "synthetic route identifiers",
+    "object_paths": {
+      "0": "/fixture/pkg-00.bin",
+      "15": "/fixture/pkg-15.bin"
+    },
+    "fixture_etag": "\"85c7795747cf1f3ac1e7d7f53d3faa6b9d9f3dc961aa9b692aaaddb943ace870\"",
+    "storage_blocked": true,
+    "negative_cache_period_seconds": 0,
+    "manifest_sha256": "7ca3d6b42b74dafae3ba410c2e8716b2ee1277505268fb8a51961a2e43605321",
+    "server_tmpfs_bytes": 67108864,
+    "server_memory_bytes": 134217728,
+    "private_queue_size": 5,
+    "boundary_readback": {
+      "containers": {
+        "alice": {
+          "name": "p1-p3u-m1-immutable-alice",
+          "user": "20001:20001",
+          "root_read_only": true,
+          "cap_drop": [
+            "ALL"
+          ],
+          "security_options": [
+            "no-new-privileges:true"
+          ],
+          "memory": 134217728,
+          "memory_swap": 134217728,
+          "nano_cpus": 500000000,
+          "pids_limit": 48,
+          "tmpfs": {
+            "/tmp": "rw,nosuid,nodev,size=16m"
+          },
+          "forbidden_environment_present": false,
+          "published_ports": {},
+          "attached_networks": [
+            "p1-p3u-m1-immutable-net-alice"
+          ],
+          "network_addresses": {
+            "p1-p3u-m1-immutable-net-alice": "172.19.0.1"
+          },
+          "image_id": "sha256:5e2bdb1b0d542d5039cffb8181c65930093949194a65c365dfb1b0fe13a4fa5b",
+          "bind_mount_destinations": [],
+          "mounts_read_only": true
+        },
+        "bob": {
+          "name": "p1-p3u-m1-immutable-bob",
+          "user": "20001:20001",
+          "root_read_only": true,
+          "cap_drop": [
+            "ALL"
+          ],
+          "security_options": [
+            "no-new-privileges:true"
+          ],
+          "memory": 134217728,
+          "memory_swap": 134217728,
+          "nano_cpus": 500000000,
+          "pids_limit": 48,
+          "tmpfs": {
+            "/tmp": "rw,nosuid,nodev,size=16m"
+          },
+          "forbidden_environment_present": false,
+          "published_ports": {},
+          "attached_networks": [
+            "p1-p3u-m1-immutable-net-bob"
+          ],
+          "network_addresses": {
+            "p1-p3u-m1-immutable-net-bob": "172.20.0.1"
+          },
+          "image_id": "sha256:5e2bdb1b0d542d5039cffb8181c65930093949194a65c365dfb1b0fe13a4fa5b",
+          "bind_mount_destinations": [],
+          "mounts_read_only": true
+        },
+        "mirror_alice": {
+          "name": "p1-p3u-m1-immutable-mirror-alice",
+          "user": "20001:20001",
+          "root_read_only": true,
+          "cap_drop": [
+            "ALL"
+          ],
+          "security_options": [
+            "no-new-privileges:true"
+          ],
+          "memory": 134217728,
+          "memory_swap": 134217728,
+          "nano_cpus": 500000000,
+          "pids_limit": 48,
+          "tmpfs": {
+            "/tmp": "rw,nosuid,nodev,size=64m"
+          },
+          "forbidden_environment_present": false,
+          "published_ports": {},
+          "attached_networks": [
+            "p1-p3u-m1-immutable-net-alice"
+          ],
+          "network_addresses": {
+            "p1-p3u-m1-immutable-net-alice": "172.19.0.2"
+          },
+          "image_id": "sha256:5e2bdb1b0d542d5039cffb8181c65930093949194a65c365dfb1b0fe13a4fa5b",
+          "bind_mount_destinations": [
+            "/catalog",
+            "/config.json",
+            "/mirror.py",
+            "/deploy.py"
+          ],
+          "mounts_read_only": true
+        },
+        "mirror_bob": {
+          "name": "p1-p3u-m1-immutable-mirror-bob",
+          "user": "20001:20001",
+          "root_read_only": true,
+          "cap_drop": [
+            "ALL"
+          ],
+          "security_options": [
+            "no-new-privileges:true"
+          ],
+          "memory": 134217728,
+          "memory_swap": 134217728,
+          "nano_cpus": 500000000,
+          "pids_limit": 48,
+          "tmpfs": {
+            "/tmp": "rw,nosuid,nodev,size=64m"
+          },
+          "forbidden_environment_present": false,
+          "published_ports": {},
+          "attached_networks": [
+            "p1-p3u-m1-immutable-net-bob"
+          ],
+          "network_addresses": {
+            "p1-p3u-m1-immutable-net-bob": "172.20.0.2"
+          },
+          "image_id": "sha256:5e2bdb1b0d542d5039cffb8181c65930093949194a65c365dfb1b0fe13a4fa5b",
+          "bind_mount_destinations": [
+            "/deploy.py",
+            "/catalog",
+            "/config.json",
+            "/mirror.py"
+          ],
+          "mounts_read_only": true
+        }
+      },
+      "networks": {
+        "alice": {
+          "name": "p1-p3u-m1-immutable-net-alice",
+          "internal": true,
+          "options": {
+            "com.docker.network.bridge.gateway_mode_ipv4": "isolated"
+          },
+          "containers": [
+            "p1-p3u-m1-immutable-alice",
+            "p1-p3u-m1-immutable-mirror-alice"
+          ]
+        },
+        "bob": {
+          "name": "p1-p3u-m1-immutable-net-bob",
+          "internal": true,
+          "options": {
+            "com.docker.network.bridge.gateway_mode_ipv4": "isolated"
+          },
+          "containers": [
+            "p1-p3u-m1-immutable-bob",
+            "p1-p3u-m1-immutable-mirror-bob"
+          ]
+        }
+      }
+    },
+    "network_positive_controls": {
+      "passed": true,
+      "checks": 6,
+      "records": [
+        {
+          "host": "172.20.0.1",
+          "port": 18888,
+          "expected_connected": true,
+          "name": "live peer listener on its own network",
+          "connected": true,
+          "error": null,
+          "actor": "bob"
+        },
+        {
+          "host": "172.20.0.2",
+          "port": 8000,
+          "expected_connected": true,
+          "name": "assigned serving route",
+          "connected": true,
+          "error": null,
+          "actor": "bob"
+        },
+        {
+          "host": "172.19.0.2",
+          "port": 8000,
+          "expected_connected": false,
+          "name": "peer serving route",
+          "connected": false,
+          "error": "OSError",
+          "actor": "bob"
+        },
+        {
+          "host": "172.20.0.1",
+          "port": 18888,
+          "expected_connected": false,
+          "name": "same live listener from the other network",
+          "connected": false,
+          "error": "OSError",
+          "actor": "alice"
+        },
+        {
+          "host": "172.19.0.2",
+          "port": 8000,
+          "expected_connected": true,
+          "name": "assigned serving route",
+          "connected": true,
+          "error": null,
+          "actor": "alice"
+        },
+        {
+          "host": "172.20.0.2",
+          "port": 8000,
+          "expected_connected": false,
+          "name": "peer serving route",
+          "connected": false,
+          "error": "OSError",
+          "actor": "alice"
+        }
+      ],
+      "listener_stopped": true,
+      "scope": "Specified live TCP listeners and routes, not every possible bypass.",
+      "listener_exit_code": 0
+    }
+  },
+  "adapters": {
+    "alice": {
+      "ready": true,
+      "pid": 7,
+      "adapter_edition": 1,
+      "mode": "immutable",
+      "actor": "alice",
+      "manifest_sha256": "7ca3d6b42b74dafae3ba410c2e8716b2ee1277505268fb8a51961a2e43605321"
+    },
+    "bob": {
+      "ready": true,
+      "pid": 7,
+      "adapter_edition": 1,
+      "mode": "immutable",
+      "actor": "bob",
+      "manifest_sha256": "7ca3d6b42b74dafae3ba410c2e8716b2ee1277505268fb8a51961a2e43605321"
+    }
+  },
+  "boundary_readback": {
+    "containers": {
+      "alice": {
+        "name": "p1-p3u-m1-immutable-alice",
+        "user": "20001:20001",
+        "root_read_only": true,
+        "cap_drop": [
+          "ALL"
+        ],
+        "security_options": [
+          "no-new-privileges:true"
+        ],
+        "memory": 268435456,
+        "memory_swap": 268435456,
+        "nano_cpus": 500000000,
+        "pids_limit": 48,
+        "tmpfs": {
+          "/tmp": "rw,nosuid,nodev,size=128m"
+        },
+        "forbidden_environment_present": false,
+        "image_id": "sha256:5e2bdb1b0d542d5039cffb8181c65930093949194a65c365dfb1b0fe13a4fa5b",
+        "published_ports": {},
+        "network_addresses": {
+          "p1-p3u-m1-immutable-net-alice": "172.19.0.1"
+        },
+        "bind_mount_destinations": [],
+        "mounts_read_only": true
+      },
+      "bob": {
+        "name": "p1-p3u-m1-immutable-bob",
+        "user": "20001:20001",
+        "root_read_only": true,
+        "cap_drop": [
+          "ALL"
+        ],
+        "security_options": [
+          "no-new-privileges:true"
+        ],
+        "memory": 268435456,
+        "memory_swap": 268435456,
+        "nano_cpus": 500000000,
+        "pids_limit": 48,
+        "tmpfs": {
+          "/tmp": "rw,nosuid,nodev,size=128m"
+        },
+        "forbidden_environment_present": false,
+        "image_id": "sha256:5e2bdb1b0d542d5039cffb8181c65930093949194a65c365dfb1b0fe13a4fa5b",
+        "published_ports": {},
+        "network_addresses": {
+          "p1-p3u-m1-immutable-net-bob": "172.20.0.1"
+        },
+        "bind_mount_destinations": [],
+        "mounts_read_only": true
+      },
+      "mirror_alice": {
+        "name": "p1-p3u-m1-immutable-mirror-alice",
+        "user": "20001:20001",
+        "root_read_only": true,
+        "cap_drop": [
+          "ALL"
+        ],
+        "security_options": [
+          "no-new-privileges:true"
+        ],
+        "memory": 134217728,
+        "memory_swap": 134217728,
+        "nano_cpus": 500000000,
+        "pids_limit": 48,
+        "tmpfs": {
+          "/tmp": "rw,nosuid,nodev,size=64m"
+        },
+        "forbidden_environment_present": false,
+        "image_id": "sha256:5e2bdb1b0d542d5039cffb8181c65930093949194a65c365dfb1b0fe13a4fa5b",
+        "published_ports": {},
+        "network_addresses": {
+          "p1-p3u-m1-immutable-net-alice": "172.19.0.2"
+        },
+        "bind_mount_destinations": [
+          "/config.json",
+          "/mirror.py",
+          "/deploy.py",
+          "/catalog"
+        ],
+        "mounts_read_only": true
+      },
+      "mirror_bob": {
+        "name": "p1-p3u-m1-immutable-mirror-bob",
+        "user": "20001:20001",
+        "root_read_only": true,
+        "cap_drop": [
+          "ALL"
+        ],
+        "security_options": [
+          "no-new-privileges:true"
+        ],
+        "memory": 134217728,
+        "memory_swap": 134217728,
+        "nano_cpus": 500000000,
+        "pids_limit": 48,
+        "tmpfs": {
+          "/tmp": "rw,nosuid,nodev,size=64m"
+        },
+        "forbidden_environment_present": false,
+        "image_id": "sha256:5e2bdb1b0d542d5039cffb8181c65930093949194a65c365dfb1b0fe13a4fa5b",
+        "published_ports": {},
+        "network_addresses": {
+          "p1-p3u-m1-immutable-net-bob": "172.20.0.2"
+        },
+        "bind_mount_destinations": [
+          "/deploy.py",
+          "/catalog",
+          "/config.json",
+          "/mirror.py"
+        ],
+        "mounts_read_only": true
+      },
+      "adapter_alice": {
+        "name": "p1-p3u-m1-immutable-adapter-alice",
+        "user": "20001:20001",
+        "root_read_only": true,
+        "cap_drop": [
+          "ALL"
+        ],
+        "security_options": [
+          "no-new-privileges:true"
+        ],
+        "memory": 134217728,
+        "memory_swap": 134217728,
+        "nano_cpus": 500000000,
+        "pids_limit": 48,
+        "tmpfs": {
+          "/tmp": "rw,nosuid,nodev,size=16m"
+        },
+        "forbidden_environment_present": false,
+        "image_id": "sha256:5e2bdb1b0d542d5039cffb8181c65930093949194a65c365dfb1b0fe13a4fa5b",
+        "published_ports": {},
+        "network_addresses": {
+          "p1-p3u-m1-immutable-net-alice": "172.19.0.3"
+        },
+        "bind_mount_destinations": [
+          "/catalog",
+          "/mirror.py"
+        ],
+        "mounts_read_only": true
+      },
+      "adapter_bob": {
+        "name": "p1-p3u-m1-immutable-adapter-bob",
+        "user": "20001:20001",
+        "root_read_only": true,
+        "cap_drop": [
+          "ALL"
+        ],
+        "security_options": [
+          "no-new-privileges:true"
+        ],
+        "memory": 134217728,
+        "memory_swap": 134217728,
+        "nano_cpus": 500000000,
+        "pids_limit": 48,
+        "tmpfs": {
+          "/tmp": "rw,nosuid,nodev,size=16m"
+        },
+        "forbidden_environment_present": false,
+        "image_id": "sha256:5e2bdb1b0d542d5039cffb8181c65930093949194a65c365dfb1b0fe13a4fa5b",
+        "published_ports": {},
+        "network_addresses": {
+          "p1-p3u-m1-immutable-net-bob": "172.20.0.3"
+        },
+        "bind_mount_destinations": [
+          "/mirror.py",
+          "/catalog"
+        ],
+        "mounts_read_only": true
+      }
+    },
+    "networks": {
+      "alice": {
+        "name": "p1-p3u-m1-immutable-net-alice",
+        "internal": true,
+        "options": {
+          "com.docker.network.bridge.gateway_mode_ipv4": "isolated"
+        }
+      },
+      "bob": {
+        "name": "p1-p3u-m1-immutable-net-bob",
+        "internal": true,
+        "options": {
+          "com.docker.network.bridge.gateway_mode_ipv4": "isolated"
+        }
+      }
+    }
+  },
+  "network_positive_controls": {
+    "passed": true,
+    "checks": 6,
+    "records": [
+      {
+        "host": "172.20.0.1",
+        "port": 18888,
+        "expected_connected": true,
+        "name": "live peer listener on its own network",
+        "connected": true,
+        "error": null,
+        "actor": "bob"
+      },
+      {
+        "host": "172.20.0.2",
+        "port": 8000,
+        "expected_connected": true,
+        "name": "assigned serving route",
+        "connected": true,
+        "error": null,
+        "actor": "bob"
+      },
+      {
+        "host": "172.19.0.2",
+        "port": 8000,
+        "expected_connected": false,
+        "name": "peer serving route",
+        "connected": false,
+        "error": "OSError",
+        "actor": "bob"
+      },
+      {
+        "host": "172.20.0.1",
+        "port": 18888,
+        "expected_connected": false,
+        "name": "same live listener from the other network",
+        "connected": false,
+        "error": "OSError",
+        "actor": "alice"
+      },
+      {
+        "host": "172.19.0.2",
+        "port": 8000,
+        "expected_connected": true,
+        "name": "assigned serving route",
+        "connected": true,
+        "error": null,
+        "actor": "alice"
+      },
+      {
+        "host": "172.20.0.2",
+        "port": 8000,
+        "expected_connected": false,
+        "name": "peer serving route",
+        "connected": false,
+        "error": "OSError",
+        "actor": "alice"
+      }
+    ],
+    "listener_stopped": true,
+    "scope": "Specified live TCP listeners and routes, not every possible bypass.",
+    "listener_exit_code": 0
+  },
+  "adapter_route_controls": {
+    "passed": true,
+    "checks": 4,
+    "records": [
+      {
+        "name": "assigned index adapter",
+        "host": "p1-p3u-m1-immutable-adapter-alice",
+        "port": 8000,
+        "expected_connected": true,
+        "connected": true,
+        "error": null,
+        "actor": "alice"
+      },
+      {
+        "name": "peer index adapter",
+        "host": "172.20.0.3",
+        "port": 8000,
+        "expected_connected": false,
+        "connected": false,
+        "error": "OSError",
+        "actor": "alice"
+      },
+      {
+        "name": "assigned index adapter",
+        "host": "p1-p3u-m1-immutable-adapter-bob",
+        "port": 8000,
+        "expected_connected": true,
+        "connected": true,
+        "error": null,
+        "actor": "bob"
+      },
+      {
+        "name": "peer index adapter",
+        "host": "172.19.0.3",
+        "port": 8000,
+        "expected_connected": false,
+        "connected": false,
+        "error": "OSError",
+        "actor": "bob"
+      }
+    ],
+    "scope": "Specified live TCP listeners and routes, not every possible bypass."
+  },
+  "direct_http_controls": {
+    "passed": true,
+    "records": [
+      {
+        "actor": "alice",
+        "host": "p1-p3u-m1-immutable-mirror-alice",
+        "path": "/files/ac96cd038792094f438ad1f6ff80837353805ac950cd2aa0e0625ef19850c308/attrs-24.3.0-py3-none-any.whl",
+        "marker": "p1/p3u-m1-immutable/utility/control/alice",
+        "expected_status": 403,
+        "method": "GET",
+        "status": 403,
+        "body_sha256": "8962cf612bd840de5d338b0e99449a6b2aae905402a7097284937c3c407c2b67",
+        "body_bytes": 25,
+        "start_utc_ns": 1794181367253294854,
+        "end_utc_ns": 1794181367261882620
+      },
+      {
+        "actor": "bob",
+        "host": "p1-p3u-m1-immutable-mirror-bob",
+        "path": "/files/ac96cd038792094f438ad1f6ff80837353805ac950cd2aa0e0625ef19850c308/attrs-24.3.0-py3-none-any.whl",
+        "marker": "p1/p3u-m1-immutable/utility/control/bob",
+        "expected_status": 403,
+        "method": "GET",
+        "status": 403,
+        "body_sha256": "8962cf612bd840de5d338b0e99449a6b2aae905402a7097284937c3c407c2b67",
+        "body_bytes": 25,
+        "start_utc_ns": 1794181367625720337,
+        "end_utc_ns": 1794181367634261691
+      }
+    ],
+    "scope": "Uncredentialed direct HTTP requests from both clients."
+  },
+  "memory_before": {
+    "utc_ns": 1794181369680262380,
+    "method": "Docker CLI usage snapshots, not peak or process RSS",
+    "records": [
+      {
+        "Name": "p1-p3u-m1-immutable-alice",
+        "MemUsage": "4.41MiB / 256MiB",
+        "CPUPerc": "0.00%",
+        "PIDs": "1",
+        "NetIO": "1.86kB / 1.89kB",
+        "BlockIO": "0B / 0B"
+      },
+      {
+        "Name": "p1-p3u-m1-immutable-bob",
+        "MemUsage": "4.422MiB / 256MiB",
+        "CPUPerc": "0.00%",
+        "PIDs": "1",
+        "NetIO": "1.97kB / 1.89kB",
+        "BlockIO": "0B / 0B"
+      },
+      {
+        "Name": "p1-p3u-m1-immutable-mirror-alice",
+        "MemUsage": "18.44MiB / 128MiB",
+        "CPUPerc": "0.01%",
+        "PIDs": "1",
+        "NetIO": "2.2kB / 965B",
+        "BlockIO": "0B / 0B"
+      },
+      {
+        "Name": "p1-p3u-m1-immutable-mirror-bob",
+        "MemUsage": "18.46MiB / 128MiB",
+        "CPUPerc": "0.01%",
+        "PIDs": "1",
+        "NetIO": "2.04kB / 965B",
+        "BlockIO": "0B / 0B"
+      },
+      {
+        "Name": "p1-p3u-m1-immutable-adapter-alice",
+        "MemUsage": "23.43MiB / 128MiB",
+        "CPUPerc": "0.01%",
+        "PIDs": "3",
+        "NetIO": "1.15kB / 308B",
+        "BlockIO": "0B / 0B"
+      },
+      {
+        "Name": "p1-p3u-m1-immutable-adapter-bob",
+        "MemUsage": "23.43MiB / 128MiB",
+        "CPUPerc": "0.01%",
+        "PIDs": "3",
+        "NetIO": "1.15kB / 308B",
+        "BlockIO": "0B / 0B"
+      }
+    ]
+  },
+  "memory_after": {
+    "utc_ns": 1794181509990304382,
+    "method": "Docker CLI usage snapshots, not peak or process RSS",
+    "records": [
+      {
+        "Name": "p1-p3u-m1-immutable-alice",
+        "MemUsage": "6.301MiB / 256MiB",
+        "CPUPerc": "0.00%",
+        "PIDs": "1",
+        "NetIO": "5.18MB / 55.7kB",
+        "BlockIO": "0B / 0B"
+      },
+      {
+        "Name": "p1-p3u-m1-immutable-bob",
+        "MemUsage": "6.086MiB / 256MiB",
+        "CPUPerc": "0.00%",
+        "PIDs": "1",
+        "NetIO": "5.18MB / 55.2kB",
+        "BlockIO": "0B / 0B"
+      },
+      {
+        "Name": "p1-p3u-m1-immutable-mirror-alice",
+        "MemUsage": "18.73MiB / 128MiB",
+        "CPUPerc": "0.01%",
+        "PIDs": "1",
+        "NetIO": "30.1kB / 5.16MB",
+        "BlockIO": "0B / 0B"
+      },
+      {
+        "Name": "p1-p3u-m1-immutable-mirror-bob",
+        "MemUsage": "18.46MiB / 128MiB",
+        "CPUPerc": "0.01%",
+        "PIDs": "1",
+        "NetIO": "30kB / 5.16MB",
+        "BlockIO": "0B / 0B"
+      },
+      {
+        "Name": "p1-p3u-m1-immutable-adapter-alice",
+        "MemUsage": "23.89MiB / 128MiB",
+        "CPUPerc": "0.01%",
+        "PIDs": "3",
+        "NetIO": "5.22MB / 5.2MB",
+        "BlockIO": "0B / 0B"
+      },
+      {
+        "Name": "p1-p3u-m1-immutable-adapter-bob",
+        "MemUsage": "24.64MiB / 128MiB",
+        "CPUPerc": "0.01%",
+        "PIDs": "3",
+        "NetIO": "5.22MB / 5.2MB",
+        "BlockIO": "0B / 0B"
+      }
+    ]
+  },
+  "completed_tasks": 28
+}

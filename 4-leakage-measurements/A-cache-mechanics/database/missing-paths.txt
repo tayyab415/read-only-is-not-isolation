@@ -1,0 +1,5 @@
+COMMAND ['docker', 'exec', 'art-a-db', 'psql', '-U', 'artifactory', '-d', 'artifactory', '-P', 'null=<NULL>', '-c', "select node_path,node_name from nodes where repo='github-remote-cache'\n    and (node_path like 'zz_A_missing_%' or node_name like 'zz_A_missing_%'\n     or node_path like '%discussions%' or node_name='discussions')"]
+ node_path | node_name 
+-----------+-----------
+(0 rows)
+

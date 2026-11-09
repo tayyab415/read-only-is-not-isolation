@@ -1,0 +1,74 @@
+[
+  {
+    "event_id": "n/b2-35/alice/1",
+    "principal": "n-b2-35-alice",
+    "method": "GET",
+    "path": "/artifactory/n-b2-35-pkg/pkg-12.bin",
+    "status": 200,
+    "start_utc_ns": 1794110049500234263,
+    "end_utc_ns": 1794110049511495857
+  },
+  {
+    "event_id": "n/b2-35/bob/1",
+    "principal": "n-b2-35-bob",
+    "method": "GET",
+    "path": "/artifactory/n-b2-35-pkg/pkg-06.bin",
+    "status": 200,
+    "start_utc_ns": 1794110050068270880,
+    "end_utc_ns": 1794110050079805999
+  },
+  {
+    "event_id": "n/b2-35/alice/2",
+    "principal": "n-b2-35-alice",
+    "method": "GET",
+    "path": "/artifactory/api/storage/n-b2-35-pkg-cache/pkg-00.bin?stats",
+    "status": 403,
+    "start_utc_ns": 1794110051208515939,
+    "end_utc_ns": 1794110051208643741
+  },
+  {
+    "event_id": "n/b2-35/bob/2",
+    "principal": "n-b2-35-bob",
+    "method": "GET",
+    "path": "/artifactory/api/storage/n-b2-35-pkg-cache/pkg-00.bin?stats",
+    "status": 403,
+    "start_utc_ns": 1794110051763199869,
+    "end_utc_ns": 1794110051763320731
+  },
+  {
+    "event_id": "n/b2-35/bob/3",
+    "principal": "n-b2-35-bob",
+    "method": "GET",
+    "path": "/artifactory/api/storage/n-b2-35-pkg/pkg-06.bin?stats",
+    "status": 403,
+    "start_utc_ns": 1794110053265918272,
+    "end_utc_ns": 1794110053266045825
+  },
+  {
+    "event_id": "n/b2-35/bob/4",
+    "principal": "n-b2-35-bob",
+    "method": "GET",
+    "path": "/artifactory/n-b2-35-pkg/bob-06",
+    "status": 404,
+    "start_utc_ns": 1794110055941980227,
+    "end_utc_ns": 1794110056098306095
+  },
+  {
+    "event_id": "n/b2-35/bob/5",
+    "principal": "n-b2-35-bob",
+    "method": "GET",
+    "path": "/artifactory/n-b2-35-pkg/bob-06",
+    "status": 404,
+    "start_utc_ns": 1794110057865548706,
+    "end_utc_ns": 1794110058019861612
+  },
+  {
+    "event_id": "n/b2-35/alice/3",
+    "principal": "n-b2-35-alice",
+    "method": "GET",
+    "path": "/artifactory/api/storage/n-b2-35-pkg/pkg-12.bin?stats",
+    "status": 403,
+    "start_utc_ns": 1794110065398151193,
+    "end_utc_ns": 1794110065398278946
+  }
+]

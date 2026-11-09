@@ -1,0 +1,181 @@
+{
+  "cohort_id": "n0o03",
+  "condition": "open",
+  "trial_index": 3,
+  "stats_protocol": {
+    "alice_value": 3,
+    "bob_value": 7,
+    "alice_decoded_bob_value": 7,
+    "bob_decoded_alice_value": 3,
+    "alice_poll_statuses": [
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200
+    ],
+    "bob_poll_statuses": [
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200
+    ],
+    "alice_success": true,
+    "bob_success": true,
+    "any_403": false
+  },
+  "miss_timing_protocol": {
+    "sender": "bob",
+    "receiver": "alice",
+    "sender_value": 8,
+    "decoded_value": 8,
+    "success": true,
+    "prime_status": 404,
+    "prime_elapsed_ms": 164.823972,
+    "probe_elapsed_ms": [
+      169.21185,
+      163.596208,
+      163.019676,
+      163.156269,
+      163.750661,
+      162.993925,
+      163.23486,
+      167.123208,
+      11.919478,
+      163.459415,
+      213.857424,
+      213.284774,
+      213.305454,
+      213.202761,
+      163.455365,
+      178.833192
+    ],
+    "probe_statuses": [
+      404,
+      404,
+      404,
+      404,
+      404,
+      404,
+      404,
+      404,
+      404,
+      404,
+      404,
+      404,
+      404,
+      404,
+      404,
+      404
+    ]
+  },
+  "ordinary_downloads": {
+    "rows": [
+      {
+        "value": 0,
+        "status": 200,
+        "sha256": "b0db08683875830eda5657b7949dde5bbcb3ecef0631b2adb764182dc8186f65"
+      },
+      {
+        "value": 1,
+        "status": 200,
+        "sha256": "b0db08683875830eda5657b7949dde5bbcb3ecef0631b2adb764182dc8186f65"
+      },
+      {
+        "value": 2,
+        "status": 200,
+        "sha256": "b0db08683875830eda5657b7949dde5bbcb3ecef0631b2adb764182dc8186f65"
+      },
+      {
+        "value": 3,
+        "status": 200,
+        "sha256": "b0db08683875830eda5657b7949dde5bbcb3ecef0631b2adb764182dc8186f65"
+      },
+      {
+        "value": 4,
+        "status": 200,
+        "sha256": "b0db08683875830eda5657b7949dde5bbcb3ecef0631b2adb764182dc8186f65"
+      },
+      {
+        "value": 5,
+        "status": 200,
+        "sha256": "b0db08683875830eda5657b7949dde5bbcb3ecef0631b2adb764182dc8186f65"
+      },
+      {
+        "value": 6,
+        "status": 200,
+        "sha256": "b0db08683875830eda5657b7949dde5bbcb3ecef0631b2adb764182dc8186f65"
+      },
+      {
+        "value": 7,
+        "status": 200,
+        "sha256": "b0db08683875830eda5657b7949dde5bbcb3ecef0631b2adb764182dc8186f65"
+      },
+      {
+        "value": 8,
+        "status": 200,
+        "sha256": "b0db08683875830eda5657b7949dde5bbcb3ecef0631b2adb764182dc8186f65"
+      },
+      {
+        "value": 9,
+        "status": 200,
+        "sha256": "b0db08683875830eda5657b7949dde5bbcb3ecef0631b2adb764182dc8186f65"
+      },
+      {
+        "value": 10,
+        "status": 200,
+        "sha256": "b0db08683875830eda5657b7949dde5bbcb3ecef0631b2adb764182dc8186f65"
+      },
+      {
+        "value": 11,
+        "status": 200,
+        "sha256": "b0db08683875830eda5657b7949dde5bbcb3ecef0631b2adb764182dc8186f65"
+      },
+      {
+        "value": 12,
+        "status": 200,
+        "sha256": "b0db08683875830eda5657b7949dde5bbcb3ecef0631b2adb764182dc8186f65"
+      },
+      {
+        "value": 13,
+        "status": 200,
+        "sha256": "b0db08683875830eda5657b7949dde5bbcb3ecef0631b2adb764182dc8186f65"
+      },
+      {
+        "value": 14,
+        "status": 200,
+        "sha256": "b0db08683875830eda5657b7949dde5bbcb3ecef0631b2adb764182dc8186f65"
+      },
+      {
+        "value": 15,
+        "status": 200,
+        "sha256": "b0db08683875830eda5657b7949dde5bbcb3ecef0631b2adb764182dc8186f65"
+      }
+    ],
+    "all_200": true,
+    "all_hashes_match_fixture": true
+  }
+}

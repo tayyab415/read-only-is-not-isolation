@@ -1,0 +1,58 @@
+[
+  {
+    "command": [
+      "docker",
+      "rm",
+      "-f",
+      "m-alice"
+    ],
+    "returncode": 0
+  },
+  {
+    "command": [
+      "docker",
+      "network",
+      "disconnect",
+      "m-net-alice",
+      "art-a"
+    ],
+    "returncode": 0
+  },
+  {
+    "command": [
+      "docker",
+      "network",
+      "rm",
+      "m-net-alice"
+    ],
+    "returncode": 0
+  },
+  {
+    "command": [
+      "docker",
+      "rm",
+      "-f",
+      "m-bob"
+    ],
+    "returncode": 0
+  },
+  {
+    "command": [
+      "docker",
+      "network",
+      "disconnect",
+      "m-net-bob",
+      "art-a"
+    ],
+    "returncode": 0
+  },
+  {
+    "command": [
+      "docker",
+      "network",
+      "rm",
+      "m-net-bob"
+    ],
+    "returncode": 0
+  }
+]

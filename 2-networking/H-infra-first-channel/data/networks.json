@@ -1,0 +1,111 @@
+[
+  {
+    "Name": "h-net-sender",
+    "Internal": true,
+    "Options": {
+      "com.docker.network.bridge.gateway_mode_ipv4": "isolated"
+    },
+    "IPAM": {
+      "Driver": "default",
+      "Options": null,
+      "Config": [
+        {
+          "Subnet": "172.19.0.0/16",
+          "IPRange": "",
+          "Gateway": ""
+        }
+      ]
+    },
+    "Containers": {
+      "67ad257275ae9edf0e0daccd8f54384a526a3a0f4dbdc6b472dabfc550db47a0": {
+        "Name": "art-a",
+        "EndpointID": "f51ee03ee5e6ce24f57e92af8c93d27f33c92863534119c3cb99d8ccd41ed1f9",
+        "MacAddress": "8e:aa:24:fd:89:20",
+        "IPv4Address": "172.19.0.2/16",
+        "IPv6Address": ""
+      },
+      "eaf631ba078a1cf72916677603a3c5eac30e773e700a0f71de046b55586b0a2e": {
+        "Name": "h-sender",
+        "EndpointID": "4b4539926be952b7841ac7bcaed6f5ecca0f385c0bff2d9faa0120dc79801eb7",
+        "MacAddress": "92:3d:bd:30:db:cb",
+        "IPv4Address": "172.19.0.1/16",
+        "IPv6Address": ""
+      }
+    }
+  },
+  {
+    "Name": "h-net-receiver",
+    "Internal": true,
+    "Options": {
+      "com.docker.network.bridge.gateway_mode_ipv4": "isolated"
+    },
+    "IPAM": {
+      "Driver": "default",
+      "Options": null,
+      "Config": [
+        {
+          "Subnet": "172.20.0.0/16",
+          "IPRange": "",
+          "Gateway": ""
+        }
+      ]
+    },
+    "Containers": {
+      "4b45d27a1ec12da90a9b094ae90daf752262a58cea4d4f4c9e183aeda1d187e0": {
+        "Name": "h-receiver",
+        "EndpointID": "291a0d5da7a5c9f3a2ffc1b02bc91faa1568f911d6b2ca2bdf69e7c8faa6696d",
+        "MacAddress": "86:fd:49:fb:27:7d",
+        "IPv4Address": "172.20.0.1/16",
+        "IPv6Address": ""
+      },
+      "67ad257275ae9edf0e0daccd8f54384a526a3a0f4dbdc6b472dabfc550db47a0": {
+        "Name": "art-a",
+        "EndpointID": "86951ca3ba5e2816c24c05bf2d6c7d1cd1a03a6ec5f5db70e92a4c97728f14a1",
+        "MacAddress": "46:42:69:13:f7:45",
+        "IPv4Address": "172.20.0.2/16",
+        "IPv6Address": ""
+      }
+    }
+  },
+  {
+    "Name": "h-net-services",
+    "Internal": true,
+    "Options": {
+      "com.docker.network.bridge.gateway_mode_ipv4": "isolated"
+    },
+    "IPAM": {
+      "Driver": "default",
+      "Options": null,
+      "Config": [
+        {
+          "Subnet": "172.21.0.0/16",
+          "IPRange": "",
+          "Gateway": ""
+        }
+      ]
+    },
+    "Containers": {
+      "0b034329c20664a5a5dbc612d3b404a829046ad6c39efce1cf364af46aee23fa": {
+        "Name": "h-upstream",
+        "EndpointID": "d950767d146d7dc973cb8b0c6cbff8645145838423d7d9555b7277ee2c192754",
+        "MacAddress": "92:95:9b:62:21:70",
+        "IPv4Address": "172.21.0.2/16",
+        "IPv6Address": ""
+      },
+      "67ad257275ae9edf0e0daccd8f54384a526a3a0f4dbdc6b472dabfc550db47a0": {
+        "Name": "art-a",
+        "EndpointID": "b86418a9073b9f76f23b9cfb7f61b5919b2be7b28269b3533fb0b37744f5249b",
+        "MacAddress": "3a:78:89:c4:cc:bb",
+        "IPv4Address": "172.21.0.3/16",
+        "IPv6Address": ""
+      },
+      "d1b35382d8e944fabc8fbd303a312e944087f1e8335a673c06a13d3b09635457": {
+        "Name": "h-target",
+        "EndpointID": "f564c54578e1d0aebef7a3e84cd4a7daf7367fee3c7be138fff1034ec0c67051",
+        "MacAddress": "4e:35:d4:34:a4:95",
+        "IPv4Address": "172.21.0.1/16",
+        "IPv6Address": ""
+      }
+    }
+  }
+]

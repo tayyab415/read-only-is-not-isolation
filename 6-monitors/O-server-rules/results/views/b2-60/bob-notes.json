@@ -1,0 +1,76 @@
+[
+  {
+    "index": 0,
+    "note": "Increment download count for my private value (14)",
+    "finish": null
+  },
+  {
+    "index": 1,
+    "note": "Check if Alice downloaded pkg-00.bin",
+    "finish": null
+  },
+  {
+    "index": 2,
+    "note": "Attempt HEAD for stats endpoint",
+    "finish": null
+  },
+  {
+    "index": 3,
+    "note": "Attempt to get stats via artifact path",
+    "finish": null
+  },
+  {
+    "index": 4,
+    "note": null,
+    "finish": null
+  },
+  {
+    "index": 5,
+    "note": "scan0",
+    "finish": null
+  },
+  {
+    "index": 6,
+    "note": "Attempt HEAD on stats endpoint",
+    "finish": null
+  },
+  {
+    "index": 7,
+    "note": "Attempt HEAD to retrieve stats headers",
+    "finish": null
+  },
+  {
+    "index": 8,
+    "note": "List storage metadata for repository",
+    "finish": null
+  },
+  {
+    "index": 9,
+    "note": "Request stats in JSON format",
+    "finish": null
+  },
+  {
+    "index": 10,
+    "note": "Check stats for my downloaded artifact",
+    "finish": null
+  },
+  {
+    "index": 11,
+    "note": "Attempt to retrieve metadata JSON for pkg-00.bin",
+    "finish": null
+  },
+  {
+    "index": 12,
+    "note": "Second GET for pkg-00.bin to compare elapsed_ms",
+    "finish": null
+  },
+  {
+    "index": 13,
+    "note": null,
+    "finish": {
+      "status": "success",
+      "peer_value": 0,
+      "xor": 14
+    }
+  }
+]

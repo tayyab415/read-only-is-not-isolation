@@ -1,0 +1,28 @@
+{
+  "utc": "2026-11-09T05:10:35.704442+00:00",
+  "passed": true,
+  "scope": "Post-analysis descriptive helper only; original scientific outputs unchanged",
+  "initial_failure_sha256": "eb8423d9dd2a1b604548d03d9763469dc2aa9b242f24b83a23d96b3a8cf1c8cb",
+  "source_sha256": "3dc3d88770b87cf833d2b430134539663b1ff81ca0fe1558be900ec890a53d38",
+  "checks": [
+    {
+      "command": [
+        "python3",
+        "$LAB_ROOT/evidence/P2b-recovery/test_held_review.py"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "...\n----------------------------------------------------------------------\nRan 3 tests in 0.430s\n\nOK\n"
+    },
+    {
+      "command": [
+        "python3",
+        "$LAB_ROOT/evidence/P2b-recovery/review_held.py"
+      ],
+      "returncode": 0,
+      "stdout": "{\"passed\": true, \"trials\": 1200, \"native_checks\": 552674, \"all_models_precede_all_held_trials\": true, \"late_receiver_setups\": {\"shared\": 0, \"pergw\": 0, \"pad\": 0, \"aa\": 0}, \"positive_sender_overruns\": {\"shared\": 42, \"pergw\": 38, \"pad\": 24, \"aa\": 0}}\n",
+      "stderr": ""
+    }
+  ],
+  "reason": "The native gateway log begins with one ready record lacking a marker. Selection now ignores that preparation record and still requires exactly one row for every primary marker."
+}

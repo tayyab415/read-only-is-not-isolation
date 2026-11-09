@@ -1,0 +1,13 @@
+{
+  "edition": 2,
+  "before_p2_deployment_or_collection": true,
+  "p1_main_holdout_accessed": true,
+  "prior_source_freeze_sha256": "e3e52110626b51bba1b58067164f748e8641127974391759307248bee6aa7906",
+  "prior_archive": "archive/v1",
+  "cause": "Retained P1 native logs prove missing archive naming/compression variants and an invalid Artifactory request-start timestamp assumption.",
+  "changes": [
+    "Include compressed and uncompressed dotted/hyphenated native archives; fail on read errors.",
+    "Require exact backend/router TraceId and full router interval inside client interval at unchanged 2ms tolerance."
+  ],
+  "analysis_design_or_schedule_changed": false
+}

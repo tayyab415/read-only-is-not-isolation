@@ -1,0 +1,19 @@
+{
+  "created_utc_ns": 1794097972370075420,
+  "package": "six",
+  "version": "1.16.0",
+  "filename": "six-1.16.0-py2.py3-none-any.whl",
+  "expected_sha256": "8abb2f1d86890a2dfb989f9a77cfcfd3e47c2a354b01111771326f8aa26e0254",
+  "arms": [
+    "method-only",
+    "metadata-blocked",
+    "negative-off",
+    "both",
+    "partitioned",
+    "no-store",
+    "offline"
+  ],
+  "clients_per_arm": 2,
+  "task": "pip install local wheel then check version and ensure_str",
+  "network": "No pip index or dependency resolution; the package download uses the isolated mirror."
+}

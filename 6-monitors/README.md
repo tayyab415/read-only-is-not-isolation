@@ -1,0 +1,16 @@
+# 6. Monitors
+
+This section tests monitors for the shared package service and for the agents using it. Three folders read server request records (G, L, O), one scores exposure with an information budget (P6), one checks what the public Swarm Traces release and an earlier request detector can support, and one trains a per-call classifier on the swarm's own actions. Each count here is a count of exposure to shared state or of flagged calls. None of it measures intent.
+
+| Folder | Question | Result |
+| --- | --- | --- |
+| [`G-request-monitor/`](G-request-monitor/) | Can a causal rule over server-only request records flag cache writes, possible listing exposure and repeated reads? | 1,010 frozen server records give 6,512 candidate alerts (360 mutations, 5,740 possible parent-listing exposures, 412 repeated reads). No recall or false-positive rate is computed. |
+| [`L-read-monitor/`](L-read-monitor/) | Can an offline monitor find the read effects behind the statistics and miss-timing channels? | On 433 verified requests: 169 statistics observations, 19 cross-principal download and statistics associations, 32 miss associations, 24 fast failures. The 80 ms threshold classifies 16/16 bits on router durations and 10/16 on client durations. |
+| [`O-server-rules/`](O-server-rules/) | Can server-only rules tell exchanges from legitimate package work? | M1 flags 110/110 verified exchanges and 19 of 60 benign agents (14/20 metadata, 5/20 latency, 0/20 basic). The wait-count rule M2 recalls 7/110. |
+| [`P6-exposure-budget/`](P6-exposure-budget/) | Does counting how much information a peer's activity could reveal separate them better? | Benign flags fall only from 19/60 to 17/60. 142 of 145 verified exchanges scored exactly 1 bit, and 13 of 20 benign metadata agents scored 2. |
+| [`swarm-traces-analysis/`](swarm-traces-analysis/) | What can the public Swarm Traces release support, and do study C's request detectors measure what they claim? | All 189,579 rows have a null `time_utc`, so no latency or timing claim is possible. None of 21 reply-word rows was a verified peer reply. Study C's recall of 1.0 means 354 of 354 labelled writes that returned 201. |
+| [`system1-classifier/`](system1-classifier/) | Can a cheap per-call classifier trained on the swarm's actions stand in for containment? | AUC 1.000 in distribution, but it flags 89 to 100% of benign agent-style scripts from other model families and 22 to 86% of ordinary tool calls from six models. |
+
+The server-side results point the same way as the paper's Section 4.4. One read is enough to exchange a value, and legitimate metadata work makes the same request, so a detector can see that state was exposed but not why. Trusted logs must keep the query string, since Artifactory's own request log drops `?stats`. The paper also notes that an alert on writes only would have flagged none of study J's 256 sender requests. Detection is a record for forensics. Closing the shared observation is the control, as the sections on sandbox hardening and networking show.
+
+The monitor folders depend on data from other sections. Their scripts read study H, J, N and C files under their original lab names, so most reruns need the original `artifactory-lab/evidence/` layout. Each study README says which commands run from this folder, which need other files, and what costs money.

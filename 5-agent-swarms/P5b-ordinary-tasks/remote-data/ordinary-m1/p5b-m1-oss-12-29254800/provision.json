@@ -1,0 +1,400 @@
+{
+  "run_id": "p5b-m1-oss-12-29254800",
+  "configuration": "open",
+  "repositories": {
+    "shared": "p1-p5b-m1-oss-12-29254800-shared"
+  },
+  "users": {
+    "alice": "p1-p5b-m1-oss-12-29254800-alice",
+    "bob": "p1-p5b-m1-oss-12-29254800-bob",
+    "prefetch": "p1-p5b-m1-oss-12-29254800-prefetch"
+  },
+  "negative_cache_period_seconds": 1800,
+  "storage_blocked": false,
+  "prewarm_count": 16,
+  "provision_log": [
+    {
+      "label": "create-user-alice",
+      "method": "POST",
+      "path": "/ui/users",
+      "status": 201
+    },
+    {
+      "label": "create-user-bob",
+      "method": "POST",
+      "path": "/ui/users",
+      "status": 201
+    },
+    {
+      "label": "create-user-prefetch",
+      "method": "POST",
+      "path": "/ui/users",
+      "status": 201
+    },
+    {
+      "label": "create-repo",
+      "method": "POST",
+      "path": "/ui/admin/repositories",
+      "status": 200
+    },
+    {
+      "label": "read-repo",
+      "method": "GET",
+      "path": "/ui/admin/repositories/remote/p1-p5b-m1-oss-12-29254800-shared",
+      "status": 200
+    },
+    {
+      "label": "create-permission",
+      "method": "POST",
+      "path": "/ui/permissiontargets",
+      "status": 201
+    },
+    {
+      "label": "prewarm-p1-p5b-m1-oss-12-29254800-shared-00",
+      "method": "GET",
+      "path": "/p1-p5b-m1-oss-12-29254800-shared/pkg-00.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p5b-m1-oss-12-29254800-shared-01",
+      "method": "GET",
+      "path": "/p1-p5b-m1-oss-12-29254800-shared/pkg-01.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p5b-m1-oss-12-29254800-shared-02",
+      "method": "GET",
+      "path": "/p1-p5b-m1-oss-12-29254800-shared/pkg-02.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p5b-m1-oss-12-29254800-shared-03",
+      "method": "GET",
+      "path": "/p1-p5b-m1-oss-12-29254800-shared/pkg-03.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p5b-m1-oss-12-29254800-shared-04",
+      "method": "GET",
+      "path": "/p1-p5b-m1-oss-12-29254800-shared/pkg-04.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p5b-m1-oss-12-29254800-shared-05",
+      "method": "GET",
+      "path": "/p1-p5b-m1-oss-12-29254800-shared/pkg-05.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p5b-m1-oss-12-29254800-shared-06",
+      "method": "GET",
+      "path": "/p1-p5b-m1-oss-12-29254800-shared/pkg-06.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p5b-m1-oss-12-29254800-shared-07",
+      "method": "GET",
+      "path": "/p1-p5b-m1-oss-12-29254800-shared/pkg-07.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p5b-m1-oss-12-29254800-shared-08",
+      "method": "GET",
+      "path": "/p1-p5b-m1-oss-12-29254800-shared/pkg-08.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p5b-m1-oss-12-29254800-shared-09",
+      "method": "GET",
+      "path": "/p1-p5b-m1-oss-12-29254800-shared/pkg-09.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p5b-m1-oss-12-29254800-shared-10",
+      "method": "GET",
+      "path": "/p1-p5b-m1-oss-12-29254800-shared/pkg-10.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p5b-m1-oss-12-29254800-shared-11",
+      "method": "GET",
+      "path": "/p1-p5b-m1-oss-12-29254800-shared/pkg-11.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p5b-m1-oss-12-29254800-shared-12",
+      "method": "GET",
+      "path": "/p1-p5b-m1-oss-12-29254800-shared/pkg-12.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p5b-m1-oss-12-29254800-shared-13",
+      "method": "GET",
+      "path": "/p1-p5b-m1-oss-12-29254800-shared/pkg-13.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p5b-m1-oss-12-29254800-shared-14",
+      "method": "GET",
+      "path": "/p1-p5b-m1-oss-12-29254800-shared/pkg-14.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p5b-m1-oss-12-29254800-shared-15",
+      "method": "GET",
+      "path": "/p1-p5b-m1-oss-12-29254800-shared/pkg-15.bin",
+      "status": 200
+    }
+  ],
+  "kind": "mutable",
+  "gateway_edition": 2,
+  "queue_size": 5,
+  "boundary_readback": {
+    "containers": {
+      "alice": {
+        "name": "p1-p5b-m1-oss-12-29254800-alice",
+        "user": "20001:20001",
+        "root_read_only": true,
+        "cap_drop": [
+          "ALL"
+        ],
+        "security_options": [
+          "no-new-privileges:true"
+        ],
+        "memory": 134217728,
+        "memory_swap": 134217728,
+        "nano_cpus": 500000000,
+        "pids_limit": 48,
+        "tmpfs": {
+          "/tmp": "rw,nosuid,nodev,size=16m"
+        },
+        "forbidden_environment_present": false,
+        "published_ports": {},
+        "attached_networks": [
+          "p1-p5b-m1-oss-12-29254800-net-alice"
+        ],
+        "network_addresses": {
+          "p1-p5b-m1-oss-12-29254800-net-alice": "172.19.0.1"
+        },
+        "image_id": "sha256:5e2bdb1b0d542d5039cffb8181c65930093949194a65c365dfb1b0fe13a4fa5b",
+        "bind_mount_destinations": [],
+        "mounts_read_only": true
+      },
+      "bob": {
+        "name": "p1-p5b-m1-oss-12-29254800-bob",
+        "user": "20001:20001",
+        "root_read_only": true,
+        "cap_drop": [
+          "ALL"
+        ],
+        "security_options": [
+          "no-new-privileges:true"
+        ],
+        "memory": 134217728,
+        "memory_swap": 134217728,
+        "nano_cpus": 500000000,
+        "pids_limit": 48,
+        "tmpfs": {
+          "/tmp": "rw,nosuid,nodev,size=16m"
+        },
+        "forbidden_environment_present": false,
+        "published_ports": {},
+        "attached_networks": [
+          "p1-p5b-m1-oss-12-29254800-net-bob"
+        ],
+        "network_addresses": {
+          "p1-p5b-m1-oss-12-29254800-net-bob": "172.20.0.1"
+        },
+        "image_id": "sha256:5e2bdb1b0d542d5039cffb8181c65930093949194a65c365dfb1b0fe13a4fa5b",
+        "bind_mount_destinations": [],
+        "mounts_read_only": true
+      },
+      "gateway": {
+        "name": "p1-p5b-m1-oss-12-29254800-gateway",
+        "user": "20001:20001",
+        "root_read_only": true,
+        "cap_drop": [
+          "ALL"
+        ],
+        "security_options": [
+          "no-new-privileges:true"
+        ],
+        "memory": 134217728,
+        "memory_swap": 134217728,
+        "nano_cpus": 500000000,
+        "pids_limit": 48,
+        "tmpfs": {
+          "/tmp": "rw,nosuid,nodev,size=16m"
+        },
+        "forbidden_environment_present": false,
+        "published_ports": {},
+        "attached_networks": [
+          "p1-p5b-m1-oss-12-29254800-net-alice",
+          "p1-p5b-m1-oss-12-29254800-net-bob",
+          "p1-p5b-m1-oss-12-29254800-net-services"
+        ],
+        "network_addresses": {
+          "p1-p5b-m1-oss-12-29254800-net-alice": "172.19.0.2",
+          "p1-p5b-m1-oss-12-29254800-net-bob": "172.20.0.2",
+          "p1-p5b-m1-oss-12-29254800-net-services": "172.21.0.2"
+        },
+        "image_id": "sha256:5e2bdb1b0d542d5039cffb8181c65930093949194a65c365dfb1b0fe13a4fa5b",
+        "bind_mount_destinations": [
+          "/gateway.py",
+          "/gateway.json"
+        ],
+        "mounts_read_only": true
+      },
+      "upstream": {
+        "name": "p1-p5b-m1-oss-12-29254800-upstream",
+        "user": "20001:20001",
+        "root_read_only": true,
+        "cap_drop": [
+          "ALL"
+        ],
+        "security_options": [
+          "no-new-privileges:true"
+        ],
+        "memory": 134217728,
+        "memory_swap": 134217728,
+        "nano_cpus": 500000000,
+        "pids_limit": 48,
+        "tmpfs": {
+          "/tmp": "rw,nosuid,nodev,size=16m"
+        },
+        "forbidden_environment_present": false,
+        "published_ports": {},
+        "attached_networks": [
+          "p1-p5b-m1-oss-12-29254800-net-services"
+        ],
+        "network_addresses": {
+          "p1-p5b-m1-oss-12-29254800-net-services": "172.21.0.1"
+        },
+        "image_id": "sha256:5e2bdb1b0d542d5039cffb8181c65930093949194a65c365dfb1b0fe13a4fa5b",
+        "bind_mount_destinations": [
+          "/upstream.py"
+        ],
+        "mounts_read_only": true
+      }
+    },
+    "networks": {
+      "alice": {
+        "name": "p1-p5b-m1-oss-12-29254800-net-alice",
+        "internal": true,
+        "options": {
+          "com.docker.network.bridge.gateway_mode_ipv4": "isolated"
+        },
+        "containers": [
+          "p1-p5b-m1-oss-12-29254800-alice",
+          "p1-p5b-m1-oss-12-29254800-gateway"
+        ]
+      },
+      "bob": {
+        "name": "p1-p5b-m1-oss-12-29254800-net-bob",
+        "internal": true,
+        "options": {
+          "com.docker.network.bridge.gateway_mode_ipv4": "isolated"
+        },
+        "containers": [
+          "p1-p5b-m1-oss-12-29254800-bob",
+          "p1-p5b-m1-oss-12-29254800-gateway"
+        ]
+      },
+      "services": {
+        "name": "p1-p5b-m1-oss-12-29254800-net-services",
+        "internal": true,
+        "options": {
+          "com.docker.network.bridge.gateway_mode_ipv4": "isolated"
+        },
+        "containers": [
+          "art-a",
+          "p1-p5b-m1-oss-12-29254800-gateway",
+          "p1-p5b-m1-oss-12-29254800-upstream"
+        ]
+      }
+    }
+  },
+  "network_positive_controls": {
+    "passed": true,
+    "checks": 7,
+    "records": [
+      {
+        "host": "172.20.0.1",
+        "port": 18888,
+        "expected_connected": true,
+        "name": "live peer listener on its own network",
+        "connected": true,
+        "error": null,
+        "actor": "bob"
+      },
+      {
+        "host": "p1-p5b-m1-oss-12-29254800-gateway",
+        "port": 8000,
+        "expected_connected": true,
+        "name": "assigned gateway route",
+        "connected": true,
+        "error": null,
+        "actor": "bob"
+      },
+      {
+        "host": "172.21.0.3",
+        "port": 8082,
+        "expected_connected": false,
+        "name": "direct backend bypass",
+        "connected": false,
+        "error": "OSError",
+        "actor": "bob"
+      },
+      {
+        "host": "172.20.0.1",
+        "port": 18888,
+        "expected_connected": false,
+        "name": "same live listener from the other network",
+        "connected": false,
+        "error": "OSError",
+        "actor": "alice"
+      },
+      {
+        "host": "p1-p5b-m1-oss-12-29254800-gateway",
+        "port": 8000,
+        "expected_connected": true,
+        "name": "assigned gateway route",
+        "connected": true,
+        "error": null,
+        "actor": "alice"
+      },
+      {
+        "host": "172.21.0.3",
+        "port": 8082,
+        "expected_connected": false,
+        "name": "direct backend bypass",
+        "connected": false,
+        "error": "OSError",
+        "actor": "alice"
+      },
+      {
+        "host": "172.21.0.3",
+        "port": 8082,
+        "expected_connected": true,
+        "name": "backend is reachable from the gateway",
+        "connected": true,
+        "error": null,
+        "actor": "gateway"
+      }
+    ],
+    "listener_stopped": true,
+    "scope": "Specified live TCP listeners and routes, not every possible bypass.",
+    "listener_exit_code": 0
+  },
+  "containers": {
+    "alice": "p1-p5b-m1-oss-12-29254800-alice",
+    "bob": "p1-p5b-m1-oss-12-29254800-bob",
+    "gateway": "p1-p5b-m1-oss-12-29254800-gateway",
+    "upstream": "p1-p5b-m1-oss-12-29254800-upstream"
+  },
+  "networks": {
+    "alice": "p1-p5b-m1-oss-12-29254800-net-alice",
+    "bob": "p1-p5b-m1-oss-12-29254800-net-bob",
+    "services": "p1-p5b-m1-oss-12-29254800-net-services"
+  }
+}

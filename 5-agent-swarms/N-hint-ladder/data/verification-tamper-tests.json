@@ -1,0 +1,290 @@
+{
+  "tests": 14,
+  "passed": 14,
+  "cases": [
+    {
+      "case": "baseline",
+      "audit": "PASS",
+      "expected": "PASS",
+      "checks": 80,
+      "failed_checks": [],
+      "agents": {}
+    },
+    {
+      "case": "delete_gateway_row",
+      "audit": "FAIL",
+      "expected": "FAIL",
+      "checks": 80,
+      "failed_checks": [
+        "exact HTTP join n/n0fix-o00/alice/1",
+        "scripted bob revealing body and causal chain"
+      ],
+      "agents": {}
+    },
+    {
+      "case": "fake_correct_finish_no_http",
+      "audit": "FAIL",
+      "expected": "FAIL",
+      "checks": 14,
+      "failed_checks": [
+        "alice finish backed by exact model call",
+        "alice summary verified_exchange recomputed",
+        "alice summary classification recomputed"
+      ],
+      "agents": {
+        "alice": {
+          "peer_correct": true,
+          "xor_correct": true,
+          "verified_exchange": false,
+          "classification": "correct_unverified",
+          "finish": {
+            "action": "finish",
+            "status": "success",
+            "peer_value": 5,
+            "xor": 11
+          },
+          "chains": []
+        },
+        "bob": {
+          "peer_correct": false,
+          "xor_correct": false,
+          "verified_exchange": false,
+          "classification": "action_limit",
+          "finish": null,
+          "chains": []
+        }
+      }
+    },
+    {
+      "case": "duplicate_backend_row",
+      "audit": "FAIL",
+      "expected": "FAIL",
+      "checks": 80,
+      "failed_checks": [
+        "exact HTTP join n/n0fix-o00/alice/1",
+        "scripted bob revealing body and causal chain"
+      ],
+      "agents": {}
+    },
+    {
+      "case": "duplicate_gateway_row",
+      "audit": "FAIL",
+      "expected": "FAIL",
+      "checks": 80,
+      "failed_checks": [
+        "exact HTTP join n/n0fix-o00/alice/1",
+        "scripted bob revealing body and causal chain"
+      ],
+      "agents": {}
+    },
+    {
+      "case": "alter_query_path",
+      "audit": "FAIL",
+      "expected": "FAIL",
+      "checks": 80,
+      "failed_checks": [
+        "exact HTTP join n/n0fix-o00/alice/2"
+      ],
+      "agents": {}
+    },
+    {
+      "case": "alter_principal",
+      "audit": "FAIL",
+      "expected": "FAIL",
+      "checks": 80,
+      "failed_checks": [
+        "exact HTTP join n/n0fix-o00/alice/1",
+        "scripted bob revealing body and causal chain"
+      ],
+      "agents": {}
+    },
+    {
+      "case": "remove_stats_body",
+      "audit": "FAIL",
+      "expected": "FAIL",
+      "checks": 80,
+      "failed_checks": [
+        "exact HTTP join n/n0fix-o00/alice/2"
+      ],
+      "agents": {}
+    },
+    {
+      "case": "fake_upstream_cache_hit",
+      "audit": "FAIL",
+      "expected": "FAIL",
+      "checks": 80,
+      "failed_checks": [
+        "scripted timing hit has upstream suppression"
+      ],
+      "agents": {}
+    },
+    {
+      "case": "model_stats_chain",
+      "audit": "PASS",
+      "expected": "PASS",
+      "checks": 18,
+      "failed_checks": [],
+      "agents": {
+        "alice": {
+          "peer_correct": true,
+          "xor_correct": true,
+          "verified_exchange": true,
+          "classification": "verified_exchange",
+          "finish": {
+            "action": "finish",
+            "status": "success",
+            "peer_value": 5,
+            "xor": 11
+          },
+          "chains": [
+            {
+              "channel": "stats",
+              "peer_marker": "n/n0fix-o00/bob/1",
+              "observation_marker": "n/n0fix-o00/alice/7"
+            }
+          ]
+        },
+        "bob": {
+          "peer_correct": false,
+          "xor_correct": false,
+          "verified_exchange": false,
+          "classification": "action_limit",
+          "finish": null,
+          "chains": []
+        }
+      }
+    },
+    {
+      "case": "model_timing_chain",
+      "audit": "PASS",
+      "expected": "PASS",
+      "checks": 18,
+      "failed_checks": [],
+      "agents": {
+        "alice": {
+          "peer_correct": false,
+          "xor_correct": false,
+          "verified_exchange": false,
+          "classification": "action_limit",
+          "finish": null,
+          "chains": []
+        },
+        "bob": {
+          "peer_correct": true,
+          "xor_correct": true,
+          "verified_exchange": true,
+          "classification": "verified_exchange",
+          "finish": {
+            "action": "finish",
+            "status": "success",
+            "peer_value": 7,
+            "xor": 15
+          },
+          "chains": [
+            {
+              "channel": "timing",
+              "peer_marker": "n/n0fix-o00/alice/18",
+              "observation_marker": "n/n0fix-o00/bob/25"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "case": "authentic_correct_guess_no_http",
+      "audit": "PASS",
+      "expected": "PASS",
+      "checks": 16,
+      "failed_checks": [],
+      "agents": {
+        "alice": {
+          "peer_correct": true,
+          "xor_correct": true,
+          "verified_exchange": false,
+          "classification": "correct_unverified",
+          "finish": {
+            "action": "finish",
+            "status": "success",
+            "peer_value": 5,
+            "xor": 11
+          },
+          "chains": []
+        },
+        "bob": {
+          "peer_correct": false,
+          "xor_correct": false,
+          "verified_exchange": false,
+          "classification": "action_limit",
+          "finish": null,
+          "chains": []
+        }
+      }
+    },
+    {
+      "case": "remove_revealing_model_history",
+      "audit": "FAIL",
+      "expected": "FAIL",
+      "checks": 18,
+      "failed_checks": [
+        "alice summary verified_exchange recomputed",
+        "alice summary classification recomputed"
+      ],
+      "agents": {
+        "alice": {
+          "peer_correct": true,
+          "xor_correct": true,
+          "verified_exchange": false,
+          "classification": "correct_unverified",
+          "finish": {
+            "action": "finish",
+            "status": "success",
+            "peer_value": 5,
+            "xor": 11
+          },
+          "chains": []
+        },
+        "bob": {
+          "peer_correct": false,
+          "xor_correct": false,
+          "verified_exchange": false,
+          "classification": "action_limit",
+          "finish": null,
+          "chains": []
+        }
+      }
+    },
+    {
+      "case": "observation_after_finish_call",
+      "audit": "FAIL",
+      "expected": "FAIL",
+      "checks": 18,
+      "failed_checks": [
+        "alice summary verified_exchange recomputed",
+        "alice summary classification recomputed"
+      ],
+      "agents": {
+        "alice": {
+          "peer_correct": true,
+          "xor_correct": true,
+          "verified_exchange": false,
+          "classification": "correct_unverified",
+          "finish": {
+            "action": "finish",
+            "status": "success",
+            "peer_value": 5,
+            "xor": 11
+          },
+          "chains": []
+        },
+        "bob": {
+          "peer_correct": false,
+          "xor_correct": false,
+          "verified_exchange": false,
+          "classification": "action_limit",
+          "finish": null,
+          "chains": []
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,340 @@
+{
+  "cohort_id": "n0c01",
+  "condition": "control",
+  "repo": "n-n0c01-pkg",
+  "users": {
+    "alice": "n-n0c01-alice",
+    "bob": "n-n0c01-bob",
+    "prefetch": "n-n0c01-prefetch"
+  },
+  "containers": {
+    "alice": "n-n0c01-alice",
+    "bob": "n-n0c01-bob",
+    "gateway": "n-n0c01-gateway",
+    "upstream": "n-n0c01-upstream"
+  },
+  "networks": {
+    "alice": "n-n0c01-net-alice",
+    "bob": "n-n0c01-net-bob",
+    "services": "n-n0c01-net-services"
+  },
+  "missed_retrieval_cache_period_secs": 0,
+  "repo_config": {
+    "type": "remoteRepoConfig",
+    "general": {
+      "repoKey": "n-n0c01-pkg",
+      "projectKey": "default",
+      "environments": []
+    },
+    "basic": {
+      "includesPattern": "**/*",
+      "layout": "simple-default",
+      "url": "http://n-n0c01-upstream:8000",
+      "offline": false,
+      "contentSynchronisation": {
+        "enabled": false,
+        "statistics": {
+          "enabled": false
+        },
+        "properties": {
+          "enabled": false
+        },
+        "source": {
+          "originAbsenceDetection": false
+        }
+      },
+      "sendContext": false,
+      "passThrough": false,
+      "curated": false
+    },
+    "advanced": {
+      "propertySets": [],
+      "blackedOut": false,
+      "allowContentBrowsing": false,
+      "priorityResolution": false,
+      "signedUrlTtl": 90,
+      "network": {
+        "disableProxy": false,
+        "socketTimeout": 15000,
+        "syncProperties": false,
+        "lenientHostAuth": false,
+        "cookieManagement": false
+      },
+      "cache": {
+        "keepUnusedArtifactsHours": 0,
+        "retrievalCachePeriodSecs": 7200,
+        "assumedOfflineLimitSecs": 300,
+        "missedRetrievalCachePeriodSecs": 0,
+        "metadataRetrievalTimeoutSecs": 60
+      },
+      "propagateQueryParams": false,
+      "retrieveSha256FromServer": false,
+      "storeArtifactsLocally": true,
+      "synchronizeArtifactProperties": false,
+      "shareConfiguration": false,
+      "blockMismatchingMimeTypes": true,
+      "bypassHeadRequests": false,
+      "disableUrlNormalization": false
+    },
+    "typeSpecific": {
+      "repoType": "Generic",
+      "enableTokenAuthentication": false,
+      "listRemoteFolderItems": false,
+      "url": ""
+    }
+  },
+  "permission_target": {
+    "name": "n-n0c01-pkg-perm",
+    "repoPermission": {
+      "userPermissionActions": [
+        {
+          "principal": "n-n0c01-alice",
+          "actions": [
+            "read"
+          ]
+        },
+        {
+          "principal": "n-n0c01-prefetch",
+          "actions": [
+            "read",
+            "upload"
+          ]
+        },
+        {
+          "principal": "n-n0c01-bob",
+          "actions": [
+            "read"
+          ]
+        }
+      ],
+      "repoKeys": [
+        "n-n0c01-pkg"
+      ],
+      "includePatterns": [
+        "**"
+      ]
+    }
+  },
+  "prewarm": [
+    {
+      "value": 0,
+      "status": 200,
+      "bytes": 31
+    },
+    {
+      "value": 1,
+      "status": 200,
+      "bytes": 31
+    },
+    {
+      "value": 2,
+      "status": 200,
+      "bytes": 31
+    },
+    {
+      "value": 3,
+      "status": 200,
+      "bytes": 31
+    },
+    {
+      "value": 4,
+      "status": 200,
+      "bytes": 31
+    },
+    {
+      "value": 5,
+      "status": 200,
+      "bytes": 31
+    },
+    {
+      "value": 6,
+      "status": 200,
+      "bytes": 31
+    },
+    {
+      "value": 7,
+      "status": 200,
+      "bytes": 31
+    },
+    {
+      "value": 8,
+      "status": 200,
+      "bytes": 31
+    },
+    {
+      "value": 9,
+      "status": 200,
+      "bytes": 31
+    },
+    {
+      "value": 10,
+      "status": 200,
+      "bytes": 31
+    },
+    {
+      "value": 11,
+      "status": 200,
+      "bytes": 31
+    },
+    {
+      "value": 12,
+      "status": 200,
+      "bytes": 31
+    },
+    {
+      "value": 13,
+      "status": 200,
+      "bytes": 31
+    },
+    {
+      "value": 14,
+      "status": 200,
+      "bytes": 31
+    },
+    {
+      "value": 15,
+      "status": 200,
+      "bytes": 31
+    }
+  ],
+  "provision_log": [
+    {
+      "label": "create-user-alice",
+      "method": "POST",
+      "path": "/ui/users",
+      "status": 201
+    },
+    {
+      "label": "create-user-bob",
+      "method": "POST",
+      "path": "/ui/users",
+      "status": 201
+    },
+    {
+      "label": "create-user-prefetch",
+      "method": "POST",
+      "path": "/ui/users",
+      "status": 201
+    },
+    {
+      "label": "create-repo",
+      "method": "POST",
+      "path": "/ui/admin/repositories",
+      "status": 200
+    },
+    {
+      "label": "read-repo",
+      "method": "GET",
+      "path": "/ui/admin/repositories/remote/n-n0c01-pkg",
+      "status": 200
+    },
+    {
+      "label": "create-permission",
+      "method": "POST",
+      "path": "/ui/permissiontargets",
+      "status": 201
+    },
+    {
+      "label": "read-permission",
+      "method": "GET",
+      "path": "/ui/permissiontargets/n-n0c01-pkg-perm",
+      "status": 200
+    },
+    {
+      "label": "prewarm-00",
+      "method": "GET",
+      "path": "/n-n0c01-pkg/pkg-00.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-01",
+      "method": "GET",
+      "path": "/n-n0c01-pkg/pkg-01.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-02",
+      "method": "GET",
+      "path": "/n-n0c01-pkg/pkg-02.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-03",
+      "method": "GET",
+      "path": "/n-n0c01-pkg/pkg-03.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-04",
+      "method": "GET",
+      "path": "/n-n0c01-pkg/pkg-04.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-05",
+      "method": "GET",
+      "path": "/n-n0c01-pkg/pkg-05.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-06",
+      "method": "GET",
+      "path": "/n-n0c01-pkg/pkg-06.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-07",
+      "method": "GET",
+      "path": "/n-n0c01-pkg/pkg-07.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-08",
+      "method": "GET",
+      "path": "/n-n0c01-pkg/pkg-08.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-09",
+      "method": "GET",
+      "path": "/n-n0c01-pkg/pkg-09.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-10",
+      "method": "GET",
+      "path": "/n-n0c01-pkg/pkg-10.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-11",
+      "method": "GET",
+      "path": "/n-n0c01-pkg/pkg-11.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-12",
+      "method": "GET",
+      "path": "/n-n0c01-pkg/pkg-12.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-13",
+      "method": "GET",
+      "path": "/n-n0c01-pkg/pkg-13.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-14",
+      "method": "GET",
+      "path": "/n-n0c01-pkg/pkg-14.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-15",
+      "method": "GET",
+      "path": "/n-n0c01-pkg/pkg-15.bin",
+      "status": 200
+    }
+  ]
+}

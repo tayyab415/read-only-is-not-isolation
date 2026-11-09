@@ -1,0 +1,47 @@
+find-h-remote1 admin GET 404 {"error":"No such user 'h-remote1'."}
+create-h-remote1 admin POST 201 {"info":"Successfully created user 'h-remote1'"}
+find-h-remote2 admin GET 404 {"error":"No such user 'h-remote2'."}
+create-h-remote2 admin POST 201 {"info":"Successfully created user 'h-remote2'"}
+find-h-fetch admin GET 404 {"error":"No such user 'h-fetch'."}
+create-h-fetch admin POST 201 {"info":"Successfully created user 'h-fetch'"}
+create-remote admin POST 200 {"info":"Successfully added repository 'h-20261107T235520-remote'"}
+remote-grants admin POST 201 {"info":"Successfully created permission target 'h-20261107T235520-remote-perm'."}
+remote-config admin GET 200 {"type":"remoteRepoConfig","general":{"repoKey":"h-20261107T235520-remote","projectKey":"default","environments":[]},"basic":{"includesPattern":"**/*","layout":"simple-default","url":"http://h-upstream:8000","offline":false,"contentSynchronisation":{
+redirect-read-only h-remote1 GET 403 {   "errors" : [ {     "status" : 403,     "message" : "Rejected artifact download request: User h-remote1 is not permitted to deploy 'redirect/read-only.bin' into 'h-20261107T235520-remote-cache:redirect/read-only.bin'."   } ] }
+redirect-cache h-fetch GET 200 target: harmless fixture 
+redirect-prewarmed-read h-remote2 GET 200 target: harmless fixture 
+miss-read-0-sender h-remote1 GET 404 {   "errors" : [ {     "status" : 404,     "message" : "Not Found; Path: 'h-20261107T235520-remote:missing/read-pair-0.bin'"   } ] }
+miss-read-0-receiver h-remote2 GET 404 {   "errors" : [ {     "status" : 404,     "message" : "Not Found; Path: 'h-20261107T235520-remote:missing/read-pair-0.bin'"   } ] }
+miss-read-1-sender h-remote1 GET 404 {   "errors" : [ {     "status" : 404,     "message" : "Not Found; Path: 'h-20261107T235520-remote:missing/read-pair-1.bin'"   } ] }
+miss-read-1-receiver h-remote2 GET 404 {   "errors" : [ {     "status" : 404,     "message" : "Not Found; Path: 'h-20261107T235520-remote:missing/read-pair-1.bin'"   } ] }
+miss-read-2-sender h-remote1 GET 404 {   "errors" : [ {     "status" : 404,     "message" : "Not Found; Path: 'h-20261107T235520-remote:missing/read-pair-2.bin'"   } ] }
+miss-read-2-receiver h-remote2 GET 404 {   "errors" : [ {     "status" : 404,     "message" : "Not Found; Path: 'h-20261107T235520-remote:missing/read-pair-2.bin'"   } ] }
+miss-read-3-sender h-remote1 GET 404 {   "errors" : [ {     "status" : 404,     "message" : "Not Found; Path: 'h-20261107T235520-remote:missing/read-pair-3.bin'"   } ] }
+miss-read-3-receiver h-remote2 GET 404 {   "errors" : [ {     "status" : 404,     "message" : "Not Found; Path: 'h-20261107T235520-remote:missing/read-pair-3.bin'"   } ] }
+miss-read-4-sender h-remote1 GET 404 {   "errors" : [ {     "status" : 404,     "message" : "Not Found; Path: 'h-20261107T235520-remote:missing/read-pair-4.bin'"   } ] }
+miss-read-4-receiver h-remote2 GET 404 {   "errors" : [ {     "status" : 404,     "message" : "Not Found; Path: 'h-20261107T235520-remote:missing/read-pair-4.bin'"   } ] }
+miss-read-5-sender h-remote1 GET 404 {   "errors" : [ {     "status" : 404,     "message" : "Not Found; Path: 'h-20261107T235520-remote:missing/read-pair-5.bin'"   } ] }
+miss-read-5-receiver h-remote2 GET 404 {   "errors" : [ {     "status" : 404,     "message" : "Not Found; Path: 'h-20261107T235520-remote:missing/read-pair-5.bin'"   } ] }
+miss-read-6-sender h-remote1 GET 404 {   "errors" : [ {     "status" : 404,     "message" : "Not Found; Path: 'h-20261107T235520-remote:missing/read-pair-6.bin'"   } ] }
+miss-read-6-receiver h-remote2 GET 404 {   "errors" : [ {     "status" : 404,     "message" : "Not Found; Path: 'h-20261107T235520-remote:missing/read-pair-6.bin'"   } ] }
+miss-read-7-sender h-remote1 GET 404 {   "errors" : [ {     "status" : 404,     "message" : "Not Found; Path: 'h-20261107T235520-remote:missing/read-pair-7.bin'"   } ] }
+miss-read-7-receiver h-remote2 GET 404 {   "errors" : [ {     "status" : 404,     "message" : "Not Found; Path: 'h-20261107T235520-remote:missing/read-pair-7.bin'"   } ] }
+miss-read-8-sender h-remote1 GET 404 {   "errors" : [ {     "status" : 404,     "message" : "Not Found; Path: 'h-20261107T235520-remote:missing/read-pair-8.bin'"   } ] }
+miss-read-8-receiver h-remote2 GET 404 {   "errors" : [ {     "status" : 404,     "message" : "Not Found; Path: 'h-20261107T235520-remote:missing/read-pair-8.bin'"   } ] }
+miss-read-9-sender h-remote1 GET 404 {   "errors" : [ {     "status" : 404,     "message" : "Not Found; Path: 'h-20261107T235520-remote:missing/read-pair-9.bin'"   } ] }
+miss-read-9-receiver h-remote2 GET 404 {   "errors" : [ {     "status" : 404,     "message" : "Not Found; Path: 'h-20261107T235520-remote:missing/read-pair-9.bin'"   } ] }
+miss-read-10-sender h-remote1 GET 404 {   "errors" : [ {     "status" : 404,     "message" : "Not Found; Path: 'h-20261107T235520-remote:missing/read-pair-10.bin'"   } ] }
+miss-read-10-receiver h-remote2 GET 404 {   "errors" : [ {     "status" : 404,     "message" : "Not Found; Path: 'h-20261107T235520-remote:missing/read-pair-10.bin'"   } ] }
+miss-read-11-sender h-remote1 GET 404 {   "errors" : [ {     "status" : 404,     "message" : "Not Found; Path: 'h-20261107T235520-remote:missing/read-pair-11.bin'"   } ] }
+miss-read-11-receiver h-remote2 GET 404 {   "errors" : [ {     "status" : 404,     "message" : "Not Found; Path: 'h-20261107T235520-remote:missing/read-pair-11.bin'"   } ] }
+miss-cache-0-sender h-fetch GET 404 {   "errors" : [ {     "status" : 404,     "message" : "Not Found; Path: 'h-20261107T235520-remote:missing/cache-pair-0.bin'"   } ] }
+miss-cache-0-receiver h-remote2 GET 404 {   "errors" : [ {     "status" : 404,     "message" : "Not Found; Path: 'h-20261107T235520-remote:missing/cache-pair-0.bin'"   } ] }
+miss-cache-1-sender h-fetch GET 404 {   "errors" : [ {     "status" : 404,     "message" : "Not Found; Path: 'h-20261107T235520-remote:missing/cache-pair-1.bin'"   } ] }
+miss-cache-1-receiver h-remote2 GET 404 {   "errors" : [ {     "status" : 404,     "message" : "Not Found; Path: 'h-20261107T235520-remote:missing/cache-pair-1.bin'"   } ] }
+miss-cache-2-sender h-fetch GET 404 {   "errors" : [ {     "status" : 404,     "message" : "Not Found; Path: 'h-20261107T235520-remote:missing/cache-pair-2.bin'"   } ] }
+miss-cache-2-receiver h-remote2 GET 404 {   "errors" : [ {     "status" : 404,     "message" : "Not Found; Path: 'h-20261107T235520-remote:missing/cache-pair-2.bin'"   } ] }
+miss-cache-3-sender h-fetch GET 404 {   "errors" : [ {     "status" : 404,     "message" : "Not Found; Path: 'h-20261107T235520-remote:missing/cache-pair-3.bin'"   } ] }
+miss-cache-3-receiver h-remote2 GET 404 {   "errors" : [ {     "status" : 404,     "message" : "Not Found; Path: 'h-20261107T235520-remote:missing/cache-pair-3.bin'"   } ] }
+remote-mkcol-read-denied h-remote1 MKCOL 403 {   "errors" : [ {     "status" : 403,     "message" : "User h-remote1 is not permitted to deploy 'check' into 'h-20261107T235520-remote-cache:check'."   } ] }
+remote-put-read-denied h-remote1 PUT 404 {   "errors" : [ {     "status" : 404,     "message" : "Could not find a local repository named h-20261107T235520-remote-cache to deploy to."   } ] }
+Local redirect and negative-cache probes finished.

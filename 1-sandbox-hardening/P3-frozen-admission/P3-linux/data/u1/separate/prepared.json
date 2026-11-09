@@ -1,0 +1,2505 @@
+{
+  "run_id": "p3u-m1-separate",
+  "mode": "separate",
+  "schedule": [
+    {
+      "actor": "bob",
+      "requirement": "rich==13.9.4",
+      "task_id": "u00-bob-rich"
+    },
+    {
+      "actor": "bob",
+      "requirement": "requests==2.32.3",
+      "task_id": "u01-bob-requests"
+    },
+    {
+      "actor": "alice",
+      "requirement": "pytest==8.3.5",
+      "task_id": "u02-alice-pytest"
+    },
+    {
+      "actor": "bob",
+      "requirement": "click==8.1.8",
+      "task_id": "u03-bob-click"
+    },
+    {
+      "actor": "alice",
+      "requirement": "pluggy==1.5.0",
+      "task_id": "u04-alice-pluggy"
+    },
+    {
+      "actor": "alice",
+      "requirement": "typing_extensions==4.12.2",
+      "task_id": "u05-alice-typing_extensions"
+    },
+    {
+      "actor": "alice",
+      "requirement": "rich==13.9.4",
+      "task_id": "u06-alice-rich"
+    },
+    {
+      "actor": "bob",
+      "requirement": "pluggy==1.5.0",
+      "task_id": "u07-bob-pluggy"
+    },
+    {
+      "actor": "bob",
+      "requirement": "networkx==3.4.2",
+      "task_id": "u08-bob-networkx"
+    },
+    {
+      "actor": "bob",
+      "requirement": "packaging==24.2",
+      "task_id": "u09-bob-packaging"
+    },
+    {
+      "actor": "bob",
+      "requirement": "python-dateutil==2.9.0.post0",
+      "task_id": "u10-bob-python-dateutil"
+    },
+    {
+      "actor": "alice",
+      "requirement": "click==8.1.8",
+      "task_id": "u11-alice-click"
+    },
+    {
+      "actor": "bob",
+      "requirement": "tenacity==9.0.0",
+      "task_id": "u12-bob-tenacity"
+    },
+    {
+      "actor": "alice",
+      "requirement": "networkx==3.4.2",
+      "task_id": "u13-alice-networkx"
+    },
+    {
+      "actor": "alice",
+      "requirement": "requests==2.32.3",
+      "task_id": "u14-alice-requests"
+    },
+    {
+      "actor": "bob",
+      "requirement": "more-itertools==10.6.0",
+      "task_id": "u15-bob-more-itertools"
+    },
+    {
+      "actor": "bob",
+      "requirement": "typing_extensions==4.12.2",
+      "task_id": "u16-bob-typing_extensions"
+    },
+    {
+      "actor": "bob",
+      "requirement": "beautifulsoup4==4.13.3",
+      "task_id": "u17-bob-beautifulsoup4"
+    },
+    {
+      "actor": "alice",
+      "requirement": "beautifulsoup4==4.13.3",
+      "task_id": "u18-alice-beautifulsoup4"
+    },
+    {
+      "actor": "bob",
+      "requirement": "pytest==8.3.5",
+      "task_id": "u19-bob-pytest"
+    },
+    {
+      "actor": "alice",
+      "requirement": "tenacity==9.0.0",
+      "task_id": "u20-alice-tenacity"
+    },
+    {
+      "actor": "alice",
+      "requirement": "attrs==24.3.0",
+      "task_id": "u21-alice-attrs"
+    },
+    {
+      "actor": "alice",
+      "requirement": "more-itertools==10.6.0",
+      "task_id": "u22-alice-more-itertools"
+    },
+    {
+      "actor": "alice",
+      "requirement": "python-dateutil==2.9.0.post0",
+      "task_id": "u23-alice-python-dateutil"
+    },
+    {
+      "actor": "bob",
+      "requirement": "attrs==24.3.0",
+      "task_id": "u24-bob-attrs"
+    },
+    {
+      "actor": "bob",
+      "requirement": "toolz==1.0.0",
+      "task_id": "u25-bob-toolz"
+    },
+    {
+      "actor": "alice",
+      "requirement": "packaging==24.2",
+      "task_id": "u26-alice-packaging"
+    },
+    {
+      "actor": "alice",
+      "requirement": "toolz==1.0.0",
+      "task_id": "u27-alice-toolz"
+    }
+  ],
+  "p1_gate": {
+    "utc": "2026-11-08T21:28:13.433708+00:00",
+    "p1_validated": true,
+    "known_statistics_validated": true,
+    "known_negative_cache_validated": true,
+    "p1_causal_audit_passed": true,
+    "p1_nulls_passed": true,
+    "p2_source_freeze_sha256": "a94a7883b207bd1ea9f6b6b83d9581f8370b975561cfb9be43ff8ff2d50f7e42",
+    "evidence_sha256": {
+      "audit-results.json": "10cc441fb3dbd779c5170ee40032567a9b9edea56ce96b75fc55cdcf882303f4",
+      "report-metrics.json": "21e234419d0bad9cbbfc171cc0445accabe6d944dee6c0dfed519009fd22d5a0",
+      "holdout-results.json": "cd484b141a0ed8c7e4dfae688fa9e7203ebd140916f5b8136f4b073c48ed9ba1",
+      "FROZEN.json": "018285c6496c02b391c42ff3475bd914f7d89014a736b5a47e7846c1f47288df",
+      "REPORTING-FROZEN.json": "035b44a4fb53e4005a51e27f34682d76a0e58b6a4d6c095492939a49ffd764e1",
+      "known-channel-validation.json": "38b8e72197fbf4b97339a08b55042305a11f5f5932cbd396cac9f7fed98ca1c2",
+      "AUDIT-AMENDMENT-FROZEN.json": "47bd293f4f83c1619401fc9a4854dfb2049994e0c3ee44fb0e9d40cc78e06ac2",
+      "VALIDATION-FROZEN-v3.json": "0d81f5ff96d25b3bb7650ec46848ef62ee852605e67556bd7bc88a86d0548032",
+      "original-failed-audit-results.json": "efdbb32377f899bc040ac1b185c3ee6de654064d7d9b42f752e1fa2fef94c6de",
+      "p2-implementation-smoke-audit.json": "59dd5ef02bfc5cc3389dd7e7e4945426a1d3e4f4bacd6f6fe723c47e38fd9c66"
+    },
+    "post_holdout_operational_amendment_disclosed": true,
+    "interpretation": "P1 known mechanisms and nulls pass using recovered complete native logs and the declared trace/interval audit amendment. Original failed audit remains evidence. Fixed statistical analysis unchanged. Combined load timing association requires fresh P2 investigation; it is not proven channel capacity.",
+    "p2_native_preparation_amendment": "AMENDMENT-v3.json",
+    "p2_implementation_smoke_validated": true,
+    "p2_implementation_smoke_source_sha256": "c6455655fa0fa58d42f2c55aa3d7fba28a14478967c79685aa503fc787fc42e1"
+  },
+  "p1_gate_sha256": "3a4cf2f2a2571af4665ee147b10f512541ef19e1b65a085d42d1dff4bf2f3cc3",
+  "initial_provision": {
+    "run_id": "p3u-m1-separate",
+    "configuration": "separate",
+    "repositories": {
+      "alice": "p1-p3u-m1-separate-alice",
+      "bob": "p1-p3u-m1-separate-bob"
+    },
+    "users": {
+      "alice": "p1-p3u-m1-separate-alice",
+      "bob": "p1-p3u-m1-separate-bob",
+      "prefetch": "p1-p3u-m1-separate-prefetch"
+    },
+    "negative_cache_period_seconds": 1800,
+    "storage_blocked": true,
+    "prewarm_count": 32,
+    "provision_log": [
+      {
+        "label": "create-user-alice",
+        "method": "POST",
+        "path": "/ui/users",
+        "status": 201
+      },
+      {
+        "label": "create-user-bob",
+        "method": "POST",
+        "path": "/ui/users",
+        "status": 201
+      },
+      {
+        "label": "create-user-prefetch",
+        "method": "POST",
+        "path": "/ui/users",
+        "status": 201
+      },
+      {
+        "label": "create-repo",
+        "method": "POST",
+        "path": "/ui/admin/repositories",
+        "status": 200
+      },
+      {
+        "label": "read-repo",
+        "method": "GET",
+        "path": "/ui/admin/repositories/remote/p1-p3u-m1-separate-alice",
+        "status": 200
+      },
+      {
+        "label": "create-permission",
+        "method": "POST",
+        "path": "/ui/permissiontargets",
+        "status": 201
+      },
+      {
+        "label": "create-repo",
+        "method": "POST",
+        "path": "/ui/admin/repositories",
+        "status": 200
+      },
+      {
+        "label": "read-repo",
+        "method": "GET",
+        "path": "/ui/admin/repositories/remote/p1-p3u-m1-separate-bob",
+        "status": 200
+      },
+      {
+        "label": "create-permission",
+        "method": "POST",
+        "path": "/ui/permissiontargets",
+        "status": 201
+      },
+      {
+        "label": "prewarm-p1-p3u-m1-separate-alice-00",
+        "method": "GET",
+        "path": "/p1-p3u-m1-separate-alice/pkg-00.bin",
+        "status": 200
+      },
+      {
+        "label": "prewarm-p1-p3u-m1-separate-alice-01",
+        "method": "GET",
+        "path": "/p1-p3u-m1-separate-alice/pkg-01.bin",
+        "status": 200
+      },
+      {
+        "label": "prewarm-p1-p3u-m1-separate-alice-02",
+        "method": "GET",
+        "path": "/p1-p3u-m1-separate-alice/pkg-02.bin",
+        "status": 200
+      },
+      {
+        "label": "prewarm-p1-p3u-m1-separate-alice-03",
+        "method": "GET",
+        "path": "/p1-p3u-m1-separate-alice/pkg-03.bin",
+        "status": 200
+      },
+      {
+        "label": "prewarm-p1-p3u-m1-separate-alice-04",
+        "method": "GET",
+        "path": "/p1-p3u-m1-separate-alice/pkg-04.bin",
+        "status": 200
+      },
+      {
+        "label": "prewarm-p1-p3u-m1-separate-alice-05",
+        "method": "GET",
+        "path": "/p1-p3u-m1-separate-alice/pkg-05.bin",
+        "status": 200
+      },
+      {
+        "label": "prewarm-p1-p3u-m1-separate-alice-06",
+        "method": "GET",
+        "path": "/p1-p3u-m1-separate-alice/pkg-06.bin",
+        "status": 200
+      },
+      {
+        "label": "prewarm-p1-p3u-m1-separate-alice-07",
+        "method": "GET",
+        "path": "/p1-p3u-m1-separate-alice/pkg-07.bin",
+        "status": 200
+      },
+      {
+        "label": "prewarm-p1-p3u-m1-separate-alice-08",
+        "method": "GET",
+        "path": "/p1-p3u-m1-separate-alice/pkg-08.bin",
+        "status": 200
+      },
+      {
+        "label": "prewarm-p1-p3u-m1-separate-alice-09",
+        "method": "GET",
+        "path": "/p1-p3u-m1-separate-alice/pkg-09.bin",
+        "status": 200
+      },
+      {
+        "label": "prewarm-p1-p3u-m1-separate-alice-10",
+        "method": "GET",
+        "path": "/p1-p3u-m1-separate-alice/pkg-10.bin",
+        "status": 200
+      },
+      {
+        "label": "prewarm-p1-p3u-m1-separate-alice-11",
+        "method": "GET",
+        "path": "/p1-p3u-m1-separate-alice/pkg-11.bin",
+        "status": 200
+      },
+      {
+        "label": "prewarm-p1-p3u-m1-separate-alice-12",
+        "method": "GET",
+        "path": "/p1-p3u-m1-separate-alice/pkg-12.bin",
+        "status": 200
+      },
+      {
+        "label": "prewarm-p1-p3u-m1-separate-alice-13",
+        "method": "GET",
+        "path": "/p1-p3u-m1-separate-alice/pkg-13.bin",
+        "status": 200
+      },
+      {
+        "label": "prewarm-p1-p3u-m1-separate-alice-14",
+        "method": "GET",
+        "path": "/p1-p3u-m1-separate-alice/pkg-14.bin",
+        "status": 200
+      },
+      {
+        "label": "prewarm-p1-p3u-m1-separate-alice-15",
+        "method": "GET",
+        "path": "/p1-p3u-m1-separate-alice/pkg-15.bin",
+        "status": 200
+      },
+      {
+        "label": "prewarm-p1-p3u-m1-separate-bob-00",
+        "method": "GET",
+        "path": "/p1-p3u-m1-separate-bob/pkg-00.bin",
+        "status": 200
+      },
+      {
+        "label": "prewarm-p1-p3u-m1-separate-bob-01",
+        "method": "GET",
+        "path": "/p1-p3u-m1-separate-bob/pkg-01.bin",
+        "status": 200
+      },
+      {
+        "label": "prewarm-p1-p3u-m1-separate-bob-02",
+        "method": "GET",
+        "path": "/p1-p3u-m1-separate-bob/pkg-02.bin",
+        "status": 200
+      },
+      {
+        "label": "prewarm-p1-p3u-m1-separate-bob-03",
+        "method": "GET",
+        "path": "/p1-p3u-m1-separate-bob/pkg-03.bin",
+        "status": 200
+      },
+      {
+        "label": "prewarm-p1-p3u-m1-separate-bob-04",
+        "method": "GET",
+        "path": "/p1-p3u-m1-separate-bob/pkg-04.bin",
+        "status": 200
+      },
+      {
+        "label": "prewarm-p1-p3u-m1-separate-bob-05",
+        "method": "GET",
+        "path": "/p1-p3u-m1-separate-bob/pkg-05.bin",
+        "status": 200
+      },
+      {
+        "label": "prewarm-p1-p3u-m1-separate-bob-06",
+        "method": "GET",
+        "path": "/p1-p3u-m1-separate-bob/pkg-06.bin",
+        "status": 200
+      },
+      {
+        "label": "prewarm-p1-p3u-m1-separate-bob-07",
+        "method": "GET",
+        "path": "/p1-p3u-m1-separate-bob/pkg-07.bin",
+        "status": 200
+      },
+      {
+        "label": "prewarm-p1-p3u-m1-separate-bob-08",
+        "method": "GET",
+        "path": "/p1-p3u-m1-separate-bob/pkg-08.bin",
+        "status": 200
+      },
+      {
+        "label": "prewarm-p1-p3u-m1-separate-bob-09",
+        "method": "GET",
+        "path": "/p1-p3u-m1-separate-bob/pkg-09.bin",
+        "status": 200
+      },
+      {
+        "label": "prewarm-p1-p3u-m1-separate-bob-10",
+        "method": "GET",
+        "path": "/p1-p3u-m1-separate-bob/pkg-10.bin",
+        "status": 200
+      },
+      {
+        "label": "prewarm-p1-p3u-m1-separate-bob-11",
+        "method": "GET",
+        "path": "/p1-p3u-m1-separate-bob/pkg-11.bin",
+        "status": 200
+      },
+      {
+        "label": "prewarm-p1-p3u-m1-separate-bob-12",
+        "method": "GET",
+        "path": "/p1-p3u-m1-separate-bob/pkg-12.bin",
+        "status": 200
+      },
+      {
+        "label": "prewarm-p1-p3u-m1-separate-bob-13",
+        "method": "GET",
+        "path": "/p1-p3u-m1-separate-bob/pkg-13.bin",
+        "status": 200
+      },
+      {
+        "label": "prewarm-p1-p3u-m1-separate-bob-14",
+        "method": "GET",
+        "path": "/p1-p3u-m1-separate-bob/pkg-14.bin",
+        "status": 200
+      },
+      {
+        "label": "prewarm-p1-p3u-m1-separate-bob-15",
+        "method": "GET",
+        "path": "/p1-p3u-m1-separate-bob/pkg-15.bin",
+        "status": 200
+      }
+    ],
+    "kind": "mutable",
+    "scenario": "separate",
+    "fixture_etag": "e8627e1a8b3b777cb5e58066954340fdbbc31e2b",
+    "gateway_edition": 2,
+    "queue_size": 5,
+    "boundary_readback": {
+      "containers": {
+        "alice": {
+          "name": "p1-p3u-m1-separate-alice",
+          "user": "20001:20001",
+          "root_read_only": true,
+          "cap_drop": [
+            "ALL"
+          ],
+          "security_options": [
+            "no-new-privileges:true"
+          ],
+          "memory": 134217728,
+          "memory_swap": 134217728,
+          "nano_cpus": 500000000,
+          "pids_limit": 48,
+          "tmpfs": {
+            "/tmp": "rw,nosuid,nodev,size=16m"
+          },
+          "forbidden_environment_present": false,
+          "published_ports": {},
+          "attached_networks": [
+            "p1-p3u-m1-separate-net-alice"
+          ],
+          "network_addresses": {
+            "p1-p3u-m1-separate-net-alice": "172.19.0.1"
+          },
+          "image_id": "sha256:5e2bdb1b0d542d5039cffb8181c65930093949194a65c365dfb1b0fe13a4fa5b",
+          "bind_mount_destinations": [],
+          "mounts_read_only": true
+        },
+        "bob": {
+          "name": "p1-p3u-m1-separate-bob",
+          "user": "20001:20001",
+          "root_read_only": true,
+          "cap_drop": [
+            "ALL"
+          ],
+          "security_options": [
+            "no-new-privileges:true"
+          ],
+          "memory": 134217728,
+          "memory_swap": 134217728,
+          "nano_cpus": 500000000,
+          "pids_limit": 48,
+          "tmpfs": {
+            "/tmp": "rw,nosuid,nodev,size=16m"
+          },
+          "forbidden_environment_present": false,
+          "published_ports": {},
+          "attached_networks": [
+            "p1-p3u-m1-separate-net-bob"
+          ],
+          "network_addresses": {
+            "p1-p3u-m1-separate-net-bob": "172.20.0.1"
+          },
+          "image_id": "sha256:5e2bdb1b0d542d5039cffb8181c65930093949194a65c365dfb1b0fe13a4fa5b",
+          "bind_mount_destinations": [],
+          "mounts_read_only": true
+        },
+        "gateway": {
+          "name": "p1-p3u-m1-separate-gateway",
+          "user": "20001:20001",
+          "root_read_only": true,
+          "cap_drop": [
+            "ALL"
+          ],
+          "security_options": [
+            "no-new-privileges:true"
+          ],
+          "memory": 134217728,
+          "memory_swap": 134217728,
+          "nano_cpus": 500000000,
+          "pids_limit": 48,
+          "tmpfs": {
+            "/tmp": "rw,nosuid,nodev,size=16m"
+          },
+          "forbidden_environment_present": false,
+          "published_ports": {},
+          "attached_networks": [
+            "p1-p3u-m1-separate-net-alice",
+            "p1-p3u-m1-separate-net-bob",
+            "p1-p3u-m1-separate-net-services"
+          ],
+          "network_addresses": {
+            "p1-p3u-m1-separate-net-alice": "172.19.0.2",
+            "p1-p3u-m1-separate-net-bob": "172.20.0.2",
+            "p1-p3u-m1-separate-net-services": "172.21.0.2"
+          },
+          "image_id": "sha256:5e2bdb1b0d542d5039cffb8181c65930093949194a65c365dfb1b0fe13a4fa5b",
+          "bind_mount_destinations": [
+            "/gateway.py",
+            "/gateway.json"
+          ],
+          "mounts_read_only": true
+        },
+        "upstream": {
+          "name": "p1-p3u-m1-separate-upstream",
+          "user": "20001:20001",
+          "root_read_only": true,
+          "cap_drop": [
+            "ALL"
+          ],
+          "security_options": [
+            "no-new-privileges:true"
+          ],
+          "memory": 134217728,
+          "memory_swap": 134217728,
+          "nano_cpus": 500000000,
+          "pids_limit": 48,
+          "tmpfs": {
+            "/tmp": "rw,nosuid,nodev,size=16m"
+          },
+          "forbidden_environment_present": false,
+          "published_ports": {},
+          "attached_networks": [
+            "p1-p3u-m1-separate-net-services"
+          ],
+          "network_addresses": {
+            "p1-p3u-m1-separate-net-services": "172.21.0.1"
+          },
+          "image_id": "sha256:5e2bdb1b0d542d5039cffb8181c65930093949194a65c365dfb1b0fe13a4fa5b",
+          "bind_mount_destinations": [
+            "/upstream.py"
+          ],
+          "mounts_read_only": true
+        }
+      },
+      "networks": {
+        "alice": {
+          "name": "p1-p3u-m1-separate-net-alice",
+          "internal": true,
+          "options": {
+            "com.docker.network.bridge.gateway_mode_ipv4": "isolated"
+          },
+          "containers": [
+            "p1-p3u-m1-separate-alice",
+            "p1-p3u-m1-separate-gateway"
+          ]
+        },
+        "bob": {
+          "name": "p1-p3u-m1-separate-net-bob",
+          "internal": true,
+          "options": {
+            "com.docker.network.bridge.gateway_mode_ipv4": "isolated"
+          },
+          "containers": [
+            "p1-p3u-m1-separate-bob",
+            "p1-p3u-m1-separate-gateway"
+          ]
+        },
+        "services": {
+          "name": "p1-p3u-m1-separate-net-services",
+          "internal": true,
+          "options": {
+            "com.docker.network.bridge.gateway_mode_ipv4": "isolated"
+          },
+          "containers": [
+            "art-a",
+            "p1-p3u-m1-separate-gateway",
+            "p1-p3u-m1-separate-upstream"
+          ]
+        }
+      }
+    },
+    "network_positive_controls": {
+      "passed": true,
+      "checks": 7,
+      "records": [
+        {
+          "host": "172.20.0.1",
+          "port": 18888,
+          "expected_connected": true,
+          "name": "live peer listener on its own network",
+          "connected": true,
+          "error": null,
+          "actor": "bob"
+        },
+        {
+          "host": "p1-p3u-m1-separate-gateway",
+          "port": 8000,
+          "expected_connected": true,
+          "name": "assigned gateway route",
+          "connected": true,
+          "error": null,
+          "actor": "bob"
+        },
+        {
+          "host": "172.21.0.3",
+          "port": 8082,
+          "expected_connected": false,
+          "name": "direct backend bypass",
+          "connected": false,
+          "error": "OSError",
+          "actor": "bob"
+        },
+        {
+          "host": "172.20.0.1",
+          "port": 18888,
+          "expected_connected": false,
+          "name": "same live listener from the other network",
+          "connected": false,
+          "error": "OSError",
+          "actor": "alice"
+        },
+        {
+          "host": "p1-p3u-m1-separate-gateway",
+          "port": 8000,
+          "expected_connected": true,
+          "name": "assigned gateway route",
+          "connected": true,
+          "error": null,
+          "actor": "alice"
+        },
+        {
+          "host": "172.21.0.3",
+          "port": 8082,
+          "expected_connected": false,
+          "name": "direct backend bypass",
+          "connected": false,
+          "error": "OSError",
+          "actor": "alice"
+        },
+        {
+          "host": "172.21.0.3",
+          "port": 8082,
+          "expected_connected": true,
+          "name": "backend is reachable from the gateway",
+          "connected": true,
+          "error": null,
+          "actor": "gateway"
+        }
+      ],
+      "listener_stopped": true,
+      "scope": "Specified live TCP listeners and routes, not every possible bypass.",
+      "listener_exit_code": 0
+    }
+  },
+  "package_source_setup": {
+    "bootstrap_upstream_log": [
+      {
+        "start_utc_ns": 1794181203913050905,
+        "end_utc_ns": 1794181203913172254,
+        "method": "HEAD",
+        "path": "/pkg-00.bin",
+        "status": 200,
+        "delay_ms": 0,
+        "body_bytes": 31,
+        "marker": "Artifactory/7.161.26 86126900"
+      },
+      {
+        "start_utc_ns": 1794181203915803762,
+        "end_utc_ns": 1794181203915914241,
+        "method": "GET",
+        "path": "/pkg-00.bin",
+        "status": 200,
+        "delay_ms": 0,
+        "body_bytes": 31,
+        "marker": "Artifactory/7.161.26 86126900"
+      },
+      {
+        "start_utc_ns": 1794181203927718339,
+        "end_utc_ns": 1794181203927803635,
+        "method": "HEAD",
+        "path": "/pkg-01.bin",
+        "status": 200,
+        "delay_ms": 0,
+        "body_bytes": 31,
+        "marker": "Artifactory/7.161.26 86126900"
+      },
+      {
+        "start_utc_ns": 1794181203929500233,
+        "end_utc_ns": 1794181203929579059,
+        "method": "GET",
+        "path": "/pkg-01.bin",
+        "status": 200,
+        "delay_ms": 0,
+        "body_bytes": 31,
+        "marker": "Artifactory/7.161.26 86126900"
+      },
+      {
+        "start_utc_ns": 1794181203938231940,
+        "end_utc_ns": 1794181203938301645,
+        "method": "HEAD",
+        "path": "/pkg-02.bin",
+        "status": 200,
+        "delay_ms": 0,
+        "body_bytes": 31,
+        "marker": "Artifactory/7.161.26 86126900"
+      },
+      {
+        "start_utc_ns": 1794181203939773056,
+        "end_utc_ns": 1794181203939859693,
+        "method": "GET",
+        "path": "/pkg-02.bin",
+        "status": 200,
+        "delay_ms": 0,
+        "body_bytes": 31,
+        "marker": "Artifactory/7.161.26 86126900"
+      },
+      {
+        "start_utc_ns": 1794181203947395880,
+        "end_utc_ns": 1794181203947479206,
+        "method": "HEAD",
+        "path": "/pkg-03.bin",
+        "status": 200,
+        "delay_ms": 0,
+        "body_bytes": 31,
+        "marker": "Artifactory/7.161.26 86126900"
+      },
+      {
+        "start_utc_ns": 1794181203948956027,
+        "end_utc_ns": 1794181203949028023,
+        "method": "GET",
+        "path": "/pkg-03.bin",
+        "status": 200,
+        "delay_ms": 0,
+        "body_bytes": 31,
+        "marker": "Artifactory/7.161.26 86126900"
+      },
+      {
+        "start_utc_ns": 1794181203957124052,
+        "end_utc_ns": 1794181203957195207,
+        "method": "HEAD",
+        "path": "/pkg-04.bin",
+        "status": 200,
+        "delay_ms": 0,
+        "body_bytes": 31,
+        "marker": "Artifactory/7.161.26 86126900"
+      },
+      {
+        "start_utc_ns": 1794181203958652657,
+        "end_utc_ns": 1794181203958724373,
+        "method": "GET",
+        "path": "/pkg-04.bin",
+        "status": 200,
+        "delay_ms": 0,
+        "body_bytes": 31,
+        "marker": "Artifactory/7.161.26 86126900"
+      },
+      {
+        "start_utc_ns": 1794181203966347826,
+        "end_utc_ns": 1794181203966418472,
+        "method": "HEAD",
+        "path": "/pkg-05.bin",
+        "status": 200,
+        "delay_ms": 0,
+        "body_bytes": 31,
+        "marker": "Artifactory/7.161.26 86126900"
+      },
+      {
+        "start_utc_ns": 1794181203968012272,
+        "end_utc_ns": 1794181203968098958,
+        "method": "GET",
+        "path": "/pkg-05.bin",
+        "status": 200,
+        "delay_ms": 0,
+        "body_bytes": 31,
+        "marker": "Artifactory/7.161.26 86126900"
+      },
+      {
+        "start_utc_ns": 1794181203975524627,
+        "end_utc_ns": 1794181203975592942,
+        "method": "HEAD",
+        "path": "/pkg-06.bin",
+        "status": 200,
+        "delay_ms": 0,
+        "body_bytes": 31,
+        "marker": "Artifactory/7.161.26 86126900"
+      },
+      {
+        "start_utc_ns": 1794181203977155840,
+        "end_utc_ns": 1794181203977246797,
+        "method": "GET",
+        "path": "/pkg-06.bin",
+        "status": 200,
+        "delay_ms": 0,
+        "body_bytes": 31,
+        "marker": "Artifactory/7.161.26 86126900"
+      },
+      {
+        "start_utc_ns": 1794181203985994465,
+        "end_utc_ns": 1794181203986072581,
+        "method": "HEAD",
+        "path": "/pkg-07.bin",
+        "status": 200,
+        "delay_ms": 0,
+        "body_bytes": 31,
+        "marker": "Artifactory/7.161.26 86126900"
+      },
+      {
+        "start_utc_ns": 1794181203987878687,
+        "end_utc_ns": 1794181203987965723,
+        "method": "GET",
+        "path": "/pkg-07.bin",
+        "status": 200,
+        "delay_ms": 0,
+        "body_bytes": 31,
+        "marker": "Artifactory/7.161.26 86126900"
+      },
+      {
+        "start_utc_ns": 1794181203997172816,
+        "end_utc_ns": 1794181203997245442,
+        "method": "HEAD",
+        "path": "/pkg-08.bin",
+        "status": 200,
+        "delay_ms": 0,
+        "body_bytes": 31,
+        "marker": "Artifactory/7.161.26 86126900"
+      },
+      {
+        "start_utc_ns": 1794181203998784328,
+        "end_utc_ns": 1794181203998860443,
+        "method": "GET",
+        "path": "/pkg-08.bin",
+        "status": 200,
+        "delay_ms": 0,
+        "body_bytes": 31,
+        "marker": "Artifactory/7.161.26 86126900"
+      },
+      {
+        "start_utc_ns": 1794181204007520075,
+        "end_utc_ns": 1794181204007597171,
+        "method": "HEAD",
+        "path": "/pkg-09.bin",
+        "status": 200,
+        "delay_ms": 0,
+        "body_bytes": 31,
+        "marker": "Artifactory/7.161.26 86126900"
+      },
+      {
+        "start_utc_ns": 1794181204009260186,
+        "end_utc_ns": 1794181204009347043,
+        "method": "GET",
+        "path": "/pkg-09.bin",
+        "status": 200,
+        "delay_ms": 0,
+        "body_bytes": 31,
+        "marker": "Artifactory/7.161.26 86126900"
+      },
+      {
+        "start_utc_ns": 1794181204017272619,
+        "end_utc_ns": 1794181204017339884,
+        "method": "HEAD",
+        "path": "/pkg-10.bin",
+        "status": 200,
+        "delay_ms": 0,
+        "body_bytes": 31,
+        "marker": "Artifactory/7.161.26 86126900"
+      },
+      {
+        "start_utc_ns": 1794181204018860889,
+        "end_utc_ns": 1794181204018939575,
+        "method": "GET",
+        "path": "/pkg-10.bin",
+        "status": 200,
+        "delay_ms": 0,
+        "body_bytes": 31,
+        "marker": "Artifactory/7.161.26 86126900"
+      },
+      {
+        "start_utc_ns": 1794181204026790925,
+        "end_utc_ns": 1794181204026855830,
+        "method": "HEAD",
+        "path": "/pkg-11.bin",
+        "status": 200,
+        "delay_ms": 0,
+        "body_bytes": 31,
+        "marker": "Artifactory/7.161.26 86126900"
+      },
+      {
+        "start_utc_ns": 1794181204028414498,
+        "end_utc_ns": 1794181204028525536,
+        "method": "GET",
+        "path": "/pkg-11.bin",
+        "status": 200,
+        "delay_ms": 0,
+        "body_bytes": 31,
+        "marker": "Artifactory/7.161.26 86126900"
+      },
+      {
+        "start_utc_ns": 1794181204036659378,
+        "end_utc_ns": 1794181204036736904,
+        "method": "HEAD",
+        "path": "/pkg-12.bin",
+        "status": 200,
+        "delay_ms": 0,
+        "body_bytes": 31,
+        "marker": "Artifactory/7.161.26 86126900"
+      },
+      {
+        "start_utc_ns": 1794181204038404790,
+        "end_utc_ns": 1794181204038518668,
+        "method": "GET",
+        "path": "/pkg-12.bin",
+        "status": 200,
+        "delay_ms": 0,
+        "body_bytes": 31,
+        "marker": "Artifactory/7.161.26 86126900"
+      },
+      {
+        "start_utc_ns": 1794181204046476277,
+        "end_utc_ns": 1794181204046553203,
+        "method": "HEAD",
+        "path": "/pkg-13.bin",
+        "status": 200,
+        "delay_ms": 0,
+        "body_bytes": 31,
+        "marker": "Artifactory/7.161.26 86126900"
+      },
+      {
+        "start_utc_ns": 1794181204048144043,
+        "end_utc_ns": 1794181204048237650,
+        "method": "GET",
+        "path": "/pkg-13.bin",
+        "status": 200,
+        "delay_ms": 0,
+        "body_bytes": 31,
+        "marker": "Artifactory/7.161.26 86126900"
+      },
+      {
+        "start_utc_ns": 1794181204055838362,
+        "end_utc_ns": 1794181204055913127,
+        "method": "HEAD",
+        "path": "/pkg-14.bin",
+        "status": 200,
+        "delay_ms": 0,
+        "body_bytes": 31,
+        "marker": "Artifactory/7.161.26 86126900"
+      },
+      {
+        "start_utc_ns": 1794181204057753276,
+        "end_utc_ns": 1794181204057840882,
+        "method": "GET",
+        "path": "/pkg-14.bin",
+        "status": 200,
+        "delay_ms": 0,
+        "body_bytes": 31,
+        "marker": "Artifactory/7.161.26 86126900"
+      },
+      {
+        "start_utc_ns": 1794181204066873652,
+        "end_utc_ns": 1794181204066954208,
+        "method": "HEAD",
+        "path": "/pkg-15.bin",
+        "status": 200,
+        "delay_ms": 0,
+        "body_bytes": 31,
+        "marker": "Artifactory/7.161.26 86126900"
+      },
+      {
+        "start_utc_ns": 1794181204068636455,
+        "end_utc_ns": 1794181204068730612,
+        "method": "GET",
+        "path": "/pkg-15.bin",
+        "status": 200,
+        "delay_ms": 0,
+        "body_bytes": 31,
+        "marker": "Artifactory/7.161.26 86126900"
+      },
+      {
+        "start_utc_ns": 1794181204077290986,
+        "end_utc_ns": 1794181204077363072,
+        "method": "HEAD",
+        "path": "/pkg-00.bin",
+        "status": 200,
+        "delay_ms": 0,
+        "body_bytes": 31,
+        "marker": "Artifactory/7.161.26 86126900"
+      },
+      {
+        "start_utc_ns": 1794181204078868795,
+        "end_utc_ns": 1794181204078943941,
+        "method": "GET",
+        "path": "/pkg-00.bin",
+        "status": 200,
+        "delay_ms": 0,
+        "body_bytes": 31,
+        "marker": "Artifactory/7.161.26 86126900"
+      },
+      {
+        "start_utc_ns": 1794181204086759069,
+        "end_utc_ns": 1794181204086821424,
+        "method": "HEAD",
+        "path": "/pkg-01.bin",
+        "status": 200,
+        "delay_ms": 0,
+        "body_bytes": 31,
+        "marker": "Artifactory/7.161.26 86126900"
+      },
+      {
+        "start_utc_ns": 1794181204088338518,
+        "end_utc_ns": 1794181204088414624,
+        "method": "GET",
+        "path": "/pkg-01.bin",
+        "status": 200,
+        "delay_ms": 0,
+        "body_bytes": 31,
+        "marker": "Artifactory/7.161.26 86126900"
+      },
+      {
+        "start_utc_ns": 1794181204096645193,
+        "end_utc_ns": 1794181204096709728,
+        "method": "HEAD",
+        "path": "/pkg-02.bin",
+        "status": 200,
+        "delay_ms": 0,
+        "body_bytes": 31,
+        "marker": "Artifactory/7.161.26 86126900"
+      },
+      {
+        "start_utc_ns": 1794181204098310128,
+        "end_utc_ns": 1794181204098398655,
+        "method": "GET",
+        "path": "/pkg-02.bin",
+        "status": 200,
+        "delay_ms": 0,
+        "body_bytes": 31,
+        "marker": "Artifactory/7.161.26 86126900"
+      },
+      {
+        "start_utc_ns": 1794181204106384656,
+        "end_utc_ns": 1794181204106472153,
+        "method": "HEAD",
+        "path": "/pkg-03.bin",
+        "status": 200,
+        "delay_ms": 0,
+        "body_bytes": 31,
+        "marker": "Artifactory/7.161.26 86126900"
+      },
+      {
+        "start_utc_ns": 1794181204107979716,
+        "end_utc_ns": 1794181204108056972,
+        "method": "GET",
+        "path": "/pkg-03.bin",
+        "status": 200,
+        "delay_ms": 0,
+        "body_bytes": 31,
+        "marker": "Artifactory/7.161.26 86126900"
+      },
+      {
+        "start_utc_ns": 1794181204115883791,
+        "end_utc_ns": 1794181204115947256,
+        "method": "HEAD",
+        "path": "/pkg-04.bin",
+        "status": 200,
+        "delay_ms": 0,
+        "body_bytes": 31,
+        "marker": "Artifactory/7.161.26 86126900"
+      },
+      {
+        "start_utc_ns": 1794181204117491012,
+        "end_utc_ns": 1794181204117569218,
+        "method": "GET",
+        "path": "/pkg-04.bin",
+        "status": 200,
+        "delay_ms": 0,
+        "body_bytes": 31,
+        "marker": "Artifactory/7.161.26 86126900"
+      },
+      {
+        "start_utc_ns": 1794181204125180961,
+        "end_utc_ns": 1794181204125255616,
+        "method": "HEAD",
+        "path": "/pkg-05.bin",
+        "status": 200,
+        "delay_ms": 0,
+        "body_bytes": 31,
+        "marker": "Artifactory/7.161.26 86126900"
+      },
+      {
+        "start_utc_ns": 1794181204126758009,
+        "end_utc_ns": 1794181204126834135,
+        "method": "GET",
+        "path": "/pkg-05.bin",
+        "status": 200,
+        "delay_ms": 0,
+        "body_bytes": 31,
+        "marker": "Artifactory/7.161.26 86126900"
+      },
+      {
+        "start_utc_ns": 1794181204134397415,
+        "end_utc_ns": 1794181204134487541,
+        "method": "HEAD",
+        "path": "/pkg-06.bin",
+        "status": 200,
+        "delay_ms": 0,
+        "body_bytes": 31,
+        "marker": "Artifactory/7.161.26 86126900"
+      },
+      {
+        "start_utc_ns": 1794181204135936330,
+        "end_utc_ns": 1794181204136009876,
+        "method": "GET",
+        "path": "/pkg-06.bin",
+        "status": 200,
+        "delay_ms": 0,
+        "body_bytes": 31,
+        "marker": "Artifactory/7.161.26 86126900"
+      },
+      {
+        "start_utc_ns": 1794181204143842045,
+        "end_utc_ns": 1794181204143918771,
+        "method": "HEAD",
+        "path": "/pkg-07.bin",
+        "status": 200,
+        "delay_ms": 0,
+        "body_bytes": 31,
+        "marker": "Artifactory/7.161.26 86126900"
+      },
+      {
+        "start_utc_ns": 1794181204145716347,
+        "end_utc_ns": 1794181204145802593,
+        "method": "GET",
+        "path": "/pkg-07.bin",
+        "status": 200,
+        "delay_ms": 0,
+        "body_bytes": 31,
+        "marker": "Artifactory/7.161.26 86126900"
+      },
+      {
+        "start_utc_ns": 1794181204155055059,
+        "end_utc_ns": 1794181204155132945,
+        "method": "HEAD",
+        "path": "/pkg-08.bin",
+        "status": 200,
+        "delay_ms": 0,
+        "body_bytes": 31,
+        "marker": "Artifactory/7.161.26 86126900"
+      },
+      {
+        "start_utc_ns": 1794181204156798030,
+        "end_utc_ns": 1794181204156889717,
+        "method": "GET",
+        "path": "/pkg-08.bin",
+        "status": 200,
+        "delay_ms": 0,
+        "body_bytes": 31,
+        "marker": "Artifactory/7.161.26 86126900"
+      },
+      {
+        "start_utc_ns": 1794181204165235405,
+        "end_utc_ns": 1794181204165315402,
+        "method": "HEAD",
+        "path": "/pkg-09.bin",
+        "status": 200,
+        "delay_ms": 0,
+        "body_bytes": 31,
+        "marker": "Artifactory/7.161.26 86126900"
+      },
+      {
+        "start_utc_ns": 1794181204166912062,
+        "end_utc_ns": 1794181204167002489,
+        "method": "GET",
+        "path": "/pkg-09.bin",
+        "status": 200,
+        "delay_ms": 0,
+        "body_bytes": 31,
+        "marker": "Artifactory/7.161.26 86126900"
+      },
+      {
+        "start_utc_ns": 1794181204175710564,
+        "end_utc_ns": 1794181204175790110,
+        "method": "HEAD",
+        "path": "/pkg-10.bin",
+        "status": 200,
+        "delay_ms": 0,
+        "body_bytes": 31,
+        "marker": "Artifactory/7.161.26 86126900"
+      },
+      {
+        "start_utc_ns": 1794181204177508819,
+        "end_utc_ns": 1794181204177599436,
+        "method": "GET",
+        "path": "/pkg-10.bin",
+        "status": 200,
+        "delay_ms": 0,
+        "body_bytes": 31,
+        "marker": "Artifactory/7.161.26 86126900"
+      },
+      {
+        "start_utc_ns": 1794181204186079704,
+        "end_utc_ns": 1794181204186156760,
+        "method": "HEAD",
+        "path": "/pkg-11.bin",
+        "status": 200,
+        "delay_ms": 0,
+        "body_bytes": 31,
+        "marker": "Artifactory/7.161.26 86126900"
+      },
+      {
+        "start_utc_ns": 1794181204187969416,
+        "end_utc_ns": 1794181204188058873,
+        "method": "GET",
+        "path": "/pkg-11.bin",
+        "status": 200,
+        "delay_ms": 0,
+        "body_bytes": 31,
+        "marker": "Artifactory/7.161.26 86126900"
+      },
+      {
+        "start_utc_ns": 1794181204197795756,
+        "end_utc_ns": 1794181204197879132,
+        "method": "HEAD",
+        "path": "/pkg-12.bin",
+        "status": 200,
+        "delay_ms": 0,
+        "body_bytes": 31,
+        "marker": "Artifactory/7.161.26 86126900"
+      },
+      {
+        "start_utc_ns": 1794181204199418848,
+        "end_utc_ns": 1794181204199527436,
+        "method": "GET",
+        "path": "/pkg-12.bin",
+        "status": 200,
+        "delay_ms": 0,
+        "body_bytes": 31,
+        "marker": "Artifactory/7.161.26 86126900"
+      },
+      {
+        "start_utc_ns": 1794181204207536079,
+        "end_utc_ns": 1794181204207615285,
+        "method": "HEAD",
+        "path": "/pkg-13.bin",
+        "status": 200,
+        "delay_ms": 0,
+        "body_bytes": 31,
+        "marker": "Artifactory/7.161.26 86126900"
+      },
+      {
+        "start_utc_ns": 1794181204209280440,
+        "end_utc_ns": 1794181204209358756,
+        "method": "GET",
+        "path": "/pkg-13.bin",
+        "status": 200,
+        "delay_ms": 0,
+        "body_bytes": 31,
+        "marker": "Artifactory/7.161.26 86126900"
+      },
+      {
+        "start_utc_ns": 1794181204217673482,
+        "end_utc_ns": 1794181204217739187,
+        "method": "HEAD",
+        "path": "/pkg-14.bin",
+        "status": 200,
+        "delay_ms": 0,
+        "body_bytes": 31,
+        "marker": "Artifactory/7.161.26 86126900"
+      },
+      {
+        "start_utc_ns": 1794181204219295724,
+        "end_utc_ns": 1794181204219369540,
+        "method": "GET",
+        "path": "/pkg-14.bin",
+        "status": 200,
+        "delay_ms": 0,
+        "body_bytes": 31,
+        "marker": "Artifactory/7.161.26 86126900"
+      },
+      {
+        "start_utc_ns": 1794181204227064839,
+        "end_utc_ns": 1794181204227128494,
+        "method": "HEAD",
+        "path": "/pkg-15.bin",
+        "status": 200,
+        "delay_ms": 0,
+        "body_bytes": 31,
+        "marker": "Artifactory/7.161.26 86126900"
+      },
+      {
+        "start_utc_ns": 1794181204230290852,
+        "end_utc_ns": 1794181204230382659,
+        "method": "GET",
+        "path": "/pkg-15.bin",
+        "status": 200,
+        "delay_ms": 0,
+        "body_bytes": 31,
+        "marker": "Artifactory/7.161.26 86126900"
+      }
+    ],
+    "artifactory_origin_ip": "172.21.0.3",
+    "service_network": "p1-p3u-m1-separate-net-services",
+    "origin_config_sha256": "fedb1a237298f7fcb2a70905398d7ffd01fa60d7f41dbc789467ccb0ce2c7d0d"
+  },
+  "trusted_package_prewarm": [
+    {
+      "actor": "alice",
+      "method": "GET",
+      "path": "/artifactory/p1-p3u-m1-separate-alice/files/ac96cd038792094f438ad1f6ff80837353805ac950cd2aa0e0625ef19850c308/attrs-24.3.0-py3-none-any.whl",
+      "marker": "p1/p3u-m1-separate/utility/admission/alice/ac96cd038792",
+      "principal": "p1-p3u-m1-separate-prefetch",
+      "status": 200,
+      "start_utc_ns": 1794181208222782993,
+      "end_utc_ns": 1794181208240961801,
+      "body_bytes": 63397,
+      "body_sha256": "ac96cd038792094f438ad1f6ff80837353805ac950cd2aa0e0625ef19850c308",
+      "expected_sha256": "ac96cd038792094f438ad1f6ff80837353805ac950cd2aa0e0625ef19850c308",
+      "expected_bytes": 63397
+    },
+    {
+      "actor": "alice",
+      "method": "GET",
+      "path": "/artifactory/p1-p3u-m1-separate-alice/files/99045d7d3f08f91f0d656bc9b7efbae189426cd913d830294a15eefa0ea4df16/beautifulsoup4-4.13.3-py3-none-any.whl",
+      "marker": "p1/p3u-m1-separate/utility/admission/alice/99045d7d3f08",
+      "principal": "p1-p3u-m1-separate-prefetch",
+      "status": 200,
+      "start_utc_ns": 1794181208241064739,
+      "end_utc_ns": 1794181208256066088,
+      "body_bytes": 186015,
+      "body_sha256": "99045d7d3f08f91f0d656bc9b7efbae189426cd913d830294a15eefa0ea4df16",
+      "expected_sha256": "99045d7d3f08f91f0d656bc9b7efbae189426cd913d830294a15eefa0ea4df16",
+      "expected_bytes": 186015
+    },
+    {
+      "actor": "alice",
+      "method": "GET",
+      "path": "/artifactory/p1-p3u-m1-separate-alice/files/ca78db4565a652026a4db2bcdf68f2fb589ea80d0be70e03929ed730746b84fe/certifi-2025.1.31-py3-none-any.whl",
+      "marker": "p1/p3u-m1-separate/utility/admission/alice/ca78db4565a6",
+      "principal": "p1-p3u-m1-separate-prefetch",
+      "status": 200,
+      "start_utc_ns": 1794181208256220360,
+      "end_utc_ns": 1794181208271892649,
+      "body_bytes": 166393,
+      "body_sha256": "ca78db4565a652026a4db2bcdf68f2fb589ea80d0be70e03929ed730746b84fe",
+      "expected_sha256": "ca78db4565a652026a4db2bcdf68f2fb589ea80d0be70e03929ed730746b84fe",
+      "expected_bytes": 166393
+    },
+    {
+      "actor": "alice",
+      "method": "GET",
+      "path": "/artifactory/p1-p3u-m1-separate-alice/files/d98b1668f06378c6dbefec3b92299716b931cd4e6061f3c875a71ced1780ab85/charset_normalizer-3.4.1-py3-none-any.whl",
+      "marker": "p1/p3u-m1-separate/utility/admission/alice/d98b1668f063",
+      "principal": "p1-p3u-m1-separate-prefetch",
+      "status": 200,
+      "start_utc_ns": 1794181208272039611,
+      "end_utc_ns": 1794181208284688443,
+      "body_bytes": 49767,
+      "body_sha256": "d98b1668f06378c6dbefec3b92299716b931cd4e6061f3c875a71ced1780ab85",
+      "expected_sha256": "d98b1668f06378c6dbefec3b92299716b931cd4e6061f3c875a71ced1780ab85",
+      "expected_bytes": 49767
+    },
+    {
+      "actor": "alice",
+      "method": "GET",
+      "path": "/artifactory/p1-p3u-m1-separate-alice/files/63c132bbbed01578a06712a2d1f497bb62d9c1c0d329b7903a866228027263b2/click-8.1.8-py3-none-any.whl",
+      "marker": "p1/p3u-m1-separate/utility/admission/alice/63c132bbbed0",
+      "principal": "p1-p3u-m1-separate-prefetch",
+      "status": 200,
+      "start_utc_ns": 1794181208284769518,
+      "end_utc_ns": 1794181208297074135,
+      "body_bytes": 98188,
+      "body_sha256": "63c132bbbed01578a06712a2d1f497bb62d9c1c0d329b7903a866228027263b2",
+      "expected_sha256": "63c132bbbed01578a06712a2d1f497bb62d9c1c0d329b7903a866228027263b2",
+      "expected_bytes": 98188
+    },
+    {
+      "actor": "alice",
+      "method": "GET",
+      "path": "/artifactory/p1-p3u-m1-separate-alice/files/946d195a0d259cbba61165e88e65941f16e9b36ea6ddb97f00452bae8b1287d3/idna-3.10-py3-none-any.whl",
+      "marker": "p1/p3u-m1-separate/utility/admission/alice/946d195a0d25",
+      "principal": "p1-p3u-m1-separate-prefetch",
+      "status": 200,
+      "start_utc_ns": 1794181208297171872,
+      "end_utc_ns": 1794181208309765440,
+      "body_bytes": 70442,
+      "body_sha256": "946d195a0d259cbba61165e88e65941f16e9b36ea6ddb97f00452bae8b1287d3",
+      "expected_sha256": "946d195a0d259cbba61165e88e65941f16e9b36ea6ddb97f00452bae8b1287d3",
+      "expected_bytes": 70442
+    },
+    {
+      "actor": "alice",
+      "method": "GET",
+      "path": "/artifactory/p1-p3u-m1-separate-alice/files/b6a85871a79d2e3b22d2d1b94ac2824226a63c6b741c88f7ae975f18b6778374/iniconfig-2.0.0-py3-none-any.whl",
+      "marker": "p1/p3u-m1-separate/utility/admission/alice/b6a85871a79d",
+      "principal": "p1-p3u-m1-separate-prefetch",
+      "status": 200,
+      "start_utc_ns": 1794181208309859447,
+      "end_utc_ns": 1794181208320737436,
+      "body_bytes": 5892,
+      "body_sha256": "b6a85871a79d2e3b22d2d1b94ac2824226a63c6b741c88f7ae975f18b6778374",
+      "expected_sha256": "b6a85871a79d2e3b22d2d1b94ac2824226a63c6b741c88f7ae975f18b6778374",
+      "expected_bytes": 5892
+    },
+    {
+      "actor": "alice",
+      "method": "GET",
+      "path": "/artifactory/p1-p3u-m1-separate-alice/files/355216845c60bd96232cd8d8c40e8f9765cc86f46880e43a8fd22dc1a1a8cab1/markdown_it_py-3.0.0-py3-none-any.whl",
+      "marker": "p1/p3u-m1-separate/utility/admission/alice/355216845c60",
+      "principal": "p1-p3u-m1-separate-prefetch",
+      "status": 200,
+      "start_utc_ns": 1794181208320784829,
+      "end_utc_ns": 1794181208332833926,
+      "body_bytes": 87528,
+      "body_sha256": "355216845c60bd96232cd8d8c40e8f9765cc86f46880e43a8fd22dc1a1a8cab1",
+      "expected_sha256": "355216845c60bd96232cd8d8c40e8f9765cc86f46880e43a8fd22dc1a1a8cab1",
+      "expected_bytes": 87528
+    },
+    {
+      "actor": "alice",
+      "method": "GET",
+      "path": "/artifactory/p1-p3u-m1-separate-alice/files/84008a41e51615a49fc9966191ff91509e3c40b939176e643fd50a5c2196b8f8/mdurl-0.1.2-py3-none-any.whl",
+      "marker": "p1/p3u-m1-separate/utility/admission/alice/84008a41e516",
+      "principal": "p1-p3u-m1-separate-prefetch",
+      "status": 200,
+      "start_utc_ns": 1794181208332924343,
+      "end_utc_ns": 1794181208343870907,
+      "body_bytes": 9979,
+      "body_sha256": "84008a41e51615a49fc9966191ff91509e3c40b939176e643fd50a5c2196b8f8",
+      "expected_sha256": "84008a41e51615a49fc9966191ff91509e3c40b939176e643fd50a5c2196b8f8",
+      "expected_bytes": 9979
+    },
+    {
+      "actor": "alice",
+      "method": "GET",
+      "path": "/artifactory/p1-p3u-m1-separate-alice/files/6eb054cb4b6db1473f6e15fcc676a08e4732548acd47c708f0e179c2c7c01e89/more_itertools-10.6.0-py3-none-any.whl",
+      "marker": "p1/p3u-m1-separate/utility/admission/alice/6eb054cb4b6d",
+      "principal": "p1-p3u-m1-separate-prefetch",
+      "status": 200,
+      "start_utc_ns": 1794181208343927031,
+      "end_utc_ns": 1794181208355273875,
+      "body_bytes": 63038,
+      "body_sha256": "6eb054cb4b6db1473f6e15fcc676a08e4732548acd47c708f0e179c2c7c01e89",
+      "expected_sha256": "6eb054cb4b6db1473f6e15fcc676a08e4732548acd47c708f0e179c2c7c01e89",
+      "expected_bytes": 63038
+    },
+    {
+      "actor": "alice",
+      "method": "GET",
+      "path": "/artifactory/p1-p3u-m1-separate-alice/files/df5d4365b724cf81b8c6a7312509d0c22386097011ad1abe274afd5e9d3bbc5f/networkx-3.4.2-py3-none-any.whl",
+      "marker": "p1/p3u-m1-separate/utility/admission/alice/df5d4365b724",
+      "principal": "p1-p3u-m1-separate-prefetch",
+      "status": 200,
+      "start_utc_ns": 1794181208355352871,
+      "end_utc_ns": 1794181208379472996,
+      "body_bytes": 1723263,
+      "body_sha256": "df5d4365b724cf81b8c6a7312509d0c22386097011ad1abe274afd5e9d3bbc5f",
+      "expected_sha256": "df5d4365b724cf81b8c6a7312509d0c22386097011ad1abe274afd5e9d3bbc5f",
+      "expected_bytes": 1723263
+    },
+    {
+      "actor": "alice",
+      "method": "GET",
+      "path": "/artifactory/p1-p3u-m1-separate-alice/files/09abb1bccd265c01f4a3aa3f7a7db064b36514d2cba19a2f694fe6150451a759/packaging-24.2-py3-none-any.whl",
+      "marker": "p1/p3u-m1-separate/utility/admission/alice/09abb1bccd26",
+      "principal": "p1-p3u-m1-separate-prefetch",
+      "status": 200,
+      "start_utc_ns": 1794181208380521895,
+      "end_utc_ns": 1794181208394138400,
+      "body_bytes": 65451,
+      "body_sha256": "09abb1bccd265c01f4a3aa3f7a7db064b36514d2cba19a2f694fe6150451a759",
+      "expected_sha256": "09abb1bccd265c01f4a3aa3f7a7db064b36514d2cba19a2f694fe6150451a759",
+      "expected_bytes": 65451
+    },
+    {
+      "actor": "alice",
+      "method": "GET",
+      "path": "/artifactory/p1-p3u-m1-separate-alice/files/44e1ad92c8ca002de6377e165f3e0f1be63266ab4d554740532335b9d75ea669/pluggy-1.5.0-py3-none-any.whl",
+      "marker": "p1/p3u-m1-separate/utility/admission/alice/44e1ad92c8ca",
+      "principal": "p1-p3u-m1-separate-prefetch",
+      "status": 200,
+      "start_utc_ns": 1794181208394221196,
+      "end_utc_ns": 1794181208407463483,
+      "body_bytes": 20556,
+      "body_sha256": "44e1ad92c8ca002de6377e165f3e0f1be63266ab4d554740532335b9d75ea669",
+      "expected_sha256": "44e1ad92c8ca002de6377e165f3e0f1be63266ab4d554740532335b9d75ea669",
+      "expected_bytes": 20556
+    },
+    {
+      "actor": "alice",
+      "method": "GET",
+      "path": "/artifactory/p1-p3u-m1-separate-alice/files/9ea1544ad55cecf4b8242fab6dd35a93bbce657034b0611ee383099054ab6d8c/pygments-2.19.1-py3-none-any.whl",
+      "marker": "p1/p3u-m1-separate/utility/admission/alice/9ea1544ad55c",
+      "principal": "p1-p3u-m1-separate-prefetch",
+      "status": 200,
+      "start_utc_ns": 1794181208407526898,
+      "end_utc_ns": 1794181208428798149,
+      "body_bytes": 1225293,
+      "body_sha256": "9ea1544ad55cecf4b8242fab6dd35a93bbce657034b0611ee383099054ab6d8c",
+      "expected_sha256": "9ea1544ad55cecf4b8242fab6dd35a93bbce657034b0611ee383099054ab6d8c",
+      "expected_bytes": 1225293
+    },
+    {
+      "actor": "alice",
+      "method": "GET",
+      "path": "/artifactory/p1-p3u-m1-separate-alice/files/c69214aa47deac29fad6c2a4f590b9c4a9fdb16a403176fe154b79c0b4d4d820/pytest-8.3.5-py3-none-any.whl",
+      "marker": "p1/p3u-m1-separate/utility/admission/alice/c69214aa47de",
+      "principal": "p1-p3u-m1-separate-prefetch",
+      "status": 200,
+      "start_utc_ns": 1794181208429558396,
+      "end_utc_ns": 1794181208443786307,
+      "body_bytes": 343634,
+      "body_sha256": "c69214aa47deac29fad6c2a4f590b9c4a9fdb16a403176fe154b79c0b4d4d820",
+      "expected_sha256": "c69214aa47deac29fad6c2a4f590b9c4a9fdb16a403176fe154b79c0b4d4d820",
+      "expected_bytes": 343634
+    },
+    {
+      "actor": "alice",
+      "method": "GET",
+      "path": "/artifactory/p1-p3u-m1-separate-alice/files/a8b2bc7bffae282281c8140a97d3aa9c14da0b136dfe83f850eea9a5f7470427/python_dateutil-2.9.0.post0-py2.py3-none-any.whl",
+      "marker": "p1/p3u-m1-separate/utility/admission/alice/a8b2bc7bffae",
+      "principal": "p1-p3u-m1-separate-prefetch",
+      "status": 200,
+      "start_utc_ns": 1794181208444041586,
+      "end_utc_ns": 1794181208457864946,
+      "body_bytes": 229892,
+      "body_sha256": "a8b2bc7bffae282281c8140a97d3aa9c14da0b136dfe83f850eea9a5f7470427",
+      "expected_sha256": "a8b2bc7bffae282281c8140a97d3aa9c14da0b136dfe83f850eea9a5f7470427",
+      "expected_bytes": 229892
+    },
+    {
+      "actor": "alice",
+      "method": "GET",
+      "path": "/artifactory/p1-p3u-m1-separate-alice/files/70761cfe03c773ceb22aa2f671b4757976145175cdfca038c02654d061d6dcc6/requests-2.32.3-py3-none-any.whl",
+      "marker": "p1/p3u-m1-separate/utility/admission/alice/70761cfe03c7",
+      "principal": "p1-p3u-m1-separate-prefetch",
+      "status": 200,
+      "start_utc_ns": 1794181208458057741,
+      "end_utc_ns": 1794181208471519414,
+      "body_bytes": 64928,
+      "body_sha256": "70761cfe03c773ceb22aa2f671b4757976145175cdfca038c02654d061d6dcc6",
+      "expected_sha256": "70761cfe03c773ceb22aa2f671b4757976145175cdfca038c02654d061d6dcc6",
+      "expected_bytes": 64928
+    },
+    {
+      "actor": "alice",
+      "method": "GET",
+      "path": "/artifactory/p1-p3u-m1-separate-alice/files/6049d5e6ec054bf2779ab3358186963bac2ea89175919d699e378b99738c2a90/rich-13.9.4-py3-none-any.whl",
+      "marker": "p1/p3u-m1-separate/utility/admission/alice/6049d5e6ec05",
+      "principal": "p1-p3u-m1-separate-prefetch",
+      "status": 200,
+      "start_utc_ns": 1794181208471600860,
+      "end_utc_ns": 1794181208486476670,
+      "body_bytes": 242424,
+      "body_sha256": "6049d5e6ec054bf2779ab3358186963bac2ea89175919d699e378b99738c2a90",
+      "expected_sha256": "6049d5e6ec054bf2779ab3358186963bac2ea89175919d699e378b99738c2a90",
+      "expected_bytes": 242424
+    },
+    {
+      "actor": "alice",
+      "method": "GET",
+      "path": "/artifactory/p1-p3u-m1-separate-alice/files/4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274/six-1.17.0-py2.py3-none-any.whl",
+      "marker": "p1/p3u-m1-separate/utility/admission/alice/4721f391ed90",
+      "principal": "p1-p3u-m1-separate-prefetch",
+      "status": 200,
+      "start_utc_ns": 1794181208486665454,
+      "end_utc_ns": 1794181208499340298,
+      "body_bytes": 11050,
+      "body_sha256": "4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274",
+      "expected_sha256": "4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274",
+      "expected_bytes": 11050
+    },
+    {
+      "actor": "alice",
+      "method": "GET",
+      "path": "/artifactory/p1-p3u-m1-separate-alice/files/e72c4ff06e4fb6e4b5a9f0f55fe6e81514581fca1515028625d0f299c602ccc9/soupsieve-2.6-py3-none-any.whl",
+      "marker": "p1/p3u-m1-separate/utility/admission/alice/e72c4ff06e4f",
+      "principal": "p1-p3u-m1-separate-prefetch",
+      "status": 200,
+      "start_utc_ns": 1794181208499409123,
+      "end_utc_ns": 1794181208511524165,
+      "body_bytes": 36186,
+      "body_sha256": "e72c4ff06e4fb6e4b5a9f0f55fe6e81514581fca1515028625d0f299c602ccc9",
+      "expected_sha256": "e72c4ff06e4fb6e4b5a9f0f55fe6e81514581fca1515028625d0f299c602ccc9",
+      "expected_bytes": 36186
+    },
+    {
+      "actor": "alice",
+      "method": "GET",
+      "path": "/artifactory/p1-p3u-m1-separate-alice/files/93de0c98785b27fcf659856aa9f54bfbd399e29969b0621bc7f762bd441b4539/tenacity-9.0.0-py3-none-any.whl",
+      "marker": "p1/p3u-m1-separate/utility/admission/alice/93de0c98785b",
+      "principal": "p1-p3u-m1-separate-prefetch",
+      "status": 200,
+      "start_utc_ns": 1794181208511612622,
+      "end_utc_ns": 1794181208523806329,
+      "body_bytes": 28169,
+      "body_sha256": "93de0c98785b27fcf659856aa9f54bfbd399e29969b0621bc7f762bd441b4539",
+      "expected_sha256": "93de0c98785b27fcf659856aa9f54bfbd399e29969b0621bc7f762bd441b4539",
+      "expected_bytes": 28169
+    },
+    {
+      "actor": "alice",
+      "method": "GET",
+      "path": "/artifactory/p1-p3u-m1-separate-alice/files/292c8f1c4e7516bf9086f8850935c799a874039c8bcf959d47b600e4c44a6236/toolz-1.0.0-py3-none-any.whl",
+      "marker": "p1/p3u-m1-separate/utility/admission/alice/292c8f1c4e75",
+      "principal": "p1-p3u-m1-separate-prefetch",
+      "status": 200,
+      "start_utc_ns": 1794181208523872465,
+      "end_utc_ns": 1794181208535370840,
+      "body_bytes": 56383,
+      "body_sha256": "292c8f1c4e7516bf9086f8850935c799a874039c8bcf959d47b600e4c44a6236",
+      "expected_sha256": "292c8f1c4e7516bf9086f8850935c799a874039c8bcf959d47b600e4c44a6236",
+      "expected_bytes": 56383
+    },
+    {
+      "actor": "alice",
+      "method": "GET",
+      "path": "/artifactory/p1-p3u-m1-separate-alice/files/04e5ca0351e0f3f85c6853954072df659d0d13fac324d0072316b67d7794700d/typing_extensions-4.12.2-py3-none-any.whl",
+      "marker": "p1/p3u-m1-separate/utility/admission/alice/04e5ca0351e0",
+      "principal": "p1-p3u-m1-separate-prefetch",
+      "status": 200,
+      "start_utc_ns": 1794181208535471738,
+      "end_utc_ns": 1794181208547014796,
+      "body_bytes": 37438,
+      "body_sha256": "04e5ca0351e0f3f85c6853954072df659d0d13fac324d0072316b67d7794700d",
+      "expected_sha256": "04e5ca0351e0f3f85c6853954072df659d0d13fac324d0072316b67d7794700d",
+      "expected_bytes": 37438
+    },
+    {
+      "actor": "alice",
+      "method": "GET",
+      "path": "/artifactory/p1-p3u-m1-separate-alice/files/1cee9ad369867bfdbbb48b7dd50374c0967a0bb7710050facf0dd6911440e3df/urllib3-2.3.0-py3-none-any.whl",
+      "marker": "p1/p3u-m1-separate/utility/admission/alice/1cee9ad36986",
+      "principal": "p1-p3u-m1-separate-prefetch",
+      "status": 200,
+      "start_utc_ns": 1794181208547083201,
+      "end_utc_ns": 1794181208559487405,
+      "body_bytes": 128369,
+      "body_sha256": "1cee9ad369867bfdbbb48b7dd50374c0967a0bb7710050facf0dd6911440e3df",
+      "expected_sha256": "1cee9ad369867bfdbbb48b7dd50374c0967a0bb7710050facf0dd6911440e3df",
+      "expected_bytes": 128369
+    },
+    {
+      "actor": "bob",
+      "method": "GET",
+      "path": "/artifactory/p1-p3u-m1-separate-bob/files/ac96cd038792094f438ad1f6ff80837353805ac950cd2aa0e0625ef19850c308/attrs-24.3.0-py3-none-any.whl",
+      "marker": "p1/p3u-m1-separate/utility/admission/bob/ac96cd038792",
+      "principal": "p1-p3u-m1-separate-prefetch",
+      "status": 200,
+      "start_utc_ns": 1794181208559613594,
+      "end_utc_ns": 1794181208571754608,
+      "body_bytes": 63397,
+      "body_sha256": "ac96cd038792094f438ad1f6ff80837353805ac950cd2aa0e0625ef19850c308",
+      "expected_sha256": "ac96cd038792094f438ad1f6ff80837353805ac950cd2aa0e0625ef19850c308",
+      "expected_bytes": 63397
+    },
+    {
+      "actor": "bob",
+      "method": "GET",
+      "path": "/artifactory/p1-p3u-m1-separate-bob/files/99045d7d3f08f91f0d656bc9b7efbae189426cd913d830294a15eefa0ea4df16/beautifulsoup4-4.13.3-py3-none-any.whl",
+      "marker": "p1/p3u-m1-separate/utility/admission/bob/99045d7d3f08",
+      "principal": "p1-p3u-m1-separate-prefetch",
+      "status": 200,
+      "start_utc_ns": 1794181208571836514,
+      "end_utc_ns": 1794181208585670376,
+      "body_bytes": 186015,
+      "body_sha256": "99045d7d3f08f91f0d656bc9b7efbae189426cd913d830294a15eefa0ea4df16",
+      "expected_sha256": "99045d7d3f08f91f0d656bc9b7efbae189426cd913d830294a15eefa0ea4df16",
+      "expected_bytes": 186015
+    },
+    {
+      "actor": "bob",
+      "method": "GET",
+      "path": "/artifactory/p1-p3u-m1-separate-bob/files/ca78db4565a652026a4db2bcdf68f2fb589ea80d0be70e03929ed730746b84fe/certifi-2025.1.31-py3-none-any.whl",
+      "marker": "p1/p3u-m1-separate/utility/admission/bob/ca78db4565a6",
+      "principal": "p1-p3u-m1-separate-prefetch",
+      "status": 200,
+      "start_utc_ns": 1794181208585890182,
+      "end_utc_ns": 1794181208599206014,
+      "body_bytes": 166393,
+      "body_sha256": "ca78db4565a652026a4db2bcdf68f2fb589ea80d0be70e03929ed730746b84fe",
+      "expected_sha256": "ca78db4565a652026a4db2bcdf68f2fb589ea80d0be70e03929ed730746b84fe",
+      "expected_bytes": 166393
+    },
+    {
+      "actor": "bob",
+      "method": "GET",
+      "path": "/artifactory/p1-p3u-m1-separate-bob/files/d98b1668f06378c6dbefec3b92299716b931cd4e6061f3c875a71ced1780ab85/charset_normalizer-3.4.1-py3-none-any.whl",
+      "marker": "p1/p3u-m1-separate/utility/admission/bob/d98b1668f063",
+      "principal": "p1-p3u-m1-separate-prefetch",
+      "status": 200,
+      "start_utc_ns": 1794181208599354935,
+      "end_utc_ns": 1794181208611522941,
+      "body_bytes": 49767,
+      "body_sha256": "d98b1668f06378c6dbefec3b92299716b931cd4e6061f3c875a71ced1780ab85",
+      "expected_sha256": "d98b1668f06378c6dbefec3b92299716b931cd4e6061f3c875a71ced1780ab85",
+      "expected_bytes": 49767
+    },
+    {
+      "actor": "bob",
+      "method": "GET",
+      "path": "/artifactory/p1-p3u-m1-separate-bob/files/63c132bbbed01578a06712a2d1f497bb62d9c1c0d329b7903a866228027263b2/click-8.1.8-py3-none-any.whl",
+      "marker": "p1/p3u-m1-separate/utility/admission/bob/63c132bbbed0",
+      "principal": "p1-p3u-m1-separate-prefetch",
+      "status": 200,
+      "start_utc_ns": 1794181208611610228,
+      "end_utc_ns": 1794181208622576253,
+      "body_bytes": 98188,
+      "body_sha256": "63c132bbbed01578a06712a2d1f497bb62d9c1c0d329b7903a866228027263b2",
+      "expected_sha256": "63c132bbbed01578a06712a2d1f497bb62d9c1c0d329b7903a866228027263b2",
+      "expected_bytes": 98188
+    },
+    {
+      "actor": "bob",
+      "method": "GET",
+      "path": "/artifactory/p1-p3u-m1-separate-bob/files/946d195a0d259cbba61165e88e65941f16e9b36ea6ddb97f00452bae8b1287d3/idna-3.10-py3-none-any.whl",
+      "marker": "p1/p3u-m1-separate/utility/admission/bob/946d195a0d25",
+      "principal": "p1-p3u-m1-separate-prefetch",
+      "status": 200,
+      "start_utc_ns": 1794181208622701713,
+      "end_utc_ns": 1794181208633421879,
+      "body_bytes": 70442,
+      "body_sha256": "946d195a0d259cbba61165e88e65941f16e9b36ea6ddb97f00452bae8b1287d3",
+      "expected_sha256": "946d195a0d259cbba61165e88e65941f16e9b36ea6ddb97f00452bae8b1287d3",
+      "expected_bytes": 70442
+    },
+    {
+      "actor": "bob",
+      "method": "GET",
+      "path": "/artifactory/p1-p3u-m1-separate-bob/files/b6a85871a79d2e3b22d2d1b94ac2824226a63c6b741c88f7ae975f18b6778374/iniconfig-2.0.0-py3-none-any.whl",
+      "marker": "p1/p3u-m1-separate/utility/admission/bob/b6a85871a79d",
+      "principal": "p1-p3u-m1-separate-prefetch",
+      "status": 200,
+      "start_utc_ns": 1794181208633525857,
+      "end_utc_ns": 1794181208644477562,
+      "body_bytes": 5892,
+      "body_sha256": "b6a85871a79d2e3b22d2d1b94ac2824226a63c6b741c88f7ae975f18b6778374",
+      "expected_sha256": "b6a85871a79d2e3b22d2d1b94ac2824226a63c6b741c88f7ae975f18b6778374",
+      "expected_bytes": 5892
+    },
+    {
+      "actor": "bob",
+      "method": "GET",
+      "path": "/artifactory/p1-p3u-m1-separate-bob/files/355216845c60bd96232cd8d8c40e8f9765cc86f46880e43a8fd22dc1a1a8cab1/markdown_it_py-3.0.0-py3-none-any.whl",
+      "marker": "p1/p3u-m1-separate/utility/admission/bob/355216845c60",
+      "principal": "p1-p3u-m1-separate-prefetch",
+      "status": 200,
+      "start_utc_ns": 1794181208644527875,
+      "end_utc_ns": 1794181208655719558,
+      "body_bytes": 87528,
+      "body_sha256": "355216845c60bd96232cd8d8c40e8f9765cc86f46880e43a8fd22dc1a1a8cab1",
+      "expected_sha256": "355216845c60bd96232cd8d8c40e8f9765cc86f46880e43a8fd22dc1a1a8cab1",
+      "expected_bytes": 87528
+    },
+    {
+      "actor": "bob",
+      "method": "GET",
+      "path": "/artifactory/p1-p3u-m1-separate-bob/files/84008a41e51615a49fc9966191ff91509e3c40b939176e643fd50a5c2196b8f8/mdurl-0.1.2-py3-none-any.whl",
+      "marker": "p1/p3u-m1-separate/utility/admission/bob/84008a41e516",
+      "principal": "p1-p3u-m1-separate-prefetch",
+      "status": 200,
+      "start_utc_ns": 1794181208655821765,
+      "end_utc_ns": 1794181208666332656,
+      "body_bytes": 9979,
+      "body_sha256": "84008a41e51615a49fc9966191ff91509e3c40b939176e643fd50a5c2196b8f8",
+      "expected_sha256": "84008a41e51615a49fc9966191ff91509e3c40b939176e643fd50a5c2196b8f8",
+      "expected_bytes": 9979
+    },
+    {
+      "actor": "bob",
+      "method": "GET",
+      "path": "/artifactory/p1-p3u-m1-separate-bob/files/6eb054cb4b6db1473f6e15fcc676a08e4732548acd47c708f0e179c2c7c01e89/more_itertools-10.6.0-py3-none-any.whl",
+      "marker": "p1/p3u-m1-separate/utility/admission/bob/6eb054cb4b6d",
+      "principal": "p1-p3u-m1-separate-prefetch",
+      "status": 200,
+      "start_utc_ns": 1794181208666382310,
+      "end_utc_ns": 1794181208676970977,
+      "body_bytes": 63038,
+      "body_sha256": "6eb054cb4b6db1473f6e15fcc676a08e4732548acd47c708f0e179c2c7c01e89",
+      "expected_sha256": "6eb054cb4b6db1473f6e15fcc676a08e4732548acd47c708f0e179c2c7c01e89",
+      "expected_bytes": 63038
+    },
+    {
+      "actor": "bob",
+      "method": "GET",
+      "path": "/artifactory/p1-p3u-m1-separate-bob/files/df5d4365b724cf81b8c6a7312509d0c22386097011ad1abe274afd5e9d3bbc5f/networkx-3.4.2-py3-none-any.whl",
+      "marker": "p1/p3u-m1-separate/utility/admission/bob/df5d4365b724",
+      "principal": "p1-p3u-m1-separate-prefetch",
+      "status": 200,
+      "start_utc_ns": 1794181208677057434,
+      "end_utc_ns": 1794181208700888897,
+      "body_bytes": 1723263,
+      "body_sha256": "df5d4365b724cf81b8c6a7312509d0c22386097011ad1abe274afd5e9d3bbc5f",
+      "expected_sha256": "df5d4365b724cf81b8c6a7312509d0c22386097011ad1abe274afd5e9d3bbc5f",
+      "expected_bytes": 1723263
+    },
+    {
+      "actor": "bob",
+      "method": "GET",
+      "path": "/artifactory/p1-p3u-m1-separate-bob/files/09abb1bccd265c01f4a3aa3f7a7db064b36514d2cba19a2f694fe6150451a759/packaging-24.2-py3-none-any.whl",
+      "marker": "p1/p3u-m1-separate/utility/admission/bob/09abb1bccd26",
+      "principal": "p1-p3u-m1-separate-prefetch",
+      "status": 200,
+      "start_utc_ns": 1794181208701940507,
+      "end_utc_ns": 1794181208714676575,
+      "body_bytes": 65451,
+      "body_sha256": "09abb1bccd265c01f4a3aa3f7a7db064b36514d2cba19a2f694fe6150451a759",
+      "expected_sha256": "09abb1bccd265c01f4a3aa3f7a7db064b36514d2cba19a2f694fe6150451a759",
+      "expected_bytes": 65451
+    },
+    {
+      "actor": "bob",
+      "method": "GET",
+      "path": "/artifactory/p1-p3u-m1-separate-bob/files/44e1ad92c8ca002de6377e165f3e0f1be63266ab4d554740532335b9d75ea669/pluggy-1.5.0-py3-none-any.whl",
+      "marker": "p1/p3u-m1-separate/utility/admission/bob/44e1ad92c8ca",
+      "principal": "p1-p3u-m1-separate-prefetch",
+      "status": 200,
+      "start_utc_ns": 1794181208714767542,
+      "end_utc_ns": 1794181208726259687,
+      "body_bytes": 20556,
+      "body_sha256": "44e1ad92c8ca002de6377e165f3e0f1be63266ab4d554740532335b9d75ea669",
+      "expected_sha256": "44e1ad92c8ca002de6377e165f3e0f1be63266ab4d554740532335b9d75ea669",
+      "expected_bytes": 20556
+    },
+    {
+      "actor": "bob",
+      "method": "GET",
+      "path": "/artifactory/p1-p3u-m1-separate-bob/files/9ea1544ad55cecf4b8242fab6dd35a93bbce657034b0611ee383099054ab6d8c/pygments-2.19.1-py3-none-any.whl",
+      "marker": "p1/p3u-m1-separate/utility/admission/bob/9ea1544ad55c",
+      "principal": "p1-p3u-m1-separate-prefetch",
+      "status": 200,
+      "start_utc_ns": 1794181208726360754,
+      "end_utc_ns": 1794181208745650696,
+      "body_bytes": 1225293,
+      "body_sha256": "9ea1544ad55cecf4b8242fab6dd35a93bbce657034b0611ee383099054ab6d8c",
+      "expected_sha256": "9ea1544ad55cecf4b8242fab6dd35a93bbce657034b0611ee383099054ab6d8c",
+      "expected_bytes": 1225293
+    },
+    {
+      "actor": "bob",
+      "method": "GET",
+      "path": "/artifactory/p1-p3u-m1-separate-bob/files/c69214aa47deac29fad6c2a4f590b9c4a9fdb16a403176fe154b79c0b4d4d820/pytest-8.3.5-py3-none-any.whl",
+      "marker": "p1/p3u-m1-separate/utility/admission/bob/c69214aa47de",
+      "principal": "p1-p3u-m1-separate-prefetch",
+      "status": 200,
+      "start_utc_ns": 1794181208746407913,
+      "end_utc_ns": 1794181208760500824,
+      "body_bytes": 343634,
+      "body_sha256": "c69214aa47deac29fad6c2a4f590b9c4a9fdb16a403176fe154b79c0b4d4d820",
+      "expected_sha256": "c69214aa47deac29fad6c2a4f590b9c4a9fdb16a403176fe154b79c0b4d4d820",
+      "expected_bytes": 343634
+    },
+    {
+      "actor": "bob",
+      "method": "GET",
+      "path": "/artifactory/p1-p3u-m1-separate-bob/files/a8b2bc7bffae282281c8140a97d3aa9c14da0b136dfe83f850eea9a5f7470427/python_dateutil-2.9.0.post0-py2.py3-none-any.whl",
+      "marker": "p1/p3u-m1-separate/utility/admission/bob/a8b2bc7bffae",
+      "principal": "p1-p3u-m1-separate-prefetch",
+      "status": 200,
+      "start_utc_ns": 1794181208760751133,
+      "end_utc_ns": 1794181208774362747,
+      "body_bytes": 229892,
+      "body_sha256": "a8b2bc7bffae282281c8140a97d3aa9c14da0b136dfe83f850eea9a5f7470427",
+      "expected_sha256": "a8b2bc7bffae282281c8140a97d3aa9c14da0b136dfe83f850eea9a5f7470427",
+      "expected_bytes": 229892
+    },
+    {
+      "actor": "bob",
+      "method": "GET",
+      "path": "/artifactory/p1-p3u-m1-separate-bob/files/70761cfe03c773ceb22aa2f671b4757976145175cdfca038c02654d061d6dcc6/requests-2.32.3-py3-none-any.whl",
+      "marker": "p1/p3u-m1-separate/utility/admission/bob/70761cfe03c7",
+      "principal": "p1-p3u-m1-separate-prefetch",
+      "status": 200,
+      "start_utc_ns": 1794181208774565313,
+      "end_utc_ns": 1794181208786619590,
+      "body_bytes": 64928,
+      "body_sha256": "70761cfe03c773ceb22aa2f671b4757976145175cdfca038c02654d061d6dcc6",
+      "expected_sha256": "70761cfe03c773ceb22aa2f671b4757976145175cdfca038c02654d061d6dcc6",
+      "expected_bytes": 64928
+    },
+    {
+      "actor": "bob",
+      "method": "GET",
+      "path": "/artifactory/p1-p3u-m1-separate-bob/files/6049d5e6ec054bf2779ab3358186963bac2ea89175919d699e378b99738c2a90/rich-13.9.4-py3-none-any.whl",
+      "marker": "p1/p3u-m1-separate/utility/admission/bob/6049d5e6ec05",
+      "principal": "p1-p3u-m1-separate-prefetch",
+      "status": 200,
+      "start_utc_ns": 1794181208786706646,
+      "end_utc_ns": 1794181208799366629,
+      "body_bytes": 242424,
+      "body_sha256": "6049d5e6ec054bf2779ab3358186963bac2ea89175919d699e378b99738c2a90",
+      "expected_sha256": "6049d5e6ec054bf2779ab3358186963bac2ea89175919d699e378b99738c2a90",
+      "expected_bytes": 242424
+    },
+    {
+      "actor": "bob",
+      "method": "GET",
+      "path": "/artifactory/p1-p3u-m1-separate-bob/files/4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274/six-1.17.0-py2.py3-none-any.whl",
+      "marker": "p1/p3u-m1-separate/utility/admission/bob/4721f391ed90",
+      "principal": "p1-p3u-m1-separate-prefetch",
+      "status": 200,
+      "start_utc_ns": 1794181208799571925,
+      "end_utc_ns": 1794181208811306358,
+      "body_bytes": 11050,
+      "body_sha256": "4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274",
+      "expected_sha256": "4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274",
+      "expected_bytes": 11050
+    },
+    {
+      "actor": "bob",
+      "method": "GET",
+      "path": "/artifactory/p1-p3u-m1-separate-bob/files/e72c4ff06e4fb6e4b5a9f0f55fe6e81514581fca1515028625d0f299c602ccc9/soupsieve-2.6-py3-none-any.whl",
+      "marker": "p1/p3u-m1-separate/utility/admission/bob/e72c4ff06e4f",
+      "principal": "p1-p3u-m1-separate-prefetch",
+      "status": 200,
+      "start_utc_ns": 1794181208811360002,
+      "end_utc_ns": 1794181208823257157,
+      "body_bytes": 36186,
+      "body_sha256": "e72c4ff06e4fb6e4b5a9f0f55fe6e81514581fca1515028625d0f299c602ccc9",
+      "expected_sha256": "e72c4ff06e4fb6e4b5a9f0f55fe6e81514581fca1515028625d0f299c602ccc9",
+      "expected_bytes": 36186
+    },
+    {
+      "actor": "bob",
+      "method": "GET",
+      "path": "/artifactory/p1-p3u-m1-separate-bob/files/93de0c98785b27fcf659856aa9f54bfbd399e29969b0621bc7f762bd441b4539/tenacity-9.0.0-py3-none-any.whl",
+      "marker": "p1/p3u-m1-separate/utility/admission/bob/93de0c98785b",
+      "principal": "p1-p3u-m1-separate-prefetch",
+      "status": 200,
+      "start_utc_ns": 1794181208823327423,
+      "end_utc_ns": 1794181208834874392,
+      "body_bytes": 28169,
+      "body_sha256": "93de0c98785b27fcf659856aa9f54bfbd399e29969b0621bc7f762bd441b4539",
+      "expected_sha256": "93de0c98785b27fcf659856aa9f54bfbd399e29969b0621bc7f762bd441b4539",
+      "expected_bytes": 28169
+    },
+    {
+      "actor": "bob",
+      "method": "GET",
+      "path": "/artifactory/p1-p3u-m1-separate-bob/files/292c8f1c4e7516bf9086f8850935c799a874039c8bcf959d47b600e4c44a6236/toolz-1.0.0-py3-none-any.whl",
+      "marker": "p1/p3u-m1-separate/utility/admission/bob/292c8f1c4e75",
+      "principal": "p1-p3u-m1-separate-prefetch",
+      "status": 200,
+      "start_utc_ns": 1794181208834937476,
+      "end_utc_ns": 1794181208846466434,
+      "body_bytes": 56383,
+      "body_sha256": "292c8f1c4e7516bf9086f8850935c799a874039c8bcf959d47b600e4c44a6236",
+      "expected_sha256": "292c8f1c4e7516bf9086f8850935c799a874039c8bcf959d47b600e4c44a6236",
+      "expected_bytes": 56383
+    },
+    {
+      "actor": "bob",
+      "method": "GET",
+      "path": "/artifactory/p1-p3u-m1-separate-bob/files/04e5ca0351e0f3f85c6853954072df659d0d13fac324d0072316b67d7794700d/typing_extensions-4.12.2-py3-none-any.whl",
+      "marker": "p1/p3u-m1-separate/utility/admission/bob/04e5ca0351e0",
+      "principal": "p1-p3u-m1-separate-prefetch",
+      "status": 200,
+      "start_utc_ns": 1794181208846547910,
+      "end_utc_ns": 1794181208858135412,
+      "body_bytes": 37438,
+      "body_sha256": "04e5ca0351e0f3f85c6853954072df659d0d13fac324d0072316b67d7794700d",
+      "expected_sha256": "04e5ca0351e0f3f85c6853954072df659d0d13fac324d0072316b67d7794700d",
+      "expected_bytes": 37438
+    },
+    {
+      "actor": "bob",
+      "method": "GET",
+      "path": "/artifactory/p1-p3u-m1-separate-bob/files/1cee9ad369867bfdbbb48b7dd50374c0967a0bb7710050facf0dd6911440e3df/urllib3-2.3.0-py3-none-any.whl",
+      "marker": "p1/p3u-m1-separate/utility/admission/bob/1cee9ad36986",
+      "principal": "p1-p3u-m1-separate-prefetch",
+      "status": 200,
+      "start_utc_ns": 1794181208858218589,
+      "end_utc_ns": 1794181208871073586,
+      "body_bytes": 128369,
+      "body_sha256": "1cee9ad369867bfdbbb48b7dd50374c0967a0bb7710050facf0dd6911440e3df",
+      "expected_sha256": "1cee9ad369867bfdbbb48b7dd50374c0967a0bb7710050facf0dd6911440e3df",
+      "expected_bytes": 128369
+    }
+  ],
+  "adapters": {
+    "alice": {
+      "ready": true,
+      "pid": 7,
+      "adapter_edition": 1,
+      "mode": "mutable",
+      "actor": "alice",
+      "manifest_sha256": "7ca3d6b42b74dafae3ba410c2e8716b2ee1277505268fb8a51961a2e43605321"
+    },
+    "bob": {
+      "ready": true,
+      "pid": 7,
+      "adapter_edition": 1,
+      "mode": "mutable",
+      "actor": "bob",
+      "manifest_sha256": "7ca3d6b42b74dafae3ba410c2e8716b2ee1277505268fb8a51961a2e43605321"
+    }
+  },
+  "boundary_readback": {
+    "containers": {
+      "alice": {
+        "name": "p1-p3u-m1-separate-alice",
+        "user": "20001:20001",
+        "root_read_only": true,
+        "cap_drop": [
+          "ALL"
+        ],
+        "security_options": [
+          "no-new-privileges:true"
+        ],
+        "memory": 268435456,
+        "memory_swap": 268435456,
+        "nano_cpus": 500000000,
+        "pids_limit": 48,
+        "tmpfs": {
+          "/tmp": "rw,nosuid,nodev,size=128m"
+        },
+        "forbidden_environment_present": false,
+        "image_id": "sha256:5e2bdb1b0d542d5039cffb8181c65930093949194a65c365dfb1b0fe13a4fa5b",
+        "published_ports": {},
+        "network_addresses": {
+          "p1-p3u-m1-separate-net-alice": "172.19.0.1"
+        },
+        "bind_mount_destinations": [],
+        "mounts_read_only": true
+      },
+      "bob": {
+        "name": "p1-p3u-m1-separate-bob",
+        "user": "20001:20001",
+        "root_read_only": true,
+        "cap_drop": [
+          "ALL"
+        ],
+        "security_options": [
+          "no-new-privileges:true"
+        ],
+        "memory": 268435456,
+        "memory_swap": 268435456,
+        "nano_cpus": 500000000,
+        "pids_limit": 48,
+        "tmpfs": {
+          "/tmp": "rw,nosuid,nodev,size=128m"
+        },
+        "forbidden_environment_present": false,
+        "image_id": "sha256:5e2bdb1b0d542d5039cffb8181c65930093949194a65c365dfb1b0fe13a4fa5b",
+        "published_ports": {},
+        "network_addresses": {
+          "p1-p3u-m1-separate-net-bob": "172.20.0.1"
+        },
+        "bind_mount_destinations": [],
+        "mounts_read_only": true
+      },
+      "gateway": {
+        "name": "p1-p3u-m1-separate-gateway",
+        "user": "20001:20001",
+        "root_read_only": true,
+        "cap_drop": [
+          "ALL"
+        ],
+        "security_options": [
+          "no-new-privileges:true"
+        ],
+        "memory": 134217728,
+        "memory_swap": 134217728,
+        "nano_cpus": 500000000,
+        "pids_limit": 48,
+        "tmpfs": {
+          "/tmp": "rw,nosuid,nodev,size=16m"
+        },
+        "forbidden_environment_present": false,
+        "image_id": "sha256:5e2bdb1b0d542d5039cffb8181c65930093949194a65c365dfb1b0fe13a4fa5b",
+        "published_ports": {},
+        "network_addresses": {
+          "p1-p3u-m1-separate-net-alice": "172.19.0.2",
+          "p1-p3u-m1-separate-net-bob": "172.20.0.2",
+          "p1-p3u-m1-separate-net-services": "172.21.0.2"
+        },
+        "bind_mount_destinations": [
+          "/gateway.py",
+          "/gateway.json"
+        ],
+        "mounts_read_only": true
+      },
+      "upstream": {
+        "name": "p1-p3u-m1-separate-upstream",
+        "user": "20001:20001",
+        "root_read_only": true,
+        "cap_drop": [
+          "ALL"
+        ],
+        "security_options": [
+          "no-new-privileges:true"
+        ],
+        "memory": 134217728,
+        "memory_swap": 134217728,
+        "nano_cpus": 500000000,
+        "pids_limit": 48,
+        "tmpfs": {
+          "/tmp": "rw,nosuid,nodev,size=64m"
+        },
+        "forbidden_environment_present": false,
+        "image_id": "sha256:5e2bdb1b0d542d5039cffb8181c65930093949194a65c365dfb1b0fe13a4fa5b",
+        "published_ports": {},
+        "network_addresses": {
+          "p1-p3u-m1-separate-net-services": "172.21.0.1"
+        },
+        "bind_mount_destinations": [
+          "/config.json",
+          "/mirror.py",
+          "/deploy.py",
+          "/catalog"
+        ],
+        "mounts_read_only": true
+      },
+      "adapter_alice": {
+        "name": "p1-p3u-m1-separate-adapter-alice",
+        "user": "20001:20001",
+        "root_read_only": true,
+        "cap_drop": [
+          "ALL"
+        ],
+        "security_options": [
+          "no-new-privileges:true"
+        ],
+        "memory": 134217728,
+        "memory_swap": 134217728,
+        "nano_cpus": 500000000,
+        "pids_limit": 48,
+        "tmpfs": {
+          "/tmp": "rw,nosuid,nodev,size=16m"
+        },
+        "forbidden_environment_present": false,
+        "image_id": "sha256:5e2bdb1b0d542d5039cffb8181c65930093949194a65c365dfb1b0fe13a4fa5b",
+        "published_ports": {},
+        "network_addresses": {
+          "p1-p3u-m1-separate-net-alice": "172.19.0.3"
+        },
+        "bind_mount_destinations": [
+          "/catalog",
+          "/mirror.py"
+        ],
+        "mounts_read_only": true
+      },
+      "adapter_bob": {
+        "name": "p1-p3u-m1-separate-adapter-bob",
+        "user": "20001:20001",
+        "root_read_only": true,
+        "cap_drop": [
+          "ALL"
+        ],
+        "security_options": [
+          "no-new-privileges:true"
+        ],
+        "memory": 134217728,
+        "memory_swap": 134217728,
+        "nano_cpus": 500000000,
+        "pids_limit": 48,
+        "tmpfs": {
+          "/tmp": "rw,nosuid,nodev,size=16m"
+        },
+        "forbidden_environment_present": false,
+        "image_id": "sha256:5e2bdb1b0d542d5039cffb8181c65930093949194a65c365dfb1b0fe13a4fa5b",
+        "published_ports": {},
+        "network_addresses": {
+          "p1-p3u-m1-separate-net-bob": "172.20.0.3"
+        },
+        "bind_mount_destinations": [
+          "/mirror.py",
+          "/catalog"
+        ],
+        "mounts_read_only": true
+      }
+    },
+    "networks": {
+      "alice": {
+        "name": "p1-p3u-m1-separate-net-alice",
+        "internal": true,
+        "options": {
+          "com.docker.network.bridge.gateway_mode_ipv4": "isolated"
+        }
+      },
+      "bob": {
+        "name": "p1-p3u-m1-separate-net-bob",
+        "internal": true,
+        "options": {
+          "com.docker.network.bridge.gateway_mode_ipv4": "isolated"
+        }
+      },
+      "services": {
+        "name": "p1-p3u-m1-separate-net-services",
+        "internal": true,
+        "options": {
+          "com.docker.network.bridge.gateway_mode_ipv4": "isolated"
+        }
+      }
+    }
+  },
+  "network_positive_controls": {
+    "passed": true,
+    "checks": 7,
+    "records": [
+      {
+        "host": "172.20.0.1",
+        "port": 18888,
+        "expected_connected": true,
+        "name": "live peer listener on its own network",
+        "connected": true,
+        "error": null,
+        "actor": "bob"
+      },
+      {
+        "host": "p1-p3u-m1-separate-gateway",
+        "port": 8000,
+        "expected_connected": true,
+        "name": "assigned gateway route",
+        "connected": true,
+        "error": null,
+        "actor": "bob"
+      },
+      {
+        "host": "172.21.0.3",
+        "port": 8082,
+        "expected_connected": false,
+        "name": "direct backend bypass",
+        "connected": false,
+        "error": "OSError",
+        "actor": "bob"
+      },
+      {
+        "host": "172.20.0.1",
+        "port": 18888,
+        "expected_connected": false,
+        "name": "same live listener from the other network",
+        "connected": false,
+        "error": "OSError",
+        "actor": "alice"
+      },
+      {
+        "host": "p1-p3u-m1-separate-gateway",
+        "port": 8000,
+        "expected_connected": true,
+        "name": "assigned gateway route",
+        "connected": true,
+        "error": null,
+        "actor": "alice"
+      },
+      {
+        "host": "172.21.0.3",
+        "port": 8082,
+        "expected_connected": false,
+        "name": "direct backend bypass",
+        "connected": false,
+        "error": "OSError",
+        "actor": "alice"
+      },
+      {
+        "host": "172.21.0.3",
+        "port": 8082,
+        "expected_connected": true,
+        "name": "backend is reachable from the gateway",
+        "connected": true,
+        "error": null,
+        "actor": "gateway"
+      }
+    ],
+    "listener_stopped": true,
+    "scope": "Specified live TCP listeners and routes, not every possible bypass.",
+    "listener_exit_code": 0
+  },
+  "adapter_route_controls": {
+    "passed": true,
+    "checks": 4,
+    "records": [
+      {
+        "name": "assigned index adapter",
+        "host": "p1-p3u-m1-separate-adapter-alice",
+        "port": 8000,
+        "expected_connected": true,
+        "connected": true,
+        "error": null,
+        "actor": "alice"
+      },
+      {
+        "name": "peer index adapter",
+        "host": "172.20.0.3",
+        "port": 8000,
+        "expected_connected": false,
+        "connected": false,
+        "error": "OSError",
+        "actor": "alice"
+      },
+      {
+        "name": "assigned index adapter",
+        "host": "p1-p3u-m1-separate-adapter-bob",
+        "port": 8000,
+        "expected_connected": true,
+        "connected": true,
+        "error": null,
+        "actor": "bob"
+      },
+      {
+        "name": "peer index adapter",
+        "host": "172.19.0.3",
+        "port": 8000,
+        "expected_connected": false,
+        "connected": false,
+        "error": "OSError",
+        "actor": "bob"
+      }
+    ],
+    "scope": "Specified live TCP listeners and routes, not every possible bypass."
+  },
+  "direct_http_controls": {
+    "passed": true,
+    "records": [
+      {
+        "actor": "alice",
+        "host": "p1-p3u-m1-separate-gateway",
+        "path": "/artifactory/p1-p3u-m1-separate-alice/files/ac96cd038792094f438ad1f6ff80837353805ac950cd2aa0e0625ef19850c308/attrs-24.3.0-py3-none-any.whl",
+        "marker": "p1/p3u-m1-separate/utility/control/alice",
+        "expected_status": 403,
+        "method": "GET",
+        "status": 403,
+        "body_sha256": "3416edfde6b48e4318413f9ddcb217ef7ca758640847644af04e3f94b8994a23",
+        "body_bytes": 35,
+        "start_utc_ns": 1794181213248880137,
+        "end_utc_ns": 1794181213257472434
+      },
+      {
+        "actor": "bob",
+        "host": "p1-p3u-m1-separate-gateway",
+        "path": "/artifactory/p1-p3u-m1-separate-bob/files/ac96cd038792094f438ad1f6ff80837353805ac950cd2aa0e0625ef19850c308/attrs-24.3.0-py3-none-any.whl",
+        "marker": "p1/p3u-m1-separate/utility/control/bob",
+        "expected_status": 403,
+        "method": "GET",
+        "status": 403,
+        "body_sha256": "3416edfde6b48e4318413f9ddcb217ef7ca758640847644af04e3f94b8994a23",
+        "body_bytes": 35,
+        "start_utc_ns": 1794181213633309366,
+        "end_utc_ns": 1794181213641873851
+      }
+    ],
+    "scope": "Uncredentialed direct HTTP requests from both clients."
+  },
+  "memory_before": {
+    "utc_ns": 1794181215691882832,
+    "method": "Docker CLI usage snapshots, not peak or process RSS",
+    "records": [
+      {
+        "Name": "p1-p3u-m1-separate-alice",
+        "MemUsage": "4.402MiB / 256MiB",
+        "CPUPerc": "0.00%",
+        "PIDs": "1",
+        "NetIO": "1.98kB / 1.78kB",
+        "BlockIO": "0B / 0B"
+      },
+      {
+        "Name": "p1-p3u-m1-separate-bob",
+        "MemUsage": "4.781MiB / 256MiB",
+        "CPUPerc": "0.00%",
+        "PIDs": "1",
+        "NetIO": "1.79kB / 1.43kB",
+        "BlockIO": "0B / 0B"
+      },
+      {
+        "Name": "p1-p3u-m1-separate-gateway",
+        "MemUsage": "15.36MiB / 128MiB",
+        "CPUPerc": "0.01%",
+        "PIDs": "1",
+        "NetIO": "4.52kB / 2.42kB",
+        "BlockIO": "0B / 0B"
+      },
+      {
+        "Name": "p1-p3u-m1-separate-upstream",
+        "MemUsage": "18.68MiB / 128MiB",
+        "CPUPerc": "0.01%",
+        "PIDs": "3",
+        "NetIO": "68.9kB / 10.1MB",
+        "BlockIO": "0B / 0B"
+      },
+      {
+        "Name": "p1-p3u-m1-separate-adapter-alice",
+        "MemUsage": "23.44MiB / 128MiB",
+        "CPUPerc": "0.01%",
+        "PIDs": "3",
+        "NetIO": "1.07kB / 308B",
+        "BlockIO": "0B / 0B"
+      },
+      {
+        "Name": "p1-p3u-m1-separate-adapter-bob",
+        "MemUsage": "23.42MiB / 128MiB",
+        "CPUPerc": "0.01%",
+        "PIDs": "3",
+        "NetIO": "1.07kB / 308B",
+        "BlockIO": "0B / 0B"
+      },
+      {
+        "Name": "art-a",
+        "MemUsage": "3.927GiB / 4GiB",
+        "CPUPerc": "14.10%",
+        "PIDs": "477",
+        "NetIO": "25MB / 32.3MB",
+        "BlockIO": "0B / 20.6MB"
+      },
+      {
+        "Name": "art-a-db",
+        "MemUsage": "91.02MiB / 512MiB",
+        "CPUPerc": "0.17%",
+        "PIDs": "26",
+        "NetIO": "12.5MB / 14.7MB",
+        "BlockIO": "0B / 146MB"
+      }
+    ]
+  },
+  "memory_after": {
+    "utc_ns": 1794181356067040497,
+    "method": "Docker CLI usage snapshots, not peak or process RSS",
+    "records": [
+      {
+        "Name": "p1-p3u-m1-separate-alice",
+        "MemUsage": "6.082MiB / 256MiB",
+        "CPUPerc": "0.00%",
+        "PIDs": "1",
+        "NetIO": "5.18MB / 54.9kB",
+        "BlockIO": "0B / 0B"
+      },
+      {
+        "Name": "p1-p3u-m1-separate-bob",
+        "MemUsage": "6.172MiB / 256MiB",
+        "CPUPerc": "0.00%",
+        "PIDs": "1",
+        "NetIO": "5.18MB / 54.9kB",
+        "BlockIO": "0B / 0B"
+      },
+      {
+        "Name": "p1-p3u-m1-separate-gateway",
+        "MemUsage": "15.51MiB / 128MiB",
+        "CPUPerc": "0.01%",
+        "PIDs": "1",
+        "NetIO": "10.5MB / 10.5MB",
+        "BlockIO": "0B / 0B"
+      },
+      {
+        "Name": "p1-p3u-m1-separate-upstream",
+        "MemUsage": "18.61MiB / 128MiB",
+        "CPUPerc": "0.01%",
+        "PIDs": "1",
+        "NetIO": "69.6kB / 10.1MB",
+        "BlockIO": "0B / 0B"
+      },
+      {
+        "Name": "p1-p3u-m1-separate-adapter-alice",
+        "MemUsage": "23.86MiB / 128MiB",
+        "CPUPerc": "0.01%",
+        "PIDs": "3",
+        "NetIO": "5.24MB / 5.21MB",
+        "BlockIO": "0B / 0B"
+      },
+      {
+        "Name": "p1-p3u-m1-separate-adapter-bob",
+        "MemUsage": "24.36MiB / 128MiB",
+        "CPUPerc": "0.01%",
+        "PIDs": "3",
+        "NetIO": "5.24MB / 5.21MB",
+        "BlockIO": "0B / 0B"
+      },
+      {
+        "Name": "art-a",
+        "MemUsage": "3.931GiB / 4GiB",
+        "CPUPerc": "2.94%",
+        "PIDs": "472",
+        "NetIO": "26.2MB / 43.6MB",
+        "BlockIO": "0B / 21.2MB"
+      },
+      {
+        "Name": "art-a-db",
+        "MemUsage": "91.52MiB / 512MiB",
+        "CPUPerc": "0.23%",
+        "PIDs": "26",
+        "NetIO": "13.5MB / 15.8MB",
+        "BlockIO": "0B / 152MB"
+      }
+    ]
+  },
+  "completed_tasks": 28
+}

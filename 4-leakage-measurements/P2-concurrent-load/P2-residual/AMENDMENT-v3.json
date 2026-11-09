@@ -1,0 +1,11 @@
+{
+  "edition": 3,
+  "before_main_p2_collection": true,
+  "failed_implementation_smoke_preserved": "data/smoke-p2-s1/sham",
+  "prior_source_freeze_sha256": "2dddbeeb7dab8262beea73ec93b65ab8f59f078104056aa0c219864e5f943fee",
+  "changes": [
+    "Reconstruct the fixed one-byte 206 Range profile as PAYLOAD[:1] and verify its exact SHA-256. Unexpected sizes still fail.",
+    "Fresh eight-trial implementation fixtures use p2-s2 identifiers; no failed or earlier smoke trial contributes a main result."
+  ],
+  "analysis_or_main_schedule_changed": false
+}

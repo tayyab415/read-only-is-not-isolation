@@ -1,0 +1,23 @@
+COMMAND ['docker', 'exec', 'art-a-db', 'psql', '-U', 'artifactory', '-d', 'artifactory', '-P', 'null=<NULL>', '-c', "select column_name,data_type,character_maximum_length from information_schema.columns where table_name='nodes' order by ordinal_position"]
+    column_name     |     data_type     | character_maximum_length 
+--------------------+-------------------+--------------------------
+ node_id            | bigint            |                   <NULL>
+ node_type          | smallint          |                   <NULL>
+ repo               | character varying |                       64
+ node_path          | character varying |                     1024
+ node_name          | character varying |                      255
+ depth              | smallint          |                   <NULL>
+ created            | bigint            |                   <NULL>
+ created_by         | character varying |                       64
+ modified           | bigint            |                   <NULL>
+ modified_by        | character varying |                       64
+ updated            | bigint            |                   <NULL>
+ bin_length         | bigint            |                   <NULL>
+ sha1_actual        | character         |                       40
+ sha1_original      | character varying |                     1024
+ md5_actual         | character         |                       32
+ md5_original       | character varying |                     1024
+ sha256             | character         |                       64
+ repo_path_checksum | character         |                       40
+(18 rows)
+

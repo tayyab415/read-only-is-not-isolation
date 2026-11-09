@@ -1,0 +1,63 @@
+DEPRECATED: The legacy builder is deprecated and will be removed in a future release.
+            BuildKit is currently disabled; enable it by removing the DOCKER_BUILDKIT=0
+            environment-variable.
+
+Sending build context to Docker daemon  6.508MB
+Step 1/19 : FROM python:3.12-slim AS builder
+ ---> 5e2bdb1b0d54
+Step 2/19 : LABEL org.research.p7.build="nginx-1.30.6-squid-7.8-v1"
+ ---> Using cache
+ ---> 01d5207db3e7
+Step 3/19 : RUN apt-get update && apt-get install -y --no-install-recommends     build-essential pkg-config libxml2-dev libltdl-dev libcap-dev     && rm -rf /var/lib/apt/lists/*
+ ---> Using cache
+ ---> 6c033f640907
+Step 4/19 : WORKDIR /build
+ ---> Using cache
+ ---> 40d6c202cdc0
+Step 5/19 : COPY sources/nginx-1.30.6.tar.gz sources/squid-7.8.tar.gz ./
+ ---> Using cache
+ ---> 11c0a5762186
+Step 6/19 : RUN echo '3cf46f5ed7504d460125866b7bea99fb357f31d887e2e63b35503310e9b8b6c8  nginx-1.30.6.tar.gz' | sha256sum -c -     && echo 'b1367b2a0e5ecf1641880f74100c570b0668fe3e8fe08693e83b270401846dad  squid-7.8.tar.gz' | sha256sum -c -     && tar xzf nginx-1.30.6.tar.gz && tar xzf squid-7.8.tar.gz
+ ---> Using cache
+ ---> 8b77e783cec9
+Step 7/19 : WORKDIR /build/nginx-1.30.6
+ ---> Using cache
+ ---> 2e73554272bd
+Step 8/19 : RUN ./configure --prefix=/opt/p7/nginx --without-http_rewrite_module --without-http_gzip_module     && make -j1 && make install
+ ---> Using cache
+ ---> af569e9c33ef
+Step 9/19 : WORKDIR /build/squid-7.8
+ ---> Using cache
+ ---> 2e63244d37bb
+Step 10/19 : RUN ./configure --prefix=/opt/p7/squid --enable-http-violations     --with-default-user=research --disable-auth --disable-external-acl-helpers     --disable-url-rewrite-helpers --disable-storeid-rewrite-helpers     --without-openssl --without-gnutls --without-nettle     && make -j1 && make install
+ ---> Using cache
+ ---> 1cb841951b64
+Step 11/19 : RUN /opt/p7/nginx/sbin/nginx -V 2> /opt/p7/nginx-build.txt     && /opt/p7/squid/sbin/squid -v > /opt/p7/squid-build.txt
+ ---> Using cache
+ ---> 82eac55a7561
+Step 12/19 : FROM python:3.12-slim
+ ---> 5e2bdb1b0d54
+Step 13/19 : LABEL org.research.p7.build="nginx-1.30.6-squid-7.8-v1"
+ ---> Using cache
+ ---> 01d5207db3e7
+Step 14/19 : RUN apt-get update && apt-get install -y --no-install-recommends libxml2 libltdl7 libcap2 libstdc++6     && rm -rf /var/lib/apt/lists/*     && groupadd -g 20001 research && useradd -u 20001 -g 20001 --no-create-home research
+ ---> Using cache
+ ---> d8b9a079ac65
+Step 15/19 : COPY --from=builder /opt/p7 /opt/p7
+ ---> Using cache
+ ---> 202c3aa51121
+Step 16/19 : USER 20001:20001
+ ---> Using cache
+ ---> a82d4d236339
+Step 17/19 : WORKDIR /tmp
+ ---> Using cache
+ ---> 5d8605934695
+Step 18/19 : CMD ["python3", "-c", "import time; time.sleep(86400)"]
+ ---> Using cache
+ ---> c62e5c4ba4d8
+Step 19/19 : LABEL org.research.source-freeze.sha256=e29bc3a73fb81cce237872d1cc61d771109b4a6ae424d70b8fe0cd1e70e84f5a
+ ---> Running in c4249a3080ae
+ ---> Removed intermediate container c4249a3080ae
+ ---> 086611ec4693
+Successfully built 086611ec4693
+Successfully tagged p7-cache-fixtures:nginx-1.30.6-squid-7.8

@@ -1,0 +1,59 @@
+{
+  "edition": 2,
+  "frozen_utc": "2026-11-08T21:26:28.225041+00:00",
+  "preparation_only": true,
+  "sha256": {
+    ".dockerignore": "5fd19e2d14cad81144e4391b8a848be3db0816815b0fb6a7b80e288305dce6f7",
+    "Dockerfile": "eec36e045b8da84c42fe55f13abc69abc2c61717d22d20ce232068e2bb4682e8",
+    "PROTOCOL.md": "d821052a7886bf9444c3e7f97c3b4de547a107c6ce81dab261035b0975742b71",
+    "README.md": "101dd49792be123325149d789dc83b9566d024840e7a6c2c1bfd16da00411aec",
+    "analysis.py": "9f6188488644e2aab412d222bf182e34f980ccc982980726cb434312cfaaf444",
+    "audit.py": "eb7cf9227d7c1151325f4fb93f85b38dd62cee91bf57ae84104cfd28c3309369",
+    "build.py": "06f7f976683eb5d134afd0375d7916756bacd1a7a54dec7898ba3f78a9502221",
+    "collect.py": "4e9518e3de666d691fb4ccc9bf1d4f389a1569c04faec37bdc979fc36fec9bd1",
+    "configuration.py": "c8eaf3826d8540f172ccbf76a030d88735f586bf6d8c80819a5c3ea6aa8b9b86",
+    "origin.py": "d565d9e24602b6e60e4867c45c41e5f875079135c824707f8491c93349ed1664",
+    "plan.py": "136e214e576abd07d454e0e414f94baaefc1dcd886ac40bc0c0001ba0d9c8daa",
+    "request_guard.py": "0cf2c52874abb91817b76271104970df02144f58009f2363f918b189581049d7",
+    "service.py": "97bd421258d752c4451dc861b781d19e5cb3268549cff8ff3b95d7056a36cc7b",
+    "sources/nginx-1.30.6.tar.gz": "3cf46f5ed7504d460125866b7bea99fb357f31d887e2e63b35503310e9b8b6c8",
+    "sources/provenance.json": "72cc3c1176378e53e53b8abafa153cc1fb96f333f5cbdba989dbf99b49609b83",
+    "sources/squid-7.8.tar.gz": "b1367b2a0e5ecf1641880f74100c570b0668fe3e8fe08693e83b270401846dad",
+    "store_id.py": "d8e218fdadf8865afdeb2697e57999b62910220fec0d0866967054f3b1dd999c",
+    "test_audit.py": "c8d88115d5555b871f0f444e9a3838908ccdc117d83a24d3d0ccb8e1a19d3fb2",
+    "test_preparation.py": "5f20b1b7f14439fee157397d68bd3c85626e3e74d77b709734007177ab67e2eb",
+    "test_request_guard.py": "7dbc0a169c89867733f90a2b006acf2b207c02f4ca3b24794a16216dde597a5e",
+    "test_runtime.py": "9eb47a956bcd870995af68c0e817b21ab34b53bc4450269f339dbbc139284ae5",
+    "AMENDMENT-v2.json": "43cf61c026c5c3d8040bc8b4f7603f494322f3eb4101b29ac5763361222cde69"
+  },
+  "import_sha256": {
+    "P2-residual/SOURCES-FROZEN.json": "a94a7883b207bd1ea9f6b6b83d9581f8370b975561cfb9be43ff8ff2d50f7e42",
+    "P2-residual/service.py": "3dc382cd8db920e28774f074b8cc9d17ab23e7acc9e8b35f61d3fbc993b08549",
+    "P1-meter/service.py": "c64f69fb68dda09671f2e551515c2991255548eb96ca9c7d09081c97d477a5de",
+    "J-controls/scripts/upstream.py": "162507d6a40a9a049636aee2874df04f53b441dae9da237808eb00575eabe7b0"
+  },
+  "checks": {
+    "passed": true,
+    "local_tests": 24,
+    "native_cache_tested": false
+  },
+  "scope": "Configured 404 cache mechanism across two implementations; not the full P1 meter.",
+  "counts": {
+    "trials": 624,
+    "receiver_requests": 624,
+    "sender_requests": 280,
+    "http_requests": 904,
+    "reserved_client_plus_origin_upper_bound": 1808
+  },
+  "maximum_controller_requests": 1200,
+  "maximum_client_plus_origin_requests": 2400,
+  "real_p1_gate_required": true,
+  "common_collection_lock_required": true,
+  "source_versions": {
+    "nginx": "1.30.6",
+    "squid": "7.8"
+  },
+  "squid_negative_cache_explicitly_nondefault": true,
+  "prior_source_freeze_sha256": "88f5391c7b6fecf256ea64c9892ce3028c8940d9086843c87157ff15e165e6e9",
+  "prior_source_archive": "archive/v1"
+}

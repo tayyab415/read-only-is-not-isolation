@@ -1,0 +1,8 @@
+Waiting for art-a 0
+Waiting for art-a 6
+Waiting for art-a 12
+Waiting for art-a 18
+Traceback (most recent call last):
+  File "$LAB_HOME/a/scripts/provision.py", line 25, in <module>
+    raise RuntimeError("Admin password change failed: HTTP " + str(r.status_code))
+RuntimeError: Admin password change failed: HTTP 400

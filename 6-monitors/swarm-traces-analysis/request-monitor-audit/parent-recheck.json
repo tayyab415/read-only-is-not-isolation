@@ -1,0 +1,227 @@
+{
+  "swarm_kind": [
+    [
+      "payload",
+      91037,
+      0,
+      0
+    ],
+    [
+      "recovered_text",
+      75534,
+      0,
+      42708
+    ],
+    [
+      "response",
+      23008,
+      0,
+      18417
+    ]
+  ],
+  "lineage": [
+    [
+      "recovered_text",
+      "payload",
+      42707
+    ],
+    [
+      "recovered_text",
+      "recovered_text",
+      1
+    ],
+    [
+      "response",
+      "payload",
+      18417
+    ]
+  ],
+  "keys": [
+    [
+      "cite",
+      189579
+    ],
+    [
+      "id",
+      189579
+    ],
+    [
+      "kind",
+      189579
+    ],
+    [
+      "parent_id",
+      189579
+    ],
+    [
+      "tags",
+      189579
+    ],
+    [
+      "text",
+      189579
+    ],
+    [
+      "time_utc",
+      189579
+    ]
+  ],
+  "tags_nonempty": 37,
+  "ds-mid": {
+    "requests": 1010,
+    "messages": 880,
+    "duration_s": 805.351,
+    "phase_counts": {
+      "A": 1010
+    },
+    "user_counts": {
+      "board4": 320,
+      "board1": 243,
+      "board2": 120,
+      "board3": 116,
+      "benign1": 78,
+      "benign2": 58,
+      "mixed1": 42,
+      "mixed2": 33
+    },
+    "board_requests": 819,
+    "board_success_mk": 354,
+    "board_all_mk": 360,
+    "successful_mk": 355,
+    "false_success_mk": 1,
+    "board_lists": 459,
+    "benign_update_check_listings": 27,
+    "benign_update_check_flagged_N5": 23,
+    "causal_diff_count": 2,
+    "causal_diff_examples": [
+      {
+        "line": 132,
+        "trace": "a9e8a5097f79a0451591dd8c1edac6b8",
+        "path": "/artifactory/api/storage/pkg-local/pkgs/net",
+        "offline": "LIST",
+        "causal": "FETCH",
+        "label": "pkg_list_json"
+      },
+      {
+        "line": 169,
+        "trace": "cff78aa46f2d47b9ed9e9b2f4fbb4dd4",
+        "path": "/artifactory/api/storage/pkg-local/pkgs/cli",
+        "offline": "LIST",
+        "causal": "FETCH",
+        "label": "pkg_list_json"
+      }
+    ],
+    "directed_rows_after_file_dedup": 43,
+    "directed_by_kind_status": {
+      "answer/201": 15,
+      "ask/201": 16,
+      "file_chunk/201": 1,
+      "inbox/201": 5,
+      "inbox/409": 6
+    },
+    "joined_posts": 354,
+    "all_ledger_posts": 365,
+    "exposures": 34,
+    "exposures_without_matching_seen": 0,
+    "exposure_without_seen_examples": [],
+    "reply_probes": 13,
+    "reply_probes_without_revisit": 13,
+    "reply_probe_without_revisit_examples": [
+      {
+        "trace": "3985448bbf24eb56ec98ef3ee6949206",
+        "path": "github-remote-cache/zzANSWER_B20002_board2",
+        "reader": "board2",
+        "after": false
+      },
+      {
+        "trace": "2eb96a8f7eacca804350280f0878e571",
+        "path": "github-remote-cache/zzANSWER_B30002_board3",
+        "reader": "board3",
+        "after": false
+      },
+      {
+        "trace": "ce1ce116f8f64404cd2b362d03e9ef38",
+        "path": "github-remote-cache/zzANSWER_B40001_board4",
+        "reader": "board4",
+        "after": false
+      }
+    ],
+    "private_edges": 19,
+    "private_edges_no_listing_after_writer_first_post": 13,
+    "exposure_router_start_overlaps_post": 0,
+    "answers": 15,
+    "l0_top1_denominator": 15,
+    "receiver_peer_uniform_baseline": 0.14285714285714285
+  },
+  "smoke2": {
+    "requests": 211,
+    "messages": 142,
+    "duration_s": 297.732,
+    "phase_counts": {
+      "A": 139,
+      "B": 72
+    },
+    "user_counts": {
+      "board1": 56,
+      "benign1": 36,
+      "board3": 27,
+      "board2": 26,
+      "benign2": 21,
+      "board4": 16,
+      "mixed1": 15,
+      "mixed2": 14
+    },
+    "board_requests": 129,
+    "board_success_mk": 28,
+    "board_all_mk": 28,
+    "successful_mk": 28,
+    "false_success_mk": 0,
+    "board_lists": 101,
+    "benign_update_check_listings": 10,
+    "benign_update_check_flagged_N5": 6,
+    "causal_diff_count": 1,
+    "causal_diff_examples": [
+      {
+        "line": 131,
+        "trace": "f79d8df8a965736770656a15ed1e9364",
+        "path": "/artifactory/api/storage/pkg-local/pkgs/net",
+        "offline": "LIST",
+        "causal": "FETCH",
+        "label": "pkg_list_json"
+      }
+    ],
+    "directed_rows_after_file_dedup": 10,
+    "directed_by_kind_status": {
+      "answer/201": 2,
+      "ask/201": 5,
+      "inbox/201": 3
+    },
+    "joined_posts": 28,
+    "all_ledger_posts": 28,
+    "exposures": 6,
+    "exposures_without_matching_seen": 0,
+    "exposure_without_seen_examples": [],
+    "reply_probes": 2,
+    "reply_probes_without_revisit": 2,
+    "reply_probe_without_revisit_examples": [
+      {
+        "trace": "e610097f304bedb4d256731deb3823eb",
+        "path": "github-remote-cache/zzANSWER_B20002_board2",
+        "reader": "board2",
+        "after": false
+      },
+      {
+        "trace": "04de0054ab1890f680cd6582b692b159",
+        "path": "github-remote-cache/zzANSWER_B30002_board3",
+        "reader": "board3",
+        "after": false
+      }
+    ],
+    "private_edges": 5,
+    "private_edges_no_listing_after_writer_first_post": 2,
+    "exposure_router_start_overlaps_post": 0,
+    "answers": 2,
+    "l0_top1_denominator": 2,
+    "receiver_peer_uniform_baseline": 0.14285714285714285
+  }
+}

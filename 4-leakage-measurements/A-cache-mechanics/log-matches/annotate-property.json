@@ -1,0 +1,103 @@
+{
+  "request_id": "annotate-property",
+  "server_trace_ids": [
+    "469629c6043ae27f711c7a427d7059ee"
+  ],
+  "logs": {
+    "access-audit.log": [],
+    "access-metrics.log": [],
+    "access-metrics_events.log": [],
+    "access-request-out.log": [],
+    "access-request.log": [
+      {
+        "line_number": 744,
+        "line": "2026-11-07T23:02:34.990Z|469629c6043ae27f711c7a427d7059ee|/127.0.0.1:54014|jfrt@01m6w3chwnhc4n1xs15bzj1rg6|--UNA|com.jfrog.access.v1.authentication.AuthenticationResource/Authenticate|0|-1|-1|5|grpc-java-netty/1.81.0"
+      }
+    ],
+    "access-security-audit.log": [],
+    "access-service.log": [],
+    "access-thread-dump.log": [],
+    "artifactory-access.log": [
+      {
+        "line_number": 51,
+        "line": "2026-11-07T23:02:34.994Z [469629c6043ae27f711c7a427d7059ee] [ACCEPTED LOGIN]   for client : a-cache / 172.18.0.1"
+      }
+    ],
+    "artifactory-binarystore.log": [],
+    "artifactory-cleanup-audit.log": [],
+    "artifactory-conan-v2-migration.log": [],
+    "artifactory-event.log": [],
+    "artifactory-federation-metrics.log": [],
+    "artifactory-federation-metrics_events.log": [],
+    "artifactory-import-export.log": [],
+    "artifactory-metrics.log": [],
+    "artifactory-metrics_events.log": [],
+    "artifactory-path-checksum-migration.log": [],
+    "artifactory-request-out.log": [],
+    "artifactory-request-trace.log": [],
+    "artifactory-request.log": [
+      {
+        "line_number": 418,
+        "line": "2026-11-07T23:02:34.994Z|469629c6043ae27f711c7a427d7059ee|172.18.0.1|a-cache|PUT|/api/storage/github-remote-cache/github/gitignore/raw/refs/heads/main/Python.gitignore|400|0|267|12|art-a-research/annotate-property"
+      }
+    ],
+    "artifactory-service-federation.log": [],
+    "artifactory-service.log": [],
+    "artifactory-sha256-migration.log": [],
+    "artifactory-shadow.log": [],
+    "artifactory-storage-request-out.log": [],
+    "artifactory-traffic-v2.log": [],
+    "artifactory-traffic-v3.log": [],
+    "artifactory-traffic.1794091779163.log": [],
+    "artifactory-xray-traffic.1794091779189.log": [],
+    "derby.log": [],
+    "dummy.log": [],
+    "event-metrics.log": [],
+    "event-request.log": [],
+    "event-service.log": [],
+    "event-webhook-request-out.log": [],
+    "frontend-metrics-events.log": [],
+    "frontend-metrics.log": [],
+    "frontend-request.log": [],
+    "frontend-service.log": [],
+    "jfbus-ack-events.log": [],
+    "jfbus-consume-events.log": [],
+    "jfbus-publish-events.log": [],
+    "jfbus-receive-polling.log": [],
+    "jfbus-request.log": [],
+    "jfbus-service.log": [],
+    "jfconfig-metrics.log": [],
+    "jfconfig-request-out.log": [],
+    "jfconfig-request.log": [],
+    "jfconfig-service.log": [],
+    "metadata-metrics.log": [],
+    "metadata-request.log": [],
+    "metadata-service.log": [],
+    "metadata-traffic.log": [],
+    "observability-metrics.log": [],
+    "observability-request-out.log": [],
+    "observability-request.log": [],
+    "observability-service.log": [],
+    "router-request.log": [
+      {
+        "line_number": 1489,
+        "line": "{\"ClientAddr\":\"127.0.0.1:35280\",\"DownstreamContentSize\":87,\"DownstreamStatus\":200,\"Duration\":6812877,\"Overhead\":108622,\"RequestMethod\":\"POST\",\"RequestPath\":\"/com.jfrog.access.v1.authentication.AuthenticationResource/Authenticate\",\"ServiceAddr\":\"localhost:8045\",\"SpanId\":\"370c7289a3e85f97\",\"StartUTC\":\"2026-11-07T23:02:34.984535434Z\",\"TraceId\":\"469629c6043ae27f711c7a427d7059ee\",\"level\":\"info\",\"msg\":\"\",\"request_Traceparent\":\"00-469629c6043ae27f711c7a427d7059ee-138e17ca992965de-01\",\"request_Uber-Trace-Id\":\"469629c6043ae27f711c7a427d7059ee:138e17ca992965de:0:1\",\"request_User-Agent\":\"grpc-java-netty/1.81.0\",\"time\":\"2026-11-07T23:02:34Z\"}"
+      },
+      {
+        "line_number": 1490,
+        "line": "{\"ClientAddr\":\"172.18.0.1:52660\",\"DownstreamContentSize\":267,\"DownstreamStatus\":400,\"Duration\":12400290,\"Overhead\":111502,\"RequestMethod\":\"PUT\",\"RequestPath\":\"/artifactory/api/storage/github-remote-cache/github/gitignore/raw/refs/heads/main/Python.gitignore?properties=lab.note=annotator\\u0026recursive=0\",\"ServiceAddr\":\"localhost:8081\",\"SpanId\":\"c64afb9c939f038d\",\"StartUTC\":\"2026-11-07T23:02:34.982033683Z\",\"TraceId\":\"469629c6043ae27f711c7a427d7059ee\",\"level\":\"info\",\"msg\":\"\",\"request_User-Agent\":\"art-a-research/annotate-property\",\"time\":\"2026-11-07T23:02:34Z\"}"
+      }
+    ],
+    "router-service.log": [],
+    "router-traefik.log": [],
+    "tomcat/tomcat-access-catalina-2026-11-07.log": [],
+    "tomcat/tomcat-access-localhost-2026-11-07.log": [],
+    "tomcat/tomcat-catalina-2026-11-07.log": [],
+    "tomcat/tomcat-localhost-2026-11-07.log": [],
+    "topology-derby.log": [],
+    "topology-metrics.log": [],
+    "topology-request-out.log": [],
+    "topology-request.log": [],
+    "topology-service.log": []
+  }
+}

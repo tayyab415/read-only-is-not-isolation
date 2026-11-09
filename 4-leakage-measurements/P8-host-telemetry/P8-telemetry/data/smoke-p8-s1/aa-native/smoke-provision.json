@@ -1,0 +1,483 @@
+{
+  "run_id": "p8-s1-s-aa-native",
+  "kind": "immutable",
+  "configuration": "aa-native",
+  "networks": {
+    "alice": "p1-p8-s1-s-aa-native-net-alice",
+    "bob": "p1-p8-s1-s-aa-native-net-bob"
+  },
+  "containers": {
+    "alice": "p1-p8-s1-s-aa-native-alice",
+    "bob": "p1-p8-s1-s-aa-native-bob",
+    "mirror_alice": "p1-p8-s1-s-aa-native-mirror-alice",
+    "mirror_bob": "p1-p8-s1-s-aa-native-mirror-bob"
+  },
+  "users": {
+    "alice": "p1-p8-s1-s-aa-native-alice",
+    "bob": "p1-p8-s1-s-aa-native-bob"
+  },
+  "repositories": {
+    "alice": "p1-p8-s1-s-aa-native-alice",
+    "bob": "p1-p8-s1-s-aa-native-bob"
+  },
+  "repository_names_are": "synthetic origin identities",
+  "manifest_sha256": "7ca3d6b42b74dafae3ba410c2e8716b2ee1277505268fb8a51961a2e43605321",
+  "boundary": {
+    "containers": {
+      "alice": {
+        "name": "p1-p8-s1-s-aa-native-alice",
+        "user": "20001:20001",
+        "root_read_only": true,
+        "cap_drop": [
+          "ALL"
+        ],
+        "security_options": [
+          "no-new-privileges:true"
+        ],
+        "privileged": false,
+        "pid_mode": "",
+        "ipc_mode": "private",
+        "cgroupns_mode": "private",
+        "memory": 134217728,
+        "memory_swap": 134217728,
+        "nano_cpus": 500000000,
+        "pids_limit": 48,
+        "tmpfs": {
+          "/tmp": "rw,nosuid,nodev,size=16m"
+        },
+        "published_ports": {},
+        "attached_networks": [
+          "p1-p8-s1-s-aa-native-net-alice"
+        ],
+        "network_addresses": {
+          "p1-p8-s1-s-aa-native-net-alice": "172.19.0.1"
+        },
+        "image_id": "sha256:4840d514c583a4d3d8cad3940e68dee6f0f6f3635c12fcd0a3d74c21a5b93a54",
+        "masked_paths": [
+          "/proc/acpi",
+          "/proc/asound",
+          "/proc/interrupts",
+          "/proc/kcore",
+          "/proc/keys",
+          "/proc/latency_stats",
+          "/proc/sched_debug",
+          "/proc/scsi",
+          "/proc/timer_list",
+          "/proc/timer_stats",
+          "/sys/devices/virtual/powercap",
+          "/sys/firmware"
+        ],
+        "readonly_paths": [
+          "/proc/bus",
+          "/proc/fs",
+          "/proc/irq",
+          "/proc/sys",
+          "/proc/sysrq-trigger"
+        ],
+        "forbidden_environment_present": false,
+        "bind_mounts": []
+      },
+      "bob": {
+        "name": "p1-p8-s1-s-aa-native-bob",
+        "user": "20001:20001",
+        "root_read_only": true,
+        "cap_drop": [
+          "ALL"
+        ],
+        "security_options": [
+          "no-new-privileges:true"
+        ],
+        "privileged": false,
+        "pid_mode": "",
+        "ipc_mode": "private",
+        "cgroupns_mode": "private",
+        "memory": 134217728,
+        "memory_swap": 134217728,
+        "nano_cpus": 500000000,
+        "pids_limit": 48,
+        "tmpfs": {
+          "/tmp": "rw,nosuid,nodev,size=16m"
+        },
+        "published_ports": {},
+        "attached_networks": [
+          "p1-p8-s1-s-aa-native-net-bob"
+        ],
+        "network_addresses": {
+          "p1-p8-s1-s-aa-native-net-bob": "172.20.0.1"
+        },
+        "image_id": "sha256:4840d514c583a4d3d8cad3940e68dee6f0f6f3635c12fcd0a3d74c21a5b93a54",
+        "masked_paths": [
+          "/proc/acpi",
+          "/proc/asound",
+          "/proc/interrupts",
+          "/proc/kcore",
+          "/proc/keys",
+          "/proc/latency_stats",
+          "/proc/sched_debug",
+          "/proc/scsi",
+          "/proc/timer_list",
+          "/proc/timer_stats",
+          "/sys/devices/virtual/powercap",
+          "/sys/firmware"
+        ],
+        "readonly_paths": [
+          "/proc/bus",
+          "/proc/fs",
+          "/proc/irq",
+          "/proc/sys",
+          "/proc/sysrq-trigger"
+        ],
+        "forbidden_environment_present": false,
+        "bind_mounts": []
+      },
+      "mirror_alice": {
+        "name": "p1-p8-s1-s-aa-native-mirror-alice",
+        "user": "20001:20001",
+        "root_read_only": true,
+        "cap_drop": [
+          "ALL"
+        ],
+        "security_options": [
+          "no-new-privileges:true"
+        ],
+        "privileged": false,
+        "pid_mode": "",
+        "ipc_mode": "private",
+        "cgroupns_mode": "private",
+        "memory": 134217728,
+        "memory_swap": 134217728,
+        "nano_cpus": 500000000,
+        "pids_limit": 48,
+        "tmpfs": {
+          "/tmp": "rw,nosuid,nodev,size=64m"
+        },
+        "published_ports": {},
+        "attached_networks": [
+          "p1-p8-s1-s-aa-native-net-alice"
+        ],
+        "network_addresses": {
+          "p1-p8-s1-s-aa-native-net-alice": "172.19.0.2"
+        },
+        "image_id": "sha256:4840d514c583a4d3d8cad3940e68dee6f0f6f3635c12fcd0a3d74c21a5b93a54",
+        "masked_paths": [
+          "/proc/acpi",
+          "/proc/asound",
+          "/proc/interrupts",
+          "/proc/kcore",
+          "/proc/keys",
+          "/proc/latency_stats",
+          "/proc/sched_debug",
+          "/proc/scsi",
+          "/proc/timer_list",
+          "/proc/timer_stats",
+          "/sys/devices/virtual/powercap",
+          "/sys/firmware"
+        ],
+        "readonly_paths": [
+          "/proc/bus",
+          "/proc/fs",
+          "/proc/irq",
+          "/proc/sys",
+          "/proc/sysrq-trigger"
+        ],
+        "forbidden_environment_present": false,
+        "bind_mounts": [
+          {
+            "source": "$LAB_HOME/next/P8-telemetry/runtime-config/mirror-p8-s1-s-aa-native-alice.json",
+            "destination": "/config.json",
+            "rw": false
+          },
+          {
+            "source": "$LAB_HOME/next/P3-mirror/mirror.py",
+            "destination": "/mirror.py",
+            "rw": false
+          },
+          {
+            "source": "$LAB_HOME/next/P3-isolation/deploy.py",
+            "destination": "/deploy.py",
+            "rw": false
+          },
+          {
+            "source": "$LAB_HOME/next/P3-mirror/data",
+            "destination": "/catalog",
+            "rw": false
+          }
+        ]
+      },
+      "mirror_bob": {
+        "name": "p1-p8-s1-s-aa-native-mirror-bob",
+        "user": "20001:20001",
+        "root_read_only": true,
+        "cap_drop": [
+          "ALL"
+        ],
+        "security_options": [
+          "no-new-privileges:true"
+        ],
+        "privileged": false,
+        "pid_mode": "",
+        "ipc_mode": "private",
+        "cgroupns_mode": "private",
+        "memory": 134217728,
+        "memory_swap": 134217728,
+        "nano_cpus": 500000000,
+        "pids_limit": 48,
+        "tmpfs": {
+          "/tmp": "rw,nosuid,nodev,size=64m"
+        },
+        "published_ports": {},
+        "attached_networks": [
+          "p1-p8-s1-s-aa-native-net-bob"
+        ],
+        "network_addresses": {
+          "p1-p8-s1-s-aa-native-net-bob": "172.20.0.2"
+        },
+        "image_id": "sha256:4840d514c583a4d3d8cad3940e68dee6f0f6f3635c12fcd0a3d74c21a5b93a54",
+        "masked_paths": [
+          "/proc/acpi",
+          "/proc/asound",
+          "/proc/interrupts",
+          "/proc/kcore",
+          "/proc/keys",
+          "/proc/latency_stats",
+          "/proc/sched_debug",
+          "/proc/scsi",
+          "/proc/timer_list",
+          "/proc/timer_stats",
+          "/sys/devices/virtual/powercap",
+          "/sys/firmware"
+        ],
+        "readonly_paths": [
+          "/proc/bus",
+          "/proc/fs",
+          "/proc/irq",
+          "/proc/sys",
+          "/proc/sysrq-trigger"
+        ],
+        "forbidden_environment_present": false,
+        "bind_mounts": [
+          {
+            "source": "$LAB_HOME/next/P3-mirror/mirror.py",
+            "destination": "/mirror.py",
+            "rw": false
+          },
+          {
+            "source": "$LAB_HOME/next/P3-isolation/deploy.py",
+            "destination": "/deploy.py",
+            "rw": false
+          },
+          {
+            "source": "$LAB_HOME/next/P3-mirror/data",
+            "destination": "/catalog",
+            "rw": false
+          },
+          {
+            "source": "$LAB_HOME/next/P8-telemetry/runtime-config/mirror-p8-s1-s-aa-native-bob.json",
+            "destination": "/config.json",
+            "rw": false
+          }
+        ]
+      }
+    },
+    "networks": {
+      "alice": {
+        "name": "p1-p8-s1-s-aa-native-net-alice",
+        "internal": true,
+        "options": {
+          "com.docker.network.bridge.gateway_mode_ipv4": "isolated"
+        },
+        "containers": [
+          "p1-p8-s1-s-aa-native-alice",
+          "p1-p8-s1-s-aa-native-mirror-alice"
+        ]
+      },
+      "bob": {
+        "name": "p1-p8-s1-s-aa-native-net-bob",
+        "internal": true,
+        "options": {
+          "com.docker.network.bridge.gateway_mode_ipv4": "isolated"
+        },
+        "containers": [
+          "p1-p8-s1-s-aa-native-bob",
+          "p1-p8-s1-s-aa-native-mirror-bob"
+        ]
+      }
+    }
+  },
+  "network_controls": {
+    "passed": true,
+    "checks": 6,
+    "records": [
+      {
+        "host": "172.20.0.1",
+        "port": 18888,
+        "expected_connected": true,
+        "name": "live peer listener on its own network",
+        "connected": true,
+        "error": null,
+        "actor": "bob"
+      },
+      {
+        "host": "172.20.0.2",
+        "port": 8000,
+        "expected_connected": true,
+        "name": "assigned serving route",
+        "connected": true,
+        "error": null,
+        "actor": "bob"
+      },
+      {
+        "host": "172.19.0.2",
+        "port": 8000,
+        "expected_connected": false,
+        "name": "peer serving route",
+        "connected": false,
+        "error": "OSError",
+        "actor": "bob"
+      },
+      {
+        "host": "172.20.0.1",
+        "port": 18888,
+        "expected_connected": false,
+        "name": "same live listener from the other network",
+        "connected": false,
+        "error": "OSError",
+        "actor": "alice"
+      },
+      {
+        "host": "172.19.0.2",
+        "port": 8000,
+        "expected_connected": true,
+        "name": "assigned serving route",
+        "connected": true,
+        "error": null,
+        "actor": "alice"
+      },
+      {
+        "host": "172.20.0.2",
+        "port": 8000,
+        "expected_connected": false,
+        "name": "peer serving route",
+        "connected": false,
+        "error": "OSError",
+        "actor": "alice"
+      }
+    ],
+    "listener_stopped": true,
+    "scope": "Specified live TCP listeners and routes, not every possible bypass.",
+    "listener_exit_code": 0
+  },
+  "mask_path": "$LAB_HOME/next/P8-telemetry/runtime-config/stat-p8-s1-s-aa-native.txt",
+  "mask_bytes_b64": "Y3B1ICAwIDAgMCAxMDAwMDAwIDAgMCAwIDAgMCAwCmNwdTAgMCAwIDAgMTAwMDAwMCAwIDAgMCAwIDAgMApjcHUxIDAgMCAwIDEwMDAwMDAgMCAwIDAgMCAwIDAKY3B1MiAwIDAgMCAxMDAwMDAwIDAgMCAwIDAgMCAwCmNwdTMgMCAwIDAgMTAwMDAwMCAwIDAgMCAwIDAgMAo=",
+  "mask_sha256": "52b7deb53e7828e60e4edec07323e9013fd52f548fdcf2ab9392db933227e8b7",
+  "docker_version": {
+    "Client": {
+      "Version": "29.1.3",
+      "ApiVersion": "1.52",
+      "DefaultAPIVersion": "1.52",
+      "GitCommit": "29.1.3-0ubuntu3~24.04.2",
+      "GoVersion": "go1.24.4",
+      "Os": "linux",
+      "Arch": "amd64",
+      "BuildTime": "Wed Apr 29 16:41:06 2026",
+      "Context": "default"
+    },
+    "Server": {
+      "Platform": {
+        "Name": ""
+      },
+      "Version": "29.1.3",
+      "ApiVersion": "1.52",
+      "MinAPIVersion": "1.44",
+      "Os": "linux",
+      "Arch": "amd64",
+      "Components": [
+        {
+          "Name": "Engine",
+          "Version": "29.1.3",
+          "Details": {
+            "ApiVersion": "1.52",
+            "Arch": "amd64",
+            "BuildTime": "Wed Apr 29 16:41:06 2026",
+            "Experimental": "false",
+            "GitCommit": "29.1.3-0ubuntu3~24.04.2",
+            "GoVersion": "go1.24.4",
+            "KernelVersion": "7.0.0-1014-aws",
+            "MinAPIVersion": "1.44",
+            "Os": "linux"
+          }
+        },
+        {
+          "Name": "containerd",
+          "Version": "2.2.1",
+          "Details": {
+            "GitCommit": ""
+          }
+        },
+        {
+          "Name": "runc",
+          "Version": "1.3.4-0ubuntu1~24.04.1",
+          "Details": {
+            "GitCommit": ""
+          }
+        },
+        {
+          "Name": "docker-init",
+          "Version": "0.19.0",
+          "Details": {
+            "GitCommit": ""
+          }
+        }
+      ],
+      "GitCommit": "29.1.3-0ubuntu3~24.04.2",
+      "GoVersion": "go1.24.4",
+      "KernelVersion": "7.0.0-1014-aws",
+      "BuildTime": "2026-04-29T16:41:06.000000000+00:00"
+    }
+  },
+  "runtime_accounting": "\"systemd\" \"2\"\n",
+  "source_freeze_sha256": "f278118680158e6d0cd0dc8cbd7abbb871321be419afb72458a97465dc5673bf",
+  "host_inventory": {
+    "kernel": {
+      "sysname": "Linux",
+      "nodename": "t3-hub",
+      "release": "7.0.0-1014-aws",
+      "version": "#14~24.04.1-Ubuntu SMP PREEMPT Fri Sep 18 21:24:59 UTC 2026",
+      "machine": "x86_64"
+    },
+    "cpu_count": 4,
+    "clock_ticks": 100,
+    "cpu_stat": {
+      "read_start_utc_ns": 1794201161299104843,
+      "read_end_utc_ns": 1794201161299165885,
+      "cpu_line": "cpu  1989920 249 455434 16161616 102489 0 34008 1492 0 0",
+      "file_sha256": "b291dc7220b3b0366cfa6b3409bed0f4da4df0425facfd540abcd2a8daac2cce"
+    },
+    "namespace_ids": {
+      "cgroup": "cgroup:[4026531835]",
+      "net": "net:[4026531833]",
+      "pid": "pid:[4026531836]",
+      "mnt": "mnt:[4026531832]"
+    },
+    "mountinfo": "28 1 259:1 / / rw,relatime shared:1 - ext4 /dev/root rw,discard,errors=remount-ro,commit=30\n29 28 0:7 / /dev rw,nosuid,noexec,relatime shared:2 - devtmpfs devtmpfs rw,size=7199836k,nr_inodes=1799959,mode=755,inode64\n30 28 0:25 / /proc rw,nosuid,nodev,noexec,relatime shared:5 - proc proc rw\n31 28 0:26 / /sys rw,nosuid,nodev,noexec,relatime shared:6 - sysfs sysfs rw\n32 31 0:8 / /sys/kernel/security rw,nosuid,nodev,noexec,relatime shared:7 - securityfs securityfs rw\n33 29 0:27 / /dev/shm rw,nosuid,nodev shared:3 - tmpfs tmpfs rw,inode64\n34 29 0:28 / /dev/pts rw,nosuid,noexec,relatime shared:4 - devpts devpts rw,gid=5,mode=620,ptmxmode=000\n35 28 0:29 / /run rw,nosuid,nodev shared:12 - tmpfs tmpfs rw,size=3198068k,nr_inodes=819200,mode=755,inode64\n36 35 0:30 / /run/lock rw,nosuid,nodev,noexec,relatime shared:13 - tmpfs tmpfs rw,size=5120k,inode64\n37 31 0:31 / /sys/fs/cgroup rw,nosuid,nodev,noexec,relatime shared:8 - cgroup2 cgroup2 rw,nsdelegate,memory_recursiveprot\n38 31 0:32 / /sys/fs/pstore rw,nosuid,nodev,noexec,relatime shared:9 - pstore none rw\n39 31 0:33 / /sys/firmware/efi/efivars rw,nosuid,nodev,noexec,relatime shared:10 - efivarfs efivarfs rw\n40 31 0:34 / /sys/fs/bpf rw,nosuid,nodev,noexec,relatime shared:11 - bpf bpf rw,mode=700\n41 30 0:35 / /proc/sys/fs/binfmt_misc rw,relatime shared:14 - autofs systemd-1 rw,fd=32,pgrp=1,timeout=0,minproto=5,maxproto=5,direct,pipe_ino=3128\n42 29 0:36 / /dev/hugepages rw,nosuid,nodev,relatime shared:15 - hugetlbfs hugetlbfs rw,pagesize=2M\n43 29 0:23 / /dev/mqueue rw,nosuid,nodev,noexec,relatime shared:16 - mqueue mqueue rw\n44 31 0:9 / /sys/kernel/debug rw,nosuid,nodev,noexec,relatime shared:17 - debugfs debugfs rw\n45 31 0:14 / /sys/kernel/tracing rw,nosuid,nodev,noexec,relatime shared:18 - tracefs tracefs rw\n46 31 0:37 / /sys/fs/fuse/connections rw,nosuid,nodev,noexec,relatime shared:19 - fusectl fusectl rw\n47 31 0:21 / /sys/kernel/config rw,nosuid,nodev,noexec,relatime shared:20 - configfs configfs rw\n49 28 7:0 / /snap/amazon-ssm-agent/13349 ro,nodev,relatime shared:44 - squashfs /dev/loop0 ro,errors=continue,threads=single\n51 28 7:1 / /snap/core22/2987 ro,nodev,relatime shared:46 - squashfs /dev/loop1 ro,errors=continue,threads=single\n53 28 7:2 / /snap/snapd/28254 ro,nodev,relatime shared:48 - squashfs /dev/loop2 ro,errors=continue,threads=single\n55 28 259:4 / /boot rw,relatime shared:50 - ext4 /dev/nvme0n1p16 rw\n57 55 259:3 / /boot/efi rw,relatime shared:52 - vfat /dev/nvme0n1p15 rw,fmask=0077,dmask=0077,codepage=437,iocharset=iso8859-1,shortname=mixed,errors=remount-ro\n59 41 0:38 / /proc/sys/fs/binfmt_misc rw,nosuid,nodev,noexec,relatime shared:54 - binfmt_misc binfmt_misc rw\n365 35 0:50 / /run/user/1000 rw,nosuid,nodev,relatime shared:306 - tmpfs tmpfs rw,size=1599032k,nr_inodes=399758,mode=700,uid=1000,gid=1000,inode64\n105 28 0:52 / /var/lib/docker/rootfs/overlayfs/4d9a0cad27ca26c339b9c622c525e5c9ba5d9f375ae55fa1b8b480d2ae12b5fa rw,relatime shared:413 - overlay overlay rw,lowerdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/81/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/80/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/79/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/78/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/77/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/76/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/75/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/74/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/73/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/72/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/71/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/70/fs,upperdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/82/fs,workdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/82/work,nouserxattr\n540 28 0:54 / /var/lib/docker/rootfs/overlayfs/67ad257275ae9edf0e0daccd8f54384a526a3a0f4dbdc6b472dabfc550db47a0 rw,relatime shared:451 - overlay overlay rw,lowerdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/83/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/30/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/29/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/28/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/27/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/26/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/25/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/24/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/23/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/22/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/21/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/20/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/19/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/18/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/17/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/16/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/15/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/14/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/13/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/12/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/11/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/10/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/9/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/8/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/7/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/6/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/5/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/4/fs,upperdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/84/fs,workdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/84/work,nouserxattr\n551 35 0:5 net:[4026532373] /run/docker/netns/b239045b851f rw shared:462 - nsfs nsfs rw\n597 35 0:5 net:[4026532249] /run/docker/netns/2b5ba996b608 rw shared:473 - nsfs nsfs rw\n304 28 0:47 / /var/lib/docker/rootfs/overlayfs/de756130958623a0b27b5a84fb08ce4a8fcc1bea832ae300736c92631fe69a28 rw,relatime shared:263 - overlay overlay rw,lowerdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/2814/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/36/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/35/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/34/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/33/fs,upperdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/2815/fs,workdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/2815/work,nouserxattr\n313 35 0:5 net:[4026532297] /run/docker/netns/4a008bf92892 rw shared:311 - nsfs nsfs rw\n437 28 0:49 / /var/lib/docker/rootfs/overlayfs/e28f59a01e40d6531f5ef13a9cafb81b5b5fdb47587444abde2def2b4f08b30b rw,relatime shared:320 - overlay overlay rw,lowerdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/2816/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/36/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/35/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/34/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/33/fs,upperdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/2817/fs,workdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/2817/work,nouserxattr\n477 35 0:5 net:[4026532451] /run/docker/netns/9281b09e32ac rw shared:329 - nsfs nsfs rw\n506 28 0:56 / /var/lib/docker/rootfs/overlayfs/23dd05f50e03b84c9796e3d03ac63d632d05a071f283c4bd73eb3fa42e097a45 rw,relatime shared:338 - overlay overlay rw,lowerdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/2818/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/36/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/35/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/34/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/33/fs,upperdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/2819/fs,workdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/2819/work,nouserxattr\n543 35 0:5 net:[4026532517] /run/docker/netns/f63cc0d7315c rw shared:347 - nsfs nsfs rw\n668 28 0:58 / /var/lib/docker/rootfs/overlayfs/3d00c55ffa8a2a9d1712f40f13c5fe61ff802719f2d78868f71f30b6eb99d448 rw,relatime shared:397 - overlay overlay rw,lowerdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/2820/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/36/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/35/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/34/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/33/fs,upperdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/2821/fs,workdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/2821/work,nouserxattr\n677 35 0:5 net:[4026532582] /run/docker/netns/ea6527b77ab0 rw shared:406 - nsfs nsfs rw\n",
+    "self_cgroup": "0::/user.slice/user-1000.slice/session-2298.scope\n",
+    "cgroup_v2": true,
+    "cpu_max": null,
+    "memory_max": null,
+    "cgroup": {
+      "raw": "usage_usec 24796128701\nuser_usec 19901697541\nsystem_usec 4894431160\nnice_usec 2492000\ncore_sched.force_idle_usec 0\nnr_periods 0\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0\n",
+      "values": {
+        "usage_usec": 24796128701,
+        "user_usec": 19901697541,
+        "system_usec": 4894431160,
+        "nice_usec": 2492000,
+        "core_sched.force_idle_usec": 0,
+        "nr_periods": 0,
+        "nr_throttled": 0,
+        "throttled_usec": 0,
+        "nr_bursts": 0,
+        "burst_usec": 0
+      }
+    }
+  }
+}

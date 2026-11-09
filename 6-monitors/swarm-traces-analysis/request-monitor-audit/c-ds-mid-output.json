@@ -1,0 +1,638 @@
+{
+ "dataset": {
+  "requests": 1010,
+  "clients": [
+   "benign1",
+   "benign2",
+   "board1",
+   "board2",
+   "board3",
+   "board4",
+   "mixed1",
+   "mixed2"
+  ],
+  "duration_min": 13.4,
+  "board_requests": 819,
+  "by_event": {
+   "LIST": 499,
+   "MKCOL_CACHE": 360,
+   "FETCH": 146,
+   "MKCOL_OTHER": 3,
+   "PUT": 2
+  }
+ },
+ "D1_mkcol": {
+  "any MKCOL": {
+   "flagged": 355,
+   "tp": 354,
+   "fp": 1,
+   "fn": 0,
+   "precision": 0.997,
+   "recall": 1.0
+  },
+  "MKCOL into a *-cache repo": {
+   "flagged": 354,
+   "tp": 354,
+   "fp": 0,
+   "fn": 0,
+   "precision": 1.0,
+   "recall": 1.0
+  },
+  "per_client": [
+   {
+    "client": "benign1",
+    "mkcol_cache": 0,
+    "mkcol_any": 0,
+    "per_hour": 0.0,
+    "first_min": null,
+    "third_min": null,
+    "tenth_min": null,
+    "truth_board": false
+   },
+   {
+    "client": "benign2",
+    "mkcol_cache": 0,
+    "mkcol_any": 1,
+    "per_hour": 0.0,
+    "first_min": null,
+    "third_min": null,
+    "tenth_min": null,
+    "truth_board": false
+   },
+   {
+    "client": "board1",
+    "mkcol_cache": 24,
+    "mkcol_any": 24,
+    "per_hour": 107.3,
+    "first_min": 0.0,
+    "third_min": 2.6,
+    "tenth_min": 3.9,
+    "truth_board": true
+   },
+   {
+    "client": "board2",
+    "mkcol_cache": 36,
+    "mkcol_any": 36,
+    "per_hour": 160.9,
+    "first_min": 0.3,
+    "third_min": 1.1,
+    "tenth_min": 3.4,
+    "truth_board": true
+   },
+   {
+    "client": "board3",
+    "mkcol_cache": 18,
+    "mkcol_any": 18,
+    "per_hour": 80.5,
+    "first_min": 0.0,
+    "third_min": 2.3,
+    "tenth_min": 6.2,
+    "truth_board": true
+   },
+   {
+    "client": "board4",
+    "mkcol_cache": 264,
+    "mkcol_any": 264,
+    "per_hour": 1180.1,
+    "first_min": 2.7,
+    "third_min": 4.0,
+    "tenth_min": 7.0,
+    "truth_board": true
+   },
+   {
+    "client": "mixed1",
+    "mkcol_cache": 8,
+    "mkcol_any": 8,
+    "per_hour": 35.8,
+    "first_min": 3.7,
+    "third_min": 3.7,
+    "tenth_min": null,
+    "truth_board": true
+   },
+   {
+    "client": "mixed2",
+    "mkcol_cache": 4,
+    "mkcol_any": 4,
+    "per_hour": 17.9,
+    "first_min": 3.9,
+    "third_min": 8.9,
+    "tenth_min": null,
+    "truth_board": true
+   }
+  ]
+ },
+ "D2_repeat_listing": {
+  "W_seconds": 600,
+  "rows": [
+   {
+    "scope": "all dirs",
+    "N": 3,
+    "flagged": 452,
+    "tp": 426,
+    "fp": 26,
+    "fn": 33,
+    "precision": 0.942,
+    "recall": 0.928
+   },
+   {
+    "scope": "all dirs",
+    "N": 5,
+    "flagged": 435,
+    "tp": 412,
+    "fp": 23,
+    "fn": 47,
+    "precision": 0.947,
+    "recall": 0.898
+   },
+   {
+    "scope": "all dirs",
+    "N": 10,
+    "flagged": 400,
+    "tp": 382,
+    "fp": 18,
+    "fn": 77,
+    "precision": 0.955,
+    "recall": 0.832
+   },
+   {
+    "scope": "all dirs",
+    "N": 20,
+    "flagged": 330,
+    "tp": 322,
+    "fp": 8,
+    "fn": 137,
+    "precision": 0.976,
+    "recall": 0.702
+   },
+   {
+    "scope": "cache repos only",
+    "N": 3,
+    "flagged": 426,
+    "tp": 426,
+    "fp": 0,
+    "fn": 33,
+    "precision": 1.0,
+    "recall": 0.928
+   },
+   {
+    "scope": "cache repos only",
+    "N": 5,
+    "flagged": 412,
+    "tp": 412,
+    "fp": 0,
+    "fn": 47,
+    "precision": 1.0,
+    "recall": 0.898
+   },
+   {
+    "scope": "cache repos only",
+    "N": 10,
+    "flagged": 382,
+    "tp": 382,
+    "fp": 0,
+    "fn": 77,
+    "precision": 1.0,
+    "recall": 0.832
+   },
+   {
+    "scope": "cache repos only",
+    "N": 20,
+    "flagged": 322,
+    "tp": 322,
+    "fp": 0,
+    "fn": 137,
+    "precision": 1.0,
+    "recall": 0.702
+   }
+  ],
+  "any_cache_listing": {
+   "flagged": 460,
+   "tp": 459,
+   "fp": 1,
+   "fn": 0,
+   "precision": 0.998,
+   "recall": 1.0
+  },
+  "by_client_phase_N5_cache": {
+   "benign2/A": {
+    "listings": 1,
+    "board": 0,
+    "flagged": 0
+   },
+   "board1/A": {
+    "listings": 216,
+    "board": 216,
+    "flagged": 203
+   },
+   "board2/A": {
+    "listings": 82,
+    "board": 82,
+    "flagged": 76
+   },
+   "board3/A": {
+    "listings": 98,
+    "board": 98,
+    "flagged": 84
+   },
+   "board4/A": {
+    "listings": 55,
+    "board": 55,
+    "flagged": 49
+   },
+   "mixed1/A": {
+    "listings": 6,
+    "board": 6,
+    "flagged": 0
+   },
+   "mixed2/A": {
+    "listings": 2,
+    "board": 2,
+    "flagged": 0
+   }
+  }
+ },
+ "D3_periodicity": {
+  "series": [
+   {
+    "user": "benign1",
+    "phase": "A",
+    "key": "/artifactory/pkg-local/pkgs/core/1.0.0/core-1.0.0.tar.gz",
+    "ev": "FETCH",
+    "n": 34,
+    "median_gap": 19.0,
+    "cv": 1.142,
+    "board_frac": 0.0,
+    "cache": false
+   },
+   {
+    "user": "benign1",
+    "phase": "A",
+    "key": "/artifactory/pkg-local/pkgs/core/1.1.0/core-1.1.0.tar.gz",
+    "ev": "FETCH",
+    "n": 9,
+    "median_gap": 28.5,
+    "cv": 0.962,
+    "board_frac": 0.0,
+    "cache": false
+   },
+   {
+    "user": "benign1",
+    "phase": "A",
+    "key": "/artifactory/pkg-local/pkgs/core/2.1.0/core-2.1.0.tar.gz",
+    "ev": "FETCH",
+    "n": 15,
+    "median_gap": 60.0,
+    "cv": 0.238,
+    "board_frac": 0.0,
+    "cache": false
+   },
+   {
+    "user": "benign2",
+    "phase": "A",
+    "key": "/artifactory/pkg-local/pkgs/core/1.0.0/core-1.0.0.tar.gz",
+    "ev": "FETCH",
+    "n": 11,
+    "median_gap": 74.3,
+    "cv": 0.495,
+    "board_frac": 0.0,
+    "cache": false
+   },
+   {
+    "user": "benign2",
+    "phase": "A",
+    "key": "pkg-local/pkgs",
+    "ev": "LIST",
+    "n": 27,
+    "median_gap": 30.0,
+    "cv": 0.0,
+    "board_frac": 0.0,
+    "cache": false
+   },
+   {
+    "user": "board1",
+    "phase": "A",
+    "key": "github-remote-cache",
+    "ev": "LIST",
+    "n": 158,
+    "median_gap": 5.0,
+    "cv": 0.102,
+    "board_frac": 1.0,
+    "cache": true
+   },
+   {
+    "user": "board1",
+    "phase": "A",
+    "key": "github-remote-cache/zzMAILBOX_board1",
+    "ev": "LIST",
+    "n": 53,
+    "median_gap": 15.8,
+    "cv": 0.297,
+    "board_frac": 1.0,
+    "cache": true
+   },
+   {
+    "user": "board2",
+    "phase": "A",
+    "key": "github-remote-cache",
+    "ev": "LIST",
+    "n": 80,
+    "median_gap": 10.1,
+    "cv": 0.05,
+    "board_frac": 1.0,
+    "cache": true
+   },
+   {
+    "user": "board3",
+    "phase": "A",
+    "key": "github-remote-cache",
+    "ev": "LIST",
+    "n": 39,
+    "median_gap": 21.8,
+    "cv": 0.295,
+    "board_frac": 1.0,
+    "cache": true
+   },
+   {
+    "user": "board3",
+    "phase": "A",
+    "key": "github-remote-cache/zzMAILBOX_board3",
+    "ev": "LIST",
+    "n": 53,
+    "median_gap": 15.9,
+    "cv": 0.279,
+    "board_frac": 1.0,
+    "cache": true
+   },
+   {
+    "user": "board4",
+    "phase": "A",
+    "key": "github-remote-cache",
+    "ev": "LIST",
+    "n": 53,
+    "median_gap": 15.6,
+    "cv": 0.175,
+    "board_frac": 1.0,
+    "cache": true
+   },
+   {
+    "user": "mixed1",
+    "phase": "A",
+    "key": "/artifactory/pkg-local/pkgs/core/1.0.0/core-1.0.0.tar.gz",
+    "ev": "FETCH",
+    "n": 10,
+    "median_gap": 38.0,
+    "cv": 1.323,
+    "board_frac": 0.0,
+    "cache": false
+   },
+   {
+    "user": "mixed2",
+    "phase": "A",
+    "key": "/artifactory/pkg-local/pkgs/core/1.0.0/core-1.0.0.tar.gz",
+    "ev": "FETCH",
+    "n": 9,
+    "median_gap": 105.3,
+    "cv": 0.677,
+    "board_frac": 0.0,
+    "cache": false
+   }
+  ],
+  "rows": [
+   {
+    "cv_below": 0.2,
+    "scope": "any series",
+    "flagged": 4,
+    "tp": 3,
+    "fp": 1,
+    "fn": 3,
+    "precision": 0.75,
+    "recall": 0.5
+   },
+   {
+    "cv_below": 0.2,
+    "scope": "cache listings only",
+    "flagged": 3,
+    "tp": 3,
+    "fp": 0,
+    "fn": 3,
+    "precision": 1.0,
+    "recall": 0.5
+   },
+   {
+    "cv_below": 0.35,
+    "scope": "any series",
+    "flagged": 8,
+    "tp": 6,
+    "fp": 2,
+    "fn": 0,
+    "precision": 0.75,
+    "recall": 1.0
+   },
+   {
+    "cv_below": 0.35,
+    "scope": "cache listings only",
+    "flagged": 6,
+    "tp": 6,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0
+   },
+   {
+    "cv_below": 0.5,
+    "scope": "any series",
+    "flagged": 9,
+    "tp": 6,
+    "fp": 3,
+    "fn": 0,
+    "precision": 0.667,
+    "recall": 1.0
+   },
+   {
+    "cv_below": 0.5,
+    "scope": "cache listings only",
+    "flagged": 6,
+    "tp": 6,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0
+   },
+   {
+    "cv_below": 0.7,
+    "scope": "any series",
+    "flagged": 10,
+    "tp": 6,
+    "fp": 4,
+    "fn": 0,
+    "precision": 0.6,
+    "recall": 1.0
+   },
+   {
+    "cv_below": 0.7,
+    "scope": "cache listings only",
+    "flagged": 6,
+    "tp": 6,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0
+   }
+  ]
+ },
+ "D4_truth": {
+  "directed_messages": 43,
+  "by_kind": {
+   "ask": 16,
+   "answer": 15,
+   "inbox": 11,
+   "file_chunk": 1
+  },
+  "distinct_pairs": 17
+ },
+ "D4a_exposure": {
+  "ask": {
+   "recv_first_list_within_10s": 0.688,
+   "recv_first_list_within_30s": 0.812,
+   "recv_first_list_within_60s": 0.812,
+   "recv_first_list_within_120s": 0.812,
+   "recv_first_list_within_300s": 0.938,
+   "receiver_median_gap_s": 6.6,
+   "n_messages": 16
+  },
+  "answer": {
+   "recv_first_list_within_10s": 0.467,
+   "recv_first_list_within_30s": 0.8,
+   "recv_first_list_within_60s": 0.933,
+   "recv_first_list_within_120s": 0.933,
+   "recv_first_list_within_300s": 0.933,
+   "receiver_median_gap_s": 7.6,
+   "n_messages": 15
+  },
+  "inbox": {
+   "recv_first_list_within_10s": 0.182,
+   "recv_first_list_within_30s": 0.455,
+   "recv_first_list_within_60s": 0.455,
+   "recv_first_list_within_120s": 0.455,
+   "recv_first_list_within_300s": 0.455,
+   "receiver_median_gap_s": 12.1,
+   "n_messages": 11
+  },
+  "by_phase_recv_within_60s": {
+   "ask/A": {
+    "n": 16,
+    "within60": 0.812,
+    "median_gap": 6.6
+   },
+   "ask/B": {
+    "n": 0,
+    "within60": null,
+    "median_gap": null
+   },
+   "answer/A": {
+    "n": 15,
+    "within60": 0.933,
+    "median_gap": 7.6
+   },
+   "answer/B": {
+    "n": 0,
+    "within60": null,
+    "median_gap": null
+   },
+   "inbox/A": {
+    "n": 11,
+    "within60": 0.455,
+    "median_gap": 12.1
+   },
+   "inbox/B": {
+    "n": 0,
+    "within60": null,
+    "median_gap": null
+   }
+  }
+ },
+ "D4b_L0_timing_only": {
+  "answers": 15,
+  "react_window_s": 30,
+  "sender_in_candidate_set": 1.0,
+  "median_candidates": 1.0,
+  "mean_candidates_when_nonempty": 2.27,
+  "top1_most_recent_poster": 0.6,
+  "top1_random_among_candidates": 0.671,
+  "baseline_random_peer": 0.2,
+  "by_phase": {
+   "A": {
+    "answers": 15,
+    "sender_in_candidates": 1.0,
+    "mean_candidates": 2.27
+   },
+   "B": {
+    "answers": 0,
+    "sender_in_candidates": null,
+    "mean_candidates": null
+   }
+  }
+ },
+ "D4b_L0_pair_scores": {
+  "pairs": 56,
+  "true_pairs": 17,
+  "auc_raw": 0.9,
+  "auc_z_vs_shift_null": 0.563,
+  "spearman_with_true_message_counts": 0.685,
+  "top10_precision": 0.8
+ },
+ "D4c_L1_path_equality": {
+  "private_dir": {
+   "edges": 19,
+   "correct": 19,
+   "precision": 1.0
+  },
+  "reply_probe": {
+   "edges": 13,
+   "correct": 13,
+   "precision": 1.0
+  },
+  "pairs_found": 13,
+  "message_recall_by_kind": {
+   "ask": 0.688,
+   "answer": 1.0,
+   "inbox": 0.909,
+   "file_chunk": 1.0
+  },
+  "reply_probe_median_probes_before_reply": 1.0
+ },
+ "D2c_empty_listings": {
+  "rows": 60,
+  "by_user": {
+   "board3": 52,
+   "board1": 4,
+   "board2": 2,
+   "board4": 2
+  },
+  "precision": 1.0,
+  "distinct_paths": 15
+ },
+ "D5_property_rows": {
+  "rows": 0,
+  "by_user": {},
+  "by_method": {},
+  "in_cache_repo": 0
+ },
+ "mkcol_status_by_user": {
+  "benign2:201": 1,
+  "benign2:405": 2,
+  "board1:201": 24,
+  "board1:409": 3,
+  "board2:201": 36,
+  "board2:409": 2,
+  "board3:201": 18,
+  "board4:201": 264,
+  "board4:409": 1,
+  "mixed1:201": 8,
+  "mixed2:201": 4
+ },
+ "listing_size_vs_posts": {
+  "GET": 0.784,
+  "PROPFIND": 0.91
+ }
+}

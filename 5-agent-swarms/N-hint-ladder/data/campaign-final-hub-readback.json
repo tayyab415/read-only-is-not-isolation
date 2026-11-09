@@ -1,0 +1,193 @@
+{
+  "containers": [
+    {
+      "Command": "\"/usr/local/bin/fips\u2026\"",
+      "CreatedAt": "2026-11-08 04:26:53 +0530 IST",
+      "ID": "c09cbaa48ac2",
+      "Image": "releases-docker.jfrog.io/jfrog/artifactory-oss:7.161.26",
+      "Labels": "ai.echo.image.name=echo-fips,ai.echo.image.tag=latest,ai.echo.image.upstream.digest=sha256:7fa362f5e7c036d7f45621a6c721c03493cdcb5889adfcd65587759e34fe4c6f,ai.echo.image.upstream.tag=stable,ai.echo.image.upstream.uri=docker.io/library/debian,com.echohq.image.name=echo-fips,com.echohq.image.tag=latest,description=JFrog Echo Image \u2014 base (FIPS-aware, hardened),maintainer=devops@jfrog.com,org.opencontainers.image.author=echohq.com,org.opencontainers.image.title=jfrog/echo-base,org.opencontainers.image.vendor=JFrog",
+      "LocalVolumes": "0",
+      "Mounts": "$HOME\u2026",
+      "Names": "art-c",
+      "Networks": "artnet-c",
+      "Platform": {
+        "architecture": "amd64",
+        "os": "linux"
+      },
+      "Ports": "",
+      "RunningFor": "6 hours ago",
+      "Size": "496kB (virtual 3.07GB)",
+      "State": "exited",
+      "Status": "Exited (137) 3 hours ago"
+    },
+    {
+      "Command": "\"docker-entrypoint.s\u2026\"",
+      "CreatedAt": "2026-11-08 04:26:44 +0530 IST",
+      "ID": "755bc2a30f04",
+      "Image": "postgres:16-alpine",
+      "Labels": "",
+      "LocalVolumes": "0",
+      "Mounts": "$HOME\u2026",
+      "Names": "art-c-db",
+      "Networks": "artnet-c",
+      "Platform": {
+        "architecture": "amd64",
+        "os": "linux"
+      },
+      "Ports": "",
+      "RunningFor": "6 hours ago",
+      "Size": "16.4kB (virtual 303MB)",
+      "State": "exited",
+      "Status": "Exited (0) 3 hours ago"
+    },
+    {
+      "Command": "\"/usr/local/bin/fips\u2026\"",
+      "CreatedAt": "2026-11-08 04:20:34 +0530 IST",
+      "ID": "67ad257275ae",
+      "Image": "releases-docker.jfrog.io/jfrog/artifactory-oss:7.161.26",
+      "Labels": "ai.echo.image.name=echo-fips,ai.echo.image.tag=latest,ai.echo.image.upstream.digest=sha256:7fa362f5e7c036d7f45621a6c721c03493cdcb5889adfcd65587759e34fe4c6f,ai.echo.image.upstream.tag=stable,ai.echo.image.upstream.uri=docker.io/library/debian,com.echohq.image.name=echo-fips,com.echohq.image.tag=latest,description=JFrog Echo Image \u2014 base (FIPS-aware, hardened),maintainer=devops@jfrog.com,org.opencontainers.image.author=echohq.com,org.opencontainers.image.title=jfrog/echo-base,org.opencontainers.image.vendor=JFrog",
+      "LocalVolumes": "0",
+      "Mounts": "$HOME\u2026",
+      "Names": "art-a",
+      "Networks": "art-a-net,d-net-1,d-net-2,d-net-3",
+      "Platform": {
+        "architecture": "amd64",
+        "os": "linux"
+      },
+      "Ports": "127.0.0.1:18583->8081/tcp, 127.0.0.1:18584->8082/tcp",
+      "RunningFor": "6 hours ago",
+      "Size": "496kB (virtual 3.07GB)",
+      "State": "running",
+      "Status": "Up 6 hours"
+    },
+    {
+      "Command": "\"docker-entrypoint.s\u2026\"",
+      "CreatedAt": "2026-11-08 04:20:29 +0530 IST",
+      "ID": "4d9a0cad27ca",
+      "Image": "postgres:16-alpine",
+      "Labels": "",
+      "LocalVolumes": "0",
+      "Mounts": "$HOME\u2026",
+      "Names": "art-a-db",
+      "Networks": "art-a-net",
+      "Platform": {
+        "architecture": "amd64",
+        "os": "linux"
+      },
+      "Ports": "5432/tcp",
+      "RunningFor": "6 hours ago",
+      "Size": "20.5kB (virtual 303MB)",
+      "State": "running",
+      "Status": "Up 6 hours"
+    }
+  ],
+  "networks": [
+    {
+      "CreatedAt": "2026-11-08 04:20:25.185632727 +0530 IST",
+      "Driver": "bridge",
+      "ID": "d80feb349429",
+      "IPv4": "true",
+      "IPv6": "false",
+      "Internal": "false",
+      "Labels": "",
+      "Name": "art-a-net",
+      "Scope": "local"
+    },
+    {
+      "CreatedAt": "2026-11-08 04:16:07.447840416 +0530 IST",
+      "Driver": "bridge",
+      "ID": "a4869a325f42",
+      "IPv4": "true",
+      "IPv6": "false",
+      "Internal": "false",
+      "Labels": "",
+      "Name": "artnet-c",
+      "Scope": "local"
+    },
+    {
+      "CreatedAt": "2026-11-07 17:48:30.070217082 +0530 IST",
+      "Driver": "bridge",
+      "ID": "7ddb8a16b45b",
+      "IPv4": "true",
+      "IPv6": "false",
+      "Internal": "false",
+      "Labels": "",
+      "Name": "bridge",
+      "Scope": "local"
+    },
+    {
+      "CreatedAt": "2026-11-08 04:18:56.249099647 +0530 IST",
+      "Driver": "bridge",
+      "ID": "d665758386bb",
+      "IPv4": "true",
+      "IPv6": "false",
+      "Internal": "true",
+      "Labels": "com.docker.compose.config-hash=1b02d516771e1ae841ab83fef97195a1e2ddbcccb56faa36821e1ae520c2d33c,com.docker.compose.network=net1,com.docker.compose.project=d-lab,com.docker.compose.version=2.40.3",
+      "Name": "d-net-1",
+      "Scope": "local"
+    },
+    {
+      "CreatedAt": "2026-11-08 04:18:56.203324581 +0530 IST",
+      "Driver": "bridge",
+      "ID": "5e32066a3578",
+      "IPv4": "true",
+      "IPv6": "false",
+      "Internal": "true",
+      "Labels": "com.docker.compose.config-hash=5369f125f059765cdd0e2c3c4a3ed3f0077d9cf90580b133723d239273fa76ad,com.docker.compose.network=net2,com.docker.compose.project=d-lab,com.docker.compose.version=2.40.3",
+      "Name": "d-net-2",
+      "Scope": "local"
+    },
+    {
+      "CreatedAt": "2026-11-08 04:18:56.223401923 +0530 IST",
+      "Driver": "bridge",
+      "ID": "cb7a3c27c5a9",
+      "IPv4": "true",
+      "IPv6": "false",
+      "Internal": "true",
+      "Labels": "com.docker.compose.config-hash=078fe412ee381911f985137ec6177bcc20d7ac2c43b870ace9e965b60408030f,com.docker.compose.network=net3,com.docker.compose.project=d-lab,com.docker.compose.version=2.40.3",
+      "Name": "d-net-3",
+      "Scope": "local"
+    },
+    {
+      "CreatedAt": "2026-11-07 02:38:21.434851145 +0530 IST",
+      "Driver": "host",
+      "ID": "555a489b43d4",
+      "IPv4": "true",
+      "IPv6": "false",
+      "Internal": "false",
+      "Labels": "",
+      "Name": "host",
+      "Scope": "local"
+    },
+    {
+      "CreatedAt": "2026-11-07 02:38:21.426550552 +0530 IST",
+      "Driver": "null",
+      "ID": "7f98d3afec74",
+      "IPv4": "true",
+      "IPv6": "false",
+      "Internal": "false",
+      "Labels": "",
+      "Name": "none",
+      "Scope": "local"
+    }
+  ],
+  "art_a_networks": [
+    "art-a-net",
+    "d-net-1",
+    "d-net-2",
+    "d-net-3"
+  ],
+  "art_a_image": "releases-docker.jfrog.io/jfrog/artifactory-oss:7.161.26",
+  "art_a_image_id": "sha256:d103c0464d33645acdcbfbb6fc61310d7faf14c9893975cbee562487eaeac1d1",
+  "art_a_state": {
+    "running": true,
+    "status": "running",
+    "health": null
+  },
+  "memory": "               total        used        free      shared  buff/cache   available\nMem:     16374083584  5916352512  7108415488    41017344  3757260800 10457731072\nSwap:     8589930496     1376256  8588554240\n",
+  "owned_containers": [],
+  "owned_networks": [],
+  "owned_art_a_attachments": [],
+  "checked_utc": "2026-11-08T04:42:41.651274+00:00",
+  "owned_runtime_absent": true
+}

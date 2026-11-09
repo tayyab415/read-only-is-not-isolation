@@ -1,0 +1,16 @@
+{
+  "utc": "2026-11-09T05:06:23.067975+00:00",
+  "command": [
+    "python3",
+    "analyze.py",
+    "holdout",
+    "data"
+  ],
+  "returncode": 0,
+  "stdout": "{\n  \"arms\": {\n    \"shared\": {\n      \"trials\": 300,\n      \"correct\": 220,\n      \"accuracy\": 0.7333333333333333,\n      \"p_one_sided\": 1.4331608660527506e-16,\n      \"median_S_active_ms\": 3.731935,\n      \"median_S_idle_ms\": 4.828187,\n      \"probe_latency_median_ms\": 4.558495,\n      \"probe_latency_p95_ms\": 8.116588,\n      \"failed_trials\": 0,\n      \"p_holm\": 5.732643464211003e-16\n    },\n    \"pergw\": {\n      \"trials\": 300,\n      \"correct\": 197,\n      \"accuracy\": 0.6566666666666666,\n      \"p_one_sided\": 3.109605119133965e-08,\n      \"median_S_active_ms\": 6.163498499999999,\n      \"median_S_idle_ms\": 6.4189355,\n      \"probe_latency_median_ms\": 6.061501,\n      \"probe_latency_p95_ms\": 8.541694,\n      \"failed_trials\": 0,\n      \"p_holm\": 6.21921023826793e-08\n    },\n    \"pad\": {\n      \"trials\": 300,\n      \"correct\": 216,\n      \"accuracy\": 0.72,\n      \"p_one_sided\": 7.335130515981675e-15,\n      \"median_S_active_ms\": 13.5563725,\n      \"median_S_idle_ms\": 13.6942155,\n      \"probe_latency_median_ms\": 13.623434,\n      \"probe_latency_p95_ms\": 14.138319,\n      \"failed_trials\": 0,\n      \"p_holm\": 2.2005391547945024e-14\n    },\n    \"aa\": {\n      \"trials\": 300,\n      \"correct\": 146,\n      \"accuracy\": 0.4866666666666667,\n      \"p_one_sided\": 0.6982971410639314,\n      \"median_S_active_ms\": 3.913266,\n      \"median_S_idle_ms\": 3.9347665000000003,\n      \"probe_latency_median_ms\": 3.937477,\n      \"probe_latency_p95_ms\": 4.976668,\n      \"failed_trials\": 0,\n      \"p_holm\": 0.6982971410639314\n    }\n  },\n  \"comparisons\": {\n    \"shared_vs_pergw\": {\n      \"fisher_p_two_sided\": 0.050929839365423425,\n      \"accuracy_difference\": 0.07666666666666666\n    },\n    \"shared_vs_pad\": {\n      \"fisher_p_two_sided\": 0.7835186029179049,\n      \"accuracy_difference\": 0.013333333333333308\n    },\n    \"pad_latency_cost_median_ms\": 9.064938999999999\n  },\n  \"freeze_sha256\": \"93397b2e74a47d13de4dc28d3b5c3bed76dd0879085edffab9c2252b9d491acc\",\n  \"audit_sha256\": \"f9308b485e37cae5130919cbb8f33871ecb1309e240c5f0c3dbd6c0ed3d4b6a5\",\n  \"scope\": \"Fixed-decoder accuracy for one sender protocol; not a channel-capacity estimate.\"\n}\n",
+  "stderr": "",
+  "results_sha256": "b38af191c9260a5111dc4fb648a2aad31156abf832d5bf5784c0f9573f2bb7e0",
+  "analysis_source_sha256": "7b06d68573a61f7851a37e84b3548cb0d4d2106d859cd5d69e660834e98ae266",
+  "scope": "One actual unchanged original complete held analysis",
+  "native_or_provider_requests": 0
+}

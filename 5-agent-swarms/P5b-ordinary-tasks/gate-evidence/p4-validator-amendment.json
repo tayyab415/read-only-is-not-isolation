@@ -1,0 +1,23 @@
+{
+  "utc": "2026-11-09T03:21:51.833823+00:00",
+  "timing": "post-paid, before future ordinary native or model data",
+  "original_source_freeze_sha256": "e7a83ecdc2d725ccc6fbf9663f5aa7bc53eb1dd82da54039f4554902763aabbc",
+  "original_native_failure_count": 5,
+  "changes": [
+    "For immutable routes use the native response interval at body/header delivery for the existing client containment check.",
+    "Add exact outer-handler enclosure of the native response interval."
+  ],
+  "client_tolerance_ns_unchanged": 2000000,
+  "scientific_inputs_prompts_assignments_outcomes_unchanged": true,
+  "original_failure_preserved": "original-v6",
+  "regression_checks": 10,
+  "checks_returncode": 0,
+  "checks_stdout": "",
+  "checks_stderr": "..........\n----------------------------------------------------------------------\nRan 10 tests in 0.031s\n\nOK\n",
+  "sha256": {
+    "audit_v2.py": "b9e028f7f5d27ebbdb64d8239e33366e976db2596fb3963d134419d4f0915743",
+    "test_interval.py": "9279240bce79d6f995298fa14dc49286e028ef70359da6f349b5f0ad0f3250dd",
+    "replay.py": "d03646ddc456ef9ed968eab99c1e7a42e4eec36f99259e2ba325dca247f0f60d",
+    "ORIGINAL-INTERVAL-DIAGNOSTIC.json": "7af4e76b7bfd556e607423d4fd1d194b56d185084ebbdd0cec3a10bd64bed487"
+  }
+}

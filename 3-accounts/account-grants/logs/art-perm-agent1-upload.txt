@@ -1,0 +1,65 @@
+=== d-agent1 permission behaviour (2026-11-07T23:50:24Z)
+
+$ curl -s -m 60 -n -o /tmp/hw.tgz -w 'read-through fetch via github-remote: HTTP %{http_code} size=%{size_download} time=%{time_total}s\n' http://art-a:8082/artifactory/github-remote/octocat/Hello-World/archive/refs/heads/master.tar.gz; file -b /tmp/hw.tgz | head -c 80; echo; tar tzf /tmp/hw.tgz | head -3
+read-through fetch via github-remote: HTTP 200 size=258 time=0.831816s
+bash: line 1: file: command not found
+
+Hello-World-master/
+Hello-World-master/README
+
+$ curl -s -m 20 -n -w ' HTTP %{http_code}\n' http://art-a:8082/artifactory/api/storage/github-remote-cache/octocat/Hello-World/archive/refs/heads
+{
+  "repo" : "github-remote-cache",
+  "path" : "/octocat/Hello-World/archive/refs/heads",
+  "created" : "2026-11-07T23:50:25.366Z",
+  "createdBy" : "harness-agent1",
+  "lastModified" : "2026-11-07T23:50:25.366Z",
+  "modifiedBy" : "harness-agent1",
+  "lastUpdated" : "2026-11-07T23:50:25.366Z",
+  "children" : [ {
+    "uri" : "/master.tar.gz",
+    "folder" : false
+  } ],
+  "uri" : "http://art-a:8082/artifactory/api/storage/github-remote-cache/octocat/Hello-World/archive/refs/heads"
+} HTTP 200
+
+$ curl -s -m 20 -n -o /dev/null -w 'second fetch (cache hit): HTTP %{http_code} time=%{time_total}s\n' http://art-a:8082/artifactory/github-remote/octocat/Hello-World/archive/refs/heads/master.tar.gz
+second fetch (cache hit): HTTP 200 time=0.004780s
+
+=== writes (footprint on A's cache kept to one folder, prefix zz_D_harness_probe)
+
+$ curl -s -m 10 -n -X MKCOL -w ' MKCOL github-remote-cache/zz_D_harness_probe/: HTTP %{http_code}\n' http://art-a:8082/artifactory/github-remote-cache/zz_D_harness_probe/
+ MKCOL github-remote-cache/zz_D_harness_probe/: HTTP 201
+
+$ curl -s -m 10 -n -X MKCOL -w ' MKCOL github-remote-cache/zz_D_harness_probe/child/ (nested): HTTP %{http_code}\n' http://art-a:8082/artifactory/github-remote-cache/zz_D_harness_probe/child/
+ MKCOL github-remote-cache/zz_D_harness_probe/child/ (nested): HTTP 201
+
+$ curl -s -m 10 -n -w ' GET folder info: HTTP %{http_code}\n' http://art-a:8082/artifactory/api/storage/github-remote-cache/zz_D_harness_probe
+{
+  "repo" : "github-remote-cache",
+  "path" : "/zz_D_harness_probe",
+  "created" : "2026-11-07T23:50:25.578Z",
+  "lastModified" : "2026-11-07T23:50:25.578Z",
+  "lastUpdated" : "2026-11-07T23:50:25.578Z",
+  "children" : [ {
+    "uri" : "/child",
+    "folder" : true
+  } ],
+  "uri" : "http://art-a:8082/artifactory/api/storage/github-remote-cache/zz_D_harness_probe"
+} GET folder info: HTTP 200
+
+$ curl -s -m 10 -n -w ' GET example-repo-local (A local repo, no permission): HTTP %{http_code}\n' http://art-a:8082/artifactory/example-repo-local/
+{
+  "errors" : [ {
+    "status" : 401,
+    "message" : "{\"error\":\"Browse request for repo:path example-repo-local: is forbidden for user 'anonymous'.\"}"
+  } ]
+} GET example-repo-local (A local repo, no permission): HTTP 401
+
+$ curl -s -m 10 -n -X DELETE -w ' DELETE cached file (no Delete permission): HTTP %{http_code}\n' http://art-a:8082/artifactory/github-remote-cache/octocat/Hello-World/archive/refs/heads/master.tar.gz
+{
+  "errors" : [ {
+    "status" : 403,
+    "message" : "Artifact deletion error: Not enough permissions to delete/overwrite all artifacts under 'github-remote-cache/octocat/Hello-World/archive/refs/heads/master.tar.gz' (user: 'harness-agent1' needs DELETE permission)."
+  } ]
+} DELETE cached file (no Delete permission): HTTP 403

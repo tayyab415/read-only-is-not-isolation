@@ -1,0 +1,56 @@
+{
+ "PUT with matrix properties, any outcome": {
+  "flagged": 23,
+  "tp": 17,
+  "fp": 6,
+  "fn": 0,
+  "precision": 0.739,
+  "recall": 1.0
+ },
+ "PUT with matrix properties, 201 only": {
+  "flagged": 23,
+  "tp": 17,
+  "fp": 6,
+  "fn": 0,
+  "precision": 0.739,
+  "recall": 1.0
+ },
+ "PUT with matrix properties into a *-cache repo": {
+  "flagged": 0,
+  "tp": 0,
+  "fp": 0,
+  "fn": 17,
+  "precision": null,
+  "recall": 0.0
+ },
+ "property_search_requests": {
+  "benign1": 2,
+  "board1": 32
+ },
+ "property_search_series": {
+  "benign1": {
+   "n": 2,
+   "median_gap_s": 219.4,
+   "cv": null,
+   "max_in_10min": 2,
+   "board": false
+  },
+  "board1": {
+   "n": 32,
+   "median_gap_s": 15.0,
+   "cv": 0.0,
+   "max_in_10min": 32,
+   "board": true
+  }
+ },
+ "write_to_first_board_search_gap_s": {
+  "n": 17,
+  "median": 4.5,
+  "max": 14.8
+ },
+ "listing_requests_by_board_clients": 0,
+ "status_by_method": {
+  "GET:200": 34,
+  "PUT:201": 23
+ }
+}

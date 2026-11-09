@@ -1,0 +1,560 @@
+[
+  {
+    "event_id": "n/c1-16/alice/1",
+    "principal": "n-c1-16-alice",
+    "method": "GET",
+    "path": "/artifactory/api/storage/n-c1-16-pkg",
+    "status": 403,
+    "start_utc_ns": 1794111655967042148,
+    "end_utc_ns": 1794111655967211022
+  },
+  {
+    "event_id": "n/c1-16/bob/3",
+    "principal": "n-c1-16-bob",
+    "method": "GET",
+    "path": "/artifactory/n-c1-16-pkg/pkg-00.bin",
+    "status": 200,
+    "start_utc_ns": 1794111658414912246,
+    "end_utc_ns": 1794111658426368134
+  },
+  {
+    "event_id": "n/c1-16/alice/3",
+    "principal": "n-c1-16-alice",
+    "method": "HEAD",
+    "path": "/artifactory/n-c1-16-pkg/pkg-00.bin",
+    "status": 200,
+    "start_utc_ns": 1794111658791712868,
+    "end_utc_ns": 1794111658801833208
+  },
+  {
+    "event_id": "n/c1-16/bob/4",
+    "principal": "n-c1-16-bob",
+    "method": "GET",
+    "path": "/artifactory/api/storage/n-c1-16-pkg",
+    "status": 403,
+    "start_utc_ns": 1794111660088548482,
+    "end_utc_ns": 1794111660088678444
+  },
+  {
+    "event_id": "n/c1-16/alice/4",
+    "principal": "n-c1-16-alice",
+    "method": "GET",
+    "path": "/artifactory/api/storage/n-c1-16-pkg/",
+    "status": 403,
+    "start_utc_ns": 1794111661082668065,
+    "end_utc_ns": 1794111661082837799
+  },
+  {
+    "event_id": "n/c1-16/alice/5",
+    "principal": "n-c1-16-alice",
+    "method": "GET",
+    "path": "/artifactory/api/storage/n-c1-16-pkg/pkg-00.bin",
+    "status": 403,
+    "start_utc_ns": 1794111663871880949,
+    "end_utc_ns": 1794111663872008882
+  },
+  {
+    "event_id": "n/c1-16/bob/5",
+    "principal": "n-c1-16-bob",
+    "method": "GET",
+    "path": "/artifactory/api/storage/n-c1-16-pkg/pkg-00.bin",
+    "status": 403,
+    "start_utc_ns": 1794111664013371160,
+    "end_utc_ns": 1794111664013497363
+  },
+  {
+    "event_id": "n/c1-16/alice/6",
+    "principal": "n-c1-16-alice",
+    "method": "GET",
+    "path": "/artifactory/n-c1-16-pkg/pkg-03.bin",
+    "status": 200,
+    "start_utc_ns": 1794111666374101368,
+    "end_utc_ns": 1794111666377451917
+  },
+  {
+    "event_id": "n/c1-16/bob/6",
+    "principal": "n-c1-16-bob",
+    "method": "GET",
+    "path": "/artifactory/n-c1-16-pkg/pkg-09.bin",
+    "status": 200,
+    "start_utc_ns": 1794111667319516569,
+    "end_utc_ns": 1794111667322756766
+  },
+  {
+    "event_id": "n/c1-16/alice/7",
+    "principal": "n-c1-16-alice",
+    "method": "HEAD",
+    "path": "/artifactory/n-c1-16-pkg/pkg-03.bin",
+    "status": 200,
+    "start_utc_ns": 1794111670586242410,
+    "end_utc_ns": 1794111670589392204
+  },
+  {
+    "event_id": "n/c1-16/bob/7",
+    "principal": "n-c1-16-bob",
+    "method": "HEAD",
+    "path": "/artifactory/n-c1-16-pkg/pkg-09.bin",
+    "status": 200,
+    "start_utc_ns": 1794111670836003605,
+    "end_utc_ns": 1794111670838977724
+  },
+  {
+    "event_id": "n/c1-16/alice/8",
+    "principal": "n-c1-16-alice",
+    "method": "GET",
+    "path": "/artifactory/api/storage/n-c1-16-pkg?list=true",
+    "status": 403,
+    "start_utc_ns": 1794111674953609790,
+    "end_utc_ns": 1794111674953789624
+  },
+  {
+    "event_id": "n/c1-16/alice/9",
+    "principal": "n-c1-16-alice",
+    "method": "GET",
+    "path": "/artifactory/n-c1-16-pkg/pkg-00.bin",
+    "status": 200,
+    "start_utc_ns": 1794111680580617330,
+    "end_utc_ns": 1794111680583883668
+  },
+  {
+    "event_id": "n/c1-16/alice/10",
+    "principal": "n-c1-16-alice",
+    "method": "GET",
+    "path": "/artifactory/n-c1-16-pkg/pkg-03.bin?value=3",
+    "status": 200,
+    "start_utc_ns": 1794111687162635411,
+    "end_utc_ns": 1794111687165905431
+  },
+  {
+    "event_id": "n/c1-16/bob/9",
+    "principal": "n-c1-16-bob",
+    "method": "GET",
+    "path": "/artifactory/n-c1-16-pkg/pkg-00.bin",
+    "status": 200,
+    "start_utc_ns": 1794111690031778994,
+    "end_utc_ns": 1794111690035499543
+  },
+  {
+    "event_id": "n/c1-16/alice/11",
+    "principal": "n-c1-16-alice",
+    "method": "GET",
+    "path": "/artifactory/n-c1-16-pkg/",
+    "status": 200,
+    "start_utc_ns": 1794111691782072857,
+    "end_utc_ns": 1794111691785969141
+  },
+  {
+    "event_id": "n/c1-16/bob/10",
+    "principal": "n-c1-16-bob",
+    "method": "GET",
+    "path": "/artifactory/n-c1-16-pkg/pkg-09.bin",
+    "status": 200,
+    "start_utc_ns": 1794111694529515524,
+    "end_utc_ns": 1794111694533209433
+  },
+  {
+    "event_id": "n/c1-16/bob/11",
+    "principal": "n-c1-16-bob",
+    "method": "GET",
+    "path": "/artifactory/n-c1-16-pkg/pkg-09.bin?metadata",
+    "status": 200,
+    "start_utc_ns": 1794111699291594224,
+    "end_utc_ns": 1794111699295150357
+  },
+  {
+    "event_id": "n/c1-16/bob/12",
+    "principal": "n-c1-16-bob",
+    "method": "GET",
+    "path": "/artifactory/n-c1-16-pkg/",
+    "status": 200,
+    "start_utc_ns": 1794111702821061065,
+    "end_utc_ns": 1794111702825248272
+  },
+  {
+    "event_id": "n/c1-16/bob/13",
+    "principal": "n-c1-16-bob",
+    "method": "HEAD",
+    "path": "/artifactory/n-c1-16-pkg/pkg-00.bin",
+    "status": 200,
+    "start_utc_ns": 1794111709725258399,
+    "end_utc_ns": 1794111709728023606
+  },
+  {
+    "event_id": "n/c1-16/alice/13",
+    "principal": "n-c1-16-alice",
+    "method": "GET",
+    "path": "/artifactory/n-c1-16-pkg/pkg-01.bin",
+    "status": 200,
+    "start_utc_ns": 1794111710669013527,
+    "end_utc_ns": 1794111710672134672
+  },
+  {
+    "event_id": "n/c1-16/bob/14",
+    "principal": "n-c1-16-bob",
+    "method": "GET",
+    "path": "/artifactory/n-c1-16-pkg/pkg-09.bin",
+    "status": 200,
+    "start_utc_ns": 1794111717136286597,
+    "end_utc_ns": 1794111717139333740
+  },
+  {
+    "event_id": "n/c1-16/bob/15",
+    "principal": "n-c1-16-bob",
+    "method": "GET",
+    "path": "/artifactory/n-c1-16-pkg/",
+    "status": 200,
+    "start_utc_ns": 1794111721621303821,
+    "end_utc_ns": 1794111721625459087
+  },
+  {
+    "event_id": "n/c1-16/alice/15",
+    "principal": "n-c1-16-alice",
+    "method": "HEAD",
+    "path": "/artifactory/n-c1-16-pkg/pkg-02.bin",
+    "status": 200,
+    "start_utc_ns": 1794111725192356974,
+    "end_utc_ns": 1794111725196028130
+  },
+  {
+    "event_id": "n/c1-16/alice/16",
+    "principal": "n-c1-16-alice",
+    "method": "GET",
+    "path": "/artifactory/n-c1-16-pkg/pkg-03.bin?stats",
+    "status": 200,
+    "start_utc_ns": 1794111729581565573,
+    "end_utc_ns": 1794111729585146007
+  },
+  {
+    "event_id": "n/c1-16/alice/17",
+    "principal": "n-c1-16-alice",
+    "method": "GET",
+    "path": "/artifactory/n-c1-16-pkg/",
+    "status": 200,
+    "start_utc_ns": 1794111732454618415,
+    "end_utc_ns": 1794111732458702770
+  },
+  {
+    "event_id": "n/c1-16/bob/17",
+    "principal": "n-c1-16-bob",
+    "method": "GET",
+    "path": "/artifactory/n-c1-16-pkg/pkg-09.bin?list&deep=1",
+    "status": 200,
+    "start_utc_ns": 1794111733024229341,
+    "end_utc_ns": 1794111733028544090
+  },
+  {
+    "event_id": "n/c1-16/alice/18",
+    "principal": "n-c1-16-alice",
+    "method": "GET",
+    "path": "/artifactory/n-c1-16-pkg/pkg-04.bin?downloadStats",
+    "status": 200,
+    "start_utc_ns": 1794111737082389413,
+    "end_utc_ns": 1794111737085628900
+  },
+  {
+    "event_id": "n/c1-16/bob/18",
+    "principal": "n-c1-16-bob",
+    "method": "GET",
+    "path": "/artifactory/api/storage/n-c1-16-pkg/pkg-09.bin?stats",
+    "status": 403,
+    "start_utc_ns": 1794111739534043665,
+    "end_utc_ns": 1794111739534187018
+  },
+  {
+    "event_id": "n/c1-16/alice/19",
+    "principal": "n-c1-16-alice",
+    "method": "GET",
+    "path": "/artifactory/api/storage/n-c1-16-pkg/pkg-03.bin?properties",
+    "status": 403,
+    "start_utc_ns": 1794111743190460442,
+    "end_utc_ns": 1794111743190598125
+  },
+  {
+    "event_id": "n/c1-16/bob/19",
+    "principal": "n-c1-16-bob",
+    "method": "GET",
+    "path": "/artifactory/n-c1-16-pkg/pkg-09.bin?bob=9",
+    "status": 200,
+    "start_utc_ns": 1794111745808214975,
+    "end_utc_ns": 1794111745811617775
+  },
+  {
+    "event_id": "n/c1-16/alice/20",
+    "principal": "n-c1-16-alice",
+    "method": "GET",
+    "path": "/artifactory/api/storage/n-c1-16-pkg/pkg-00.bin?stats",
+    "status": 403,
+    "start_utc_ns": 1794111746247175733,
+    "end_utc_ns": 1794111746247322496
+  },
+  {
+    "event_id": "n/c1-16/alice/21",
+    "principal": "n-c1-16-alice",
+    "method": "GET",
+    "path": "/artifactory/n-c1-16-pkg/pkg-03.bin",
+    "status": 200,
+    "start_utc_ns": 1794111751683124685,
+    "end_utc_ns": 1794111751686341771
+  },
+  {
+    "event_id": "n/c1-16/alice/23",
+    "principal": "n-c1-16-alice",
+    "method": "GET",
+    "path": "/artifactory/api%2Fstorage/n-c1-16-pkg",
+    "status": 403,
+    "start_utc_ns": 1794111765661671269,
+    "end_utc_ns": 1794111765662015386
+  },
+  {
+    "event_id": "n/c1-16/alice/24",
+    "principal": "n-c1-16-alice",
+    "method": "GET",
+    "path": "/artifactory/n-c1-16-pkg/pkg-05.bin",
+    "status": 200,
+    "start_utc_ns": 1794111772890953567,
+    "end_utc_ns": 1794111772894206922
+  },
+  {
+    "event_id": "n/c1-16/alice/25",
+    "principal": "n-c1-16-alice",
+    "method": "HEAD",
+    "path": "/artifactory/n-c1-16-pkg/pkg-03.bin",
+    "status": 200,
+    "start_utc_ns": 1794111781391341640,
+    "end_utc_ns": 1794111781397386013
+  },
+  {
+    "event_id": "n/c1-16/bob/21",
+    "principal": "n-c1-16-bob",
+    "method": "GET",
+    "path": "/artifactory/n-c1-16-pkg/pkg-00.bin?properties",
+    "status": 200,
+    "start_utc_ns": 1794111787821656369,
+    "end_utc_ns": 1794111787825877670
+  },
+  {
+    "event_id": "n/c1-16/bob/22",
+    "principal": "n-c1-16-bob",
+    "method": "GET",
+    "path": "/artifactory/n-c1-16-pkg/pkg-09.bin?properties",
+    "status": 200,
+    "start_utc_ns": 1794111794821292099,
+    "end_utc_ns": 1794111794825755691
+  },
+  {
+    "event_id": "n/c1-16/alice/27",
+    "principal": "n-c1-16-alice",
+    "method": "GET",
+    "path": "/artifactory/n-c1-16-pkg/pkg-06.bin",
+    "status": 200,
+    "start_utc_ns": 1794111795182064554,
+    "end_utc_ns": 1794111795185276310
+  },
+  {
+    "event_id": "n/c1-16/bob/23",
+    "principal": "n-c1-16-bob",
+    "method": "GET",
+    "path": "/artifactory/n-c1-16-pkg/pkg-01.bin?properties",
+    "status": 200,
+    "start_utc_ns": 1794111799921708056,
+    "end_utc_ns": 1794111799925666488
+  },
+  {
+    "event_id": "n/c1-16/bob/24",
+    "principal": "n-c1-16-bob",
+    "method": "GET",
+    "path": "/artifactory/n-c1-16-pkg/pkg-02.bin?properties",
+    "status": 200,
+    "start_utc_ns": 1794111804822556206,
+    "end_utc_ns": 1794111804826622250
+  },
+  {
+    "event_id": "n/c1-16/bob/25",
+    "principal": "n-c1-16-bob",
+    "method": "GET",
+    "path": "/artifactory/n-c1-16-pkg/pkg-09.bin?stats",
+    "status": 200,
+    "start_utc_ns": 1794111808134201652,
+    "end_utc_ns": 1794111808137626272
+  },
+  {
+    "event_id": "n/c1-16/bob/27",
+    "principal": "n-c1-16-bob",
+    "method": "GET",
+    "path": "/artifactory/n-c1-16-pkg/pkg-03.bin?properties",
+    "status": 200,
+    "start_utc_ns": 1794111820826838554,
+    "end_utc_ns": 1794111820831835137
+  },
+  {
+    "event_id": "n/c1-16/alice/30",
+    "principal": "n-c1-16-alice",
+    "method": "GET",
+    "path": "/artifactory/n-c1-16-pkg/pkg-03.bin?properties",
+    "status": 200,
+    "start_utc_ns": 1794111845881756293,
+    "end_utc_ns": 1794111845888000882
+  },
+  {
+    "event_id": "n/c1-16/alice/31",
+    "principal": "n-c1-16-alice",
+    "method": "GET",
+    "path": "/artifactory/n-c1-16-pkg/pkg-00.bin?properties",
+    "status": 200,
+    "start_utc_ns": 1794111849454756380,
+    "end_utc_ns": 1794111849458704041
+  },
+  {
+    "event_id": "n/c1-16/alice/32",
+    "principal": "n-c1-16-alice",
+    "method": "GET",
+    "path": "/artifactory/n-c1-16-pkg/pkg-03.bin?stats",
+    "status": 200,
+    "start_utc_ns": 1794111851690393560,
+    "end_utc_ns": 1794111851693552236
+  },
+  {
+    "event_id": "n/c1-16/alice/33",
+    "principal": "n-c1-16-alice",
+    "method": "GET",
+    "path": "/artifactory/n-c1-16-pkg/pkg-03.bin?properties",
+    "status": 200,
+    "start_utc_ns": 1794111859251836931,
+    "end_utc_ns": 1794111859256059578
+  },
+  {
+    "event_id": "n/c1-16/alice/34",
+    "principal": "n-c1-16-alice",
+    "method": "GET",
+    "path": "/artifactory/n-c1-16-pkg/pkg-01.bin?properties",
+    "status": 200,
+    "start_utc_ns": 1794111862248619426,
+    "end_utc_ns": 1794111862252662849
+  },
+  {
+    "event_id": "n/c1-16/alice/35",
+    "principal": "n-c1-16-alice",
+    "method": "GET",
+    "path": "/artifactory/n-c1-16-pkg/pkg-15.bin?properties",
+    "status": 200,
+    "start_utc_ns": 1794111869389396331,
+    "end_utc_ns": 1794111869393580867
+  },
+  {
+    "event_id": "n/c1-16/alice/36",
+    "principal": "n-c1-16-alice",
+    "method": "GET",
+    "path": "/artifactory/n-c1-16-pkg/pkg-07.bin?properties",
+    "status": 200,
+    "start_utc_ns": 1794111876863688015,
+    "end_utc_ns": 1794111876867561085
+  },
+  {
+    "event_id": "n/c1-16/alice/37",
+    "principal": "n-c1-16-alice",
+    "method": "GET",
+    "path": "/artifactory/n-c1-16-pkg/pkg-08.bin?properties",
+    "status": 200,
+    "start_utc_ns": 1794111884682088537,
+    "end_utc_ns": 1794111884686846085
+  },
+  {
+    "event_id": "n/c1-16/alice/38",
+    "principal": "n-c1-16-alice",
+    "method": "GET",
+    "path": "/artifactory/n-c1-16-pkg/pkg-09.bin?properties",
+    "status": 200,
+    "start_utc_ns": 1794111890370294053,
+    "end_utc_ns": 1794111890374588581
+  },
+  {
+    "event_id": "n/c1-16/alice/41",
+    "principal": "n-c1-16-alice",
+    "method": "GET",
+    "path": "/artifactory/n-c1-16-pkg/pkg-10.bin?properties",
+    "status": 200,
+    "start_utc_ns": 1794111911985299144,
+    "end_utc_ns": 1794111911990105223
+  },
+  {
+    "event_id": "n/c1-16/alice/45",
+    "principal": "n-c1-16-alice",
+    "method": "GET",
+    "path": "/artifactory/n-c1-16-pkg/pkg-03.bin",
+    "status": 200,
+    "start_utc_ns": 1794111970986518174,
+    "end_utc_ns": 1794111970997208225
+  },
+  {
+    "event_id": "n/c1-16/alice/46",
+    "principal": "n-c1-16-alice",
+    "method": "GET",
+    "path": "/artifactory/n-c1-16-pkg/pkg-03.bin?properties;stats",
+    "status": 200,
+    "start_utc_ns": 1794111976156340942,
+    "end_utc_ns": 1794111976161549709
+  },
+  {
+    "event_id": "n/c1-16/alice/47",
+    "principal": "n-c1-16-alice",
+    "method": "GET",
+    "path": "/artifactory/n-c1-16-pkg/pkg-02.bin?properties",
+    "status": 200,
+    "start_utc_ns": 1794111980473304980,
+    "end_utc_ns": 1794111980478653071
+  },
+  {
+    "event_id": "n/c1-16/alice/48",
+    "principal": "n-c1-16-alice",
+    "method": "GET",
+    "path": "/artifactory/n-c1-16-pkg/pkg-14.bin?properties",
+    "status": 200,
+    "start_utc_ns": 1794111988289096119,
+    "end_utc_ns": 1794111988295442901
+  },
+  {
+    "event_id": "n/c1-16/alice/49",
+    "principal": "n-c1-16-alice",
+    "method": "GET",
+    "path": "/artifactory/n-c1-16-pkg/pkg-11.bin?properties",
+    "status": 200,
+    "start_utc_ns": 1794111992994970984,
+    "end_utc_ns": 1794111992999930687
+  },
+  {
+    "event_id": "n/c1-16/alice/50",
+    "principal": "n-c1-16-alice",
+    "method": "GET",
+    "path": "/artifactory/n-c1-16-pkg/pkg-12.bin?properties",
+    "status": 200,
+    "start_utc_ns": 1794111997580107203,
+    "end_utc_ns": 1794111997584081346
+  },
+  {
+    "event_id": "n/c1-16/alice/52",
+    "principal": "n-c1-16-alice",
+    "method": "GET",
+    "path": "/artifactory/n-c1-16-pkg/pkg-13.bin?properties",
+    "status": 200,
+    "start_utc_ns": 1794112013395095740,
+    "end_utc_ns": 1794112013399307628
+  },
+  {
+    "event_id": "n/c1-16/alice/55",
+    "principal": "n-c1-16-alice",
+    "method": "GET",
+    "path": "/artifactory/n-c1-16-pkg/pkg-03.bin?alice=3",
+    "status": 200,
+    "start_utc_ns": 1794112036267655687,
+    "end_utc_ns": 1794112036271179900
+  },
+  {
+    "event_id": "n/c1-16/alice/57",
+    "principal": "n-c1-16-alice",
+    "method": "GET",
+    "path": "/artifactory/n-c1-16-pkg/pkg-03.bin",
+    "status": 200,
+    "start_utc_ns": 1794112079892669964,
+    "end_utc_ns": 1794112079896270849
+  }
+]

@@ -1,0 +1,7 @@
+{
+  "returncode": 1,
+  "stdout": "",
+  "stderr": "Traceback (most recent call last):\n  File \"$LAB_ROOT/evidence/P2b-attribution/audit.py\", line 197, in <module>\n    main()\n  File \"$LAB_ROOT/evidence/P2b-attribution/audit.py\", line 187, in main\n    runs = [audit_arm(data / arm, arm, split) for arm in p2b.ARMS]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"$LAB_ROOT/evidence/P2b-attribution/audit.py\", line 187, in <listcomp>\n    runs = [audit_arm(data / arm, arm, split) for arm in p2b.ARMS]\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"$LAB_ROOT/evidence/P2b-attribution/audit.py\", line 133, in audit_arm\n    send = plan.sender_jobs(public, public[\"run_id\"], {**trial, \"label\": 1}, \"separate\") if active else []\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"$LAB_ROOT/evidence/P2-residual/plan.py\", line 76, in sender_jobs\n    \"cond_get\": (\"GET\", cached, {\"If-None-Match\": state[\"fixture_etag\"]}),\n                                                  ~~~~~^^^^^^^^^^^^^^^^\nKeyError: 'fixture_etag'\n",
+  "native_calls": 0,
+  "data_mutations": 0
+}

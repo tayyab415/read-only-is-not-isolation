@@ -1,0 +1,41 @@
+{
+ "note": "post-hoc: median wall time between consecutive holdout trials within one block (receiver completion to receiver completion); includes the scripted 50 ms gap and 100 ms inter-trial sleep",
+ "arms": {
+  "client_salt": {
+   "median_s_per_trial_within_block": 0.2337667525,
+   "n_gaps": 380
+  },
+  "contention_light": {
+   "median_s_per_trial_within_block": 0.212185501,
+   "n_gaps": 380
+  },
+  "contention": {
+   "median_s_per_trial_within_block": 0.168247408,
+   "n_gaps": 380
+  },
+  "shared_busy": {
+   "median_s_per_trial_within_block": 0.4540036905,
+   "n_gaps": 380
+  },
+  "shared_short": {
+   "median_s_per_trial_within_block": 0.193970953,
+   "n_gaps": 380
+  },
+  "shared": {
+   "median_s_per_trial_within_block": 0.25941972550000003,
+   "n_gaps": 380
+  },
+  "salted_busy": {
+   "median_s_per_trial_within_block": 0.491912645,
+   "n_gaps": 380
+  },
+  "salted": {
+   "median_s_per_trial_within_block": 0.262540749,
+   "n_gaps": 380
+  },
+  "nocache": {
+   "median_s_per_trial_within_block": 0.261594498,
+   "n_gaps": 380
+  }
+ }
+}

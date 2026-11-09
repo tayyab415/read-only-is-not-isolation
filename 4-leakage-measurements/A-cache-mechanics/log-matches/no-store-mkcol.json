@@ -1,0 +1,124 @@
+{
+  "request_id": "no-store-mkcol",
+  "server_trace_ids": [
+    "dba846fa90f2ffccc2fe1bc9e12efc65"
+  ],
+  "logs": {
+    "access-audit.log": [],
+    "access-metrics.log": [],
+    "access-metrics_events.log": [],
+    "access-request-out.log": [],
+    "access-request.log": [
+      {
+        "line_number": 779,
+        "line": "2026-11-07T23:02:36.768Z|dba846fa90f2ffccc2fe1bc9e12efc65|/127.0.0.1:54014|jfrt@01m6w3chwnhc4n1xs15bzj1rg6|--UNA|com.jfrog.access.v1.authentication.AuthenticationResource/Authenticate|0|-1|-1|7|grpc-java-netty/1.81.0"
+      }
+    ],
+    "access-security-audit.log": [],
+    "access-service.log": [],
+    "access-thread-dump.log": [],
+    "artifactory-access.log": [
+      {
+        "line_number": 60,
+        "line": "2026-11-07T23:02:36.771Z [dba846fa90f2ffccc2fe1bc9e12efc65] [ACCEPTED LOGIN]   for client : a-cache / 172.18.0.1"
+      }
+    ],
+    "artifactory-binarystore.log": [],
+    "artifactory-cleanup-audit.log": [],
+    "artifactory-conan-v2-migration.log": [],
+    "artifactory-event.log": [],
+    "artifactory-federation-metrics.log": [],
+    "artifactory-federation-metrics_events.log": [],
+    "artifactory-import-export.log": [],
+    "artifactory-metrics.log": [],
+    "artifactory-metrics_events.log": [],
+    "artifactory-path-checksum-migration.log": [],
+    "artifactory-request-out.log": [],
+    "artifactory-request-trace.log": [],
+    "artifactory-request.log": [
+      {
+        "line_number": 481,
+        "line": "2026-11-07T23:02:36.771Z|dba846fa90f2ffccc2fe1bc9e12efc65|172.18.0.1|a-cache|MKCOL|/github-remote-cache/zz_A_no_store|501|-1|0|17|art-a-research/no-store-mkcol"
+      }
+    ],
+    "artifactory-service-federation.log": [],
+    "artifactory-service.log": [
+      {
+        "line_number": 3056,
+        "line": "2026-11-07T23:02:36.756Z [jfrt ] [INFO ] [dba846fa90f2ffccc2fe1bc9e12efc65] [r.s.RepositoryServiceImpl:4191] [http-nio-8081-exec-5] - Rebuild release bundle repositories took: 0ms"
+      },
+      {
+        "line_number": 3057,
+        "line": "2026-11-07T23:02:36.756Z [jfrt ] [INFO ] [dba846fa90f2ffccc2fe1bc9e12efc65] [r.s.RepositoryServiceImpl:4196] [http-nio-8081-exec-5] - Rebuild all repo keys cache took: 0ms"
+      },
+      {
+        "line_number": 3058,
+        "line": "2026-11-07T23:02:36.757Z [jfrt ] [INFO ] [dba846fa90f2ffccc2fe1bc9e12efc65] [r.s.RepositoryServiceImpl:4198] [http-nio-8081-exec-5] - Rebuild repo type repositories map took: 0ms"
+      },
+      {
+        "line_number": 3059,
+        "line": "2026-11-07T23:02:36.757Z [jfrt ] [INFO ] [dba846fa90f2ffccc2fe1bc9e12efc65] [r.s.RepositoryServiceImpl:2345] [http-nio-8081-exec-5] - Rebuilt repositories cache in 2 ms"
+      },
+      {
+        "line_number": 3060,
+        "line": "2026-11-07T23:02:36.770Z [jfrt ] [WARN ] [dba846fa90f2ffccc2fe1bc9e12efc65] [o.a.w.s.RequestUtils:173      ] [http-nio-8081-exec-5] - Request: '/github-remote-cache/zz_A_no_store' should be a repo request and does not match any repo key"
+      }
+    ],
+    "artifactory-sha256-migration.log": [],
+    "artifactory-shadow.log": [],
+    "artifactory-storage-request-out.log": [],
+    "artifactory-traffic-v2.log": [],
+    "artifactory-traffic-v3.log": [],
+    "artifactory-traffic.1794091779163.log": [],
+    "artifactory-xray-traffic.1794091779189.log": [],
+    "derby.log": [],
+    "dummy.log": [],
+    "event-metrics.log": [],
+    "event-request.log": [],
+    "event-service.log": [],
+    "event-webhook-request-out.log": [],
+    "frontend-metrics-events.log": [],
+    "frontend-metrics.log": [],
+    "frontend-request.log": [],
+    "frontend-service.log": [],
+    "jfbus-ack-events.log": [],
+    "jfbus-consume-events.log": [],
+    "jfbus-publish-events.log": [],
+    "jfbus-receive-polling.log": [],
+    "jfbus-request.log": [],
+    "jfbus-service.log": [],
+    "jfconfig-metrics.log": [],
+    "jfconfig-request-out.log": [],
+    "jfconfig-request.log": [],
+    "jfconfig-service.log": [],
+    "metadata-metrics.log": [],
+    "metadata-request.log": [],
+    "metadata-service.log": [],
+    "metadata-traffic.log": [],
+    "observability-metrics.log": [],
+    "observability-request-out.log": [],
+    "observability-request.log": [],
+    "observability-service.log": [],
+    "router-request.log": [
+      {
+        "line_number": 1587,
+        "line": "{\"ClientAddr\":\"127.0.0.1:35280\",\"DownstreamContentSize\":87,\"DownstreamStatus\":200,\"Duration\":9101083,\"Overhead\":154113,\"RequestMethod\":\"POST\",\"RequestPath\":\"/com.jfrog.access.v1.authentication.AuthenticationResource/Authenticate\",\"ServiceAddr\":\"localhost:8045\",\"SpanId\":\"bdce6c21e559c5fc\",\"StartUTC\":\"2026-11-07T23:02:36.760399612Z\",\"TraceId\":\"dba846fa90f2ffccc2fe1bc9e12efc65\",\"level\":\"info\",\"msg\":\"\",\"request_Traceparent\":\"00-dba846fa90f2ffccc2fe1bc9e12efc65-253cd7a5c353456e-01\",\"request_Uber-Trace-Id\":\"dba846fa90f2ffccc2fe1bc9e12efc65:253cd7a5c353456e:0:1\",\"request_User-Agent\":\"grpc-java-netty/1.81.0\",\"time\":\"2026-11-07T23:02:36Z\"}"
+      },
+      {
+        "line_number": 1588,
+        "line": "{\"ClientAddr\":\"172.18.0.1:52660\",\"DownstreamContentSize\":127,\"DownstreamStatus\":501,\"Duration\":18340779,\"Overhead\":120403,\"RequestMethod\":\"MKCOL\",\"RequestPath\":\"/artifactory/github-remote-cache/zz_A_no_store\",\"ServiceAddr\":\"localhost:8081\",\"SpanId\":\"94caf7bbe0a4bad6\",\"StartUTC\":\"2026-11-07T23:02:36.753689627Z\",\"TraceId\":\"dba846fa90f2ffccc2fe1bc9e12efc65\",\"level\":\"info\",\"msg\":\"\",\"request_User-Agent\":\"art-a-research/no-store-mkcol\",\"time\":\"2026-11-07T23:02:36Z\"}"
+      }
+    ],
+    "router-service.log": [],
+    "router-traefik.log": [],
+    "tomcat/tomcat-access-catalina-2026-11-07.log": [],
+    "tomcat/tomcat-access-localhost-2026-11-07.log": [],
+    "tomcat/tomcat-catalina-2026-11-07.log": [],
+    "tomcat/tomcat-localhost-2026-11-07.log": [],
+    "topology-derby.log": [],
+    "topology-metrics.log": [],
+    "topology-request-out.log": [],
+    "topology-request.log": [],
+    "topology-service.log": []
+  }
+}

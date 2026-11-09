@@ -1,0 +1,37 @@
+{
+ "payload_rows": 91037,
+ "reasons": {
+  "kept": 43784,
+  "residual_too_short": 36294,
+  "struct_too_short": 5796,
+  "no_code_marker": 5163
+ },
+ "kept_by_lang": {
+  "js": 41307,
+  "html": 1794,
+  "py": 648,
+  "sh": 35
+ },
+ "distinct_raw": 42461,
+ "distinct_detok": 32102,
+ "distinct_struct": 23892,
+ "clusters": 17618,
+ "largest_clusters": {
+  "swarm:36711": 3068,
+  "swarm:38978": 1860,
+  "swarm:10482": 1180,
+  "swarm:37184": 629,
+  "swarm:43085": 558,
+  "swarm:1750": 529,
+  "swarm:42458": 476,
+  "swarm:36601": 456,
+  "swarm:1949": 309,
+  "swarm:40158": 301
+ },
+ "singleton_clusters": 13520,
+ "raw_len_quantiles": {
+  "0.1": 132.0,
+  "0.5": 420.0,
+  "0.9": 1591.0
+ }
+}

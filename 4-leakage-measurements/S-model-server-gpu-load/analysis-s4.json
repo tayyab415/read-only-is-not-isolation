@@ -1,0 +1,54 @@
+{
+ "T100_sep": {
+  "period_s": 0.1,
+  "n": 600,
+  "failed_probes": 0,
+  "accuracy": 1.0,
+  "wilson95": [
+   0.9936382988865771,
+   0.9999999999999998
+  ],
+  "binom_p": 4.819839730205768e-181,
+  "auc": 1.0,
+  "median_ms": {
+   "0": 24.746689500000002,
+   "1": 51.1430995
+  },
+  "bits_per_symbol_point": 1.0,
+  "bits_per_symbol_lower": 0.9444339253686902,
+  "bits_per_second_point": 10.0,
+  "bits_per_second_lower": 9.444339253686902,
+  "audit": {
+   "trials": 600,
+   "receiver_once_in_b": 600,
+   "sender_in_a_as_expected": 600,
+   "no_crossing": 600
+  }
+ },
+ "T200_sep": {
+  "period_s": 0.2,
+  "n": 600,
+  "failed_probes": 0,
+  "accuracy": 1.0,
+  "wilson95": [
+   0.9936382988865771,
+   0.9999999999999998
+  ],
+  "binom_p": 4.819839730205768e-181,
+  "auc": 1.0,
+  "median_ms": {
+   "0": 24.8975705,
+   "1": 51.1087555
+  },
+  "bits_per_symbol_point": 1.0,
+  "bits_per_symbol_lower": 0.9444339253686902,
+  "bits_per_second_point": 5.0,
+  "bits_per_second_lower": 4.722169626843451,
+  "audit": {
+   "trials": 600,
+   "receiver_once_in_b": 600,
+   "sender_in_a_as_expected": 600,
+   "no_crossing": 600
+  }
+ }
+}

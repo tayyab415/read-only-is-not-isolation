@@ -1,0 +1,63 @@
+2026-11-07T22:49:40.081Z [jfrt ] [INFO ] [96a906b5a3b405da2125b54542e037b9] [o.a.c.h.ArtifactoryHome:254   ] [Catalina-utility-1  ] - Creating Artifactory home at 'null'
+2026-11-07T22:49:40.235Z [jfrt ] [INFO ] [96a906b5a3b405da2125b54542e037b9] [o.a.c.h.HaNodeProperties:65   ] [Catalina-utility-1  ] - Artifactory is running in non-clustered mode.
+2026-11-07T22:49:40.304Z [jfrt ] [INFO ] [96a906b5a3b405da2125b54542e037b9] [tifactoryHomeConfigListener:80] [Catalina-utility-1  ] - Resolved Home: '/opt/jfrog/artifactory
+2026-11-07T22:49:40.449Z [jfrt ] [INFO ] [96a906b5a3b405da2125b54542e037b9] [o.a.c.h.ArtifactoryHome:1009  ] [Catalina-utility-1  ] - Setting 'nugetNew,vcsNew,vagrantNew,swiftNew,alpineNew,terraformNew,pubNew,composerNew,cocoapodsNew,permissions-cache-legacy' to system property 'spring.profiles.active'
+2026-11-07T22:49:40.519Z [jfrt ] [INFO ] [96a906b5a3b405da2125b54542e037b9] [o.a.c.h.ArtifactoryHome:1009  ] [Catalina-utility-1  ] - Setting 'nugetNew,vcsNew,vagrantNew,swiftNew,alpineNew,terraformNew,pubNew,composerNew,cocoapodsNew,permissions-cache-legacy' to system property 'spring.profiles.active'
+2026-11-07T22:49:40.545Z [jfrt ] [INFO ] [                ] [o.j.c.w.FileWatcher:146       ] [file-watcher-poller ] - Starting watch of folder configurations
+2026-11-07T22:49:41.152Z [jfrt ] [WARN ] [96a906b5a3b405da2125b54542e037b9] [c.z.h.u.DriverDataSource:75   ] [Catalina-utility-1  ] - Registered driver with driverClassName=org.apache.derby.jdbc.EmbeddedDriver was not found, trying direct instantiation.
+2026-11-07T22:49:44.037Z [jfrt ] [INFO ] [96a906b5a3b405da2125b54542e037b9] [.BasicConfigurationManager:213] [Catalina-utility-1  ] - Artifactory (jfrt) service initialization started. Version: 7.161.15 Revision: 86115900 PID: 9973 Home: /opt/jfrog/artifactory
+2026-11-07T22:49:44.072Z [jfrt ] [INFO ] [96a906b5a3b405da2125b54542e037b9] [d.c.m.ConverterManagerImpl:214] [Catalina-utility-1  ] - Triggering PRE_INIT conversion, from 7.161.15 to 7.161.15
+2026-11-07T22:49:44.081Z [jfrt ] [INFO ] [96a906b5a3b405da2125b54542e037b9] [d.c.m.ConverterManagerImpl:217] [Catalina-utility-1  ] - Finished PRE_INIT conversion, current version is: 7.161.15
+2026-11-07T22:49:44.082Z [jfrt ] [INFO ] [96a906b5a3b405da2125b54542e037b9] [d.i.DbInitializationManager:52] [Catalina-utility-1  ] - Initializing DB Schema initialization manager
+2026-11-07T22:49:44.083Z [jfrt ] [INFO ] [96a906b5a3b405da2125b54542e037b9] [.i.DbInitializationManager:221] [Catalina-utility-1  ] - Database: Apache Derby 10.17.1.0 - (1913217). Driver: Apache Derby Embedded JDBC Driver 10.17.1.0 - (1913217) Pool: derby
+2026-11-07T22:49:44.265Z [jfrt ] [ERROR] [96a906b5a3b405da2125b54542e037b9] [d.i.DbInitializationManager:59] [Catalina-utility-1  ] - DB Schema initialization manager failed to init.
+java.lang.IllegalStateException: Cannot start the application with a database other than PostgreSQL. For more information, see JFrog documentation
+	at org.artifactory.storage.db.init.DbConnectionUtils.checkDefaultDbProperties(DbConnectionUtils.java:83)
+	at org.artifactory.storage.db.init.DbInitializationManager.initDatabaseSchema(DbInitializationManager.java:73)
+	at org.artifactory.storage.db.init.DbInitializationManager.init(DbInitializationManager.java:54)
+	at org.artifactory.lifecycle.webapp.servlet.BasicConfigurationManager.initArtifactoryInstallation(BasicConfigurationManager.java:162)
+	at org.artifactory.lifecycle.webapp.servlet.BasicConfigurationManager.initialize(BasicConfigurationManager.java:141)
+	at org.artifactory.lifecycle.webapp.servlet.ArtifactoryHomeConfigListener.initBasicConfigManager(ArtifactoryHomeConfigListener.java:60)
+	at org.artifactory.lifecycle.webapp.servlet.ArtifactoryHomeConfigListener.contextInitialized(ArtifactoryHomeConfigListener.java:51)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4192)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4615)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:170)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:583)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:677)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:628)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1861)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:309)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:74)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-11-07T22:49:44.303Z [jfrt ] [ERROR] [                ] [tifactoryHomeConfigListener:54] [Catalina-utility-1  ] - Failed initializing Home. Caught exception: 
+java.lang.IllegalStateException: DB Schema initialization manager failed to init.
+	at org.artifactory.storage.db.init.DbInitializationManager.init(DbInitializationManager.java:60)
+	at org.artifactory.lifecycle.webapp.servlet.BasicConfigurationManager.initArtifactoryInstallation(BasicConfigurationManager.java:162)
+	at org.artifactory.lifecycle.webapp.servlet.BasicConfigurationManager.initialize(BasicConfigurationManager.java:141)
+	at org.artifactory.lifecycle.webapp.servlet.ArtifactoryHomeConfigListener.initBasicConfigManager(ArtifactoryHomeConfigListener.java:60)
+	at org.artifactory.lifecycle.webapp.servlet.ArtifactoryHomeConfigListener.contextInitialized(ArtifactoryHomeConfigListener.java:51)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4192)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4615)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:170)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:583)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:677)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:628)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1861)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:309)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:74)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+Caused by: java.lang.IllegalStateException: Cannot start the application with a database other than PostgreSQL. For more information, see JFrog documentation
+	at org.artifactory.storage.db.init.DbConnectionUtils.checkDefaultDbProperties(DbConnectionUtils.java:83)
+	at org.artifactory.storage.db.init.DbInitializationManager.initDatabaseSchema(DbInitializationManager.java:73)
+	at org.artifactory.storage.db.init.DbInitializationManager.init(DbInitializationManager.java:54)
+	... 18 common frames omitted
+2026-11-07T22:49:44.319Z [jfrt ] [INFO ] [                ] [actoryContextConfigListener:87] [Catalina-utility-1  ] - Artifactory context initialization started for context: null
+2026-11-07T22:49:44.319Z [jfrt ] [ERROR] [                ] [actoryContextConfigListener:92] [Catalina-utility-1  ] - Failed initializing Artifactory context: Artifactory home not initialized.

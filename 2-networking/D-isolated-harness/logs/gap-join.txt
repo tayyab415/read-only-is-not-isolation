@@ -1,0 +1,16 @@
+artifactory_time           agent   method st  dur    user-agent     time-only (calls running)  issued-by
+2026-11-07T23:04:53.288Z   agent1  GET    200 4ms    fg-agent1      0                          0
+2026-11-07T23:04:53.362Z   agent1  GET    200 4ms    bgloop-agent1  2                          NONE
+2026-11-07T23:04:53.590Z   agent2  GET    200 3ms    fg-agent2      0                          0
+2026-11-07T23:04:53.891Z   agent3  GET    200 4ms    fg-agent3      0                          0
+2026-11-07T23:04:53.966Z   agent3  GET    200 4ms    bgloop-agent3  2                          NONE
+2026-11-07T23:04:56.479Z   agent1  GET    200 3ms    fg-agent1      3                          3
+2026-11-07T23:05:03.379Z   agent1  GET    200 4ms    bgloop-agent1  4                          NONE
+2026-11-07T23:05:03.982Z   agent3  GET    200 3ms    bgloop-agent3  2                          NONE
+2026-11-07T23:05:13.393Z   agent1  GET    200 3ms    bgloop-agent1  4                          NONE
+2026-11-07T23:05:13.997Z   agent3  GET    200 3ms    bgloop-agent3  2                          NONE
+2026-11-07T23:05:23.422Z   agent1  GET    200 17ms   bgloop-agent1  4                          NONE
+2026-11-07T23:05:29.767Z   agent2  GET    200 4ms    fg-agent2      3                          3
+2026-11-07T23:05:32.606Z   agent1  GET    200 3ms    fg-agent1      5                          5
+
+13 Artifactory requests from sandbox IPs; 7 were issued by no tool call (7 of those still overlap some tool call by time alone)

@@ -1,0 +1,30 @@
+{
+  "run_id": "p7-g2-squid-20-no-sender-hold",
+  "product": "squid",
+  "delay_ms": 20,
+  "arm": "no-sender",
+  "split": "holdout",
+  "scheduled": 16,
+  "completed": 16,
+  "complete": true,
+  "source_freeze_sha256": "e29bc3a73fb81cce237872d1cc61d771109b4a6ae424d70b8fe0cd1e70e84f5a",
+  "model_freeze_sha256": "7816def9ab488d6057bf5323d47d7c4f155a0f2f706aa8db7befb0a9b2fc247d",
+  "cleanup_absence_proved": true,
+  "request_ledger_sha256_at_seal": "7919d0723b68d2b55c20f62f1f775d581eeddd34791149460ad22d034ffe4118",
+  "sha256": {
+    "cache-stop.json": "462117c56a868cb8367eaaecb42b8d374fb0ac9aee61315f5e43ecd171f7e774",
+    "cleanup.json": "73acb586c7600922a8f15abebe1a371e54a16ee8c7e96a049091b8aa3b07660b",
+    "p7-g2-squid-20-no-sender-hold-cache/cache.conf": "59b1e8eec315a70d11fe9d1ab43bfe03e78612e2dd66f732dcf31a2447a29762",
+    "p7-g2-squid-20-no-sender-hold-cache/initialize.txt": "47c4209eba5eeaf080804039345f02636677452f51457fbc2fef9e6c89b8e318",
+    "p7-g2-squid-20-no-sender-hold-cache/origins.json": "76e26341c95fbc68fa2b7f5b717dea19c1acd87c149f627547a0cd3e739b2de4",
+    "p7-g2-squid-20-no-sender-hold-cache/parse.txt": "6176f267452445fd66e3fa2de89407409206b0f8864655a4da1de6c8da7d4cff",
+    "p7-g2-squid-20-no-sender-hold-cache/stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "p7-g2-squid-20-no-sender-hold-cache/stdout.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "provision.json": "a2aebe102ebc84d6a72f87f25c4242262e00f7243c4259b1cdcbe41eeef2273a",
+    "request-reservations.jsonl": "7919d0723b68d2b55c20f62f1f775d581eeddd34791149460ad22d034ffe4118",
+    "requests.jsonl": "74434694e7c76ca444792a34abb36fcb320f2b7e90ccfc51682910fc61016b04",
+    "schedule.json": "88c27e93808266f348a4fb6477b216656b0eac893842d09ec62fad5ff75845d2",
+    "server.json": "fcea99c61d35ffb2bb1ec983d9b27e8a405d9f6ef30f42ff830adeefda2f94f0",
+    "trials.jsonl": "de2fcacc0810af6a707e3cf337f357877f904e04fe88cded64032694eefdea4a"
+  }
+}

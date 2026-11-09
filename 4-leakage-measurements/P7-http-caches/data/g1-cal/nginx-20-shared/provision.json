@@ -1,0 +1,41 @@
+{
+  "run_id": "p7-g1-nginx-20-shared-cal",
+  "product": "nginx",
+  "arm": "shared",
+  "effective_arm": "shared",
+  "networks": {
+    "alice": "p7-g1-nginx-20-shared-cal-net-alice",
+    "bob": "p7-g1-nginx-20-shared-cal-net-bob",
+    "services": "p7-g1-nginx-20-shared-cal-net-services"
+  },
+  "clients": {
+    "alice": "p7-g1-nginx-20-shared-cal-alice",
+    "bob": "p7-g1-nginx-20-shared-cal-bob"
+  },
+  "origin": "p7-g1-nginx-20-shared-cal-origin",
+  "caches": {
+    "alice": "p7-g1-nginx-20-shared-cal-cache",
+    "bob": "p7-g1-nginx-20-shared-cal-cache"
+  },
+  "prepared": false,
+  "build": {
+    "image_id": "sha256:6bee091bdb9bee030657a84c48c2096720b1585ed6b7a46e9141874f38a8dd68",
+    "repo_digests": [
+      "p7-cache-fixtures@sha256:6bee091bdb9bee030657a84c48c2096720b1585ed6b7a46e9141874f38a8dd68"
+    ],
+    "binaries": {
+      "nginx": {
+        "version": "nginx version: nginx/1.30.6\nbuilt by gcc 14.2.0 (Debian 14.2.0-19) \nconfigure arguments: --prefix=/opt/p7/nginx --without-http_rewrite_module --without-http_gzip_module\n",
+        "exit_code": 0,
+        "binary_sha256": "76b92ee9f84414e672bc80bf71f60e8cd11cb3068eb8f5990cfaf0db678ff2e0"
+      },
+      "squid": {
+        "version": "Squid Cache: Version 7.8\nService Name: squid\nconfigure options:  '--prefix=/opt/p7/squid' '--enable-http-violations' '--with-default-user=research' '--disable-auth' '--disable-external-acl-helpers' '--disable-url-rewrite-helpers' '--disable-storeid-rewrite-helpers' '--without-openssl' '--without-gnutls' '--without-nettle'\n",
+        "exit_code": 0,
+        "binary_sha256": "a00da6f0a59015a61adbe9f0e43a5e1aaf461e6af84d030f93a0a1969aa4b92d"
+      }
+    },
+    "image_logical_size_bytes": 76122635,
+    "source_freeze_sha256": "bbca9c7944b4d713d4ac94fbe6c35597ef6ee8721f738b8fe57a0076384a0a31"
+  }
+}

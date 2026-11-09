@@ -1,0 +1,2840 @@
+{
+  "run_id": "p2-s2-c-sham",
+  "configuration": "separate",
+  "repositories": {
+    "alice": "p1-p2-s2-c-sham-alice",
+    "bob": "p1-p2-s2-c-sham-bob"
+  },
+  "users": {
+    "alice": "p1-p2-s2-c-sham-alice",
+    "bob": "p1-p2-s2-c-sham-bob",
+    "prefetch": "p1-p2-s2-c-sham-prefetch"
+  },
+  "negative_cache_period_seconds": 1800,
+  "storage_blocked": true,
+  "prewarm_count": 32,
+  "provision_log": [
+    {
+      "label": "create-user-alice",
+      "method": "POST",
+      "path": "/ui/users",
+      "status": 201
+    },
+    {
+      "label": "create-user-bob",
+      "method": "POST",
+      "path": "/ui/users",
+      "status": 201
+    },
+    {
+      "label": "create-user-prefetch",
+      "method": "POST",
+      "path": "/ui/users",
+      "status": 201
+    },
+    {
+      "label": "create-repo",
+      "method": "POST",
+      "path": "/ui/admin/repositories",
+      "status": 200
+    },
+    {
+      "label": "read-repo",
+      "method": "GET",
+      "path": "/ui/admin/repositories/remote/p1-p2-s2-c-sham-alice",
+      "status": 200
+    },
+    {
+      "label": "create-permission",
+      "method": "POST",
+      "path": "/ui/permissiontargets",
+      "status": 201
+    },
+    {
+      "label": "create-repo",
+      "method": "POST",
+      "path": "/ui/admin/repositories",
+      "status": 200
+    },
+    {
+      "label": "read-repo",
+      "method": "GET",
+      "path": "/ui/admin/repositories/remote/p1-p2-s2-c-sham-bob",
+      "status": 200
+    },
+    {
+      "label": "create-permission",
+      "method": "POST",
+      "path": "/ui/permissiontargets",
+      "status": 201
+    },
+    {
+      "label": "prewarm-p1-p2-s2-c-sham-alice-00",
+      "method": "GET",
+      "path": "/p1-p2-s2-c-sham-alice/pkg-00.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p2-s2-c-sham-alice-01",
+      "method": "GET",
+      "path": "/p1-p2-s2-c-sham-alice/pkg-01.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p2-s2-c-sham-alice-02",
+      "method": "GET",
+      "path": "/p1-p2-s2-c-sham-alice/pkg-02.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p2-s2-c-sham-alice-03",
+      "method": "GET",
+      "path": "/p1-p2-s2-c-sham-alice/pkg-03.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p2-s2-c-sham-alice-04",
+      "method": "GET",
+      "path": "/p1-p2-s2-c-sham-alice/pkg-04.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p2-s2-c-sham-alice-05",
+      "method": "GET",
+      "path": "/p1-p2-s2-c-sham-alice/pkg-05.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p2-s2-c-sham-alice-06",
+      "method": "GET",
+      "path": "/p1-p2-s2-c-sham-alice/pkg-06.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p2-s2-c-sham-alice-07",
+      "method": "GET",
+      "path": "/p1-p2-s2-c-sham-alice/pkg-07.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p2-s2-c-sham-alice-08",
+      "method": "GET",
+      "path": "/p1-p2-s2-c-sham-alice/pkg-08.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p2-s2-c-sham-alice-09",
+      "method": "GET",
+      "path": "/p1-p2-s2-c-sham-alice/pkg-09.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p2-s2-c-sham-alice-10",
+      "method": "GET",
+      "path": "/p1-p2-s2-c-sham-alice/pkg-10.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p2-s2-c-sham-alice-11",
+      "method": "GET",
+      "path": "/p1-p2-s2-c-sham-alice/pkg-11.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p2-s2-c-sham-alice-12",
+      "method": "GET",
+      "path": "/p1-p2-s2-c-sham-alice/pkg-12.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p2-s2-c-sham-alice-13",
+      "method": "GET",
+      "path": "/p1-p2-s2-c-sham-alice/pkg-13.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p2-s2-c-sham-alice-14",
+      "method": "GET",
+      "path": "/p1-p2-s2-c-sham-alice/pkg-14.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p2-s2-c-sham-alice-15",
+      "method": "GET",
+      "path": "/p1-p2-s2-c-sham-alice/pkg-15.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p2-s2-c-sham-bob-00",
+      "method": "GET",
+      "path": "/p1-p2-s2-c-sham-bob/pkg-00.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p2-s2-c-sham-bob-01",
+      "method": "GET",
+      "path": "/p1-p2-s2-c-sham-bob/pkg-01.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p2-s2-c-sham-bob-02",
+      "method": "GET",
+      "path": "/p1-p2-s2-c-sham-bob/pkg-02.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p2-s2-c-sham-bob-03",
+      "method": "GET",
+      "path": "/p1-p2-s2-c-sham-bob/pkg-03.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p2-s2-c-sham-bob-04",
+      "method": "GET",
+      "path": "/p1-p2-s2-c-sham-bob/pkg-04.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p2-s2-c-sham-bob-05",
+      "method": "GET",
+      "path": "/p1-p2-s2-c-sham-bob/pkg-05.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p2-s2-c-sham-bob-06",
+      "method": "GET",
+      "path": "/p1-p2-s2-c-sham-bob/pkg-06.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p2-s2-c-sham-bob-07",
+      "method": "GET",
+      "path": "/p1-p2-s2-c-sham-bob/pkg-07.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p2-s2-c-sham-bob-08",
+      "method": "GET",
+      "path": "/p1-p2-s2-c-sham-bob/pkg-08.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p2-s2-c-sham-bob-09",
+      "method": "GET",
+      "path": "/p1-p2-s2-c-sham-bob/pkg-09.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p2-s2-c-sham-bob-10",
+      "method": "GET",
+      "path": "/p1-p2-s2-c-sham-bob/pkg-10.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p2-s2-c-sham-bob-11",
+      "method": "GET",
+      "path": "/p1-p2-s2-c-sham-bob/pkg-11.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p2-s2-c-sham-bob-12",
+      "method": "GET",
+      "path": "/p1-p2-s2-c-sham-bob/pkg-12.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p2-s2-c-sham-bob-13",
+      "method": "GET",
+      "path": "/p1-p2-s2-c-sham-bob/pkg-13.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p2-s2-c-sham-bob-14",
+      "method": "GET",
+      "path": "/p1-p2-s2-c-sham-bob/pkg-14.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p2-s2-c-sham-bob-15",
+      "method": "GET",
+      "path": "/p1-p2-s2-c-sham-bob/pkg-15.bin",
+      "status": 200
+    }
+  ],
+  "kind": "mutable",
+  "scenario": "sham",
+  "fixture_etag": "e8627e1a8b3b777cb5e58066954340fdbbc31e2b",
+  "gateway_edition": 2,
+  "queue_size": 5,
+  "sham_profiles": {
+    "alice": {
+      "repository": "p1-p2-s2-c-sham-alice",
+      "responses": {
+        "get": {
+          "status": 200,
+          "headers": [
+            [
+              "Server",
+              "BaseHTTP/0.6 Python/3.12.16"
+            ],
+            [
+              "Date",
+              "Sun, 08 Nov 2026 21:24:29 GMT"
+            ],
+            [
+              "Accept-Ranges",
+              "bytes"
+            ],
+            [
+              "Content-Disposition",
+              "attachment; filename=\"pkg-00.bin\"; filename*=UTF-8''pkg-00.bin"
+            ],
+            [
+              "Content-Type",
+              "application/octet-stream"
+            ],
+            [
+              "Date",
+              "Sun, 08 Nov 2026 21:24:29 GMT"
+            ],
+            [
+              "Etag",
+              "e8627e1a8b3b777cb5e58066954340fdbbc31e2b"
+            ],
+            [
+              "Last-Modified",
+              "Sun, 08 Nov 2026 00:00:00 GMT"
+            ],
+            [
+              "X-Artifactory-Filename",
+              "pkg-00.bin"
+            ],
+            [
+              "X-Artifactory-Id",
+              "1157502487007e3e:-700aaf45:1a1bbe7b09d:-8000"
+            ],
+            [
+              "X-Artifactory-Node-Id",
+              "67ad257275ae"
+            ],
+            [
+              "X-Artifactory-Origin-Remote-Path",
+              "http://p1-p2-s2-c-sham-upstream:8000/pkg-00.bin"
+            ],
+            [
+              "X-Checksum-Md5",
+              "3318a59e20679672a3c460bbd5662826"
+            ],
+            [
+              "X-Checksum-Sha1",
+              "e8627e1a8b3b777cb5e58066954340fdbbc31e2b"
+            ],
+            [
+              "X-Checksum-Sha256",
+              "85c7795747cf1f3ac1e7d7f53d3faa6b9d9f3dc961aa9b692aaaddb943ace870"
+            ],
+            [
+              "X-Jfrog-Version",
+              "Artifactory/7.161.26 86126900"
+            ],
+            [
+              "Content-Length",
+              "31"
+            ]
+          ],
+          "body_b64": "cDEtbWV0ZXIgZml4dHVyZSBwYWNrYWdlIGJ5dGVzCg==",
+          "delay_s": 0.022724756
+        },
+        "head": {
+          "status": 200,
+          "headers": [
+            [
+              "Server",
+              "BaseHTTP/0.6 Python/3.12.16"
+            ],
+            [
+              "Date",
+              "Sun, 08 Nov 2026 21:24:29 GMT"
+            ],
+            [
+              "Accept-Ranges",
+              "bytes"
+            ],
+            [
+              "Content-Disposition",
+              "attachment; filename=\"pkg-00.bin\"; filename*=UTF-8''pkg-00.bin"
+            ],
+            [
+              "Content-Type",
+              "application/octet-stream"
+            ],
+            [
+              "Date",
+              "Sun, 08 Nov 2026 21:24:29 GMT"
+            ],
+            [
+              "Etag",
+              "e8627e1a8b3b777cb5e58066954340fdbbc31e2b"
+            ],
+            [
+              "Last-Modified",
+              "Sun, 08 Nov 2026 00:00:00 GMT"
+            ],
+            [
+              "X-Artifactory-Filename",
+              "pkg-00.bin"
+            ],
+            [
+              "X-Artifactory-Id",
+              "1157502487007e3e:-700aaf45:1a1bbe7b09d:-8000"
+            ],
+            [
+              "X-Artifactory-Node-Id",
+              "67ad257275ae"
+            ],
+            [
+              "X-Artifactory-Origin-Remote-Path",
+              "http://p1-p2-s2-c-sham-upstream:8000/pkg-00.bin"
+            ],
+            [
+              "X-Checksum-Md5",
+              "3318a59e20679672a3c460bbd5662826"
+            ],
+            [
+              "X-Checksum-Sha1",
+              "e8627e1a8b3b777cb5e58066954340fdbbc31e2b"
+            ],
+            [
+              "X-Checksum-Sha256",
+              "85c7795747cf1f3ac1e7d7f53d3faa6b9d9f3dc961aa9b692aaaddb943ace870"
+            ],
+            [
+              "X-Jfrog-Version",
+              "Artifactory/7.161.26 86126900"
+            ],
+            [
+              "Content-Length",
+              "0"
+            ]
+          ],
+          "body_b64": "",
+          "delay_s": 0.003560015
+        },
+        "cond_get": {
+          "status": 304,
+          "headers": [
+            [
+              "Server",
+              "BaseHTTP/0.6 Python/3.12.16"
+            ],
+            [
+              "Date",
+              "Sun, 08 Nov 2026 21:24:29 GMT"
+            ],
+            [
+              "Accept-Ranges",
+              "bytes"
+            ],
+            [
+              "Content-Disposition",
+              "attachment; filename=\"pkg-00.bin\"; filename*=UTF-8''pkg-00.bin"
+            ],
+            [
+              "Date",
+              "Sun, 08 Nov 2026 21:24:29 GMT"
+            ],
+            [
+              "Etag",
+              "e8627e1a8b3b777cb5e58066954340fdbbc31e2b"
+            ],
+            [
+              "Last-Modified",
+              "Sun, 08 Nov 2026 00:00:00 GMT"
+            ],
+            [
+              "X-Artifactory-Filename",
+              "pkg-00.bin"
+            ],
+            [
+              "X-Artifactory-Id",
+              "1157502487007e3e:-700aaf45:1a1bbe7b09d:-8000"
+            ],
+            [
+              "X-Artifactory-Node-Id",
+              "67ad257275ae"
+            ],
+            [
+              "X-Checksum-Md5",
+              "3318a59e20679672a3c460bbd5662826"
+            ],
+            [
+              "X-Checksum-Sha1",
+              "e8627e1a8b3b777cb5e58066954340fdbbc31e2b"
+            ],
+            [
+              "X-Checksum-Sha256",
+              "85c7795747cf1f3ac1e7d7f53d3faa6b9d9f3dc961aa9b692aaaddb943ace870"
+            ],
+            [
+              "X-Jfrog-Version",
+              "Artifactory/7.161.26 86126900"
+            ],
+            [
+              "Content-Length",
+              "0"
+            ]
+          ],
+          "body_b64": "",
+          "delay_s": 0.005396518
+        },
+        "range_get": {
+          "status": 206,
+          "headers": [
+            [
+              "Server",
+              "BaseHTTP/0.6 Python/3.12.16"
+            ],
+            [
+              "Date",
+              "Sun, 08 Nov 2026 21:24:29 GMT"
+            ],
+            [
+              "Accept-Ranges",
+              "bytes"
+            ],
+            [
+              "Content-Disposition",
+              "attachment; filename=\"pkg-00.bin\"; filename*=UTF-8''pkg-00.bin"
+            ],
+            [
+              "Content-Range",
+              "bytes 0-0/31"
+            ],
+            [
+              "Content-Type",
+              "application/octet-stream"
+            ],
+            [
+              "Date",
+              "Sun, 08 Nov 2026 21:24:29 GMT"
+            ],
+            [
+              "Etag",
+              "e8627e1a8b3b777cb5e58066954340fdbbc31e2b"
+            ],
+            [
+              "Last-Modified",
+              "Sun, 08 Nov 2026 00:00:00 GMT"
+            ],
+            [
+              "X-Artifactory-Filename",
+              "pkg-00.bin"
+            ],
+            [
+              "X-Artifactory-Id",
+              "1157502487007e3e:-700aaf45:1a1bbe7b09d:-8000"
+            ],
+            [
+              "X-Artifactory-Node-Id",
+              "67ad257275ae"
+            ],
+            [
+              "X-Artifactory-Origin-Remote-Path",
+              "http://p1-p2-s2-c-sham-upstream:8000/pkg-00.bin"
+            ],
+            [
+              "X-Checksum-Md5",
+              "3318a59e20679672a3c460bbd5662826"
+            ],
+            [
+              "X-Checksum-Sha1",
+              "e8627e1a8b3b777cb5e58066954340fdbbc31e2b"
+            ],
+            [
+              "X-Checksum-Sha256",
+              "85c7795747cf1f3ac1e7d7f53d3faa6b9d9f3dc961aa9b692aaaddb943ace870"
+            ],
+            [
+              "X-Jfrog-Version",
+              "Artifactory/7.161.26 86126900"
+            ],
+            [
+              "Content-Length",
+              "1"
+            ]
+          ],
+          "body_b64": "cA==",
+          "delay_s": 0.004264045
+        },
+        "fresh_get": {
+          "status": 404,
+          "headers": [
+            [
+              "Server",
+              "BaseHTTP/0.6 Python/3.12.16"
+            ],
+            [
+              "Date",
+              "Sun, 08 Nov 2026 21:24:29 GMT"
+            ],
+            [
+              "Content-Type",
+              "application/json;charset=ISO-8859-1"
+            ],
+            [
+              "Date",
+              "Sun, 08 Nov 2026 21:24:29 GMT"
+            ],
+            [
+              "X-Artifactory-Id",
+              "1157502487007e3e:-700aaf45:1a1bbe7b09d:-8000"
+            ],
+            [
+              "X-Artifactory-Node-Id",
+              "67ad257275ae"
+            ],
+            [
+              "X-Jfrog-Version",
+              "Artifactory/7.161.26 86126900"
+            ],
+            [
+              "Content-Length",
+              "151"
+            ]
+          ],
+          "body_b64": "ewogICJlcnJvcnMiIDogWyB7CiAgICAic3RhdHVzIiA6IDQwNCwKICAgICJtZXNzYWdlIiA6ICJOb3QgRm91bmQ7IFBhdGg6ICdwMS1wMi1zMi1jLXNoYW0tYWxpY2U6ZnJlc2gvcHJvZmlsZS0xOTU4NDk3ZDA2YmY1NjM4LXVuaXF1ZS0wMDAuYmluJyIKICB9IF0KfQ==",
+          "delay_s": 0.154620985
+        },
+        "repeated_cold": {
+          "status": 404,
+          "headers": [
+            [
+              "Server",
+              "BaseHTTP/0.6 Python/3.12.16"
+            ],
+            [
+              "Date",
+              "Sun, 08 Nov 2026 21:24:29 GMT"
+            ],
+            [
+              "Content-Type",
+              "application/json;charset=ISO-8859-1"
+            ],
+            [
+              "Date",
+              "Sun, 08 Nov 2026 21:24:29 GMT"
+            ],
+            [
+              "X-Artifactory-Id",
+              "1157502487007e3e:-700aaf45:1a1bbe7b09d:-8000"
+            ],
+            [
+              "X-Artifactory-Node-Id",
+              "67ad257275ae"
+            ],
+            [
+              "X-Jfrog-Version",
+              "Artifactory/7.161.26 86126900"
+            ],
+            [
+              "Content-Length",
+              "147"
+            ]
+          ],
+          "body_b64": "ewogICJlcnJvcnMiIDogWyB7CiAgICAic3RhdHVzIiA6IDQwNCwKICAgICJtZXNzYWdlIiA6ICJOb3QgRm91bmQ7IFBhdGg6ICdwMS1wMi1zMi1jLXNoYW0tYWxpY2U6ZnJlc2gvcHJvZmlsZS0xOTU4NDk3ZDA2YmY1NjM4LXJlcGVhdC5iaW4nIgogIH0gXQp9",
+          "delay_s": 0.154523092
+        },
+        "repeated_warm": {
+          "status": 404,
+          "headers": [
+            [
+              "Server",
+              "BaseHTTP/0.6 Python/3.12.16"
+            ],
+            [
+              "Date",
+              "Sun, 08 Nov 2026 21:24:29 GMT"
+            ],
+            [
+              "Content-Type",
+              "application/json;charset=ISO-8859-1"
+            ],
+            [
+              "Date",
+              "Sun, 08 Nov 2026 21:24:29 GMT"
+            ],
+            [
+              "X-Artifactory-Id",
+              "1157502487007e3e:-700aaf45:1a1bbe7b09d:-8000"
+            ],
+            [
+              "X-Artifactory-Node-Id",
+              "67ad257275ae"
+            ],
+            [
+              "X-Jfrog-Version",
+              "Artifactory/7.161.26 86126900"
+            ],
+            [
+              "Content-Length",
+              "147"
+            ]
+          ],
+          "body_b64": "ewogICJlcnJvcnMiIDogWyB7CiAgICAic3RhdHVzIiA6IDQwNCwKICAgICJtZXNzYWdlIiA6ICJOb3QgRm91bmQ7IFBhdGg6ICdwMS1wMi1zMi1jLXNoYW0tYWxpY2U6ZnJlc2gvcHJvZmlsZS0xOTU4NDk3ZDA2YmY1NjM4LXJlcGVhdC5iaW4nIgogIH0gXQp9",
+          "delay_s": 0.002541495
+        },
+        "folder_html": {
+          "status": 200,
+          "headers": [
+            [
+              "Server",
+              "BaseHTTP/0.6 Python/3.12.16"
+            ],
+            [
+              "Date",
+              "Sun, 08 Nov 2026 21:24:29 GMT"
+            ],
+            [
+              "Access-Control-Allow-Headers",
+              "X-Requested-With, Content-Type, X-Codingpedia"
+            ],
+            [
+              "Access-Control-Allow-Methods",
+              "GET, POST, DELETE, PUT"
+            ],
+            [
+              "Cache-Control",
+              "no-store"
+            ],
+            [
+              "Content-Type",
+              "text/html"
+            ],
+            [
+              "Date",
+              "Sun, 08 Nov 2026 21:24:29 GMT"
+            ],
+            [
+              "X-Artifactory-Id",
+              "1157502487007e3e:-700aaf45:1a1bbe7b09d:-8000"
+            ],
+            [
+              "X-Artifactory-Node-Id",
+              "67ad257275ae"
+            ],
+            [
+              "X-Jfrog-Version",
+              "Artifactory/7.161.26 86126900"
+            ],
+            [
+              "Content-Length",
+              "1395"
+            ]
+          ],
+          "body_b64": "PCFET0NUWVBFIGh0bWw+CjxodG1sPgo8aGVhZD48bWV0YSBuYW1lPSJyb2JvdHMiIGNvbnRlbnQ9Im5vaW5kZXgiIC8+Cjx0aXRsZT5JbmRleCBvZiBwMS1wMi1zMi1jLXNoYW0tYWxpY2UtY2FjaGUvPC90aXRsZT4KPC9oZWFkPgo8Ym9keT4KPGgxPkluZGV4IG9mIHAxLXAyLXMyLWMtc2hhbS1hbGljZS1jYWNoZS88L2gxPgo8cHJlPk5hbWUgICAgICAgIExhc3QgbW9kaWZpZWQgICAgICBTaXplPC9wcmU+PGhyLz4KPHByZT48YSBocmVmPSJwa2ctMDAuYmluIj5wa2ctMDAuYmluPC9hPiAgIDA4LU5vdi0yMDI2IDAwOjAwICAzMSBieXRlcwo8YSBocmVmPSJwa2ctMDEuYmluIj5wa2ctMDEuYmluPC9hPiAgIDA4LU5vdi0yMDI2IDAwOjAwICAzMSBieXRlcwo8YSBocmVmPSJwa2ctMDIuYmluIj5wa2ctMDIuYmluPC9hPiAgIDA4LU5vdi0yMDI2IDAwOjAwICAzMSBieXRlcwo8YSBocmVmPSJwa2ctMDMuYmluIj5wa2ctMDMuYmluPC9hPiAgIDA4LU5vdi0yMDI2IDAwOjAwICAzMSBieXRlcwo8YSBocmVmPSJwa2ctMDQuYmluIj5wa2ctMDQuYmluPC9hPiAgIDA4LU5vdi0yMDI2IDAwOjAwICAzMSBieXRlcwo8YSBocmVmPSJwa2ctMDUuYmluIj5wa2ctMDUuYmluPC9hPiAgIDA4LU5vdi0yMDI2IDAwOjAwICAzMSBieXRlcwo8YSBocmVmPSJwa2ctMDYuYmluIj5wa2ctMDYuYmluPC9hPiAgIDA4LU5vdi0yMDI2IDAwOjAwICAzMSBieXRlcwo8YSBocmVmPSJwa2ctMDcuYmluIj5wa2ctMDcuYmluPC9hPiAgIDA4LU5vdi0yMDI2IDAwOjAwICAzMSBieXRlcwo8YSBocmVmPSJwa2ctMDguYmluIj5wa2ctMDguYmluPC9hPiAgIDA4LU5vdi0yMDI2IDAwOjAwICAzMSBieXRlcwo8YSBocmVmPSJwa2ctMDkuYmluIj5wa2ctMDkuYmluPC9hPiAgIDA4LU5vdi0yMDI2IDAwOjAwICAzMSBieXRlcwo8YSBocmVmPSJwa2ctMTAuYmluIj5wa2ctMTAuYmluPC9hPiAgIDA4LU5vdi0yMDI2IDAwOjAwICAzMSBieXRlcwo8YSBocmVmPSJwa2ctMTEuYmluIj5wa2ctMTEuYmluPC9hPiAgIDA4LU5vdi0yMDI2IDAwOjAwICAzMSBieXRlcwo8YSBocmVmPSJwa2ctMTIuYmluIj5wa2ctMTIuYmluPC9hPiAgIDA4LU5vdi0yMDI2IDAwOjAwICAzMSBieXRlcwo8YSBocmVmPSJwa2ctMTMuYmluIj5wa2ctMTMuYmluPC9hPiAgIDA4LU5vdi0yMDI2IDAwOjAwICAzMSBieXRlcwo8YSBocmVmPSJwa2ctMTQuYmluIj5wa2ctMTQuYmluPC9hPiAgIDA4LU5vdi0yMDI2IDAwOjAwICAzMSBieXRlcwo8YSBocmVmPSJwa2ctMTUuYmluIj5wa2ctMTUuYmluPC9hPiAgIDA4LU5vdi0yMDI2IDAwOjAwICAzMSBieXRlcwo8L3ByZT4KPGhyLz48YWRkcmVzcyBzdHlsZT0iZm9udC1zaXplOnNtYWxsOyI+QXJ0aWZhY3RvcnkvNy4xNjEuMjYgU2VydmVyPC9hZGRyZXNzPjwvYm9keT48L2h0bWw+",
+          "delay_s": 0.004151411999999999
+        },
+        "stats": {
+          "status": 403,
+          "headers": [
+            [
+              "Server",
+              "BaseHTTP/0.6 Python/3.12.16"
+            ],
+            [
+              "Date",
+              "Sun, 08 Nov 2026 21:24:29 GMT"
+            ],
+            [
+              "Content-Type",
+              "text/plain"
+            ],
+            [
+              "Content-Length",
+              "35"
+            ]
+          ],
+          "body_b64": "QmxvY2tlZCBieSBmaXhlZCBQMSBnYXRld2F5IHBvbGljeQo=",
+          "delay_s": 0.00105193
+        }
+      },
+      "captured_requests": [
+        {
+          "method": "GET",
+          "path": "/p1-p2-s2-c-sham-alice/pkg-00.bin",
+          "marker": "p1/p2-s2-c-sham/profile/alice/profile-0",
+          "probe": "sender.get",
+          "request_headers": {},
+          "scheduled_offset_s": 0,
+          "schedule_epoch_utc_ns": 1794173069200043284,
+          "schedule_setup_utc_ns": 1794173069170353202,
+          "start_lag_ms": 0.074821,
+          "start_utc_ns": 1794173069200121846,
+          "status": 200,
+          "headers": [
+            [
+              "Server",
+              "BaseHTTP/0.6 Python/3.12.16"
+            ],
+            [
+              "Date",
+              "Sun, 08 Nov 2026 21:24:29 GMT"
+            ],
+            [
+              "Accept-Ranges",
+              "bytes"
+            ],
+            [
+              "Content-Disposition",
+              "attachment; filename=\"pkg-00.bin\"; filename*=UTF-8''pkg-00.bin"
+            ],
+            [
+              "Content-Type",
+              "application/octet-stream"
+            ],
+            [
+              "Date",
+              "Sun, 08 Nov 2026 21:24:29 GMT"
+            ],
+            [
+              "Etag",
+              "e8627e1a8b3b777cb5e58066954340fdbbc31e2b"
+            ],
+            [
+              "Last-Modified",
+              "Sun, 08 Nov 2026 00:00:00 GMT"
+            ],
+            [
+              "X-Artifactory-Filename",
+              "pkg-00.bin"
+            ],
+            [
+              "X-Artifactory-Id",
+              "1157502487007e3e:-700aaf45:1a1bbe7b09d:-8000"
+            ],
+            [
+              "X-Artifactory-Node-Id",
+              "67ad257275ae"
+            ],
+            [
+              "X-Artifactory-Origin-Remote-Path",
+              "http://p1-p2-s2-c-sham-upstream:8000/pkg-00.bin"
+            ],
+            [
+              "X-Checksum-Md5",
+              "3318a59e20679672a3c460bbd5662826"
+            ],
+            [
+              "X-Checksum-Sha1",
+              "e8627e1a8b3b777cb5e58066954340fdbbc31e2b"
+            ],
+            [
+              "X-Checksum-Sha256",
+              "85c7795747cf1f3ac1e7d7f53d3faa6b9d9f3dc961aa9b692aaaddb943ace870"
+            ],
+            [
+              "X-Jfrog-Version",
+              "Artifactory/7.161.26 86126900"
+            ],
+            [
+              "Content-Length",
+              "31"
+            ]
+          ],
+          "body_length": 31,
+          "body_sha256": "85c7795747cf1f3ac1e7d7f53d3faa6b9d9f3dc961aa9b692aaaddb943ace870",
+          "body_text": null,
+          "end_utc_ns": 1794173069222845022,
+          "elapsed_ms": 22.724756,
+          "actor": "alice",
+          "target": "gateway"
+        },
+        {
+          "method": "HEAD",
+          "path": "/p1-p2-s2-c-sham-alice/pkg-00.bin",
+          "marker": "p1/p2-s2-c-sham/profile/alice/profile-1",
+          "probe": "sender.head",
+          "request_headers": {},
+          "scheduled_offset_s": 0,
+          "schedule_epoch_utc_ns": 1794173069253469801,
+          "schedule_setup_utc_ns": 1794173069223706158,
+          "start_lag_ms": 0.092512,
+          "start_utc_ns": 1794173069253564373,
+          "status": 200,
+          "headers": [
+            [
+              "Server",
+              "BaseHTTP/0.6 Python/3.12.16"
+            ],
+            [
+              "Date",
+              "Sun, 08 Nov 2026 21:24:29 GMT"
+            ],
+            [
+              "Accept-Ranges",
+              "bytes"
+            ],
+            [
+              "Content-Disposition",
+              "attachment; filename=\"pkg-00.bin\"; filename*=UTF-8''pkg-00.bin"
+            ],
+            [
+              "Content-Type",
+              "application/octet-stream"
+            ],
+            [
+              "Date",
+              "Sun, 08 Nov 2026 21:24:29 GMT"
+            ],
+            [
+              "Etag",
+              "e8627e1a8b3b777cb5e58066954340fdbbc31e2b"
+            ],
+            [
+              "Last-Modified",
+              "Sun, 08 Nov 2026 00:00:00 GMT"
+            ],
+            [
+              "X-Artifactory-Filename",
+              "pkg-00.bin"
+            ],
+            [
+              "X-Artifactory-Id",
+              "1157502487007e3e:-700aaf45:1a1bbe7b09d:-8000"
+            ],
+            [
+              "X-Artifactory-Node-Id",
+              "67ad257275ae"
+            ],
+            [
+              "X-Artifactory-Origin-Remote-Path",
+              "http://p1-p2-s2-c-sham-upstream:8000/pkg-00.bin"
+            ],
+            [
+              "X-Checksum-Md5",
+              "3318a59e20679672a3c460bbd5662826"
+            ],
+            [
+              "X-Checksum-Sha1",
+              "e8627e1a8b3b777cb5e58066954340fdbbc31e2b"
+            ],
+            [
+              "X-Checksum-Sha256",
+              "85c7795747cf1f3ac1e7d7f53d3faa6b9d9f3dc961aa9b692aaaddb943ace870"
+            ],
+            [
+              "X-Jfrog-Version",
+              "Artifactory/7.161.26 86126900"
+            ],
+            [
+              "Content-Length",
+              "0"
+            ]
+          ],
+          "body_length": 0,
+          "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "body_text": null,
+          "end_utc_ns": 1794173069257122418,
+          "elapsed_ms": 3.560015,
+          "actor": "alice",
+          "target": "gateway"
+        },
+        {
+          "method": "GET",
+          "path": "/p1-p2-s2-c-sham-alice/pkg-00.bin",
+          "marker": "p1/p2-s2-c-sham/profile/alice/profile-2",
+          "probe": "sender.cond_get",
+          "request_headers": {
+            "If-None-Match": "e8627e1a8b3b777cb5e58066954340fdbbc31e2b"
+          },
+          "scheduled_offset_s": 0,
+          "schedule_epoch_utc_ns": 1794173069287515159,
+          "schedule_setup_utc_ns": 1794173069257742966,
+          "start_lag_ms": 0.070023,
+          "start_utc_ns": 1794173069287586181,
+          "status": 304,
+          "headers": [
+            [
+              "Server",
+              "BaseHTTP/0.6 Python/3.12.16"
+            ],
+            [
+              "Date",
+              "Sun, 08 Nov 2026 21:24:29 GMT"
+            ],
+            [
+              "Accept-Ranges",
+              "bytes"
+            ],
+            [
+              "Content-Disposition",
+              "attachment; filename=\"pkg-00.bin\"; filename*=UTF-8''pkg-00.bin"
+            ],
+            [
+              "Date",
+              "Sun, 08 Nov 2026 21:24:29 GMT"
+            ],
+            [
+              "Etag",
+              "e8627e1a8b3b777cb5e58066954340fdbbc31e2b"
+            ],
+            [
+              "Last-Modified",
+              "Sun, 08 Nov 2026 00:00:00 GMT"
+            ],
+            [
+              "X-Artifactory-Filename",
+              "pkg-00.bin"
+            ],
+            [
+              "X-Artifactory-Id",
+              "1157502487007e3e:-700aaf45:1a1bbe7b09d:-8000"
+            ],
+            [
+              "X-Artifactory-Node-Id",
+              "67ad257275ae"
+            ],
+            [
+              "X-Checksum-Md5",
+              "3318a59e20679672a3c460bbd5662826"
+            ],
+            [
+              "X-Checksum-Sha1",
+              "e8627e1a8b3b777cb5e58066954340fdbbc31e2b"
+            ],
+            [
+              "X-Checksum-Sha256",
+              "85c7795747cf1f3ac1e7d7f53d3faa6b9d9f3dc961aa9b692aaaddb943ace870"
+            ],
+            [
+              "X-Jfrog-Version",
+              "Artifactory/7.161.26 86126900"
+            ],
+            [
+              "Content-Length",
+              "0"
+            ]
+          ],
+          "body_length": 0,
+          "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "body_text": null,
+          "end_utc_ns": 1794173069292981230,
+          "elapsed_ms": 5.396518,
+          "actor": "alice",
+          "target": "gateway"
+        },
+        {
+          "method": "GET",
+          "path": "/p1-p2-s2-c-sham-alice/pkg-00.bin",
+          "marker": "p1/p2-s2-c-sham/profile/alice/profile-3",
+          "probe": "sender.range_get",
+          "request_headers": {
+            "Range": "bytes=0-0"
+          },
+          "scheduled_offset_s": 0,
+          "schedule_epoch_utc_ns": 1794173069323369461,
+          "schedule_setup_utc_ns": 1794173069293560096,
+          "start_lag_ms": 0.090282,
+          "start_utc_ns": 1794173069323461374,
+          "status": 206,
+          "headers": [
+            [
+              "Server",
+              "BaseHTTP/0.6 Python/3.12.16"
+            ],
+            [
+              "Date",
+              "Sun, 08 Nov 2026 21:24:29 GMT"
+            ],
+            [
+              "Accept-Ranges",
+              "bytes"
+            ],
+            [
+              "Content-Disposition",
+              "attachment; filename=\"pkg-00.bin\"; filename*=UTF-8''pkg-00.bin"
+            ],
+            [
+              "Content-Range",
+              "bytes 0-0/31"
+            ],
+            [
+              "Content-Type",
+              "application/octet-stream"
+            ],
+            [
+              "Date",
+              "Sun, 08 Nov 2026 21:24:29 GMT"
+            ],
+            [
+              "Etag",
+              "e8627e1a8b3b777cb5e58066954340fdbbc31e2b"
+            ],
+            [
+              "Last-Modified",
+              "Sun, 08 Nov 2026 00:00:00 GMT"
+            ],
+            [
+              "X-Artifactory-Filename",
+              "pkg-00.bin"
+            ],
+            [
+              "X-Artifactory-Id",
+              "1157502487007e3e:-700aaf45:1a1bbe7b09d:-8000"
+            ],
+            [
+              "X-Artifactory-Node-Id",
+              "67ad257275ae"
+            ],
+            [
+              "X-Artifactory-Origin-Remote-Path",
+              "http://p1-p2-s2-c-sham-upstream:8000/pkg-00.bin"
+            ],
+            [
+              "X-Checksum-Md5",
+              "3318a59e20679672a3c460bbd5662826"
+            ],
+            [
+              "X-Checksum-Sha1",
+              "e8627e1a8b3b777cb5e58066954340fdbbc31e2b"
+            ],
+            [
+              "X-Checksum-Sha256",
+              "85c7795747cf1f3ac1e7d7f53d3faa6b9d9f3dc961aa9b692aaaddb943ace870"
+            ],
+            [
+              "X-Jfrog-Version",
+              "Artifactory/7.161.26 86126900"
+            ],
+            [
+              "Content-Length",
+              "1"
+            ]
+          ],
+          "body_length": 1,
+          "body_sha256": "148de9c5a7a44d19e56cd9ae1a554bf67847afb0c58f6e12fa29ac7ddfca9940",
+          "body_text": null,
+          "end_utc_ns": 1794173069327723859,
+          "elapsed_ms": 4.264045,
+          "actor": "alice",
+          "target": "gateway"
+        },
+        {
+          "method": "GET",
+          "path": "/p1-p2-s2-c-sham-alice/fresh/profile-1958497d06bf5638-unique-000.bin",
+          "marker": "p1/p2-s2-c-sham/profile/alice/profile-4",
+          "probe": "sender.fresh_get",
+          "request_headers": {},
+          "scheduled_offset_s": 0,
+          "schedule_epoch_utc_ns": 1794173069358184202,
+          "schedule_setup_utc_ns": 1794173069328387568,
+          "start_lag_ms": 0.090373,
+          "start_utc_ns": 1794173069358276545,
+          "status": 404,
+          "headers": [
+            [
+              "Server",
+              "BaseHTTP/0.6 Python/3.12.16"
+            ],
+            [
+              "Date",
+              "Sun, 08 Nov 2026 21:24:29 GMT"
+            ],
+            [
+              "Content-Type",
+              "application/json;charset=ISO-8859-1"
+            ],
+            [
+              "Date",
+              "Sun, 08 Nov 2026 21:24:29 GMT"
+            ],
+            [
+              "X-Artifactory-Id",
+              "1157502487007e3e:-700aaf45:1a1bbe7b09d:-8000"
+            ],
+            [
+              "X-Artifactory-Node-Id",
+              "67ad257275ae"
+            ],
+            [
+              "X-Jfrog-Version",
+              "Artifactory/7.161.26 86126900"
+            ],
+            [
+              "Content-Length",
+              "151"
+            ]
+          ],
+          "body_length": 151,
+          "body_sha256": "f1af709a3a58e4e923706d1aa71fb0165428efeb6b4f91507d191bae97976bc4",
+          "body_text": "{\n  \"errors\" : [ {\n    \"status\" : 404,\n    \"message\" : \"Not Found; Path: 'p1-p2-s2-c-sham-alice:fresh/profile-1958497d06bf5638-unique-000.bin'\"\n  } ]\n}",
+          "end_utc_ns": 1794173069512895040,
+          "elapsed_ms": 154.620985,
+          "actor": "alice",
+          "target": "gateway"
+        },
+        {
+          "method": "GET",
+          "path": "/p1-p2-s2-c-sham-alice/fresh/profile-1958497d06bf5638-repeat.bin",
+          "marker": "p1/p2-s2-c-sham/profile/alice/profile-5",
+          "probe": "sender.repeated_get",
+          "request_headers": {},
+          "scheduled_offset_s": 0,
+          "schedule_epoch_utc_ns": 1794173069543376304,
+          "schedule_setup_utc_ns": 1794173069513638182,
+          "start_lag_ms": 0.068412,
+          "start_utc_ns": 1794173069543445757,
+          "status": 404,
+          "headers": [
+            [
+              "Server",
+              "BaseHTTP/0.6 Python/3.12.16"
+            ],
+            [
+              "Date",
+              "Sun, 08 Nov 2026 21:24:29 GMT"
+            ],
+            [
+              "Content-Type",
+              "application/json;charset=ISO-8859-1"
+            ],
+            [
+              "Date",
+              "Sun, 08 Nov 2026 21:24:29 GMT"
+            ],
+            [
+              "X-Artifactory-Id",
+              "1157502487007e3e:-700aaf45:1a1bbe7b09d:-8000"
+            ],
+            [
+              "X-Artifactory-Node-Id",
+              "67ad257275ae"
+            ],
+            [
+              "X-Jfrog-Version",
+              "Artifactory/7.161.26 86126900"
+            ],
+            [
+              "Content-Length",
+              "147"
+            ]
+          ],
+          "body_length": 147,
+          "body_sha256": "38183b75d72e610cbfe96091fdf44c9dacd2346f580bd1ce140c3a75fa3e3361",
+          "body_text": "{\n  \"errors\" : [ {\n    \"status\" : 404,\n    \"message\" : \"Not Found; Path: 'p1-p2-s2-c-sham-alice:fresh/profile-1958497d06bf5638-repeat.bin'\"\n  } ]\n}",
+          "end_utc_ns": 1794173069697967638,
+          "elapsed_ms": 154.523092,
+          "actor": "alice",
+          "target": "gateway"
+        },
+        {
+          "method": "GET",
+          "path": "/p1-p2-s2-c-sham-alice/fresh/profile-1958497d06bf5638-repeat.bin",
+          "marker": "p1/p2-s2-c-sham/profile/alice/profile-6",
+          "probe": "sender.repeated_get",
+          "request_headers": {},
+          "scheduled_offset_s": 0,
+          "schedule_epoch_utc_ns": 1794173069728393371,
+          "schedule_setup_utc_ns": 1794173069698619237,
+          "start_lag_ms": 0.070452,
+          "start_utc_ns": 1794173069728465283,
+          "status": 404,
+          "headers": [
+            [
+              "Server",
+              "BaseHTTP/0.6 Python/3.12.16"
+            ],
+            [
+              "Date",
+              "Sun, 08 Nov 2026 21:24:29 GMT"
+            ],
+            [
+              "Content-Type",
+              "application/json;charset=ISO-8859-1"
+            ],
+            [
+              "Date",
+              "Sun, 08 Nov 2026 21:24:29 GMT"
+            ],
+            [
+              "X-Artifactory-Id",
+              "1157502487007e3e:-700aaf45:1a1bbe7b09d:-8000"
+            ],
+            [
+              "X-Artifactory-Node-Id",
+              "67ad257275ae"
+            ],
+            [
+              "X-Jfrog-Version",
+              "Artifactory/7.161.26 86126900"
+            ],
+            [
+              "Content-Length",
+              "147"
+            ]
+          ],
+          "body_length": 147,
+          "body_sha256": "38183b75d72e610cbfe96091fdf44c9dacd2346f580bd1ce140c3a75fa3e3361",
+          "body_text": "{\n  \"errors\" : [ {\n    \"status\" : 404,\n    \"message\" : \"Not Found; Path: 'p1-p2-s2-c-sham-alice:fresh/profile-1958497d06bf5638-repeat.bin'\"\n  } ]\n}",
+          "end_utc_ns": 1794173069731005778,
+          "elapsed_ms": 2.541495,
+          "actor": "alice",
+          "target": "gateway"
+        },
+        {
+          "method": "GET",
+          "path": "/p1-p2-s2-c-sham-alice-cache/",
+          "marker": "p1/p2-s2-c-sham/profile/alice/profile-7",
+          "probe": "sender.folder_html",
+          "request_headers": {},
+          "scheduled_offset_s": 0,
+          "schedule_epoch_utc_ns": 1794173069761397239,
+          "schedule_setup_utc_ns": 1794173069731595205,
+          "start_lag_ms": 0.074242,
+          "start_utc_ns": 1794173069761472671,
+          "status": 200,
+          "headers": [
+            [
+              "Server",
+              "BaseHTTP/0.6 Python/3.12.16"
+            ],
+            [
+              "Date",
+              "Sun, 08 Nov 2026 21:24:29 GMT"
+            ],
+            [
+              "Access-Control-Allow-Headers",
+              "X-Requested-With, Content-Type, X-Codingpedia"
+            ],
+            [
+              "Access-Control-Allow-Methods",
+              "GET, POST, DELETE, PUT"
+            ],
+            [
+              "Cache-Control",
+              "no-store"
+            ],
+            [
+              "Content-Type",
+              "text/html"
+            ],
+            [
+              "Date",
+              "Sun, 08 Nov 2026 21:24:29 GMT"
+            ],
+            [
+              "X-Artifactory-Id",
+              "1157502487007e3e:-700aaf45:1a1bbe7b09d:-8000"
+            ],
+            [
+              "X-Artifactory-Node-Id",
+              "67ad257275ae"
+            ],
+            [
+              "X-Jfrog-Version",
+              "Artifactory/7.161.26 86126900"
+            ],
+            [
+              "Content-Length",
+              "1395"
+            ]
+          ],
+          "body_length": 1395,
+          "body_sha256": "ae17be900b6e7ac3504f06deda9109f967508051a2e6ff8cff539cbbded6a23a",
+          "body_text": "<!DOCTYPE html>\n<html>\n<head><meta name=\"robots\" content=\"noindex\" />\n<title>Index of p1-p2-s2-c-sham-alice-cache/</title>\n</head>\n<body>\n<h1>Index of p1-p2-s2-c-sham-alice-cache/</h1>\n<pre>Name        Last modified      Size</pre><hr/>\n<pre><a href=\"pkg-00.bin\">pkg-00.bin</a>   08-Nov-2026 00:00  31 bytes\n<a href=\"pkg-01.bin\">pkg-01.bin</a>   08-Nov-2026 00:00  31 bytes\n<a href=\"pkg-02.bin\">pkg-02.bin</a>   08-Nov-2026 00:00  31 bytes\n<a href=\"pkg-03.bin\">pkg-03.bin</a>   08-Nov-2026 00:00  31 bytes\n<a href=\"pkg-04.bin\">pkg-04.bin</a>   08-Nov-2026 00:00  31 bytes\n<a href=\"pkg-05.bin\">pkg-05.bin</a>   08-Nov-2026 00:00  31 bytes\n<a href=\"pkg-06.bin\">pkg-06.bin</a>   08-Nov-2026 00:00  31 bytes\n<a href=\"pkg-07.bin\">pkg-07.bin</a>   08-Nov-2026 00:00  31 bytes\n<a href=\"pkg-08.bin\">pkg-08.bin</a>   08-Nov-2026 00:00  31 bytes\n<a href=\"pkg-09.bin\">pkg-09.bin</a>   08-Nov-2026 00:00  31 bytes\n<a href=\"pkg-10.bin\">pkg-10.bin</a>   08-Nov-2026 00:00  31 bytes\n<a href=\"pkg-11.bin\">pkg-11.bin</a>   08-Nov-2026 00:00  31 bytes\n<a href=\"pkg-12.bin\">pkg-12.bin</a>   08-Nov-2026 00:00  31 bytes\n<a href=\"pkg-13.bin\">pkg-13.bin</a>   08-Nov-2026 00:00  31 bytes\n<a href=\"pkg-14.bin\">pkg-14.bin</a>   08-Nov-2026 00:00  31 bytes\n<a href=\"pkg-15.bin\">pkg-15.bin</a>   08-Nov-2026 00:00  31 bytes\n</pre>\n<hr/><address style=\"font-size:small;\">Artifactory/7.161.26 Server</address></body></html>",
+          "end_utc_ns": 1794173069765622723,
+          "elapsed_ms": 4.151412,
+          "actor": "alice",
+          "target": "gateway"
+        },
+        {
+          "method": "GET",
+          "path": "/api/storage/p1-p2-s2-c-sham-alice-cache/pkg-15.bin?stats",
+          "marker": "p1/p2-s2-c-sham/profile/alice/profile-8",
+          "probe": "sender.stats",
+          "request_headers": {},
+          "scheduled_offset_s": 0,
+          "schedule_epoch_utc_ns": 1794173069795999914,
+          "schedule_setup_utc_ns": 1794173069766212520,
+          "start_lag_ms": 0.068232,
+          "start_utc_ns": 1794173069796069186,
+          "status": 403,
+          "headers": [
+            [
+              "Server",
+              "BaseHTTP/0.6 Python/3.12.16"
+            ],
+            [
+              "Date",
+              "Sun, 08 Nov 2026 21:24:29 GMT"
+            ],
+            [
+              "Content-Type",
+              "text/plain"
+            ],
+            [
+              "Content-Length",
+              "35"
+            ]
+          ],
+          "body_length": 35,
+          "body_sha256": "3416edfde6b48e4318413f9ddcb217ef7ca758640847644af04e3f94b8994a23",
+          "body_text": "Blocked by fixed P1 gateway policy\n",
+          "end_utc_ns": 1794173069797119926,
+          "elapsed_ms": 1.05193,
+          "actor": "alice",
+          "target": "gateway"
+        }
+      ],
+      "approximation": "wire body/status and sequential delay only"
+    },
+    "bob": {
+      "repository": "p1-p2-s2-c-sham-bob",
+      "responses": {
+        "get": {
+          "status": 200,
+          "headers": [
+            [
+              "Server",
+              "BaseHTTP/0.6 Python/3.12.16"
+            ],
+            [
+              "Date",
+              "Sun, 08 Nov 2026 21:24:31 GMT"
+            ],
+            [
+              "Accept-Ranges",
+              "bytes"
+            ],
+            [
+              "Content-Disposition",
+              "attachment; filename=\"pkg-00.bin\"; filename*=UTF-8''pkg-00.bin"
+            ],
+            [
+              "Content-Type",
+              "application/octet-stream"
+            ],
+            [
+              "Date",
+              "Sun, 08 Nov 2026 21:24:31 GMT"
+            ],
+            [
+              "Etag",
+              "e8627e1a8b3b777cb5e58066954340fdbbc31e2b"
+            ],
+            [
+              "Last-Modified",
+              "Sun, 08 Nov 2026 00:00:00 GMT"
+            ],
+            [
+              "X-Artifactory-Filename",
+              "pkg-00.bin"
+            ],
+            [
+              "X-Artifactory-Id",
+              "1157502487007e3e:-700aaf45:1a1bbe7b09d:-8000"
+            ],
+            [
+              "X-Artifactory-Node-Id",
+              "67ad257275ae"
+            ],
+            [
+              "X-Artifactory-Origin-Remote-Path",
+              "http://p1-p2-s2-c-sham-upstream:8000/pkg-00.bin"
+            ],
+            [
+              "X-Checksum-Md5",
+              "3318a59e20679672a3c460bbd5662826"
+            ],
+            [
+              "X-Checksum-Sha1",
+              "e8627e1a8b3b777cb5e58066954340fdbbc31e2b"
+            ],
+            [
+              "X-Checksum-Sha256",
+              "85c7795747cf1f3ac1e7d7f53d3faa6b9d9f3dc961aa9b692aaaddb943ace870"
+            ],
+            [
+              "X-Jfrog-Version",
+              "Artifactory/7.161.26 86126900"
+            ],
+            [
+              "Content-Length",
+              "31"
+            ]
+          ],
+          "body_b64": "cDEtbWV0ZXIgZml4dHVyZSBwYWNrYWdlIGJ5dGVzCg==",
+          "delay_s": 0.025117246000000003
+        },
+        "head": {
+          "status": 200,
+          "headers": [
+            [
+              "Server",
+              "BaseHTTP/0.6 Python/3.12.16"
+            ],
+            [
+              "Date",
+              "Sun, 08 Nov 2026 21:24:31 GMT"
+            ],
+            [
+              "Accept-Ranges",
+              "bytes"
+            ],
+            [
+              "Content-Disposition",
+              "attachment; filename=\"pkg-00.bin\"; filename*=UTF-8''pkg-00.bin"
+            ],
+            [
+              "Content-Type",
+              "application/octet-stream"
+            ],
+            [
+              "Date",
+              "Sun, 08 Nov 2026 21:24:31 GMT"
+            ],
+            [
+              "Etag",
+              "e8627e1a8b3b777cb5e58066954340fdbbc31e2b"
+            ],
+            [
+              "Last-Modified",
+              "Sun, 08 Nov 2026 00:00:00 GMT"
+            ],
+            [
+              "X-Artifactory-Filename",
+              "pkg-00.bin"
+            ],
+            [
+              "X-Artifactory-Id",
+              "1157502487007e3e:-700aaf45:1a1bbe7b09d:-8000"
+            ],
+            [
+              "X-Artifactory-Node-Id",
+              "67ad257275ae"
+            ],
+            [
+              "X-Artifactory-Origin-Remote-Path",
+              "http://p1-p2-s2-c-sham-upstream:8000/pkg-00.bin"
+            ],
+            [
+              "X-Checksum-Md5",
+              "3318a59e20679672a3c460bbd5662826"
+            ],
+            [
+              "X-Checksum-Sha1",
+              "e8627e1a8b3b777cb5e58066954340fdbbc31e2b"
+            ],
+            [
+              "X-Checksum-Sha256",
+              "85c7795747cf1f3ac1e7d7f53d3faa6b9d9f3dc961aa9b692aaaddb943ace870"
+            ],
+            [
+              "X-Jfrog-Version",
+              "Artifactory/7.161.26 86126900"
+            ],
+            [
+              "Content-Length",
+              "0"
+            ]
+          ],
+          "body_b64": "",
+          "delay_s": 0.004126072
+        },
+        "cond_get": {
+          "status": 304,
+          "headers": [
+            [
+              "Server",
+              "BaseHTTP/0.6 Python/3.12.16"
+            ],
+            [
+              "Date",
+              "Sun, 08 Nov 2026 21:24:31 GMT"
+            ],
+            [
+              "Accept-Ranges",
+              "bytes"
+            ],
+            [
+              "Content-Disposition",
+              "attachment; filename=\"pkg-00.bin\"; filename*=UTF-8''pkg-00.bin"
+            ],
+            [
+              "Date",
+              "Sun, 08 Nov 2026 21:24:31 GMT"
+            ],
+            [
+              "Etag",
+              "e8627e1a8b3b777cb5e58066954340fdbbc31e2b"
+            ],
+            [
+              "Last-Modified",
+              "Sun, 08 Nov 2026 00:00:00 GMT"
+            ],
+            [
+              "X-Artifactory-Filename",
+              "pkg-00.bin"
+            ],
+            [
+              "X-Artifactory-Id",
+              "1157502487007e3e:-700aaf45:1a1bbe7b09d:-8000"
+            ],
+            [
+              "X-Artifactory-Node-Id",
+              "67ad257275ae"
+            ],
+            [
+              "X-Checksum-Md5",
+              "3318a59e20679672a3c460bbd5662826"
+            ],
+            [
+              "X-Checksum-Sha1",
+              "e8627e1a8b3b777cb5e58066954340fdbbc31e2b"
+            ],
+            [
+              "X-Checksum-Sha256",
+              "85c7795747cf1f3ac1e7d7f53d3faa6b9d9f3dc961aa9b692aaaddb943ace870"
+            ],
+            [
+              "X-Jfrog-Version",
+              "Artifactory/7.161.26 86126900"
+            ],
+            [
+              "Content-Length",
+              "0"
+            ]
+          ],
+          "body_b64": "",
+          "delay_s": 0.003531984
+        },
+        "range_get": {
+          "status": 206,
+          "headers": [
+            [
+              "Server",
+              "BaseHTTP/0.6 Python/3.12.16"
+            ],
+            [
+              "Date",
+              "Sun, 08 Nov 2026 21:24:31 GMT"
+            ],
+            [
+              "Accept-Ranges",
+              "bytes"
+            ],
+            [
+              "Content-Disposition",
+              "attachment; filename=\"pkg-00.bin\"; filename*=UTF-8''pkg-00.bin"
+            ],
+            [
+              "Content-Range",
+              "bytes 0-0/31"
+            ],
+            [
+              "Content-Type",
+              "application/octet-stream"
+            ],
+            [
+              "Date",
+              "Sun, 08 Nov 2026 21:24:31 GMT"
+            ],
+            [
+              "Etag",
+              "e8627e1a8b3b777cb5e58066954340fdbbc31e2b"
+            ],
+            [
+              "Last-Modified",
+              "Sun, 08 Nov 2026 00:00:00 GMT"
+            ],
+            [
+              "X-Artifactory-Filename",
+              "pkg-00.bin"
+            ],
+            [
+              "X-Artifactory-Id",
+              "1157502487007e3e:-700aaf45:1a1bbe7b09d:-8000"
+            ],
+            [
+              "X-Artifactory-Node-Id",
+              "67ad257275ae"
+            ],
+            [
+              "X-Artifactory-Origin-Remote-Path",
+              "http://p1-p2-s2-c-sham-upstream:8000/pkg-00.bin"
+            ],
+            [
+              "X-Checksum-Md5",
+              "3318a59e20679672a3c460bbd5662826"
+            ],
+            [
+              "X-Checksum-Sha1",
+              "e8627e1a8b3b777cb5e58066954340fdbbc31e2b"
+            ],
+            [
+              "X-Checksum-Sha256",
+              "85c7795747cf1f3ac1e7d7f53d3faa6b9d9f3dc961aa9b692aaaddb943ace870"
+            ],
+            [
+              "X-Jfrog-Version",
+              "Artifactory/7.161.26 86126900"
+            ],
+            [
+              "Content-Length",
+              "1"
+            ]
+          ],
+          "body_b64": "cA==",
+          "delay_s": 0.003940036
+        },
+        "fresh_get": {
+          "status": 404,
+          "headers": [
+            [
+              "Server",
+              "BaseHTTP/0.6 Python/3.12.16"
+            ],
+            [
+              "Date",
+              "Sun, 08 Nov 2026 21:24:31 GMT"
+            ],
+            [
+              "Content-Type",
+              "application/json;charset=ISO-8859-1"
+            ],
+            [
+              "Date",
+              "Sun, 08 Nov 2026 21:24:31 GMT"
+            ],
+            [
+              "X-Artifactory-Id",
+              "1157502487007e3e:-700aaf45:1a1bbe7b09d:-8000"
+            ],
+            [
+              "X-Artifactory-Node-Id",
+              "67ad257275ae"
+            ],
+            [
+              "X-Jfrog-Version",
+              "Artifactory/7.161.26 86126900"
+            ],
+            [
+              "Content-Length",
+              "149"
+            ]
+          ],
+          "body_b64": "ewogICJlcnJvcnMiIDogWyB7CiAgICAic3RhdHVzIiA6IDQwNCwKICAgICJtZXNzYWdlIiA6ICJOb3QgRm91bmQ7IFBhdGg6ICdwMS1wMi1zMi1jLXNoYW0tYm9iOmZyZXNoL3Byb2ZpbGUtMzhhY2JmMzE5ZTMwZDNlNC11bmlxdWUtMDAwLmJpbiciCiAgfSBdCn0=",
+          "delay_s": 0.15410775000000002
+        },
+        "repeated_cold": {
+          "status": 404,
+          "headers": [
+            [
+              "Server",
+              "BaseHTTP/0.6 Python/3.12.16"
+            ],
+            [
+              "Date",
+              "Sun, 08 Nov 2026 21:24:31 GMT"
+            ],
+            [
+              "Content-Type",
+              "application/json;charset=ISO-8859-1"
+            ],
+            [
+              "Date",
+              "Sun, 08 Nov 2026 21:24:31 GMT"
+            ],
+            [
+              "X-Artifactory-Id",
+              "1157502487007e3e:-700aaf45:1a1bbe7b09d:-8000"
+            ],
+            [
+              "X-Artifactory-Node-Id",
+              "67ad257275ae"
+            ],
+            [
+              "X-Jfrog-Version",
+              "Artifactory/7.161.26 86126900"
+            ],
+            [
+              "Content-Length",
+              "145"
+            ]
+          ],
+          "body_b64": "ewogICJlcnJvcnMiIDogWyB7CiAgICAic3RhdHVzIiA6IDQwNCwKICAgICJtZXNzYWdlIiA6ICJOb3QgRm91bmQ7IFBhdGg6ICdwMS1wMi1zMi1jLXNoYW0tYm9iOmZyZXNoL3Byb2ZpbGUtMzhhY2JmMzE5ZTMwZDNlNC1yZXBlYXQuYmluJyIKICB9IF0KfQ==",
+          "delay_s": 0.154708868
+        },
+        "repeated_warm": {
+          "status": 404,
+          "headers": [
+            [
+              "Server",
+              "BaseHTTP/0.6 Python/3.12.16"
+            ],
+            [
+              "Date",
+              "Sun, 08 Nov 2026 21:24:31 GMT"
+            ],
+            [
+              "Content-Type",
+              "application/json;charset=ISO-8859-1"
+            ],
+            [
+              "Date",
+              "Sun, 08 Nov 2026 21:24:31 GMT"
+            ],
+            [
+              "X-Artifactory-Id",
+              "1157502487007e3e:-700aaf45:1a1bbe7b09d:-8000"
+            ],
+            [
+              "X-Artifactory-Node-Id",
+              "67ad257275ae"
+            ],
+            [
+              "X-Jfrog-Version",
+              "Artifactory/7.161.26 86126900"
+            ],
+            [
+              "Content-Length",
+              "145"
+            ]
+          ],
+          "body_b64": "ewogICJlcnJvcnMiIDogWyB7CiAgICAic3RhdHVzIiA6IDQwNCwKICAgICJtZXNzYWdlIiA6ICJOb3QgRm91bmQ7IFBhdGg6ICdwMS1wMi1zMi1jLXNoYW0tYm9iOmZyZXNoL3Byb2ZpbGUtMzhhY2JmMzE5ZTMwZDNlNC1yZXBlYXQuYmluJyIKICB9IF0KfQ==",
+          "delay_s": 0.002775381
+        },
+        "folder_html": {
+          "status": 200,
+          "headers": [
+            [
+              "Server",
+              "BaseHTTP/0.6 Python/3.12.16"
+            ],
+            [
+              "Date",
+              "Sun, 08 Nov 2026 21:24:31 GMT"
+            ],
+            [
+              "Access-Control-Allow-Headers",
+              "X-Requested-With, Content-Type, X-Codingpedia"
+            ],
+            [
+              "Access-Control-Allow-Methods",
+              "GET, POST, DELETE, PUT"
+            ],
+            [
+              "Cache-Control",
+              "no-store"
+            ],
+            [
+              "Content-Type",
+              "text/html"
+            ],
+            [
+              "Date",
+              "Sun, 08 Nov 2026 21:24:31 GMT"
+            ],
+            [
+              "X-Artifactory-Id",
+              "1157502487007e3e:-700aaf45:1a1bbe7b09d:-8000"
+            ],
+            [
+              "X-Artifactory-Node-Id",
+              "67ad257275ae"
+            ],
+            [
+              "X-Jfrog-Version",
+              "Artifactory/7.161.26 86126900"
+            ],
+            [
+              "Content-Length",
+              "1391"
+            ]
+          ],
+          "body_b64": "PCFET0NUWVBFIGh0bWw+CjxodG1sPgo8aGVhZD48bWV0YSBuYW1lPSJyb2JvdHMiIGNvbnRlbnQ9Im5vaW5kZXgiIC8+Cjx0aXRsZT5JbmRleCBvZiBwMS1wMi1zMi1jLXNoYW0tYm9iLWNhY2hlLzwvdGl0bGU+CjwvaGVhZD4KPGJvZHk+CjxoMT5JbmRleCBvZiBwMS1wMi1zMi1jLXNoYW0tYm9iLWNhY2hlLzwvaDE+CjxwcmU+TmFtZSAgICAgICAgTGFzdCBtb2RpZmllZCAgICAgIFNpemU8L3ByZT48aHIvPgo8cHJlPjxhIGhyZWY9InBrZy0wMC5iaW4iPnBrZy0wMC5iaW48L2E+ICAgMDgtTm92LTIwMjYgMDA6MDAgIDMxIGJ5dGVzCjxhIGhyZWY9InBrZy0wMS5iaW4iPnBrZy0wMS5iaW48L2E+ICAgMDgtTm92LTIwMjYgMDA6MDAgIDMxIGJ5dGVzCjxhIGhyZWY9InBrZy0wMi5iaW4iPnBrZy0wMi5iaW48L2E+ICAgMDgtTm92LTIwMjYgMDA6MDAgIDMxIGJ5dGVzCjxhIGhyZWY9InBrZy0wMy5iaW4iPnBrZy0wMy5iaW48L2E+ICAgMDgtTm92LTIwMjYgMDA6MDAgIDMxIGJ5dGVzCjxhIGhyZWY9InBrZy0wNC5iaW4iPnBrZy0wNC5iaW48L2E+ICAgMDgtTm92LTIwMjYgMDA6MDAgIDMxIGJ5dGVzCjxhIGhyZWY9InBrZy0wNS5iaW4iPnBrZy0wNS5iaW48L2E+ICAgMDgtTm92LTIwMjYgMDA6MDAgIDMxIGJ5dGVzCjxhIGhyZWY9InBrZy0wNi5iaW4iPnBrZy0wNi5iaW48L2E+ICAgMDgtTm92LTIwMjYgMDA6MDAgIDMxIGJ5dGVzCjxhIGhyZWY9InBrZy0wNy5iaW4iPnBrZy0wNy5iaW48L2E+ICAgMDgtTm92LTIwMjYgMDA6MDAgIDMxIGJ5dGVzCjxhIGhyZWY9InBrZy0wOC5iaW4iPnBrZy0wOC5iaW48L2E+ICAgMDgtTm92LTIwMjYgMDA6MDAgIDMxIGJ5dGVzCjxhIGhyZWY9InBrZy0wOS5iaW4iPnBrZy0wOS5iaW48L2E+ICAgMDgtTm92LTIwMjYgMDA6MDAgIDMxIGJ5dGVzCjxhIGhyZWY9InBrZy0xMC5iaW4iPnBrZy0xMC5iaW48L2E+ICAgMDgtTm92LTIwMjYgMDA6MDAgIDMxIGJ5dGVzCjxhIGhyZWY9InBrZy0xMS5iaW4iPnBrZy0xMS5iaW48L2E+ICAgMDgtTm92LTIwMjYgMDA6MDAgIDMxIGJ5dGVzCjxhIGhyZWY9InBrZy0xMi5iaW4iPnBrZy0xMi5iaW48L2E+ICAgMDgtTm92LTIwMjYgMDA6MDAgIDMxIGJ5dGVzCjxhIGhyZWY9InBrZy0xMy5iaW4iPnBrZy0xMy5iaW48L2E+ICAgMDgtTm92LTIwMjYgMDA6MDAgIDMxIGJ5dGVzCjxhIGhyZWY9InBrZy0xNC5iaW4iPnBrZy0xNC5iaW48L2E+ICAgMDgtTm92LTIwMjYgMDA6MDAgIDMxIGJ5dGVzCjxhIGhyZWY9InBrZy0xNS5iaW4iPnBrZy0xNS5iaW48L2E+ICAgMDgtTm92LTIwMjYgMDA6MDAgIDMxIGJ5dGVzCjwvcHJlPgo8aHIvPjxhZGRyZXNzIHN0eWxlPSJmb250LXNpemU6c21hbGw7Ij5BcnRpZmFjdG9yeS83LjE2MS4yNiBTZXJ2ZXI8L2FkZHJlc3M+PC9ib2R5PjwvaHRtbD4=",
+          "delay_s": 0.004563324
+        },
+        "stats": {
+          "status": 403,
+          "headers": [
+            [
+              "Server",
+              "BaseHTTP/0.6 Python/3.12.16"
+            ],
+            [
+              "Date",
+              "Sun, 08 Nov 2026 21:24:31 GMT"
+            ],
+            [
+              "Content-Type",
+              "text/plain"
+            ],
+            [
+              "Content-Length",
+              "35"
+            ]
+          ],
+          "body_b64": "QmxvY2tlZCBieSBmaXhlZCBQMSBnYXRld2F5IHBvbGljeQo=",
+          "delay_s": 0.0009495980000000001
+        }
+      },
+      "captured_requests": [
+        {
+          "method": "GET",
+          "path": "/p1-p2-s2-c-sham-bob/pkg-00.bin",
+          "marker": "p1/p2-s2-c-sham/profile/bob/profile-0",
+          "probe": "sender.get",
+          "request_headers": {},
+          "scheduled_offset_s": 0,
+          "schedule_epoch_utc_ns": 1794173071171930681,
+          "schedule_setup_utc_ns": 1794173071142189949,
+          "start_lag_ms": 0.078093,
+          "start_utc_ns": 1794173071172011864,
+          "status": 200,
+          "headers": [
+            [
+              "Server",
+              "BaseHTTP/0.6 Python/3.12.16"
+            ],
+            [
+              "Date",
+              "Sun, 08 Nov 2026 21:24:31 GMT"
+            ],
+            [
+              "Accept-Ranges",
+              "bytes"
+            ],
+            [
+              "Content-Disposition",
+              "attachment; filename=\"pkg-00.bin\"; filename*=UTF-8''pkg-00.bin"
+            ],
+            [
+              "Content-Type",
+              "application/octet-stream"
+            ],
+            [
+              "Date",
+              "Sun, 08 Nov 2026 21:24:31 GMT"
+            ],
+            [
+              "Etag",
+              "e8627e1a8b3b777cb5e58066954340fdbbc31e2b"
+            ],
+            [
+              "Last-Modified",
+              "Sun, 08 Nov 2026 00:00:00 GMT"
+            ],
+            [
+              "X-Artifactory-Filename",
+              "pkg-00.bin"
+            ],
+            [
+              "X-Artifactory-Id",
+              "1157502487007e3e:-700aaf45:1a1bbe7b09d:-8000"
+            ],
+            [
+              "X-Artifactory-Node-Id",
+              "67ad257275ae"
+            ],
+            [
+              "X-Artifactory-Origin-Remote-Path",
+              "http://p1-p2-s2-c-sham-upstream:8000/pkg-00.bin"
+            ],
+            [
+              "X-Checksum-Md5",
+              "3318a59e20679672a3c460bbd5662826"
+            ],
+            [
+              "X-Checksum-Sha1",
+              "e8627e1a8b3b777cb5e58066954340fdbbc31e2b"
+            ],
+            [
+              "X-Checksum-Sha256",
+              "85c7795747cf1f3ac1e7d7f53d3faa6b9d9f3dc961aa9b692aaaddb943ace870"
+            ],
+            [
+              "X-Jfrog-Version",
+              "Artifactory/7.161.26 86126900"
+            ],
+            [
+              "Content-Length",
+              "31"
+            ]
+          ],
+          "body_length": 31,
+          "body_sha256": "85c7795747cf1f3ac1e7d7f53d3faa6b9d9f3dc961aa9b692aaaddb943ace870",
+          "body_text": null,
+          "end_utc_ns": 1794173071197127720,
+          "elapsed_ms": 25.117246,
+          "actor": "bob",
+          "target": "gateway"
+        },
+        {
+          "method": "HEAD",
+          "path": "/p1-p2-s2-c-sham-bob/pkg-00.bin",
+          "marker": "p1/p2-s2-c-sham/profile/bob/profile-1",
+          "probe": "sender.head",
+          "request_headers": {},
+          "scheduled_offset_s": 0,
+          "schedule_epoch_utc_ns": 1794173071227746998,
+          "schedule_setup_utc_ns": 1794173071197999726,
+          "start_lag_ms": 0.073022,
+          "start_utc_ns": 1794173071227821910,
+          "status": 200,
+          "headers": [
+            [
+              "Server",
+              "BaseHTTP/0.6 Python/3.12.16"
+            ],
+            [
+              "Date",
+              "Sun, 08 Nov 2026 21:24:31 GMT"
+            ],
+            [
+              "Accept-Ranges",
+              "bytes"
+            ],
+            [
+              "Content-Disposition",
+              "attachment; filename=\"pkg-00.bin\"; filename*=UTF-8''pkg-00.bin"
+            ],
+            [
+              "Content-Type",
+              "application/octet-stream"
+            ],
+            [
+              "Date",
+              "Sun, 08 Nov 2026 21:24:31 GMT"
+            ],
+            [
+              "Etag",
+              "e8627e1a8b3b777cb5e58066954340fdbbc31e2b"
+            ],
+            [
+              "Last-Modified",
+              "Sun, 08 Nov 2026 00:00:00 GMT"
+            ],
+            [
+              "X-Artifactory-Filename",
+              "pkg-00.bin"
+            ],
+            [
+              "X-Artifactory-Id",
+              "1157502487007e3e:-700aaf45:1a1bbe7b09d:-8000"
+            ],
+            [
+              "X-Artifactory-Node-Id",
+              "67ad257275ae"
+            ],
+            [
+              "X-Artifactory-Origin-Remote-Path",
+              "http://p1-p2-s2-c-sham-upstream:8000/pkg-00.bin"
+            ],
+            [
+              "X-Checksum-Md5",
+              "3318a59e20679672a3c460bbd5662826"
+            ],
+            [
+              "X-Checksum-Sha1",
+              "e8627e1a8b3b777cb5e58066954340fdbbc31e2b"
+            ],
+            [
+              "X-Checksum-Sha256",
+              "85c7795747cf1f3ac1e7d7f53d3faa6b9d9f3dc961aa9b692aaaddb943ace870"
+            ],
+            [
+              "X-Jfrog-Version",
+              "Artifactory/7.161.26 86126900"
+            ],
+            [
+              "Content-Length",
+              "0"
+            ]
+          ],
+          "body_length": 0,
+          "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "body_text": null,
+          "end_utc_ns": 1794173071231946031,
+          "elapsed_ms": 4.126072,
+          "actor": "bob",
+          "target": "gateway"
+        },
+        {
+          "method": "GET",
+          "path": "/p1-p2-s2-c-sham-bob/pkg-00.bin",
+          "marker": "p1/p2-s2-c-sham/profile/bob/profile-2",
+          "probe": "sender.cond_get",
+          "request_headers": {
+            "If-None-Match": "e8627e1a8b3b777cb5e58066954340fdbbc31e2b"
+          },
+          "scheduled_offset_s": 0,
+          "schedule_epoch_utc_ns": 1794173071262438056,
+          "schedule_setup_utc_ns": 1794173071232701424,
+          "start_lag_ms": 0.079082,
+          "start_utc_ns": 1794173071262518458,
+          "status": 304,
+          "headers": [
+            [
+              "Server",
+              "BaseHTTP/0.6 Python/3.12.16"
+            ],
+            [
+              "Date",
+              "Sun, 08 Nov 2026 21:24:31 GMT"
+            ],
+            [
+              "Accept-Ranges",
+              "bytes"
+            ],
+            [
+              "Content-Disposition",
+              "attachment; filename=\"pkg-00.bin\"; filename*=UTF-8''pkg-00.bin"
+            ],
+            [
+              "Date",
+              "Sun, 08 Nov 2026 21:24:31 GMT"
+            ],
+            [
+              "Etag",
+              "e8627e1a8b3b777cb5e58066954340fdbbc31e2b"
+            ],
+            [
+              "Last-Modified",
+              "Sun, 08 Nov 2026 00:00:00 GMT"
+            ],
+            [
+              "X-Artifactory-Filename",
+              "pkg-00.bin"
+            ],
+            [
+              "X-Artifactory-Id",
+              "1157502487007e3e:-700aaf45:1a1bbe7b09d:-8000"
+            ],
+            [
+              "X-Artifactory-Node-Id",
+              "67ad257275ae"
+            ],
+            [
+              "X-Checksum-Md5",
+              "3318a59e20679672a3c460bbd5662826"
+            ],
+            [
+              "X-Checksum-Sha1",
+              "e8627e1a8b3b777cb5e58066954340fdbbc31e2b"
+            ],
+            [
+              "X-Checksum-Sha256",
+              "85c7795747cf1f3ac1e7d7f53d3faa6b9d9f3dc961aa9b692aaaddb943ace870"
+            ],
+            [
+              "X-Jfrog-Version",
+              "Artifactory/7.161.26 86126900"
+            ],
+            [
+              "Content-Length",
+              "0"
+            ]
+          ],
+          "body_length": 0,
+          "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "body_text": null,
+          "end_utc_ns": 1794173071266049142,
+          "elapsed_ms": 3.531984,
+          "actor": "bob",
+          "target": "gateway"
+        },
+        {
+          "method": "GET",
+          "path": "/p1-p2-s2-c-sham-bob/pkg-00.bin",
+          "marker": "p1/p2-s2-c-sham/profile/bob/profile-3",
+          "probe": "sender.range_get",
+          "request_headers": {
+            "Range": "bytes=0-0"
+          },
+          "scheduled_offset_s": 0,
+          "schedule_epoch_utc_ns": 1794173071296468944,
+          "schedule_setup_utc_ns": 1794173071266707311,
+          "start_lag_ms": 0.081762,
+          "start_utc_ns": 1794173071296551916,
+          "status": 206,
+          "headers": [
+            [
+              "Server",
+              "BaseHTTP/0.6 Python/3.12.16"
+            ],
+            [
+              "Date",
+              "Sun, 08 Nov 2026 21:24:31 GMT"
+            ],
+            [
+              "Accept-Ranges",
+              "bytes"
+            ],
+            [
+              "Content-Disposition",
+              "attachment; filename=\"pkg-00.bin\"; filename*=UTF-8''pkg-00.bin"
+            ],
+            [
+              "Content-Range",
+              "bytes 0-0/31"
+            ],
+            [
+              "Content-Type",
+              "application/octet-stream"
+            ],
+            [
+              "Date",
+              "Sun, 08 Nov 2026 21:24:31 GMT"
+            ],
+            [
+              "Etag",
+              "e8627e1a8b3b777cb5e58066954340fdbbc31e2b"
+            ],
+            [
+              "Last-Modified",
+              "Sun, 08 Nov 2026 00:00:00 GMT"
+            ],
+            [
+              "X-Artifactory-Filename",
+              "pkg-00.bin"
+            ],
+            [
+              "X-Artifactory-Id",
+              "1157502487007e3e:-700aaf45:1a1bbe7b09d:-8000"
+            ],
+            [
+              "X-Artifactory-Node-Id",
+              "67ad257275ae"
+            ],
+            [
+              "X-Artifactory-Origin-Remote-Path",
+              "http://p1-p2-s2-c-sham-upstream:8000/pkg-00.bin"
+            ],
+            [
+              "X-Checksum-Md5",
+              "3318a59e20679672a3c460bbd5662826"
+            ],
+            [
+              "X-Checksum-Sha1",
+              "e8627e1a8b3b777cb5e58066954340fdbbc31e2b"
+            ],
+            [
+              "X-Checksum-Sha256",
+              "85c7795747cf1f3ac1e7d7f53d3faa6b9d9f3dc961aa9b692aaaddb943ace870"
+            ],
+            [
+              "X-Jfrog-Version",
+              "Artifactory/7.161.26 86126900"
+            ],
+            [
+              "Content-Length",
+              "1"
+            ]
+          ],
+          "body_length": 1,
+          "body_sha256": "148de9c5a7a44d19e56cd9ae1a554bf67847afb0c58f6e12fa29ac7ddfca9940",
+          "body_text": null,
+          "end_utc_ns": 1794173071300490762,
+          "elapsed_ms": 3.940036,
+          "actor": "bob",
+          "target": "gateway"
+        },
+        {
+          "method": "GET",
+          "path": "/p1-p2-s2-c-sham-bob/fresh/profile-38acbf319e30d3e4-unique-000.bin",
+          "marker": "p1/p2-s2-c-sham/profile/bob/profile-4",
+          "probe": "sender.fresh_get",
+          "request_headers": {},
+          "scheduled_offset_s": 0,
+          "schedule_epoch_utc_ns": 1794173071330981406,
+          "schedule_setup_utc_ns": 1794173071301202123,
+          "start_lag_ms": 0.108793,
+          "start_utc_ns": 1794173071331091899,
+          "status": 404,
+          "headers": [
+            [
+              "Server",
+              "BaseHTTP/0.6 Python/3.12.16"
+            ],
+            [
+              "Date",
+              "Sun, 08 Nov 2026 21:24:31 GMT"
+            ],
+            [
+              "Content-Type",
+              "application/json;charset=ISO-8859-1"
+            ],
+            [
+              "Date",
+              "Sun, 08 Nov 2026 21:24:31 GMT"
+            ],
+            [
+              "X-Artifactory-Id",
+              "1157502487007e3e:-700aaf45:1a1bbe7b09d:-8000"
+            ],
+            [
+              "X-Artifactory-Node-Id",
+              "67ad257275ae"
+            ],
+            [
+              "X-Jfrog-Version",
+              "Artifactory/7.161.26 86126900"
+            ],
+            [
+              "Content-Length",
+              "149"
+            ]
+          ],
+          "body_length": 149,
+          "body_sha256": "6a3e4f3004ef934191a085ee38c692ee86df433e8b9b3f52c9079e1922c2d9ee",
+          "body_text": "{\n  \"errors\" : [ {\n    \"status\" : 404,\n    \"message\" : \"Not Found; Path: 'p1-p2-s2-c-sham-bob:fresh/profile-38acbf319e30d3e4-unique-000.bin'\"\n  } ]\n}",
+          "end_utc_ns": 1794173071485197839,
+          "elapsed_ms": 154.10775,
+          "actor": "bob",
+          "target": "gateway"
+        },
+        {
+          "method": "GET",
+          "path": "/p1-p2-s2-c-sham-bob/fresh/profile-38acbf319e30d3e4-repeat.bin",
+          "marker": "p1/p2-s2-c-sham/profile/bob/profile-5",
+          "probe": "sender.repeated_get",
+          "request_headers": {},
+          "scheduled_offset_s": 0,
+          "schedule_epoch_utc_ns": 1794173071515675003,
+          "schedule_setup_utc_ns": 1794173071485901270,
+          "start_lag_ms": 0.076142,
+          "start_utc_ns": 1794173071515752435,
+          "status": 404,
+          "headers": [
+            [
+              "Server",
+              "BaseHTTP/0.6 Python/3.12.16"
+            ],
+            [
+              "Date",
+              "Sun, 08 Nov 2026 21:24:31 GMT"
+            ],
+            [
+              "Content-Type",
+              "application/json;charset=ISO-8859-1"
+            ],
+            [
+              "Date",
+              "Sun, 08 Nov 2026 21:24:31 GMT"
+            ],
+            [
+              "X-Artifactory-Id",
+              "1157502487007e3e:-700aaf45:1a1bbe7b09d:-8000"
+            ],
+            [
+              "X-Artifactory-Node-Id",
+              "67ad257275ae"
+            ],
+            [
+              "X-Jfrog-Version",
+              "Artifactory/7.161.26 86126900"
+            ],
+            [
+              "Content-Length",
+              "145"
+            ]
+          ],
+          "body_length": 145,
+          "body_sha256": "eaa4b9ec8a3029c7c62b6bceca1093809629fdcac8a6ad739a3f6e4e5b4f2b5b",
+          "body_text": "{\n  \"errors\" : [ {\n    \"status\" : 404,\n    \"message\" : \"Not Found; Path: 'p1-p2-s2-c-sham-bob:fresh/profile-38acbf319e30d3e4-repeat.bin'\"\n  } ]\n}",
+          "end_utc_ns": 1794173071670459523,
+          "elapsed_ms": 154.708868,
+          "actor": "bob",
+          "target": "gateway"
+        },
+        {
+          "method": "GET",
+          "path": "/p1-p2-s2-c-sham-bob/fresh/profile-38acbf319e30d3e4-repeat.bin",
+          "marker": "p1/p2-s2-c-sham/profile/bob/profile-6",
+          "probe": "sender.repeated_get",
+          "request_headers": {},
+          "scheduled_offset_s": 0,
+          "schedule_epoch_utc_ns": 1794173071700908866,
+          "schedule_setup_utc_ns": 1794173071671126243,
+          "start_lag_ms": 0.069383,
+          "start_utc_ns": 1794173071700979169,
+          "status": 404,
+          "headers": [
+            [
+              "Server",
+              "BaseHTTP/0.6 Python/3.12.16"
+            ],
+            [
+              "Date",
+              "Sun, 08 Nov 2026 21:24:31 GMT"
+            ],
+            [
+              "Content-Type",
+              "application/json;charset=ISO-8859-1"
+            ],
+            [
+              "Date",
+              "Sun, 08 Nov 2026 21:24:31 GMT"
+            ],
+            [
+              "X-Artifactory-Id",
+              "1157502487007e3e:-700aaf45:1a1bbe7b09d:-8000"
+            ],
+            [
+              "X-Artifactory-Node-Id",
+              "67ad257275ae"
+            ],
+            [
+              "X-Jfrog-Version",
+              "Artifactory/7.161.26 86126900"
+            ],
+            [
+              "Content-Length",
+              "145"
+            ]
+          ],
+          "body_length": 145,
+          "body_sha256": "eaa4b9ec8a3029c7c62b6bceca1093809629fdcac8a6ad739a3f6e4e5b4f2b5b",
+          "body_text": "{\n  \"errors\" : [ {\n    \"status\" : 404,\n    \"message\" : \"Not Found; Path: 'p1-p2-s2-c-sham-bob:fresh/profile-38acbf319e30d3e4-repeat.bin'\"\n  } ]\n}",
+          "end_utc_ns": 1794173071703753580,
+          "elapsed_ms": 2.775381,
+          "actor": "bob",
+          "target": "gateway"
+        },
+        {
+          "method": "GET",
+          "path": "/p1-p2-s2-c-sham-bob-cache/",
+          "marker": "p1/p2-s2-c-sham/profile/bob/profile-7",
+          "probe": "sender.folder_html",
+          "request_headers": {},
+          "scheduled_offset_s": 0,
+          "schedule_epoch_utc_ns": 1794173071734153612,
+          "schedule_setup_utc_ns": 1794173071704368678,
+          "start_lag_ms": 0.088672,
+          "start_utc_ns": 1794173071734244114,
+          "status": 200,
+          "headers": [
+            [
+              "Server",
+              "BaseHTTP/0.6 Python/3.12.16"
+            ],
+            [
+              "Date",
+              "Sun, 08 Nov 2026 21:24:31 GMT"
+            ],
+            [
+              "Access-Control-Allow-Headers",
+              "X-Requested-With, Content-Type, X-Codingpedia"
+            ],
+            [
+              "Access-Control-Allow-Methods",
+              "GET, POST, DELETE, PUT"
+            ],
+            [
+              "Cache-Control",
+              "no-store"
+            ],
+            [
+              "Content-Type",
+              "text/html"
+            ],
+            [
+              "Date",
+              "Sun, 08 Nov 2026 21:24:31 GMT"
+            ],
+            [
+              "X-Artifactory-Id",
+              "1157502487007e3e:-700aaf45:1a1bbe7b09d:-8000"
+            ],
+            [
+              "X-Artifactory-Node-Id",
+              "67ad257275ae"
+            ],
+            [
+              "X-Jfrog-Version",
+              "Artifactory/7.161.26 86126900"
+            ],
+            [
+              "Content-Length",
+              "1391"
+            ]
+          ],
+          "body_length": 1391,
+          "body_sha256": "dcb368c03b09d68f40edc367a1ad73f931111ca3a8662004158f1d315ff59b1b",
+          "body_text": "<!DOCTYPE html>\n<html>\n<head><meta name=\"robots\" content=\"noindex\" />\n<title>Index of p1-p2-s2-c-sham-bob-cache/</title>\n</head>\n<body>\n<h1>Index of p1-p2-s2-c-sham-bob-cache/</h1>\n<pre>Name        Last modified      Size</pre><hr/>\n<pre><a href=\"pkg-00.bin\">pkg-00.bin</a>   08-Nov-2026 00:00  31 bytes\n<a href=\"pkg-01.bin\">pkg-01.bin</a>   08-Nov-2026 00:00  31 bytes\n<a href=\"pkg-02.bin\">pkg-02.bin</a>   08-Nov-2026 00:00  31 bytes\n<a href=\"pkg-03.bin\">pkg-03.bin</a>   08-Nov-2026 00:00  31 bytes\n<a href=\"pkg-04.bin\">pkg-04.bin</a>   08-Nov-2026 00:00  31 bytes\n<a href=\"pkg-05.bin\">pkg-05.bin</a>   08-Nov-2026 00:00  31 bytes\n<a href=\"pkg-06.bin\">pkg-06.bin</a>   08-Nov-2026 00:00  31 bytes\n<a href=\"pkg-07.bin\">pkg-07.bin</a>   08-Nov-2026 00:00  31 bytes\n<a href=\"pkg-08.bin\">pkg-08.bin</a>   08-Nov-2026 00:00  31 bytes\n<a href=\"pkg-09.bin\">pkg-09.bin</a>   08-Nov-2026 00:00  31 bytes\n<a href=\"pkg-10.bin\">pkg-10.bin</a>   08-Nov-2026 00:00  31 bytes\n<a href=\"pkg-11.bin\">pkg-11.bin</a>   08-Nov-2026 00:00  31 bytes\n<a href=\"pkg-12.bin\">pkg-12.bin</a>   08-Nov-2026 00:00  31 bytes\n<a href=\"pkg-13.bin\">pkg-13.bin</a>   08-Nov-2026 00:00  31 bytes\n<a href=\"pkg-14.bin\">pkg-14.bin</a>   08-Nov-2026 00:00  31 bytes\n<a href=\"pkg-15.bin\">pkg-15.bin</a>   08-Nov-2026 00:00  31 bytes\n</pre>\n<hr/><address style=\"font-size:small;\">Artifactory/7.161.26 Server</address></body></html>",
+          "end_utc_ns": 1794173071738805688,
+          "elapsed_ms": 4.563324,
+          "actor": "bob",
+          "target": "gateway"
+        },
+        {
+          "method": "GET",
+          "path": "/api/storage/p1-p2-s2-c-sham-bob-cache/pkg-15.bin?stats",
+          "marker": "p1/p2-s2-c-sham/profile/bob/profile-8",
+          "probe": "sender.stats",
+          "request_headers": {},
+          "scheduled_offset_s": 0,
+          "schedule_epoch_utc_ns": 1794173071769239841,
+          "schedule_setup_utc_ns": 1794173071739454597,
+          "start_lag_ms": 0.065942,
+          "start_utc_ns": 1794173071769306743,
+          "status": 403,
+          "headers": [
+            [
+              "Server",
+              "BaseHTTP/0.6 Python/3.12.16"
+            ],
+            [
+              "Date",
+              "Sun, 08 Nov 2026 21:24:31 GMT"
+            ],
+            [
+              "Content-Type",
+              "text/plain"
+            ],
+            [
+              "Content-Length",
+              "35"
+            ]
+          ],
+          "body_length": 35,
+          "body_sha256": "3416edfde6b48e4318413f9ddcb217ef7ca758640847644af04e3f94b8994a23",
+          "body_text": "Blocked by fixed P1 gateway policy\n",
+          "end_utc_ns": 1794173071770255381,
+          "elapsed_ms": 0.949598,
+          "actor": "bob",
+          "target": "gateway"
+        }
+      ],
+      "approximation": "wire body/status and sequential delay only"
+    }
+  },
+  "boundary_readback": {
+    "containers": {
+      "alice": {
+        "name": "p1-p2-s2-c-sham-alice",
+        "user": "20001:20001",
+        "root_read_only": true,
+        "cap_drop": [
+          "ALL"
+        ],
+        "security_options": [
+          "no-new-privileges:true"
+        ],
+        "memory": 134217728,
+        "memory_swap": 134217728,
+        "nano_cpus": 500000000,
+        "pids_limit": 48,
+        "tmpfs": {
+          "/tmp": "rw,nosuid,nodev,size=16m"
+        },
+        "forbidden_environment_present": false,
+        "published_ports": {},
+        "attached_networks": [
+          "p1-p2-s2-c-sham-net-alice",
+          "p1-p2-s2-c-sham-net-dummy-alice"
+        ],
+        "network_addresses": {
+          "p1-p2-s2-c-sham-net-alice": "172.19.0.1",
+          "p1-p2-s2-c-sham-net-dummy-alice": "172.22.0.1"
+        },
+        "image_id": "sha256:4840d514c583a4d3d8cad3940e68dee6f0f6f3635c12fcd0a3d74c21a5b93a54",
+        "bind_mount_destinations": [],
+        "mounts_read_only": true
+      },
+      "bob": {
+        "name": "p1-p2-s2-c-sham-bob",
+        "user": "20001:20001",
+        "root_read_only": true,
+        "cap_drop": [
+          "ALL"
+        ],
+        "security_options": [
+          "no-new-privileges:true"
+        ],
+        "memory": 134217728,
+        "memory_swap": 134217728,
+        "nano_cpus": 500000000,
+        "pids_limit": 48,
+        "tmpfs": {
+          "/tmp": "rw,nosuid,nodev,size=16m"
+        },
+        "forbidden_environment_present": false,
+        "published_ports": {},
+        "attached_networks": [
+          "p1-p2-s2-c-sham-net-bob",
+          "p1-p2-s2-c-sham-net-dummy-bob"
+        ],
+        "network_addresses": {
+          "p1-p2-s2-c-sham-net-bob": "172.20.0.1",
+          "p1-p2-s2-c-sham-net-dummy-bob": "172.23.0.1"
+        },
+        "image_id": "sha256:4840d514c583a4d3d8cad3940e68dee6f0f6f3635c12fcd0a3d74c21a5b93a54",
+        "bind_mount_destinations": [],
+        "mounts_read_only": true
+      },
+      "gateway": {
+        "name": "p1-p2-s2-c-sham-gateway",
+        "user": "20001:20001",
+        "root_read_only": true,
+        "cap_drop": [
+          "ALL"
+        ],
+        "security_options": [
+          "no-new-privileges:true"
+        ],
+        "memory": 134217728,
+        "memory_swap": 134217728,
+        "nano_cpus": 500000000,
+        "pids_limit": 48,
+        "tmpfs": {
+          "/tmp": "rw,nosuid,nodev,size=16m"
+        },
+        "forbidden_environment_present": false,
+        "published_ports": {},
+        "attached_networks": [
+          "p1-p2-s2-c-sham-net-alice",
+          "p1-p2-s2-c-sham-net-bob",
+          "p1-p2-s2-c-sham-net-services"
+        ],
+        "network_addresses": {
+          "p1-p2-s2-c-sham-net-alice": "172.19.0.2",
+          "p1-p2-s2-c-sham-net-bob": "172.20.0.2",
+          "p1-p2-s2-c-sham-net-services": "172.21.0.2"
+        },
+        "image_id": "sha256:4840d514c583a4d3d8cad3940e68dee6f0f6f3635c12fcd0a3d74c21a5b93a54",
+        "bind_mount_destinations": [
+          "/gateway.py",
+          "/gateway.json"
+        ],
+        "mounts_read_only": true
+      },
+      "upstream": {
+        "name": "p1-p2-s2-c-sham-upstream",
+        "user": "20001:20001",
+        "root_read_only": true,
+        "cap_drop": [
+          "ALL"
+        ],
+        "security_options": [
+          "no-new-privileges:true"
+        ],
+        "memory": 134217728,
+        "memory_swap": 134217728,
+        "nano_cpus": 500000000,
+        "pids_limit": 48,
+        "tmpfs": {
+          "/tmp": "rw,nosuid,nodev,size=16m"
+        },
+        "forbidden_environment_present": false,
+        "published_ports": {},
+        "attached_networks": [
+          "p1-p2-s2-c-sham-net-services"
+        ],
+        "network_addresses": {
+          "p1-p2-s2-c-sham-net-services": "172.21.0.1"
+        },
+        "image_id": "sha256:4840d514c583a4d3d8cad3940e68dee6f0f6f3635c12fcd0a3d74c21a5b93a54",
+        "bind_mount_destinations": [
+          "/upstream.py"
+        ],
+        "mounts_read_only": true
+      },
+      "dummy_alice": {
+        "name": "p1-p2-s2-c-sham-dummy-alice",
+        "user": "20001:20001",
+        "root_read_only": true,
+        "cap_drop": [
+          "ALL"
+        ],
+        "security_options": [
+          "no-new-privileges:true"
+        ],
+        "memory": 134217728,
+        "memory_swap": 134217728,
+        "nano_cpus": 500000000,
+        "pids_limit": 48,
+        "tmpfs": {
+          "/tmp": "rw,nosuid,nodev,size=16m"
+        },
+        "forbidden_environment_present": false,
+        "published_ports": {},
+        "attached_networks": [
+          "p1-p2-s2-c-sham-net-dummy-alice"
+        ],
+        "network_addresses": {
+          "p1-p2-s2-c-sham-net-dummy-alice": "172.22.0.2"
+        },
+        "image_id": "sha256:4840d514c583a4d3d8cad3940e68dee6f0f6f3635c12fcd0a3d74c21a5b93a54",
+        "bind_mount_destinations": [
+          "/sham.py",
+          "/profile.json"
+        ],
+        "mounts_read_only": true
+      },
+      "dummy_bob": {
+        "name": "p1-p2-s2-c-sham-dummy-bob",
+        "user": "20001:20001",
+        "root_read_only": true,
+        "cap_drop": [
+          "ALL"
+        ],
+        "security_options": [
+          "no-new-privileges:true"
+        ],
+        "memory": 134217728,
+        "memory_swap": 134217728,
+        "nano_cpus": 500000000,
+        "pids_limit": 48,
+        "tmpfs": {
+          "/tmp": "rw,nosuid,nodev,size=16m"
+        },
+        "forbidden_environment_present": false,
+        "published_ports": {},
+        "attached_networks": [
+          "p1-p2-s2-c-sham-net-dummy-bob"
+        ],
+        "network_addresses": {
+          "p1-p2-s2-c-sham-net-dummy-bob": "172.23.0.2"
+        },
+        "image_id": "sha256:4840d514c583a4d3d8cad3940e68dee6f0f6f3635c12fcd0a3d74c21a5b93a54",
+        "bind_mount_destinations": [
+          "/sham.py",
+          "/profile.json"
+        ],
+        "mounts_read_only": true
+      }
+    },
+    "networks": {
+      "alice": {
+        "name": "p1-p2-s2-c-sham-net-alice",
+        "internal": true,
+        "options": {
+          "com.docker.network.bridge.gateway_mode_ipv4": "isolated"
+        },
+        "containers": [
+          "p1-p2-s2-c-sham-alice",
+          "p1-p2-s2-c-sham-gateway"
+        ]
+      },
+      "bob": {
+        "name": "p1-p2-s2-c-sham-net-bob",
+        "internal": true,
+        "options": {
+          "com.docker.network.bridge.gateway_mode_ipv4": "isolated"
+        },
+        "containers": [
+          "p1-p2-s2-c-sham-bob",
+          "p1-p2-s2-c-sham-gateway"
+        ]
+      },
+      "services": {
+        "name": "p1-p2-s2-c-sham-net-services",
+        "internal": true,
+        "options": {
+          "com.docker.network.bridge.gateway_mode_ipv4": "isolated"
+        },
+        "containers": [
+          "art-a",
+          "p1-p2-s2-c-sham-gateway",
+          "p1-p2-s2-c-sham-upstream"
+        ]
+      },
+      "dummy_alice": {
+        "name": "p1-p2-s2-c-sham-net-dummy-alice",
+        "internal": true,
+        "options": {
+          "com.docker.network.bridge.gateway_mode_ipv4": "isolated"
+        },
+        "containers": [
+          "p1-p2-s2-c-sham-alice",
+          "p1-p2-s2-c-sham-dummy-alice"
+        ]
+      },
+      "dummy_bob": {
+        "name": "p1-p2-s2-c-sham-net-dummy-bob",
+        "internal": true,
+        "options": {
+          "com.docker.network.bridge.gateway_mode_ipv4": "isolated"
+        },
+        "containers": [
+          "p1-p2-s2-c-sham-bob",
+          "p1-p2-s2-c-sham-dummy-bob"
+        ]
+      }
+    }
+  },
+  "network_positive_controls": {
+    "passed": true,
+    "checks": 7,
+    "records": [
+      {
+        "host": "172.20.0.1",
+        "port": 18888,
+        "expected_connected": true,
+        "name": "live peer listener on its own network",
+        "connected": true,
+        "error": null,
+        "actor": "bob"
+      },
+      {
+        "host": "p1-p2-s2-c-sham-gateway",
+        "port": 8000,
+        "expected_connected": true,
+        "name": "assigned gateway route",
+        "connected": true,
+        "error": null,
+        "actor": "bob"
+      },
+      {
+        "host": "172.21.0.3",
+        "port": 8082,
+        "expected_connected": false,
+        "name": "direct backend bypass",
+        "connected": false,
+        "error": "OSError",
+        "actor": "bob"
+      },
+      {
+        "host": "172.20.0.1",
+        "port": 18888,
+        "expected_connected": false,
+        "name": "same live listener from the other network",
+        "connected": false,
+        "error": "OSError",
+        "actor": "alice"
+      },
+      {
+        "host": "p1-p2-s2-c-sham-gateway",
+        "port": 8000,
+        "expected_connected": true,
+        "name": "assigned gateway route",
+        "connected": true,
+        "error": null,
+        "actor": "alice"
+      },
+      {
+        "host": "172.21.0.3",
+        "port": 8082,
+        "expected_connected": false,
+        "name": "direct backend bypass",
+        "connected": false,
+        "error": "OSError",
+        "actor": "alice"
+      },
+      {
+        "host": "172.21.0.3",
+        "port": 8082,
+        "expected_connected": true,
+        "name": "backend is reachable from the gateway",
+        "connected": true,
+        "error": null,
+        "actor": "gateway"
+      }
+    ],
+    "listener_stopped": true,
+    "scope": "Specified live TCP listeners and routes, not every possible bypass.",
+    "listener_exit_code": 0
+  }
+}

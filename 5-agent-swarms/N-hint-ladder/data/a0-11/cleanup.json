@@ -1,0 +1,103 @@
+{
+  "cohort_id": "a0-11",
+  "removed": [
+    {
+      "command": [
+        "docker",
+        "rm",
+        "-f",
+        "n-a0-11-alice"
+      ],
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "command": [
+        "docker",
+        "rm",
+        "-f",
+        "n-a0-11-bob"
+      ],
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "command": [
+        "docker",
+        "rm",
+        "-f",
+        "n-a0-11-gateway"
+      ],
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "command": [
+        "docker",
+        "rm",
+        "-f",
+        "n-a0-11-upstream"
+      ],
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "command": [
+        "docker",
+        "network",
+        "disconnect",
+        "n-a0-11-net-services",
+        "art-a"
+      ],
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "command": [
+        "docker",
+        "network",
+        "rm",
+        "n-a0-11-net-alice"
+      ],
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "command": [
+        "docker",
+        "network",
+        "rm",
+        "n-a0-11-net-bob"
+      ],
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "command": [
+        "docker",
+        "network",
+        "rm",
+        "n-a0-11-net-services"
+      ],
+      "returncode": 0,
+      "stderr": ""
+    }
+  ],
+  "containers_readback": [],
+  "networks_readback": [],
+  "art_a_cohort_networks": [],
+  "readback_returncodes": {
+    "docker_ps": 0,
+    "network_ls": 0,
+    "art_a_inspect": 0
+  },
+  "absence_proved": true,
+  "repo_and_users_left_in_place": {
+    "repo": "n-a0-11-pkg",
+    "users": [
+      "n-a0-11-alice",
+      "n-a0-11-bob",
+      "n-a0-11-prefetch"
+    ]
+  }
+}

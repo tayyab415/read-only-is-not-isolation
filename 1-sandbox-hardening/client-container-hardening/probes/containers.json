@@ -1,0 +1,235 @@
+[
+  {
+    "name": "j-sender",
+    "image": "sha256:4840d514c583a4d3d8cad3940e68dee6f0f6f3635c12fcd0a3d74c21a5b93a54",
+    "user": "20001:20001",
+    "settings": {
+      "Privileged": false,
+      "ReadonlyRootfs": true,
+      "CapDrop": [
+        "ALL"
+      ],
+      "SecurityOpt": [
+        "no-new-privileges:true"
+      ],
+      "Memory": 134217728,
+      "MemorySwap": 134217728,
+      "PidsLimit": 48,
+      "Binds": null
+    },
+    "networks": {
+      "j-net-sender": {
+        "IPAMConfig": null,
+        "Links": null,
+        "Aliases": [
+          "j-sender",
+          "sender"
+        ],
+        "DriverOpts": null,
+        "GwPriority": 0,
+        "NetworkID": "f8c3bb0034fc6d1b351c69267dece53532ff26e39e2f15184fd1790528589ac9",
+        "EndpointID": "feee1d994e135cc5c12aedd480e6d9cfc9182d423825f9092ad7eb29239f8153",
+        "Gateway": "",
+        "IPAddress": "172.20.0.1",
+        "MacAddress": "6a:41:d5:7d:9c:fc",
+        "IPPrefixLen": 16,
+        "IPv6Gateway": "",
+        "GlobalIPv6Address": "",
+        "GlobalIPv6PrefixLen": 0,
+        "DNSNames": [
+          "j-sender",
+          "sender",
+          "bc201567d9dc"
+        ]
+      }
+    }
+  },
+  {
+    "name": "j-receiver",
+    "image": "sha256:4840d514c583a4d3d8cad3940e68dee6f0f6f3635c12fcd0a3d74c21a5b93a54",
+    "user": "20001:20001",
+    "settings": {
+      "Privileged": false,
+      "ReadonlyRootfs": true,
+      "CapDrop": [
+        "ALL"
+      ],
+      "SecurityOpt": [
+        "no-new-privileges:true"
+      ],
+      "Memory": 134217728,
+      "MemorySwap": 134217728,
+      "PidsLimit": 48,
+      "Binds": null
+    },
+    "networks": {
+      "j-net-receiver": {
+        "IPAMConfig": null,
+        "Links": null,
+        "Aliases": [
+          "j-receiver",
+          "receiver"
+        ],
+        "DriverOpts": null,
+        "GwPriority": 0,
+        "NetworkID": "a50bba824cd2700088bd873ef7ff62aca19a0bd46d4b869cf734b026f75589ce",
+        "EndpointID": "2e44212a312e95c339b2f25375d9e57381b7e5c9808902bbc8ad1f8acf453970",
+        "Gateway": "",
+        "IPAddress": "172.19.0.2",
+        "MacAddress": "ce:a4:fb:64:f9:e2",
+        "IPPrefixLen": 16,
+        "IPv6Gateway": "",
+        "GlobalIPv6Address": "",
+        "GlobalIPv6PrefixLen": 0,
+        "DNSNames": [
+          "j-receiver",
+          "receiver",
+          "9886306bc283"
+        ]
+      }
+    }
+  },
+  {
+    "name": "j-gateway",
+    "image": "sha256:4840d514c583a4d3d8cad3940e68dee6f0f6f3635c12fcd0a3d74c21a5b93a54",
+    "user": "20001:20001",
+    "settings": {
+      "Privileged": false,
+      "ReadonlyRootfs": true,
+      "CapDrop": [
+        "ALL"
+      ],
+      "SecurityOpt": [
+        "no-new-privileges:true"
+      ],
+      "Memory": 134217728,
+      "MemorySwap": 134217728,
+      "PidsLimit": 48,
+      "Binds": [
+        "/home/<user>/workspaces/artifactory-lab/j/scripts/gateway.py:/gateway.py:ro",
+        "/home/<user>/workspaces/artifactory-lab/j/gateway.json:/gateway.json:ro"
+      ]
+    },
+    "networks": {
+      "j-net-receiver": {
+        "IPAMConfig": null,
+        "Links": null,
+        "Aliases": [
+          "j-gateway",
+          "gateway"
+        ],
+        "DriverOpts": null,
+        "GwPriority": 0,
+        "NetworkID": "a50bba824cd2700088bd873ef7ff62aca19a0bd46d4b869cf734b026f75589ce",
+        "EndpointID": "a2492c5c7ee472c4bd6a6420e45074225fd4de8037535371174b483f059396b5",
+        "Gateway": "",
+        "IPAddress": "172.19.0.1",
+        "MacAddress": "8a:80:e5:8d:04:d0",
+        "IPPrefixLen": 16,
+        "IPv6Gateway": "",
+        "GlobalIPv6Address": "",
+        "GlobalIPv6PrefixLen": 0,
+        "DNSNames": [
+          "j-gateway",
+          "gateway",
+          "a3c47441f620"
+        ]
+      },
+      "j-net-sender": {
+        "IPAMConfig": null,
+        "Links": null,
+        "Aliases": [
+          "j-gateway",
+          "gateway"
+        ],
+        "DriverOpts": null,
+        "GwPriority": 0,
+        "NetworkID": "f8c3bb0034fc6d1b351c69267dece53532ff26e39e2f15184fd1790528589ac9",
+        "EndpointID": "b384197fd27c0e96ac3245a9f63eee6f2ec4d7cc7e6ce1ff447a2966e99b029b",
+        "Gateway": "",
+        "IPAddress": "172.20.0.2",
+        "MacAddress": "0e:d5:d1:4e:85:29",
+        "IPPrefixLen": 16,
+        "IPv6Gateway": "",
+        "GlobalIPv6Address": "",
+        "GlobalIPv6PrefixLen": 0,
+        "DNSNames": [
+          "j-gateway",
+          "gateway",
+          "a3c47441f620"
+        ]
+      },
+      "j-net-services": {
+        "IPAMConfig": null,
+        "Links": null,
+        "Aliases": [
+          "j-gateway",
+          "gateway"
+        ],
+        "DriverOpts": null,
+        "GwPriority": 0,
+        "NetworkID": "1ab9d7cbd611c911b68d011a9b04319ea4dc5f7eb553acc792f71736b17bc479",
+        "EndpointID": "211b2ec0385a46088ddae5afd4625bd9e3e558474efd17435ea18bc1bde640ad",
+        "Gateway": "",
+        "IPAddress": "172.21.0.2",
+        "MacAddress": "96:7a:80:ba:69:0a",
+        "IPPrefixLen": 16,
+        "IPv6Gateway": "",
+        "GlobalIPv6Address": "",
+        "GlobalIPv6PrefixLen": 0,
+        "DNSNames": [
+          "j-gateway",
+          "gateway",
+          "a3c47441f620"
+        ]
+      }
+    }
+  },
+  {
+    "name": "j-upstream",
+    "image": "sha256:4840d514c583a4d3d8cad3940e68dee6f0f6f3635c12fcd0a3d74c21a5b93a54",
+    "user": "20001:20001",
+    "settings": {
+      "Privileged": false,
+      "ReadonlyRootfs": true,
+      "CapDrop": [
+        "ALL"
+      ],
+      "SecurityOpt": [
+        "no-new-privileges:true"
+      ],
+      "Memory": 134217728,
+      "MemorySwap": 134217728,
+      "PidsLimit": 48,
+      "Binds": [
+        "/home/<user>/workspaces/artifactory-lab/j/scripts/upstream.py:/upstream.py:ro"
+      ]
+    },
+    "networks": {
+      "j-net-services": {
+        "IPAMConfig": null,
+        "Links": null,
+        "Aliases": [
+          "j-upstream",
+          "upstream"
+        ],
+        "DriverOpts": null,
+        "GwPriority": 0,
+        "NetworkID": "1ab9d7cbd611c911b68d011a9b04319ea4dc5f7eb553acc792f71736b17bc479",
+        "EndpointID": "4bf5cb901a44cf547da4e130719636d98a640fb91650b93a02a20e4618378835",
+        "Gateway": "",
+        "IPAddress": "172.21.0.1",
+        "MacAddress": "9a:50:86:ab:fb:e0",
+        "IPPrefixLen": 16,
+        "IPv6Gateway": "",
+        "GlobalIPv6Address": "",
+        "GlobalIPv6PrefixLen": 0,
+        "DNSNames": [
+          "j-upstream",
+          "upstream",
+          "5c5c27c10471"
+        ]
+      }
+    }
+  }
+]

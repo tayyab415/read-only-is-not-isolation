@@ -1,0 +1,34 @@
+{
+  "duration_s_including_seeding": 220.3486350049934,
+  "receiver_other_path_stats_status": 403,
+  "arms": {
+    "shared": {
+      "trials": 32,
+      "decoded_positive": 15,
+      "scheduled_positive": 15,
+      "matching_expected": 32,
+      "unknown": 0,
+      "sender_download_statuses": [
+        200
+      ]
+    },
+    "no-sender": {
+      "trials": 16,
+      "decoded_positive": 0,
+      "scheduled_positive": 6,
+      "matching_expected": 16,
+      "unknown": 0,
+      "sender_download_statuses": []
+    },
+    "separate-paths": {
+      "trials": 32,
+      "decoded_positive": 0,
+      "scheduled_positive": 15,
+      "matching_expected": 17,
+      "unknown": 0,
+      "sender_download_statuses": [
+        200
+      ]
+    }
+  }
+}

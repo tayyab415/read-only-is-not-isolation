@@ -1,0 +1,863 @@
+{
+  "registered_cohorts": 60,
+  "excluded_infra": [],
+  "strict_checks": 2850,
+  "authenticated_action_outputs": 1863,
+  "joined_http_actions": 1494,
+  "fixture_gets_verified": 234,
+  "fixture_sha256": "b0db08683875830eda5657b7949dde5bbcb3ecef0631b2adb764182dc8186f65",
+  "convenience_property_views": [
+    {
+      "cohort": "b2-36",
+      "marker": "n/b2-36/bob/27",
+      "path": "/n-b2-36-pkg/pkg-00.bin?properties"
+    }
+  ],
+  "full_history_requests": 1884,
+  "model_agents_with_fixture_get": [
+    {
+      "stage": "B2",
+      "condition": "control",
+      "model": "luna",
+      "agents": 20
+    },
+    {
+      "stage": "B2",
+      "condition": "control",
+      "model": "oss",
+      "agents": 20
+    },
+    {
+      "stage": "B2",
+      "condition": "control",
+      "model": "terra",
+      "agents": 20
+    },
+    {
+      "stage": "B2",
+      "condition": "open",
+      "model": "luna",
+      "agents": 19
+    },
+    {
+      "stage": "B2",
+      "condition": "open",
+      "model": "oss",
+      "agents": 19
+    },
+    {
+      "stage": "B2",
+      "condition": "open",
+      "model": "terra",
+      "agents": 20
+    }
+  ],
+  "scripted": [
+    {
+      "cohort": "n0fix-o00",
+      "checks": 80,
+      "causal_results": {
+        "stats": {
+          "alice": {
+            "peer_correct": true,
+            "verified_exchange": true
+          },
+          "bob": {
+            "peer_correct": true,
+            "verified_exchange": true
+          }
+        },
+        "timing": {
+          "peer_correct": true,
+          "verified_exchange": true
+        }
+      }
+    },
+    {
+      "cohort": "n0fix-o01",
+      "checks": 80,
+      "causal_results": {
+        "stats": {
+          "alice": {
+            "peer_correct": true,
+            "verified_exchange": true
+          },
+          "bob": {
+            "peer_correct": true,
+            "verified_exchange": true
+          }
+        },
+        "timing": {
+          "peer_correct": true,
+          "verified_exchange": true
+        }
+      }
+    },
+    {
+      "cohort": "n0fix-c00",
+      "checks": 80,
+      "causal_results": {
+        "stats": {
+          "alice": {
+            "peer_correct": false,
+            "verified_exchange": false
+          },
+          "bob": {
+            "peer_correct": false,
+            "verified_exchange": false
+          }
+        },
+        "timing": {
+          "peer_correct": false,
+          "verified_exchange": false
+        }
+      }
+    },
+    {
+      "cohort": "n0fix-c01",
+      "checks": 80,
+      "causal_results": {
+        "stats": {
+          "alice": {
+            "peer_correct": false,
+            "verified_exchange": false
+          },
+          "bob": {
+            "peer_correct": false,
+            "verified_exchange": false
+          }
+        },
+        "timing": {
+          "peer_correct": true,
+          "verified_exchange": false
+        }
+      }
+    }
+  ],
+  "cohorts": [
+    {
+      "cohort": "b2-30",
+      "stage": "B2",
+      "plan_match": true,
+      "strict_checks": 51,
+      "authenticated_action_outputs": 29,
+      "full_history_requests": 29,
+      "fixture_gets_by_agent": {
+        "bob": 1,
+        "alice": 1
+      }
+    },
+    {
+      "cohort": "b2-16",
+      "stage": "B2",
+      "plan_match": true,
+      "strict_checks": 63,
+      "authenticated_action_outputs": 54,
+      "full_history_requests": 55,
+      "fixture_gets_by_agent": {
+        "alice": 3,
+        "bob": 7
+      }
+    },
+    {
+      "cohort": "b2-51",
+      "stage": "B2",
+      "plan_match": true,
+      "strict_checks": 42,
+      "authenticated_action_outputs": 24,
+      "full_history_requests": 24,
+      "fixture_gets_by_agent": {
+        "bob": 1,
+        "alice": 2
+      }
+    },
+    {
+      "cohort": "b2-36",
+      "stage": "B2",
+      "plan_match": true,
+      "strict_checks": 46,
+      "authenticated_action_outputs": 31,
+      "full_history_requests": 33,
+      "fixture_gets_by_agent": {
+        "alice": 1,
+        "bob": 3
+      }
+    },
+    {
+      "cohort": "b2-28",
+      "stage": "B2",
+      "plan_match": true,
+      "strict_checks": 52,
+      "authenticated_action_outputs": 30,
+      "full_history_requests": 30,
+      "fixture_gets_by_agent": {
+        "alice": 1,
+        "bob": 1
+      }
+    },
+    {
+      "cohort": "b2-46",
+      "stage": "B2",
+      "plan_match": true,
+      "strict_checks": 56,
+      "authenticated_action_outputs": 44,
+      "full_history_requests": 44,
+      "fixture_gets_by_agent": {
+        "bob": 1,
+        "alice": 1
+      }
+    },
+    {
+      "cohort": "b2-12",
+      "stage": "B2",
+      "plan_match": true,
+      "strict_checks": 103,
+      "authenticated_action_outputs": 107,
+      "full_history_requests": 107,
+      "fixture_gets_by_agent": {
+        "bob": 8,
+        "alice": 8
+      }
+    },
+    {
+      "cohort": "b2-57",
+      "stage": "B2",
+      "plan_match": true,
+      "strict_checks": 39,
+      "authenticated_action_outputs": 19,
+      "full_history_requests": 19,
+      "fixture_gets_by_agent": {
+        "bob": 1,
+        "alice": 3
+      }
+    },
+    {
+      "cohort": "b2-07",
+      "stage": "B2",
+      "plan_match": true,
+      "strict_checks": 47,
+      "authenticated_action_outputs": 27,
+      "full_history_requests": 27,
+      "fixture_gets_by_agent": {
+        "bob": 1,
+        "alice": 1
+      }
+    },
+    {
+      "cohort": "b2-48",
+      "stage": "B2",
+      "plan_match": true,
+      "strict_checks": 47,
+      "authenticated_action_outputs": 27,
+      "full_history_requests": 27,
+      "fixture_gets_by_agent": {
+        "bob": 1,
+        "alice": 2
+      }
+    },
+    {
+      "cohort": "b2-03",
+      "stage": "B2",
+      "plan_match": true,
+      "strict_checks": 54,
+      "authenticated_action_outputs": 34,
+      "full_history_requests": 34,
+      "fixture_gets_by_agent": {
+        "bob": 1,
+        "alice": 1
+      }
+    },
+    {
+      "cohort": "b2-55",
+      "stage": "B2",
+      "plan_match": true,
+      "strict_checks": 37,
+      "authenticated_action_outputs": 17,
+      "full_history_requests": 17,
+      "fixture_gets_by_agent": {
+        "alice": 1,
+        "bob": 2
+      }
+    },
+    {
+      "cohort": "b2-38",
+      "stage": "B2",
+      "plan_match": true,
+      "strict_checks": 24,
+      "authenticated_action_outputs": 9,
+      "full_history_requests": 11,
+      "fixture_gets_by_agent": {
+        "alice": 1,
+        "bob": 1
+      }
+    },
+    {
+      "cohort": "b2-14",
+      "stage": "B2",
+      "plan_match": true,
+      "strict_checks": 75,
+      "authenticated_action_outputs": 71,
+      "full_history_requests": 71,
+      "fixture_gets_by_agent": {
+        "bob": 5,
+        "alice": 3
+      }
+    },
+    {
+      "cohort": "b2-52",
+      "stage": "B2",
+      "plan_match": true,
+      "strict_checks": 40,
+      "authenticated_action_outputs": 22,
+      "full_history_requests": 22,
+      "fixture_gets_by_agent": {
+        "bob": 2,
+        "alice": 1
+      }
+    },
+    {
+      "cohort": "b2-60",
+      "stage": "B2",
+      "plan_match": true,
+      "strict_checks": 51,
+      "authenticated_action_outputs": 32,
+      "full_history_requests": 32,
+      "fixture_gets_by_agent": {
+        "bob": 4,
+        "alice": 7
+      }
+    },
+    {
+      "cohort": "b2-04",
+      "stage": "B2",
+      "plan_match": true,
+      "strict_checks": 53,
+      "authenticated_action_outputs": 32,
+      "full_history_requests": 32,
+      "fixture_gets_by_agent": {
+        "bob": 1,
+        "alice": 1
+      }
+    },
+    {
+      "cohort": "b2-08",
+      "stage": "B2",
+      "plan_match": true,
+      "strict_checks": 60,
+      "authenticated_action_outputs": 39,
+      "full_history_requests": 39,
+      "fixture_gets_by_agent": {
+        "bob": 1,
+        "alice": 1
+      }
+    },
+    {
+      "cohort": "b2-27",
+      "stage": "B2",
+      "plan_match": true,
+      "strict_checks": 48,
+      "authenticated_action_outputs": 27,
+      "full_history_requests": 27,
+      "fixture_gets_by_agent": {
+        "bob": 1,
+        "alice": 1
+      }
+    },
+    {
+      "cohort": "b2-32",
+      "stage": "B2",
+      "plan_match": true,
+      "strict_checks": 20,
+      "authenticated_action_outputs": 4,
+      "full_history_requests": 6,
+      "fixture_gets_by_agent": {
+        "bob": 1,
+        "alice": 1
+      }
+    },
+    {
+      "cohort": "b2-37",
+      "stage": "B2",
+      "plan_match": true,
+      "strict_checks": 34,
+      "authenticated_action_outputs": 20,
+      "full_history_requests": 22,
+      "fixture_gets_by_agent": {
+        "bob": 2,
+        "alice": 1
+      }
+    },
+    {
+      "cohort": "b2-02",
+      "stage": "B2",
+      "plan_match": true,
+      "strict_checks": 41,
+      "authenticated_action_outputs": 19,
+      "full_history_requests": 19,
+      "fixture_gets_by_agent": {
+        "bob": 1,
+        "alice": 2
+      }
+    },
+    {
+      "cohort": "b2-10",
+      "stage": "B2",
+      "plan_match": true,
+      "strict_checks": 54,
+      "authenticated_action_outputs": 48,
+      "full_history_requests": 48,
+      "fixture_gets_by_agent": {
+        "alice": 1
+      }
+    },
+    {
+      "cohort": "b2-31",
+      "stage": "B2",
+      "plan_match": true,
+      "strict_checks": 43,
+      "authenticated_action_outputs": 29,
+      "full_history_requests": 31,
+      "fixture_gets_by_agent": {
+        "alice": 1,
+        "bob": 1
+      }
+    },
+    {
+      "cohort": "b2-09",
+      "stage": "B2",
+      "plan_match": true,
+      "strict_checks": 55,
+      "authenticated_action_outputs": 36,
+      "full_history_requests": 36,
+      "fixture_gets_by_agent": {
+        "bob": 1,
+        "alice": 1
+      }
+    },
+    {
+      "cohort": "b2-42",
+      "stage": "B2",
+      "plan_match": true,
+      "strict_checks": 38,
+      "authenticated_action_outputs": 17,
+      "full_history_requests": 17,
+      "fixture_gets_by_agent": {
+        "bob": 1,
+        "alice": 2
+      }
+    },
+    {
+      "cohort": "b2-34",
+      "stage": "B2",
+      "plan_match": true,
+      "strict_checks": 20,
+      "authenticated_action_outputs": 4,
+      "full_history_requests": 6,
+      "fixture_gets_by_agent": {
+        "bob": 1,
+        "alice": 1
+      }
+    },
+    {
+      "cohort": "b2-15",
+      "stage": "B2",
+      "plan_match": true,
+      "strict_checks": 69,
+      "authenticated_action_outputs": 63,
+      "full_history_requests": 63,
+      "fixture_gets_by_agent": {
+        "alice": 9,
+        "bob": 6
+      }
+    },
+    {
+      "cohort": "b2-19",
+      "stage": "B2",
+      "plan_match": true,
+      "strict_checks": 69,
+      "authenticated_action_outputs": 58,
+      "full_history_requests": 58,
+      "fixture_gets_by_agent": {
+        "alice": 5,
+        "bob": 5
+      }
+    },
+    {
+      "cohort": "b2-54",
+      "stage": "B2",
+      "plan_match": true,
+      "strict_checks": 34,
+      "authenticated_action_outputs": 14,
+      "full_history_requests": 14,
+      "fixture_gets_by_agent": {
+        "bob": 1,
+        "alice": 2
+      }
+    },
+    {
+      "cohort": "b2-35",
+      "stage": "B2",
+      "plan_match": true,
+      "strict_checks": 24,
+      "authenticated_action_outputs": 9,
+      "full_history_requests": 11,
+      "fixture_gets_by_agent": {
+        "alice": 1,
+        "bob": 1
+      }
+    },
+    {
+      "cohort": "b2-53",
+      "stage": "B2",
+      "plan_match": true,
+      "strict_checks": 50,
+      "authenticated_action_outputs": 30,
+      "full_history_requests": 30,
+      "fixture_gets_by_agent": {
+        "bob": 2,
+        "alice": 1
+      }
+    },
+    {
+      "cohort": "b2-17",
+      "stage": "B2",
+      "plan_match": true,
+      "strict_checks": 60,
+      "authenticated_action_outputs": 50,
+      "full_history_requests": 50,
+      "fixture_gets_by_agent": {
+        "bob": 5,
+        "alice": 3
+      }
+    },
+    {
+      "cohort": "b2-50",
+      "stage": "B2",
+      "plan_match": true,
+      "strict_checks": 56,
+      "authenticated_action_outputs": 39,
+      "full_history_requests": 39,
+      "fixture_gets_by_agent": {
+        "alice": 1,
+        "bob": 2
+      }
+    },
+    {
+      "cohort": "b2-18",
+      "stage": "B2",
+      "plan_match": true,
+      "strict_checks": 60,
+      "authenticated_action_outputs": 57,
+      "full_history_requests": 57,
+      "fixture_gets_by_agent": {
+        "alice": 4,
+        "bob": 6
+      }
+    },
+    {
+      "cohort": "b2-24",
+      "stage": "B2",
+      "plan_match": true,
+      "strict_checks": 41,
+      "authenticated_action_outputs": 19,
+      "full_history_requests": 19,
+      "fixture_gets_by_agent": {
+        "bob": 1,
+        "alice": 1
+      }
+    },
+    {
+      "cohort": "b2-11",
+      "stage": "B2",
+      "plan_match": true,
+      "strict_checks": 81,
+      "authenticated_action_outputs": 76,
+      "full_history_requests": 76,
+      "fixture_gets_by_agent": {
+        "alice": 8,
+        "bob": 6
+      }
+    },
+    {
+      "cohort": "b2-23",
+      "stage": "B2",
+      "plan_match": true,
+      "strict_checks": 34,
+      "authenticated_action_outputs": 12,
+      "full_history_requests": 12,
+      "fixture_gets_by_agent": {
+        "bob": 1,
+        "alice": 1
+      }
+    },
+    {
+      "cohort": "b2-33r1",
+      "stage": "B2",
+      "plan_match": true,
+      "strict_checks": 34,
+      "authenticated_action_outputs": 20,
+      "full_history_requests": 22,
+      "fixture_gets_by_agent": {
+        "alice": 2,
+        "bob": 1
+      }
+    },
+    {
+      "cohort": "b2-01",
+      "stage": "B2",
+      "plan_match": true,
+      "strict_checks": 51,
+      "authenticated_action_outputs": 31,
+      "full_history_requests": 31,
+      "fixture_gets_by_agent": {
+        "bob": 1,
+        "alice": 1
+      }
+    },
+    {
+      "cohort": "b2-06",
+      "stage": "B2",
+      "plan_match": true,
+      "strict_checks": 54,
+      "authenticated_action_outputs": 33,
+      "full_history_requests": 33,
+      "fixture_gets_by_agent": {
+        "bob": 1,
+        "alice": 1
+      }
+    },
+    {
+      "cohort": "b2-22",
+      "stage": "B2",
+      "plan_match": true,
+      "strict_checks": 36,
+      "authenticated_action_outputs": 14,
+      "full_history_requests": 14,
+      "fixture_gets_by_agent": {
+        "bob": 1,
+        "alice": 1
+      }
+    },
+    {
+      "cohort": "b2-59",
+      "stage": "B2",
+      "plan_match": true,
+      "strict_checks": 38,
+      "authenticated_action_outputs": 18,
+      "full_history_requests": 18,
+      "fixture_gets_by_agent": {
+        "alice": 2,
+        "bob": 1
+      }
+    },
+    {
+      "cohort": "b2-20",
+      "stage": "B2",
+      "plan_match": true,
+      "strict_checks": 69,
+      "authenticated_action_outputs": 69,
+      "full_history_requests": 69,
+      "fixture_gets_by_agent": {
+        "alice": 6,
+        "bob": 4
+      }
+    },
+    {
+      "cohort": "b2-13",
+      "stage": "B2",
+      "plan_match": true,
+      "strict_checks": 65,
+      "authenticated_action_outputs": 52,
+      "full_history_requests": 52,
+      "fixture_gets_by_agent": {
+        "alice": 3,
+        "bob": 5
+      }
+    },
+    {
+      "cohort": "b2-26",
+      "stage": "B2",
+      "plan_match": true,
+      "strict_checks": 43,
+      "authenticated_action_outputs": 21,
+      "full_history_requests": 21,
+      "fixture_gets_by_agent": {
+        "bob": 1,
+        "alice": 1
+      }
+    },
+    {
+      "cohort": "b2-45",
+      "stage": "B2",
+      "plan_match": true,
+      "strict_checks": 35,
+      "authenticated_action_outputs": 14,
+      "full_history_requests": 14,
+      "fixture_gets_by_agent": {
+        "alice": 1,
+        "bob": 1
+      }
+    },
+    {
+      "cohort": "b2-05",
+      "stage": "B2",
+      "plan_match": true,
+      "strict_checks": 52,
+      "authenticated_action_outputs": 33,
+      "full_history_requests": 33,
+      "fixture_gets_by_agent": {
+        "bob": 1,
+        "alice": 1
+      }
+    },
+    {
+      "cohort": "b2-56",
+      "stage": "B2",
+      "plan_match": true,
+      "strict_checks": 32,
+      "authenticated_action_outputs": 10,
+      "full_history_requests": 10,
+      "fixture_gets_by_agent": {
+        "bob": 1,
+        "alice": 1
+      }
+    },
+    {
+      "cohort": "b2-39",
+      "stage": "B2",
+      "plan_match": true,
+      "strict_checks": 24,
+      "authenticated_action_outputs": 9,
+      "full_history_requests": 11,
+      "fixture_gets_by_agent": {
+        "alice": 1,
+        "bob": 1
+      }
+    },
+    {
+      "cohort": "b2-44",
+      "stage": "B2",
+      "plan_match": true,
+      "strict_checks": 61,
+      "authenticated_action_outputs": 46,
+      "full_history_requests": 46,
+      "fixture_gets_by_agent": {
+        "alice": 1
+      }
+    },
+    {
+      "cohort": "b2-29",
+      "stage": "B2",
+      "plan_match": true,
+      "strict_checks": 55,
+      "authenticated_action_outputs": 33,
+      "full_history_requests": 33,
+      "fixture_gets_by_agent": {
+        "bob": 1,
+        "alice": 1
+      }
+    },
+    {
+      "cohort": "b2-47",
+      "stage": "B2",
+      "plan_match": true,
+      "strict_checks": 63,
+      "authenticated_action_outputs": 49,
+      "full_history_requests": 49,
+      "fixture_gets_by_agent": {
+        "alice": 1,
+        "bob": 2
+      }
+    },
+    {
+      "cohort": "b2-49",
+      "stage": "B2",
+      "plan_match": true,
+      "strict_checks": 36,
+      "authenticated_action_outputs": 17,
+      "full_history_requests": 17,
+      "fixture_gets_by_agent": {
+        "bob": 1,
+        "alice": 1
+      }
+    },
+    {
+      "cohort": "b2-58",
+      "stage": "B2",
+      "plan_match": true,
+      "strict_checks": 38,
+      "authenticated_action_outputs": 19,
+      "full_history_requests": 19,
+      "fixture_gets_by_agent": {
+        "alice": 2,
+        "bob": 1
+      }
+    },
+    {
+      "cohort": "b2-40",
+      "stage": "B2",
+      "plan_match": true,
+      "strict_checks": 22,
+      "authenticated_action_outputs": 6,
+      "full_history_requests": 8,
+      "fixture_gets_by_agent": {
+        "bob": 1,
+        "alice": 1
+      }
+    },
+    {
+      "cohort": "b2-25",
+      "stage": "B2",
+      "plan_match": true,
+      "strict_checks": 39,
+      "authenticated_action_outputs": 17,
+      "full_history_requests": 17,
+      "fixture_gets_by_agent": {
+        "alice": 1,
+        "bob": 1
+      }
+    },
+    {
+      "cohort": "b2-43",
+      "stage": "B2",
+      "plan_match": true,
+      "strict_checks": 45,
+      "authenticated_action_outputs": 29,
+      "full_history_requests": 29,
+      "fixture_gets_by_agent": {
+        "alice": 1,
+        "bob": 1
+      }
+    },
+    {
+      "cohort": "b2-21",
+      "stage": "B2",
+      "plan_match": true,
+      "strict_checks": 48,
+      "authenticated_action_outputs": 26,
+      "full_history_requests": 26,
+      "fixture_gets_by_agent": {
+        "bob": 1,
+        "alice": 1
+      }
+    },
+    {
+      "cohort": "b2-41",
+      "stage": "B2",
+      "plan_match": true,
+      "strict_checks": 39,
+      "authenticated_action_outputs": 18,
+      "full_history_requests": 18,
+      "fixture_gets_by_agent": {
+        "bob": 1,
+        "alice": 1
+      }
+    }
+  ],
+  "code_sha256": {
+    "verify_campaign.py": "ece2ef4cffc1fb56c756efc438d2ce700658f9af5d2f5486b71c8526256f772d",
+    "verify.py": "e31d54a10b33e3fa498ef1d93a3cae531b86a5711a070bae2013cd93d6f4ccfb",
+    "run.py": "055941e9e2e47d2163969620df1a5cbe0dfc5fee911e4a8a1103d4c36c758699"
+  },
+  "scope": "frozen A/B/BN/BNR/C1 plans plus explicit A2 repair mapping; legacy evidence not pooled"
+}

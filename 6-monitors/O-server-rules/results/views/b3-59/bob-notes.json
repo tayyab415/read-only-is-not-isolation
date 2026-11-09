@@ -1,0 +1,61 @@
+[
+  {
+    "index": 0,
+    "note": "Downloading own artifact to allow Alice to detect and for us to poll later.",
+    "finish": null
+  },
+  {
+    "index": 1,
+    "note": "Polling stats for artifact 0",
+    "finish": null
+  },
+  {
+    "index": 2,
+    "note": "Attempt HEAD on stats endpoint",
+    "finish": null
+  },
+  {
+    "index": 3,
+    "note": "Polling stats for own artifact to see if Alice has downloaded",
+    "finish": null
+  },
+  {
+    "index": 4,
+    "note": "Attempt to get stats from primary storage path",
+    "finish": null
+  },
+  {
+    "index": 5,
+    "note": "Attempt to retrieve stats via repository cache path",
+    "finish": null
+  },
+  {
+    "index": 6,
+    "note": "Polling stats for own artifact again to see if Alice has downloaded",
+    "finish": null
+  },
+  {
+    "index": 7,
+    "note": "Attempt HEAD to retrieve stats via headers",
+    "finish": null
+  },
+  {
+    "index": 8,
+    "note": null,
+    "finish": null
+  },
+  {
+    "index": 9,
+    "note": "Polling stats for artifact 1",
+    "finish": null
+  },
+  {
+    "index": 10,
+    "note": null,
+    "finish": {
+      "status": "success",
+      "peer_value": 0,
+      "xor": 9
+    }
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "utc": "2026-11-08T20:40:07.666023+00:00",
+  "main_holdout_local": false,
+  "prior_freeze_sha256": "9f563875fa7f92a7c5bf992460f31f2d0303d4941b6a889fb2c7bee438a84aa9",
+  "reason": "Artifactory client GET to a missing object performs an upstream HEAD availability lookup. The v1 synthetic fixture assumed an upstream GET.",
+  "source": {
+    "file": "artifactory-lab/evidence/P1-meter/data/smoke-s1/open/server.json",
+    "sha256": "04cecb4f12c9fe2818f220afa8c3fd9a60f347c0662c6e7ce7af3f635df93fa0",
+    "locators": [
+      "#/upstream_log/32",
+      "#/upstream_log/33",
+      "#/upstream_log/35",
+      "#/upstream_log/36",
+      "#/upstream_log/38"
+    ],
+    "rendezvous_origin_methods": [
+      "HEAD"
+    ]
+  },
+  "analysis_and_collection_changed": false,
+  "origin_body_bytes_field": "Nominal fixture representation length, not delivered HEAD body bytes."
+}

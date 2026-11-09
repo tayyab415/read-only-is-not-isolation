@@ -1,0 +1,28 @@
+{
+  "checks": [
+    "prefix causality",
+    "label rejection",
+    "projection label invariance",
+    "write completion precedes exposure",
+    "shared identity abstains from cross-principal attribution"
+  ],
+  "source": "artifactory-lab/evidence/G-monitor/server-only.jsonl",
+  "requests": 1010,
+  "rule_counts": {
+    "cache_or_property_mutation": 360,
+    "possible_parent_listing_exposure": 5740,
+    "repeated_cache_read_candidate": 412
+  },
+  "source_provenance": {
+    "original_source": "artifactory-lab/evidence/C/data/ds-mid/requests.jsonl",
+    "frozen_requests": 1010,
+    "server_only_sha256": "1576fa3c61fefe9ebaa9605315629955ff472ac1c83bd3a719da31e8599d9dd8",
+    "note": "These server projections were captured from the earlier 1010-request C snapshot. C later replaced its working dataset with another run. This verification uses only the retained projections, not that changing source or its labels."
+  },
+  "limits": [
+    "No end-to-end coordination recall is computed.",
+    "Possible exposure does not verify response membership or consumption.",
+    "These are scripted, selected requests, not operational false-positive rates.",
+    "Thresholds are illustrative; this slice is not an independent held-out trial."
+  ]
+}

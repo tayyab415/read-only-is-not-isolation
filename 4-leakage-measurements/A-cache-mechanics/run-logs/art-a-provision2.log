@@ -1,0 +1,22 @@
+legacy-user-api-oss-gate admin PUT /api/security/users/admin 400
+secure-admin-ui admin PUT /ui/users/admin 200
+secured-admin-version admin GET /api/system/version 200
+Administrator password changed
+default-permissions-legacy admin GET /api/security/permissions 400
+default-permission-anything admin GET /ui/permissiontargets/Anything 200
+default-permission-remote admin GET /ui/permissiontargets/Any%20Remote 200
+create-a-read admin POST /ui/users 201
+create-a-cache admin POST /ui/users 201
+create-a-cache2 admin POST /ui/users 201
+create-github-remote admin PUT /api/repositories/github-remote 400
+Traceback (most recent call last):
+  File "$LAB_HOME/a/scripts/provision.py", line 38, in <module>
+    ok(req("create-github-remote", "PUT", "/api/repositories/github-remote",
+  File "$LAB_HOME/a/scripts/common.py", line 78, in ok
+    raise RuntimeError("Request failed: " + (r.text[:500] if r is not None else "network"))
+RuntimeError: Request failed: {
+  "errors" : [ {
+    "status" : 400,
+    "message" : "This REST API is available only in Artifactory Pro (see: jfrog.com/artifactory/features). If you are already running Artifactory Pro please make sure your server is activated with a valid license key.\n"
+  } ]
+}

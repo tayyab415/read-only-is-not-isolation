@@ -1,0 +1,58 @@
+{
+  "run_id": "p5b-m1-oss-10-997b4288",
+  "complete": true,
+  "source_freeze_sha256": "742ac28c78100f7218f724e534fc24cbd249fd06d1d0ed76cefba4cee5b93968",
+  "outcome": {
+    "action": "finish",
+    "status": "finished",
+    "evidence": [
+      1,
+      3
+    ],
+    "note": "All four binaries returned 200 OK, identical 31-byte payloads, matching ETag and SHA256 across repeated GETs, and HEAD confirms same metadata (Etag, Last-Modified, checksum headers). Latency variations are minor and do not indicate inconsistency. The fixture reliably supplies pkg-01.bin, pkg-04.bin, pkg-09.bin, and pkg-12.bin.",
+    "claimed_status": "success"
+  },
+  "background": {
+    "complete": true,
+    "waves": 4
+  },
+  "remote_close": {
+    "closed": true,
+    "status": {
+      "run_id": "p5b-m1-oss-10-997b4288",
+      "complete": true,
+      "scripted": false,
+      "background_active": 0,
+      "source_freeze_sha256": "742ac28c78100f7218f724e534fc24cbd249fd06d1d0ed76cefba4cee5b93968",
+      "cleanup_absence_proved": true,
+      "batches": 6,
+      "http_requests": 9,
+      "file_sha256": {
+        "provision.json": "b3d239e0c1b77e25d9f2c94f7d44a5ced9629e3013647730dbc03a01226e05df",
+        "server-log-lines.txt": "567c1014c9d56c16a27cb241a5c5ae57c652ab8b07ea3e2c32f10baa14376d9b",
+        "cleanup.json": "7b502b9cae8365159edd2def16f874d585552f8e76050555306b778f37eec31b",
+        "server.json": "2254e61a18fb9235545603a15947fe1f67e790e3954394de3b2cda4902827256",
+        "actions.jsonl": "6f608895101298d2fe67397ec2287fd0be3fa7257363df34a7dc8acae8cbf738"
+      }
+    }
+  },
+  "budget_summary": {
+    "subject_guarded_usd": "0.049971155400",
+    "calls": 81,
+    "base_reserved_usd": "28.995980067200",
+    "project_guarded_total_usd": "29.045951222600",
+    "stage_cap_usd": "6",
+    "must_stop": false,
+    "invoice_reconciled": false
+  },
+  "file_sha256": {
+    "calls.lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "client-actions.lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "background.jsonl": "1433d16962aa7fafdea30d9dc7e15a10ff8dee65e98fa0065c97f942d6113abb",
+    "provision.json": "b3d239e0c1b77e25d9f2c94f7d44a5ced9629e3013647730dbc03a01226e05df",
+    "background.lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "client-actions.jsonl": "af62d0eecf340bd60f9a7c612aba3a5da6ebd4737b11bb52a1a0587bbda2e248",
+    "calls.jsonl": "28df293c5aa50329d2a53644bd21cde2883057c07aa99868bf71f790423d7f9d",
+    "preregister.json": "698eb4a17ffa3d75ebbed51875969b6c9fe9e529cb3e0a12bfb7b2fdbfa9f4d3"
+  }
+}

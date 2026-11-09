@@ -1,0 +1,431 @@
+{
+  "checked_utc": "2026-11-08T03:45:21.670384+00:00",
+  "verifier_sha256": "e50f1ed210e34e90539809e5f04b87b1ed72797e25d6af046f0475310afc2f04",
+  "results": [
+    {
+      "cohort": "b3-01",
+      "checks": 42,
+      "failed": [],
+      "original_failed": []
+    },
+    {
+      "cohort": "b3-02",
+      "checks": 46,
+      "failed": [],
+      "original_failed": []
+    },
+    {
+      "cohort": "b3-03",
+      "checks": 34,
+      "failed": [],
+      "original_failed": []
+    },
+    {
+      "cohort": "b3-04",
+      "checks": 36,
+      "failed": [],
+      "original_failed": []
+    },
+    {
+      "cohort": "b3-05",
+      "checks": 42,
+      "failed": [],
+      "original_failed": []
+    },
+    {
+      "cohort": "b3-06",
+      "checks": 50,
+      "failed": [],
+      "original_failed": []
+    },
+    {
+      "cohort": "b3-07",
+      "checks": 50,
+      "failed": [],
+      "original_failed": []
+    },
+    {
+      "cohort": "b3-08",
+      "checks": 42,
+      "failed": [],
+      "original_failed": []
+    },
+    {
+      "cohort": "b3-09",
+      "checks": 31,
+      "failed": [],
+      "original_failed": []
+    },
+    {
+      "cohort": "b3-10",
+      "checks": 40,
+      "failed": [],
+      "original_failed": []
+    },
+    {
+      "cohort": "b3-11",
+      "checks": 39,
+      "failed": [],
+      "original_failed": []
+    },
+    {
+      "cohort": "b3-12",
+      "checks": 37,
+      "failed": [],
+      "original_failed": []
+    },
+    {
+      "cohort": "b3-13",
+      "checks": 39,
+      "failed": [],
+      "original_failed": []
+    },
+    {
+      "cohort": "b3-14",
+      "checks": 39,
+      "failed": [],
+      "original_failed": []
+    },
+    {
+      "cohort": "b3-15",
+      "checks": 42,
+      "failed": [],
+      "original_failed": []
+    },
+    {
+      "cohort": "b3-16",
+      "checks": 34,
+      "failed": [],
+      "original_failed": []
+    },
+    {
+      "cohort": "b3-17",
+      "checks": 37,
+      "failed": [],
+      "original_failed": []
+    },
+    {
+      "cohort": "b3-18",
+      "checks": 30,
+      "failed": [],
+      "original_failed": []
+    },
+    {
+      "cohort": "b3-19",
+      "checks": 43,
+      "failed": [],
+      "original_failed": []
+    },
+    {
+      "cohort": "b3-20",
+      "checks": 46,
+      "failed": [],
+      "original_failed": []
+    },
+    {
+      "cohort": "b3-21",
+      "checks": 44,
+      "failed": [],
+      "original_failed": []
+    },
+    {
+      "cohort": "b3-22",
+      "checks": 47,
+      "failed": [],
+      "original_failed": []
+    },
+    {
+      "cohort": "b3-23",
+      "checks": 42,
+      "failed": [],
+      "original_failed": []
+    },
+    {
+      "cohort": "b3-24",
+      "checks": 40,
+      "failed": [],
+      "original_failed": []
+    },
+    {
+      "cohort": "b3-25",
+      "checks": 41,
+      "failed": [],
+      "original_failed": []
+    },
+    {
+      "cohort": "b3-26",
+      "checks": 42,
+      "failed": [],
+      "original_failed": []
+    },
+    {
+      "cohort": "b3-27",
+      "checks": 49,
+      "failed": [],
+      "original_failed": []
+    },
+    {
+      "cohort": "b3-28",
+      "checks": 47,
+      "failed": [],
+      "original_failed": []
+    },
+    {
+      "cohort": "b3-29",
+      "checks": 38,
+      "failed": [],
+      "original_failed": []
+    },
+    {
+      "cohort": "b3-30",
+      "checks": 44,
+      "failed": [],
+      "original_failed": []
+    },
+    {
+      "cohort": "b3-31",
+      "checks": 44,
+      "failed": [],
+      "original_failed": []
+    },
+    {
+      "cohort": "b3-32",
+      "checks": 77,
+      "failed": [],
+      "original_failed": [
+        {
+          "name": "exact HTTP join n/b3-32/alice/11",
+          "passed": false,
+          "detail": {
+            "gateway_rows": 1,
+            "backend_rows": 1,
+            "router_rows": 1,
+            "sandbox_rows": 1
+          }
+        }
+      ]
+    },
+    {
+      "cohort": "b3-33",
+      "checks": 75,
+      "failed": [],
+      "original_failed": [
+        {
+          "name": "exact HTTP join n/b3-33/alice/17",
+          "passed": false,
+          "detail": {
+            "gateway_rows": 1,
+            "backend_rows": 1,
+            "router_rows": 1,
+            "sandbox_rows": 1
+          }
+        },
+        {
+          "name": "exact HTTP join n/b3-33/bob/33",
+          "passed": false,
+          "detail": {
+            "gateway_rows": 1,
+            "backend_rows": 1,
+            "router_rows": 1,
+            "sandbox_rows": 1
+          }
+        }
+      ]
+    },
+    {
+      "cohort": "b3-34",
+      "checks": 32,
+      "failed": [],
+      "original_failed": [
+        {
+          "name": "exact HTTP join n/b3-34/bob/6",
+          "passed": false,
+          "detail": {
+            "gateway_rows": 1,
+            "backend_rows": 1,
+            "router_rows": 1,
+            "sandbox_rows": 1
+          }
+        }
+      ]
+    },
+    {
+      "cohort": "b3-35",
+      "checks": 44,
+      "failed": [],
+      "original_failed": [
+        {
+          "name": "exact HTTP join n/b3-35/bob/14",
+          "passed": false,
+          "detail": {
+            "gateway_rows": 1,
+            "backend_rows": 1,
+            "router_rows": 1,
+            "sandbox_rows": 1
+          }
+        }
+      ]
+    },
+    {
+      "cohort": "b3-36",
+      "checks": 53,
+      "failed": [],
+      "original_failed": []
+    },
+    {
+      "cohort": "b3-37",
+      "checks": 75,
+      "failed": [],
+      "original_failed": [
+        {
+          "name": "exact HTTP join n/b3-37/alice/31",
+          "passed": false,
+          "detail": {
+            "gateway_rows": 1,
+            "backend_rows": 1,
+            "router_rows": 1,
+            "sandbox_rows": 1
+          }
+        }
+      ]
+    },
+    {
+      "cohort": "b3-38",
+      "checks": 42,
+      "failed": [],
+      "original_failed": []
+    },
+    {
+      "cohort": "b3-39",
+      "checks": 29,
+      "failed": [],
+      "original_failed": []
+    },
+    {
+      "cohort": "b3-40",
+      "checks": 51,
+      "failed": [],
+      "original_failed": []
+    },
+    {
+      "cohort": "b3-41",
+      "checks": 47,
+      "failed": [],
+      "original_failed": []
+    },
+    {
+      "cohort": "b3-42",
+      "checks": 42,
+      "failed": [],
+      "original_failed": []
+    },
+    {
+      "cohort": "b3-43",
+      "checks": 47,
+      "failed": [],
+      "original_failed": []
+    },
+    {
+      "cohort": "b3-44",
+      "checks": 57,
+      "failed": [],
+      "original_failed": []
+    },
+    {
+      "cohort": "b3-45",
+      "checks": 51,
+      "failed": [],
+      "original_failed": []
+    },
+    {
+      "cohort": "b3-46",
+      "checks": 54,
+      "failed": [],
+      "original_failed": []
+    },
+    {
+      "cohort": "b3-47",
+      "checks": 46,
+      "failed": [],
+      "original_failed": []
+    },
+    {
+      "cohort": "b3-48",
+      "checks": 57,
+      "failed": [],
+      "original_failed": []
+    },
+    {
+      "cohort": "b3-49",
+      "checks": 44,
+      "failed": [],
+      "original_failed": []
+    },
+    {
+      "cohort": "b3-50",
+      "checks": 41,
+      "failed": [],
+      "original_failed": []
+    },
+    {
+      "cohort": "b3-51",
+      "checks": 51,
+      "failed": [],
+      "original_failed": []
+    },
+    {
+      "cohort": "b3-52",
+      "checks": 40,
+      "failed": [],
+      "original_failed": []
+    },
+    {
+      "cohort": "b3-53",
+      "checks": 38,
+      "failed": [],
+      "original_failed": []
+    },
+    {
+      "cohort": "b3-54",
+      "checks": 38,
+      "failed": [],
+      "original_failed": []
+    },
+    {
+      "cohort": "b3-55",
+      "checks": 36,
+      "failed": [],
+      "original_failed": []
+    },
+    {
+      "cohort": "b3-56",
+      "checks": 44,
+      "failed": [],
+      "original_failed": []
+    },
+    {
+      "cohort": "b3-57",
+      "checks": 38,
+      "failed": [],
+      "original_failed": []
+    },
+    {
+      "cohort": "b3-58",
+      "checks": 45,
+      "failed": [],
+      "original_failed": []
+    },
+    {
+      "cohort": "b3-59",
+      "checks": 36,
+      "failed": [],
+      "original_failed": []
+    },
+    {
+      "cohort": "b3-60",
+      "checks": 48,
+      "failed": [],
+      "original_failed": []
+    }
+  ]
+}

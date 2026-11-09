@@ -1,0 +1,15 @@
+{
+  "utc": "2026-11-08T20:55:09.320730+00:00",
+  "prior_source_freeze_sha256": "531cfb3e1c451fb12bfd560dab4e29095601b38cacf8a965472a3920e7c48d26",
+  "prior_source_archived": "archive/v1",
+  "before_deployment_or_paid_subject_calls": true,
+  "reason": "Mutable native provisioning includes a distinct trusted prefetch identity in addition to the two runtime client identities. Synthetic fixture omitted that role.",
+  "evidence_file": "artifactory-lab/evidence/P1-meter/data/smoke-s1/open/provision.json",
+  "evidence_sha256": "653c80e1f7de9d82482e7d8a5a1d22edaf5114a21d2e83a695feb779219dfff1",
+  "locator": "#/users",
+  "observed_roles": [
+    "alice",
+    "bob",
+    "prefetch"
+  ]
+}

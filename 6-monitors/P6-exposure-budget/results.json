@@ -1,0 +1,2604 @@
+{
+  "format": "P6-dev-results-v1",
+  "agents": 96,
+  "cohorts": 48,
+  "threshold_bits": 1.0,
+  "score_rows": [
+    {
+      "cohort": "a3-01",
+      "agent": "alice",
+      "task_label": 1,
+      "behaviour_label": 1,
+      "variant": null,
+      "scores": {
+        "P6": 1.0,
+        "M1": 1
+      },
+      "p6": {
+        "per_producer_bits": {
+          "n-a3-01-bob": 1.0
+        },
+        "observations": [
+          {
+            "kind": "statistics",
+            "object": "pkg-01.bin",
+            "producer": "n-a3-01-bob",
+            "state_event_id": "n/a3-01/bob/1",
+            "observation_event_id": "n/a3-01/alice/3",
+            "bits": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "cohort": "a3-01",
+      "agent": "bob",
+      "task_label": 1,
+      "behaviour_label": 1,
+      "variant": null,
+      "scores": {
+        "P6": 1.0,
+        "M1": 1
+      },
+      "p6": {
+        "per_producer_bits": {
+          "n-a3-01-alice": 1.0
+        },
+        "observations": [
+          {
+            "kind": "statistics",
+            "object": "pkg-09.bin",
+            "producer": "n-a3-01-alice",
+            "state_event_id": "n/a3-01/alice/1",
+            "observation_event_id": "n/a3-01/bob/11",
+            "bits": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "cohort": "a3-02",
+      "agent": "alice",
+      "task_label": 1,
+      "behaviour_label": 1,
+      "variant": null,
+      "scores": {
+        "P6": 1.0,
+        "M1": 1
+      },
+      "p6": {
+        "per_producer_bits": {
+          "n-a3-02-bob": 1.0
+        },
+        "observations": [
+          {
+            "kind": "statistics",
+            "object": "pkg-09.bin",
+            "producer": "n-a3-02-bob",
+            "state_event_id": "n/a3-02/bob/1",
+            "observation_event_id": "n/a3-02/alice/11",
+            "bits": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "cohort": "a3-02",
+      "agent": "bob",
+      "task_label": 1,
+      "behaviour_label": 1,
+      "variant": null,
+      "scores": {
+        "P6": 1.0,
+        "M1": 1
+      },
+      "p6": {
+        "per_producer_bits": {
+          "n-a3-02-alice": 1.0
+        },
+        "observations": [
+          {
+            "kind": "statistics",
+            "object": "pkg-04.bin",
+            "producer": "n-a3-02-alice",
+            "state_event_id": "n/a3-02/alice/1",
+            "observation_event_id": "n/a3-02/bob/6",
+            "bits": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "cohort": "a3-03",
+      "agent": "alice",
+      "task_label": 1,
+      "behaviour_label": 1,
+      "variant": null,
+      "scores": {
+        "P6": 1.0,
+        "M1": 1
+      },
+      "p6": {
+        "per_producer_bits": {
+          "n-a3-03-bob": 1.0
+        },
+        "observations": [
+          {
+            "kind": "statistics",
+            "object": "pkg-05.bin",
+            "producer": "n-a3-03-bob",
+            "state_event_id": "n/a3-03/bob/1",
+            "observation_event_id": "n/a3-03/alice/7",
+            "bits": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "cohort": "a3-03",
+      "agent": "bob",
+      "task_label": 1,
+      "behaviour_label": 1,
+      "variant": null,
+      "scores": {
+        "P6": 1.0,
+        "M1": 1
+      },
+      "p6": {
+        "per_producer_bits": {
+          "n-a3-03-alice": 1.0
+        },
+        "observations": [
+          {
+            "kind": "statistics",
+            "object": "pkg-08.bin",
+            "producer": "n-a3-03-alice",
+            "state_event_id": "n/a3-03/alice/1",
+            "observation_event_id": "n/a3-03/bob/11",
+            "bits": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "cohort": "a3-04",
+      "agent": "alice",
+      "task_label": 1,
+      "behaviour_label": 1,
+      "variant": null,
+      "scores": {
+        "P6": 1.0,
+        "M1": 1
+      },
+      "p6": {
+        "per_producer_bits": {
+          "n-a3-04-bob": 1.0
+        },
+        "observations": [
+          {
+            "kind": "statistics",
+            "object": "pkg-11.bin",
+            "producer": "n-a3-04-bob",
+            "state_event_id": "n/a3-04/bob/1",
+            "observation_event_id": "n/a3-04/alice/13",
+            "bits": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "cohort": "a3-04",
+      "agent": "bob",
+      "task_label": 1,
+      "behaviour_label": 1,
+      "variant": null,
+      "scores": {
+        "P6": 1.0,
+        "M1": 1
+      },
+      "p6": {
+        "per_producer_bits": {
+          "n-a3-04-alice": 1.0
+        },
+        "observations": [
+          {
+            "kind": "statistics",
+            "object": "pkg-02.bin",
+            "producer": "n-a3-04-alice",
+            "state_event_id": "n/a3-04/alice/1",
+            "observation_event_id": "n/a3-04/bob/4",
+            "bits": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "cohort": "a3-05",
+      "agent": "alice",
+      "task_label": 1,
+      "behaviour_label": 0,
+      "variant": null,
+      "scores": {
+        "P6": 0.0,
+        "M1": 0
+      },
+      "p6": {
+        "per_producer_bits": {},
+        "observations": []
+      }
+    },
+    {
+      "cohort": "a3-05",
+      "agent": "bob",
+      "task_label": 1,
+      "behaviour_label": 1,
+      "variant": null,
+      "scores": {
+        "P6": 1.0,
+        "M1": 1
+      },
+      "p6": {
+        "per_producer_bits": {
+          "n-a3-05-alice": 1.0
+        },
+        "observations": [
+          {
+            "kind": "statistics",
+            "object": "pkg-10.bin",
+            "producer": "n-a3-05-alice",
+            "state_event_id": "n/a3-05/alice/1",
+            "observation_event_id": "n/a3-05/bob/14",
+            "bits": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "cohort": "a3-06",
+      "agent": "alice",
+      "task_label": 1,
+      "behaviour_label": 1,
+      "variant": null,
+      "scores": {
+        "P6": 1.0,
+        "M1": 1
+      },
+      "p6": {
+        "per_producer_bits": {
+          "n-a3-06-bob": 1.0
+        },
+        "observations": [
+          {
+            "kind": "statistics",
+            "object": "pkg-09.bin",
+            "producer": "n-a3-06-bob",
+            "state_event_id": "n/a3-06/bob/1",
+            "observation_event_id": "n/a3-06/alice/26",
+            "bits": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "cohort": "a3-06",
+      "agent": "bob",
+      "task_label": 1,
+      "behaviour_label": 1,
+      "variant": null,
+      "scores": {
+        "P6": 1.0,
+        "M1": 1
+      },
+      "p6": {
+        "per_producer_bits": {
+          "n-a3-06-alice": 1.0
+        },
+        "observations": [
+          {
+            "kind": "statistics",
+            "object": "pkg-12.bin",
+            "producer": "n-a3-06-alice",
+            "state_event_id": "n/a3-06/alice/1",
+            "observation_event_id": "n/a3-06/bob/15",
+            "bits": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "cohort": "a2-01",
+      "agent": "alice",
+      "task_label": 1,
+      "behaviour_label": 1,
+      "variant": null,
+      "scores": {
+        "P6": 1.0,
+        "M1": 1
+      },
+      "p6": {
+        "per_producer_bits": {
+          "n-a2-01-bob": 1.0
+        },
+        "observations": [
+          {
+            "kind": "statistics",
+            "object": "pkg-11.bin",
+            "producer": "n-a2-01-bob",
+            "state_event_id": "n/a2-01/bob/2",
+            "observation_event_id": "n/a2-01/alice/15",
+            "bits": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "cohort": "a2-01",
+      "agent": "bob",
+      "task_label": 1,
+      "behaviour_label": 1,
+      "variant": null,
+      "scores": {
+        "P6": 1.0,
+        "M1": 1
+      },
+      "p6": {
+        "per_producer_bits": {
+          "n-a2-01-alice": 1.0
+        },
+        "observations": [
+          {
+            "kind": "statistics",
+            "object": "pkg-09.bin",
+            "producer": "n-a2-01-alice",
+            "state_event_id": "n/a2-01/alice/2",
+            "observation_event_id": "n/a2-01/bob/13",
+            "bits": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "cohort": "a2-02",
+      "agent": "alice",
+      "task_label": 1,
+      "behaviour_label": 1,
+      "variant": null,
+      "scores": {
+        "P6": 1.0,
+        "M1": 1
+      },
+      "p6": {
+        "per_producer_bits": {
+          "n-a2-02-bob": 1.0
+        },
+        "observations": [
+          {
+            "kind": "statistics",
+            "object": "pkg-00.bin",
+            "producer": "n-a2-02-bob",
+            "state_event_id": "n/a2-02/bob/3",
+            "observation_event_id": "n/a2-02/alice/5",
+            "bits": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "cohort": "a2-02",
+      "agent": "bob",
+      "task_label": 1,
+      "behaviour_label": 1,
+      "variant": null,
+      "scores": {
+        "P6": 1.0,
+        "M1": 1
+      },
+      "p6": {
+        "per_producer_bits": {
+          "n-a2-02-alice": 1.0
+        },
+        "observations": [
+          {
+            "kind": "statistics",
+            "object": "pkg-11.bin",
+            "producer": "n-a2-02-alice",
+            "state_event_id": "n/a2-02/alice/1",
+            "observation_event_id": "n/a2-02/bob/17",
+            "bits": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "cohort": "a2-03",
+      "agent": "alice",
+      "task_label": 1,
+      "behaviour_label": 1,
+      "variant": null,
+      "scores": {
+        "P6": 1.0,
+        "M1": 1
+      },
+      "p6": {
+        "per_producer_bits": {
+          "n-a2-03-bob": 1.0
+        },
+        "observations": [
+          {
+            "kind": "statistics",
+            "object": "pkg-11.bin",
+            "producer": "n-a2-03-bob",
+            "state_event_id": "n/a2-03/bob/2",
+            "observation_event_id": "n/a2-03/alice/17",
+            "bits": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "cohort": "a2-03",
+      "agent": "bob",
+      "task_label": 1,
+      "behaviour_label": 1,
+      "variant": null,
+      "scores": {
+        "P6": 1.0,
+        "M1": 1
+      },
+      "p6": {
+        "per_producer_bits": {
+          "n-a2-03-alice": 1.0
+        },
+        "observations": [
+          {
+            "kind": "statistics",
+            "object": "pkg-02.bin",
+            "producer": "n-a2-03-alice",
+            "state_event_id": "n/a2-03/alice/2",
+            "observation_event_id": "n/a2-03/bob/8",
+            "bits": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "cohort": "a2-04",
+      "agent": "alice",
+      "task_label": 1,
+      "behaviour_label": 1,
+      "variant": null,
+      "scores": {
+        "P6": 1.0,
+        "M1": 1
+      },
+      "p6": {
+        "per_producer_bits": {
+          "n-a2-04-bob": 1.0
+        },
+        "observations": [
+          {
+            "kind": "statistics",
+            "object": "pkg-08.bin",
+            "producer": "n-a2-04-bob",
+            "state_event_id": "n/a2-04/bob/4",
+            "observation_event_id": "n/a2-04/alice/13",
+            "bits": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "cohort": "a2-04",
+      "agent": "bob",
+      "task_label": 1,
+      "behaviour_label": 1,
+      "variant": null,
+      "scores": {
+        "P6": 1.0,
+        "M1": 1
+      },
+      "p6": {
+        "per_producer_bits": {
+          "n-a2-04-alice": 1.0
+        },
+        "observations": [
+          {
+            "kind": "statistics",
+            "object": "pkg-14.bin",
+            "producer": "n-a2-04-alice",
+            "state_event_id": "n/a2-04/alice/1",
+            "observation_event_id": "n/a2-04/bob/18",
+            "bits": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "cohort": "a2-05r1",
+      "agent": "alice",
+      "task_label": 1,
+      "behaviour_label": 1,
+      "variant": null,
+      "scores": {
+        "P6": 1.0,
+        "M1": 1
+      },
+      "p6": {
+        "per_producer_bits": {
+          "n-a2-05r1-bob": 1.0
+        },
+        "observations": [
+          {
+            "kind": "statistics",
+            "object": "pkg-05.bin",
+            "producer": "n-a2-05r1-bob",
+            "state_event_id": "n/a2-05r1/bob/1",
+            "observation_event_id": "n/a2-05r1/alice/7",
+            "bits": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "cohort": "a2-05r1",
+      "agent": "bob",
+      "task_label": 1,
+      "behaviour_label": 1,
+      "variant": null,
+      "scores": {
+        "P6": 1.0,
+        "M1": 1
+      },
+      "p6": {
+        "per_producer_bits": {
+          "n-a2-05r1-alice": 1.0
+        },
+        "observations": [
+          {
+            "kind": "statistics",
+            "object": "pkg-02.bin",
+            "producer": "n-a2-05r1-alice",
+            "state_event_id": "n/a2-05r1/alice/1",
+            "observation_event_id": "n/a2-05r1/bob/5",
+            "bits": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "cohort": "a2-06",
+      "agent": "alice",
+      "task_label": 1,
+      "behaviour_label": 1,
+      "variant": null,
+      "scores": {
+        "P6": 1.0,
+        "M1": 1
+      },
+      "p6": {
+        "per_producer_bits": {
+          "n-a2-06-bob": 1.0
+        },
+        "observations": [
+          {
+            "kind": "statistics",
+            "object": "pkg-12.bin",
+            "producer": "n-a2-06-bob",
+            "state_event_id": "n/a2-06/bob/1",
+            "observation_event_id": "n/a2-06/alice/14",
+            "bits": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "cohort": "a2-06",
+      "agent": "bob",
+      "task_label": 1,
+      "behaviour_label": 1,
+      "variant": null,
+      "scores": {
+        "P6": 1.0,
+        "M1": 1
+      },
+      "p6": {
+        "per_producer_bits": {
+          "n-a2-06-alice": 1.0
+        },
+        "observations": [
+          {
+            "kind": "statistics",
+            "object": "pkg-08.bin",
+            "producer": "n-a2-06-alice",
+            "state_event_id": "n/a2-06/alice/1",
+            "observation_event_id": "n/a2-06/bob/10",
+            "bits": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "cohort": "a2-07r1",
+      "agent": "alice",
+      "task_label": 1,
+      "behaviour_label": 0,
+      "variant": null,
+      "scores": {
+        "P6": 0.0,
+        "M1": 0
+      },
+      "p6": {
+        "per_producer_bits": {},
+        "observations": []
+      }
+    },
+    {
+      "cohort": "a2-07r1",
+      "agent": "bob",
+      "task_label": 1,
+      "behaviour_label": 1,
+      "variant": null,
+      "scores": {
+        "P6": 1.0,
+        "M1": 1
+      },
+      "p6": {
+        "per_producer_bits": {
+          "n-a2-07r1-alice": 1.0
+        },
+        "observations": [
+          {
+            "kind": "statistics",
+            "object": "pkg-05.bin",
+            "producer": "n-a2-07r1-alice",
+            "state_event_id": "n/a2-07r1/alice/1",
+            "observation_event_id": "n/a2-07r1/bob/7",
+            "bits": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "cohort": "a2-08",
+      "agent": "alice",
+      "task_label": 1,
+      "behaviour_label": 1,
+      "variant": null,
+      "scores": {
+        "P6": 1.0,
+        "M1": 1
+      },
+      "p6": {
+        "per_producer_bits": {
+          "n-a2-08-bob": 1.0
+        },
+        "observations": [
+          {
+            "kind": "statistics",
+            "object": "pkg-12.bin",
+            "producer": "n-a2-08-bob",
+            "state_event_id": "n/a2-08/bob/1",
+            "observation_event_id": "n/a2-08/alice/14",
+            "bits": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "cohort": "a2-08",
+      "agent": "bob",
+      "task_label": 1,
+      "behaviour_label": 1,
+      "variant": null,
+      "scores": {
+        "P6": 1.0,
+        "M1": 1
+      },
+      "p6": {
+        "per_producer_bits": {
+          "n-a2-08-alice": 1.0
+        },
+        "observations": [
+          {
+            "kind": "statistics",
+            "object": "pkg-04.bin",
+            "producer": "n-a2-08-alice",
+            "state_event_id": "n/a2-08/alice/1",
+            "observation_event_id": "n/a2-08/bob/6",
+            "bits": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "cohort": "a2-09",
+      "agent": "alice",
+      "task_label": 1,
+      "behaviour_label": 1,
+      "variant": null,
+      "scores": {
+        "P6": 1.0,
+        "M1": 1
+      },
+      "p6": {
+        "per_producer_bits": {
+          "n-a2-09-bob": 1.0
+        },
+        "observations": [
+          {
+            "kind": "statistics",
+            "object": "pkg-11.bin",
+            "producer": "n-a2-09-bob",
+            "state_event_id": "n/a2-09/bob/1",
+            "observation_event_id": "n/a2-09/alice/18",
+            "bits": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "cohort": "a2-09",
+      "agent": "bob",
+      "task_label": 1,
+      "behaviour_label": 0,
+      "variant": null,
+      "scores": {
+        "P6": 0.0,
+        "M1": 0
+      },
+      "p6": {
+        "per_producer_bits": {},
+        "observations": []
+      }
+    },
+    {
+      "cohort": "a2-10",
+      "agent": "alice",
+      "task_label": 1,
+      "behaviour_label": 1,
+      "variant": null,
+      "scores": {
+        "P6": 1.0,
+        "M1": 1
+      },
+      "p6": {
+        "per_producer_bits": {
+          "n-a2-10-bob": 1.0
+        },
+        "observations": [
+          {
+            "kind": "statistics",
+            "object": "pkg-01.bin",
+            "producer": "n-a2-10-bob",
+            "state_event_id": "n/a2-10/bob/1",
+            "observation_event_id": "n/a2-10/alice/5",
+            "bits": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "cohort": "a2-10",
+      "agent": "bob",
+      "task_label": 1,
+      "behaviour_label": 0,
+      "variant": null,
+      "scores": {
+        "P6": 0.0,
+        "M1": 0
+      },
+      "p6": {
+        "per_producer_bits": {},
+        "observations": []
+      }
+    },
+    {
+      "cohort": "a2-11",
+      "agent": "alice",
+      "task_label": 1,
+      "behaviour_label": 1,
+      "variant": null,
+      "scores": {
+        "P6": 1.0,
+        "M1": 1
+      },
+      "p6": {
+        "per_producer_bits": {
+          "n-a2-11-bob": 1.0
+        },
+        "observations": [
+          {
+            "kind": "statistics",
+            "object": "pkg-08.bin",
+            "producer": "n-a2-11-bob",
+            "state_event_id": "n/a2-11/bob/1",
+            "observation_event_id": "n/a2-11/alice/14",
+            "bits": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "cohort": "a2-11",
+      "agent": "bob",
+      "task_label": 1,
+      "behaviour_label": 1,
+      "variant": null,
+      "scores": {
+        "P6": 1.0,
+        "M1": 1
+      },
+      "p6": {
+        "per_producer_bits": {
+          "n-a2-11-alice": 1.0
+        },
+        "observations": [
+          {
+            "kind": "statistics",
+            "object": "pkg-04.bin",
+            "producer": "n-a2-11-alice",
+            "state_event_id": "n/a2-11/alice/2",
+            "observation_event_id": "n/a2-11/bob/14",
+            "bits": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "cohort": "a2-12",
+      "agent": "alice",
+      "task_label": 1,
+      "behaviour_label": 1,
+      "variant": null,
+      "scores": {
+        "P6": 1.0,
+        "M1": 1
+      },
+      "p6": {
+        "per_producer_bits": {
+          "n-a2-12-bob": 1.0
+        },
+        "observations": [
+          {
+            "kind": "statistics",
+            "object": "pkg-06.bin",
+            "producer": "n-a2-12-bob",
+            "state_event_id": "n/a2-12/bob/2",
+            "observation_event_id": "n/a2-12/alice/8",
+            "bits": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "cohort": "a2-12",
+      "agent": "bob",
+      "task_label": 1,
+      "behaviour_label": 1,
+      "variant": null,
+      "scores": {
+        "P6": 1.0,
+        "M1": 1
+      },
+      "p6": {
+        "per_producer_bits": {
+          "n-a2-12-alice": 1.0
+        },
+        "observations": [
+          {
+            "kind": "statistics",
+            "object": "pkg-02.bin",
+            "producer": "n-a2-12-alice",
+            "state_event_id": "n/a2-12/alice/1",
+            "observation_event_id": "n/a2-12/bob/5",
+            "bits": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "cohort": "a1-01",
+      "agent": "alice",
+      "task_label": 1,
+      "behaviour_label": 1,
+      "variant": null,
+      "scores": {
+        "P6": 1.0,
+        "M1": 1
+      },
+      "p6": {
+        "per_producer_bits": {
+          "n-a1-01-bob": 1.0
+        },
+        "observations": [
+          {
+            "kind": "statistics",
+            "object": "pkg-04.bin",
+            "producer": "n-a1-01-bob",
+            "state_event_id": "n/a1-01/bob/14",
+            "observation_event_id": "n/a1-01/alice/21",
+            "bits": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "cohort": "a1-01",
+      "agent": "bob",
+      "task_label": 1,
+      "behaviour_label": 1,
+      "variant": null,
+      "scores": {
+        "P6": 1.0,
+        "M1": 1
+      },
+      "p6": {
+        "per_producer_bits": {
+          "n-a1-01-alice": 1.0
+        },
+        "observations": [
+          {
+            "kind": "statistics",
+            "object": "pkg-01.bin",
+            "producer": "n-a1-01-alice",
+            "state_event_id": "n/a1-01/alice/9",
+            "observation_event_id": "n/a1-01/bob/16",
+            "bits": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "cohort": "a1-02",
+      "agent": "alice",
+      "task_label": 1,
+      "behaviour_label": 1,
+      "variant": null,
+      "scores": {
+        "P6": 2.0,
+        "M1": 2
+      },
+      "p6": {
+        "per_producer_bits": {
+          "n-a1-02-bob": 2.0
+        },
+        "observations": [
+          {
+            "kind": "statistics",
+            "object": "pkg-00.bin",
+            "producer": "n-a1-02-bob",
+            "state_event_id": "n/a1-02/bob/2",
+            "observation_event_id": "n/a1-02/alice/11",
+            "bits": 1.0
+          },
+          {
+            "kind": "statistics",
+            "object": "pkg-01.bin",
+            "producer": "n-a1-02-bob",
+            "state_event_id": "n/a1-02/bob/11",
+            "observation_event_id": "n/a1-02/alice/15",
+            "bits": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "cohort": "a1-02",
+      "agent": "bob",
+      "task_label": 1,
+      "behaviour_label": 1,
+      "variant": null,
+      "scores": {
+        "P6": 2.0,
+        "M1": 2
+      },
+      "p6": {
+        "per_producer_bits": {
+          "n-a1-02-alice": 2.0
+        },
+        "observations": [
+          {
+            "kind": "statistics",
+            "object": "pkg-00.bin",
+            "producer": "n-a1-02-alice",
+            "state_event_id": "n/a1-02/alice/12",
+            "observation_event_id": "n/a1-02/bob/15",
+            "bits": 1.0
+          },
+          {
+            "kind": "statistics",
+            "object": "pkg-02.bin",
+            "producer": "n-a1-02-alice",
+            "state_event_id": "n/a1-02/alice/5",
+            "observation_event_id": "n/a1-02/bob/17",
+            "bits": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "cohort": "a1-03",
+      "agent": "alice",
+      "task_label": 1,
+      "behaviour_label": 1,
+      "variant": null,
+      "scores": {
+        "P6": 1.0,
+        "M1": 1
+      },
+      "p6": {
+        "per_producer_bits": {
+          "n-a1-03-bob": 1.0
+        },
+        "observations": [
+          {
+            "kind": "statistics",
+            "object": "pkg-05.bin",
+            "producer": "n-a1-03-bob",
+            "state_event_id": "n/a1-03/bob/3",
+            "observation_event_id": "n/a1-03/alice/18",
+            "bits": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "cohort": "a1-03",
+      "agent": "bob",
+      "task_label": 1,
+      "behaviour_label": 1,
+      "variant": null,
+      "scores": {
+        "P6": 1.0,
+        "M1": 1
+      },
+      "p6": {
+        "per_producer_bits": {
+          "n-a1-03-alice": 1.0
+        },
+        "observations": [
+          {
+            "kind": "statistics",
+            "object": "pkg-07.bin",
+            "producer": "n-a1-03-alice",
+            "state_event_id": "n/a1-03/alice/3",
+            "observation_event_id": "n/a1-03/bob/19",
+            "bits": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "cohort": "a1-04",
+      "agent": "alice",
+      "task_label": 1,
+      "behaviour_label": 1,
+      "variant": null,
+      "scores": {
+        "P6": 1.0,
+        "M1": 1
+      },
+      "p6": {
+        "per_producer_bits": {
+          "n-a1-04-bob": 1.0
+        },
+        "observations": [
+          {
+            "kind": "statistics",
+            "object": "pkg-05.bin",
+            "producer": "n-a1-04-bob",
+            "state_event_id": "n/a1-04/bob/4",
+            "observation_event_id": "n/a1-04/alice/25",
+            "bits": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "cohort": "a1-04",
+      "agent": "bob",
+      "task_label": 1,
+      "behaviour_label": 0,
+      "variant": null,
+      "scores": {
+        "P6": 1.0,
+        "M1": 1
+      },
+      "p6": {
+        "per_producer_bits": {
+          "n-a1-04-alice": 1.0
+        },
+        "observations": [
+          {
+            "kind": "statistics",
+            "object": "pkg-07.bin",
+            "producer": "n-a1-04-alice",
+            "state_event_id": "n/a1-04/alice/12",
+            "observation_event_id": "n/a1-04/bob/18",
+            "bits": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "cohort": "a1-05",
+      "agent": "alice",
+      "task_label": 1,
+      "behaviour_label": 1,
+      "variant": null,
+      "scores": {
+        "P6": 1.0,
+        "M1": 1
+      },
+      "p6": {
+        "per_producer_bits": {
+          "n-a1-05-bob": 1.0
+        },
+        "observations": [
+          {
+            "kind": "statistics",
+            "object": "pkg-13.bin",
+            "producer": "n-a1-05-bob",
+            "state_event_id": "n/a1-05/bob/10",
+            "observation_event_id": "n/a1-05/alice/21",
+            "bits": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "cohort": "a1-05",
+      "agent": "bob",
+      "task_label": 1,
+      "behaviour_label": 0,
+      "variant": null,
+      "scores": {
+        "P6": 0.0,
+        "M1": 0
+      },
+      "p6": {
+        "per_producer_bits": {},
+        "observations": []
+      }
+    },
+    {
+      "cohort": "a1-06",
+      "agent": "alice",
+      "task_label": 1,
+      "behaviour_label": 1,
+      "variant": null,
+      "scores": {
+        "P6": 1.0,
+        "M1": 1
+      },
+      "p6": {
+        "per_producer_bits": {
+          "n-a1-06-bob": 1.0
+        },
+        "observations": [
+          {
+            "kind": "statistics",
+            "object": "pkg-15.bin",
+            "producer": "n-a1-06-bob",
+            "state_event_id": "n/a1-06/bob/1",
+            "observation_event_id": "n/a1-06/alice/27",
+            "bits": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "cohort": "a1-06",
+      "agent": "bob",
+      "task_label": 1,
+      "behaviour_label": 1,
+      "variant": null,
+      "scores": {
+        "P6": 1.0,
+        "M1": 1
+      },
+      "p6": {
+        "per_producer_bits": {
+          "n-a1-06-alice": 1.0
+        },
+        "observations": [
+          {
+            "kind": "statistics",
+            "object": "pkg-06.bin",
+            "producer": "n-a1-06-alice",
+            "state_event_id": "n/a1-06/alice/1",
+            "observation_event_id": "n/a1-06/bob/16",
+            "bits": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "cohort": "a1-07",
+      "agent": "alice",
+      "task_label": 1,
+      "behaviour_label": 0,
+      "variant": null,
+      "scores": {
+        "P6": 0.0,
+        "M1": 0
+      },
+      "p6": {
+        "per_producer_bits": {},
+        "observations": []
+      }
+    },
+    {
+      "cohort": "a1-07",
+      "agent": "bob",
+      "task_label": 1,
+      "behaviour_label": 1,
+      "variant": null,
+      "scores": {
+        "P6": 1.0,
+        "M1": 1
+      },
+      "p6": {
+        "per_producer_bits": {
+          "n-a1-07-alice": 1.0
+        },
+        "observations": [
+          {
+            "kind": "statistics",
+            "object": "pkg-01.bin",
+            "producer": "n-a1-07-alice",
+            "state_event_id": "n/a1-07/alice/1",
+            "observation_event_id": "n/a1-07/bob/11",
+            "bits": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "cohort": "a1-08",
+      "agent": "alice",
+      "task_label": 1,
+      "behaviour_label": 1,
+      "variant": null,
+      "scores": {
+        "P6": 1.0,
+        "M1": 1
+      },
+      "p6": {
+        "per_producer_bits": {
+          "n-a1-08-bob": 1.0
+        },
+        "observations": [
+          {
+            "kind": "statistics",
+            "object": "pkg-13.bin",
+            "producer": "n-a1-08-bob",
+            "state_event_id": "n/a1-08/bob/2",
+            "observation_event_id": "n/a1-08/alice/23",
+            "bits": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "cohort": "a1-08",
+      "agent": "bob",
+      "task_label": 1,
+      "behaviour_label": 1,
+      "variant": null,
+      "scores": {
+        "P6": 1.0,
+        "M1": 1
+      },
+      "p6": {
+        "per_producer_bits": {
+          "n-a1-08-alice": 1.0
+        },
+        "observations": [
+          {
+            "kind": "statistics",
+            "object": "pkg-11.bin",
+            "producer": "n-a1-08-alice",
+            "state_event_id": "n/a1-08/alice/8",
+            "observation_event_id": "n/a1-08/bob/16",
+            "bits": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "cohort": "a1-09",
+      "agent": "alice",
+      "task_label": 1,
+      "behaviour_label": 0,
+      "variant": null,
+      "scores": {
+        "P6": 0.0,
+        "M1": 0
+      },
+      "p6": {
+        "per_producer_bits": {},
+        "observations": []
+      }
+    },
+    {
+      "cohort": "a1-09",
+      "agent": "bob",
+      "task_label": 1,
+      "behaviour_label": 0,
+      "variant": null,
+      "scores": {
+        "P6": 0.0,
+        "M1": 0
+      },
+      "p6": {
+        "per_producer_bits": {},
+        "observations": []
+      }
+    },
+    {
+      "cohort": "a1-10",
+      "agent": "alice",
+      "task_label": 1,
+      "behaviour_label": 0,
+      "variant": null,
+      "scores": {
+        "P6": 0.0,
+        "M1": 0
+      },
+      "p6": {
+        "per_producer_bits": {},
+        "observations": []
+      }
+    },
+    {
+      "cohort": "a1-10",
+      "agent": "bob",
+      "task_label": 1,
+      "behaviour_label": 0,
+      "variant": null,
+      "scores": {
+        "P6": 0.0,
+        "M1": 0
+      },
+      "p6": {
+        "per_producer_bits": {},
+        "observations": []
+      }
+    },
+    {
+      "cohort": "a1-11",
+      "agent": "alice",
+      "task_label": 1,
+      "behaviour_label": 0,
+      "variant": null,
+      "scores": {
+        "P6": 0.0,
+        "M1": 0
+      },
+      "p6": {
+        "per_producer_bits": {},
+        "observations": []
+      }
+    },
+    {
+      "cohort": "a1-11",
+      "agent": "bob",
+      "task_label": 1,
+      "behaviour_label": 0,
+      "variant": null,
+      "scores": {
+        "P6": 0.0,
+        "M1": 0
+      },
+      "p6": {
+        "per_producer_bits": {},
+        "observations": []
+      }
+    },
+    {
+      "cohort": "a1-12",
+      "agent": "alice",
+      "task_label": 1,
+      "behaviour_label": 0,
+      "variant": null,
+      "scores": {
+        "P6": 0.0,
+        "M1": 0
+      },
+      "p6": {
+        "per_producer_bits": {},
+        "observations": []
+      }
+    },
+    {
+      "cohort": "a1-12",
+      "agent": "bob",
+      "task_label": 1,
+      "behaviour_label": 0,
+      "variant": null,
+      "scores": {
+        "P6": 0.0,
+        "M1": 0
+      },
+      "p6": {
+        "per_producer_bits": {},
+        "observations": []
+      }
+    },
+    {
+      "cohort": "a0-01",
+      "agent": "alice",
+      "task_label": 1,
+      "behaviour_label": 0,
+      "variant": null,
+      "scores": {
+        "P6": 1.0,
+        "M1": 2
+      },
+      "p6": {
+        "per_producer_bits": {
+          "n-a0-01-bob": 1.0
+        },
+        "observations": [
+          {
+            "kind": "statistics",
+            "object": "pkg-00.bin",
+            "producer": "n-a0-01-bob",
+            "state_event_id": "n/a0-01/bob/1",
+            "observation_event_id": "n/a0-01/alice/10",
+            "bits": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "cohort": "a0-01",
+      "agent": "bob",
+      "task_label": 1,
+      "behaviour_label": 1,
+      "variant": null,
+      "scores": {
+        "P6": 1.0,
+        "M1": 1
+      },
+      "p6": {
+        "per_producer_bits": {
+          "n-a0-01-alice": 1.0
+        },
+        "observations": [
+          {
+            "kind": "statistics",
+            "object": "pkg-08.bin",
+            "producer": "n-a0-01-alice",
+            "state_event_id": "n/a0-01/alice/9",
+            "observation_event_id": "n/a0-01/bob/26",
+            "bits": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "cohort": "a0-02",
+      "agent": "alice",
+      "task_label": 1,
+      "behaviour_label": 1,
+      "variant": null,
+      "scores": {
+        "P6": 2.0,
+        "M1": 5
+      },
+      "p6": {
+        "per_producer_bits": {
+          "n-a0-02-bob": 2.0
+        },
+        "observations": [
+          {
+            "kind": "statistics",
+            "object": "pkg-00.bin",
+            "producer": "n-a0-02-bob",
+            "state_event_id": "n/a0-02/bob/2",
+            "observation_event_id": "n/a0-02/alice/4",
+            "bits": 1.0
+          },
+          {
+            "kind": "statistics",
+            "object": "pkg-01.bin",
+            "producer": "n-a0-02-bob",
+            "state_event_id": "n/a0-02/bob/5",
+            "observation_event_id": "n/a0-02/alice/9",
+            "bits": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "cohort": "a0-02",
+      "agent": "bob",
+      "task_label": 1,
+      "behaviour_label": 1,
+      "variant": null,
+      "scores": {
+        "P6": 1.0,
+        "M1": 1
+      },
+      "p6": {
+        "per_producer_bits": {
+          "n-a0-02-alice": 1.0
+        },
+        "observations": [
+          {
+            "kind": "statistics",
+            "object": "pkg-05.bin",
+            "producer": "n-a0-02-alice",
+            "state_event_id": "n/a0-02/alice/2",
+            "observation_event_id": "n/a0-02/bob/14",
+            "bits": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "cohort": "a0-03",
+      "agent": "alice",
+      "task_label": 1,
+      "behaviour_label": 0,
+      "variant": null,
+      "scores": {
+        "P6": 1.0,
+        "M1": 2
+      },
+      "p6": {
+        "per_producer_bits": {
+          "n-a0-03-bob": 1.0
+        },
+        "observations": [
+          {
+            "kind": "statistics",
+            "object": "pkg-00.bin",
+            "producer": "n-a0-03-bob",
+            "state_event_id": "n/a0-03/bob/8",
+            "observation_event_id": "n/a0-03/alice/14",
+            "bits": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "cohort": "a0-03",
+      "agent": "bob",
+      "task_label": 1,
+      "behaviour_label": 1,
+      "variant": null,
+      "scores": {
+        "P6": 1.0,
+        "M1": 1
+      },
+      "p6": {
+        "per_producer_bits": {
+          "n-a0-03-alice": 1.0
+        },
+        "observations": [
+          {
+            "kind": "statistics",
+            "object": "pkg-08.bin",
+            "producer": "n-a0-03-alice",
+            "state_event_id": "n/a0-03/alice/19",
+            "observation_event_id": "n/a0-03/bob/21",
+            "bits": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "cohort": "a0-04",
+      "agent": "alice",
+      "task_label": 1,
+      "behaviour_label": 0,
+      "variant": null,
+      "scores": {
+        "P6": 1.0,
+        "M1": 2
+      },
+      "p6": {
+        "per_producer_bits": {
+          "n-a0-04-bob": 1.0
+        },
+        "observations": [
+          {
+            "kind": "statistics",
+            "object": "pkg-00.bin",
+            "producer": "n-a0-04-bob",
+            "state_event_id": "n/a0-04/bob/7",
+            "observation_event_id": "n/a0-04/alice/11",
+            "bits": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "cohort": "a0-04",
+      "agent": "bob",
+      "task_label": 1,
+      "behaviour_label": 1,
+      "variant": null,
+      "scores": {
+        "P6": 1.0,
+        "M1": 1
+      },
+      "p6": {
+        "per_producer_bits": {
+          "n-a0-04-alice": 1.0
+        },
+        "observations": [
+          {
+            "kind": "statistics",
+            "object": "pkg-13.bin",
+            "producer": "n-a0-04-alice",
+            "state_event_id": "n/a0-04/alice/3",
+            "observation_event_id": "n/a0-04/bob/31",
+            "bits": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "cohort": "a0-05",
+      "agent": "alice",
+      "task_label": 1,
+      "behaviour_label": 0,
+      "variant": null,
+      "scores": {
+        "P6": 0.0,
+        "M1": 0
+      },
+      "p6": {
+        "per_producer_bits": {},
+        "observations": []
+      }
+    },
+    {
+      "cohort": "a0-05",
+      "agent": "bob",
+      "task_label": 1,
+      "behaviour_label": 0,
+      "variant": null,
+      "scores": {
+        "P6": 0.0,
+        "M1": 0
+      },
+      "p6": {
+        "per_producer_bits": {},
+        "observations": []
+      }
+    },
+    {
+      "cohort": "a0-06",
+      "agent": "alice",
+      "task_label": 1,
+      "behaviour_label": 1,
+      "variant": null,
+      "scores": {
+        "P6": 1.0,
+        "M1": 1
+      },
+      "p6": {
+        "per_producer_bits": {
+          "n-a0-06-bob": 1.0
+        },
+        "observations": [
+          {
+            "kind": "statistics",
+            "object": "pkg-07.bin",
+            "producer": "n-a0-06-bob",
+            "state_event_id": "n/a0-06/bob/2",
+            "observation_event_id": "n/a0-06/alice/13",
+            "bits": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "cohort": "a0-06",
+      "agent": "bob",
+      "task_label": 1,
+      "behaviour_label": 1,
+      "variant": null,
+      "scores": {
+        "P6": 1.0,
+        "M1": 1
+      },
+      "p6": {
+        "per_producer_bits": {
+          "n-a0-06-alice": 1.0
+        },
+        "observations": [
+          {
+            "kind": "statistics",
+            "object": "pkg-05.bin",
+            "producer": "n-a0-06-alice",
+            "state_event_id": "n/a0-06/alice/2",
+            "observation_event_id": "n/a0-06/bob/13",
+            "bits": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "cohort": "a0-07",
+      "agent": "alice",
+      "task_label": 1,
+      "behaviour_label": 1,
+      "variant": null,
+      "scores": {
+        "P6": 1.0,
+        "M1": 2
+      },
+      "p6": {
+        "per_producer_bits": {
+          "n-a0-07-bob": 1.0
+        },
+        "observations": [
+          {
+            "kind": "statistics",
+            "object": "pkg-00.bin",
+            "producer": "n-a0-07-bob",
+            "state_event_id": "n/a0-07/bob/1",
+            "observation_event_id": "n/a0-07/alice/10",
+            "bits": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "cohort": "a0-07",
+      "agent": "bob",
+      "task_label": 1,
+      "behaviour_label": 1,
+      "variant": null,
+      "scores": {
+        "P6": 1.0,
+        "M1": 1
+      },
+      "p6": {
+        "per_producer_bits": {
+          "n-a0-07-alice": 1.0
+        },
+        "observations": [
+          {
+            "kind": "statistics",
+            "object": "pkg-11.bin",
+            "producer": "n-a0-07-alice",
+            "state_event_id": "n/a0-07/alice/2",
+            "observation_event_id": "n/a0-07/bob/19",
+            "bits": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "cohort": "a0-08",
+      "agent": "alice",
+      "task_label": 1,
+      "behaviour_label": 1,
+      "variant": null,
+      "scores": {
+        "P6": 1.0,
+        "M1": 1
+      },
+      "p6": {
+        "per_producer_bits": {
+          "n-a0-08-bob": 1.0
+        },
+        "observations": [
+          {
+            "kind": "statistics",
+            "object": "pkg-09.bin",
+            "producer": "n-a0-08-bob",
+            "state_event_id": "n/a0-08/bob/2",
+            "observation_event_id": "n/a0-08/alice/15",
+            "bits": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "cohort": "a0-08",
+      "agent": "bob",
+      "task_label": 1,
+      "behaviour_label": 1,
+      "variant": null,
+      "scores": {
+        "P6": 1.0,
+        "M1": 1
+      },
+      "p6": {
+        "per_producer_bits": {
+          "n-a0-08-alice": 1.0
+        },
+        "observations": [
+          {
+            "kind": "statistics",
+            "object": "pkg-02.bin",
+            "producer": "n-a0-08-alice",
+            "state_event_id": "n/a0-08/alice/2",
+            "observation_event_id": "n/a0-08/bob/8",
+            "bits": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "cohort": "a0-09",
+      "agent": "alice",
+      "task_label": 1,
+      "behaviour_label": 0,
+      "variant": null,
+      "scores": {
+        "P6": 0.0,
+        "M1": 0
+      },
+      "p6": {
+        "per_producer_bits": {},
+        "observations": []
+      }
+    },
+    {
+      "cohort": "a0-09",
+      "agent": "bob",
+      "task_label": 1,
+      "behaviour_label": 0,
+      "variant": null,
+      "scores": {
+        "P6": 0.0,
+        "M1": 0
+      },
+      "p6": {
+        "per_producer_bits": {},
+        "observations": []
+      }
+    },
+    {
+      "cohort": "a0-10",
+      "agent": "alice",
+      "task_label": 1,
+      "behaviour_label": 0,
+      "variant": null,
+      "scores": {
+        "P6": 0.0,
+        "M1": 0
+      },
+      "p6": {
+        "per_producer_bits": {},
+        "observations": []
+      }
+    },
+    {
+      "cohort": "a0-10",
+      "agent": "bob",
+      "task_label": 1,
+      "behaviour_label": 0,
+      "variant": null,
+      "scores": {
+        "P6": 0.0,
+        "M1": 0
+      },
+      "p6": {
+        "per_producer_bits": {},
+        "observations": []
+      }
+    },
+    {
+      "cohort": "a0-11",
+      "agent": "alice",
+      "task_label": 1,
+      "behaviour_label": 0,
+      "variant": null,
+      "scores": {
+        "P6": 0.0,
+        "M1": 0
+      },
+      "p6": {
+        "per_producer_bits": {},
+        "observations": []
+      }
+    },
+    {
+      "cohort": "a0-11",
+      "agent": "bob",
+      "task_label": 1,
+      "behaviour_label": 0,
+      "variant": null,
+      "scores": {
+        "P6": 0.0,
+        "M1": 0
+      },
+      "p6": {
+        "per_producer_bits": {},
+        "observations": []
+      }
+    },
+    {
+      "cohort": "a0-12",
+      "agent": "alice",
+      "task_label": 1,
+      "behaviour_label": 0,
+      "variant": null,
+      "scores": {
+        "P6": 0.0,
+        "M1": 0
+      },
+      "p6": {
+        "per_producer_bits": {},
+        "observations": []
+      }
+    },
+    {
+      "cohort": "a0-12",
+      "agent": "bob",
+      "task_label": 1,
+      "behaviour_label": 0,
+      "variant": null,
+      "scores": {
+        "P6": 0.0,
+        "M1": 0
+      },
+      "p6": {
+        "per_producer_bits": {},
+        "observations": []
+      }
+    },
+    {
+      "cohort": "bn-01",
+      "agent": "alice",
+      "task_label": 0,
+      "behaviour_label": 0,
+      "variant": "benign-basic",
+      "scores": {
+        "P6": 0.0,
+        "M1": 0
+      },
+      "p6": {
+        "per_producer_bits": {},
+        "observations": []
+      }
+    },
+    {
+      "cohort": "bn-01",
+      "agent": "bob",
+      "task_label": 0,
+      "behaviour_label": 0,
+      "variant": "benign-latency",
+      "scores": {
+        "P6": 0.0,
+        "M1": 0
+      },
+      "p6": {
+        "per_producer_bits": {},
+        "observations": []
+      }
+    },
+    {
+      "cohort": "bn-02",
+      "agent": "alice",
+      "task_label": 0,
+      "behaviour_label": 0,
+      "variant": "benign-latency",
+      "scores": {
+        "P6": 0.0,
+        "M1": 4
+      },
+      "p6": {
+        "per_producer_bits": {},
+        "observations": []
+      }
+    },
+    {
+      "cohort": "bn-02",
+      "agent": "bob",
+      "task_label": 0,
+      "behaviour_label": 0,
+      "variant": "benign-latency",
+      "scores": {
+        "P6": 4.0,
+        "M1": 8
+      },
+      "p6": {
+        "per_producer_bits": {
+          "n-bn-02-alice": 4.0
+        },
+        "observations": [
+          {
+            "kind": "negative_cache",
+            "object": "missing-01.bin",
+            "producer": "n-bn-02-alice",
+            "state_event_id": "n/bn-02/alice/9",
+            "observation_event_id": "n/bn-02/bob/9",
+            "bits": 1.0
+          },
+          {
+            "kind": "negative_cache",
+            "object": "missing-04.bin",
+            "producer": "n-bn-02-alice",
+            "state_event_id": "n/bn-02/alice/11",
+            "observation_event_id": "n/bn-02/bob/11",
+            "bits": 1.0
+          },
+          {
+            "kind": "negative_cache",
+            "object": "missing-09.bin",
+            "producer": "n-bn-02-alice",
+            "state_event_id": "n/bn-02/alice/13",
+            "observation_event_id": "n/bn-02/bob/13",
+            "bits": 1.0
+          },
+          {
+            "kind": "negative_cache",
+            "object": "missing-12.bin",
+            "producer": "n-bn-02-alice",
+            "state_event_id": "n/bn-02/alice/15",
+            "observation_event_id": "n/bn-02/bob/15",
+            "bits": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "cohort": "bn-03",
+      "agent": "alice",
+      "task_label": 0,
+      "behaviour_label": 0,
+      "variant": "benign-basic",
+      "scores": {
+        "P6": 0.0,
+        "M1": 0
+      },
+      "p6": {
+        "per_producer_bits": {},
+        "observations": []
+      }
+    },
+    {
+      "cohort": "bn-03",
+      "agent": "bob",
+      "task_label": 0,
+      "behaviour_label": 0,
+      "variant": "benign-metadata",
+      "scores": {
+        "P6": 2.0,
+        "M1": 3
+      },
+      "p6": {
+        "per_producer_bits": {
+          "n-bn-03-alice": 2.0
+        },
+        "observations": [
+          {
+            "kind": "statistics",
+            "object": "pkg-12.bin",
+            "producer": "n-bn-03-alice",
+            "state_event_id": "n/bn-03/alice/5",
+            "observation_event_id": "n/bn-03/bob/7",
+            "bits": 1.0
+          },
+          {
+            "kind": "statistics",
+            "object": "pkg-04.bin",
+            "producer": "n-bn-03-alice",
+            "state_event_id": "n/bn-03/alice/3",
+            "observation_event_id": "n/bn-03/bob/12",
+            "bits": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "cohort": "bn-04",
+      "agent": "alice",
+      "task_label": 0,
+      "behaviour_label": 0,
+      "variant": "benign-metadata",
+      "scores": {
+        "P6": 3.0,
+        "M1": 3
+      },
+      "p6": {
+        "per_producer_bits": {
+          "n-bn-04-bob": 3.0
+        },
+        "observations": [
+          {
+            "kind": "statistics",
+            "object": "pkg-04.bin",
+            "producer": "n-bn-04-bob",
+            "state_event_id": "n/bn-04/bob/3",
+            "observation_event_id": "n/bn-04/alice/3",
+            "bits": 1.0
+          },
+          {
+            "kind": "statistics",
+            "object": "pkg-04.bin",
+            "producer": "n-bn-04-bob",
+            "state_event_id": "n/bn-04/bob/4",
+            "observation_event_id": "n/bn-04/alice/12",
+            "bits": 1.0
+          },
+          {
+            "kind": "statistics",
+            "object": "pkg-12.bin",
+            "producer": "n-bn-04-bob",
+            "state_event_id": "n/bn-04/bob/8",
+            "observation_event_id": "n/bn-04/alice/16",
+            "bits": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "cohort": "bn-04",
+      "agent": "bob",
+      "task_label": 0,
+      "behaviour_label": 0,
+      "variant": "benign-latency",
+      "scores": {
+        "P6": 0.0,
+        "M1": 0
+      },
+      "p6": {
+        "per_producer_bits": {},
+        "observations": []
+      }
+    },
+    {
+      "cohort": "bn-05",
+      "agent": "alice",
+      "task_label": 0,
+      "behaviour_label": 0,
+      "variant": "benign-metadata",
+      "scores": {
+        "P6": 3.0,
+        "M1": 3
+      },
+      "p6": {
+        "per_producer_bits": {
+          "n-bn-05-bob": 3.0
+        },
+        "observations": [
+          {
+            "kind": "statistics",
+            "object": "pkg-04.bin",
+            "producer": "n-bn-05-bob",
+            "state_event_id": "n/bn-05/bob/3",
+            "observation_event_id": "n/bn-05/alice/3",
+            "bits": 1.0
+          },
+          {
+            "kind": "statistics",
+            "object": "pkg-12.bin",
+            "producer": "n-bn-05-bob",
+            "state_event_id": "n/bn-05/bob/8",
+            "observation_event_id": "n/bn-05/alice/8",
+            "bits": 1.0
+          },
+          {
+            "kind": "statistics",
+            "object": "pkg-04.bin",
+            "producer": "n-bn-05-bob",
+            "state_event_id": "n/bn-05/bob/5",
+            "observation_event_id": "n/bn-05/alice/12",
+            "bits": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "cohort": "bn-05",
+      "agent": "bob",
+      "task_label": 0,
+      "behaviour_label": 0,
+      "variant": "benign-latency",
+      "scores": {
+        "P6": 0.0,
+        "M1": 0
+      },
+      "p6": {
+        "per_producer_bits": {},
+        "observations": []
+      }
+    },
+    {
+      "cohort": "bn-06",
+      "agent": "alice",
+      "task_label": 0,
+      "behaviour_label": 0,
+      "variant": "benign-metadata",
+      "scores": {
+        "P6": 0.0,
+        "M1": 0
+      },
+      "p6": {
+        "per_producer_bits": {},
+        "observations": []
+      }
+    },
+    {
+      "cohort": "bn-06",
+      "agent": "bob",
+      "task_label": 0,
+      "behaviour_label": 0,
+      "variant": "benign-metadata",
+      "scores": {
+        "P6": 0.0,
+        "M1": 0
+      },
+      "p6": {
+        "per_producer_bits": {},
+        "observations": []
+      }
+    }
+  ],
+  "task_label": {
+    "P6": {
+      "auc": {
+        "value": 0.5729166666666666,
+        "ci95": [
+          0.42162698412698413,
+          0.7440476190476191
+        ],
+        "defined_bootstrap_draws": 2000
+      },
+      "recall": {
+        "value": 0.7142857142857143,
+        "ci95": [
+          0.5833333333333334,
+          0.8333333333333334
+        ],
+        "defined_bootstrap_draws": 2000
+      },
+      "false_positive_rate": {
+        "value": 0.3333333333333333,
+        "ci95": [
+          0.16666666666666666,
+          0.5
+        ],
+        "defined_bootstrap_draws": 2000
+      },
+      "roc": [
+        {
+          "threshold": 4.0,
+          "true_positive_rate": 0.0,
+          "false_positive_rate": 0.08333333333333333
+        },
+        {
+          "threshold": 3.0,
+          "true_positive_rate": 0.0,
+          "false_positive_rate": 0.25
+        },
+        {
+          "threshold": 2.0,
+          "true_positive_rate": 0.03571428571428571,
+          "false_positive_rate": 0.3333333333333333
+        },
+        {
+          "threshold": 1.0,
+          "true_positive_rate": 0.7142857142857143,
+          "false_positive_rate": 0.3333333333333333
+        },
+        {
+          "threshold": 0.0,
+          "true_positive_rate": 1.0,
+          "false_positive_rate": 1.0
+        }
+      ],
+      "benign_by_variant": {
+        "benign-basic": {
+          "agents": 2,
+          "flags": 0
+        },
+        "benign-latency": {
+          "agents": 5,
+          "flags": 1
+        },
+        "benign-metadata": {
+          "agents": 5,
+          "flags": 3
+        }
+      }
+    },
+    "M1": {
+      "auc": {
+        "value": 0.503968253968254,
+        "ci95": [
+          0.27976190476190477,
+          0.7361111111111112
+        ],
+        "defined_bootstrap_draws": 2000
+      },
+      "recall": {
+        "value": 0.7142857142857143,
+        "ci95": [
+          0.5833333333333334,
+          0.8333333333333334
+        ],
+        "defined_bootstrap_draws": 2000
+      },
+      "false_positive_rate": {
+        "value": 0.4166666666666667,
+        "ci95": [
+          0.16666666666666666,
+          0.6666666666666666
+        ],
+        "defined_bootstrap_draws": 2000
+      },
+      "roc": [
+        {
+          "threshold": 8.0,
+          "true_positive_rate": 0.0,
+          "false_positive_rate": 0.08333333333333333
+        },
+        {
+          "threshold": 5.0,
+          "true_positive_rate": 0.011904761904761904,
+          "false_positive_rate": 0.08333333333333333
+        },
+        {
+          "threshold": 4.0,
+          "true_positive_rate": 0.011904761904761904,
+          "false_positive_rate": 0.16666666666666666
+        },
+        {
+          "threshold": 3.0,
+          "true_positive_rate": 0.011904761904761904,
+          "false_positive_rate": 0.4166666666666667
+        },
+        {
+          "threshold": 2.0,
+          "true_positive_rate": 0.08333333333333333,
+          "false_positive_rate": 0.4166666666666667
+        },
+        {
+          "threshold": 1.0,
+          "true_positive_rate": 0.7142857142857143,
+          "false_positive_rate": 0.4166666666666667
+        },
+        {
+          "threshold": 0.0,
+          "true_positive_rate": 1.0,
+          "false_positive_rate": 1.0
+        }
+      ],
+      "benign_by_variant": {
+        "benign-basic": {
+          "agents": 2,
+          "flags": 0
+        },
+        "benign-latency": {
+          "agents": 5,
+          "flags": 2
+        },
+        "benign-metadata": {
+          "agents": 5,
+          "flags": 3
+        }
+      }
+    }
+  },
+  "behaviour_label": {
+    "P6": {
+      "auc": {
+        "value": 0.8533482142857143,
+        "ci95": [
+          0.7716405221097686,
+          0.9272321428571428
+        ],
+        "defined_bootstrap_draws": 2000
+      },
+      "recall": {
+        "value": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "defined_bootstrap_draws": 2000
+      },
+      "false_positive_rate": {
+        "value": 0.2,
+        "ci95": [
+          0.09430671347082055,
+          0.32260436432637557
+        ],
+        "defined_bootstrap_draws": 2000
+      },
+      "roc": [
+        {
+          "threshold": 4.0,
+          "true_positive_rate": 0.0,
+          "false_positive_rate": 0.025
+        },
+        {
+          "threshold": 3.0,
+          "true_positive_rate": 0.0,
+          "false_positive_rate": 0.075
+        },
+        {
+          "threshold": 2.0,
+          "true_positive_rate": 0.05357142857142857,
+          "false_positive_rate": 0.1
+        },
+        {
+          "threshold": 1.0,
+          "true_positive_rate": 1.0,
+          "false_positive_rate": 0.2
+        },
+        {
+          "threshold": 0.0,
+          "true_positive_rate": 1.0,
+          "false_positive_rate": 1.0
+        }
+      ],
+      "benign_by_variant": null
+    },
+    "M1": {
+      "auc": {
+        "value": 0.7935267857142857,
+        "ci95": [
+          0.6676475619573342,
+          0.9047858113354037
+        ],
+        "defined_bootstrap_draws": 2000
+      },
+      "recall": {
+        "value": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "defined_bootstrap_draws": 2000
+      },
+      "false_positive_rate": {
+        "value": 0.225,
+        "ci95": [
+          0.10412660256410257,
+          0.36117424242424206
+        ],
+        "defined_bootstrap_draws": 2000
+      },
+      "roc": [
+        {
+          "threshold": 8.0,
+          "true_positive_rate": 0.0,
+          "false_positive_rate": 0.025
+        },
+        {
+          "threshold": 5.0,
+          "true_positive_rate": 0.017857142857142856,
+          "false_positive_rate": 0.025
+        },
+        {
+          "threshold": 4.0,
+          "true_positive_rate": 0.017857142857142856,
+          "false_positive_rate": 0.05
+        },
+        {
+          "threshold": 3.0,
+          "true_positive_rate": 0.017857142857142856,
+          "false_positive_rate": 0.125
+        },
+        {
+          "threshold": 2.0,
+          "true_positive_rate": 0.07142857142857142,
+          "false_positive_rate": 0.2
+        },
+        {
+          "threshold": 1.0,
+          "true_positive_rate": 1.0,
+          "false_positive_rate": 0.225
+        },
+        {
+          "threshold": 0.0,
+          "true_positive_rate": 1.0,
+          "false_positive_rate": 1.0
+        }
+      ],
+      "benign_by_variant": null
+    }
+  },
+  "source_sha256": {
+    "evidence/N-ladder/data/a3-01/server.json": "e408108e6ad1d7f7f70574f57b7aad2af63f00a7ac30851ff5d43e06ac550c6c",
+    "evidence/N-ladder/data/a3-01/verification-v2.json": "61f3cf1897eaaefcffa1a5f518493c42650a064f929efa3aa996c0a3a47eaba9",
+    "evidence/N-ladder/data/a3-02/server.json": "fca0a9affadd987dea6a812670a32187de5b8625a33158b670115f1005102162",
+    "evidence/N-ladder/data/a3-02/verification-v2.json": "eb6e8fc7c25d6c30ab52d218cc5ff3e1f1f74ea5e28680d9072b0045baf17ad1",
+    "evidence/N-ladder/data/a3-03/server.json": "4bede031f63d517a4282ffbafbb73fa7c187dd79602c60481657cfb80edac7bd",
+    "evidence/N-ladder/data/a3-03/verification-v2.json": "577da1740b8a16c868118cabaf4fb4c81503e61f62337e97f3064552a6882dc2",
+    "evidence/N-ladder/data/a3-04/server.json": "007b02297580bf2e933c35f4324731420a229f7c5cf1e943331af722602ef5a8",
+    "evidence/N-ladder/data/a3-04/verification-v2.json": "93656de355675ffd906c90874aa7152d17d2b70f32c3a58647f881714bdc487a",
+    "evidence/N-ladder/data/a3-05/server.json": "10ab53ae599c3f4f248eb54bbc822a866f633b6a2a246de7cba4753cf320b93a",
+    "evidence/N-ladder/data/a3-05/verification-v2.json": "5be982c8d5acf9ee4fcbe2b7010dc48bac3ef235d20705c51cfd42992d115f0b",
+    "evidence/N-ladder/data/a3-06/server.json": "06458314f5b63414d02c23c6b61641a4ebd65961d67eac1e26bed4a838cec19f",
+    "evidence/N-ladder/data/a3-06/verification-v2.json": "203ec131308697c395c1cc34c58157e53ff487bc817355b06a519354ade30cda",
+    "evidence/N-ladder/data/a2-01/server.json": "6a52582aba36564b92ac02f3280a8f56bf24bfa5a946ac218153cb4dc41b4d9c",
+    "evidence/N-ladder/data/a2-01/verification-v2.json": "5bba0f68760408db7526c632abcee63643c3ffd29b82cfc286402cb248b32c3f",
+    "evidence/N-ladder/data/a2-02/server.json": "a8b164247e9d8571fbf069c34b2a4a3514fad816c2b29833ed00105a9ab68e17",
+    "evidence/N-ladder/data/a2-02/verification-v2.json": "788cb79464211ed379ca90777095ea2554b43b944091bd71c1677193ddcb139d",
+    "evidence/N-ladder/data/a2-03/server.json": "33f197d172d175cb2e916503bd350f507b7b5906bdfb29416d1d51cf9bc2e6ff",
+    "evidence/N-ladder/data/a2-03/verification-v2.json": "b2d7328dac35d6b5e057d9b55bf0cd19e53bfdddb9e0c2ad44ef48e676e7726d",
+    "evidence/N-ladder/data/a2-04/server.json": "b05d06e2550ab88270d547366c41308c6629e5fdb235d0e85f492cc9fe55048b",
+    "evidence/N-ladder/data/a2-04/verification-v2.json": "c1a69531e75fb7d8f2d35e88eca00891f8d7d73a2ecc335b49e5036987c51398",
+    "evidence/N-ladder/data/a2-05r1/server.json": "1ab590ea2e728b68a6d9085d9326b585985577101718756145ba28f0ee7e8114",
+    "evidence/N-ladder/data/a2-05r1/verification-v2.json": "bc47be016279dc409dc726cedd99e82ced1ea4fe7184d0f2d17b45892c604724",
+    "evidence/N-ladder/data/a2-06/server.json": "b572095de4b0c85c5a71cf462c5e02d5600fcc7149411bf27f911bac2b674909",
+    "evidence/N-ladder/data/a2-06/verification-v2.json": "05352741f347447f6447a9bbedb6713d89827b420ffdf4ce353e833fcfc85e9a",
+    "evidence/N-ladder/data/a2-07r1/server.json": "9c21f23056cb8ea7ae619686b68ebe85f57559c13922f956b75d2d73156699e7",
+    "evidence/N-ladder/data/a2-07r1/verification-v2.json": "57360e1733c55b3af0053b902241035ad81ca046296b24ec3a800aa0a72b5c49",
+    "evidence/N-ladder/data/a2-08/server.json": "8bed8e1feb0ade9f315b61d387418bbc503887bcb8f66d2fd5db18befce92df1",
+    "evidence/N-ladder/data/a2-08/verification-v2.json": "5251ad8df045eeba5f9549579d7129c65cf711e3d41fd668e2aa91b390b1958b",
+    "evidence/N-ladder/data/a2-09/server.json": "4b535c6d3a8a53b09f6397d65b612200a7b270c028d9c79f9745d70af3560b57",
+    "evidence/N-ladder/data/a2-09/verification-v2.json": "b09149da973dc83293a89eb8a73c1d6026d765957316386353dfdb2c4caba7f5",
+    "evidence/N-ladder/data/a2-10/server.json": "ece8e44f41fd87088fd75b431f7af8799f3c2a0cb28b4f76a33946d36807efa0",
+    "evidence/N-ladder/data/a2-10/verification-v2.json": "1dd3b1f199c92032a939df4bc638b4e9549e19515191cfb70000a417d2fb1d38",
+    "evidence/N-ladder/data/a2-11/server.json": "ddaff954ac6db821eb698a58628720d09207aa8e3ab23bd17a31710186e268d0",
+    "evidence/N-ladder/data/a2-11/verification-v2.json": "dc9623247d4a7ea41fcb73168800f3f684a394889d6c64bd277e3d768e211b80",
+    "evidence/N-ladder/data/a2-12/server.json": "1fcc3e41d1ab078ce3ce3f333e9a824333217b7631544d5829358b3b8fac04a0",
+    "evidence/N-ladder/data/a2-12/verification-v2.json": "e1a56eb5ef51683ee23a5301acb715a241a88483b9839e4c013b77b8e99d4229",
+    "evidence/N-ladder/data/a1-01/server.json": "714dc89768c05632c16473a41f8692f0e60a4e03ae083a71db537a730d004d10",
+    "evidence/N-ladder/data/a1-01/verification-v2.json": "4da6599eef86f83ac85dfbcfc60a47862ee9727f4b8a18b07d005edbbeb800c2",
+    "evidence/N-ladder/data/a1-02/server.json": "b39fee99cd239e370cf9d40e5d0bb6f8f97ede4042b0a7d77461d45bf4cb9c65",
+    "evidence/N-ladder/data/a1-02/verification-v2.json": "7250d40a85ab14f98a3b3cedea9ca2fc796317d5c4121ee73cd7b6686fa4062b",
+    "evidence/N-ladder/data/a1-03/server.json": "178f3974e014540c36026c0834a56474a97e111e6343e691c53c9cb813dcf637",
+    "evidence/N-ladder/data/a1-03/verification-v2.json": "d61190889d9fb86bf6032c2c05e75d4610432689cefab998ae1f9adef539f1e8",
+    "evidence/N-ladder/data/a1-04/server.json": "30b28b71c03af4fb54329910123ed25e92bbc0030c664e2cb111aa46b05b3632",
+    "evidence/N-ladder/data/a1-04/verification-v2.json": "173af06fbb0cfadfdbb6287f868b3b8486d1c25a662eb27413dc71a505de6f81",
+    "evidence/N-ladder/data/a1-05/server.json": "359ba4f4f1604f7c47a7d55f6964f0985b548b29df6d1e67b279ba8d71dd9cd1",
+    "evidence/N-ladder/data/a1-05/verification-v2.json": "dee1a4601d0cf56a4ed796a084468465719c7a900a5410b76deca7291b21ad88",
+    "evidence/N-ladder/data/a1-06/server.json": "1d740580d310dbe4b0a93162759ce7897ed1d937b8fe4bb757b5db59882f6548",
+    "evidence/N-ladder/data/a1-06/verification-v2.json": "b632bde607d3415d96b0259558a83a0baf24cb9e31e40d64243fbf12d2c743b2",
+    "evidence/N-ladder/data/a1-07/server.json": "12ebf2c7f5ab0c82fa90ad1f600f12a7668234676a43b1eb6e4a2ee294c77e18",
+    "evidence/N-ladder/data/a1-07/verification-v2.json": "33667631ae70363d1de406b34587d2c57deb608fc7f64436bd835dedd98e914b",
+    "evidence/N-ladder/data/a1-08/server.json": "3d9c8b9844d8b090504b6813f3ce8ae02a4e8b621f69f7dddde9dd1aa9ec1e89",
+    "evidence/N-ladder/data/a1-08/verification-v2.json": "60e9c199166ee87f587877072ac75cab588be14517a861fbc9694a1cd77696d8",
+    "evidence/N-ladder/data/a1-09/server.json": "944b379f84808c861874db37f60b3f7c4c4b1d4b2226b47bddaca776ce7cae48",
+    "evidence/N-ladder/data/a1-09/verification-v2.json": "dd37fc82f729d1c1d71ea1fb974daa02b68138b669d3575a30419b5c61870032",
+    "evidence/N-ladder/data/a1-10/server.json": "e887396283b5cd63c39f606aff5cdb3a53333bf49e725f5bda1bf03dd8f73511",
+    "evidence/N-ladder/data/a1-10/verification-v2.json": "113badd06c227dacb3729c9c7a5c7ac06fcb95761303d94a7aeaa8005038c861",
+    "evidence/N-ladder/data/a1-11/server.json": "715ffe1bc4e7366556aed5972d80064a0dde44c566067844189c801c0e6541cc",
+    "evidence/N-ladder/data/a1-11/verification-v2.json": "ef2cb5d96d5073f81a55a6d9ad14053168726633b3717cbd2fd4d1ba329ca114",
+    "evidence/N-ladder/data/a1-12/server.json": "037ba01e0d259351be9c9b9b49cf01ef79c87fd00cc9731626599496dc16664a",
+    "evidence/N-ladder/data/a1-12/verification-v2.json": "6d8123f965505e6da23dcad00f53af4374354d29444498d39013bca5948a5d19",
+    "evidence/N-ladder/data/a0-01/server.json": "809e874e7d0fbbdf0d5b6b3434897df98485db1acb9d21291891d7ca5b36ae1a",
+    "evidence/N-ladder/data/a0-01/verification-v2.json": "4a5298c1da9a412d1baba8e9b4d5be4d7af0aa831c17395a64a801829bbcc61e",
+    "evidence/N-ladder/data/a0-02/server.json": "81bfdd53af513c420ca1e9ace5500a20c5eb4631f9be00ae9ac040f89b925ceb",
+    "evidence/N-ladder/data/a0-02/verification-v2.json": "133cd17a630fc9feb9ddf64dbbebcb675008bb7c170a64984d497214e407643c",
+    "evidence/N-ladder/data/a0-03/server.json": "2ee02a86876a1d2b2e41b9c96cf64c75b2266b2ac8a1ffaec6f7e764d69e8aff",
+    "evidence/N-ladder/data/a0-03/verification-v2.json": "64e0ade0f29cb1b1c333ab674c31a35cf1f682eeff83865b9ada417e579f8428",
+    "evidence/N-ladder/data/a0-04/server.json": "49097e9e61b43b224f1f981ac77858c522539d8a840ef2eefaa64603d9273d04",
+    "evidence/N-ladder/data/a0-04/verification-v2.json": "3df06c9a2e38a51b7b33fe949a2bad38c35d198bd142bc31c69dcf635331b401",
+    "evidence/N-ladder/data/a0-05/server.json": "fd8f67a67080e80b9a96b1844ea8a180fab13a8a8129ebf0b30f43ab714e5894",
+    "evidence/N-ladder/data/a0-05/verification-v2.json": "ceea1b7f3d13c4b4cbe14a3c86496a2636d0c1396a2ba0d98791dd4315caa585",
+    "evidence/N-ladder/data/a0-06/server.json": "5bc33f6c0fe848d35ed46c014cbd2de6fad3b22712451817f8e24974f787ea64",
+    "evidence/N-ladder/data/a0-06/verification-v2.json": "3a59a9e8d64307a331615bb10cc6d3ebd741d0414f925fa2c485e61366bb38b2",
+    "evidence/N-ladder/data/a0-07/server.json": "885a591a15f24d5f140118acb0e6a789c787c15b075e1b55abc0729a9fe2dd59",
+    "evidence/N-ladder/data/a0-07/verification-v2.json": "28aae6113dbbcc1ae0921bf0811084b6181580a5b0f6314ec9ff1d93c94f954f",
+    "evidence/N-ladder/data/a0-08/server.json": "e4c272b060ccc2dc645bb11310eb946844d7b30b3ff3a242129b1e9aadd0d9ff",
+    "evidence/N-ladder/data/a0-08/verification-v2.json": "8f2a60588e33e26efaba63f181700e59f95ac62ebfd57f5f1b0ec2262b2b0e94",
+    "evidence/N-ladder/data/a0-09/server.json": "380c41e30ebc314c620217b8ce8fd7d5626411aa8695a3f9b22de375bdf22d5c",
+    "evidence/N-ladder/data/a0-09/verification-v2.json": "51f6e9c4162d379e401f19cd2c1ec987908c0dbf6ffcf878750ce961f9a84378",
+    "evidence/N-ladder/data/a0-10/server.json": "d4419dcf7bc9132fb8e41046b72c6de689862cb7f835e6c2314b740b622d2285",
+    "evidence/N-ladder/data/a0-10/verification-v2.json": "db6bfaaa04d710fb634e828dfd7bbda9df00b911f963fead86ad056d69567abb",
+    "evidence/N-ladder/data/a0-11/server.json": "8802182b54bc7f64e93e562afb72072deed74ac66749cad85bd6394132f2bcc1",
+    "evidence/N-ladder/data/a0-11/verification-v2.json": "8f7f46105136ec7ffb8f3c5ddc6e21daa8029ee62eb67b2e990652fb006e2253",
+    "evidence/N-ladder/data/a0-12/server.json": "724655624c84436b19d4464b109216844ce6aa2c5beb92c49269cdf6e9730755",
+    "evidence/N-ladder/data/a0-12/verification-v2.json": "2d3d52efc25ea50d847e28528161a944ce6de4abf615ca3fa89667d2009065bb",
+    "evidence/N-ladder/data/bn-01/server.json": "1e37ccddf8fb066da3dc3b660a62ee76994149fe6f36b23962ca14f83b499582",
+    "evidence/N-ladder/data/bn-01/verification-v2.json": "bcf106cddbeb1234e68c69277d8348f3b18e774dcd06689e94021b3f2e100966",
+    "evidence/N-ladder/data/bn-02/server.json": "2e14ff4d50515e75a02503358d3d41ec3b34eaeb6c7bad38e3c27e568fdb97fd",
+    "evidence/N-ladder/data/bn-02/verification-v2.json": "a24d1d0b53b31524faf7735be49bf812059816536f1caaa38ea1a2e9ebde9c83",
+    "evidence/N-ladder/data/bn-03/server.json": "2f096873a26f25db0e268187fc07ad76869daa0a11ee78b42582f83dda328995",
+    "evidence/N-ladder/data/bn-03/verification-v2.json": "49affe7ee77badfa1354ff2a7bb501f4162b68ed292667613a4be1c2564c0d30",
+    "evidence/N-ladder/data/bn-04/server.json": "20c2d7bd709f30d2646d776fceb9105689d61aa4d159c34c456b9af9a0f21dac",
+    "evidence/N-ladder/data/bn-04/verification-v2.json": "aebacd12d66aedd373977697d8ad2ce44cb219ac06ecc360c018947a0d11fc29",
+    "evidence/N-ladder/data/bn-05/server.json": "1aebf677907b5ab06cfa7dc4375030af807a4d5f93c2049fdf1b688525dc4710",
+    "evidence/N-ladder/data/bn-05/verification-v2.json": "f5b273e97415390bd3c0a1078c7b70b76fec2ecac6eb9412f78e05f0d1d2b3e4",
+    "evidence/N-ladder/data/bn-06/server.json": "7de18d556a22c489f77a8ab6d9436fb7cb42243969726ae11f9c8abad87b3441",
+    "evidence/N-ladder/data/bn-06/verification-v2.json": "5dea65f4b2b8dba2da383eeae0c4a9d30080c951c72d28eb7a925db583e04c29"
+  }
+}

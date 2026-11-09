@@ -1,0 +1,25 @@
+{
+  "utc": "2026-11-08T22:35:35.847040+00:00",
+  "checks_passed": 15,
+  "new_subject_calls": 0,
+  "new_vm_launches": 0,
+  "sha256": {
+    "guard-config.json": "39f778893782bc2ee8a1d61714030e7179e20c6924c89c71aa4786fe79c9e95b",
+    "guard.py": "d38a59a192b4f1c36e5d1c23526c9e82c1fe696db520468ae6cdf7feccc29790",
+    "test_guard.py": "3ebf5b0267d56142e4584acfc6bb24d0d7e2ef329411d7db03f83b7b95f85a08",
+    "README.md": "9452f128f59232d9760d359c7bab860744c27e684702de1277b5dbbcabeae41c",
+    "AMENDMENT-v2.json": "a7f600a55b4ac7256454359d16a25b9761a278cfb62f3519b965a9b64a6ced24"
+  },
+  "edition": 2,
+  "prior_source_freeze_sha256": "7a49bf37cb7c7b33fbef522160499c60f69fc387f86adca920d1bdcf481ea0df",
+  "prior_source_archive": "archive/v1",
+  "withdrawn_subjects": [
+    {
+      "model": "terra",
+      "model_id": "us.openai.gpt-6.1-terra",
+      "status": "withdrawn before data by user decision",
+      "reason": "provider policy blocks",
+      "included_in_denominator": false
+    }
+  ]
+}

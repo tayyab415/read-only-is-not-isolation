@@ -1,0 +1,1 @@
+{"train_pos": ["../data/positives.parquet"], "train_neg": ["../data/neg_local_npm.parquet"], "evals": {"npm_again": {"path": "../data/neg_local_npm.parquet", "label": 0}, "swarm_again": {"path": "../data/positives.parquet", "label": 1}}, "seeds": [0, 1], "cap_per_cluster": 2, "max_per_class": 1000, "eval_max": 300}

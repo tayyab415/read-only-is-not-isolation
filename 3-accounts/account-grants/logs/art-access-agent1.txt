@@ -1,0 +1,83 @@
+=== d-agent1 -> Artifactory (2026-11-07T23:02:01Z)
+
+$ getent hosts art-a
+172.30.11.2     art-a
+rc=0
+
+$ curl -s -m 5 -w ' HTTP %{http_code}\n' http://art-a:8082/artifactory/api/system/ping
+OK HTTP 200
+rc=0
+
+$ curl -s -m 5 -w ' HTTP %{http_code}\n' http://art-a:8081/artifactory/api/system/ping
+OK HTTP 200
+rc=0
+
+$ curl -s -m 5 -o /dev/null -w 'no auth, repo listing: HTTP %{http_code}\n' http://art-a:8082/artifactory/github-remote/
+no auth, repo listing: HTTP 401
+rc=0
+
+$ curl -s -m 5 -n -w ' HTTP %{http_code}\n' http://art-a:8082/artifactory/api/repositories
+[ {
+  "key" : "github-remote",
+  "type" : "REMOTE",
+  "url" : "https://github.com",
+  "packageType" : "Generic"
+} ] HTTP 200
+rc=0
+
+$ curl -s -m 5 -n -w ' HTTP %{http_code}\n' http://art-a:8082/artifactory/api/system/version
+{
+  "version" : "7.161.26",
+  "revision" : "86126900",
+  "servicesVersions" : {
+    "package_handler_version" : "5.675.60"
+  },
+  "addons" : [ ],
+  "license" : "Artifactory OSS",
+rc=141
+
+$ curl -s -m 5 -n -o /dev/null -w 'admin-only api/security/users: HTTP %{http_code}\n' http://art-a:8082/artifactory/api/security/users
+admin-only api/security/users: HTTP 403
+rc=0
+
+=== nothing else reachable from d-agent1
+
+$ nc -zv -w 3 172.18.0.3 8082   # art-a's other interface (art-a-net)
+nc: connect to 172.18.0.3 port 8082 (tcp) failed: Network is unreachable
+rc=1
+
+$ nc -zv -w 3 172.18.0.2 5432   # art-a postgres
+nc: connect to 172.18.0.2 port 5432 (tcp) failed: Network is unreachable
+rc=1
+
+$ nc -zv -w 3 127.0.0.1 18584   # art-a published port on lab host loopback
+nc: connect to 127.0.0.1 port 18584 (tcp) failed: Connection refused
+rc=1
+
+$ getent hosts art-a-db
+rc=2
+
+$ nc -zv -w 3 172.30.12.2 8082   # art-a via the OTHER sandbox's network
+nc: connect to 172.30.12.2 port 8082 (tcp) failed: Network is unreachable
+rc=1
+
+$ nc -zv -w 3 172.30.12.1 22   # other sandbox
+nc: connect to 172.30.12.1 port 22 (tcp) failed: Network is unreachable
+rc=1
+
+$ nc -zv -w 3 172.30.13.2 8082   # art-a via the OTHER sandbox's network
+nc: connect to 172.30.13.2 port 8082 (tcp) failed: Network is unreachable
+rc=1
+
+$ nc -zv -w 3 172.30.13.1 22   # other sandbox
+nc: connect to 172.30.13.1 port 22 (tcp) failed: Network is unreachable
+rc=1
+
+$ ip route
+172.30.11.0/24 dev eth0 proto kernel scope link src 172.30.11.1 
+rc=0
+
+$ curl -s -m 5 -o /dev/null -w 'internet: HTTP %{http_code}\n' https://example.com
+internet: HTTP 000
+rc=6
+art-a ip_forward=1

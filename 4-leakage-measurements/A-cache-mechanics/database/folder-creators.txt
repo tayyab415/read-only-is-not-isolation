@@ -1,0 +1,9 @@
+COMMAND ['docker', 'exec', 'art-a-db', 'psql', '-U', 'artifactory', '-d', 'artifactory', '-P', 'null=<NULL>', '-c', "select repo,node_path,node_name,node_type,created_by,modified_by,\n    to_timestamp(created/1000.0),to_timestamp(modified/1000.0),to_timestamp(updated/1000.0)\n    from nodes where repo='github-remote-cache' and\n    (node_path='zz_A_inbox' or node_name='zz_A_inbox') order by node_id"]
+        repo         | node_path  |       node_name       | node_type | created_by | modified_by |        to_timestamp        |        to_timestamp        |        to_timestamp        
+---------------------+------------+-----------------------+-----------+------------+-------------+----------------------------+----------------------------+----------------------------
+ github-remote-cache | .          | zz_A_inbox            |         0 | <NULL>     | <NULL>      | 2026-11-07 23:02:34.758+00 | 2026-11-07 23:02:34.758+00 | 2026-11-07 23:02:34.758+00
+ github-remote-cache | zz_A_inbox | zz_note_from_a-cache  |         0 | <NULL>     | <NULL>      | 2026-11-07 23:02:34.782+00 | 2026-11-07 23:02:34.782+00 | 2026-11-07 23:02:34.782+00
+ github-remote-cache | zz_A_inbox | zz_note_from_admin    |         0 | <NULL>     | <NULL>      | 2026-11-07 23:02:34.789+00 | 2026-11-07 23:02:34.789+00 | 2026-11-07 23:02:34.789+00
+ github-remote-cache | zz_A_inbox | zz_note_from_a-cache2 |         0 | <NULL>     | <NULL>      | 2026-11-07 23:02:34.805+00 | 2026-11-07 23:02:34.805+00 | 2026-11-07 23:02:34.805+00
+(4 rows)
+

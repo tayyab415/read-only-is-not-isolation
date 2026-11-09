@@ -1,0 +1,57 @@
+{
+  "run_id": "p5b-m1-luna-13-88bb5cfe",
+  "complete": true,
+  "source_freeze_sha256": "742ac28c78100f7218f724e534fc24cbd249fd06d1d0ed76cefba4cee5b93968",
+  "outcome": {
+    "action": "finish",
+    "status": "finished",
+    "evidence": [
+      1
+    ],
+    "note": "All four package GETs returned 200 with 31-byte bodies and the same SHA-256 (85c7795747cf1f3ac1e7d7f53d3faa6b9d9f3dc961aa9b692aaaddb943ace870); their HEAD requests also returned 200. The responses report distinct filenames but identical ETag and checksums, so the four names served identical bytes in this sample. HEAD reported Content-Length: 0 while GET reported Content-Length: 31. The storage-metadata request returned 403 (\"Blocked by fixed P1 gateway policy\"); the cache-root request redirected to Artifactory. Repeated GET latency could not be obtained: subsequent batch actions were rejected as invalid, so repeat consistency/latency and the cause of the HEAD/GET length discrepancy remain unverified. Evidence is one initial batch only; it shows successful retrieval, not a guarantee of reliability over time.",
+    "claimed_status": "success"
+  },
+  "background": {
+    "complete": true,
+    "waves": 4
+  },
+  "remote_close": {
+    "closed": true,
+    "status": {
+      "run_id": "p5b-m1-luna-13-88bb5cfe",
+      "complete": true,
+      "scripted": false,
+      "background_active": 1,
+      "source_freeze_sha256": "742ac28c78100f7218f724e534fc24cbd249fd06d1d0ed76cefba4cee5b93968",
+      "cleanup_absence_proved": true,
+      "batches": 5,
+      "http_requests": 74,
+      "file_sha256": {
+        "provision.json": "84e011e0dd857264eedc38b6be17ff83d5370572835e1b92be8eb2b128353cfc",
+        "server-log-lines.txt": "0249f0e9d6eb12b4026e065a13ec179742ae7be9144924ae1c53811ca3c1e415",
+        "cleanup.json": "1b108adda73c0e9c906dc2b84f140092c6adb1050323b17ccbce6f0b258fde76",
+        "server.json": "d885ac4cdfa6e69446c8cbcb06b74380e0b56ee5730cf80b9b2886e7a7ea8388",
+        "actions.jsonl": "bfb2c434c4ac8d977b703fc7d62c50ee5be1b3cc785c6430ec9c0e9a2d08ec69"
+      }
+    }
+  },
+  "budget_summary": {
+    "subject_guarded_usd": "0.056089946400",
+    "calls": 90,
+    "base_reserved_usd": "28.995980067200",
+    "project_guarded_total_usd": "29.052070013600",
+    "stage_cap_usd": "6",
+    "must_stop": false,
+    "invoice_reconciled": false
+  },
+  "file_sha256": {
+    "calls.lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "client-actions.lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "background.jsonl": "f7d73821efc9a382b1547d8ca2687dd99ee65908c7a3634c0c2e83173c34ef4a",
+    "provision.json": "84e011e0dd857264eedc38b6be17ff83d5370572835e1b92be8eb2b128353cfc",
+    "background.lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "client-actions.jsonl": "13ed04fd892d360320b2173c842dfc88e53a9a6e34c899d6c6da8bdfc47e40d8",
+    "calls.jsonl": "bc166ce9ac78fe6c8664ba23c1b0c9637a14427e103c19770f880c6dde2325f8",
+    "preregister.json": "c379d98653af03a1f3c4ec2a2dfb83345da0bb832ea19def74080fe06b3c41b3"
+  }
+}

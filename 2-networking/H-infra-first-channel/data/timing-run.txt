@@ -1,0 +1,72 @@
+remote-stat-before h-remote2 GET 200 {   "uri" : "http://art-a:8082/artifactory/h-20261107T235520-remote-cache/redirect/cache.bin",   "downloadCount" : 2,   "lastDownloaded" : 1794095724724,   "lastDownloadedBy" : "h-remote2",   "remoteDownloadCount" : 0,   "remoteLastDownloaded" : 0 }
+remote-stat-sender-read h-remote1 GET 200 target: harmless fixture 
+remote-stat-after h-remote2 GET 200 {   "uri" : "http://art-a:8082/artifactory/h-20261107T235520-remote-cache/redirect/cache.bin",   "downloadCount" : 3,   "lastDownloaded" : 1794095854174,   "lastDownloadedBy" : "h-remote1",   "remoteDownloadCount" : 0,   "remoteLastDownloaded" : 0 }
+timing-default-negative-cache-0-prime h-remote1 GET 404 {   "errors" : [ {     "status" : 404,     "message" : "Not Found; Path: 'h-20261107T235520-remote:missing/h-20261107T235732-default-negative-cache-0.bin'"   } ] }
+timing-default-negative-cache-0-read h-remote2 GET 404 {   "errors" : [ {     "status" : 404,     "message" : "Not Found; Path: 'h-20261107T235520-remote:missing/h-20261107T235732-default-negative-cache-0.bin'"   } ] }
+timing-default-negative-cache-1-read h-remote2 GET 404 {   "errors" : [ {     "status" : 404,     "message" : "Not Found; Path: 'h-20261107T235520-remote:missing/h-20261107T235732-default-negative-cache-1.bin'"   } ] }
+timing-default-negative-cache-2-prime h-remote1 GET 404 {   "errors" : [ {     "status" : 404,     "message" : "Not Found; Path: 'h-20261107T235520-remote:missing/h-20261107T235732-default-negative-cache-2.bin'"   } ] }
+timing-default-negative-cache-2-read h-remote2 GET 404 {   "errors" : [ {     "status" : 404,     "message" : "Not Found; Path: 'h-20261107T235520-remote:missing/h-20261107T235732-default-negative-cache-2.bin'"   } ] }
+timing-default-negative-cache-3-read h-remote2 GET 404 {   "errors" : [ {     "status" : 404,     "message" : "Not Found; Path: 'h-20261107T235520-remote:missing/h-20261107T235732-default-negative-cache-3.bin'"   } ] }
+timing-default-negative-cache-4-prime h-remote1 GET 404 {   "errors" : [ {     "status" : 404,     "message" : "Not Found; Path: 'h-20261107T235520-remote:missing/h-20261107T235732-default-negative-cache-4.bin'"   } ] }
+timing-default-negative-cache-4-read h-remote2 GET 404 {   "errors" : [ {     "status" : 404,     "message" : "Not Found; Path: 'h-20261107T235520-remote:missing/h-20261107T235732-default-negative-cache-4.bin'"   } ] }
+timing-default-negative-cache-5-read h-remote2 GET 404 {   "errors" : [ {     "status" : 404,     "message" : "Not Found; Path: 'h-20261107T235520-remote:missing/h-20261107T235732-default-negative-cache-5.bin'"   } ] }
+timing-default-negative-cache-6-read h-remote2 GET 404 {   "errors" : [ {     "status" : 404,     "message" : "Not Found; Path: 'h-20261107T235520-remote:missing/h-20261107T235732-default-negative-cache-6.bin'"   } ] }
+timing-default-negative-cache-7-prime h-remote1 GET 404 {   "errors" : [ {     "status" : 404,     "message" : "Not Found; Path: 'h-20261107T235520-remote:missing/h-20261107T235732-default-negative-cache-7.bin'"   } ] }
+timing-default-negative-cache-7-read h-remote2 GET 404 {   "errors" : [ {     "status" : 404,     "message" : "Not Found; Path: 'h-20261107T235520-remote:missing/h-20261107T235732-default-negative-cache-7.bin'"   } ] }
+timing-default-negative-cache-8-read h-remote2 GET 404 {   "errors" : [ {     "status" : 404,     "message" : "Not Found; Path: 'h-20261107T235520-remote:missing/h-20261107T235732-default-negative-cache-8.bin'"   } ] }
+timing-default-negative-cache-9-prime h-remote1 GET 404 {   "errors" : [ {     "status" : 404,     "message" : "Not Found; Path: 'h-20261107T235520-remote:missing/h-20261107T235732-default-negative-cache-9.bin'"   } ] }
+timing-default-negative-cache-9-read h-remote2 GET 404 {   "errors" : [ {     "status" : 404,     "message" : "Not Found; Path: 'h-20261107T235520-remote:missing/h-20261107T235732-default-negative-cache-9.bin'"   } ] }
+timing-default-negative-cache-10-read h-remote2 GET 404 {   "errors" : [ {     "status" : 404,     "message" : "Not Found; Path: 'h-20261107T235520-remote:missing/h-20261107T235732-default-negative-cache-10.bin'"   } ] }
+timing-default-negative-cache-11-prime h-remote1 GET 404 {   "errors" : [ {     "status" : 404,     "message" : "Not Found; Path: 'h-20261107T235520-remote:missing/h-20261107T235732-default-negative-cache-11.bin'"   } ] }
+timing-default-negative-cache-11-read h-remote2 GET 404 {   "errors" : [ {     "status" : 404,     "message" : "Not Found; Path: 'h-20261107T235520-remote:missing/h-20261107T235732-default-negative-cache-11.bin'"   } ] }
+timing-default-negative-cache-12-read h-remote2 GET 404 {   "errors" : [ {     "status" : 404,     "message" : "Not Found; Path: 'h-20261107T235520-remote:missing/h-20261107T235732-default-negative-cache-12.bin'"   } ] }
+timing-default-negative-cache-13-prime h-remote1 GET 404 {   "errors" : [ {     "status" : 404,     "message" : "Not Found; Path: 'h-20261107T235520-remote:missing/h-20261107T235732-default-negative-cache-13.bin'"   } ] }
+timing-default-negative-cache-13-read h-remote2 GET 404 {   "errors" : [ {     "status" : 404,     "message" : "Not Found; Path: 'h-20261107T235520-remote:missing/h-20261107T235732-default-negative-cache-13.bin'"   } ] }
+timing-default-negative-cache-14-prime h-remote1 GET 404 {   "errors" : [ {     "status" : 404,     "message" : "Not Found; Path: 'h-20261107T235520-remote:missing/h-20261107T235732-default-negative-cache-14.bin'"   } ] }
+timing-default-negative-cache-14-read h-remote2 GET 404 {   "errors" : [ {     "status" : 404,     "message" : "Not Found; Path: 'h-20261107T235520-remote:missing/h-20261107T235732-default-negative-cache-14.bin'"   } ] }
+timing-default-negative-cache-15-read h-remote2 GET 404 {   "errors" : [ {     "status" : 404,     "message" : "Not Found; Path: 'h-20261107T235520-remote:missing/h-20261107T235732-default-negative-cache-15.bin'"   } ] }
+disable-negative-cache admin PUT 200 {"info":"Successfully updated repository 'h-20261107T235520-remote'"}
+disabled-cache-config admin GET 200 {"type":"remoteRepoConfig","general":{"repoKey":"h-20261107T235520-remote","projectKey":"default","environments":[]},"basic":{"includesPattern":"**/*","layout":"simple-default","url":"http://h-upstream:8000","offline":false,"contentSynchronisation":{
+timing-negative-cache-disabled-0-prime h-remote1 GET 404 {   "errors" : [ {     "status" : 404,     "message" : "Not Found; Path: 'h-20261107T235520-remote:missing/h-20261107T235732-negative-cache-disabled-0.bin'"   } ] }
+timing-negative-cache-disabled-0-read h-remote2 GET 404 {   "errors" : [ {     "status" : 404,     "message" : "Not Found; Path: 'h-20261107T235520-remote:missing/h-20261107T235732-negative-cache-disabled-0.bin'"   } ] }
+timing-negative-cache-disabled-1-read h-remote2 GET 404 {   "errors" : [ {     "status" : 404,     "message" : "Not Found; Path: 'h-20261107T235520-remote:missing/h-20261107T235732-negative-cache-disabled-1.bin'"   } ] }
+timing-negative-cache-disabled-2-prime h-remote1 GET 404 {   "errors" : [ {     "status" : 404,     "message" : "Not Found; Path: 'h-20261107T235520-remote:missing/h-20261107T235732-negative-cache-disabled-2.bin'"   } ] }
+timing-negative-cache-disabled-2-read h-remote2 GET 404 {   "errors" : [ {     "status" : 404,     "message" : "Not Found; Path: 'h-20261107T235520-remote:missing/h-20261107T235732-negative-cache-disabled-2.bin'"   } ] }
+timing-negative-cache-disabled-3-read h-remote2 GET 404 {   "errors" : [ {     "status" : 404,     "message" : "Not Found; Path: 'h-20261107T235520-remote:missing/h-20261107T235732-negative-cache-disabled-3.bin'"   } ] }
+timing-negative-cache-disabled-4-prime h-remote1 GET 404 {   "errors" : [ {     "status" : 404,     "message" : "Not Found; Path: 'h-20261107T235520-remote:missing/h-20261107T235732-negative-cache-disabled-4.bin'"   } ] }
+timing-negative-cache-disabled-4-read h-remote2 GET 404 {   "errors" : [ {     "status" : 404,     "message" : "Not Found; Path: 'h-20261107T235520-remote:missing/h-20261107T235732-negative-cache-disabled-4.bin'"   } ] }
+timing-negative-cache-disabled-5-read h-remote2 GET 404 {   "errors" : [ {     "status" : 404,     "message" : "Not Found; Path: 'h-20261107T235520-remote:missing/h-20261107T235732-negative-cache-disabled-5.bin'"   } ] }
+timing-negative-cache-disabled-6-read h-remote2 GET 404 {   "errors" : [ {     "status" : 404,     "message" : "Not Found; Path: 'h-20261107T235520-remote:missing/h-20261107T235732-negative-cache-disabled-6.bin'"   } ] }
+timing-negative-cache-disabled-7-prime h-remote1 GET 404 {   "errors" : [ {     "status" : 404,     "message" : "Not Found; Path: 'h-20261107T235520-remote:missing/h-20261107T235732-negative-cache-disabled-7.bin'"   } ] }
+timing-negative-cache-disabled-7-read h-remote2 GET 404 {   "errors" : [ {     "status" : 404,     "message" : "Not Found; Path: 'h-20261107T235520-remote:missing/h-20261107T235732-negative-cache-disabled-7.bin'"   } ] }
+timing-negative-cache-disabled-8-read h-remote2 GET 404 {   "errors" : [ {     "status" : 404,     "message" : "Not Found; Path: 'h-20261107T235520-remote:missing/h-20261107T235732-negative-cache-disabled-8.bin'"   } ] }
+timing-negative-cache-disabled-9-prime h-remote1 GET 404 {   "errors" : [ {     "status" : 404,     "message" : "Not Found; Path: 'h-20261107T235520-remote:missing/h-20261107T235732-negative-cache-disabled-9.bin'"   } ] }
+timing-negative-cache-disabled-9-read h-remote2 GET 404 {   "errors" : [ {     "status" : 404,     "message" : "Not Found; Path: 'h-20261107T235520-remote:missing/h-20261107T235732-negative-cache-disabled-9.bin'"   } ] }
+timing-negative-cache-disabled-10-read h-remote2 GET 404 {   "errors" : [ {     "status" : 404,     "message" : "Not Found; Path: 'h-20261107T235520-remote:missing/h-20261107T235732-negative-cache-disabled-10.bin'"   } ] }
+timing-negative-cache-disabled-11-prime h-remote1 GET 404 {   "errors" : [ {     "status" : 404,     "message" : "Not Found; Path: 'h-20261107T235520-remote:missing/h-20261107T235732-negative-cache-disabled-11.bin'"   } ] }
+timing-negative-cache-disabled-11-read h-remote2 GET 404 {   "errors" : [ {     "status" : 404,     "message" : "Not Found; Path: 'h-20261107T235520-remote:missing/h-20261107T235732-negative-cache-disabled-11.bin'"   } ] }
+timing-negative-cache-disabled-12-read h-remote2 GET 404 {   "errors" : [ {     "status" : 404,     "message" : "Not Found; Path: 'h-20261107T235520-remote:missing/h-20261107T235732-negative-cache-disabled-12.bin'"   } ] }
+timing-negative-cache-disabled-13-prime h-remote1 GET 404 {   "errors" : [ {     "status" : 404,     "message" : "Not Found; Path: 'h-20261107T235520-remote:missing/h-20261107T235732-negative-cache-disabled-13.bin'"   } ] }
+timing-negative-cache-disabled-13-read h-remote2 GET 404 {   "errors" : [ {     "status" : 404,     "message" : "Not Found; Path: 'h-20261107T235520-remote:missing/h-20261107T235732-negative-cache-disabled-13.bin'"   } ] }
+timing-negative-cache-disabled-14-prime h-remote1 GET 404 {   "errors" : [ {     "status" : 404,     "message" : "Not Found; Path: 'h-20261107T235520-remote:missing/h-20261107T235732-negative-cache-disabled-14.bin'"   } ] }
+timing-negative-cache-disabled-14-read h-remote2 GET 404 {   "errors" : [ {     "status" : 404,     "message" : "Not Found; Path: 'h-20261107T235520-remote:missing/h-20261107T235732-negative-cache-disabled-14.bin'"   } ] }
+timing-negative-cache-disabled-15-read h-remote2 GET 404 {   "errors" : [ {     "status" : 404,     "message" : "Not Found; Path: 'h-20261107T235520-remote:missing/h-20261107T235732-negative-cache-disabled-15.bin'"   } ] }
+restore-negative-cache admin PUT 200 {"info":"Successfully updated repository 'h-20261107T235520-remote'"}
+{
+  "default-negative-cache": {
+    "trials": 16,
+    "matches": 10,
+    "decoded_ones": 2,
+    "statuses": [
+      404
+    ]
+  },
+  "negative-cache-disabled": {
+    "trials": 16,
+    "matches": 8,
+    "decoded_ones": 0,
+    "statuses": [
+      404
+    ]
+  }
+}

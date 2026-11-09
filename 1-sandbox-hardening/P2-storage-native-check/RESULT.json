@@ -1,0 +1,384 @@
+{
+  "utc": "2026-11-09T05:14:17.625937+00:00",
+  "returncode": 0,
+  "passed": true,
+  "provision_sha256": "8a8685f663f0bd28e68f972c545809fdbd51277b2ab833b259b372905d9da4e0",
+  "p2b_verification_sha256": "223dd7050413c6dc72a74ac2cf8c536818c562d3009056d6e274b1ca7a678aec",
+  "source_sha256": "d801c6ed255fc83d0e346271e7f7b229cc068eb7a7a96a5bc5614f378fdc9157",
+  "configuration": {
+    "cache_repositories": [
+      "p1-p4-m1-luna-separate-alice-cache",
+      "p1-p4-m1-luna-separate-bob-cache"
+    ],
+    "payload_sha256": "85c7795747cf1f3ac1e7d7f53d3faa6b9d9f3dc961aa9b692aaaddb943ace870"
+  },
+  "native": {
+    "utc": "2026-11-09T05:14:17.626561+00:00",
+    "running_containers": [
+      "art-a",
+      "art-a-db"
+    ],
+    "sql": "BEGIN READ ONLY; SELECT coalesce(json_agg(row_to_json(n) ORDER BY repo,node_path,node_name),'[]'::json) FROM (SELECT node_id,node_type,repo,node_path,node_name,bin_length,sha1_actual,sha256 FROM public.nodes WHERE repo IN ('p1-p4-m1-luna-separate-alice-cache','p1-p4-m1-luna-separate-bob-cache') AND node_name ~ '^pkg-[0-9]{2}\\.bin$') n; COMMIT;",
+    "query_command": [
+      "docker",
+      "exec",
+      "art-a-db",
+      "psql",
+      "-U",
+      "artifactory",
+      "-d",
+      "artifactory",
+      "-qAt",
+      "-c",
+      "BEGIN READ ONLY; SELECT coalesce(json_agg(row_to_json(n) ORDER BY repo,node_path,node_name),'[]'::json) FROM (SELECT node_id,node_type,repo,node_path,node_name,bin_length,sha1_actual,sha256 FROM public.nodes WHERE repo IN ('p1-p4-m1-luna-separate-alice-cache','p1-p4-m1-luna-separate-bob-cache') AND node_name ~ '^pkg-[0-9]{2}\\.bin$') n; COMMIT;"
+    ],
+    "native_nodes": [
+      {
+        "node_id": 696,
+        "node_type": 1,
+        "repo": "p1-p4-m1-luna-separate-alice-cache",
+        "node_path": ".",
+        "node_name": "pkg-00.bin",
+        "bin_length": 31,
+        "sha1_actual": "e8627e1a8b3b777cb5e58066954340fdbbc31e2b",
+        "sha256": "85c7795747cf1f3ac1e7d7f53d3faa6b9d9f3dc961aa9b692aaaddb943ace870"
+      },
+      {
+        "node_id": 698,
+        "node_type": 1,
+        "repo": "p1-p4-m1-luna-separate-alice-cache",
+        "node_path": ".",
+        "node_name": "pkg-01.bin",
+        "bin_length": 31,
+        "sha1_actual": "e8627e1a8b3b777cb5e58066954340fdbbc31e2b",
+        "sha256": "85c7795747cf1f3ac1e7d7f53d3faa6b9d9f3dc961aa9b692aaaddb943ace870"
+      },
+      {
+        "node_id": 700,
+        "node_type": 1,
+        "repo": "p1-p4-m1-luna-separate-alice-cache",
+        "node_path": ".",
+        "node_name": "pkg-02.bin",
+        "bin_length": 31,
+        "sha1_actual": "e8627e1a8b3b777cb5e58066954340fdbbc31e2b",
+        "sha256": "85c7795747cf1f3ac1e7d7f53d3faa6b9d9f3dc961aa9b692aaaddb943ace870"
+      },
+      {
+        "node_id": 702,
+        "node_type": 1,
+        "repo": "p1-p4-m1-luna-separate-alice-cache",
+        "node_path": ".",
+        "node_name": "pkg-03.bin",
+        "bin_length": 31,
+        "sha1_actual": "e8627e1a8b3b777cb5e58066954340fdbbc31e2b",
+        "sha256": "85c7795747cf1f3ac1e7d7f53d3faa6b9d9f3dc961aa9b692aaaddb943ace870"
+      },
+      {
+        "node_id": 704,
+        "node_type": 1,
+        "repo": "p1-p4-m1-luna-separate-alice-cache",
+        "node_path": ".",
+        "node_name": "pkg-04.bin",
+        "bin_length": 31,
+        "sha1_actual": "e8627e1a8b3b777cb5e58066954340fdbbc31e2b",
+        "sha256": "85c7795747cf1f3ac1e7d7f53d3faa6b9d9f3dc961aa9b692aaaddb943ace870"
+      },
+      {
+        "node_id": 706,
+        "node_type": 1,
+        "repo": "p1-p4-m1-luna-separate-alice-cache",
+        "node_path": ".",
+        "node_name": "pkg-05.bin",
+        "bin_length": 31,
+        "sha1_actual": "e8627e1a8b3b777cb5e58066954340fdbbc31e2b",
+        "sha256": "85c7795747cf1f3ac1e7d7f53d3faa6b9d9f3dc961aa9b692aaaddb943ace870"
+      },
+      {
+        "node_id": 708,
+        "node_type": 1,
+        "repo": "p1-p4-m1-luna-separate-alice-cache",
+        "node_path": ".",
+        "node_name": "pkg-06.bin",
+        "bin_length": 31,
+        "sha1_actual": "e8627e1a8b3b777cb5e58066954340fdbbc31e2b",
+        "sha256": "85c7795747cf1f3ac1e7d7f53d3faa6b9d9f3dc961aa9b692aaaddb943ace870"
+      },
+      {
+        "node_id": 710,
+        "node_type": 1,
+        "repo": "p1-p4-m1-luna-separate-alice-cache",
+        "node_path": ".",
+        "node_name": "pkg-07.bin",
+        "bin_length": 31,
+        "sha1_actual": "e8627e1a8b3b777cb5e58066954340fdbbc31e2b",
+        "sha256": "85c7795747cf1f3ac1e7d7f53d3faa6b9d9f3dc961aa9b692aaaddb943ace870"
+      },
+      {
+        "node_id": 712,
+        "node_type": 1,
+        "repo": "p1-p4-m1-luna-separate-alice-cache",
+        "node_path": ".",
+        "node_name": "pkg-08.bin",
+        "bin_length": 31,
+        "sha1_actual": "e8627e1a8b3b777cb5e58066954340fdbbc31e2b",
+        "sha256": "85c7795747cf1f3ac1e7d7f53d3faa6b9d9f3dc961aa9b692aaaddb943ace870"
+      },
+      {
+        "node_id": 714,
+        "node_type": 1,
+        "repo": "p1-p4-m1-luna-separate-alice-cache",
+        "node_path": ".",
+        "node_name": "pkg-09.bin",
+        "bin_length": 31,
+        "sha1_actual": "e8627e1a8b3b777cb5e58066954340fdbbc31e2b",
+        "sha256": "85c7795747cf1f3ac1e7d7f53d3faa6b9d9f3dc961aa9b692aaaddb943ace870"
+      },
+      {
+        "node_id": 716,
+        "node_type": 1,
+        "repo": "p1-p4-m1-luna-separate-alice-cache",
+        "node_path": ".",
+        "node_name": "pkg-10.bin",
+        "bin_length": 31,
+        "sha1_actual": "e8627e1a8b3b777cb5e58066954340fdbbc31e2b",
+        "sha256": "85c7795747cf1f3ac1e7d7f53d3faa6b9d9f3dc961aa9b692aaaddb943ace870"
+      },
+      {
+        "node_id": 718,
+        "node_type": 1,
+        "repo": "p1-p4-m1-luna-separate-alice-cache",
+        "node_path": ".",
+        "node_name": "pkg-11.bin",
+        "bin_length": 31,
+        "sha1_actual": "e8627e1a8b3b777cb5e58066954340fdbbc31e2b",
+        "sha256": "85c7795747cf1f3ac1e7d7f53d3faa6b9d9f3dc961aa9b692aaaddb943ace870"
+      },
+      {
+        "node_id": 720,
+        "node_type": 1,
+        "repo": "p1-p4-m1-luna-separate-alice-cache",
+        "node_path": ".",
+        "node_name": "pkg-12.bin",
+        "bin_length": 31,
+        "sha1_actual": "e8627e1a8b3b777cb5e58066954340fdbbc31e2b",
+        "sha256": "85c7795747cf1f3ac1e7d7f53d3faa6b9d9f3dc961aa9b692aaaddb943ace870"
+      },
+      {
+        "node_id": 722,
+        "node_type": 1,
+        "repo": "p1-p4-m1-luna-separate-alice-cache",
+        "node_path": ".",
+        "node_name": "pkg-13.bin",
+        "bin_length": 31,
+        "sha1_actual": "e8627e1a8b3b777cb5e58066954340fdbbc31e2b",
+        "sha256": "85c7795747cf1f3ac1e7d7f53d3faa6b9d9f3dc961aa9b692aaaddb943ace870"
+      },
+      {
+        "node_id": 724,
+        "node_type": 1,
+        "repo": "p1-p4-m1-luna-separate-alice-cache",
+        "node_path": ".",
+        "node_name": "pkg-14.bin",
+        "bin_length": 31,
+        "sha1_actual": "e8627e1a8b3b777cb5e58066954340fdbbc31e2b",
+        "sha256": "85c7795747cf1f3ac1e7d7f53d3faa6b9d9f3dc961aa9b692aaaddb943ace870"
+      },
+      {
+        "node_id": 726,
+        "node_type": 1,
+        "repo": "p1-p4-m1-luna-separate-alice-cache",
+        "node_path": ".",
+        "node_name": "pkg-15.bin",
+        "bin_length": 31,
+        "sha1_actual": "e8627e1a8b3b777cb5e58066954340fdbbc31e2b",
+        "sha256": "85c7795747cf1f3ac1e7d7f53d3faa6b9d9f3dc961aa9b692aaaddb943ace870"
+      },
+      {
+        "node_id": 728,
+        "node_type": 1,
+        "repo": "p1-p4-m1-luna-separate-bob-cache",
+        "node_path": ".",
+        "node_name": "pkg-00.bin",
+        "bin_length": 31,
+        "sha1_actual": "e8627e1a8b3b777cb5e58066954340fdbbc31e2b",
+        "sha256": "85c7795747cf1f3ac1e7d7f53d3faa6b9d9f3dc961aa9b692aaaddb943ace870"
+      },
+      {
+        "node_id": 730,
+        "node_type": 1,
+        "repo": "p1-p4-m1-luna-separate-bob-cache",
+        "node_path": ".",
+        "node_name": "pkg-01.bin",
+        "bin_length": 31,
+        "sha1_actual": "e8627e1a8b3b777cb5e58066954340fdbbc31e2b",
+        "sha256": "85c7795747cf1f3ac1e7d7f53d3faa6b9d9f3dc961aa9b692aaaddb943ace870"
+      },
+      {
+        "node_id": 732,
+        "node_type": 1,
+        "repo": "p1-p4-m1-luna-separate-bob-cache",
+        "node_path": ".",
+        "node_name": "pkg-02.bin",
+        "bin_length": 31,
+        "sha1_actual": "e8627e1a8b3b777cb5e58066954340fdbbc31e2b",
+        "sha256": "85c7795747cf1f3ac1e7d7f53d3faa6b9d9f3dc961aa9b692aaaddb943ace870"
+      },
+      {
+        "node_id": 734,
+        "node_type": 1,
+        "repo": "p1-p4-m1-luna-separate-bob-cache",
+        "node_path": ".",
+        "node_name": "pkg-03.bin",
+        "bin_length": 31,
+        "sha1_actual": "e8627e1a8b3b777cb5e58066954340fdbbc31e2b",
+        "sha256": "85c7795747cf1f3ac1e7d7f53d3faa6b9d9f3dc961aa9b692aaaddb943ace870"
+      },
+      {
+        "node_id": 736,
+        "node_type": 1,
+        "repo": "p1-p4-m1-luna-separate-bob-cache",
+        "node_path": ".",
+        "node_name": "pkg-04.bin",
+        "bin_length": 31,
+        "sha1_actual": "e8627e1a8b3b777cb5e58066954340fdbbc31e2b",
+        "sha256": "85c7795747cf1f3ac1e7d7f53d3faa6b9d9f3dc961aa9b692aaaddb943ace870"
+      },
+      {
+        "node_id": 738,
+        "node_type": 1,
+        "repo": "p1-p4-m1-luna-separate-bob-cache",
+        "node_path": ".",
+        "node_name": "pkg-05.bin",
+        "bin_length": 31,
+        "sha1_actual": "e8627e1a8b3b777cb5e58066954340fdbbc31e2b",
+        "sha256": "85c7795747cf1f3ac1e7d7f53d3faa6b9d9f3dc961aa9b692aaaddb943ace870"
+      },
+      {
+        "node_id": 740,
+        "node_type": 1,
+        "repo": "p1-p4-m1-luna-separate-bob-cache",
+        "node_path": ".",
+        "node_name": "pkg-06.bin",
+        "bin_length": 31,
+        "sha1_actual": "e8627e1a8b3b777cb5e58066954340fdbbc31e2b",
+        "sha256": "85c7795747cf1f3ac1e7d7f53d3faa6b9d9f3dc961aa9b692aaaddb943ace870"
+      },
+      {
+        "node_id": 742,
+        "node_type": 1,
+        "repo": "p1-p4-m1-luna-separate-bob-cache",
+        "node_path": ".",
+        "node_name": "pkg-07.bin",
+        "bin_length": 31,
+        "sha1_actual": "e8627e1a8b3b777cb5e58066954340fdbbc31e2b",
+        "sha256": "85c7795747cf1f3ac1e7d7f53d3faa6b9d9f3dc961aa9b692aaaddb943ace870"
+      },
+      {
+        "node_id": 744,
+        "node_type": 1,
+        "repo": "p1-p4-m1-luna-separate-bob-cache",
+        "node_path": ".",
+        "node_name": "pkg-08.bin",
+        "bin_length": 31,
+        "sha1_actual": "e8627e1a8b3b777cb5e58066954340fdbbc31e2b",
+        "sha256": "85c7795747cf1f3ac1e7d7f53d3faa6b9d9f3dc961aa9b692aaaddb943ace870"
+      },
+      {
+        "node_id": 746,
+        "node_type": 1,
+        "repo": "p1-p4-m1-luna-separate-bob-cache",
+        "node_path": ".",
+        "node_name": "pkg-09.bin",
+        "bin_length": 31,
+        "sha1_actual": "e8627e1a8b3b777cb5e58066954340fdbbc31e2b",
+        "sha256": "85c7795747cf1f3ac1e7d7f53d3faa6b9d9f3dc961aa9b692aaaddb943ace870"
+      },
+      {
+        "node_id": 748,
+        "node_type": 1,
+        "repo": "p1-p4-m1-luna-separate-bob-cache",
+        "node_path": ".",
+        "node_name": "pkg-10.bin",
+        "bin_length": 31,
+        "sha1_actual": "e8627e1a8b3b777cb5e58066954340fdbbc31e2b",
+        "sha256": "85c7795747cf1f3ac1e7d7f53d3faa6b9d9f3dc961aa9b692aaaddb943ace870"
+      },
+      {
+        "node_id": 750,
+        "node_type": 1,
+        "repo": "p1-p4-m1-luna-separate-bob-cache",
+        "node_path": ".",
+        "node_name": "pkg-11.bin",
+        "bin_length": 31,
+        "sha1_actual": "e8627e1a8b3b777cb5e58066954340fdbbc31e2b",
+        "sha256": "85c7795747cf1f3ac1e7d7f53d3faa6b9d9f3dc961aa9b692aaaddb943ace870"
+      },
+      {
+        "node_id": 752,
+        "node_type": 1,
+        "repo": "p1-p4-m1-luna-separate-bob-cache",
+        "node_path": ".",
+        "node_name": "pkg-12.bin",
+        "bin_length": 31,
+        "sha1_actual": "e8627e1a8b3b777cb5e58066954340fdbbc31e2b",
+        "sha256": "85c7795747cf1f3ac1e7d7f53d3faa6b9d9f3dc961aa9b692aaaddb943ace870"
+      },
+      {
+        "node_id": 754,
+        "node_type": 1,
+        "repo": "p1-p4-m1-luna-separate-bob-cache",
+        "node_path": ".",
+        "node_name": "pkg-13.bin",
+        "bin_length": 31,
+        "sha1_actual": "e8627e1a8b3b777cb5e58066954340fdbbc31e2b",
+        "sha256": "85c7795747cf1f3ac1e7d7f53d3faa6b9d9f3dc961aa9b692aaaddb943ace870"
+      },
+      {
+        "node_id": 756,
+        "node_type": 1,
+        "repo": "p1-p4-m1-luna-separate-bob-cache",
+        "node_path": ".",
+        "node_name": "pkg-14.bin",
+        "bin_length": 31,
+        "sha1_actual": "e8627e1a8b3b777cb5e58066954340fdbbc31e2b",
+        "sha256": "85c7795747cf1f3ac1e7d7f53d3faa6b9d9f3dc961aa9b692aaaddb943ace870"
+      },
+      {
+        "node_id": 758,
+        "node_type": 1,
+        "repo": "p1-p4-m1-luna-separate-bob-cache",
+        "node_path": ".",
+        "node_name": "pkg-15.bin",
+        "bin_length": 31,
+        "sha1_actual": "e8627e1a8b3b777cb5e58066954340fdbbc31e2b",
+        "sha256": "85c7795747cf1f3ac1e7d7f53d3faa6b9d9f3dc961aa9b692aaaddb943ace870"
+      }
+    ],
+    "candidate_blob_paths": [
+      "/var/opt/jfrog/artifactory/data/artifactory/filestore/e8/e8627e1a8b3b777cb5e58066954340fdbbc31e2b",
+      "/var/opt/jfrog/artifactory/filestore/e8/e8627e1a8b3b777cb5e58066954340fdbbc31e2b"
+    ],
+    "existing_canonical_blob_path": "/var/opt/jfrog/artifactory/data/artifactory/filestore/e8/e8627e1a8b3b777cb5e58066954340fdbbc31e2b",
+    "blob_sha1": "e8627e1a8b3b777cb5e58066954340fdbbc31e2b",
+    "blob_sha256": "85c7795747cf1f3ac1e7d7f53d3faa6b9d9f3dc961aa9b692aaaddb943ace870",
+    "blob_stat": {
+      "device": "66305",
+      "inode": "1050730",
+      "bytes": 31,
+      "hardlinks": 1,
+      "kind": "regular file"
+    },
+    "artifactory_image": "sha256:d103c0464d33645acdcbfbb6fc61310d7faf14c9893975cbee562487eaeac1d1",
+    "fixture_or_service_mutations": 0,
+    "scope": "Current mapping for exactly 32 completed owned P4 cache nodes and their canonical checksum blob; no timing or global filestore claim"
+  },
+  "stdout_on_failure": null,
+  "stderr": "",
+  "new_fixture_created": false,
+  "model_calls": 0,
+  "limits": [
+    "The readback concerns completed P4 fixtures on lab2, not the earlier lab host P2 runtime.",
+    "A common checksum reference and canonical blob do not identify page-cache residency or a timing cause.",
+    "The scoped read does not inventory the full filestore or prove there are no other copies."
+  ]
+}

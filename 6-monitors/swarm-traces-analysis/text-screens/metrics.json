@@ -1,0 +1,475 @@
+{
+  "source_url": "https://swarmtraces.org/data/final/redacted.jsonl.gz",
+  "database": "library/swarm-data.sqlite",
+  "schema": [
+    {
+      "name": "payloads",
+      "type": "table",
+      "sql": "CREATE VIRTUAL TABLE payloads USING fts5(row_id UNINDEXED,cite UNINDEXED,text)"
+    },
+    {
+      "name": "payloads_config",
+      "type": "table",
+      "sql": "CREATE TABLE 'payloads_config'(k PRIMARY KEY, v) WITHOUT ROWID"
+    },
+    {
+      "name": "payloads_content",
+      "type": "table",
+      "sql": "CREATE TABLE 'payloads_content'(id INTEGER PRIMARY KEY, c0, c1, c2)"
+    },
+    {
+      "name": "payloads_data",
+      "type": "table",
+      "sql": "CREATE TABLE 'payloads_data'(id INTEGER PRIMARY KEY, block BLOB)"
+    },
+    {
+      "name": "payloads_docsize",
+      "type": "table",
+      "sql": "CREATE TABLE 'payloads_docsize'(id INTEGER PRIMARY KEY, sz BLOB)"
+    },
+    {
+      "name": "payloads_idx",
+      "type": "table",
+      "sql": "CREATE TABLE 'payloads_idx'(segid, term, pgno, PRIMARY KEY(segid, term)) WITHOUT ROWID"
+    },
+    {
+      "name": "rows",
+      "type": "table",
+      "sql": "CREATE TABLE rows(row_id TEXT PRIMARY KEY,cite TEXT,kind TEXT,parent_id TEXT,time_utc TEXT,tags TEXT,raw_json TEXT)"
+    },
+    {
+      "name": "sqlite_autoindex_rows_1",
+      "type": "index",
+      "sql": null
+    }
+  ],
+  "rows": 189579,
+  "kinds": {
+    "payload": 91037,
+    "response": 23008,
+    "recovered_text": 75534
+  },
+  "first_id": "R0000001",
+  "last_id": "R0189579",
+  "json_keys": {
+    "id": 189579,
+    "cite": 189579,
+    "kind": 189579,
+    "parent_id": 189579,
+    "time_utc": 189579,
+    "tags": 189579,
+    "text": 189579
+  },
+  "value_types": {
+    "id": {
+      "str": 189579
+    },
+    "cite": {
+      "str": 189579
+    },
+    "kind": {
+      "str": 189579
+    },
+    "parent_id": {
+      "NoneType": 128454,
+      "str": 61125
+    },
+    "time_utc": {
+      "NoneType": 189579
+    },
+    "tags": {
+      "str": 189579
+    },
+    "text": {
+      "str": 189579
+    }
+  },
+  "nonempty_values": {
+    "id": 189579,
+    "cite": 189579,
+    "kind": 189579,
+    "text": 189579,
+    "parent_id": 61125,
+    "tags": 37
+  },
+  "parent_links": {
+    "response->payload": 18417,
+    "recovered_text->payload": 42707,
+    "recovered_text->recovered_text": 1
+  },
+  "orphan_rows": [],
+  "forward_parent_rows": [],
+  "roots_by_kind": {
+    "payload": 91037,
+    "response": 4591,
+    "recovered_text": 32826
+  },
+  "root_count": 128454,
+  "parent_depth_counts": {
+    "0": 128454,
+    "1": 61125
+  },
+  "fts_rows": 189579,
+  "max_evidence_family_size": 859,
+  "families_by_size": {
+    "1": 102206,
+    "3": 4926,
+    "2": 16291,
+    "5": 1444,
+    "4": 1052,
+    "13": 314,
+    "28": 1,
+    "33": 1,
+    "11": 256,
+    "21": 4,
+    "9": 431,
+    "12": 418,
+    "7": 352,
+    "6": 170,
+    "8": 138,
+    "10": 276,
+    "23": 5,
+    "15": 23,
+    "53": 1,
+    "14": 33,
+    "19": 8,
+    "37": 1,
+    "18": 6,
+    "25": 4,
+    "16": 16,
+    "29": 4,
+    "17": 30,
+    "26": 2,
+    "27": 5,
+    "20": 8,
+    "85": 1,
+    "22": 2,
+    "32": 1,
+    "57": 1,
+    "859": 1,
+    "271": 1,
+    "109": 1,
+    "38": 1,
+    "105": 1,
+    "45": 3,
+    "47": 1,
+    "91": 1,
+    "35": 2,
+    "24": 1,
+    "135": 1,
+    "55": 1,
+    "71": 7,
+    "44": 1
+  },
+  "nonempty_tag_rows": 37,
+  "tag_values": {
+    "article-evidence;g236-command;g23619cmd.bin;command-000001": 1,
+    "article-evidence;g236-command;g23619cmd.bin;command-000002": 1,
+    "article-evidence;g236-command;g23619cmd.bin;command-000003": 1,
+    "article-evidence;g236-command;g23619cmd.bin;command-000004": 1,
+    "article-evidence;g236-command;g23619cmd.bin;command-000005": 1,
+    "article-evidence;g236-command;g23619cmd.bin;command-000006": 1,
+    "article-evidence;g236-command;g23619cmd.bin;command-000007": 2,
+    "article-evidence;g236-command;g23619cmd.bin;command-000008": 1,
+    "article-evidence;g236-command;g23619cmd.bin;command-000009": 1,
+    "article-evidence;g236-command;g23619cmd.bin;command-000010": 1,
+    "article-evidence;g236-command;g23619cmd.bin;command-000011": 1,
+    "article-evidence;g236-command;g23619cmd.bin;command-000012": 1,
+    "article-evidence;g236-command;g23619cmd.bin;command-000013": 1,
+    "article-evidence;g236-command;g23619cmd.bin;command-000014": 1,
+    "article-evidence;g236-command;g23619cmd.bin;command-000015": 1,
+    "article-evidence;g236-command;g23619cmd.bin;command-000016": 1,
+    "article-evidence;g236-command;g23619cmd.bin;command-000017": 1,
+    "article-evidence;g236-command;g23619scmd.bin;command-000001": 1,
+    "article-evidence;g236-command;g23619scmd.bin;command-000002": 1,
+    "article-evidence;g236-command;g23619scmd.bin;command-000003": 1,
+    "article-evidence;g236-command;g23619scmd.bin;command-000004": 1,
+    "article-evidence;g236-command;g23619scmd.bin;command-000005": 1,
+    "article-evidence;g236-command;g23619scmd.bin;command-000006": 1,
+    "article-evidence;g236-command;g23619scmd.bin;command-000007": 1,
+    "article-evidence;g236-command;g23619scmd.bin;command-000008": 1,
+    "article-evidence;g236-command;g23619scmd.bin;command-000009": 1,
+    "article-evidence;g236-command;g23619scmd.bin;command-000010": 1,
+    "article-evidence;g236-child-controller": 1,
+    "article-evidence;slack-search;slackcyber.json": 1,
+    "article-evidence;slack-search;slackbatch.gz": 1,
+    "article-evidence;slack-search;slackbatch2.gz": 1,
+    "article-evidence;slack-search;slackd3.gz": 1,
+    "article-evidence;PHASEONE64H;partial-fragment": 1,
+    "article-evidence;appendix-request": 3
+  },
+  "unique_exact_texts": 163851,
+  "payload_unique_exact_texts": 88672,
+  "duplicate_text_groups": 19035,
+  "rows_in_duplicate_text_groups": 44763,
+  "placeholder_rows_by_kind": {
+    "payload": 88414,
+    "response": 21422,
+    "recovered_text": 70952
+  },
+  "placeholder_occurrences": 721976,
+  "patterns": {
+    "poll_word": "\\bpoll(?:ing|ed|s)?\\b",
+    "sleep_call": "\\b(?:sleep|usleep|nanosleep|wait_for_timeout)\\s*\\(",
+    "wait_word": "\\bwait(?:ing|ed|s)?\\b",
+    "timer_call": "\\b(?:setTimeout|setInterval)\\s*\\(",
+    "board_word": "\\b(?:message\\s*boards?|boards?)\\b",
+    "read_syntax": "\\b(?:PROPFIND|GET)\\b|\\.(?:read|text)\\s*\\(",
+    "write_syntax": "\\b(?:MKCOL|PUT|POST|PATCH)\\b|\\.(?:write|send)\\s*\\(",
+    "reply_word": "\\brepl(?:y|ies|ied)\\b",
+    "directed_terms": "\\b(?:recipient|reply_to|in_reply_to|send_message|direct\\s+message|to_agent|target_agent)\\b",
+    "artifactory_word": "\\bartifactory\\b",
+    "propfind_word": "\\bPROPFIND\\b",
+    "mkcol_word": "\\bMKCOL\\b",
+    "identity_terms": "\\b(?:agent_id|x-agent(?:-id|-name)?|author|sender)\\b",
+    "runtime_clock_syntax": "\\b(?:Date\\.now|performance\\.now|time\\.time)\\s*\\("
+  },
+  "placeholder_pattern": "\\[(?:REDACTED(?:[ :][^\\]\\n]*)?|ENCODED BLOB(?: \\d+)?|CREDENTIAL(?: \\d+)?|SERVICE(?: [^\\]\\n]*)?|PROXY(?: [^\\]\\n]*)?|INFRA CONFIG(?: \\d+)?|HF REPO(?: \\d+)?|ENV VALUE(?: \\d+)?|INTERNAL HOST(?: \\d+)?|WORKLOAD ID(?: \\d+)?|SHORTENER[^\\]\\n]*|REDIRECT URL(?: \\d+)?)\\]",
+  "counts": {
+    "raw:read_syntax": {
+      "payload": 22065,
+      "response": 2861,
+      "recovered_text": 8547
+    },
+    "raw:write_syntax": {
+      "payload": 34437,
+      "response": 3589,
+      "recovered_text": 11138
+    },
+    "raw:identity_terms": {
+      "payload": 6239,
+      "response": 547,
+      "recovered_text": 8774
+    },
+    "masked:read_syntax": {
+      "payload": 22065,
+      "response": 2861,
+      "recovered_text": 8547
+    },
+    "masked:write_syntax": {
+      "payload": 34437,
+      "response": 3589,
+      "recovered_text": 11138
+    },
+    "masked:identity_terms": {
+      "payload": 6239,
+      "response": 547,
+      "recovered_text": 8774
+    },
+    "raw:runtime_clock_syntax": {
+      "payload": 1691,
+      "response": 313,
+      "recovered_text": 975
+    },
+    "masked:runtime_clock_syntax": {
+      "payload": 1691,
+      "response": 313,
+      "recovered_text": 975
+    },
+    "raw:artifactory_word": {
+      "payload": 1087,
+      "response": 157,
+      "recovered_text": 941
+    },
+    "masked:artifactory_word": {
+      "payload": 1087,
+      "response": 157,
+      "recovered_text": 941
+    },
+    "raw:wait_word": {
+      "payload": 535,
+      "response": 153,
+      "recovered_text": 234
+    },
+    "masked:wait_word": {
+      "payload": 535,
+      "response": 153,
+      "recovered_text": 234
+    },
+    "raw:mkcol_word": {
+      "payload": 339,
+      "response": 51,
+      "recovered_text": 356
+    },
+    "masked:mkcol_word": {
+      "payload": 339,
+      "response": 51,
+      "recovered_text": 356
+    },
+    "masked:artifactory_and_mkcol": {
+      "payload": 303,
+      "response": 40,
+      "recovered_text": 290
+    },
+    "raw:poll_word": {
+      "payload": 59,
+      "response": 14,
+      "recovered_text": 45
+    },
+    "masked:poll_word": {
+      "payload": 59,
+      "response": 14,
+      "recovered_text": 45
+    },
+    "masked:poll_and_read": {
+      "payload": 52,
+      "response": 2,
+      "recovered_text": 30
+    },
+    "raw:timer_call": {
+      "payload": 1002,
+      "response": 245,
+      "recovered_text": 367
+    },
+    "masked:timer_call": {
+      "payload": 1002,
+      "response": 245,
+      "recovered_text": 367
+    },
+    "raw:sleep_call": {
+      "payload": 605,
+      "response": 90,
+      "recovered_text": 348
+    },
+    "masked:sleep_call": {
+      "payload": 605,
+      "response": 90,
+      "recovered_text": 348
+    },
+    "raw:reply_word": {
+      "payload": 10,
+      "response": 3,
+      "recovered_text": 8
+    },
+    "masked:reply_word": {
+      "payload": 10,
+      "response": 3,
+      "recovered_text": 8
+    },
+    "raw:board_word": {
+      "payload": 20,
+      "response": 4,
+      "recovered_text": 8
+    },
+    "masked:board_word": {
+      "payload": 20,
+      "response": 4,
+      "recovered_text": 8
+    },
+    "masked:board_and_read": {
+      "payload": 18,
+      "response": 1,
+      "recovered_text": 5
+    },
+    "masked:poll_and_sleep_or_timer": {
+      "payload": 31,
+      "response": 8,
+      "recovered_text": 27
+    },
+    "raw:propfind_word": {
+      "payload": 3,
+      "response": 2,
+      "recovered_text": 15
+    },
+    "masked:propfind_word": {
+      "payload": 3,
+      "response": 2,
+      "recovered_text": 15
+    },
+    "masked:artifactory_and_propfind": {
+      "payload": 1,
+      "response": 1,
+      "recovered_text": 13
+    },
+    "masked:board_and_write": {
+      "payload": 17,
+      "response": 2,
+      "recovered_text": 7
+    },
+    "masked:artifactory_propfind_mkcol_sleep": {
+      "response": 1,
+      "recovered_text": 1
+    }
+  },
+  "masked_rule_unique_evidence_roots": {
+    "read_syntax": 26720,
+    "write_syntax": 38087,
+    "identity_terms": 14366,
+    "runtime_clock_syntax": 2060,
+    "artifactory_word": 1810,
+    "wait_word": 637,
+    "mkcol_word": 613,
+    "artifactory_and_mkcol": 514,
+    "poll_word": 82,
+    "poll_and_read": 71,
+    "timer_call": 1230,
+    "sleep_call": 737,
+    "reply_word": 13,
+    "board_word": 24,
+    "board_and_read": 22,
+    "poll_and_sleep_or_timer": 50,
+    "propfind_word": 19,
+    "artifactory_and_propfind": 14,
+    "board_and_write": 21,
+    "artifactory_propfind_mkcol_sleep": 2
+  },
+  "masked_rule_unique_exact_texts": {
+    "read_syntax": 30467,
+    "write_syntax": 44769,
+    "identity_terms": 13559,
+    "runtime_clock_syntax": 2743,
+    "artifactory_word": 2046,
+    "wait_word": 776,
+    "mkcol_word": 719,
+    "artifactory_and_mkcol": 609,
+    "poll_word": 107,
+    "poll_and_read": 80,
+    "timer_call": 1445,
+    "sleep_call": 972,
+    "reply_word": 18,
+    "board_word": 29,
+    "board_and_read": 23,
+    "poll_and_sleep_or_timer": 61,
+    "propfind_word": 20,
+    "artifactory_and_propfind": 15,
+    "board_and_write": 23,
+    "artifactory_propfind_mkcol_sleep": 2
+  },
+  "source_check": {
+    "performed": true,
+    "matching_records": 189579,
+    "mismatches": [],
+    "compressed_bytes": 15214685,
+    "compressed_sha256": "7b66ab21674de52fcd3f557652f68b1801170c998e2f266862124e6edf283488",
+    "selected_source_lines": {
+      "R0004960": 4960,
+      "R0005989": 5989,
+      "R0006010": 6010,
+      "R0006020": 6020,
+      "R0027685": 27685,
+      "R0029223": 29223,
+      "R0031717": 31717,
+      "R0032366": 32366,
+      "R0033477": 33477,
+      "R0035596": 35596,
+      "R0035736": 35736,
+      "R0044963": 44963,
+      "R0045289": 45289,
+      "R0059412": 59412,
+      "R0064429": 64429,
+      "R0070267": 70267,
+      "R0071952": 71952,
+      "R0079625": 79625,
+      "R0097792": 97792,
+      "R0098308": 98308,
+      "R0117987": 117987,
+      "R0155625": 155625,
+      "R0185155": 185155,
+      "R0189549": 189549,
+      "R0189550": 189550,
+      "R0189571": 189571
+    },
+    "row_ids_not_matching_line_number": []
+  },
+  "database_size_mtime_unchanged": true
+}

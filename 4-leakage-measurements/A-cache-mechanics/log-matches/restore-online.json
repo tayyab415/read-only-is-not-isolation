@@ -1,0 +1,152 @@
+{
+  "request_id": "restore-online",
+  "server_trace_ids": [
+    "a46066772d1260302b9de20c64def79e"
+  ],
+  "logs": {
+    "access-audit.log": [],
+    "access-metrics.log": [],
+    "access-metrics_events.log": [],
+    "access-request-out.log": [],
+    "access-request.log": [
+      {
+        "line_number": 791,
+        "line": "2026-11-07T23:02:37.642Z|a46066772d1260302b9de20c64def79e|/127.0.0.1:54014|jfrt@01m6w3chwnhc4n1xs15bzj1rg6|--SST|com.jfrog.access.v1.project.ProjectResource/GetProjects|0|-1|-1|12|grpc-java-netty/1.81.0"
+      },
+      {
+        "line_number": 795,
+        "line": "2026-11-07T23:02:37.717Z|a46066772d1260302b9de20c64def79e|/127.0.0.1:54014|jfrt@01m6w3chwnhc4n1xs15bzj1rg6|--UNA|com.jfrog.access.v1.project.ProjectResource/UpsertProjectResources|0|-1|-1|54|grpc-java-netty/1.81.0"
+      }
+    ],
+    "access-security-audit.log": [],
+    "access-service.log": [
+      {
+        "line_number": 519,
+        "line": "2026-11-07T23:02:37.717Z [jfac ] [INFO ] [a46066772d1260302b9de20c64def79e] [a.s.r.s.RpcProjectResource:529] [jf-access-grpc-10   ] - Upsert resources for project 'default': {repo=ProjectResourcesEntity(resources={github-remote=ProjectResourceEntity(resourceName=github-remote, environments=[], sharedWithProjects=[], sharedWithAllProjects=false, shareTarget=false, sharedReadOnly=false, sharePermissions=null, created=null, modified=null)})} -> results: {}"
+      }
+    ],
+    "access-thread-dump.log": [],
+    "artifactory-access.log": [],
+    "artifactory-binarystore.log": [],
+    "artifactory-cleanup-audit.log": [],
+    "artifactory-conan-v2-migration.log": [],
+    "artifactory-event.log": [],
+    "artifactory-federation-metrics.log": [],
+    "artifactory-federation-metrics_events.log": [],
+    "artifactory-import-export.log": [],
+    "artifactory-metrics.log": [],
+    "artifactory-metrics_events.log": [],
+    "artifactory-path-checksum-migration.log": [],
+    "artifactory-request-out.log": [],
+    "artifactory-request-trace.log": [],
+    "artifactory-request.log": [
+      {
+        "line_number": 488,
+        "line": "2026-11-07T23:02:37.720Z|a46066772d1260302b9de20c64def79e|172.18.0.1|admin|PUT|/ui/admin/repositories|200|1289|58|94|art-a-research/restore-online"
+      }
+    ],
+    "artifactory-service-federation.log": [],
+    "artifactory-service.log": [
+      {
+        "line_number": 3087,
+        "line": "2026-11-07T23:02:37.628Z [jfrt ] [INFO ] [a46066772d1260302b9de20c64def79e] [dateRepositoryConfigService:68] [http-nio-8081-exec-8] - Updating repository github-remote"
+      },
+      {
+        "line_number": 3088,
+        "line": "2026-11-07T23:02:37.647Z [jfrt ] [INFO ] [a46066772d1260302b9de20c64def79e] [r.ReplicationConfigService:123] [http-nio-8081-exec-8] - Removing remote replication config for repo github-remote"
+      },
+      {
+        "line_number": 3089,
+        "line": "2026-11-07T23:02:37.647Z [jfrt ] [WARN ] [a46066772d1260302b9de20c64def79e] [r.ReplicationConfigService:129] [http-nio-8081-exec-8] - No remote replication found for removal - repo github-remote"
+      },
+      {
+        "line_number": 3090,
+        "line": "2026-11-07T23:02:37.650Z [jfrt ] [WARN ] [a46066772d1260302b9de20c64def79e] [oSelfPointingUrlInterceptor:48] [http-nio-8081-exec-8] - Base server host is missing, skipping self-pointing validation"
+      },
+      {
+        "line_number": 3091,
+        "line": "2026-11-07T23:02:37.653Z [jfrt ] [INFO ] [a46066772d1260302b9de20c64def79e] [itiveFieldChangeInterceptor:39] [http-nio-8081-exec-8] - Sensitive repo config encrypt took: 0ms"
+      },
+      {
+        "line_number": 3092,
+        "line": "2026-11-07T23:02:37.654Z [jfrt ] [INFO ] [a46066772d1260302b9de20c64def79e] [ryConfigStorageServiceImpl:182] [http-nio-8081-exec-8] - About to update 1 repository configurations"
+      },
+      {
+        "line_number": 3093,
+        "line": "2026-11-07T23:02:37.657Z [jfrt ] [INFO ] [a46066772d1260302b9de20c64def79e] [positoryConfigServiceImpl:1088] [http-nio-8081-exec-8] - Calling onRepoConfigChange..."
+      },
+      {
+        "line_number": 3094,
+        "line": "2026-11-07T23:02:37.659Z [jfrt ] [INFO ] [a46066772d1260302b9de20c64def79e] [RepoConfigChangeInterceptor:49] [http-nio-8081-exec-8] - Repository 'github-remote' configuration has been updated. Changes: [{\"attributeName\":\"repoTypeConfig\u00bboffline\",\"oldValue\":true,\"newValue\":false}]"
+      },
+      {
+        "line_number": 3095,
+        "line": "2026-11-07T23:02:37.660Z [jfrt ] [INFO ] [a46066772d1260302b9de20c64def79e] [ateRepositoryConfigService:136] [http-nio-8081-exec-8] - Updating environments for repo github-remote"
+      },
+      {
+        "line_number": 3096,
+        "line": "2026-11-07T23:02:37.718Z [jfrt ] [INFO ] [a46066772d1260302b9de20c64def79e] [dateRepositoryConfigService:77] [http-nio-8081-exec-8] - Successfully updated repository 'github-remote'"
+      }
+    ],
+    "artifactory-sha256-migration.log": [],
+    "artifactory-shadow.log": [],
+    "artifactory-storage-request-out.log": [],
+    "artifactory-traffic-v2.log": [],
+    "artifactory-traffic-v3.log": [],
+    "artifactory-traffic.1794091779163.log": [],
+    "artifactory-xray-traffic.1794091779189.log": [],
+    "derby.log": [],
+    "dummy.log": [],
+    "event-metrics.log": [],
+    "event-request.log": [],
+    "event-service.log": [],
+    "event-webhook-request-out.log": [],
+    "frontend-metrics-events.log": [],
+    "frontend-metrics.log": [],
+    "frontend-request.log": [],
+    "frontend-service.log": [],
+    "jfbus-ack-events.log": [],
+    "jfbus-consume-events.log": [],
+    "jfbus-publish-events.log": [],
+    "jfbus-receive-polling.log": [],
+    "jfbus-request.log": [],
+    "jfbus-service.log": [],
+    "jfconfig-metrics.log": [],
+    "jfconfig-request-out.log": [],
+    "jfconfig-request.log": [],
+    "jfconfig-service.log": [],
+    "metadata-metrics.log": [],
+    "metadata-request.log": [],
+    "metadata-service.log": [],
+    "metadata-traffic.log": [],
+    "observability-metrics.log": [],
+    "observability-request-out.log": [],
+    "observability-request.log": [],
+    "observability-service.log": [],
+    "router-request.log": [
+      {
+        "line_number": 1606,
+        "line": "{\"ClientAddr\":\"127.0.0.1:35280\",\"DownstreamContentSize\":926,\"DownstreamStatus\":200,\"Duration\":12850428,\"Overhead\":113422,\"RequestMethod\":\"POST\",\"RequestPath\":\"/com.jfrog.access.v1.project.ProjectResource/GetProjects\",\"ServiceAddr\":\"localhost:8045\",\"SpanId\":\"a39ee16fbe54a6b1\",\"StartUTC\":\"2026-11-07T23:02:37.629967652Z\",\"TraceId\":\"a46066772d1260302b9de20c64def79e\",\"level\":\"info\",\"msg\":\"\",\"request_Traceparent\":\"00-a46066772d1260302b9de20c64def79e-9d75c466dac6cf36-01\",\"request_Uber-Trace-Id\":\"a46066772d1260302b9de20c64def79e:9d75c466dac6cf36:0:1\",\"request_User-Agent\":\"grpc-java-netty/1.81.0\",\"time\":\"2026-11-07T23:02:37Z\"}"
+      },
+      {
+        "line_number": 1610,
+        "line": "{\"ClientAddr\":\"127.0.0.1:35280\",\"DownstreamContentSize\":5,\"DownstreamStatus\":200,\"Duration\":56106199,\"Overhead\":107532,\"RequestMethod\":\"POST\",\"RequestPath\":\"/com.jfrog.access.v1.project.ProjectResource/UpsertProjectResources\",\"ServiceAddr\":\"localhost:8045\",\"SpanId\":\"1c0754bfe13dbeb4\",\"StartUTC\":\"2026-11-07T23:02:37.661959275Z\",\"TraceId\":\"a46066772d1260302b9de20c64def79e\",\"level\":\"info\",\"msg\":\"\",\"request_Traceparent\":\"00-a46066772d1260302b9de20c64def79e-9d75c466dac6cf36-01\",\"request_Uber-Trace-Id\":\"a46066772d1260302b9de20c64def79e:9d75c466dac6cf36:0:1\",\"request_User-Agent\":\"grpc-java-netty/1.81.0\",\"time\":\"2026-11-07T23:02:37Z\"}"
+      },
+      {
+        "line_number": 1611,
+        "line": "{\"ClientAddr\":\"172.18.0.1:52660\",\"DownstreamContentSize\":58,\"DownstreamStatus\":200,\"Duration\":95124153,\"Overhead\":129292,\"RequestMethod\":\"PUT\",\"RequestPath\":\"/artifactory/ui/admin/repositories\",\"ServiceAddr\":\"localhost:8081\",\"SpanId\":\"03d9abb24ab7c924\",\"StartUTC\":\"2026-11-07T23:02:37.625305228Z\",\"TraceId\":\"a46066772d1260302b9de20c64def79e\",\"level\":\"info\",\"msg\":\"\",\"request_User-Agent\":\"art-a-research/restore-online\",\"time\":\"2026-11-07T23:02:37Z\"}"
+      }
+    ],
+    "router-service.log": [],
+    "router-traefik.log": [],
+    "tomcat/tomcat-access-catalina-2026-11-07.log": [],
+    "tomcat/tomcat-access-localhost-2026-11-07.log": [],
+    "tomcat/tomcat-catalina-2026-11-07.log": [],
+    "tomcat/tomcat-localhost-2026-11-07.log": [],
+    "topology-derby.log": [],
+    "topology-metrics.log": [],
+    "topology-request-out.log": [],
+    "topology-request.log": [],
+    "topology-service.log": []
+  }
+}

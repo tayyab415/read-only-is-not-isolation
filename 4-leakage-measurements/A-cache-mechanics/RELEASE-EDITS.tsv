@@ -1,0 +1,9 @@
+file	original_sha256	release_sha256	edits
+EVIDENCE-GUIDE.md	e4a55f27617a77b64eaa9b160a99b850c40a32bd4f32d56ad9f892adcc6d4ab0	70298a775121b682fcbe44ec6d513073646227b0ef747fb822c7a17adf6d90b6	lab hostname -> labhost (x2)
+container-hostconfig.json	988bcb7a8a56317945d3ccdc130848ad134bfcac665f7cbe1d11f81e4dce6698	d55123ad385e86dc6bb778dc54dc5f8863565e0177c27790c643c1ecad80acdc	absolute home paths -> $LAB_ROOT/$LAB_HOME/$HOME (x1)
+run-logs/art-a-db-setup.log	84e578b69e1f94470651e1dd0b149e8494535d3bfcef9cfb12f5dd3a32bb1500	383f8801a1b0de9150919b7a9c175144c67b01a3c5ae84ee295516b52a7555f9	lab hostname -> labhost (x1)
+run-logs/art-a-provision.log	b7ebc61b9a70effa278e2ba6f95e52b1ed8e3b59c31d7805d7d92b4ed79afd84	02089848e8f594667262eec97d18f8ef8a7c3f46844959d97e5c109fd0f2f441	absolute home paths -> $LAB_ROOT/$LAB_HOME/$HOME (x1)
+run-logs/art-a-provision2.log	ef1145edbf9c6f8983a8f0671f1c9e535439bcb7b1a502e382655d7eb1ea8bc4	1a74aee0780b0df13ddbf327d7c1c598c7480f62f0310be6884093c4338f387b	absolute home paths -> $LAB_ROOT/$LAB_HOME/$HOME (x2)
+run-logs/art-a-provision3.log	e326440bf4041fec5e05d0040950860edb1341e5ff22622ed588ae0808a01362	865b1114912cb71ed96c0386305051c150a83f4eb6314ea49c1c4ec749d9a787	absolute home paths -> $LAB_ROOT/$LAB_HOME/$HOME (x2)
+run-logs/art-a-provision4.log	bc1deb67796c7321da1a6574f1036a2c8b864a6769bb8872cad1b6b67e964ff9	6fd5595e7d17bf5edc79765766c73a0039471db19b047f3c472e4ee2f8de4993	absolute home paths -> $LAB_ROOT/$LAB_HOME/$HOME (x3)
+scripts/database.py	06dd5fd94e237817b3aef0e1f1299b859f6b86d4f33222c1b9c3e80a723a4bea	15f6766ed3bb11caf7ee9eeeee10bb68dede37b8b58bcd0148c55b75767c2aca	lab hostname -> labhost (x1)

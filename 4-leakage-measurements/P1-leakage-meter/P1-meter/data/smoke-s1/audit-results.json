@@ -1,0 +1,67 @@
+{
+  "passed": true,
+  "smoke": true,
+  "audit_source_sha256": "3258011c4586da62f2e813c2f12682d9c965cdf835d00a087a5b728ce9348938",
+  "runs": [
+    {
+      "run": "open",
+      "checks": 13817,
+      "passed": true,
+      "failures": [],
+      "failure_count": 0,
+      "invalid_trials": [],
+      "trials": 20,
+      "forwarded": 1561,
+      "blocked": 0,
+      "dummy": 0
+    },
+    {
+      "run": "combined",
+      "checks": 16166,
+      "passed": true,
+      "failures": [],
+      "failure_count": 0,
+      "invalid_trials": [],
+      "trials": 20,
+      "forwarded": 1058,
+      "blocked": 982,
+      "dummy": 0
+    },
+    {
+      "run": "separate",
+      "checks": 13143,
+      "passed": true,
+      "failures": [],
+      "failure_count": 0,
+      "invalid_trials": [],
+      "trials": 20,
+      "forwarded": 723,
+      "blocked": 981,
+      "dummy": 0
+    },
+    {
+      "run": "aa",
+      "checks": 13054,
+      "passed": true,
+      "failures": [],
+      "failure_count": 0,
+      "invalid_trials": [],
+      "trials": 20,
+      "forwarded": 1480,
+      "blocked": 0,
+      "dummy": 0
+    },
+    {
+      "run": "sham",
+      "checks": 13124,
+      "passed": true,
+      "failures": [],
+      "failure_count": 0,
+      "invalid_trials": [],
+      "trials": 20,
+      "forwarded": 1480,
+      "blocked": 0,
+      "dummy": 10
+    }
+  ]
+}

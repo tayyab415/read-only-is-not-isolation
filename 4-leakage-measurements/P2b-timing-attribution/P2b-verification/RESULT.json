@@ -1,0 +1,120 @@
+{
+  "passed": true,
+  "scores": {
+    "shared": {
+      "trials": 300,
+      "correct": 220,
+      "accuracy": 0.7333333333333333,
+      "accuracy_wilson_95": [
+        0.680572605868549,
+        0.7801940075599961
+      ],
+      "tp": 70,
+      "tn": 150,
+      "fp": 0,
+      "fn": 80,
+      "tpr": 0.4666666666666667,
+      "fpr": 0.0,
+      "median_S_active_ms": 3.731935,
+      "median_S_idle_ms": 4.828187,
+      "probe_latency_median_ms": 4.558495,
+      "probe_latency_p95_ms": 8.116588,
+      "failed_trials": 0,
+      "primary_binomial_p": 1.4331608660527376e-16,
+      "conditional_sensitivity_p": 2.423405297906611e-26,
+      "primary_holm_p": 5.73264346421095e-16,
+      "conditional_sensitivity_holm_p": 9.693621191626444e-26
+    },
+    "pergw": {
+      "trials": 300,
+      "correct": 197,
+      "accuracy": 0.6566666666666666,
+      "accuracy_wilson_95": [
+        0.6012598041861229,
+        0.7081120648301859
+      ],
+      "tp": 50,
+      "tn": 147,
+      "fp": 3,
+      "fn": 100,
+      "tpr": 0.3333333333333333,
+      "fpr": 0.02,
+      "median_S_active_ms": 6.163498499999999,
+      "median_S_idle_ms": 6.4189355,
+      "probe_latency_median_ms": 6.061501,
+      "probe_latency_p95_ms": 8.541694,
+      "failed_trials": 0,
+      "primary_binomial_p": 3.109605119133993e-08,
+      "conditional_sensitivity_p": 3.627097257361024e-14,
+      "primary_holm_p": 6.219210238267986e-08,
+      "conditional_sensitivity_holm_p": 7.254194514722047e-14
+    },
+    "pad": {
+      "trials": 300,
+      "correct": 216,
+      "accuracy": 0.72,
+      "accuracy_wilson_95": [
+        0.666656114789153,
+        0.7677809778720466
+      ],
+      "tp": 101,
+      "tn": 115,
+      "fp": 35,
+      "fn": 49,
+      "tpr": 0.6733333333333333,
+      "fpr": 0.23333333333333334,
+      "median_S_active_ms": 13.5563725,
+      "median_S_idle_ms": 13.6942155,
+      "probe_latency_median_ms": 13.623434,
+      "probe_latency_p95_ms": 14.138319,
+      "failed_trials": 0,
+      "primary_binomial_p": 7.335130515981744e-15,
+      "conditional_sensitivity_p": 9.560601241677282e-15,
+      "primary_holm_p": 2.2005391547945232e-14,
+      "conditional_sensitivity_holm_p": 2.868180372503185e-14
+    },
+    "aa": {
+      "trials": 300,
+      "correct": 146,
+      "accuracy": 0.4866666666666667,
+      "accuracy_wilson_95": [
+        0.43063449599449377,
+        0.5430359832381607
+      ],
+      "tp": 80,
+      "tn": 66,
+      "fp": 84,
+      "fn": 70,
+      "tpr": 0.5333333333333333,
+      "fpr": 0.56,
+      "median_S_active_ms": 3.913266,
+      "median_S_idle_ms": 3.9347665000000003,
+      "probe_latency_median_ms": 3.937477,
+      "probe_latency_p95_ms": 4.976668,
+      "failed_trials": 0,
+      "primary_binomial_p": 0.6982971410639314,
+      "conditional_sensitivity_p": 0.7190742042261491,
+      "primary_holm_p": 0.6982971410639314,
+      "conditional_sensitivity_holm_p": 0.7190742042261491
+    }
+  },
+  "comparisons": {
+    "shared_vs_pergw": {
+      "fisher_p_two_sided": 0.05092983936542351,
+      "accuracy_difference": 0.07666666666666666
+    },
+    "shared_vs_pad": {
+      "fisher_p_two_sided": 0.783518602917905,
+      "accuracy_difference": 0.013333333333333308
+    },
+    "pad_latency_cost_median_ms": 9.064938999999999
+  },
+  "primary_aa_raw_nominal_pass": true,
+  "primary_aa_holm_pass": true,
+  "conditional_aa_sensitivity_pass": true,
+  "verification_freeze_sha256": "92168c1cd9fe6cfa5c6f0b2103a878026f66a4545b167e75a49a6f8cc3cd5e49",
+  "primary_results_sha256": "b38af191c9260a5111dc4fb648a2aad31156abf832d5bf5784c0f9573f2bb7e0",
+  "decoder_freeze_sha256": "93397b2e74a47d13de4dc28d3b5c3bed76dd0879085edffab9c2252b9d491acc",
+  "native_audit_sha256": "f9308b485e37cae5130919cbb8f33871ecb1309e240c5f0c3dbd6c0ed3d4b6a5",
+  "scope": "Independent arithmetic plus predeclared balanced-label sensitivity; original primary tests remain unchanged."
+}

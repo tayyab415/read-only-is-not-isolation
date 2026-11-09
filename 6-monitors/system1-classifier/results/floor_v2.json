@@ -1,0 +1,119 @@
+{
+ "benign_pool": {
+  "n": 27432,
+  "by_source": {
+   "xlam_calls": 8740,
+   "codesearchnet_js": 4925,
+   "nebius_openhands_bash": 3160,
+   "swegym_openhands_bash": 2456,
+   "glaive_calls": 2447,
+   "local_npm": 1617,
+   "hf_docs": 1510,
+   "gen_luna": 995,
+   "gen_glm5": 947,
+   "agentapprove": 330,
+   "tomngdev_shell": 240,
+   "rogue_security": 65
+  }
+ },
+ "all": {
+  "n_rows": 43784,
+  "n_clusters": 17618,
+  "struct_exact_rows": 0.0001,
+  "struct_exact_clusterw": 0.0001,
+  "struct_near_rows": 0.0006,
+  "struct_near_clusterw": 0.0005,
+  "detok_cos>=0.9_rows": 0.0,
+  "detok_cos>=0.9_clusterw": 0.0,
+  "detok_cos>=0.8_rows": 0.0,
+  "detok_cos>=0.8_clusterw": 0.0,
+  "detok_maxcos_median": 0.192
+ },
+ "by_type": {
+  "decode_and_run": {
+   "n_rows": 2077,
+   "n_clusters": 1014,
+   "struct_exact_rows": 0.0,
+   "struct_exact_clusterw": 0.0,
+   "struct_near_rows": 0.0,
+   "struct_near_clusterw": 0.0,
+   "detok_cos>=0.9_rows": 0.0,
+   "detok_cos>=0.9_clusterw": 0.0,
+   "detok_cos>=0.8_rows": 0.0,
+   "detok_cos>=0.8_clusterw": 0.0,
+   "detok_maxcos_median": 0.1877
+  },
+  "hf_api_with_auth": {
+   "n_rows": 13922,
+   "n_clusters": 6427,
+   "struct_exact_rows": 0.0001,
+   "struct_exact_clusterw": 0.0,
+   "struct_near_rows": 0.0009,
+   "struct_near_clusterw": 0.0003,
+   "detok_cos>=0.9_rows": 0.0,
+   "detok_cos>=0.9_clusterw": 0.0,
+   "detok_cos>=0.8_rows": 0.0,
+   "detok_cos>=0.8_clusterw": 0.0,
+   "detok_maxcos_median": 0.2245
+  },
+  "image_beacon": {
+   "n_rows": 5522,
+   "n_clusters": 1971,
+   "struct_exact_rows": 0.0,
+   "struct_exact_clusterw": 0.0,
+   "struct_near_rows": 0.0,
+   "struct_near_clusterw": 0.0,
+   "detok_cos>=0.9_rows": 0.0,
+   "detok_cos>=0.9_clusterw": 0.0,
+   "detok_cos>=0.8_rows": 0.0,
+   "detok_cos>=0.8_clusterw": 0.0,
+   "detok_maxcos_median": 0.2086
+  },
+  "other": {
+   "n_rows": 9889,
+   "n_clusters": 5172,
+   "struct_exact_rows": 0.0003,
+   "struct_exact_clusterw": 0.0004,
+   "struct_near_rows": 0.0011,
+   "struct_near_clusterw": 0.001,
+   "detok_cos>=0.9_rows": 0.0,
+   "detok_cos>=0.9_clusterw": 0.0,
+   "detok_cos>=0.8_rows": 0.0,
+   "detok_cos>=0.8_clusterw": 0.0,
+   "detok_maxcos_median": 0.2068
+  },
+  "python_or_shell_launcher": {
+   "n_rows": 1441,
+   "n_clusters": 935,
+   "struct_exact_rows": 0.0,
+   "struct_exact_clusterw": 0.0,
+   "struct_near_rows": 0.0007,
+   "struct_near_clusterw": 0.0011,
+   "detok_cos>=0.9_rows": 0.0,
+   "detok_cos>=0.9_clusterw": 0.0,
+   "detok_cos>=0.8_rows": 0.0,
+   "detok_cos>=0.8_clusterw": 0.0,
+   "detok_maxcos_median": 0.178
+  },
+  "script_or_frame_injection": {
+   "n_rows": 10933,
+   "n_clusters": 2444,
+   "struct_exact_rows": 0.0,
+   "struct_exact_clusterw": 0.0,
+   "struct_near_rows": 0.0002,
+   "struct_near_clusterw": 0.0008,
+   "detok_cos>=0.9_rows": 0.0,
+   "detok_cos>=0.9_clusterw": 0.0,
+   "detok_cos>=0.8_rows": 0.0,
+   "detok_cos>=0.8_clusterw": 0.0,
+   "detok_maxcos_median": 0.1575
+  }
+ },
+ "benign_twin_sources_struct_near": {
+  "gen_glm5": 16,
+  "glaive_calls": 4,
+  "gen_luna": 4,
+  "xlam_calls": 3
+ },
+ "twin_examples_removed_for_release": "18 example rows (Swarm Traces text) removed"
+}

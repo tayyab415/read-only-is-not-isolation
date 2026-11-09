@@ -1,0 +1,108 @@
+{
+  "request_id": "remote-fresh-a-cache",
+  "server_trace_ids": [
+    "c99025573b6700bf788e8d3501ab5c83"
+  ],
+  "logs": {
+    "access-audit.log": [],
+    "access-metrics.log": [],
+    "access-metrics_events.log": [],
+    "access-request-out.log": [],
+    "access-request.log": [
+      {
+        "line_number": 1208,
+        "line": "2026-11-07T23:12:41.347Z|c99025573b6700bf788e8d3501ab5c83|/127.0.0.1:54014|jfrt@01m6w3chwnhc4n1xs15bzj1rg6|--UNA|com.jfrog.access.v1.authentication.AuthenticationResource/Authenticate|0|-1|-1|7|grpc-java-netty/1.81.0"
+      }
+    ],
+    "access-security-audit.log": [],
+    "access-service.log": [],
+    "access-thread-dump.log": [],
+    "artifactory-access.log": [
+      {
+        "line_number": 100,
+        "line": "2026-11-07T23:12:41.351Z [c99025573b6700bf788e8d3501ab5c83] [ACCEPTED LOGIN]   for client : a-cache / 172.18.0.1"
+      }
+    ],
+    "artifactory-binarystore.log": [],
+    "artifactory-cleanup-audit.log": [],
+    "artifactory-conan-v2-migration.log": [],
+    "artifactory-event.log": [],
+    "artifactory-federation-metrics.log": [],
+    "artifactory-federation-metrics_events.log": [],
+    "artifactory-import-export.log": [],
+    "artifactory-metrics.log": [],
+    "artifactory-metrics_events.log": [],
+    "artifactory-path-checksum-migration.log": [],
+    "artifactory-request-out.log": [],
+    "artifactory-request-trace.log": [],
+    "artifactory-request.log": [
+      {
+        "line_number": 3769,
+        "line": "2026-11-07T23:12:41.351Z|c99025573b6700bf788e8d3501ab5c83|172.18.0.1|a-cache|MKCOL|/github-remote/zz_A_remote_fresh_a-cache|404|-1|0|13|art-a-research/remote-fresh-a-cache"
+      }
+    ],
+    "artifactory-service-federation.log": [],
+    "artifactory-service.log": [
+      {
+        "line_number": 3294,
+        "line": "2026-11-07T23:12:41.349Z [jfrt ] [WARN ] [c99025573b6700bf788e8d3501ab5c83] [yAuthenticationFilterChain:192] [http-nio-8081-exec-5] - User authentication has failed due to Attempt to lock 'github-remote:' with repository 'github-remote-cache"
+      }
+    ],
+    "artifactory-sha256-migration.log": [],
+    "artifactory-shadow.log": [],
+    "artifactory-storage-request-out.log": [],
+    "artifactory-traffic-v2.log": [],
+    "artifactory-traffic-v3.log": [],
+    "artifactory-traffic.1794091779163.log": [],
+    "artifactory-xray-traffic.1794091779189.log": [],
+    "derby.log": [],
+    "dummy.log": [],
+    "event-metrics.log": [],
+    "event-request.log": [],
+    "event-service.log": [],
+    "event-webhook-request-out.log": [],
+    "frontend-metrics-events.log": [],
+    "frontend-metrics.log": [],
+    "frontend-request.log": [],
+    "frontend-service.log": [],
+    "jfbus-ack-events.log": [],
+    "jfbus-consume-events.log": [],
+    "jfbus-publish-events.log": [],
+    "jfbus-receive-polling.log": [],
+    "jfbus-request.log": [],
+    "jfbus-service.log": [],
+    "jfconfig-metrics.log": [],
+    "jfconfig-request-out.log": [],
+    "jfconfig-request.log": [],
+    "jfconfig-service.log": [],
+    "metadata-metrics.log": [],
+    "metadata-request.log": [],
+    "metadata-service.log": [],
+    "metadata-traffic.log": [],
+    "observability-metrics.log": [],
+    "observability-request-out.log": [],
+    "observability-request.log": [],
+    "observability-service.log": [],
+    "router-request.log": [
+      {
+        "line_number": 5226,
+        "line": "{\"ClientAddr\":\"127.0.0.1:35280\",\"DownstreamContentSize\":87,\"DownstreamStatus\":200,\"Duration\":8156444,\"Overhead\":93582,\"RequestMethod\":\"POST\",\"RequestPath\":\"/com.jfrog.access.v1.authentication.AuthenticationResource/Authenticate\",\"ServiceAddr\":\"localhost:8045\",\"SpanId\":\"b0b87f0757538a20\",\"StartUTC\":\"2026-11-07T23:12:41.339907988Z\",\"TraceId\":\"c99025573b6700bf788e8d3501ab5c83\",\"level\":\"info\",\"msg\":\"\",\"request_Traceparent\":\"00-c99025573b6700bf788e8d3501ab5c83-1f27bc35a5303ab8-01\",\"request_Uber-Trace-Id\":\"c99025573b6700bf788e8d3501ab5c83:1f27bc35a5303ab8:0:1\",\"request_User-Agent\":\"grpc-java-netty/1.81.0\",\"time\":\"2026-11-07T23:12:41Z\"}"
+      },
+      {
+        "line_number": 5227,
+        "line": "{\"ClientAddr\":\"172.18.0.1:43086\",\"DownstreamContentSize\":172,\"DownstreamStatus\":404,\"Duration\":14402929,\"Overhead\":73831,\"RequestMethod\":\"MKCOL\",\"RequestPath\":\"/artifactory/github-remote/zz_A_remote_fresh_a-cache\",\"ServiceAddr\":\"localhost:8081\",\"SpanId\":\"1d68cb4c4f3b3a16\",\"StartUTC\":\"2026-11-07T23:12:41.337688293Z\",\"TraceId\":\"c99025573b6700bf788e8d3501ab5c83\",\"level\":\"info\",\"msg\":\"\",\"request_User-Agent\":\"art-a-research/remote-fresh-a-cache\",\"time\":\"2026-11-07T23:12:41Z\"}"
+      }
+    ],
+    "router-service.log": [],
+    "router-traefik.log": [],
+    "tomcat/tomcat-access-catalina-2026-11-07.log": [],
+    "tomcat/tomcat-access-localhost-2026-11-07.log": [],
+    "tomcat/tomcat-catalina-2026-11-07.log": [],
+    "tomcat/tomcat-localhost-2026-11-07.log": [],
+    "topology-derby.log": [],
+    "topology-metrics.log": [],
+    "topology-request-out.log": [],
+    "topology-request.log": [],
+    "topology-service.log": []
+  }
+}

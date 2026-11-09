@@ -1,0 +1,7 @@
+{
+  "utc": "2026-11-09T01:07:46.959435+00:00",
+  "returncode": 1,
+  "stderr": "Traceback (most recent call last):\n  File \"$LAB_ROOT/evidence/P2b-verification/verify.py\", line 213, in <module>\n    main()\n  File \"$LAB_ROOT/evidence/P2b-verification/verify.py\", line 148, in main\n    frozen = analyze.verify_freeze(data)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"$LAB_ROOT/evidence/P2b-attribution/analyze.py\", line 123, in verify_freeze\n    frozen = json.loads((HERE / \"DECODERS-FROZEN.json\").read_text())\n                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"$HOME/anaconda3/lib/python3.11/pathlib.py\", line 1058, in read_text\n    with self.open(mode='r', encoding=encoding, errors=errors) as f:\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"$HOME/anaconda3/lib/python3.11/pathlib.py\", line 1044, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '$LAB_ROOT/evidence/P2b-attribution/DECODERS-FROZEN.json'\n",
+  "result_exists": false,
+  "verification_freeze_sha256": "0be9bef8585fc809c372ff90d108e39077fc0dda9704ab227e07438aa70e9cac"
+}

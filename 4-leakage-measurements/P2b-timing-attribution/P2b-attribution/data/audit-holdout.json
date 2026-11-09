@@ -1,0 +1,48 @@
+{
+  "split": "holdout",
+  "passed": true,
+  "runs": [
+    {
+      "arm": "shared",
+      "split": "holdout",
+      "trials": 300,
+      "checks": 154218,
+      "passed": true,
+      "failure_count": 0,
+      "failures": [],
+      "seal_sha256": "67721eda53de9312a9df5d406ea2c3ee6d9ae7195d93cbb73f1a3f26f7986bb4"
+    },
+    {
+      "arm": "pergw",
+      "split": "holdout",
+      "trials": 300,
+      "checks": 179720,
+      "passed": true,
+      "failure_count": 0,
+      "failures": [],
+      "seal_sha256": "da2d8c976fe994480f58c94b42851466d698938b473dccd9d4b575c252f2eda8"
+    },
+    {
+      "arm": "pad",
+      "split": "holdout",
+      "trials": 300,
+      "checks": 179718,
+      "passed": true,
+      "failure_count": 0,
+      "failures": [],
+      "seal_sha256": "6d2874c3fe0722292c6045b68e8827c46c6738d9847f1ce9a6b3e019354f001f"
+    },
+    {
+      "arm": "aa",
+      "split": "holdout",
+      "trials": 300,
+      "checks": 39018,
+      "passed": true,
+      "failure_count": 0,
+      "failures": [],
+      "seal_sha256": "4c6953d99efff64d4d50f44e96c95ed474d52c6848d449ed7c22c9f7f2cd4bf4"
+    }
+  ],
+  "audit_source_sha256": "075e81e6aaa66b44e3e20b12cfca4c922f7b21724b88bed1e7b631b0658d1b46",
+  "source_manifest_sha256": "755154d688bfffc0b4cce9ae97bfad83b9ef16c38745c7d7b09b27817269736a"
+}

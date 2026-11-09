@@ -1,0 +1,115 @@
+{
+  "request_id": "delete-only-other-user-folder",
+  "server_trace_ids": [
+    "cb9817e589ebb929261a819bff533928"
+  ],
+  "logs": {
+    "access-audit.log": [],
+    "access-metrics.log": [],
+    "access-metrics_events.log": [],
+    "access-request-out.log": [],
+    "access-request.log": [
+      {
+        "line_number": 1041,
+        "line": "2026-11-07T23:06:03.031Z|cb9817e589ebb929261a819bff533928|/127.0.0.1:54014|jfrt@01m6w3chwnhc4n1xs15bzj1rg6|--UNA|com.jfrog.access.v1.authentication.AuthenticationResource/Authenticate|0|-1|-1|8|grpc-java-netty/1.81.0"
+      },
+      {
+        "line_number": 1042,
+        "line": "2026-11-07T23:06:03.037Z|cb9817e589ebb929261a819bff533928|/127.0.0.1:54014|jfrt@01m6w3chwnhc4n1xs15bzj1rg6|--SST|com.jfrog.access.v1.permission.PermissionResource/ListPermissionsStream|0|-1|-1|3|grpc-java-netty/1.81.0"
+      }
+    ],
+    "access-security-audit.log": [],
+    "access-service.log": [],
+    "access-thread-dump.log": [],
+    "artifactory-access.log": [
+      {
+        "line_number": 92,
+        "line": "2026-11-07T23:06:03.040Z [cb9817e589ebb929261a819bff533928] [ACCEPTED DELETE] github-remote-cache:zz_A_inbox/zz_note_from_a-cache2  for client : a-cache / 172.18.0.1"
+      },
+      {
+        "line_number": 93,
+        "line": "2026-11-07T23:06:03.076Z [cb9817e589ebb929261a819bff533928] [ACCEPTED LOGIN]   for client : a-cache / 172.18.0.1"
+      }
+    ],
+    "artifactory-binarystore.log": [],
+    "artifactory-cleanup-audit.log": [],
+    "artifactory-conan-v2-migration.log": [],
+    "artifactory-event.log": [],
+    "artifactory-federation-metrics.log": [],
+    "artifactory-federation-metrics_events.log": [],
+    "artifactory-import-export.log": [],
+    "artifactory-metrics.log": [],
+    "artifactory-metrics_events.log": [],
+    "artifactory-path-checksum-migration.log": [],
+    "artifactory-request-out.log": [],
+    "artifactory-request-trace.log": [],
+    "artifactory-request.log": [
+      {
+        "line_number": 3677,
+        "line": "2026-11-07T23:06:03.076Z|cb9817e589ebb929261a819bff533928|172.18.0.1|a-cache|DELETE|/github-remote-cache/zz_A_inbox/zz_note_from_a-cache2|204|-1|0|55|art-a-research/delete-only-other-user-folder"
+      }
+    ],
+    "artifactory-service-federation.log": [],
+    "artifactory-service.log": [],
+    "artifactory-sha256-migration.log": [],
+    "artifactory-shadow.log": [],
+    "artifactory-storage-request-out.log": [],
+    "artifactory-traffic-v2.log": [],
+    "artifactory-traffic-v3.log": [],
+    "artifactory-traffic.1794091779163.log": [],
+    "artifactory-xray-traffic.1794091779189.log": [],
+    "derby.log": [],
+    "dummy.log": [],
+    "event-metrics.log": [],
+    "event-request.log": [],
+    "event-service.log": [],
+    "event-webhook-request-out.log": [],
+    "frontend-metrics-events.log": [],
+    "frontend-metrics.log": [],
+    "frontend-request.log": [],
+    "frontend-service.log": [],
+    "jfbus-ack-events.log": [],
+    "jfbus-consume-events.log": [],
+    "jfbus-publish-events.log": [],
+    "jfbus-receive-polling.log": [],
+    "jfbus-request.log": [],
+    "jfbus-service.log": [],
+    "jfconfig-metrics.log": [],
+    "jfconfig-request-out.log": [],
+    "jfconfig-request.log": [],
+    "jfconfig-service.log": [],
+    "metadata-metrics.log": [],
+    "metadata-request.log": [],
+    "metadata-service.log": [],
+    "metadata-traffic.log": [],
+    "observability-metrics.log": [],
+    "observability-request-out.log": [],
+    "observability-request.log": [],
+    "observability-service.log": [],
+    "router-request.log": [
+      {
+        "line_number": 5026,
+        "line": "{\"ClientAddr\":\"127.0.0.1:35280\",\"DownstreamContentSize\":87,\"DownstreamStatus\":200,\"Duration\":9176044,\"Overhead\":94691,\"RequestMethod\":\"POST\",\"RequestPath\":\"/com.jfrog.access.v1.authentication.AuthenticationResource/Authenticate\",\"ServiceAddr\":\"localhost:8045\",\"SpanId\":\"2cab0ecd882c51a8\",\"StartUTC\":\"2026-11-07T23:06:03.023207464Z\",\"TraceId\":\"cb9817e589ebb929261a819bff533928\",\"level\":\"info\",\"msg\":\"\",\"request_Traceparent\":\"00-cb9817e589ebb929261a819bff533928-878a2624e571ec28-01\",\"request_Uber-Trace-Id\":\"cb9817e589ebb929261a819bff533928:878a2624e571ec28:0:1\",\"request_User-Agent\":\"grpc-java-netty/1.81.0\",\"time\":\"2026-11-07T23:06:03Z\"}"
+      },
+      {
+        "line_number": 5027,
+        "line": "{\"ClientAddr\":\"127.0.0.1:35280\",\"DownstreamContentSize\":746,\"DownstreamStatus\":200,\"Duration\":3522861,\"Overhead\":94502,\"RequestMethod\":\"POST\",\"RequestPath\":\"/com.jfrog.access.v1.permission.PermissionResource/ListPermissionsStream\",\"ServiceAddr\":\"localhost:8045\",\"SpanId\":\"d0f02d3cd8c6120e\",\"StartUTC\":\"2026-11-07T23:06:03.033902359Z\",\"TraceId\":\"cb9817e589ebb929261a819bff533928\",\"level\":\"info\",\"msg\":\"\",\"request_Traceparent\":\"00-cb9817e589ebb929261a819bff533928-878a2624e571ec28-01\",\"request_Uber-Trace-Id\":\"cb9817e589ebb929261a819bff533928:878a2624e571ec28:0:1\",\"request_User-Agent\":\"grpc-java-netty/1.81.0\",\"time\":\"2026-11-07T23:06:03Z\"}"
+      },
+      {
+        "line_number": 5028,
+        "line": "{\"ClientAddr\":\"172.18.0.1:50642\",\"DownstreamContentSize\":0,\"DownstreamStatus\":204,\"Duration\":55980736,\"Overhead\":101511,\"RequestMethod\":\"DELETE\",\"RequestPath\":\"/artifactory/github-remote-cache/zz_A_inbox/zz_note_from_a-cache2\",\"ServiceAddr\":\"localhost:8081\",\"SpanId\":\"3e840c70b2b5e66c\",\"StartUTC\":\"2026-11-07T23:06:03.021164053Z\",\"TraceId\":\"cb9817e589ebb929261a819bff533928\",\"level\":\"info\",\"msg\":\"\",\"request_User-Agent\":\"art-a-research/delete-only-other-user-folder\",\"time\":\"2026-11-07T23:06:03Z\"}"
+      }
+    ],
+    "router-service.log": [],
+    "router-traefik.log": [],
+    "tomcat/tomcat-access-catalina-2026-11-07.log": [],
+    "tomcat/tomcat-access-localhost-2026-11-07.log": [],
+    "tomcat/tomcat-catalina-2026-11-07.log": [],
+    "tomcat/tomcat-localhost-2026-11-07.log": [],
+    "topology-derby.log": [],
+    "topology-metrics.log": [],
+    "topology-request-out.log": [],
+    "topology-request.log": [],
+    "topology-service.log": []
+  }
+}

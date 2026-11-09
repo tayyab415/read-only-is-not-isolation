@@ -1,0 +1,23 @@
+{
+  "checked_utc": "2026-11-08T04:43:02.056475+00:00",
+  "files": 2382,
+  "bytes": 145068517,
+  "hits": [
+    {
+      "file": "data/b2-12/calls.jsonl",
+      "pattern": "hf_token",
+      "matches": 1
+    }
+  ],
+  "matched_text_exported": false,
+  "scope": "Pattern check of retained N data/failed JSON, JSONL, TXT exports. Not a comprehensive secret audit; private lab host credential files are not exported.",
+  "findings_context": [
+    {
+      "file": "data/b2-12/calls.jsonl",
+      "jsonl_line": 23,
+      "json_pointer": "/response/output/message/content/0/reasoningContent/redactedContent",
+      "classification": "pattern match inside opaque provider redactedContent, not a readable credential field",
+      "matched_text_exported": false
+    }
+  ]
+}

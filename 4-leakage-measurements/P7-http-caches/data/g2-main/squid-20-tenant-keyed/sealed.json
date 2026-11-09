@@ -1,0 +1,30 @@
+{
+  "run_id": "p7-g2-squid-20-tenant-keyed-hold",
+  "product": "squid",
+  "delay_ms": 20,
+  "arm": "tenant-keyed",
+  "split": "holdout",
+  "scheduled": 32,
+  "completed": 32,
+  "complete": true,
+  "source_freeze_sha256": "e29bc3a73fb81cce237872d1cc61d771109b4a6ae424d70b8fe0cd1e70e84f5a",
+  "model_freeze_sha256": "7816def9ab488d6057bf5323d47d7c4f155a0f2f706aa8db7befb0a9b2fc247d",
+  "cleanup_absence_proved": true,
+  "request_ledger_sha256_at_seal": "5a8c72740ed4bb4bc257a3f37959416345043030e7f48736c889a2dbae738059",
+  "sha256": {
+    "cache-stop.json": "5a702bf2f70cad37ef697d8772c2d4087684b6b0a7cc133afdbbf5207082a30b",
+    "cleanup.json": "2c1270a536ed6eeaa6ce7e0615955b4a76b7185370134dfdcd9e4cffe6c92e0a",
+    "p7-g2-squid-20-tenant-keyed-hold-cache/cache.conf": "d269a7f46ccf705dc41eb1a3e63d8f805d0907e73afdb8a6b4252e0253e4d013",
+    "p7-g2-squid-20-tenant-keyed-hold-cache/initialize.txt": "12528bb4630da16150859f67769d8b4388dc8f6496125f2266f39980df64b41f",
+    "p7-g2-squid-20-tenant-keyed-hold-cache/origins.json": "76e26341c95fbc68fa2b7f5b717dea19c1acd87c149f627547a0cd3e739b2de4",
+    "p7-g2-squid-20-tenant-keyed-hold-cache/parse.txt": "f099d8287fa31cfb558229c2a328cbf7419ec74428112e3fa1b7cb06afa00aa0",
+    "p7-g2-squid-20-tenant-keyed-hold-cache/stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "p7-g2-squid-20-tenant-keyed-hold-cache/stdout.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "provision.json": "1ff7b8a36bec4168d24820b1ed25d1735eacc54eed254be08554dd506b1f57b3",
+    "request-reservations.jsonl": "5a8c72740ed4bb4bc257a3f37959416345043030e7f48736c889a2dbae738059",
+    "requests.jsonl": "181dfe81d6e79f432cb62a4d4126c9ee3fee5c87b3d7b5973284657e7e48c459",
+    "schedule.json": "84fad97f88c1c4169bbde474432c9ee24f8c26da3f7fdb9e51aeee428a8aad67",
+    "server.json": "9e5b5e05316161236ae542fcdf3392464bb371404e6684de183f059fbb2ddae3",
+    "trials.jsonl": "3bcb4f214f44e4eb7870afda4640e9baa3d48d5af64155668c0b0aa44ce38fcc"
+  }
+}

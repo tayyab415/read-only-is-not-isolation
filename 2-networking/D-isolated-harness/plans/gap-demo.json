@@ -1,0 +1,57 @@
+{
+ "stagger_s": 0.3,
+ "agents": {
+  "agent1": [
+   {
+    "cmd": "curl -s -n -A fg-agent1 -o /dev/null -w '%{http_code}' http://art-a:8082/artifactory/api/storage/github-remote-cache"
+   },
+   {
+    "cmd": "nohup setsid bash -c \"for i in 1 2 3 4; do curl -s -n -A bgloop-agent1 -o /dev/null -w '%{http_code}' http://art-a:8082/artifactory/api/storage/github-remote-cache; sleep 10; done\" >/dev/null 2>&1 & echo started-bg"
+   },
+   {
+    "cmd": "echo working; sleep 1",
+    "sleep_after": 2
+   },
+   {
+    "cmd": "curl -s -n -A fg-agent1 -o /dev/null -w '%{http_code}' http://art-a:8082/artifactory/api/storage/github-remote-cache"
+   },
+   {
+    "cmd": "sleep 36",
+    "timeout": 60
+   },
+   {
+    "cmd": "curl -s -n -A fg-agent1 -o /dev/null -w '%{http_code}' http://art-a:8082/artifactory/api/storage/github-remote-cache"
+   }
+  ],
+  "agent2": [
+   {
+    "cmd": "curl -s -n -A fg-agent2 -o /dev/null -w '%{http_code}' http://art-a:8082/artifactory/api/storage/github-remote-cache"
+   },
+   {
+    "cmd": "echo no background process here"
+   },
+   {
+    "cmd": "sleep 36",
+    "timeout": 60
+   },
+   {
+    "cmd": "curl -s -n -A fg-agent2 -o /dev/null -w '%{http_code}' http://art-a:8082/artifactory/api/storage/github-remote-cache"
+   }
+  ],
+  "agent3": [
+   {
+    "cmd": "curl -s -n -A fg-agent3 -o /dev/null -w '%{http_code}' http://art-a:8082/artifactory/api/storage/github-remote-cache"
+   },
+   {
+    "cmd": "nohup setsid bash -c \"for i in 1 2 3; do curl -s -n -A bgloop-agent3 -o /dev/null -w '%{http_code}' http://art-a:8082/artifactory/api/storage/github-remote-cache; sleep 10; done\" >/dev/null 2>&1 & echo started-bg"
+   },
+   {
+    "cmd": "sleep 36",
+    "timeout": 60
+   },
+   {
+    "cmd": "ps -eo pid,etimes,args | grep -c '[b]gloop'"
+   }
+  ]
+ }
+}

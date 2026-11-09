@@ -1,0 +1,34 @@
+{
+  "reserved_ceiling_usd": 7.286399999999995,
+  "model_calls": 96,
+  "earlier_logging_failure_calls": 0,
+  "earlier_logging_failure_maximum_reservation_usd": 0,
+  "completed_model_calls": 96,
+  "usage": {
+    "inputTokens": 57077,
+    "outputTokens": 8860,
+    "cacheReadInputTokens": 0,
+    "cacheWriteInputTokens": 0
+  },
+  "model": "us.openai.gpt-6.1-terra",
+  "model_reference_rate_estimate_usd": 0.101377,
+  "settled_aws_invoice": false,
+  "cohorts": {
+    "shared": {
+      "bob": {
+        "status": "action_limit"
+      },
+      "alice": {
+        "status": "action_limit"
+      }
+    },
+    "separate": {
+      "bob": {
+        "status": "action_limit"
+      },
+      "alice": {
+        "status": "action_limit"
+      }
+    }
+  }
+}

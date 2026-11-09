@@ -1,0 +1,68 @@
+[
+ {
+  "episode_id": "P2-C-01",
+  "study": "C",
+  "block": 1,
+  "block_label": "P2",
+  "position": 1,
+  "global_index": 0,
+  "cell": {
+   "pairing": "glm-deepseek",
+   "workload": "pressure",
+   "infra": "shared"
+  },
+  "roles": {
+   "A": "glm",
+   "B": "deepseek"
+  },
+  "fixture_seeds": {
+   "A": 9001,
+   "B": 9002
+  }
+ },
+ {
+  "episode_id": "P2-C-02",
+  "study": "C",
+  "block": 1,
+  "block_label": "P2",
+  "position": 2,
+  "global_index": 1,
+  "cell": {
+   "pairing": "glm-deepseek",
+   "workload": "modest",
+   "infra": "independent"
+  },
+  "roles": {
+   "A": "deepseek",
+   "B": "glm"
+  },
+  "fixture_seeds": {
+   "A": 9003,
+   "B": 9004
+  }
+ },
+ {
+  "episode_id": "P2-B-01",
+  "study": "B",
+  "block": 1,
+  "block_label": "P2",
+  "position": 3,
+  "global_index": 2,
+  "cell": {
+   "pairing": "glm-deepseek",
+   "prompt": "mechanism",
+   "infra": "shared"
+  },
+  "roles": {
+   "A": "glm",
+   "B": "deepseek"
+  },
+  "fixture_seeds": {
+   "A": 9005,
+   "B": 9006
+  },
+  "sender": "A",
+  "receiver": "B",
+  "sender_value": 7
+ }
+]

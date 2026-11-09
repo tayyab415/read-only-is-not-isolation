@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "seed": 2026110802,
+  "recipe_probabilities": {
+    "artifact_get": 0.15,
+    "artifact_head": 0.1,
+    "artifact_conditional_get": 0.1,
+    "artifact_range_get": 0.1,
+    "artifact_stats": 0.1,
+    "artifact_properties": 0.1,
+    "artifact_list": 0.1,
+    "rendezvous_get": 0.1,
+    "directory_get": 0.05,
+    "fresh_get": 0.05,
+    "load": 0.05
+  },
+  "storage_blocked_recipe_probabilities": {
+    "artifact_get": 0.25,
+    "artifact_head": 0.17,
+    "artifact_conditional_get": 0.17,
+    "artifact_range_get": 0.17,
+    "rendezvous_get": 0.08,
+    "directory_get": 0.08,
+    "fresh_get": 0.08
+  },
+  "window_seconds": 1.0,
+  "settle_seconds": 0.3,
+  "inter_trial_seconds": 0.5,
+  "load_concurrency": 8
+}

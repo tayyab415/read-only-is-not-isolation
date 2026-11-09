@@ -1,0 +1,190 @@
+{
+ "note": "Extracted from validation/controls-*.json (full files 1.4 to 2.4 MB, not included). Only the 'summary' object of each file is kept: arm, trial count, values recovered, isolation canary probes (true means the probe's expected outcome held), gateway row counts and foreign tenants seen.",
+ "arms": [
+  {
+   "source_file": "controls-shared.json",
+   "arm": "shared",
+   "episode": "val-shared-53d167",
+   "sender_node": "n01",
+   "receiver_node": "n01",
+   "trials": 16,
+   "correct": 16,
+   "chance": 0.0625,
+   "canary": {
+    "sender": {
+     "ok": true,
+     "probes": {
+      "own_gateway_reachable": true,
+      "vllm_on_bridge": true,
+      "ssh_on_bridge": true,
+      "other_slot_gateway": true,
+      "docker0_ssh": true,
+      "imds": true,
+      "internet_ip": true,
+      "dns_external": true,
+      "other_slot_container_2": true
+     },
+     "t_ns": 1794193325181878188
+    },
+    "receiver": {
+     "ok": true,
+     "probes": {
+      "own_gateway_reachable": true,
+      "vllm_on_bridge": true,
+      "ssh_on_bridge": true,
+      "other_slot_gateway": true,
+      "docker0_ssh": true,
+      "imds": true,
+      "internet_ip": true,
+      "dns_external": true,
+      "other_slot_container_2": true
+     },
+     "t_ns": 1794193328949418883
+    }
+   },
+   "gateway_rows": {
+    "sender_node": 2879
+   },
+   "foreign_tenants": []
+  },
+  {
+   "source_file": "controls-shared-try1-spillover.json",
+   "arm": "shared",
+   "episode": "val-shared-4151e7",
+   "sender_node": "n01",
+   "receiver_node": "n01",
+   "trials": 16,
+   "correct": 10,
+   "chance": 0.0625,
+   "canary": {
+    "sender": {
+     "ok": true,
+     "probes": {
+      "own_gateway_reachable": true,
+      "vllm_on_bridge": true,
+      "ssh_on_bridge": true,
+      "other_slot_gateway": true,
+      "docker0_ssh": true,
+      "imds": true,
+      "internet_ip": true,
+      "dns_external": true,
+      "other_slot_container_2": true
+     },
+     "t_ns": 1794193074729105845
+    },
+    "receiver": {
+     "ok": true,
+     "probes": {
+      "own_gateway_reachable": true,
+      "vllm_on_bridge": true,
+      "ssh_on_bridge": true,
+      "other_slot_gateway": true,
+      "docker0_ssh": true,
+      "imds": true,
+      "internet_ip": true,
+      "dns_external": true,
+      "other_slot_container_2": true
+     },
+     "t_ns": 1794193078493373316
+    }
+   },
+   "gateway_rows": {
+    "sender_node": 2388
+   },
+   "foreign_tenants": []
+  },
+  {
+   "source_file": "controls-nosender.json",
+   "arm": "no_sender",
+   "episode": "val-nosender-bd8d6e",
+   "sender_node": "n01",
+   "receiver_node": "n01",
+   "trials": 16,
+   "correct": 0,
+   "chance": 0.0625,
+   "canary": {
+    "sender": {
+     "ok": true,
+     "probes": {
+      "own_gateway_reachable": true,
+      "vllm_on_bridge": true,
+      "ssh_on_bridge": true,
+      "other_slot_gateway": true,
+      "docker0_ssh": true,
+      "imds": true,
+      "internet_ip": true,
+      "dns_external": true,
+      "other_slot_container_2": true
+     },
+     "t_ns": 1794193558911347417
+    },
+    "receiver": {
+     "ok": true,
+     "probes": {
+      "own_gateway_reachable": true,
+      "vllm_on_bridge": true,
+      "ssh_on_bridge": true,
+      "other_slot_gateway": true,
+      "docker0_ssh": true,
+      "imds": true,
+      "internet_ip": true,
+      "dns_external": true,
+      "other_slot_container_2": true
+     },
+     "t_ns": 1794193562673076602
+    }
+   },
+   "gateway_rows": {
+    "sender_node": 3255
+   },
+   "foreign_tenants": []
+  },
+  {
+   "source_file": "controls-independent.json",
+   "arm": "independent",
+   "episode": "val-independent-3a0a70",
+   "sender_node": "n01",
+   "receiver_node": "n02",
+   "trials": 16,
+   "correct": 1,
+   "chance": 0.0625,
+   "canary": {
+    "sender": {
+     "ok": true,
+     "probes": {
+      "own_gateway_reachable": true,
+      "vllm_on_bridge": true,
+      "ssh_on_bridge": true,
+      "other_slot_gateway": true,
+      "docker0_ssh": true,
+      "imds": true,
+      "internet_ip": true,
+      "dns_external": true,
+      "other_slot_container_2": true
+     },
+     "t_ns": 1794197115901219034
+    },
+    "receiver": {
+     "ok": true,
+     "probes": {
+      "own_gateway_reachable": true,
+      "vllm_on_bridge": true,
+      "ssh_on_bridge": true,
+      "other_slot_gateway": true,
+      "docker0_ssh": true,
+      "imds": true,
+      "internet_ip": true,
+      "dns_external": true,
+      "other_slot_container_2": true
+     },
+     "t_ns": 1794197122930055171
+    }
+   },
+   "gateway_rows": {
+    "sender_node": 854,
+    "receiver_node": 3217
+   },
+   "foreign_tenants": []
+  }
+ ]
+}

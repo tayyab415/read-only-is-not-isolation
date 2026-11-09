@@ -1,0 +1,5 @@
+{
+  "outcome": "infra_error",
+  "error": "service provision ('a2-07', 'open') failed (rc=1): Traceback (most recent call last):\n  File \"$HOME/workspaces/artifactory-lab/n/service.py\", line 503, in <module>\n    provision(sys.argv[2], sys.argv[3])\n  File \"$HOME/workspaces/artifactory-lab/n/service.py\", line 244, in provision\n    raise RuntimeError(f\"failed to create user {username}: HTTP {status}\")\nRuntimeError: failed to create user n-a2-07-bob: HTTP 400",
+  "type": "RuntimeError"
+}

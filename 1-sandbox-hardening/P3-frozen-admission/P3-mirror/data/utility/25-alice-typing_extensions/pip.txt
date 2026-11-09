@@ -1,0 +1,31 @@
+Looking in indexes: http://127.0.0.1:64627/simple/
+Collecting typing_extensions==4.12.2
+  Downloading http://127.0.0.1:64627/files/04e5ca0351e0f3f85c6853954072df659d0d13fac324d0072316b67d7794700d/typing_extensions-4.12.2-py3-none-any.whl (37 kB)
+Installing collected packages: typing_extensions
+Successfully installed typing_extensions-4.12.2
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+spyder 5.4.3 requires pyqt5<5.16, which is not installed.
+spyder 5.4.3 requires pyqtwebengine<5.16, which is not installed.
+adaption 0.19.0 requires typing-extensions<5,>=4.14, but you have typing-extensions 4.12.2 which is incompatible.
+streamlit 1.39.0 requires packaging<25,>=20, but you have packaging 25.0 which is incompatible.
+streamlit 1.39.0 requires pillow<11,>=7.1.0, but you have pillow 11.3.0 which is incompatible.
+streamlit 1.39.0 requires protobuf<6,>=3.20, but you have protobuf 6.33.5 which is incompatible.
+streamlit 1.39.0 requires rich<14,>=10.14.0, but you have rich 15.0.0 which is incompatible.
+google-genai 2.20.0 requires typing-extensions<5.0.0,>=4.14.0, but you have typing-extensions 4.12.2 which is incompatible.
+pydantic 2.12.5 requires typing-extensions>=4.14.1, but you have typing-extensions 4.12.2 which is incompatible.
+directors-cut 0.1.0 requires numpy<2.0.0, but you have numpy 2.4.2 which is incompatible.
+langchain-core 0.1.53 requires packaging<24.0,>=23.2, but you have packaging 25.0 which is incompatible.
+langchain-core 0.1.53 requires tenacity<9.0.0,>=8.1.0, but you have tenacity 9.1.2 which is incompatible.
+google-cloud-aiplatform 1.141.0 requires google-genai<2.0.0,>=1.59.0; python_version >= "3.10", but you have google-genai 2.20.0 which is incompatible.
+bigframes 2.21.0 requires google-cloud-bigquery[bqstorage,pandas]>=3.31.0, but you have google-cloud-bigquery 3.17.0 which is incompatible.
+bigframes 2.21.0 requires rich<14,>=12.4.4, but you have rich 15.0.0 which is incompatible.
+gradio 6.0.0 requires gradio-client==2.0.0-dev.3, but you have gradio-client 2.5.0 which is incompatible.
+gradio 6.0.0 requires pydantic<=2.12.4,>=2.11.10, but you have pydantic 2.12.5 which is incompatible.
+pydantic-core 2.41.5 requires typing-extensions>=4.14.1, but you have typing-extensions 4.12.2 which is incompatible.
+langchain-openai 0.3.31 requires langchain-core<1.0.0,>=0.3.74, but you have langchain-core 0.1.53 which is incompatible.
+chex 0.1.91 requires typing_extensions>=4.15.0, but you have typing-extensions 4.12.2 which is incompatible.
+google-adk 1.27.1 requires google-genai<2.0.0,>=1.56.0, but you have google-genai 2.20.0 which is incompatible.
+socceraction 1.5.1 requires numpy<2.0.0,>=1.26.0, but you have numpy 2.4.2 which is incompatible.
+spyder 5.4.3 requires ipython!=8.10.0,!=8.8.0,!=8.9.0,<9.0.0,>=7.31.1, but you have ipython 9.5.0 which is incompatible.
+spyder 5.4.3 requires jedi<0.19.0,>=0.17.2, but you have jedi 0.19.2 which is incompatible.
+aiobotocore 2.5.0 requires botocore<1.29.77,>=1.29.76, but you have botocore 1.43.15 which is incompatible.

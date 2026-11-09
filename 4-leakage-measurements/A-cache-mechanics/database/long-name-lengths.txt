@@ -1,0 +1,17 @@
+COMMAND ['docker', 'exec', 'art-a-db', 'psql', '-U', 'artifactory', '-d', 'artifactory', '-P', 'null=<NULL>', '-c', "select length(node_name),octet_length(node_name),left(node_name,20)\n    from nodes where repo='github-remote-cache' and node_path='zz_A_names' order by node_id"]
+ length | octet_length |         left         
+--------+--------------+----------------------
+    254 |          254 | nnnnnnnnnnnnnnnnnnnn
+    255 |          255 | nnnnnnnnnnnnnnnnnnnn
+     19 |           19 | message with spaces
+      7 |           12 | café_测试
+     14 |           14 | note_[a]{b}(c)
+     10 |           10 | note:colon
+      9 |            9 | note#hash
+      8 |            8 | note&and
+     12 |           12 | note%percent
+      9 |            9 | note+plus
+     10 |           10 | note=equal
+    255 |          508 | u_éééééééééééééééééé
+(12 rows)
+

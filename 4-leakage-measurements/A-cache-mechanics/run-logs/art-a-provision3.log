@@ -1,0 +1,19 @@
+legacy-user-api-oss-gate-retry-1 admin PUT /api/security/users/admin 400
+secure-admin-ui-retry-1 admin PUT /ui/users/admin 200
+secured-admin-version-retry-1 admin GET /api/system/version 200
+Administrator password changed
+default-permissions-legacy-retry-1 admin GET /api/security/permissions 400
+default-permission-anything-retry-1 admin GET /ui/permissiontargets/Anything 200
+default-permission-remote-retry-1 admin GET /ui/permissiontargets/Any%20Remote 200
+existing-a-read admin GET /ui/users/a-read 200
+existing-a-cache admin GET /ui/users/a-cache 200
+existing-a-cache2 admin GET /ui/users/a-cache2 200
+create-github-remote-legacy admin PUT /api/repositories/github-remote 400
+existing-repository-ui admin GET /ui/admin/repositories/remote/github-remote 200
+create-permission-ui admin POST /ui/permissiontargets 201
+Traceback (most recent call last):
+  File "$LAB_HOME/a/scripts/provision.py", line 62, in <module>
+    anonymous(False)
+  File "$LAB_HOME/a/scripts/common.py", line 110, in anonymous
+    raise RuntimeError("No anonAccessEnabled in XML")
+RuntimeError: No anonAccessEnabled in XML

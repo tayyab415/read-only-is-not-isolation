@@ -1,0 +1,115 @@
+{
+ "benign_pool": {
+  "n": 25490,
+  "by_source": {
+   "xlam_calls": 8740,
+   "codesearchnet_js": 4925,
+   "nebius_openhands_bash": 3160,
+   "swegym_openhands_bash": 2456,
+   "glaive_calls": 2447,
+   "local_npm": 1617,
+   "hf_docs": 1510,
+   "agentapprove": 330,
+   "tomngdev_shell": 240,
+   "rogue_security": 65
+  }
+ },
+ "all": {
+  "n_rows": 43784,
+  "n_clusters": 17618,
+  "struct_exact_rows": 0.0,
+  "struct_exact_clusterw": 0.0,
+  "struct_near_rows": 0.0002,
+  "struct_near_clusterw": 0.0002,
+  "detok_cos>=0.9_rows": 0.0,
+  "detok_cos>=0.9_clusterw": 0.0,
+  "detok_cos>=0.8_rows": 0.0,
+  "detok_cos>=0.8_clusterw": 0.0,
+  "detok_maxcos_median": 0.1129
+ },
+ "by_type": {
+  "decode_and_run": {
+   "n_rows": 2998,
+   "n_clusters": 1505,
+   "struct_exact_rows": 0.0,
+   "struct_exact_clusterw": 0.0,
+   "struct_near_rows": 0.0,
+   "struct_near_clusterw": 0.0,
+   "detok_cos>=0.9_rows": 0.0,
+   "detok_cos>=0.9_clusterw": 0.0,
+   "detok_cos>=0.8_rows": 0.0,
+   "detok_cos>=0.8_clusterw": 0.0,
+   "detok_maxcos_median": 0.1129
+  },
+  "hf_api_with_auth": {
+   "n_rows": 265,
+   "n_clusters": 187,
+   "struct_exact_rows": 0.0,
+   "struct_exact_clusterw": 0.0,
+   "struct_near_rows": 0.0,
+   "struct_near_clusterw": 0.0,
+   "detok_cos>=0.9_rows": 0.0,
+   "detok_cos>=0.9_clusterw": 0.0,
+   "detok_cos>=0.8_rows": 0.0,
+   "detok_cos>=0.8_clusterw": 0.0,
+   "detok_maxcos_median": 0.1118
+  },
+  "image_beacon": {
+   "n_rows": 7882,
+   "n_clusters": 2975,
+   "struct_exact_rows": 0.0,
+   "struct_exact_clusterw": 0.0,
+   "struct_near_rows": 0.0,
+   "struct_near_clusterw": 0.0,
+   "detok_cos>=0.9_rows": 0.0,
+   "detok_cos>=0.9_clusterw": 0.0,
+   "detok_cos>=0.8_rows": 0.0,
+   "detok_cos>=0.8_clusterw": 0.0,
+   "detok_maxcos_median": 0.1132
+  },
+  "other": {
+   "n_rows": 17583,
+   "n_clusters": 8200,
+   "struct_exact_rows": 0.0,
+   "struct_exact_clusterw": 0.0,
+   "struct_near_rows": 0.0003,
+   "struct_near_clusterw": 0.0004,
+   "detok_cos>=0.9_rows": 0.0,
+   "detok_cos>=0.9_clusterw": 0.0,
+   "detok_cos>=0.8_rows": 0.0,
+   "detok_cos>=0.8_clusterw": 0.0,
+   "detok_maxcos_median": 0.1165
+  },
+  "python_or_shell_launcher": {
+   "n_rows": 3054,
+   "n_clusters": 2015,
+   "struct_exact_rows": 0.0,
+   "struct_exact_clusterw": 0.0,
+   "struct_near_rows": 0.0003,
+   "struct_near_clusterw": 0.0005,
+   "detok_cos>=0.9_rows": 0.0,
+   "detok_cos>=0.9_clusterw": 0.0,
+   "detok_cos>=0.8_rows": 0.0,
+   "detok_cos>=0.8_clusterw": 0.0,
+   "detok_maxcos_median": 0.1067
+  },
+  "script_or_frame_injection": {
+   "n_rows": 12002,
+   "n_clusters": 2985,
+   "struct_exact_rows": 0.0,
+   "struct_exact_clusterw": 0.0,
+   "struct_near_rows": 0.0,
+   "struct_near_clusterw": 0.0,
+   "detok_cos>=0.9_rows": 0.0,
+   "detok_cos>=0.9_clusterw": 0.0,
+   "detok_cos>=0.8_rows": 0.0,
+   "detok_cos>=0.8_clusterw": 0.0,
+   "detok_maxcos_median": 0.1129
+  }
+ },
+ "benign_twin_sources_struct_near": {
+  "glaive_calls": 4,
+  "xlam_calls": 3
+ },
+ "twin_examples_removed_for_release": "18 example rows (Swarm Traces text) removed"
+}

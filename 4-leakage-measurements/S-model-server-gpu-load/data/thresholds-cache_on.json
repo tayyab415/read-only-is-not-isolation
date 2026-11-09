@@ -1,0 +1,56 @@
+{
+ "phase": "cache_on",
+ "thresholds": {
+  "shared": {
+   "threshold_ms": 38.827768,
+   "low_means_one": true,
+   "calibration_accuracy": 1.0,
+   "n": 120
+  },
+  "salted": {
+   "threshold_ms": 53.8203985,
+   "low_means_one": true,
+   "calibration_accuracy": 0.5333333333333333,
+   "n": 120
+  },
+  "client_salt": {
+   "threshold_ms": 38.618603,
+   "low_means_one": true,
+   "calibration_accuracy": 1.0,
+   "n": 120
+  },
+  "contention": {
+   "threshold_ms": 233.79866700000002,
+   "low_means_one": false,
+   "calibration_accuracy": 1.0,
+   "n": 120
+  },
+  "contention_light": {
+   "threshold_ms": 76.7096235,
+   "low_means_one": false,
+   "calibration_accuracy": 1.0,
+   "n": 120
+  },
+  "shared_short": {
+   "threshold_ms": 21.483141,
+   "low_means_one": true,
+   "calibration_accuracy": 0.975,
+   "n": 120
+  },
+  "shared_busy": {
+   "threshold_ms": 69.13199700000001,
+   "low_means_one": true,
+   "calibration_accuracy": 0.8333333333333334,
+   "n": 120
+  },
+  "salted_busy": {
+   "threshold_ms": 76.613163,
+   "low_means_one": true,
+   "calibration_accuracy": 0.55,
+   "n": 120
+  }
+ },
+ "frozen_utc_ns": 1794185129221348793,
+ "calibration_sha256": "230129da55b063581bfe9c8191aa6a2884c2197898d14b39f5ce7e548a1ae343",
+ "trials_py_sha256": "f1244ee031289b3894ac58e6f6e367b81fc9863e37385a06196eb0bdcfb871df"
+}

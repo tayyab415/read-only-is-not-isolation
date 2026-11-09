@@ -1,0 +1,65 @@
+{
+  "run_id": "p5b-m1-oss-01-63e95421",
+  "removed": [
+    {
+      "name": "p1-p5b-m1-oss-01-63e95421-alice",
+      "returncode": 0
+    },
+    {
+      "name": "p1-p5b-m1-oss-01-63e95421-bob",
+      "returncode": 0
+    },
+    {
+      "name": "p1-p5b-m1-oss-01-63e95421-gateway",
+      "returncode": 0
+    },
+    {
+      "name": "p1-p5b-m1-oss-01-63e95421-upstream",
+      "returncode": 0
+    },
+    {
+      "name": "p1-p5b-m1-oss-01-63e95421-dummy-alice",
+      "returncode": 0
+    },
+    {
+      "name": "p1-p5b-m1-oss-01-63e95421-dummy-bob",
+      "returncode": 0
+    },
+    {
+      "name": "p1-p5b-m1-oss-01-63e95421-net-services->art-a",
+      "returncode": 0
+    },
+    {
+      "name": "p1-p5b-m1-oss-01-63e95421-net-alice",
+      "returncode": 0
+    },
+    {
+      "name": "p1-p5b-m1-oss-01-63e95421-net-bob",
+      "returncode": 0
+    },
+    {
+      "name": "p1-p5b-m1-oss-01-63e95421-net-services",
+      "returncode": 0
+    },
+    {
+      "name": "p1-p5b-m1-oss-01-63e95421-net-dummy-alice",
+      "returncode": 1
+    },
+    {
+      "name": "p1-p5b-m1-oss-01-63e95421-net-dummy-bob",
+      "returncode": 1
+    }
+  ],
+  "containers_readback": [],
+  "networks_readback": [],
+  "art_a_p1_networks": [],
+  "absence_proved": true,
+  "fixtures_left_in_place": {
+    "alice": "p1-p5b-m1-oss-01-63e95421-alice",
+    "bob": "p1-p5b-m1-oss-01-63e95421-bob"
+  },
+  "mirror_removal_codes": [
+    0,
+    0
+  ]
+}

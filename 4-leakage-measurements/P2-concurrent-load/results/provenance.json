@@ -1,0 +1,59 @@
+{
+  "utc": "2026-11-09T03:38:04.910120+00:00",
+  "inputs": {
+    "evidence/P2-residual/results/p2-m1/holdout-results.json": "fce05bd604bdc2994d1a033d0b0e36e30a37a5949ad7565c25f35e26d1f735a9",
+    "evidence/P2-residual/data/p2-m1/holdout-audit-results.json": "70462ced82be3beab14ea30be95ae1bbcf9c370c911862aed84d4b7eaeadbec7",
+    "evidence/P2-residual/SOURCES-FROZEN.json": "a94a7883b207bd1ea9f6b6b83d9581f8370b975561cfb9be43ff8ff2d50f7e42",
+    "evidence/P2-residual/FROZEN.json": "9f01e42c8d81a7926ac157bbe3c86c9d70bb62733ce9e28d178b5ea6ad83ea14",
+    "evidence/P2-verification/VERIFICATION-FROZEN.json": "83ed49795468c7ba1ca6961d7fc7c64aa5cad64adf423e8121f20ad974b66005",
+    "evidence/P2-verification/RESULT.json": "2120db34049af888933ce999afa97416bbe2b8c154130fecc24647915413b98f"
+  },
+  "generator_sha256": "02410d3c244f0546f2ad03eb9b27b59819dde6eade47888b54f439a123942ec2",
+  "plotted": {
+    "separate": {
+      "correct": 942,
+      "trials": 1000,
+      "accuracy": 0.942,
+      "original_interval_98_75": [
+        0.9209604312804218,
+        0.9589338673730435
+      ]
+    },
+    "sham": {
+      "correct": 657,
+      "trials": 1000,
+      "accuracy": 0.657,
+      "original_interval_98_75": [
+        0.6183548349192453,
+        0.6942119221105074
+      ]
+    },
+    "aa": {
+      "correct": 517,
+      "trials": 1000,
+      "accuracy": 0.517,
+      "original_interval_98_75": [
+        0.477026635512374,
+        0.5568183080499535
+      ]
+    },
+    "immutable": {
+      "correct": 562,
+      "trials": 1000,
+      "accuracy": 0.562,
+      "original_interval_98_75": [
+        0.5221023123812683,
+        0.6013321200961095
+      ]
+    }
+  },
+  "primary_aa_null_passed": true,
+  "statistics_recomputed_or_changed": false,
+  "outputs": {
+    "P2-holdout.pdf": "806c3ee89c720220bf14ac6076a28d617c2b42fe8e55818646544cac624c3796",
+    "P2-holdout.png": "4b7156ff39f08131100f0e0e2b5f6be1fea8baa6cca159d918f91d04231472ac",
+    "P2-holdout.svg": "b766c9f6b5df19cba88285f68e80330f01056a1be8fbe2d3903bfac721e95a8c"
+  },
+  "native_requests": 0,
+  "provider_calls": 0
+}

@@ -1,0 +1,110 @@
+{
+  "alice": {
+    "ready": true,
+    "inventory": {
+      "kernel": {
+        "sysname": "Linux",
+        "nodename": "af94d79677fc",
+        "release": "7.0.0-1014-aws",
+        "version": "#14~24.04.1-Ubuntu SMP PREEMPT Fri Sep 18 21:24:59 UTC 2026",
+        "machine": "x86_64"
+      },
+      "cpu_count": 4,
+      "clock_ticks": 100,
+      "cpu_stat": {
+        "read_start_utc_ns": 1794201143623907639,
+        "read_end_utc_ns": 1794201143624021562,
+        "cpu_line": "cpu  1989372 249 455209 16155472 102439 0 34004 1491 0 0",
+        "file_sha256": "b6b4a9bee6b0c7bdb44ab1566c358bbd144bfdf2050a3885f93809f38a01c6f7"
+      },
+      "namespace_ids": {
+        "cgroup": "cgroup:[4026532296]",
+        "net": "net:[4026532297]",
+        "pid": "pid:[4026532295]",
+        "mnt": "mnt:[4026532237]"
+      },
+      "mountinfo": "446 378 0:47 / / ro,relatime - overlay overlay rw,lowerdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/2806/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/36/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/35/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/34/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/33/fs,upperdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/2807/fs,workdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/2807/work,nouserxattr\n448 446 0:61 / /proc rw,nosuid,nodev,noexec,relatime - proc proc rw\n449 446 0:62 / /dev rw,nosuid - tmpfs tmpfs rw,size=65536k,mode=755,inode64\n450 449 0:63 / /dev/pts rw,nosuid,noexec,relatime - devpts devpts rw,gid=5,mode=620,ptmxmode=666\n451 446 0:64 / /sys ro,nosuid,nodev,noexec,relatime - sysfs sysfs ro\n452 451 0:31 / /sys/fs/cgroup ro,nosuid,nodev,noexec,relatime - cgroup2 cgroup rw,nsdelegate,memory_recursiveprot\n453 449 0:59 / /dev/mqueue rw,nosuid,nodev,noexec,relatime - mqueue mqueue rw\n454 449 0:65 / /dev/shm rw,nosuid,nodev,noexec,relatime - tmpfs shm rw,size=65536k,inode64\n455 446 0:68 / /tmp rw,nosuid,nodev,noexec,relatime - tmpfs tmpfs rw,size=16384k,inode64\n456 446 259:1 /var/lib/docker/containers/af94d79677fca624e4852fe701bdd00f77b2787a312a5829521fcc6f44836801/resolv.conf /etc/resolv.conf ro,relatime - ext4 /dev/root rw,discard,errors=remount-ro,commit=30\n457 446 259:1 /var/lib/docker/containers/af94d79677fca624e4852fe701bdd00f77b2787a312a5829521fcc6f44836801/hostname /etc/hostname ro,relatime - ext4 /dev/root rw,discard,errors=remount-ro,commit=30\n476 446 259:1 /var/lib/docker/containers/af94d79677fca624e4852fe701bdd00f77b2787a312a5829521fcc6f44836801/hosts /etc/hosts ro,relatime - ext4 /dev/root rw,discard,errors=remount-ro,commit=30\n379 448 0:61 /bus /proc/bus ro,nosuid,nodev,noexec,relatime - proc proc rw\n386 448 0:61 /fs /proc/fs ro,nosuid,nodev,noexec,relatime - proc proc rw\n387 448 0:61 /irq /proc/irq ro,nosuid,nodev,noexec,relatime - proc proc rw\n388 448 0:61 /sys /proc/sys ro,nosuid,nodev,noexec,relatime - proc proc rw\n415 448 0:61 /sysrq-trigger /proc/sysrq-trigger ro,nosuid,nodev,noexec,relatime - proc proc rw\n416 448 0:71 / /proc/acpi ro,relatime - tmpfs tmpfs ro,inode64\n417 448 0:62 /null /proc/interrupts rw,nosuid - tmpfs tmpfs rw,size=65536k,mode=755,inode64\n418 448 0:62 /null /proc/kcore rw,nosuid - tmpfs tmpfs rw,size=65536k,mode=755,inode64\n419 448 0:62 /null /proc/keys rw,nosuid - tmpfs tmpfs rw,size=65536k,mode=755,inode64\n420 448 0:62 /null /proc/latency_stats rw,nosuid - tmpfs tmpfs rw,size=65536k,mode=755,inode64\n421 448 0:86 / /proc/scsi ro,relatime - tmpfs tmpfs ro,inode64\n422 448 0:62 /null /proc/timer_list rw,nosuid - tmpfs tmpfs rw,size=65536k,mode=755,inode64\n423 451 0:87 / /sys/firmware ro,relatime - tmpfs tmpfs ro,inode64\n",
+      "self_cgroup": "0::/\n",
+      "cgroup_v2": true,
+      "cpu_max": "50000 100000\n",
+      "memory_max": "134217728\n",
+      "cgroup": {
+        "raw": "usage_usec 540811\nuser_usec 477956\nsystem_usec 62855\nnice_usec 0\ncore_sched.force_idle_usec 0\nnr_periods 18\nnr_throttled 8\nthrottled_usec 290733\nnr_bursts 0\nburst_usec 0\n",
+        "values": {
+          "usage_usec": 540811,
+          "user_usec": 477956,
+          "system_usec": 62855,
+          "nice_usec": 0,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 18,
+          "nr_throttled": 8,
+          "throttled_usec": 290733,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      }
+    },
+    "file_task": {
+      "path": "/tmp/p8-private.txt",
+      "bytes": 1024,
+      "sha256": "d724af2e1aad9f7a8584caa09f0794aad196663f745446783a6719eb782c1eae",
+      "successful": true,
+      "start_utc_ns": 1794201143624515017,
+      "end_utc_ns": 1794201143624595949
+    }
+  },
+  "bob": {
+    "ready": true,
+    "inventory": {
+      "kernel": {
+        "sysname": "Linux",
+        "nodename": "b0909a727e7b",
+        "release": "7.0.0-1014-aws",
+        "version": "#14~24.04.1-Ubuntu SMP PREEMPT Fri Sep 18 21:24:59 UTC 2026",
+        "machine": "x86_64"
+      },
+      "cpu_count": 4,
+      "clock_ticks": 100,
+      "cpu_stat": {
+        "read_start_utc_ns": 1794201143945285463,
+        "read_end_utc_ns": 1794201143945351795,
+        "cpu_line": "cpu  0 0 0 1000000 0 0 0 0 0 0",
+        "file_sha256": "52b7deb53e7828e60e4edec07323e9013fd52f548fdcf2ab9392db933227e8b7"
+      },
+      "namespace_ids": {
+        "cgroup": "cgroup:[4026532516]",
+        "net": "net:[4026532517]",
+        "pid": "pid:[4026532515]",
+        "mnt": "mnt:[4026532512]"
+      },
+      "mountinfo": "681 618 0:56 / / ro,relatime - overlay overlay rw,lowerdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/2810/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/36/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/35/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/34/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/33/fs,upperdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/2811/fs,workdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/2811/work,nouserxattr\n683 681 0:103 / /proc rw,nosuid,nodev,noexec,relatime - proc proc rw\n684 681 0:104 / /dev rw,nosuid - tmpfs tmpfs rw,size=65536k,mode=755,inode64\n685 684 0:105 / /dev/pts rw,nosuid,noexec,relatime - devpts devpts rw,gid=5,mode=620,ptmxmode=666\n686 681 0:106 / /sys ro,nosuid,nodev,noexec,relatime - sysfs sysfs ro\n687 686 0:31 / /sys/fs/cgroup ro,nosuid,nodev,noexec,relatime - cgroup2 cgroup rw,nsdelegate,memory_recursiveprot\n688 684 0:101 / /dev/mqueue rw,nosuid,nodev,noexec,relatime - mqueue mqueue rw\n689 684 0:107 / /dev/shm rw,nosuid,nodev,noexec,relatime - tmpfs shm rw,size=65536k,inode64\n690 681 0:108 / /tmp rw,nosuid,nodev,noexec,relatime - tmpfs tmpfs rw,size=16384k,inode64\n691 683 259:1 $LAB_HOME/next/P8-telemetry/runtime-config/stat-p8-s1-s-masked.txt /proc/stat ro,relatime - ext4 /dev/root rw,discard,errors=remount-ro,commit=30\n692 681 259:1 /var/lib/docker/containers/b0909a727e7bf932d4f5af9d2c9a7fe547e72ae5fe1260e2975249d7455d2670/resolv.conf /etc/resolv.conf ro,relatime - ext4 /dev/root rw,discard,errors=remount-ro,commit=30\n693 681 259:1 /var/lib/docker/containers/b0909a727e7bf932d4f5af9d2c9a7fe547e72ae5fe1260e2975249d7455d2670/hostname /etc/hostname ro,relatime - ext4 /dev/root rw,discard,errors=remount-ro,commit=30\n694 681 259:1 /var/lib/docker/containers/b0909a727e7bf932d4f5af9d2c9a7fe547e72ae5fe1260e2975249d7455d2670/hosts /etc/hosts ro,relatime - ext4 /dev/root rw,discard,errors=remount-ro,commit=30\n619 683 0:103 /bus /proc/bus ro,nosuid,nodev,noexec,relatime - proc proc rw\n622 683 0:103 /fs /proc/fs ro,nosuid,nodev,noexec,relatime - proc proc rw\n627 683 0:103 /irq /proc/irq ro,nosuid,nodev,noexec,relatime - proc proc rw\n647 683 0:103 /sys /proc/sys ro,nosuid,nodev,noexec,relatime - proc proc rw\n648 683 0:103 /sysrq-trigger /proc/sysrq-trigger ro,nosuid,nodev,noexec,relatime - proc proc rw\n649 683 0:109 / /proc/acpi ro,relatime - tmpfs tmpfs ro,inode64\n650 683 0:104 /null /proc/interrupts rw,nosuid - tmpfs tmpfs rw,size=65536k,mode=755,inode64\n651 683 0:104 /null /proc/kcore rw,nosuid - tmpfs tmpfs rw,size=65536k,mode=755,inode64\n652 683 0:104 /null /proc/keys rw,nosuid - tmpfs tmpfs rw,size=65536k,mode=755,inode64\n653 683 0:104 /null /proc/latency_stats rw,nosuid - tmpfs tmpfs rw,size=65536k,mode=755,inode64\n654 683 0:110 / /proc/scsi ro,relatime - tmpfs tmpfs ro,inode64\n655 683 0:104 /null /proc/timer_list rw,nosuid - tmpfs tmpfs rw,size=65536k,mode=755,inode64\n656 686 0:111 / /sys/firmware ro,relatime - tmpfs tmpfs ro,inode64\n",
+      "self_cgroup": "0::/\n",
+      "cgroup_v2": true,
+      "cpu_max": "50000 100000\n",
+      "memory_max": "134217728\n",
+      "cgroup": {
+        "raw": "usage_usec 652980\nuser_usec 553593\nsystem_usec 99387\nnice_usec 0\ncore_sched.force_idle_usec 0\nnr_periods 21\nnr_throttled 8\nthrottled_usec 293951\nnr_bursts 0\nburst_usec 0\n",
+        "values": {
+          "usage_usec": 652980,
+          "user_usec": 553593,
+          "system_usec": 99387,
+          "nice_usec": 0,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 21,
+          "nr_throttled": 8,
+          "throttled_usec": 293951,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      }
+    },
+    "file_task": {
+      "path": "/tmp/p8-private.txt",
+      "bytes": 1024,
+      "sha256": "d724af2e1aad9f7a8584caa09f0794aad196663f745446783a6719eb782c1eae",
+      "successful": true,
+      "start_utc_ns": 1794201143945859650,
+      "end_utc_ns": 1794201143945940112
+    }
+  }
+}

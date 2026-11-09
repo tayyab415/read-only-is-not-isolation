@@ -1,0 +1,93 @@
+[
+    {
+        "Id": "sha256:e2f7cab91bade50fae3175e8c1ad0b8a48c6b585bbb16b06b8f1d187123fd404",
+        "RepoTags": [
+            "releases-docker.jfrog.io/jfrog/artifactory-oss:7.133.6"
+        ],
+        "RepoDigests": [
+            "releases-docker.jfrog.io/jfrog/artifactory-oss@sha256:e2f7cab91bade50fae3175e8c1ad0b8a48c6b585bbb16b06b8f1d187123fd404"
+        ],
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2026-02-02T09:50:34.313952467Z",
+        "Config": {
+            "User": "artifactory",
+            "ExposedPorts": {
+                "8081/tcp": {}
+            },
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "JF_ARTIFACTORY_USER=artifactory",
+                "ARTIFACTORY_VERSION=7.133.6",
+                "LIBAIO_VERSION=0.3.113-1",
+                "ARTIFACTORY_BOOTSTRAP=/artifactory_bootstrap",
+                "JF_PRODUCT_HOME=/opt/jfrog/artifactory",
+                "JF_PRODUCT_DATA_INTERNAL=/var/opt/jfrog/artifactory",
+                "RECOMMENDED_MAX_OPEN_FILES=32000",
+                "MIN_MAX_OPEN_FILES=10000",
+                "RECOMMENDED_MAX_OPEN_PROCESSES=1024",
+                "LANG=C.utf8",
+                "TARGETARCH=amd64",
+                "JF_SHARED_RESTRICTEDMODE_ENABLED=true"
+            ],
+            "Entrypoint": [
+                "/entrypoint-artifactory.sh"
+            ],
+            "Volumes": {
+                "/var/opt/jfrog/artifactory": {}
+            },
+            "WorkingDir": "/opt/jfrog/artifactory",
+            "Labels": {
+                "architecture": "x86_64",
+                "build-date": "2025-12-18T09:11:38Z",
+                "com.redhat.component": "ubi9-micro-container",
+                "com.redhat.license_terms": "https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI",
+                "cpe": "cpe:/a:redhat:enterprise_linux:9::appstream",
+                "description": "Very small image which doesn't install the package manager.",
+                "distribution-scope": "public",
+                "io.buildah.version": "1.41.4",
+                "io.k8s.description": "Very small image which doesn't install the package manager.",
+                "io.k8s.display-name": "Red Hat Universal Base Image 9 Micro",
+                "io.openshift.expose-services": "",
+                "maintainer": "<email-removed>",
+                "name": "ubi9/ubi-micro",
+                "org.opencontainers.image.created": "2025-12-18T09:11:38Z",
+                "org.opencontainers.image.revision": "761c59b61688e7c298eae684472a98b2418d881a",
+                "release": "1766049073",
+                "summary": "ubi9 micro image",
+                "url": "https://catalog.redhat.com/en/search?searchType=containers",
+                "vcs-ref": "761c59b61688e7c298eae684472a98b2418d881a",
+                "vcs-type": "git",
+                "vendor": "Red Hat, Inc.",
+                "version": "9.7"
+            }
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 1632629339,
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:e7b9b4069a9a9cb5741b0601a7d57e3aa695946a78360e732e806e99a81bbe03",
+                "sha256:2460cf7ef62accd3005b5fd9891bac202c43bc8522a4675627bbc71d76b8a922",
+                "sha256:c4b847252e2cbefbc63dc63f9f5940f959908d17f9bf1bf34e08748ea7a62058",
+                "sha256:d36bad811a839c683dcf9581b47961ba79ee956bbeca0ff76bac9869121382b8",
+                "sha256:5ad5d6e77be7a661683c86eb0f0331937840a1774971d71b8572dabd21cc4d7f",
+                "sha256:f4230985fd2eaddf47a4ebe2376cfff9747b8d54a3ecf0cd0433deb121582f50",
+                "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                "sha256:f1b682761a9c142dd663b9fb44ffed9e7d4312ae8bab1667838f5af969f627e8",
+                "sha256:e8e774cda22a0507b22f4b35727e8e47f872962170e56baab0f892cea81b2448",
+                "sha256:a66c7b14e5d95cc860ced74a2a128f02134078045cf9c14ae0dbc9bfa185acbd",
+                "sha256:39e7081cdf0f3d430b2d7413a6f285526aad945b7528d218c88f6c61c19a98c0",
+                "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "2026-11-08T00:29:25.30432351Z"
+        },
+        "Descriptor": {
+            "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
+            "digest": "sha256:e2f7cab91bade50fae3175e8c1ad0b8a48c6b585bbb16b06b8f1d187123fd404",
+            "size": 685
+        }
+    }
+]

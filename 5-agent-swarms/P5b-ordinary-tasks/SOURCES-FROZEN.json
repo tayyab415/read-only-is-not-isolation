@@ -1,0 +1,73 @@
+{
+  "edition": 6,
+  "frozen_utc": "2026-11-09T03:27:16.629882+00:00",
+  "preparation_only": true,
+  "local_checks": 12,
+  "subject_calls": 0,
+  "deployed": false,
+  "scripted_smoke_run": false,
+  "scheduled_subjects": 12,
+  "background_wave_offsets_s": [
+    0,
+    8,
+    16,
+    24
+  ],
+  "background_commands_per_episode": 64,
+  "background_http_active": 64,
+  "background_http_idle": 0,
+  "background_assignment_in_public_identifier": false,
+  "shared_subject_stage_cap_usd": "6",
+  "sha256": {
+    "PROTOCOL.md": "797f68f1ab094d2eb3c19692613105c2dd1ce051198977f2d2be7d00a140b680",
+    "README.md": "04137168748c95d823e99bdb96326b3b8d9fc11da05663d574e5bf4b1e3317d2",
+    "background.py": "839e94acf03e9a324a7b8aad26a0b02f1877197e2b47a026f3ddd069b4cdd66c",
+    "history_audit.py": "c84df30c90d6a51d7b05d48c0d441c03c87e46b99d77faeded56bbb13167e38d",
+    "ordinary-plan.json": "8e7218889123cba727c26ac914ab823870146fbef9bc566b46f79d4bb09c8542",
+    "ordinary_audit.py": "bfaf38ddb0b19aa4a1908257e47e4937b935a4d718a8c7afbb15b0007f6146cc",
+    "ordinary_report.py": "8acf495dd8f595643f9a938c5843a5308cb24fd66b62d411ed4b7b45683c0ff9",
+    "ordinary_rpc.py": "6cafd550dc1ed4de02c3799496783180731ed3da1a8a688567c6c5ed5cec1f68",
+    "ordinary_run.py": "e51d47f6d34815f8f9bf65df6dc15b83b1228ad5f410184698c5180a6f99b4e7",
+    "ordinary_smoke.py": "604d34bfde1e424cf1c356d30a87948c6fa1601120522ba96233b344025aea0b",
+    "p5_gate.py": "be318f4586fd8417a4859b0300581cacc554e9704520bc3ce304d653522fb60a",
+    "p5_schedule.py": "c73433a1de9425d3ce301c397f181e8916ac9469363f8d3969fad76e7b466398",
+    "test_history.py": "d659526dbe1fe25dabc623c6383768e9aff5f64fe88acb8f12f3d892303ca4b1",
+    "test_preparation.py": "ad6f3c1df9b7104c9db0db8f4342526c489b17acfa79098411ce41c8c1a7b182",
+    "AMENDMENT-v2.json": "c174a07f9671e74f3d0af42b72bc20bbc5065bc723e7c4f4038580da16cf82ad",
+    "AMENDMENT-v3.json": "b11768a5fc96ee1536892de0313a6bbe8adfd00fdf304b963b5f90eca6fa4337",
+    "AMENDMENT-v4.json": "62e7666337af19d8d2dde985aff79c28ac7d51085bff74123e8a084466365349",
+    "AMENDMENT-v5.json": "1eb8f07b7b7e0334b00a01a940c86df8d3a10cc8a0da2c109535b55878241546",
+    "AMENDMENT-v6.json": "6009955559fb6a6bfe5a6fe1f413c650fdc4ce91acc5bd922a09208f76ffcc6f"
+  },
+  "import_sha256": {
+    "P4-models/SOURCES-FROZEN.json": "e7a83ecdc2d725ccc6fbf9663f5aa7bc53eb1dd82da54039f4554902763aabbc",
+    "P4-models/provider.py": "621c4d17d366c2b9265a6b682366311b80c9a4b25fa600be5270247fb6f812d8",
+    "P4-models/actions.py": "ca03ab1af8ccb7e4b3fce3130075c59ac07aaebf6addb83bc5c1fab1a1f59886",
+    "P4-models/prompts.py": "369574add0acf7dc3b035253d2aa771a84043e1544b0fa5948620eea2418bd15",
+    "P4-models/deployment.py": "8ae1a5573cc0bd8c4037ffd9221da4db304f2c2f28bb693e5507052d382cae1e",
+    "P4-models/gate.py": "7e2d324dd163225c87b9cff354492345173282797bde982003278667f35c90e9",
+    "P4-models/run.py": "6de920ff95d150454a2450bbccdba0d02c7817a1ef1f58e933f12d6fd254d272",
+    "P4-models/audit.py": "07ccf0551298329926e79dc64e741ea3fe7b3ebb7d0ee0e99bec7d684713c4ee",
+    "P4-models/test_audit.py": "f07a8cb8dcfe1058fae410c94c64c448eb2565dbb4c6471ac5743e6ece2855aa",
+    "P-budget/GUARD-FROZEN.json": "2cf6a1681a39ad765d6141c8838b75bee03793f65ace93390847dcdee3157aba",
+    "P4-audit-recovery/audit_v2.py": "b9e028f7f5d27ebbdb64d8239e33366e976db2596fb3963d134419d4f0915743",
+    "P4-audit-recovery/AMENDMENT.json": "0890f79555181b5b86f115b46b7e8dc0909ae69a77a825fcd8ddc8a89f43c31a",
+    "P4-audit-recovery/binding.py": "fb7b1985361c326040eb75fc15a68f9da88753fb1304e22c7871f847a6c6430c",
+    "P4-audit-recovery/test_interval.py": "9279240bce79d6f995298fa14dc49286e028ef70359da6f349b5f0ad0f3250dd",
+    "P4-audit-recovery/replay.py": "d03646ddc456ef9ed968eab99c1e7a42e4eec36f99259e2ba325dca247f0f60d",
+    "P4-audit-recovery/ORIGINAL-INTERVAL-DIAGNOSTIC.json": "7af4e76b7bfd556e607423d4fd1d194b56d185084ebbdd0cec3a10bd64bed487"
+  },
+  "prior_source_freeze_sha256": "7d5a0c5d7427df071608cbfbd7fbfc23c2b146010e5b312d057abe5b2b800c39",
+  "prior_source_archive": "archive/v5",
+  "withdrawn_subjects": [
+    {
+      "model": "terra",
+      "model_id": "us.openai.gpt-6.1-terra",
+      "status": "withdrawn before data by user decision",
+      "reason": "provider policy blocks",
+      "included_in_denominator": false
+    }
+  ],
+  "surviving_assignments_and_order_unchanged": true,
+  "host_for_this_run": "lab2"
+}

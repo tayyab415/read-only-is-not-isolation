@@ -1,0 +1,1204 @@
+{
+ "dataset": {
+  "requests": 4700,
+  "clients": [
+   "benign1",
+   "benign2",
+   "board1",
+   "board2",
+   "board3",
+   "board4",
+   "mixed1",
+   "mixed2"
+  ],
+  "duration_min": 75.0,
+  "board_requests": 3585,
+  "by_event": {
+   "LIST": 2174,
+   "MKCOL_CACHE": 1632,
+   "FETCH": 867,
+   "MKCOL_OTHER": 14,
+   "PUT": 13
+  }
+ },
+ "D1_mkcol": {
+  "any MKCOL": {
+   "flagged": 1642,
+   "tp": 1632,
+   "fp": 10,
+   "fn": 0,
+   "precision": 0.994,
+   "recall": 1.0
+  },
+  "MKCOL into a *-cache repo": {
+   "flagged": 1632,
+   "tp": 1632,
+   "fp": 0,
+   "fn": 0,
+   "precision": 1.0,
+   "recall": 1.0
+  },
+  "per_client": [
+   {
+    "client": "benign1",
+    "mkcol_cache": 0,
+    "mkcol_any": 0,
+    "per_hour": 0.0,
+    "first_min": null,
+    "third_min": null,
+    "tenth_min": null,
+    "truth_board": false
+   },
+   {
+    "client": "benign2",
+    "mkcol_cache": 0,
+    "mkcol_any": 10,
+    "per_hour": 0.0,
+    "first_min": null,
+    "third_min": null,
+    "tenth_min": null,
+    "truth_board": false
+   },
+   {
+    "client": "board1",
+    "mkcol_cache": 78,
+    "mkcol_any": 78,
+    "per_hour": 62.4,
+    "first_min": 0.0,
+    "third_min": 2.6,
+    "tenth_min": 3.8,
+    "truth_board": true
+   },
+   {
+    "client": "board2",
+    "mkcol_cache": 138,
+    "mkcol_any": 138,
+    "per_hour": 110.4,
+    "first_min": 0.3,
+    "third_min": 1.1,
+    "tenth_min": 3.4,
+    "truth_board": true
+   },
+   {
+    "client": "board3",
+    "mkcol_cache": 48,
+    "mkcol_any": 48,
+    "per_hour": 38.4,
+    "first_min": 0.0,
+    "third_min": 2.3,
+    "tenth_min": 6.2,
+    "truth_board": true
+   },
+   {
+    "client": "board4",
+    "mkcol_cache": 1306,
+    "mkcol_any": 1306,
+    "per_hour": 1045.0,
+    "first_min": 2.7,
+    "third_min": 4.0,
+    "tenth_min": 7.0,
+    "truth_board": true
+   },
+   {
+    "client": "mixed1",
+    "mkcol_cache": 30,
+    "mkcol_any": 30,
+    "per_hour": 24.0,
+    "first_min": 3.7,
+    "third_min": 3.7,
+    "tenth_min": 15.1,
+    "truth_board": true
+   },
+   {
+    "client": "mixed2",
+    "mkcol_cache": 32,
+    "mkcol_any": 32,
+    "per_hour": 25.6,
+    "first_min": 3.9,
+    "third_min": 8.9,
+    "tenth_min": 18.5,
+    "truth_board": true
+   }
+  ]
+ },
+ "D2_repeat_listing": {
+  "W_seconds": 600,
+  "rows": [
+   {
+    "scope": "all dirs",
+    "N": 3,
+    "flagged": 1964,
+    "tp": 1812,
+    "fp": 152,
+    "fn": 141,
+    "precision": 0.923,
+    "recall": 0.928
+   },
+   {
+    "scope": "all dirs",
+    "N": 5,
+    "flagged": 1845,
+    "tp": 1699,
+    "fp": 146,
+    "fn": 254,
+    "precision": 0.921,
+    "recall": 0.87
+   },
+   {
+    "scope": "all dirs",
+    "N": 10,
+    "flagged": 1627,
+    "tp": 1486,
+    "fp": 141,
+    "fn": 467,
+    "precision": 0.913,
+    "recall": 0.761
+   },
+   {
+    "scope": "all dirs",
+    "N": 20,
+    "flagged": 1372,
+    "tp": 1241,
+    "fp": 131,
+    "fn": 712,
+    "precision": 0.905,
+    "recall": 0.635
+   },
+   {
+    "scope": "cache repos only",
+    "N": 3,
+    "flagged": 1812,
+    "tp": 1812,
+    "fp": 0,
+    "fn": 141,
+    "precision": 1.0,
+    "recall": 0.928
+   },
+   {
+    "scope": "cache repos only",
+    "N": 5,
+    "flagged": 1699,
+    "tp": 1699,
+    "fp": 0,
+    "fn": 254,
+    "precision": 1.0,
+    "recall": 0.87
+   },
+   {
+    "scope": "cache repos only",
+    "N": 10,
+    "flagged": 1486,
+    "tp": 1486,
+    "fp": 0,
+    "fn": 467,
+    "precision": 1.0,
+    "recall": 0.761
+   },
+   {
+    "scope": "cache repos only",
+    "N": 20,
+    "flagged": 1241,
+    "tp": 1241,
+    "fp": 0,
+    "fn": 712,
+    "precision": 1.0,
+    "recall": 0.635
+   }
+  ],
+  "any_cache_listing": {
+   "flagged": 1960,
+   "tp": 1953,
+   "fp": 7,
+   "fn": 0,
+   "precision": 0.996,
+   "recall": 1.0
+  },
+  "by_client_phase_N5_cache": {
+   "benign2/A": {
+    "listings": 4,
+    "board": 0,
+    "flagged": 0
+   },
+   "benign2/B": {
+    "listings": 3,
+    "board": 0,
+    "flagged": 0
+   },
+   "board1/A": {
+    "listings": 671,
+    "board": 671,
+    "flagged": 614
+   },
+   "board1/B": {
+    "listings": 143,
+    "board": 143,
+    "flagged": 125
+   },
+   "board2/A": {
+    "listings": 379,
+    "board": 379,
+    "flagged": 337
+   },
+   "board2/B": {
+    "listings": 41,
+    "board": 41,
+    "flagged": 29
+   },
+   "board3/A": {
+    "listings": 329,
+    "board": 329,
+    "flagged": 301
+   },
+   "board3/B": {
+    "listings": 97,
+    "board": 97,
+    "flagged": 78
+   },
+   "board4/A": {
+    "listings": 198,
+    "board": 198,
+    "flagged": 180
+   },
+   "board4/B": {
+    "listings": 61,
+    "board": 61,
+    "flagged": 35
+   },
+   "mixed1/A": {
+    "listings": 10,
+    "board": 10,
+    "flagged": 0
+   },
+   "mixed1/B": {
+    "listings": 6,
+    "board": 6,
+    "flagged": 0
+   },
+   "mixed2/A": {
+    "listings": 7,
+    "board": 7,
+    "flagged": 0
+   },
+   "mixed2/B": {
+    "listings": 11,
+    "board": 11,
+    "flagged": 0
+   }
+  }
+ },
+ "D3_periodicity": {
+  "series": [
+   {
+    "user": "benign1",
+    "phase": "A",
+    "key": "/artifactory/pkg-local/pkgs/core/1.0.0/core-1.0.0.tar.gz",
+    "ev": "FETCH",
+    "n": 87,
+    "median_gap": 19.5,
+    "cv": 0.972,
+    "board_frac": 0.0,
+    "cache": false
+   },
+   {
+    "user": "benign1",
+    "phase": "A",
+    "key": "/artifactory/pkg-local/pkgs/core/1.1.0/core-1.1.0.tar.gz",
+    "ev": "FETCH",
+    "n": 18,
+    "median_gap": 67.5,
+    "cv": 0.922,
+    "board_frac": 0.0,
+    "cache": false
+   },
+   {
+    "user": "benign1",
+    "phase": "A",
+    "key": "/artifactory/pkg-local/pkgs/core/2.1.0/core-2.1.0.tar.gz",
+    "ev": "FETCH",
+    "n": 41,
+    "median_gap": 60.0,
+    "cv": 0.241,
+    "board_frac": 0.0,
+    "cache": false
+   },
+   {
+    "user": "benign1",
+    "phase": "B",
+    "key": "/artifactory/pkg-local/pkgs/core/1.0.0/core-1.0.0.tar.gz",
+    "ev": "FETCH",
+    "n": 78,
+    "median_gap": 22.0,
+    "cv": 0.922,
+    "board_frac": 0.0,
+    "cache": false
+   },
+   {
+    "user": "benign1",
+    "phase": "B",
+    "key": "/artifactory/pkg-local/pkgs/core/1.1.0/core-1.1.0.tar.gz",
+    "ev": "FETCH",
+    "n": 17,
+    "median_gap": 88.8,
+    "cv": 0.845,
+    "board_frac": 0.0,
+    "cache": false
+   },
+   {
+    "user": "benign1",
+    "phase": "B",
+    "key": "/artifactory/pkg-local/pkgs/core/2.0.0/core-2.0.0.tar.gz",
+    "ev": "FETCH",
+    "n": 13,
+    "median_gap": 124.3,
+    "cv": 1.037,
+    "board_frac": 0.0,
+    "cache": false
+   },
+   {
+    "user": "benign1",
+    "phase": "B",
+    "key": "/artifactory/pkg-local/pkgs/core/2.1.0/core-2.1.0.tar.gz",
+    "ev": "FETCH",
+    "n": 40,
+    "median_gap": 60.0,
+    "cv": 0.26,
+    "board_frac": 0.0,
+    "cache": false
+   },
+   {
+    "user": "benign2",
+    "phase": "A",
+    "key": "/artifactory/pkg-local/pkgs/core/1.0.0/core-1.0.0.tar.gz",
+    "ev": "FETCH",
+    "n": 31,
+    "median_gap": 60.3,
+    "cv": 0.838,
+    "board_frac": 0.0,
+    "cache": false
+   },
+   {
+    "user": "benign2",
+    "phase": "A",
+    "key": "/artifactory/pkg-local/pkgs/core/1.1.0/core-1.1.0.tar.gz",
+    "ev": "FETCH",
+    "n": 11,
+    "median_gap": 94.8,
+    "cv": 0.746,
+    "board_frac": 0.0,
+    "cache": false
+   },
+   {
+    "user": "benign2",
+    "phase": "A",
+    "key": "pkg-local/pkgs",
+    "ev": "LIST",
+    "n": 75,
+    "median_gap": 30.0,
+    "cv": 0.0,
+    "board_frac": 0.0,
+    "cache": false
+   },
+   {
+    "user": "benign2",
+    "phase": "B",
+    "key": "/artifactory/pkg-local/pkgs/core/1.0.0/core-1.0.0.tar.gz",
+    "ev": "FETCH",
+    "n": 34,
+    "median_gap": 44.5,
+    "cv": 0.819,
+    "board_frac": 0.0,
+    "cache": false
+   },
+   {
+    "user": "benign2",
+    "phase": "B",
+    "key": "/artifactory/pkg-local/pkgs/core/1.1.0/core-1.1.0.tar.gz",
+    "ev": "FETCH",
+    "n": 12,
+    "median_gap": 113.1,
+    "cv": 0.814,
+    "board_frac": 0.0,
+    "cache": false
+   },
+   {
+    "user": "benign2",
+    "phase": "B",
+    "key": "pkg-local/pkgs",
+    "ev": "LIST",
+    "n": 75,
+    "median_gap": 30.0,
+    "cv": 0.0,
+    "board_frac": 0.0,
+    "cache": false
+   },
+   {
+    "user": "board1",
+    "phase": "A",
+    "key": "github-remote-cache",
+    "ev": "LIST",
+    "n": 445,
+    "median_gap": 5.0,
+    "cv": 0.075,
+    "board_frac": 1.0,
+    "cache": true
+   },
+   {
+    "user": "board1",
+    "phase": "A",
+    "key": "github-remote-cache/zzANSWER_B10015_board1",
+    "ev": "LIST",
+    "n": 17,
+    "median_gap": 8.9,
+    "cv": 0.257,
+    "board_frac": 1.0,
+    "cache": true
+   },
+   {
+    "user": "board1",
+    "phase": "A",
+    "key": "github-remote-cache/zzANSWER_B10025_board1",
+    "ev": "LIST",
+    "n": 15,
+    "median_gap": 10.2,
+    "cv": 0.213,
+    "board_frac": 1.0,
+    "cache": true
+   },
+   {
+    "user": "board1",
+    "phase": "A",
+    "key": "github-remote-cache/zzANSWER_B10042_board1",
+    "ev": "LIST",
+    "n": 10,
+    "median_gap": 8.1,
+    "cv": 0.268,
+    "board_frac": 1.0,
+    "cache": true
+   },
+   {
+    "user": "board1",
+    "phase": "A",
+    "key": "github-remote-cache/zzMAILBOX_board1",
+    "ev": "LIST",
+    "n": 143,
+    "median_gap": 16.0,
+    "cv": 0.29,
+    "board_frac": 1.0,
+    "cache": true
+   },
+   {
+    "user": "board1",
+    "phase": "B",
+    "key": "github-remote-cache",
+    "ev": "LIST",
+    "n": 29,
+    "median_gap": 78.7,
+    "cv": 0.248,
+    "board_frac": 1.0,
+    "cache": true
+   },
+   {
+    "user": "board1",
+    "phase": "B",
+    "key": "github-remote-cache/zzANSWER_B10049_board1",
+    "ev": "LIST",
+    "n": 14,
+    "median_gap": 10.6,
+    "cv": 0.249,
+    "board_frac": 1.0,
+    "cache": true
+   },
+   {
+    "user": "board1",
+    "phase": "B",
+    "key": "github-remote-cache/zzANSWER_B10050_board1",
+    "ev": "LIST",
+    "n": 34,
+    "median_gap": 10.9,
+    "cv": 0.2,
+    "board_frac": 1.0,
+    "cache": true
+   },
+   {
+    "user": "board1",
+    "phase": "B",
+    "key": "github-remote-cache/zzANSWER_B10051_board1",
+    "ev": "LIST",
+    "n": 18,
+    "median_gap": 10.6,
+    "cv": 0.202,
+    "board_frac": 1.0,
+    "cache": true
+   },
+   {
+    "user": "board1",
+    "phase": "B",
+    "key": "github-remote-cache/zzANSWER_B10057_board1",
+    "ev": "LIST",
+    "n": 21,
+    "median_gap": 8.7,
+    "cv": 0.284,
+    "board_frac": 1.0,
+    "cache": true
+   },
+   {
+    "user": "board1",
+    "phase": "B",
+    "key": "github-remote-cache/zzMAILBOX_board1",
+    "ev": "LIST",
+    "n": 25,
+    "median_gap": 97.5,
+    "cv": 0.276,
+    "board_frac": 1.0,
+    "cache": true
+   },
+   {
+    "user": "board2",
+    "phase": "A",
+    "key": "github-remote-cache",
+    "ev": "LIST",
+    "n": 222,
+    "median_gap": 10.1,
+    "cv": 0.056,
+    "board_frac": 1.0,
+    "cache": true
+   },
+   {
+    "user": "board2",
+    "phase": "A",
+    "key": "github-remote-cache/zzANSWER_B20010_board2",
+    "ev": "LIST",
+    "n": 17,
+    "median_gap": 10.4,
+    "cv": 0.216,
+    "board_frac": 1.0,
+    "cache": true
+   },
+   {
+    "user": "board2",
+    "phase": "A",
+    "key": "github-remote-cache/zzANSWER_B20011_board2",
+    "ev": "LIST",
+    "n": 26,
+    "median_gap": 9.1,
+    "cv": 0.229,
+    "board_frac": 1.0,
+    "cache": true
+   },
+   {
+    "user": "board2",
+    "phase": "A",
+    "key": "github-remote-cache/zzANSWER_B20020_board2",
+    "ev": "LIST",
+    "n": 34,
+    "median_gap": 10.0,
+    "cv": 0.234,
+    "board_frac": 1.0,
+    "cache": true
+   },
+   {
+    "user": "board2",
+    "phase": "A",
+    "key": "github-remote-cache/zzANSWER_B20026_board2",
+    "ev": "LIST",
+    "n": 36,
+    "median_gap": 10.5,
+    "cv": 0.35,
+    "board_frac": 1.0,
+    "cache": true
+   },
+   {
+    "user": "board2",
+    "phase": "A",
+    "key": "github-remote-cache/zzANSWER_B20032_board2",
+    "ev": "LIST",
+    "n": 26,
+    "median_gap": 11.0,
+    "cv": 0.26,
+    "board_frac": 1.0,
+    "cache": true
+   },
+   {
+    "user": "board2",
+    "phase": "B",
+    "key": "github-remote-cache",
+    "ev": "LIST",
+    "n": 10,
+    "median_gap": 123.3,
+    "cv": 0.222,
+    "board_frac": 1.0,
+    "cache": true
+   },
+   {
+    "user": "board2",
+    "phase": "B",
+    "key": "github-remote-cache/zzANSWER_B20036_board2",
+    "ev": "LIST",
+    "n": 19,
+    "median_gap": 12.0,
+    "cv": 0.184,
+    "board_frac": 1.0,
+    "cache": true
+   },
+   {
+    "user": "board3",
+    "phase": "A",
+    "key": "github-remote-cache",
+    "ev": "LIST",
+    "n": 115,
+    "median_gap": 18.9,
+    "cv": 0.306,
+    "board_frac": 1.0,
+    "cache": true
+   },
+   {
+    "user": "board3",
+    "phase": "A",
+    "key": "github-remote-cache/zzANSWER_B30004_board3",
+    "ev": "LIST",
+    "n": 19,
+    "median_gap": 10.2,
+    "cv": 0.205,
+    "board_frac": 1.0,
+    "cache": true
+   },
+   {
+    "user": "board3",
+    "phase": "A",
+    "key": "github-remote-cache/zzANSWER_B30008_board3",
+    "ev": "LIST",
+    "n": 28,
+    "median_gap": 9.0,
+    "cv": 0.331,
+    "board_frac": 1.0,
+    "cache": true
+   },
+   {
+    "user": "board3",
+    "phase": "A",
+    "key": "github-remote-cache/zzMAILBOX_board3",
+    "ev": "LIST",
+    "n": 152,
+    "median_gap": 14.2,
+    "cv": 0.309,
+    "board_frac": 1.0,
+    "cache": true
+   },
+   {
+    "user": "board3",
+    "phase": "B",
+    "key": "github-remote-cache",
+    "ev": "LIST",
+    "n": 14,
+    "median_gap": 182.3,
+    "cv": 0.341,
+    "board_frac": 1.0,
+    "cache": true
+   },
+   {
+    "user": "board3",
+    "phase": "B",
+    "key": "github-remote-cache/zzANSWER_B30028_board3",
+    "ev": "LIST",
+    "n": 17,
+    "median_gap": 10.8,
+    "cv": 0.219,
+    "board_frac": 1.0,
+    "cache": true
+   },
+   {
+    "user": "board3",
+    "phase": "B",
+    "key": "github-remote-cache/zzANSWER_B30030_board3",
+    "ev": "LIST",
+    "n": 37,
+    "median_gap": 11.1,
+    "cv": 0.226,
+    "board_frac": 1.0,
+    "cache": true
+   },
+   {
+    "user": "board3",
+    "phase": "B",
+    "key": "github-remote-cache/zzMAILBOX_board3",
+    "ev": "LIST",
+    "n": 27,
+    "median_gap": 84.3,
+    "cv": 0.333,
+    "board_frac": 1.0,
+    "cache": true
+   },
+   {
+    "user": "board4",
+    "phase": "A",
+    "key": "github-remote-cache",
+    "ev": "LIST",
+    "n": 150,
+    "median_gap": 15.4,
+    "cv": 0.19,
+    "board_frac": 1.0,
+    "cache": true
+   },
+   {
+    "user": "board4",
+    "phase": "A",
+    "key": "github-remote-cache/zzANSWER_B40007_board4",
+    "ev": "LIST",
+    "n": 20,
+    "median_gap": 9.4,
+    "cv": 0.327,
+    "board_frac": 1.0,
+    "cache": true
+   },
+   {
+    "user": "board4",
+    "phase": "A",
+    "key": "github-remote-cache/zzANSWER_B40016_board4",
+    "ev": "LIST",
+    "n": 22,
+    "median_gap": 9.9,
+    "cv": 0.213,
+    "board_frac": 1.0,
+    "cache": true
+   },
+   {
+    "user": "board4",
+    "phase": "B",
+    "key": "github-remote-cache",
+    "ev": "LIST",
+    "n": 13,
+    "median_gap": 161.6,
+    "cv": 0.327,
+    "board_frac": 1.0,
+    "cache": true
+   },
+   {
+    "user": "board4",
+    "phase": "B",
+    "key": "github-remote-cache/zzANSWER_B40031_board4",
+    "ev": "LIST",
+    "n": 27,
+    "median_gap": 9.8,
+    "cv": 0.204,
+    "board_frac": 1.0,
+    "cache": true
+   },
+   {
+    "user": "board4",
+    "phase": "B",
+    "key": "github-remote-cache/zzANSWER_B40033_board4",
+    "ev": "LIST",
+    "n": 11,
+    "median_gap": 9.8,
+    "cv": 0.246,
+    "board_frac": 1.0,
+    "cache": true
+   },
+   {
+    "user": "mixed1",
+    "phase": "A",
+    "key": "/artifactory/pkg-local/pkgs/core/1.0.0/core-1.0.0.tar.gz",
+    "ev": "FETCH",
+    "n": 40,
+    "median_gap": 26.5,
+    "cv": 1.218,
+    "board_frac": 0.0,
+    "cache": false
+   },
+   {
+    "user": "mixed1",
+    "phase": "A",
+    "key": "/artifactory/pkg-local/pkgs/core/1.1.0/core-1.1.0.tar.gz",
+    "ev": "FETCH",
+    "n": 12,
+    "median_gap": 110.1,
+    "cv": 0.933,
+    "board_frac": 0.0,
+    "cache": false
+   },
+   {
+    "user": "mixed1",
+    "phase": "A",
+    "key": "github-remote-cache",
+    "ev": "LIST",
+    "n": 8,
+    "median_gap": 286.6,
+    "cv": 0.54,
+    "board_frac": 1.0,
+    "cache": true
+   },
+   {
+    "user": "mixed1",
+    "phase": "B",
+    "key": "/artifactory/pkg-local/pkgs/core/1.0.0/core-1.0.0.tar.gz",
+    "ev": "FETCH",
+    "n": 43,
+    "median_gap": 37.0,
+    "cv": 0.822,
+    "board_frac": 0.0,
+    "cache": false
+   },
+   {
+    "user": "mixed1",
+    "phase": "B",
+    "key": "/artifactory/pkg-local/pkgs/core/1.1.0/core-1.1.0.tar.gz",
+    "ev": "FETCH",
+    "n": 12,
+    "median_gap": 122.0,
+    "cv": 0.8,
+    "board_frac": 0.0,
+    "cache": false
+   },
+   {
+    "user": "mixed2",
+    "phase": "A",
+    "key": "/artifactory/pkg-local/pkgs/core/1.0.0/core-1.0.0.tar.gz",
+    "ev": "FETCH",
+    "n": 32,
+    "median_gap": 42.0,
+    "cv": 0.963,
+    "board_frac": 0.0,
+    "cache": false
+   },
+   {
+    "user": "mixed2",
+    "phase": "A",
+    "key": "/artifactory/pkg-local/pkgs/core/1.1.0/core-1.1.0.tar.gz",
+    "ev": "FETCH",
+    "n": 11,
+    "median_gap": 154.8,
+    "cv": 0.835,
+    "board_frac": 0.0,
+    "cache": false
+   },
+   {
+    "user": "mixed2",
+    "phase": "A",
+    "key": "/artifactory/pkg-local/pkgs/core/2.1.0/core-2.1.0.tar.gz",
+    "ev": "FETCH",
+    "n": 8,
+    "median_gap": 43.5,
+    "cv": 1.5,
+    "board_frac": 0.0,
+    "cache": false
+   },
+   {
+    "user": "mixed2",
+    "phase": "B",
+    "key": "/artifactory/pkg-local/pkgs/core/1.0.0/core-1.0.0.tar.gz",
+    "ev": "FETCH",
+    "n": 47,
+    "median_gap": 36.5,
+    "cv": 0.93,
+    "board_frac": 0.0,
+    "cache": false
+   },
+   {
+    "user": "mixed2",
+    "phase": "B",
+    "key": "/artifactory/pkg-local/pkgs/core/1.1.0/core-1.1.0.tar.gz",
+    "ev": "FETCH",
+    "n": 20,
+    "median_gap": 75.1,
+    "cv": 1.205,
+    "board_frac": 0.0,
+    "cache": false
+   },
+   {
+    "user": "mixed2",
+    "phase": "B",
+    "key": "github-remote-cache",
+    "ev": "LIST",
+    "n": 8,
+    "median_gap": 382.1,
+    "cv": 0.463,
+    "board_frac": 1.0,
+    "cache": true
+   }
+  ],
+  "rows": [
+   {
+    "cv_below": 0.2,
+    "scope": "any series",
+    "flagged": 6,
+    "tp": 4,
+    "fp": 2,
+    "fn": 31,
+    "precision": 0.667,
+    "recall": 0.114
+   },
+   {
+    "cv_below": 0.2,
+    "scope": "cache listings only",
+    "flagged": 4,
+    "tp": 4,
+    "fp": 0,
+    "fn": 31,
+    "precision": 1.0,
+    "recall": 0.114
+   },
+   {
+    "cv_below": 0.35,
+    "scope": "any series",
+    "flagged": 36,
+    "tp": 32,
+    "fp": 4,
+    "fn": 3,
+    "precision": 0.889,
+    "recall": 0.914
+   },
+   {
+    "cv_below": 0.35,
+    "scope": "cache listings only",
+    "flagged": 32,
+    "tp": 32,
+    "fp": 0,
+    "fn": 3,
+    "precision": 1.0,
+    "recall": 0.914
+   },
+   {
+    "cv_below": 0.5,
+    "scope": "any series",
+    "flagged": 38,
+    "tp": 34,
+    "fp": 4,
+    "fn": 1,
+    "precision": 0.895,
+    "recall": 0.971
+   },
+   {
+    "cv_below": 0.5,
+    "scope": "cache listings only",
+    "flagged": 34,
+    "tp": 34,
+    "fp": 0,
+    "fn": 1,
+    "precision": 1.0,
+    "recall": 0.971
+   },
+   {
+    "cv_below": 0.7,
+    "scope": "any series",
+    "flagged": 39,
+    "tp": 35,
+    "fp": 4,
+    "fn": 0,
+    "precision": 0.897,
+    "recall": 1.0
+   },
+   {
+    "cv_below": 0.7,
+    "scope": "cache listings only",
+    "flagged": 35,
+    "tp": 35,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0
+   }
+  ]
+ },
+ "D4_truth": {
+  "directed_messages": 160,
+  "by_kind": {
+   "ask": 54,
+   "answer": 51,
+   "inbox": 50,
+   "file_chunk": 5
+  },
+  "distinct_pairs": 26
+ },
+ "D4a_exposure": {
+  "ask": {
+   "recv_first_list_within_10s": 0.352,
+   "recv_first_list_within_30s": 0.519,
+   "recv_first_list_within_60s": 0.556,
+   "recv_first_list_within_120s": 0.611,
+   "recv_first_list_within_300s": 0.87,
+   "receiver_median_gap_s": 24.4,
+   "n_messages": 54
+  },
+  "answer": {
+   "recv_first_list_within_10s": 0.588,
+   "recv_first_list_within_30s": 0.706,
+   "recv_first_list_within_60s": 0.784,
+   "recv_first_list_within_120s": 0.941,
+   "recv_first_list_within_300s": 1.0,
+   "receiver_median_gap_s": 6.1,
+   "n_messages": 51
+  },
+  "inbox": {
+   "recv_first_list_within_10s": 0.44,
+   "recv_first_list_within_30s": 0.76,
+   "recv_first_list_within_60s": 0.88,
+   "recv_first_list_within_120s": 0.98,
+   "recv_first_list_within_300s": 0.98,
+   "receiver_median_gap_s": 10.5,
+   "n_messages": 50
+  },
+  "by_phase_recv_within_60s": {
+   "ask/A": {
+    "n": 38,
+    "within60": 0.684,
+    "median_gap": 12.8
+   },
+   "ask/B": {
+    "n": 16,
+    "within60": 0.25,
+    "median_gap": 123.8
+   },
+   "answer/A": {
+    "n": 37,
+    "within60": 1.0,
+    "median_gap": 3.9
+   },
+   "answer/B": {
+    "n": 14,
+    "within60": 0.214,
+    "median_gap": 81.2
+   },
+   "inbox/A": {
+    "n": 35,
+    "within60": 1.0,
+    "median_gap": 8.8
+   },
+   "inbox/B": {
+    "n": 15,
+    "within60": 0.6,
+    "median_gap": 50.9
+   }
+  }
+ },
+ "D4b_L0_timing_only": {
+  "answers": 51,
+  "react_window_s": 30,
+  "sender_in_candidate_set": 1.0,
+  "median_candidates": 3.0,
+  "mean_candidates_when_nonempty": 3.02,
+  "top1_most_recent_poster": 0.529,
+  "top1_random_among_candidates": 0.482,
+  "baseline_random_peer": 0.2,
+  "by_phase": {
+   "A": {
+    "answers": 37,
+    "sender_in_candidates": 1.0,
+    "mean_candidates": 3.0
+   },
+   "B": {
+    "answers": 14,
+    "sender_in_candidates": 1.0,
+    "mean_candidates": 3.07
+   }
+  }
+ },
+ "D4b_L0_pair_scores": {
+  "pairs": 56,
+  "true_pairs": 26,
+  "auc_raw": 0.935,
+  "auc_z_vs_shift_null": 0.828,
+  "spearman_with_true_message_counts": 0.738,
+  "top10_precision": 0.9
+ },
+ "D4c_L1_path_equality": {
+  "answer": {
+   "messages": 51,
+   "receiver_in_predicted": 0.922,
+   "predicted_exactly_the_receiver": 0.922,
+   "mean_predicted_size": 0.92
+  },
+  "ask": {
+   "messages": 54,
+   "receiver_in_predicted": 0.87,
+   "predicted_exactly_the_receiver": 0.852,
+   "mean_predicted_size": 0.89
+  },
+  "file_chunk": {
+   "messages": 5,
+   "receiver_in_predicted": 1.0,
+   "predicted_exactly_the_receiver": 1.0,
+   "mean_predicted_size": 1.0
+  },
+  "inbox": {
+   "messages": 50,
+   "receiver_in_predicted": 0.98,
+   "predicted_exactly_the_receiver": 0.98,
+   "mean_predicted_size": 0.98
+  },
+  "all": {
+   "messages": 160,
+   "receiver_in_predicted": 0.925,
+   "predicted_exactly_the_receiver": 0.919
+  },
+  "by_phase": {
+   "A": {
+    "messages": 113,
+    "receiver_in_predicted": 0.938,
+    "exact": 0.929
+   },
+   "B": {
+    "messages": 47,
+    "receiver_in_predicted": 0.894,
+    "exact": 0.894
+   }
+  }
+ },
+ "D2c_empty_listings": {
+  "rows": 523,
+  "by_user": {
+   "board2": 174,
+   "board1": 150,
+   "board3": 109,
+   "board4": 88,
+   "mixed2": 2
+  },
+  "precision": 1.0,
+  "distinct_paths": 50
+ },
+ "D4a_root_post_reader_candidates": {
+  "W=10s": {
+   "posts": 271,
+   "mean_distinct_readers": 1.85,
+   "share_exactly_one_reader": 0.173,
+   "share_no_reader": 0.192
+  },
+  "W=30s": {
+   "posts": 271,
+   "mean_distinct_readers": 2.63,
+   "share_exactly_one_reader": 0.114,
+   "share_no_reader": 0.114
+  },
+  "W=60s": {
+   "posts": 271,
+   "mean_distinct_readers": 3.08,
+   "share_exactly_one_reader": 0.1,
+   "share_no_reader": 0.041
+  },
+  "W=300s": {
+   "posts": 271,
+   "mean_distinct_readers": 5.1,
+   "share_exactly_one_reader": 0.0,
+   "share_no_reader": 0.0
+  }
+ },
+ "D5_property_rows": {
+  "rows": 0,
+  "by_user": {},
+  "by_method": {},
+  "in_cache_repo": 0
+ },
+ "mkcol_status_by_user": {
+  "benign2:201": 10,
+  "benign2:405": 4,
+  "board1:201": 78,
+  "board2:201": 138,
+  "board3:201": 48,
+  "board4:201": 1306,
+  "mixed1:201": 30,
+  "mixed2:201": 32
+ },
+ "listing_size_vs_posts": {
+  "GET": 0.834,
+  "PROPFIND": 0.985
+ }
+}

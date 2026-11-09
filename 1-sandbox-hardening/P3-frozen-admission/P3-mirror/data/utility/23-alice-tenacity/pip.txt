@@ -1,0 +1,15 @@
+Looking in indexes: http://127.0.0.1:64627/simple/
+Collecting tenacity==9.0.0
+  Downloading http://127.0.0.1:64627/files/93de0c98785b27fcf659856aa9f54bfbd399e29969b0621bc7f762bd441b4539/tenacity-9.0.0-py3-none-any.whl (28 kB)
+Installing collected packages: tenacity
+Successfully installed tenacity-9.0.0
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+streamlit 1.39.0 requires packaging<25,>=20, but you have packaging 25.0 which is incompatible.
+streamlit 1.39.0 requires pillow<11,>=7.1.0, but you have pillow 11.3.0 which is incompatible.
+streamlit 1.39.0 requires protobuf<6,>=3.20, but you have protobuf 6.33.5 which is incompatible.
+streamlit 1.39.0 requires rich<14,>=10.14.0, but you have rich 15.0.0 which is incompatible.
+langchain-core 0.1.53 requires packaging<24.0,>=23.2, but you have packaging 25.0 which is incompatible.
+langchain-core 0.1.53 requires tenacity<9.0.0,>=8.1.0, but you have tenacity 9.0.0 which is incompatible.
+google-cloud-aiplatform 1.141.0 requires google-genai<2.0.0,>=1.59.0; python_version >= "3.10", but you have google-genai 2.20.0 which is incompatible.
+langchain-openai 0.3.31 requires langchain-core<1.0.0,>=0.3.74, but you have langchain-core 0.1.53 which is incompatible.
+google-adk 1.27.1 requires google-genai<2.0.0,>=1.56.0, but you have google-genai 2.20.0 which is incompatible.

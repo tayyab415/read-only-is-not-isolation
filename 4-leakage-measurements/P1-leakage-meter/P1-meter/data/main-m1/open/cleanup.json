@@ -1,0 +1,60 @@
+{
+  "run_id": "m1-open",
+  "removed": [
+    {
+      "name": "p1-m1-open-alice",
+      "returncode": 0
+    },
+    {
+      "name": "p1-m1-open-bob",
+      "returncode": 0
+    },
+    {
+      "name": "p1-m1-open-gateway",
+      "returncode": 0
+    },
+    {
+      "name": "p1-m1-open-upstream",
+      "returncode": 0
+    },
+    {
+      "name": "p1-m1-open-dummy-alice",
+      "returncode": 0
+    },
+    {
+      "name": "p1-m1-open-dummy-bob",
+      "returncode": 0
+    },
+    {
+      "name": "p1-m1-open-net-services->art-a",
+      "returncode": 0
+    },
+    {
+      "name": "p1-m1-open-net-alice",
+      "returncode": 0
+    },
+    {
+      "name": "p1-m1-open-net-bob",
+      "returncode": 0
+    },
+    {
+      "name": "p1-m1-open-net-services",
+      "returncode": 0
+    },
+    {
+      "name": "p1-m1-open-net-dummy-alice",
+      "returncode": 1
+    },
+    {
+      "name": "p1-m1-open-net-dummy-bob",
+      "returncode": 1
+    }
+  ],
+  "containers_readback": [],
+  "networks_readback": [],
+  "art_a_p1_networks": [],
+  "absence_proved": true,
+  "fixtures_left_in_place": {
+    "shared": "p1-m1-open-shared"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "run_id": "p9-s1-equal",
+  "removed": [
+    {
+      "name": "p1-p9-s1-equal-alice",
+      "returncode": 0
+    },
+    {
+      "name": "p1-p9-s1-equal-bob",
+      "returncode": 0
+    },
+    {
+      "name": "p1-p9-s1-equal-gateway",
+      "returncode": 0
+    },
+    {
+      "name": "p1-p9-s1-equal-upstream",
+      "returncode": 0
+    },
+    {
+      "name": "p1-p9-s1-equal-dummy-alice",
+      "returncode": 0
+    },
+    {
+      "name": "p1-p9-s1-equal-dummy-bob",
+      "returncode": 0
+    },
+    {
+      "name": "p1-p9-s1-equal-net-services->art-a",
+      "returncode": 0
+    },
+    {
+      "name": "p1-p9-s1-equal-net-alice",
+      "returncode": 0
+    },
+    {
+      "name": "p1-p9-s1-equal-net-bob",
+      "returncode": 0
+    },
+    {
+      "name": "p1-p9-s1-equal-net-services",
+      "returncode": 0
+    },
+    {
+      "name": "p1-p9-s1-equal-net-dummy-alice",
+      "returncode": 1
+    },
+    {
+      "name": "p1-p9-s1-equal-net-dummy-bob",
+      "returncode": 1
+    }
+  ],
+  "containers_readback": [],
+  "networks_readback": [],
+  "art_a_p1_networks": [],
+  "absence_proved": true,
+  "fixtures_left_in_place": {
+    "alice": "p1-p9-s1-equal-alice",
+    "bob": "p1-p9-s1-equal-bob"
+  },
+  "mirror_removal_codes": [
+    0,
+    0
+  ]
+}

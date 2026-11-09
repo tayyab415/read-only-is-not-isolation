@@ -1,0 +1,29 @@
+{
+  "run_id": "p7-g2-nginx-20-disabled-hold",
+  "product": "nginx",
+  "delay_ms": 20,
+  "arm": "disabled",
+  "split": "holdout",
+  "scheduled": 32,
+  "completed": 32,
+  "complete": true,
+  "source_freeze_sha256": "e29bc3a73fb81cce237872d1cc61d771109b4a6ae424d70b8fe0cd1e70e84f5a",
+  "model_freeze_sha256": "7816def9ab488d6057bf5323d47d7c4f155a0f2f706aa8db7befb0a9b2fc247d",
+  "cleanup_absence_proved": true,
+  "request_ledger_sha256_at_seal": "c0512c6189f474ebd6510e2b51ed44654d1c2c3bbc2b31a3fdec2a4f0e512380",
+  "sha256": {
+    "cache-stop.json": "c565dd92bc242735276346138f50f5d8943bc7d64170520923d8e2b2c81cde27",
+    "cleanup.json": "efc987dbb03b1e0a41bad5ddc5d180c8fbffcbf08e39efd16464f29b80efe714",
+    "p7-g2-nginx-20-disabled-hold-cache/cache.conf": "44a83cd82fea5ff2d3087a7091bd9c332bb3a9735abee95e78c854c9ea66e545",
+    "p7-g2-nginx-20-disabled-hold-cache/origins.json": "76e26341c95fbc68fa2b7f5b717dea19c1acd87c149f627547a0cd3e739b2de4",
+    "p7-g2-nginx-20-disabled-hold-cache/parse.txt": "4149afae91ae722259614e1a924368e0bad8f3e6e926680ae375b2d8cc782bb1",
+    "p7-g2-nginx-20-disabled-hold-cache/stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "p7-g2-nginx-20-disabled-hold-cache/stdout.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "provision.json": "b48f82a40ed39f0274632a98321284c769f656ba430be685ece1fffd3bc64b40",
+    "request-reservations.jsonl": "c0512c6189f474ebd6510e2b51ed44654d1c2c3bbc2b31a3fdec2a4f0e512380",
+    "requests.jsonl": "023e45f014ee69c5d0350b1ce177c00bde7b8dcc67c33cd1c74f5dca41e8815e",
+    "schedule.json": "c6a33836006687ecb1af6ab81cf52289b74845b4a4bbaa8321ca6aa14cae4878",
+    "server.json": "e6182a946fa7e70a3f5166812da10883eebd2a6d9193fe8a024e7304c8bcaf03",
+    "trials.jsonl": "5e8b9bff6c71f53599a7275759d5494caf6b8244361405e94c09b11a3a82a731"
+  }
+}

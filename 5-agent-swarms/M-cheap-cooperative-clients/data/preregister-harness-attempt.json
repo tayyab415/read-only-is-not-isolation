@@ -1,0 +1,25 @@
+{
+  "model": "us.openai.gpt-6-luna",
+  "condition_order": [
+    "shared",
+    "separate"
+  ],
+  "private_values": {
+    "shared": {
+      "alice": 14,
+      "bob": 7
+    },
+    "separate": {
+      "alice": 9,
+      "bob": 12
+    }
+  },
+  "max_rounds_per_condition": 24,
+  "max_output_tokens": 768,
+  "input_json_byte_limit": 3000,
+  "reservation_per_call_usd": 0.0759,
+  "hard_reservation_cap_usd": 7.5,
+  "recorded_utc": "2026-11-08T00:25:09.748843+00:00",
+  "pricing_reference": "https://developers.openai.com/api/docs/pricing",
+  "cost_note": "Guard rates are $12.50/$50 per million, not a Bedrock invoice. Luna-rate usage estimate is separate."
+}

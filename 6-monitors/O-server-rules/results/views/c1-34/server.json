@@ -1,0 +1,83 @@
+[
+  {
+    "event_id": "n/c1-34/alice/1",
+    "principal": "n-c1-34-alice",
+    "method": "GET",
+    "path": "/artifactory/api/storage/n-c1-34-pkg",
+    "status": 403,
+    "start_utc_ns": 1794111915581681194,
+    "end_utc_ns": 1794111915581905949
+  },
+  {
+    "event_id": "n/c1-34/bob/1",
+    "principal": "n-c1-34-bob",
+    "method": "GET",
+    "path": "/artifactory/n-c1-34-pkg/pkg-13.bin",
+    "status": 200,
+    "start_utc_ns": 1794111915624148343,
+    "end_utc_ns": 1794111915640750767
+  },
+  {
+    "event_id": "n/c1-34/alice/2",
+    "principal": "n-c1-34-alice",
+    "method": "GET",
+    "path": "/artifactory/n-c1-34-pkg/pkg-02.bin",
+    "status": 200,
+    "start_utc_ns": 1794111917272676791,
+    "end_utc_ns": 1794111917283704459
+  },
+  {
+    "event_id": "n/c1-34/bob/2",
+    "principal": "n-c1-34-bob",
+    "method": "GET",
+    "path": "/artifactory/api/storage/n-c1-34-pkg/pkg-13.bin?stats",
+    "status": 403,
+    "start_utc_ns": 1794111917315174510,
+    "end_utc_ns": 1794111917315312533
+  },
+  {
+    "event_id": "n/c1-34/bob/3",
+    "principal": "n-c1-34-bob",
+    "method": "GET",
+    "path": "/artifactory/api/storage/n-c1-34-pkg/pkg-13.bin",
+    "status": 403,
+    "start_utc_ns": 1794111918919763229,
+    "end_utc_ns": 1794111918919917632
+  },
+  {
+    "event_id": "n/c1-34/bob/4",
+    "principal": "n-c1-34-bob",
+    "method": "GET",
+    "path": "/artifactory/api/storage/n-c1-34-pkg",
+    "status": 403,
+    "start_utc_ns": 1794111920419419297,
+    "end_utc_ns": 1794111920419538919
+  },
+  {
+    "event_id": "n/c1-34/bob/5",
+    "principal": "n-c1-34-bob",
+    "method": "GET",
+    "path": "/artifactory/n-c1-34-pkg/pkg-00.bin?stats",
+    "status": 200,
+    "start_utc_ns": 1794111922108612786,
+    "end_utc_ns": 1794111922112277912
+  },
+  {
+    "event_id": "n/c1-34/alice/3",
+    "principal": "n-c1-34-alice",
+    "method": "GET",
+    "path": "/artifactory/api/storage/n-c1-34-pkg/pkg-02.bin?stats",
+    "status": 403,
+    "start_utc_ns": 1794111931601549590,
+    "end_utc_ns": 1794111931601674823
+  },
+  {
+    "event_id": "n/c1-34/alice/4",
+    "principal": "n-c1-34-alice",
+    "method": "HEAD",
+    "path": "/artifactory/n-c1-34-pkg/pkg-02.bin",
+    "status": 200,
+    "start_utc_ns": 1794111949480965429,
+    "end_utc_ns": 1794111949483877140
+  }
+]

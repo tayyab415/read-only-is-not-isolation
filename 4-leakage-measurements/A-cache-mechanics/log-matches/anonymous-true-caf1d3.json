@@ -1,0 +1,142 @@
+{
+  "request_id": "anonymous-true-caf1d3",
+  "server_trace_ids": [
+    "7bdaadc31671149c04edb911bf267b35"
+  ],
+  "logs": {
+    "access-audit.log": [],
+    "access-metrics.log": [],
+    "access-metrics_events.log": [],
+    "access-request-out.log": [],
+    "access-request.log": [
+      {
+        "line_number": 695,
+        "line": "2026-11-07T23:02:34.084Z|7bdaadc31671149c04edb911bf267b35|127.0.0.1|jfrt@01m6w3chwnhc4n1xs15bzj1rg6|PATCH|/access/api/v1/config|204|-1|200|105|JFrog Access Java Client/7.191.14 89114900  Artifactory/7.161.15 86115900"
+      }
+    ],
+    "access-security-audit.log": [
+      {
+        "line_number": 49,
+        "line": "2026-11-07T23:02:34.082Z|7bdaadc31671149c04edb911bf267b35|172.18.0.1|admin|jfrt@01m6w3chwnhc4n1xs15bzj1rg6|AccessConfig|U|CFG|{\"updated\":{\"security.anonymousAccessEnabled\":{\"oldEntry\":\"false\",\"newEntry\":\"true\"}}}"
+      }
+    ],
+    "access-service.log": [
+      {
+        "line_number": 515,
+        "line": "2026-11-07T23:02:34.051Z [jfac ] [INFO ] [7bdaadc31671149c04edb911bf267b35] [j.a.m.ConfigMigrationRunner:77] [27.0.0.1-8040-exec-9] - AccessConfigMigration (version 2) is up to date, nothing to migrate"
+      }
+    ],
+    "access-thread-dump.log": [],
+    "artifactory-access.log": [
+      {
+        "line_number": 34,
+        "line": "2026-11-07T23:02:34.223Z [7bdaadc31671149c04edb911bf267b35] [ACCEPTED CONFIGURATION_CHANGE]   for client : admin / 172.18.0.1"
+      }
+    ],
+    "artifactory-binarystore.log": [],
+    "artifactory-cleanup-audit.log": [],
+    "artifactory-conan-v2-migration.log": [],
+    "artifactory-event.log": [],
+    "artifactory-federation-metrics.log": [],
+    "artifactory-federation-metrics_events.log": [],
+    "artifactory-import-export.log": [],
+    "artifactory-metrics.log": [],
+    "artifactory-metrics_events.log": [],
+    "artifactory-path-checksum-migration.log": [],
+    "artifactory-request-out.log": [],
+    "artifactory-request-trace.log": [],
+    "artifactory-request.log": [
+      {
+        "line_number": 339,
+        "line": "2026-11-07T23:02:34.224Z|7bdaadc31671149c04edb911bf267b35|172.18.0.1|admin|PUT|/ui/securityconfig|200|653|49|251|art-a-research/anonymous-true-caf1d3"
+      }
+    ],
+    "artifactory-service-federation.log": [],
+    "artifactory-service.log": [
+      {
+        "line_number": 2788,
+        "line": "2026-11-07T23:02:34.085Z [jfrt ] [INFO ] [7bdaadc31671149c04edb911bf267b35] [o.a.s.a.AccessServiceImpl:1754] [http-nio-8081-exec-2] - Anonymous access set to: true"
+      },
+      {
+        "line_number": 2789,
+        "line": "2026-11-07T23:02:34.148Z [jfrt ] [INFO ] [7bdaadc31671149c04edb911bf267b35] [.CentralConfigServiceImpl:1147] [http-nio-8081-exec-2] - Reloading configuration... old revision 1, new revision 2"
+      },
+      {
+        "line_number": 2790,
+        "line": "2026-11-07T23:02:34.149Z [jfrt ] [INFO ] [7bdaadc31671149c04edb911bf267b35] [rdCompatibleImportProcessor:58] [http-nio-8081-exec-2] - Repository descriptors backward compatible import has been skipped"
+      },
+      {
+        "line_number": 2791,
+        "line": "2026-11-07T23:02:34.195Z [jfrt ] [INFO ] [7bdaadc31671149c04edb911bf267b35] [c.CentralConfigServiceImpl:686] [http-nio-8081-exec-2] - New configuration with revision 2 saved."
+      },
+      {
+        "line_number": 2792,
+        "line": "2026-11-07T23:02:34.195Z [jfrt ] [INFO ] [7bdaadc31671149c04edb911bf267b35] [ifactoryApplicationContext:642] [http-nio-8081-exec-2] - Artifactory application context set to NOT READY by reload"
+      },
+      {
+        "line_number": 2793,
+        "line": "2026-11-07T23:02:34.221Z [jfrt ] [INFO ] [7bdaadc31671149c04edb911bf267b35] [ifactoryApplicationContext:642] [http-nio-8081-exec-2] - Artifactory application context set to READY by reload"
+      },
+      {
+        "line_number": 2794,
+        "line": "2026-11-07T23:02:34.223Z [jfrt ] [INFO ] [7bdaadc31671149c04edb911bf267b35] [.CentralConfigServiceImpl:1168] [http-nio-8081-exec-2] - Configuration reloaded."
+      }
+    ],
+    "artifactory-sha256-migration.log": [],
+    "artifactory-shadow.log": [],
+    "artifactory-storage-request-out.log": [],
+    "artifactory-traffic-v2.log": [],
+    "artifactory-traffic-v3.log": [],
+    "artifactory-traffic.1794091779163.log": [],
+    "artifactory-xray-traffic.1794091779189.log": [],
+    "derby.log": [],
+    "dummy.log": [],
+    "event-metrics.log": [],
+    "event-request.log": [],
+    "event-service.log": [],
+    "event-webhook-request-out.log": [],
+    "frontend-metrics-events.log": [],
+    "frontend-metrics.log": [],
+    "frontend-request.log": [],
+    "frontend-service.log": [],
+    "jfbus-ack-events.log": [],
+    "jfbus-consume-events.log": [],
+    "jfbus-publish-events.log": [],
+    "jfbus-receive-polling.log": [],
+    "jfbus-request.log": [],
+    "jfbus-service.log": [],
+    "jfconfig-metrics.log": [],
+    "jfconfig-request-out.log": [],
+    "jfconfig-request.log": [],
+    "jfconfig-service.log": [],
+    "metadata-metrics.log": [],
+    "metadata-request.log": [],
+    "metadata-service.log": [],
+    "metadata-traffic.log": [],
+    "observability-metrics.log": [],
+    "observability-request-out.log": [],
+    "observability-request.log": [],
+    "observability-service.log": [],
+    "router-request.log": [
+      {
+        "line_number": 1355,
+        "line": "{\"ClientAddr\":\"127.0.0.1:52298\",\"DownstreamContentSize\":0,\"DownstreamStatus\":204,\"Duration\":107297048,\"Overhead\":76971,\"RequestMethod\":\"PATCH\",\"RequestPath\":\"/access/api/v1/config\",\"ServiceAddr\":\"localhost:8040\",\"SpanId\":\"cbfdf0c74d6a4a0f\",\"StartUTC\":\"2026-11-07T23:02:33.978040649Z\",\"TraceId\":\"7bdaadc31671149c04edb911bf267b35\",\"level\":\"info\",\"msg\":\"\",\"request_Traceparent\":\"00-7bdaadc31671149c04edb911bf267b35-15eac230a1fcff49-01\",\"request_Uber-Trace-Id\":\"7bdaadc31671149c04edb911bf267b35:15eac230a1fcff49:0:1\",\"request_User-Agent\":\"JFrog Access Java Client/7.191.14 89114900  Artifactory/7.161.15 86115900\",\"time\":\"2026-11-07T23:02:34Z\"}"
+      },
+      {
+        "line_number": 1360,
+        "line": "{\"ClientAddr\":\"172.18.0.1:52660\",\"DownstreamContentSize\":49,\"DownstreamStatus\":200,\"Duration\":251945868,\"Overhead\":99053,\"RequestMethod\":\"PUT\",\"RequestPath\":\"/artifactory/ui/securityconfig\",\"ServiceAddr\":\"localhost:8081\",\"SpanId\":\"13e30d9deefefb22\",\"StartUTC\":\"2026-11-07T23:02:33.973025588Z\",\"TraceId\":\"7bdaadc31671149c04edb911bf267b35\",\"level\":\"info\",\"msg\":\"\",\"request_User-Agent\":\"art-a-research/anonymous-true-caf1d3\",\"time\":\"2026-11-07T23:02:34Z\"}"
+      }
+    ],
+    "router-service.log": [],
+    "router-traefik.log": [],
+    "tomcat/tomcat-access-catalina-2026-11-07.log": [],
+    "tomcat/tomcat-access-localhost-2026-11-07.log": [],
+    "tomcat/tomcat-catalina-2026-11-07.log": [],
+    "tomcat/tomcat-localhost-2026-11-07.log": [],
+    "topology-derby.log": [],
+    "topology-metrics.log": [],
+    "topology-request-out.log": [],
+    "topology-request.log": [],
+    "topology-service.log": []
+  }
+}

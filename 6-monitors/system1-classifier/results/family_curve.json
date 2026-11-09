@@ -1,0 +1,1620 @@
+{
+ "runs": [
+  {
+   "seed": 0,
+   "held_out_family": "luna",
+   "train_families": [],
+   "k": 0,
+   "held_fpr": 0.9969849246231156,
+   "test_tpr": 0.9997920565606155,
+   "test_fpr": 0.011272141706924315,
+   "n_held": 995,
+   "paired_auc:agentapprove": 0.6724861345551001,
+   "paired_auc:tomngdev": 0.6991300366300366,
+   "paired_auc:rogue": 0.6091093117408907
+  },
+  {
+   "seed": 0,
+   "held_out_family": "luna",
+   "train_families": [
+    "glm5"
+   ],
+   "k": 1,
+   "held_fpr": 0.37286432160804023,
+   "test_tpr": 0.9968808484092326,
+   "test_fpr": 0.0,
+   "n_held": 995,
+   "paired_auc:agentapprove": 0.6591913833293144,
+   "paired_auc:tomngdev": 0.7097756410256411,
+   "paired_auc:rogue": 0.7712550607287448
+  },
+  {
+   "seed": 0,
+   "held_out_family": "luna",
+   "train_families": [
+    "llama4"
+   ],
+   "k": 1,
+   "held_fpr": 0.45226130653266333,
+   "test_tpr": 0.9972967352880017,
+   "test_fpr": 0.0,
+   "n_held": 995,
+   "paired_auc:agentapprove": 0.6623342175066312,
+   "paired_auc:tomngdev": 0.7328754578754578,
+   "paired_auc:rogue": 0.7360323886639675
+  },
+  {
+   "seed": 0,
+   "held_out_family": "luna",
+   "train_families": [
+    "mistral"
+   ],
+   "k": 1,
+   "held_fpr": 0.6793969849246231,
+   "test_tpr": 0.9995841131212311,
+   "test_fpr": 0.0,
+   "n_held": 995,
+   "paired_auc:agentapprove": 0.664271360823085,
+   "paired_auc:tomngdev": 0.7175824175824176,
+   "paired_auc:rogue": 0.7566801619433199
+  },
+  {
+   "seed": 0,
+   "held_out_family": "luna",
+   "train_families": [
+    "glm5",
+    "llama4"
+   ],
+   "k": 2,
+   "held_fpr": 0.2050251256281407,
+   "test_tpr": 0.9956331877729258,
+   "test_fpr": 0.0,
+   "n_held": 995,
+   "paired_auc:agentapprove": 0.6556386142593039,
+   "paired_auc:tomngdev": 0.7225503663003663,
+   "paired_auc:rogue": 0.7678137651821861
+  },
+  {
+   "seed": 0,
+   "held_out_family": "luna",
+   "train_families": [
+    "glm5",
+    "mistral"
+   ],
+   "k": 2,
+   "held_fpr": 0.33467336683417087,
+   "test_tpr": 0.9981285090455396,
+   "test_fpr": 0.0,
+   "n_held": 995,
+   "paired_auc:agentapprove": 0.6589984727915762,
+   "paired_auc:tomngdev": 0.7166437728937729,
+   "paired_auc:rogue": 0.7933198380566802
+  },
+  {
+   "seed": 0,
+   "held_out_family": "luna",
+   "train_families": [
+    "llama4",
+    "mistral"
+   ],
+   "k": 2,
+   "held_fpr": 0.27738693467336684,
+   "test_tpr": 0.9970887918486172,
+   "test_fpr": 0.0,
+   "n_held": 995,
+   "paired_auc:agentapprove": 0.6618921308576481,
+   "paired_auc:tomngdev": 0.7306318681318681,
+   "paired_auc:rogue": 0.7738866396761134
+  },
+  {
+   "seed": 0,
+   "held_out_family": "luna",
+   "train_families": [
+    "glm5",
+    "llama4",
+    "mistral"
+   ],
+   "k": 3,
+   "held_fpr": 0.19597989949748743,
+   "test_tpr": 0.9975046787273861,
+   "test_fpr": 0.0,
+   "n_held": 995,
+   "paired_auc:agentapprove": 0.6555421589904349,
+   "paired_auc:tomngdev": 0.7256410256410256,
+   "paired_auc:rogue": 0.7898785425101215
+  },
+  {
+   "seed": 0,
+   "held_out_family": "glm5",
+   "train_families": [],
+   "k": 0,
+   "held_fpr": 0.9947201689545935,
+   "test_tpr": 0.9997920565606155,
+   "test_fpr": 0.011272141706924315,
+   "n_held": 947,
+   "paired_auc:agentapprove": 0.6724861345551001,
+   "paired_auc:tomngdev": 0.6991300366300366,
+   "paired_auc:rogue": 0.6091093117408907
+  },
+  {
+   "seed": 0,
+   "held_out_family": "glm5",
+   "train_families": [
+    "luna"
+   ],
+   "k": 1,
+   "held_fpr": 0.6230200633579726,
+   "test_tpr": 0.9995841131212311,
+   "test_fpr": 0.001610305958132045,
+   "n_held": 947,
+   "paired_auc:agentapprove": 0.6484687726067037,
+   "paired_auc:tomngdev": 0.7143086080586081,
+   "paired_auc:rogue": 0.7321862348178136
+  },
+  {
+   "seed": 0,
+   "held_out_family": "glm5",
+   "train_families": [
+    "llama4"
+   ],
+   "k": 1,
+   "held_fpr": 0.20802534318901794,
+   "test_tpr": 0.9972967352880017,
+   "test_fpr": 0.0,
+   "n_held": 947,
+   "paired_auc:agentapprove": 0.6623342175066312,
+   "paired_auc:tomngdev": 0.7328754578754578,
+   "paired_auc:rogue": 0.7360323886639675
+  },
+  {
+   "seed": 0,
+   "held_out_family": "glm5",
+   "train_families": [
+    "mistral"
+   ],
+   "k": 1,
+   "held_fpr": 0.3125659978880676,
+   "test_tpr": 0.9995841131212311,
+   "test_fpr": 0.0,
+   "n_held": 947,
+   "paired_auc:agentapprove": 0.664271360823085,
+   "paired_auc:tomngdev": 0.7175824175824176,
+   "paired_auc:rogue": 0.7566801619433199
+  },
+  {
+   "seed": 0,
+   "held_out_family": "glm5",
+   "train_families": [
+    "llama4",
+    "luna"
+   ],
+   "k": 2,
+   "held_fpr": 0.16261879619852165,
+   "test_tpr": 0.9985443959243085,
+   "test_fpr": 0.0,
+   "n_held": 947,
+   "paired_auc:agentapprove": 0.6463467566915843,
+   "paired_auc:tomngdev": 0.7313186813186814,
+   "paired_auc:rogue": 0.7619433198380566
+  },
+  {
+   "seed": 0,
+   "held_out_family": "glm5",
+   "train_families": [
+    "luna",
+    "mistral"
+   ],
+   "k": 2,
+   "held_fpr": 0.2249208025343189,
+   "test_tpr": 0.9993761696818465,
+   "test_fpr": 0.0,
+   "n_held": 947,
+   "paired_auc:agentapprove": 0.6501808536291295,
+   "paired_auc:tomngdev": 0.7186584249084249,
+   "paired_auc:rogue": 0.7795546558704454
+  },
+  {
+   "seed": 0,
+   "held_out_family": "glm5",
+   "train_families": [
+    "llama4",
+    "mistral"
+   ],
+   "k": 2,
+   "held_fpr": 0.1003167898627244,
+   "test_tpr": 0.9970887918486172,
+   "test_fpr": 0.0,
+   "n_held": 947,
+   "paired_auc:agentapprove": 0.6618921308576481,
+   "paired_auc:tomngdev": 0.7306318681318681,
+   "paired_auc:rogue": 0.7738866396761134
+  },
+  {
+   "seed": 0,
+   "held_out_family": "glm5",
+   "train_families": [
+    "llama4",
+    "luna",
+    "mistral"
+   ],
+   "k": 3,
+   "held_fpr": 0.09820485744456177,
+   "test_tpr": 0.9985443959243085,
+   "test_fpr": 0.0,
+   "n_held": 947,
+   "paired_auc:agentapprove": 0.6456153042359939,
+   "paired_auc:tomngdev": 0.7247252747252748,
+   "paired_auc:rogue": 0.7751012145748988
+  },
+  {
+   "seed": 0,
+   "held_out_family": "llama4",
+   "train_families": [],
+   "k": 0,
+   "held_fpr": 0.9988452655889145,
+   "test_tpr": 0.9997920565606155,
+   "test_fpr": 0.011272141706924315,
+   "n_held": 866,
+   "paired_auc:agentapprove": 0.6724861345551001,
+   "paired_auc:tomngdev": 0.6991300366300366,
+   "paired_auc:rogue": 0.6091093117408907
+  },
+  {
+   "seed": 0,
+   "held_out_family": "llama4",
+   "train_families": [
+    "luna"
+   ],
+   "k": 1,
+   "held_fpr": 0.733256351039261,
+   "test_tpr": 0.9995841131212311,
+   "test_fpr": 0.001610305958132045,
+   "n_held": 866,
+   "paired_auc:agentapprove": 0.6484687726067037,
+   "paired_auc:tomngdev": 0.7143086080586081,
+   "paired_auc:rogue": 0.7321862348178136
+  },
+  {
+   "seed": 0,
+   "held_out_family": "llama4",
+   "train_families": [
+    "glm5"
+   ],
+   "k": 1,
+   "held_fpr": 0.2090069284064665,
+   "test_tpr": 0.9968808484092326,
+   "test_fpr": 0.0,
+   "n_held": 866,
+   "paired_auc:agentapprove": 0.6591913833293144,
+   "paired_auc:tomngdev": 0.7097756410256411,
+   "paired_auc:rogue": 0.7712550607287448
+  },
+  {
+   "seed": 0,
+   "held_out_family": "llama4",
+   "train_families": [
+    "mistral"
+   ],
+   "k": 1,
+   "held_fpr": 0.31986143187066973,
+   "test_tpr": 0.9995841131212311,
+   "test_fpr": 0.0,
+   "n_held": 866,
+   "paired_auc:agentapprove": 0.664271360823085,
+   "paired_auc:tomngdev": 0.7175824175824176,
+   "paired_auc:rogue": 0.7566801619433199
+  },
+  {
+   "seed": 0,
+   "held_out_family": "llama4",
+   "train_families": [
+    "glm5",
+    "luna"
+   ],
+   "k": 2,
+   "held_fpr": 0.21362586605080833,
+   "test_tpr": 0.9983364524849241,
+   "test_fpr": 0.0,
+   "n_held": 866,
+   "paired_auc:agentapprove": 0.646893336548509,
+   "paired_auc:tomngdev": 0.716735347985348,
+   "paired_auc:rogue": 0.7763157894736842
+  },
+  {
+   "seed": 0,
+   "held_out_family": "llama4",
+   "train_families": [
+    "luna",
+    "mistral"
+   ],
+   "k": 2,
+   "held_fpr": 0.24480369515011546,
+   "test_tpr": 0.9993761696818465,
+   "test_fpr": 0.0,
+   "n_held": 866,
+   "paired_auc:agentapprove": 0.6501808536291295,
+   "paired_auc:tomngdev": 0.7186584249084249,
+   "paired_auc:rogue": 0.7795546558704454
+  },
+  {
+   "seed": 0,
+   "held_out_family": "llama4",
+   "train_families": [
+    "glm5",
+    "mistral"
+   ],
+   "k": 2,
+   "held_fpr": 0.11431870669745958,
+   "test_tpr": 0.9981285090455396,
+   "test_fpr": 0.0,
+   "n_held": 866,
+   "paired_auc:agentapprove": 0.6589984727915762,
+   "paired_auc:tomngdev": 0.7166437728937729,
+   "paired_auc:rogue": 0.7933198380566802
+  },
+  {
+   "seed": 0,
+   "held_out_family": "llama4",
+   "train_families": [
+    "glm5",
+    "luna",
+    "mistral"
+   ],
+   "k": 3,
+   "held_fpr": 0.10969976905311778,
+   "test_tpr": 0.9987523393636931,
+   "test_fpr": 0.0,
+   "n_held": 866,
+   "paired_auc:agentapprove": 0.649674463467567,
+   "paired_auc:tomngdev": 0.7211996336996337,
+   "paired_auc:rogue": 0.7965587044534412
+  },
+  {
+   "seed": 0,
+   "held_out_family": "mistral",
+   "train_families": [],
+   "k": 0,
+   "held_fpr": 0.9925705794947994,
+   "test_tpr": 0.9997920565606155,
+   "test_fpr": 0.011272141706924315,
+   "n_held": 673,
+   "paired_auc:agentapprove": 0.6724861345551001,
+   "paired_auc:tomngdev": 0.6991300366300366,
+   "paired_auc:rogue": 0.6091093117408907
+  },
+  {
+   "seed": 0,
+   "held_out_family": "mistral",
+   "train_families": [
+    "luna"
+   ],
+   "k": 1,
+   "held_fpr": 0.6181277860326895,
+   "test_tpr": 0.9995841131212311,
+   "test_fpr": 0.001610305958132045,
+   "n_held": 673,
+   "paired_auc:agentapprove": 0.6484687726067037,
+   "paired_auc:tomngdev": 0.7143086080586081,
+   "paired_auc:rogue": 0.7321862348178136
+  },
+  {
+   "seed": 0,
+   "held_out_family": "mistral",
+   "train_families": [
+    "glm5"
+   ],
+   "k": 1,
+   "held_fpr": 0.150074294205052,
+   "test_tpr": 0.9968808484092326,
+   "test_fpr": 0.0,
+   "n_held": 673,
+   "paired_auc:agentapprove": 0.6591913833293144,
+   "paired_auc:tomngdev": 0.7097756410256411,
+   "paired_auc:rogue": 0.7712550607287448
+  },
+  {
+   "seed": 0,
+   "held_out_family": "mistral",
+   "train_families": [
+    "llama4"
+   ],
+   "k": 1,
+   "held_fpr": 0.17682020802377416,
+   "test_tpr": 0.9972967352880017,
+   "test_fpr": 0.0,
+   "n_held": 673,
+   "paired_auc:agentapprove": 0.6623342175066312,
+   "paired_auc:tomngdev": 0.7328754578754578,
+   "paired_auc:rogue": 0.7360323886639675
+  },
+  {
+   "seed": 0,
+   "held_out_family": "mistral",
+   "train_families": [
+    "glm5",
+    "luna"
+   ],
+   "k": 2,
+   "held_fpr": 0.13224368499257058,
+   "test_tpr": 0.9983364524849241,
+   "test_fpr": 0.0,
+   "n_held": 673,
+   "paired_auc:agentapprove": 0.646893336548509,
+   "paired_auc:tomngdev": 0.716735347985348,
+   "paired_auc:rogue": 0.7763157894736842
+  },
+  {
+   "seed": 0,
+   "held_out_family": "mistral",
+   "train_families": [
+    "llama4",
+    "luna"
+   ],
+   "k": 2,
+   "held_fpr": 0.14413075780089152,
+   "test_tpr": 0.9985443959243085,
+   "test_fpr": 0.0,
+   "n_held": 673,
+   "paired_auc:agentapprove": 0.6463467566915843,
+   "paired_auc:tomngdev": 0.7313186813186814,
+   "paired_auc:rogue": 0.7619433198380566
+  },
+  {
+   "seed": 0,
+   "held_out_family": "mistral",
+   "train_families": [
+    "glm5",
+    "llama4"
+   ],
+   "k": 2,
+   "held_fpr": 0.05200594353640416,
+   "test_tpr": 0.9956331877729258,
+   "test_fpr": 0.0,
+   "n_held": 673,
+   "paired_auc:agentapprove": 0.6556386142593039,
+   "paired_auc:tomngdev": 0.7225503663003663,
+   "paired_auc:rogue": 0.7678137651821861
+  },
+  {
+   "seed": 0,
+   "held_out_family": "mistral",
+   "train_families": [
+    "glm5",
+    "llama4",
+    "luna"
+   ],
+   "k": 3,
+   "held_fpr": 0.04457652303120357,
+   "test_tpr": 0.9972967352880017,
+   "test_fpr": 0.0,
+   "n_held": 673,
+   "paired_auc:agentapprove": 0.6454384695764006,
+   "paired_auc:tomngdev": 0.7257783882783884,
+   "paired_auc:rogue": 0.7799595141700405
+  },
+  {
+   "seed": 1,
+   "held_out_family": "luna",
+   "train_families": [],
+   "k": 0,
+   "held_fpr": 0.9949748743718593,
+   "test_tpr": 0.9995802728226653,
+   "test_fpr": 0.008681497558328812,
+   "n_held": 995,
+   "paired_auc:agentapprove": 0.671473354231975,
+   "paired_auc:tomngdev": 0.7138278388278388,
+   "paired_auc:rogue": 0.6024291497975708
+  },
+  {
+   "seed": 1,
+   "held_out_family": "luna",
+   "train_families": [
+    "glm5"
+   ],
+   "k": 1,
+   "held_fpr": 0.46934673366834173,
+   "test_tpr": 0.9991605456453305,
+   "test_fpr": 0.0010851871947911015,
+   "n_held": 995,
+   "paired_auc:agentapprove": 0.6619242826139378,
+   "paired_auc:tomngdev": 0.7206730769230769,
+   "paired_auc:rogue": 0.768421052631579
+  },
+  {
+   "seed": 1,
+   "held_out_family": "luna",
+   "train_families": [
+    "llama4"
+   ],
+   "k": 1,
+   "held_fpr": 0.4020100502512563,
+   "test_tpr": 0.998321091290661,
+   "test_fpr": 0.0010851871947911015,
+   "n_held": 995,
+   "paired_auc:agentapprove": 0.6632425046218149,
+   "paired_auc:tomngdev": 0.7325549450549451,
+   "paired_auc:rogue": 0.7469635627530364
+  },
+  {
+   "seed": 1,
+   "held_out_family": "luna",
+   "train_families": [
+    "mistral"
+   ],
+   "k": 1,
+   "held_fpr": 0.6251256281407035,
+   "test_tpr": 0.9989506820566632,
+   "test_fpr": 0.0010851871947911015,
+   "n_held": 995,
+   "paired_auc:agentapprove": 0.6685636202877582,
+   "paired_auc:tomngdev": 0.7262133699633699,
+   "paired_auc:rogue": 0.7888663967611336
+  },
+  {
+   "seed": 1,
+   "held_out_family": "luna",
+   "train_families": [
+    "glm5",
+    "llama4"
+   ],
+   "k": 2,
+   "held_fpr": 0.2723618090452261,
+   "test_tpr": 0.998321091290661,
+   "test_fpr": 0.0010851871947911015,
+   "n_held": 995,
+   "paired_auc:agentapprove": 0.6575516437585402,
+   "paired_auc:tomngdev": 0.727815934065934,
+   "paired_auc:rogue": 0.7757085020242914
+  },
+  {
+   "seed": 1,
+   "held_out_family": "luna",
+   "train_families": [
+    "glm5",
+    "mistral"
+   ],
+   "k": 2,
+   "held_fpr": 0.42512562814070354,
+   "test_tpr": 0.9991605456453305,
+   "test_fpr": 0.002170374389582203,
+   "n_held": 995,
+   "paired_auc:agentapprove": 0.6592556868418937,
+   "paired_auc:tomngdev": 0.7182692307692307,
+   "paired_auc:rogue": 0.7971659919028339
+  },
+  {
+   "seed": 1,
+   "held_out_family": "luna",
+   "train_families": [
+    "llama4",
+    "mistral"
+   ],
+   "k": 2,
+   "held_fpr": 0.36683417085427134,
+   "test_tpr": 0.9985309548793284,
+   "test_fpr": 0.0010851871947911015,
+   "n_held": 995,
+   "paired_auc:agentapprove": 0.660557832971626,
+   "paired_auc:tomngdev": 0.7288003663003664,
+   "paired_auc:rogue": 0.7748987854251012
+  },
+  {
+   "seed": 1,
+   "held_out_family": "luna",
+   "train_families": [
+    "glm5",
+    "llama4",
+    "mistral"
+   ],
+   "k": 3,
+   "held_fpr": 0.264321608040201,
+   "test_tpr": 0.9985309548793284,
+   "test_fpr": 0.0016277807921866521,
+   "n_held": 995,
+   "paired_auc:agentapprove": 0.656595129008922,
+   "paired_auc:tomngdev": 0.7273809523809525,
+   "paired_auc:rogue": 0.7900809716599191
+  },
+  {
+   "seed": 1,
+   "held_out_family": "glm5",
+   "train_families": [],
+   "k": 0,
+   "held_fpr": 0.9947201689545935,
+   "test_tpr": 0.9995802728226653,
+   "test_fpr": 0.008681497558328812,
+   "n_held": 947,
+   "paired_auc:agentapprove": 0.671473354231975,
+   "paired_auc:tomngdev": 0.7138278388278388,
+   "paired_auc:rogue": 0.6024291497975708
+  },
+  {
+   "seed": 1,
+   "held_out_family": "glm5",
+   "train_families": [
+    "luna"
+   ],
+   "k": 1,
+   "held_fpr": 0.6092925026399155,
+   "test_tpr": 0.9995802728226653,
+   "test_fpr": 0.0010851871947911015,
+   "n_held": 947,
+   "paired_auc:agentapprove": 0.6490957318543524,
+   "paired_auc:tomngdev": 0.7133928571428572,
+   "paired_auc:rogue": 0.6975708502024291
+  },
+  {
+   "seed": 1,
+   "held_out_family": "glm5",
+   "train_families": [
+    "llama4"
+   ],
+   "k": 1,
+   "held_fpr": 0.1795142555438226,
+   "test_tpr": 0.998321091290661,
+   "test_fpr": 0.0010851871947911015,
+   "n_held": 947,
+   "paired_auc:agentapprove": 0.6632425046218149,
+   "paired_auc:tomngdev": 0.7325549450549451,
+   "paired_auc:rogue": 0.7469635627530364
+  },
+  {
+   "seed": 1,
+   "held_out_family": "glm5",
+   "train_families": [
+    "mistral"
+   ],
+   "k": 1,
+   "held_fpr": 0.26293558606124606,
+   "test_tpr": 0.9989506820566632,
+   "test_fpr": 0.0010851871947911015,
+   "n_held": 947,
+   "paired_auc:agentapprove": 0.6685636202877582,
+   "paired_auc:tomngdev": 0.7262133699633699,
+   "paired_auc:rogue": 0.7888663967611336
+  },
+  {
+   "seed": 1,
+   "held_out_family": "glm5",
+   "train_families": [
+    "llama4",
+    "luna"
+   ],
+   "k": 2,
+   "held_fpr": 0.1446673706441394,
+   "test_tpr": 0.998321091290661,
+   "test_fpr": 0.0010851871947911015,
+   "n_held": 947,
+   "paired_auc:agentapprove": 0.6478016236636928,
+   "paired_auc:tomngdev": 0.7293727106227106,
+   "paired_auc:rogue": 0.7518218623481782
+  },
+  {
+   "seed": 1,
+   "held_out_family": "glm5",
+   "train_families": [
+    "luna",
+    "mistral"
+   ],
+   "k": 2,
+   "held_fpr": 0.20380147835269272,
+   "test_tpr": 0.9993704092339979,
+   "test_fpr": 0.002170374389582203,
+   "n_held": 947,
+   "paired_auc:agentapprove": 0.6507515473032714,
+   "paired_auc:tomngdev": 0.7220924908424908,
+   "paired_auc:rogue": 0.7706477732793522
+  },
+  {
+   "seed": 1,
+   "held_out_family": "glm5",
+   "train_families": [
+    "llama4",
+    "mistral"
+   ],
+   "k": 2,
+   "held_fpr": 0.12565997888067582,
+   "test_tpr": 0.9985309548793284,
+   "test_fpr": 0.0010851871947911015,
+   "n_held": 947,
+   "paired_auc:agentapprove": 0.660557832971626,
+   "paired_auc:tomngdev": 0.7288003663003664,
+   "paired_auc:rogue": 0.7748987854251012
+  },
+  {
+   "seed": 1,
+   "held_out_family": "glm5",
+   "train_families": [
+    "llama4",
+    "luna",
+    "mistral"
+   ],
+   "k": 3,
+   "held_fpr": 0.11404435058078141,
+   "test_tpr": 0.9987408184679958,
+   "test_fpr": 0.002170374389582203,
+   "n_held": 947,
+   "paired_auc:agentapprove": 0.6477051683948236,
+   "paired_auc:tomngdev": 0.7292124542124541,
+   "paired_auc:rogue": 0.7755060728744939
+  },
+  {
+   "seed": 1,
+   "held_out_family": "llama4",
+   "train_families": [],
+   "k": 0,
+   "held_fpr": 0.9988452655889145,
+   "test_tpr": 0.9995802728226653,
+   "test_fpr": 0.008681497558328812,
+   "n_held": 866,
+   "paired_auc:agentapprove": 0.671473354231975,
+   "paired_auc:tomngdev": 0.7138278388278388,
+   "paired_auc:rogue": 0.6024291497975708
+  },
+  {
+   "seed": 1,
+   "held_out_family": "llama4",
+   "train_families": [
+    "luna"
+   ],
+   "k": 1,
+   "held_fpr": 0.6974595842956121,
+   "test_tpr": 0.9995802728226653,
+   "test_fpr": 0.0010851871947911015,
+   "n_held": 866,
+   "paired_auc:agentapprove": 0.6490957318543524,
+   "paired_auc:tomngdev": 0.7133928571428572,
+   "paired_auc:rogue": 0.6975708502024291
+  },
+  {
+   "seed": 1,
+   "held_out_family": "llama4",
+   "train_families": [
+    "glm5"
+   ],
+   "k": 1,
+   "held_fpr": 0.27713625866050806,
+   "test_tpr": 0.9991605456453305,
+   "test_fpr": 0.0010851871947911015,
+   "n_held": 866,
+   "paired_auc:agentapprove": 0.6619242826139378,
+   "paired_auc:tomngdev": 0.7206730769230769,
+   "paired_auc:rogue": 0.768421052631579
+  },
+  {
+   "seed": 1,
+   "held_out_family": "llama4",
+   "train_families": [
+    "mistral"
+   ],
+   "k": 1,
+   "held_fpr": 0.2690531177829099,
+   "test_tpr": 0.9989506820566632,
+   "test_fpr": 0.0010851871947911015,
+   "n_held": 866,
+   "paired_auc:agentapprove": 0.6685636202877582,
+   "paired_auc:tomngdev": 0.7262133699633699,
+   "paired_auc:rogue": 0.7888663967611336
+  },
+  {
+   "seed": 1,
+   "held_out_family": "llama4",
+   "train_families": [
+    "glm5",
+    "luna"
+   ],
+   "k": 2,
+   "held_fpr": 0.20207852193995382,
+   "test_tpr": 0.9993704092339979,
+   "test_fpr": 0.0016277807921866521,
+   "n_held": 866,
+   "paired_auc:agentapprove": 0.6473273852584198,
+   "paired_auc:tomngdev": 0.71875,
+   "paired_auc:rogue": 0.7605263157894736
+  },
+  {
+   "seed": 1,
+   "held_out_family": "llama4",
+   "train_families": [
+    "luna",
+    "mistral"
+   ],
+   "k": 2,
+   "held_fpr": 0.21362586605080833,
+   "test_tpr": 0.9993704092339979,
+   "test_fpr": 0.002170374389582203,
+   "n_held": 866,
+   "paired_auc:agentapprove": 0.6507515473032714,
+   "paired_auc:tomngdev": 0.7220924908424908,
+   "paired_auc:rogue": 0.7706477732793522
+  },
+  {
+   "seed": 1,
+   "held_out_family": "llama4",
+   "train_families": [
+    "glm5",
+    "mistral"
+   ],
+   "k": 2,
+   "held_fpr": 0.1651270207852194,
+   "test_tpr": 0.9991605456453305,
+   "test_fpr": 0.002170374389582203,
+   "n_held": 866,
+   "paired_auc:agentapprove": 0.6592556868418937,
+   "paired_auc:tomngdev": 0.7182692307692307,
+   "paired_auc:rogue": 0.7971659919028339
+  },
+  {
+   "seed": 1,
+   "held_out_family": "llama4",
+   "train_families": [
+    "glm5",
+    "luna",
+    "mistral"
+   ],
+   "k": 3,
+   "held_fpr": 0.09815242494226328,
+   "test_tpr": 0.9989506820566632,
+   "test_fpr": 0.002170374389582203,
+   "n_held": 866,
+   "paired_auc:agentapprove": 0.6484044690941243,
+   "paired_auc:tomngdev": 0.7203296703296703,
+   "paired_auc:rogue": 0.7967611336032389
+  },
+  {
+   "seed": 1,
+   "held_out_family": "mistral",
+   "train_families": [],
+   "k": 0,
+   "held_fpr": 0.9970282317979198,
+   "test_tpr": 0.9995802728226653,
+   "test_fpr": 0.008681497558328812,
+   "n_held": 673,
+   "paired_auc:agentapprove": 0.671473354231975,
+   "paired_auc:tomngdev": 0.7138278388278388,
+   "paired_auc:rogue": 0.6024291497975708
+  },
+  {
+   "seed": 1,
+   "held_out_family": "mistral",
+   "train_families": [
+    "luna"
+   ],
+   "k": 1,
+   "held_fpr": 0.5988112927191679,
+   "test_tpr": 0.9995802728226653,
+   "test_fpr": 0.0010851871947911015,
+   "n_held": 673,
+   "paired_auc:agentapprove": 0.6490957318543524,
+   "paired_auc:tomngdev": 0.7133928571428572,
+   "paired_auc:rogue": 0.6975708502024291
+  },
+  {
+   "seed": 1,
+   "held_out_family": "mistral",
+   "train_families": [
+    "glm5"
+   ],
+   "k": 1,
+   "held_fpr": 0.1812778603268945,
+   "test_tpr": 0.9991605456453305,
+   "test_fpr": 0.0010851871947911015,
+   "n_held": 673,
+   "paired_auc:agentapprove": 0.6619242826139378,
+   "paired_auc:tomngdev": 0.7206730769230769,
+   "paired_auc:rogue": 0.768421052631579
+  },
+  {
+   "seed": 1,
+   "held_out_family": "mistral",
+   "train_families": [
+    "llama4"
+   ],
+   "k": 1,
+   "held_fpr": 0.1485884101040119,
+   "test_tpr": 0.998321091290661,
+   "test_fpr": 0.0010851871947911015,
+   "n_held": 673,
+   "paired_auc:agentapprove": 0.6632425046218149,
+   "paired_auc:tomngdev": 0.7325549450549451,
+   "paired_auc:rogue": 0.7469635627530364
+  },
+  {
+   "seed": 1,
+   "held_out_family": "mistral",
+   "train_families": [
+    "glm5",
+    "luna"
+   ],
+   "k": 2,
+   "held_fpr": 0.12332838038632987,
+   "test_tpr": 0.9993704092339979,
+   "test_fpr": 0.0016277807921866521,
+   "n_held": 673,
+   "paired_auc:agentapprove": 0.6473273852584198,
+   "paired_auc:tomngdev": 0.71875,
+   "paired_auc:rogue": 0.7605263157894736
+  },
+  {
+   "seed": 1,
+   "held_out_family": "mistral",
+   "train_families": [
+    "llama4",
+    "luna"
+   ],
+   "k": 2,
+   "held_fpr": 0.11738484398216939,
+   "test_tpr": 0.998321091290661,
+   "test_fpr": 0.0010851871947911015,
+   "n_held": 673,
+   "paired_auc:agentapprove": 0.6478016236636928,
+   "paired_auc:tomngdev": 0.7293727106227106,
+   "paired_auc:rogue": 0.7518218623481782
+  },
+  {
+   "seed": 1,
+   "held_out_family": "mistral",
+   "train_families": [
+    "glm5",
+    "llama4"
+   ],
+   "k": 2,
+   "held_fpr": 0.06835066864784546,
+   "test_tpr": 0.998321091290661,
+   "test_fpr": 0.0010851871947911015,
+   "n_held": 673,
+   "paired_auc:agentapprove": 0.6575516437585402,
+   "paired_auc:tomngdev": 0.727815934065934,
+   "paired_auc:rogue": 0.7757085020242914
+  },
+  {
+   "seed": 1,
+   "held_out_family": "mistral",
+   "train_families": [
+    "glm5",
+    "llama4",
+    "luna"
+   ],
+   "k": 3,
+   "held_fpr": 0.05200594353640416,
+   "test_tpr": 0.9979013641133263,
+   "test_fpr": 0.0016277807921866521,
+   "n_held": 673,
+   "paired_auc:agentapprove": 0.6496744634675669,
+   "paired_auc:tomngdev": 0.7283882783882782,
+   "paired_auc:rogue": 0.7834008097165991
+  },
+  {
+   "seed": 2,
+   "held_out_family": "luna",
+   "train_families": [],
+   "k": 0,
+   "held_fpr": 0.9959798994974874,
+   "test_tpr": 0.9997895179962113,
+   "test_fpr": 0.004880694143167028,
+   "n_held": 995,
+   "paired_auc:agentapprove": 0.6725022104332449,
+   "paired_auc:tomngdev": 0.689720695970696,
+   "paired_auc:rogue": 0.6313765182186235
+  },
+  {
+   "seed": 2,
+   "held_out_family": "luna",
+   "train_families": [
+    "glm5"
+   ],
+   "k": 1,
+   "held_fpr": 0.4623115577889447,
+   "test_tpr": 0.9983161439696906,
+   "test_fpr": 0.0005422993492407809,
+   "n_held": 995,
+   "paired_auc:agentapprove": 0.6622538381159071,
+   "paired_auc:tomngdev": 0.7039606227106228,
+   "paired_auc:rogue": 0.7734817813765182
+  },
+  {
+   "seed": 2,
+   "held_out_family": "luna",
+   "train_families": [
+    "llama4"
+   ],
+   "k": 1,
+   "held_fpr": 0.41708542713567837,
+   "test_tpr": 0.9962113239318038,
+   "test_fpr": 0.0005422993492407809,
+   "n_held": 995,
+   "paired_auc:agentapprove": 0.667816091954023,
+   "paired_auc:tomngdev": 0.7192307692307692,
+   "paired_auc:rogue": 0.7414979757085021
+  },
+  {
+   "seed": 2,
+   "held_out_family": "luna",
+   "train_families": [
+    "mistral"
+   ],
+   "k": 1,
+   "held_fpr": 0.6673366834170854,
+   "test_tpr": 0.9978951799621132,
+   "test_fpr": 0.0005422993492407809,
+   "n_held": 995,
+   "paired_auc:agentapprove": 0.6705731050558636,
+   "paired_auc:tomngdev": 0.7077380952380953,
+   "paired_auc:rogue": 0.7908906882591094
+  },
+  {
+   "seed": 2,
+   "held_out_family": "luna",
+   "train_families": [
+    "glm5",
+    "llama4"
+   ],
+   "k": 2,
+   "held_fpr": 0.2221105527638191,
+   "test_tpr": 0.9974742159545359,
+   "test_fpr": 0.0005422993492407809,
+   "n_held": 995,
+   "paired_auc:agentapprove": 0.6597942287597459,
+   "paired_auc:tomngdev": 0.7097527472527472,
+   "paired_auc:rogue": 0.7775303643724697
+  },
+  {
+   "seed": 2,
+   "held_out_family": "luna",
+   "train_families": [
+    "glm5",
+    "mistral"
+   ],
+   "k": 2,
+   "held_fpr": 0.3035175879396985,
+   "test_tpr": 0.9970532519469585,
+   "test_fpr": 0.0005422993492407809,
+   "n_held": 995,
+   "paired_auc:agentapprove": 0.6614500442086648,
+   "paired_auc:tomngdev": 0.7054487179487179,
+   "paired_auc:rogue": 0.7781376518218623
+  },
+  {
+   "seed": 2,
+   "held_out_family": "luna",
+   "train_families": [
+    "llama4",
+    "mistral"
+   ],
+   "k": 2,
+   "held_fpr": 0.3437185929648241,
+   "test_tpr": 0.9978951799621132,
+   "test_fpr": 0.0005422993492407809,
+   "n_held": 995,
+   "paired_auc:agentapprove": 0.6642070573105056,
+   "paired_auc:tomngdev": 0.7126144688644689,
+   "paired_auc:rogue": 0.7767206477732793
+  },
+  {
+   "seed": 2,
+   "held_out_family": "luna",
+   "train_families": [
+    "glm5",
+    "llama4",
+    "mistral"
+   ],
+   "k": 3,
+   "held_fpr": 0.21809045226130652,
+   "test_tpr": 0.9976846979583246,
+   "test_fpr": 0.0005422993492407809,
+   "n_held": 995,
+   "paired_auc:agentapprove": 0.6610401093159713,
+   "paired_auc:tomngdev": 0.7168727106227106,
+   "paired_auc:rogue": 0.7894736842105263
+  },
+  {
+   "seed": 2,
+   "held_out_family": "glm5",
+   "train_families": [],
+   "k": 0,
+   "held_fpr": 0.9947201689545935,
+   "test_tpr": 0.9997895179962113,
+   "test_fpr": 0.004880694143167028,
+   "n_held": 947,
+   "paired_auc:agentapprove": 0.6725022104332449,
+   "paired_auc:tomngdev": 0.689720695970696,
+   "paired_auc:rogue": 0.6313765182186235
+  },
+  {
+   "seed": 2,
+   "held_out_family": "glm5",
+   "train_families": [
+    "luna"
+   ],
+   "k": 1,
+   "held_fpr": 0.6821541710665259,
+   "test_tpr": 0.9991580719848453,
+   "test_fpr": 0.0005422993492407809,
+   "n_held": 947,
+   "paired_auc:agentapprove": 0.6511132545615304,
+   "paired_auc:tomngdev": 0.7036401098901098,
+   "paired_auc:rogue": 0.7226720647773279
+  },
+  {
+   "seed": 2,
+   "held_out_family": "glm5",
+   "train_families": [
+    "llama4"
+   ],
+   "k": 1,
+   "held_fpr": 0.17845828933474128,
+   "test_tpr": 0.9962113239318038,
+   "test_fpr": 0.0005422993492407809,
+   "n_held": 947,
+   "paired_auc:agentapprove": 0.667816091954023,
+   "paired_auc:tomngdev": 0.7192307692307692,
+   "paired_auc:rogue": 0.7414979757085021
+  },
+  {
+   "seed": 2,
+   "held_out_family": "glm5",
+   "train_families": [
+    "mistral"
+   ],
+   "k": 1,
+   "held_fpr": 0.2608236536430834,
+   "test_tpr": 0.9978951799621132,
+   "test_fpr": 0.0005422993492407809,
+   "n_held": 947,
+   "paired_auc:agentapprove": 0.6705731050558636,
+   "paired_auc:tomngdev": 0.7077380952380953,
+   "paired_auc:rogue": 0.7908906882591094
+  },
+  {
+   "seed": 2,
+   "held_out_family": "glm5",
+   "train_families": [
+    "llama4",
+    "luna"
+   ],
+   "k": 2,
+   "held_fpr": 0.13938753959873285,
+   "test_tpr": 0.9981056619659019,
+   "test_fpr": 0.0005422993492407809,
+   "n_held": 947,
+   "paired_auc:agentapprove": 0.6491841491841492,
+   "paired_auc:tomngdev": 0.7155906593406594,
+   "paired_auc:rogue": 0.7512145748987854
+  },
+  {
+   "seed": 2,
+   "held_out_family": "glm5",
+   "train_families": [
+    "luna",
+    "mistral"
+   ],
+   "k": 2,
+   "held_fpr": 0.1583949313621964,
+   "test_tpr": 0.9981056619659019,
+   "test_fpr": 0.0005422993492407809,
+   "n_held": 947,
+   "paired_auc:agentapprove": 0.6539104573587332,
+   "paired_auc:tomngdev": 0.7094093406593407,
+   "paired_auc:rogue": 0.7748987854251012
+  },
+  {
+   "seed": 2,
+   "held_out_family": "glm5",
+   "train_families": [
+    "llama4",
+    "mistral"
+   ],
+   "k": 2,
+   "held_fpr": 0.1119324181626188,
+   "test_tpr": 0.9978951799621132,
+   "test_fpr": 0.0005422993492407809,
+   "n_held": 947,
+   "paired_auc:agentapprove": 0.6642070573105056,
+   "paired_auc:tomngdev": 0.7126144688644689,
+   "paired_auc:rogue": 0.7767206477732793
+  },
+  {
+   "seed": 2,
+   "held_out_family": "glm5",
+   "train_families": [
+    "llama4",
+    "luna",
+    "mistral"
+   ],
+   "k": 3,
+   "held_fpr": 0.08130939809926083,
+   "test_tpr": 0.9976846979583246,
+   "test_fpr": 0.0005422993492407809,
+   "n_held": 947,
+   "paired_auc:agentapprove": 0.6501567398119122,
+   "paired_auc:tomngdev": 0.7190705128205129,
+   "paired_auc:rogue": 0.7688259109311741
+  },
+  {
+   "seed": 2,
+   "held_out_family": "llama4",
+   "train_families": [],
+   "k": 0,
+   "held_fpr": 0.9988452655889145,
+   "test_tpr": 0.9997895179962113,
+   "test_fpr": 0.004880694143167028,
+   "n_held": 866,
+   "paired_auc:agentapprove": 0.6725022104332449,
+   "paired_auc:tomngdev": 0.689720695970696,
+   "paired_auc:rogue": 0.6313765182186235
+  },
+  {
+   "seed": 2,
+   "held_out_family": "llama4",
+   "train_families": [
+    "luna"
+   ],
+   "k": 1,
+   "held_fpr": 0.7886836027713626,
+   "test_tpr": 0.9991580719848453,
+   "test_fpr": 0.0005422993492407809,
+   "n_held": 866,
+   "paired_auc:agentapprove": 0.6511132545615304,
+   "paired_auc:tomngdev": 0.7036401098901098,
+   "paired_auc:rogue": 0.7226720647773279
+  },
+  {
+   "seed": 2,
+   "held_out_family": "llama4",
+   "train_families": [
+    "glm5"
+   ],
+   "k": 1,
+   "held_fpr": 0.25519630484988454,
+   "test_tpr": 0.9983161439696906,
+   "test_fpr": 0.0005422993492407809,
+   "n_held": 866,
+   "paired_auc:agentapprove": 0.6622538381159071,
+   "paired_auc:tomngdev": 0.7039606227106228,
+   "paired_auc:rogue": 0.7734817813765182
+  },
+  {
+   "seed": 2,
+   "held_out_family": "llama4",
+   "train_families": [
+    "mistral"
+   ],
+   "k": 1,
+   "held_fpr": 0.2956120092378753,
+   "test_tpr": 0.9978951799621132,
+   "test_fpr": 0.0005422993492407809,
+   "n_held": 866,
+   "paired_auc:agentapprove": 0.6705731050558636,
+   "paired_auc:tomngdev": 0.7077380952380953,
+   "paired_auc:rogue": 0.7908906882591094
+  },
+  {
+   "seed": 2,
+   "held_out_family": "llama4",
+   "train_families": [
+    "glm5",
+    "luna"
+   ],
+   "k": 2,
+   "held_fpr": 0.197459584295612,
+   "test_tpr": 0.9983161439696906,
+   "test_fpr": 0.0005422993492407809,
+   "n_held": 866,
+   "paired_auc:agentapprove": 0.6516759102966,
+   "paired_auc:tomngdev": 0.7111492673992673,
+   "paired_auc:rogue": 0.7793522267206479
+  },
+  {
+   "seed": 2,
+   "held_out_family": "llama4",
+   "train_families": [
+    "luna",
+    "mistral"
+   ],
+   "k": 2,
+   "held_fpr": 0.17782909930715934,
+   "test_tpr": 0.9981056619659019,
+   "test_fpr": 0.0005422993492407809,
+   "n_held": 866,
+   "paired_auc:agentapprove": 0.6539104573587332,
+   "paired_auc:tomngdev": 0.7094093406593407,
+   "paired_auc:rogue": 0.7748987854251012
+  },
+  {
+   "seed": 2,
+   "held_out_family": "llama4",
+   "train_families": [
+    "glm5",
+    "mistral"
+   ],
+   "k": 2,
+   "held_fpr": 0.10739030023094688,
+   "test_tpr": 0.9970532519469585,
+   "test_fpr": 0.0005422993492407809,
+   "n_held": 866,
+   "paired_auc:agentapprove": 0.6614500442086648,
+   "paired_auc:tomngdev": 0.7054487179487179,
+   "paired_auc:rogue": 0.7781376518218623
+  },
+  {
+   "seed": 2,
+   "held_out_family": "llama4",
+   "train_families": [
+    "glm5",
+    "luna",
+    "mistral"
+   ],
+   "k": 3,
+   "held_fpr": 0.09122401847575058,
+   "test_tpr": 0.9983161439696906,
+   "test_fpr": 0.0005422993492407809,
+   "n_held": 866,
+   "paired_auc:agentapprove": 0.6529298287918979,
+   "paired_auc:tomngdev": 0.7129120879120879,
+   "paired_auc:rogue": 0.7890688259109313
+  },
+  {
+   "seed": 2,
+   "held_out_family": "mistral",
+   "train_families": [],
+   "k": 0,
+   "held_fpr": 0.9940564635958395,
+   "test_tpr": 0.9997895179962113,
+   "test_fpr": 0.004880694143167028,
+   "n_held": 673,
+   "paired_auc:agentapprove": 0.6725022104332449,
+   "paired_auc:tomngdev": 0.689720695970696,
+   "paired_auc:rogue": 0.6313765182186235
+  },
+  {
+   "seed": 2,
+   "held_out_family": "mistral",
+   "train_families": [
+    "luna"
+   ],
+   "k": 1,
+   "held_fpr": 0.6656760772659732,
+   "test_tpr": 0.9991580719848453,
+   "test_fpr": 0.0005422993492407809,
+   "n_held": 673,
+   "paired_auc:agentapprove": 0.6511132545615304,
+   "paired_auc:tomngdev": 0.7036401098901098,
+   "paired_auc:rogue": 0.7226720647773279
+  },
+  {
+   "seed": 2,
+   "held_out_family": "mistral",
+   "train_families": [
+    "glm5"
+   ],
+   "k": 1,
+   "held_fpr": 0.1827637444279346,
+   "test_tpr": 0.9983161439696906,
+   "test_fpr": 0.0005422993492407809,
+   "n_held": 673,
+   "paired_auc:agentapprove": 0.6622538381159071,
+   "paired_auc:tomngdev": 0.7039606227106228,
+   "paired_auc:rogue": 0.7734817813765182
+  },
+  {
+   "seed": 2,
+   "held_out_family": "mistral",
+   "train_families": [
+    "llama4"
+   ],
+   "k": 1,
+   "held_fpr": 0.15304606240713226,
+   "test_tpr": 0.9962113239318038,
+   "test_fpr": 0.0005422993492407809,
+   "n_held": 673,
+   "paired_auc:agentapprove": 0.667816091954023,
+   "paired_auc:tomngdev": 0.7192307692307692,
+   "paired_auc:rogue": 0.7414979757085021
+  },
+  {
+   "seed": 2,
+   "held_out_family": "mistral",
+   "train_families": [
+    "glm5",
+    "luna"
+   ],
+   "k": 2,
+   "held_fpr": 0.12481426448736999,
+   "test_tpr": 0.9983161439696906,
+   "test_fpr": 0.0005422993492407809,
+   "n_held": 673,
+   "paired_auc:agentapprove": 0.6516759102966,
+   "paired_auc:tomngdev": 0.7111492673992673,
+   "paired_auc:rogue": 0.7793522267206479
+  },
+  {
+   "seed": 2,
+   "held_out_family": "mistral",
+   "train_families": [
+    "llama4",
+    "luna"
+   ],
+   "k": 2,
+   "held_fpr": 0.12184249628528974,
+   "test_tpr": 0.9981056619659019,
+   "test_fpr": 0.0005422993492407809,
+   "n_held": 673,
+   "paired_auc:agentapprove": 0.6491841491841492,
+   "paired_auc:tomngdev": 0.7155906593406594,
+   "paired_auc:rogue": 0.7512145748987854
+  },
+  {
+   "seed": 2,
+   "held_out_family": "mistral",
+   "train_families": [
+    "glm5",
+    "llama4"
+   ],
+   "k": 2,
+   "held_fpr": 0.05943536404160475,
+   "test_tpr": 0.9974742159545359,
+   "test_fpr": 0.0005422993492407809,
+   "n_held": 673,
+   "paired_auc:agentapprove": 0.6597942287597459,
+   "paired_auc:tomngdev": 0.7097527472527472,
+   "paired_auc:rogue": 0.7775303643724697
+  },
+  {
+   "seed": 2,
+   "held_out_family": "mistral",
+   "train_families": [
+    "glm5",
+    "llama4",
+    "luna"
+   ],
+   "k": 3,
+   "held_fpr": 0.0549777117384844,
+   "test_tpr": 0.9976846979583246,
+   "test_fpr": 0.0005422993492407809,
+   "n_held": 673,
+   "paired_auc:agentapprove": 0.6495137046861185,
+   "paired_auc:tomngdev": 0.7152472527472528,
+   "paired_auc:rogue": 0.7734817813765181
+  }
+ ],
+ "by_k": [
+  {
+   "k": 0,
+   "held_fpr_mean": 0.996,
+   "held_fpr_std": 0.0021,
+   "test_tpr": 0.9997,
+   "test_fpr": 0.0083,
+   "paired_agentapprove": 0.6722,
+   "paired_tomngdev": 0.7009,
+   "paired_rogue": 0.6143
+  },
+  {
+   "k": 1,
+   "held_fpr_mean": 0.4051,
+   "held_fpr_std": 0.2078,
+   "test_tpr": 0.9984,
+   "test_fpr": 0.0007,
+   "paired_agentapprove": 0.6607,
+   "paired_tomngdev": 0.7168,
+   "paired_rogue": 0.7522
+  },
+  {
+   "k": 2,
+   "held_fpr_mean": 0.1862,
+   "held_fpr_std": 0.0891,
+   "test_tpr": 0.9982,
+   "test_fpr": 0.0007,
+   "paired_agentapprove": 0.6546,
+   "paired_tomngdev": 0.7192,
+   "paired_rogue": 0.7734
+  },
+  {
+   "k": 3,
+   "held_fpr_mean": 0.1185,
+   "held_fpr_std": 0.0702,
+   "test_tpr": 0.9981,
+   "test_fpr": 0.0008,
+   "paired_agentapprove": 0.651,
+   "paired_tomngdev": 0.7222,
+   "paired_rogue": 0.784
+  }
+ ],
+ "by_family_k": [
+  {
+   "held_out_family": "glm5",
+   "k": 0,
+   "mean": 0.9947,
+   "std": 0.0
+  },
+  {
+   "held_out_family": "glm5",
+   "k": 1,
+   "mean": 0.3685,
+   "std": 0.2075
+  },
+  {
+   "held_out_family": "glm5",
+   "k": 2,
+   "mean": 0.1524,
+   "std": 0.0408
+  },
+  {
+   "held_out_family": "glm5",
+   "k": 3,
+   "mean": 0.0979,
+   "std": 0.0164
+  },
+  {
+   "held_out_family": "llama4",
+   "k": 0,
+   "mean": 0.9988,
+   "std": 0.0
+  },
+  {
+   "held_out_family": "llama4",
+   "k": 1,
+   "mean": 0.4273,
+   "std": 0.2374
+  },
+  {
+   "held_out_family": "llama4",
+   "k": 2,
+   "mean": 0.1818,
+   "std": 0.0461
+  },
+  {
+   "held_out_family": "llama4",
+   "k": 3,
+   "mean": 0.0997,
+   "std": 0.0093
+  },
+  {
+   "held_out_family": "luna",
+   "k": 0,
+   "mean": 0.996,
+   "std": 0.001
+  },
+  {
+   "held_out_family": "luna",
+   "k": 1,
+   "mean": 0.5053,
+   "std": 0.1188
+  },
+  {
+   "held_out_family": "luna",
+   "k": 2,
+   "mean": 0.3056,
+   "std": 0.0701
+  },
+  {
+   "held_out_family": "luna",
+   "k": 3,
+   "mean": 0.2261,
+   "std": 0.0349
+  },
+  {
+   "held_out_family": "mistral",
+   "k": 0,
+   "mean": 0.9946,
+   "std": 0.0023
+  },
+  {
+   "held_out_family": "mistral",
+   "k": 1,
+   "mean": 0.3195,
+   "std": 0.2321
+  },
+  {
+   "held_out_family": "mistral",
+   "k": 2,
+   "mean": 0.1048,
+   "std": 0.0348
+  },
+  {
+   "held_out_family": "mistral",
+   "k": 3,
+   "mean": 0.0505,
+   "std": 0.0054
+  }
+ ]
+}

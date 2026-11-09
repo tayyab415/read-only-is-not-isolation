@@ -1,0 +1,399 @@
+{
+  "scripted": true,
+  "spec": {
+    "run_id": "p5b-s1-immutable-1",
+    "configuration": "immutable",
+    "background_active": 1
+  },
+  "observed": {
+    "id": 1,
+    "actor": "alice",
+    "request": {
+      "op": "batch",
+      "id": 1,
+      "actor": "alice",
+      "requests": [
+        {
+          "method": "GET",
+          "path": "/fixture/pkg-01.bin",
+          "headers": {},
+          "offset_s": 0.0
+        },
+        {
+          "method": "GET",
+          "path": "/fixture/pkg-04.bin",
+          "headers": {},
+          "offset_s": 0.1
+        },
+        {
+          "method": "GET",
+          "path": "/fixture/pkg-09.bin",
+          "headers": {},
+          "offset_s": 0.2
+        },
+        {
+          "method": "GET",
+          "path": "/fixture/pkg-12.bin",
+          "headers": {},
+          "offset_s": 0.30000000000000004
+        },
+        {
+          "method": "GET",
+          "path": "/fixture/pkg-01.bin",
+          "headers": {},
+          "offset_s": 0.4
+        },
+        {
+          "method": "GET",
+          "path": "/fixture/pkg-04.bin",
+          "headers": {},
+          "offset_s": 0.5
+        },
+        {
+          "method": "GET",
+          "path": "/fixture/pkg-09.bin",
+          "headers": {},
+          "offset_s": 0.6000000000000001
+        },
+        {
+          "method": "GET",
+          "path": "/fixture/pkg-12.bin",
+          "headers": {},
+          "offset_s": 0.7000000000000001
+        }
+      ]
+    },
+    "return_utc_ns": 1794195130546590610,
+    "complete": true,
+    "records": [
+      {
+        "method": "GET",
+        "path": "/fixture/pkg-01.bin",
+        "marker": "p1/p5b-s1-immutable-1/a00/alice/r00",
+        "probe": "subject.turn00.r00",
+        "request_headers": {},
+        "scheduled_offset_s": 0.0,
+        "schedule_epoch_utc_ns": 1794195129844712084,
+        "schedule_setup_utc_ns": 1794195129695175329,
+        "start_lag_ms": 0.127799,
+        "start_utc_ns": 1794195129844845744,
+        "status": 200,
+        "headers": [
+          [
+            "Content-Type",
+            "application/octet-stream"
+          ],
+          [
+            "Content-Length",
+            "31"
+          ],
+          [
+            "ETag",
+            "\"85c7795747cf1f3ac1e7d7f53d3faa6b9d9f3dc961aa9b692aaaddb943ace870\""
+          ],
+          [
+            "Cache-Control",
+            "private, max-age=31536000, immutable"
+          ]
+        ],
+        "body_length": 31,
+        "body_sha256": "85c7795747cf1f3ac1e7d7f53d3faa6b9d9f3dc961aa9b692aaaddb943ace870",
+        "body_text": null,
+        "end_utc_ns": 1794195129856775272,
+        "elapsed_ms": 11.932808,
+        "actor": "alice",
+        "target": "gateway"
+      },
+      {
+        "method": "GET",
+        "path": "/fixture/pkg-04.bin",
+        "marker": "p1/p5b-s1-immutable-1/a00/alice/r01",
+        "probe": "subject.turn00.r01",
+        "request_headers": {},
+        "scheduled_offset_s": 0.1,
+        "schedule_epoch_utc_ns": 1794195129844712084,
+        "schedule_setup_utc_ns": 1794195129695175329,
+        "start_lag_ms": 0.096313,
+        "start_utc_ns": 1794195129944812978,
+        "status": 200,
+        "headers": [
+          [
+            "Content-Type",
+            "application/octet-stream"
+          ],
+          [
+            "Content-Length",
+            "31"
+          ],
+          [
+            "ETag",
+            "\"85c7795747cf1f3ac1e7d7f53d3faa6b9d9f3dc961aa9b692aaaddb943ace870\""
+          ],
+          [
+            "Cache-Control",
+            "private, max-age=31536000, immutable"
+          ]
+        ],
+        "body_length": 31,
+        "body_sha256": "85c7795747cf1f3ac1e7d7f53d3faa6b9d9f3dc961aa9b692aaaddb943ace870",
+        "body_text": null,
+        "end_utc_ns": 1794195129946139638,
+        "elapsed_ms": 1.32876,
+        "actor": "alice",
+        "target": "gateway"
+      },
+      {
+        "method": "GET",
+        "path": "/fixture/pkg-09.bin",
+        "marker": "p1/p5b-s1-immutable-1/a00/alice/r02",
+        "probe": "subject.turn00.r02",
+        "request_headers": {},
+        "scheduled_offset_s": 0.2,
+        "schedule_epoch_utc_ns": 1794195129844712084,
+        "schedule_setup_utc_ns": 1794195129695175329,
+        "start_lag_ms": 0.0997,
+        "start_utc_ns": 1794195130044816515,
+        "status": 200,
+        "headers": [
+          [
+            "Content-Type",
+            "application/octet-stream"
+          ],
+          [
+            "Content-Length",
+            "31"
+          ],
+          [
+            "ETag",
+            "\"85c7795747cf1f3ac1e7d7f53d3faa6b9d9f3dc961aa9b692aaaddb943ace870\""
+          ],
+          [
+            "Cache-Control",
+            "private, max-age=31536000, immutable"
+          ]
+        ],
+        "body_length": 31,
+        "body_sha256": "85c7795747cf1f3ac1e7d7f53d3faa6b9d9f3dc961aa9b692aaaddb943ace870",
+        "body_text": null,
+        "end_utc_ns": 1794195130046147125,
+        "elapsed_ms": 1.333,
+        "actor": "alice",
+        "target": "gateway"
+      },
+      {
+        "method": "GET",
+        "path": "/fixture/pkg-12.bin",
+        "marker": "p1/p5b-s1-immutable-1/a00/alice/r03",
+        "probe": "subject.turn00.r03",
+        "request_headers": {},
+        "scheduled_offset_s": 0.30000000000000004,
+        "schedule_epoch_utc_ns": 1794195129844712084,
+        "schedule_setup_utc_ns": 1794195129695175329,
+        "start_lag_ms": 0.100466,
+        "start_utc_ns": 1794195130144816991,
+        "status": 200,
+        "headers": [
+          [
+            "Content-Type",
+            "application/octet-stream"
+          ],
+          [
+            "Content-Length",
+            "31"
+          ],
+          [
+            "ETag",
+            "\"85c7795747cf1f3ac1e7d7f53d3faa6b9d9f3dc961aa9b692aaaddb943ace870\""
+          ],
+          [
+            "Cache-Control",
+            "private, max-age=31536000, immutable"
+          ]
+        ],
+        "body_length": 31,
+        "body_sha256": "85c7795747cf1f3ac1e7d7f53d3faa6b9d9f3dc961aa9b692aaaddb943ace870",
+        "body_text": null,
+        "end_utc_ns": 1794195130146081956,
+        "elapsed_ms": 1.266865,
+        "actor": "alice",
+        "target": "gateway"
+      },
+      {
+        "method": "GET",
+        "path": "/fixture/pkg-01.bin",
+        "marker": "p1/p5b-s1-immutable-1/a00/alice/r04",
+        "probe": "subject.turn00.r04",
+        "request_headers": {},
+        "scheduled_offset_s": 0.4,
+        "schedule_epoch_utc_ns": 1794195129844712084,
+        "schedule_setup_utc_ns": 1794195129695175329,
+        "start_lag_ms": 0.085021,
+        "start_utc_ns": 1794195130244801236,
+        "status": 200,
+        "headers": [
+          [
+            "Content-Type",
+            "application/octet-stream"
+          ],
+          [
+            "Content-Length",
+            "31"
+          ],
+          [
+            "ETag",
+            "\"85c7795747cf1f3ac1e7d7f53d3faa6b9d9f3dc961aa9b692aaaddb943ace870\""
+          ],
+          [
+            "Cache-Control",
+            "private, max-age=31536000, immutable"
+          ]
+        ],
+        "body_length": 31,
+        "body_sha256": "85c7795747cf1f3ac1e7d7f53d3faa6b9d9f3dc961aa9b692aaaddb943ace870",
+        "body_text": null,
+        "end_utc_ns": 1794195130245984466,
+        "elapsed_ms": 1.18476,
+        "actor": "alice",
+        "target": "gateway"
+      },
+      {
+        "method": "GET",
+        "path": "/fixture/pkg-04.bin",
+        "marker": "p1/p5b-s1-immutable-1/a00/alice/r05",
+        "probe": "subject.turn00.r05",
+        "request_headers": {},
+        "scheduled_offset_s": 0.5,
+        "schedule_epoch_utc_ns": 1794195129844712084,
+        "schedule_setup_utc_ns": 1794195129695175329,
+        "start_lag_ms": 0.094648,
+        "start_utc_ns": 1794195130344811184,
+        "status": 200,
+        "headers": [
+          [
+            "Content-Type",
+            "application/octet-stream"
+          ],
+          [
+            "Content-Length",
+            "31"
+          ],
+          [
+            "ETag",
+            "\"85c7795747cf1f3ac1e7d7f53d3faa6b9d9f3dc961aa9b692aaaddb943ace870\""
+          ],
+          [
+            "Cache-Control",
+            "private, max-age=31536000, immutable"
+          ]
+        ],
+        "body_length": 31,
+        "body_sha256": "85c7795747cf1f3ac1e7d7f53d3faa6b9d9f3dc961aa9b692aaaddb943ace870",
+        "body_text": null,
+        "end_utc_ns": 1794195130346007374,
+        "elapsed_ms": 1.198011,
+        "actor": "alice",
+        "target": "gateway"
+      },
+      {
+        "method": "GET",
+        "path": "/fixture/pkg-09.bin",
+        "marker": "p1/p5b-s1-immutable-1/a00/alice/r06",
+        "probe": "subject.turn00.r06",
+        "request_headers": {},
+        "scheduled_offset_s": 0.6000000000000001,
+        "schedule_epoch_utc_ns": 1794195129844712084,
+        "schedule_setup_utc_ns": 1794195129695175329,
+        "start_lag_ms": 0.096035,
+        "start_utc_ns": 1794195130444812560,
+        "status": 200,
+        "headers": [
+          [
+            "Content-Type",
+            "application/octet-stream"
+          ],
+          [
+            "Content-Length",
+            "31"
+          ],
+          [
+            "ETag",
+            "\"85c7795747cf1f3ac1e7d7f53d3faa6b9d9f3dc961aa9b692aaaddb943ace870\""
+          ],
+          [
+            "Cache-Control",
+            "private, max-age=31536000, immutable"
+          ]
+        ],
+        "body_length": 31,
+        "body_sha256": "85c7795747cf1f3ac1e7d7f53d3faa6b9d9f3dc961aa9b692aaaddb943ace870",
+        "body_text": null,
+        "end_utc_ns": 1794195130446029942,
+        "elapsed_ms": 1.219191,
+        "actor": "alice",
+        "target": "gateway"
+      },
+      {
+        "method": "GET",
+        "path": "/fixture/pkg-12.bin",
+        "marker": "p1/p5b-s1-immutable-1/a00/alice/r07",
+        "probe": "subject.turn00.r07",
+        "request_headers": {},
+        "scheduled_offset_s": 0.7000000000000001,
+        "schedule_epoch_utc_ns": 1794195129844712084,
+        "schedule_setup_utc_ns": 1794195129695175329,
+        "start_lag_ms": 0.098151,
+        "start_utc_ns": 1794195130544814646,
+        "status": 200,
+        "headers": [
+          [
+            "Content-Type",
+            "application/octet-stream"
+          ],
+          [
+            "Content-Length",
+            "31"
+          ],
+          [
+            "ETag",
+            "\"85c7795747cf1f3ac1e7d7f53d3faa6b9d9f3dc961aa9b692aaaddb943ace870\""
+          ],
+          [
+            "Cache-Control",
+            "private, max-age=31536000, immutable"
+          ]
+        ],
+        "body_length": 31,
+        "body_sha256": "85c7795747cf1f3ac1e7d7f53d3faa6b9d9f3dc961aa9b692aaaddb943ace870",
+        "body_text": null,
+        "end_utc_ns": 1794195130546027548,
+        "elapsed_ms": 1.214721,
+        "actor": "alice",
+        "target": "gateway"
+      }
+    ]
+  },
+  "background": {
+    "complete": true,
+    "waves": 4
+  },
+  "closed": {
+    "closed": true,
+    "status": {
+      "run_id": "p5b-s1-immutable-1",
+      "complete": true,
+      "scripted": true,
+      "background_active": 1,
+      "source_freeze_sha256": "742ac28c78100f7218f724e534fc24cbd249fd06d1d0ed76cefba4cee5b93968",
+      "cleanup_absence_proved": true,
+      "batches": 5,
+      "http_requests": 72,
+      "file_sha256": {
+        "provision.json": "0b16fdbb1bb57644e854704ebef2e4d4c06d736a3ee2f25947ecf90a072a738b",
+        "server-log-lines.txt": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "cleanup.json": "c6ba8f0d9c0d3ab64c5c089940456ec8aa39e43149c2d51145ffb07dbbff2abd",
+        "server.json": "3a7c7c6301cc5e43e2d89825ffae24ce8712170ca9251991956da40636501a16",
+        "actions.jsonl": "92e6076479cabd371f5e9c38dc31e829d43d378b43c35a47dbb687b1550eef98"
+      }
+    }
+  }
+}

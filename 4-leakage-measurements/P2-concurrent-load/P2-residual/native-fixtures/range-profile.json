@@ -1,0 +1,25 @@
+{
+  "source": "data/smoke-p2-s1/sham/calibration-server.json",
+  "source_sha256": "dd0ccc59d45414706bfa37d24353348d0afd4da6cf8d17e76c5ccf931ae83b2c",
+  "locator": "#/gateway_log/4",
+  "row": {
+    "start_utc_ns": 1794172608191142846,
+    "end_utc_ns": 1794172608193917157,
+    "method": "GET",
+    "path": "/artifactory/p1-p2-s1-c-sham-alice/pkg-00.bin",
+    "status": 206,
+    "policy_reason": null,
+    "principal": "p1-p2-s1-c-sham-alice",
+    "client_ip": "172.19.0.1",
+    "marker": "p1/p2-s1-c-sham/profile/alice/profile-3",
+    "request_headers": [
+      [
+        "range",
+        "bytes=0-0"
+      ]
+    ],
+    "body_bytes": 1,
+    "body_sha256": "148de9c5a7a44d19e56cd9ae1a554bf67847afb0c58f6e12fa29ac7ddfca9940",
+    "gateway_edition": 2
+  }
+}

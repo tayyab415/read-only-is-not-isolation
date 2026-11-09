@@ -1,0 +1,32 @@
+{
+  "utc": "2026-11-08T23:47:10.511711+00:00",
+  "original_smoke_source_freeze_sha256": "b962b6747614065235249598e315b0c14c90be0120a95ab70a53bc30fba7478f",
+  "passed": false,
+  "runs": [
+    {
+      "run_id": "p4-s1-open",
+      "passed": false,
+      "exception_type": "KeyError",
+      "exception": "'containers'"
+    },
+    {
+      "run_id": "p4-s1-separate",
+      "passed": false,
+      "exception_type": "KeyError",
+      "exception": "'containers'"
+    },
+    {
+      "passed": true,
+      "checks": 83,
+      "failure_count": 0,
+      "failures": [],
+      "run_id": "p4-s1-immutable",
+      "batches": 2,
+      "http_requests": 8,
+      "scripted": true,
+      "scope": "Confined actions and retained wire records; model communication proof remains separate."
+    }
+  ],
+  "model_calls": 0,
+  "cause": "Mutable public provision omits containers/networks while strict audit requires both; immutable includes them. No raw evidence edited. Repair collector and fresh smoke before model subjects."
+}

@@ -1,0 +1,72 @@
+{
+  "version": "1",
+  "pip_version": "25.3",
+  "install": [
+    {
+      "download_info": {
+        "url": "http://127.0.0.1:64627/files/93de0c98785b27fcf659856aa9f54bfbd399e29969b0621bc7f762bd441b4539/tenacity-9.0.0-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=93de0c98785b27fcf659856aa9f54bfbd399e29969b0621bc7f762bd441b4539",
+          "hashes": {
+            "sha256": "93de0c98785b27fcf659856aa9f54bfbd399e29969b0621bc7f762bd441b4539"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "tenacity",
+        "version": "9.0.0",
+        "summary": "Retry code until it succeeds",
+        "description": "Tenacity is a general-purpose retrying library to simplify the task of adding retry behavior to just about anything.\n",
+        "home_page": "https://github.com/jd/tenacity",
+        "author": "Julien Danjou",
+        "author_email": "<email-removed>",
+        "license": "Apache 2.0",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Intended Audience :: Developers",
+          "License :: OSI Approved :: Apache Software License",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3 :: Only",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Topic :: Utilities"
+        ],
+        "requires_dist": [
+          "reno ; extra == 'doc'",
+          "sphinx ; extra == 'doc'",
+          "pytest ; extra == 'test'",
+          "tornado >=4.5 ; extra == 'test'",
+          "typeguard ; extra == 'test'"
+        ],
+        "requires_python": ">=3.8",
+        "provides_extra": [
+          "doc",
+          "test"
+        ]
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.11.4",
+    "os_name": "posix",
+    "platform_machine": "arm64",
+    "platform_release": "23.6.0",
+    "platform_system": "Darwin",
+    "platform_version": "Darwin Kernel Version 23.6.0: Tue Apr 21 20:28:28 PDT 2026; root:xnu-10063.141.1.712.16~1/RELEASE_ARM64_T8112",
+    "python_full_version": "3.11.4",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.11",
+    "sys_platform": "darwin"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "checks": 176,
+  "passed": true,
+  "failures": [],
+  "service_summary": {
+    "alice": {
+      "requests": 54,
+      "wheel_downloads": 27,
+      "delivered_bytes": 5145314
+    },
+    "bob": {
+      "requests": 54,
+      "wheel_downloads": 27,
+      "delivered_bytes": 5145314
+    }
+  },
+  "manifest_sha256": "7ca3d6b42b74dafae3ba410c2e8716b2ee1277505268fb8a51961a2e43605321",
+  "utility_results_sha256": "3ded250002fab74e9da8511dbd991ac1be79f814bb72ba6143304639ba37c470",
+  "audit_source_sha256": "78943635cdb93aaf8bfe43650b75f29a42ac582aff4c2d5e3c0e16ae5de79f65",
+  "scope": "Audit of retained local utility evidence, not independent network or sandbox attestation."
+}

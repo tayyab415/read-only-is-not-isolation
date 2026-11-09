@@ -1,0 +1,506 @@
+{
+  "run_id": "p2-m1-c-aa",
+  "configuration": "separate",
+  "repositories": {
+    "alice": "p1-p2-m1-c-aa-alice",
+    "bob": "p1-p2-m1-c-aa-bob"
+  },
+  "users": {
+    "alice": "p1-p2-m1-c-aa-alice",
+    "bob": "p1-p2-m1-c-aa-bob",
+    "prefetch": "p1-p2-m1-c-aa-prefetch"
+  },
+  "negative_cache_period_seconds": 1800,
+  "storage_blocked": true,
+  "prewarm_count": 32,
+  "provision_log": [
+    {
+      "label": "create-user-alice",
+      "method": "POST",
+      "path": "/ui/users",
+      "status": 201
+    },
+    {
+      "label": "create-user-bob",
+      "method": "POST",
+      "path": "/ui/users",
+      "status": 201
+    },
+    {
+      "label": "create-user-prefetch",
+      "method": "POST",
+      "path": "/ui/users",
+      "status": 201
+    },
+    {
+      "label": "create-repo",
+      "method": "POST",
+      "path": "/ui/admin/repositories",
+      "status": 200
+    },
+    {
+      "label": "read-repo",
+      "method": "GET",
+      "path": "/ui/admin/repositories/remote/p1-p2-m1-c-aa-alice",
+      "status": 200
+    },
+    {
+      "label": "create-permission",
+      "method": "POST",
+      "path": "/ui/permissiontargets",
+      "status": 201
+    },
+    {
+      "label": "create-repo",
+      "method": "POST",
+      "path": "/ui/admin/repositories",
+      "status": 200
+    },
+    {
+      "label": "read-repo",
+      "method": "GET",
+      "path": "/ui/admin/repositories/remote/p1-p2-m1-c-aa-bob",
+      "status": 200
+    },
+    {
+      "label": "create-permission",
+      "method": "POST",
+      "path": "/ui/permissiontargets",
+      "status": 201
+    },
+    {
+      "label": "prewarm-p1-p2-m1-c-aa-alice-00",
+      "method": "GET",
+      "path": "/p1-p2-m1-c-aa-alice/pkg-00.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p2-m1-c-aa-alice-01",
+      "method": "GET",
+      "path": "/p1-p2-m1-c-aa-alice/pkg-01.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p2-m1-c-aa-alice-02",
+      "method": "GET",
+      "path": "/p1-p2-m1-c-aa-alice/pkg-02.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p2-m1-c-aa-alice-03",
+      "method": "GET",
+      "path": "/p1-p2-m1-c-aa-alice/pkg-03.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p2-m1-c-aa-alice-04",
+      "method": "GET",
+      "path": "/p1-p2-m1-c-aa-alice/pkg-04.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p2-m1-c-aa-alice-05",
+      "method": "GET",
+      "path": "/p1-p2-m1-c-aa-alice/pkg-05.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p2-m1-c-aa-alice-06",
+      "method": "GET",
+      "path": "/p1-p2-m1-c-aa-alice/pkg-06.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p2-m1-c-aa-alice-07",
+      "method": "GET",
+      "path": "/p1-p2-m1-c-aa-alice/pkg-07.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p2-m1-c-aa-alice-08",
+      "method": "GET",
+      "path": "/p1-p2-m1-c-aa-alice/pkg-08.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p2-m1-c-aa-alice-09",
+      "method": "GET",
+      "path": "/p1-p2-m1-c-aa-alice/pkg-09.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p2-m1-c-aa-alice-10",
+      "method": "GET",
+      "path": "/p1-p2-m1-c-aa-alice/pkg-10.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p2-m1-c-aa-alice-11",
+      "method": "GET",
+      "path": "/p1-p2-m1-c-aa-alice/pkg-11.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p2-m1-c-aa-alice-12",
+      "method": "GET",
+      "path": "/p1-p2-m1-c-aa-alice/pkg-12.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p2-m1-c-aa-alice-13",
+      "method": "GET",
+      "path": "/p1-p2-m1-c-aa-alice/pkg-13.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p2-m1-c-aa-alice-14",
+      "method": "GET",
+      "path": "/p1-p2-m1-c-aa-alice/pkg-14.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p2-m1-c-aa-alice-15",
+      "method": "GET",
+      "path": "/p1-p2-m1-c-aa-alice/pkg-15.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p2-m1-c-aa-bob-00",
+      "method": "GET",
+      "path": "/p1-p2-m1-c-aa-bob/pkg-00.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p2-m1-c-aa-bob-01",
+      "method": "GET",
+      "path": "/p1-p2-m1-c-aa-bob/pkg-01.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p2-m1-c-aa-bob-02",
+      "method": "GET",
+      "path": "/p1-p2-m1-c-aa-bob/pkg-02.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p2-m1-c-aa-bob-03",
+      "method": "GET",
+      "path": "/p1-p2-m1-c-aa-bob/pkg-03.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p2-m1-c-aa-bob-04",
+      "method": "GET",
+      "path": "/p1-p2-m1-c-aa-bob/pkg-04.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p2-m1-c-aa-bob-05",
+      "method": "GET",
+      "path": "/p1-p2-m1-c-aa-bob/pkg-05.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p2-m1-c-aa-bob-06",
+      "method": "GET",
+      "path": "/p1-p2-m1-c-aa-bob/pkg-06.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p2-m1-c-aa-bob-07",
+      "method": "GET",
+      "path": "/p1-p2-m1-c-aa-bob/pkg-07.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p2-m1-c-aa-bob-08",
+      "method": "GET",
+      "path": "/p1-p2-m1-c-aa-bob/pkg-08.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p2-m1-c-aa-bob-09",
+      "method": "GET",
+      "path": "/p1-p2-m1-c-aa-bob/pkg-09.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p2-m1-c-aa-bob-10",
+      "method": "GET",
+      "path": "/p1-p2-m1-c-aa-bob/pkg-10.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p2-m1-c-aa-bob-11",
+      "method": "GET",
+      "path": "/p1-p2-m1-c-aa-bob/pkg-11.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p2-m1-c-aa-bob-12",
+      "method": "GET",
+      "path": "/p1-p2-m1-c-aa-bob/pkg-12.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p2-m1-c-aa-bob-13",
+      "method": "GET",
+      "path": "/p1-p2-m1-c-aa-bob/pkg-13.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p2-m1-c-aa-bob-14",
+      "method": "GET",
+      "path": "/p1-p2-m1-c-aa-bob/pkg-14.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p2-m1-c-aa-bob-15",
+      "method": "GET",
+      "path": "/p1-p2-m1-c-aa-bob/pkg-15.bin",
+      "status": 200
+    }
+  ],
+  "kind": "mutable",
+  "scenario": "aa",
+  "fixture_etag": "e8627e1a8b3b777cb5e58066954340fdbbc31e2b",
+  "gateway_edition": 2,
+  "queue_size": 5,
+  "boundary_readback": {
+    "containers": {
+      "alice": {
+        "name": "p1-p2-m1-c-aa-alice",
+        "user": "20001:20001",
+        "root_read_only": true,
+        "cap_drop": [
+          "ALL"
+        ],
+        "security_options": [
+          "no-new-privileges:true"
+        ],
+        "memory": 134217728,
+        "memory_swap": 134217728,
+        "nano_cpus": 500000000,
+        "pids_limit": 48,
+        "tmpfs": {
+          "/tmp": "rw,nosuid,nodev,size=16m"
+        },
+        "forbidden_environment_present": false,
+        "published_ports": {},
+        "attached_networks": [
+          "p1-p2-m1-c-aa-net-alice"
+        ],
+        "network_addresses": {
+          "p1-p2-m1-c-aa-net-alice": "172.19.0.1"
+        },
+        "image_id": "sha256:4840d514c583a4d3d8cad3940e68dee6f0f6f3635c12fcd0a3d74c21a5b93a54",
+        "bind_mount_destinations": [],
+        "mounts_read_only": true
+      },
+      "bob": {
+        "name": "p1-p2-m1-c-aa-bob",
+        "user": "20001:20001",
+        "root_read_only": true,
+        "cap_drop": [
+          "ALL"
+        ],
+        "security_options": [
+          "no-new-privileges:true"
+        ],
+        "memory": 134217728,
+        "memory_swap": 134217728,
+        "nano_cpus": 500000000,
+        "pids_limit": 48,
+        "tmpfs": {
+          "/tmp": "rw,nosuid,nodev,size=16m"
+        },
+        "forbidden_environment_present": false,
+        "published_ports": {},
+        "attached_networks": [
+          "p1-p2-m1-c-aa-net-bob"
+        ],
+        "network_addresses": {
+          "p1-p2-m1-c-aa-net-bob": "172.20.0.1"
+        },
+        "image_id": "sha256:4840d514c583a4d3d8cad3940e68dee6f0f6f3635c12fcd0a3d74c21a5b93a54",
+        "bind_mount_destinations": [],
+        "mounts_read_only": true
+      },
+      "gateway": {
+        "name": "p1-p2-m1-c-aa-gateway",
+        "user": "20001:20001",
+        "root_read_only": true,
+        "cap_drop": [
+          "ALL"
+        ],
+        "security_options": [
+          "no-new-privileges:true"
+        ],
+        "memory": 134217728,
+        "memory_swap": 134217728,
+        "nano_cpus": 500000000,
+        "pids_limit": 48,
+        "tmpfs": {
+          "/tmp": "rw,nosuid,nodev,size=16m"
+        },
+        "forbidden_environment_present": false,
+        "published_ports": {},
+        "attached_networks": [
+          "p1-p2-m1-c-aa-net-alice",
+          "p1-p2-m1-c-aa-net-bob",
+          "p1-p2-m1-c-aa-net-services"
+        ],
+        "network_addresses": {
+          "p1-p2-m1-c-aa-net-alice": "172.19.0.2",
+          "p1-p2-m1-c-aa-net-bob": "172.20.0.2",
+          "p1-p2-m1-c-aa-net-services": "172.21.0.2"
+        },
+        "image_id": "sha256:4840d514c583a4d3d8cad3940e68dee6f0f6f3635c12fcd0a3d74c21a5b93a54",
+        "bind_mount_destinations": [
+          "/gateway.py",
+          "/gateway.json"
+        ],
+        "mounts_read_only": true
+      },
+      "upstream": {
+        "name": "p1-p2-m1-c-aa-upstream",
+        "user": "20001:20001",
+        "root_read_only": true,
+        "cap_drop": [
+          "ALL"
+        ],
+        "security_options": [
+          "no-new-privileges:true"
+        ],
+        "memory": 134217728,
+        "memory_swap": 134217728,
+        "nano_cpus": 500000000,
+        "pids_limit": 48,
+        "tmpfs": {
+          "/tmp": "rw,nosuid,nodev,size=16m"
+        },
+        "forbidden_environment_present": false,
+        "published_ports": {},
+        "attached_networks": [
+          "p1-p2-m1-c-aa-net-services"
+        ],
+        "network_addresses": {
+          "p1-p2-m1-c-aa-net-services": "172.21.0.1"
+        },
+        "image_id": "sha256:4840d514c583a4d3d8cad3940e68dee6f0f6f3635c12fcd0a3d74c21a5b93a54",
+        "bind_mount_destinations": [
+          "/upstream.py"
+        ],
+        "mounts_read_only": true
+      }
+    },
+    "networks": {
+      "alice": {
+        "name": "p1-p2-m1-c-aa-net-alice",
+        "internal": true,
+        "options": {
+          "com.docker.network.bridge.gateway_mode_ipv4": "isolated"
+        },
+        "containers": [
+          "p1-p2-m1-c-aa-alice",
+          "p1-p2-m1-c-aa-gateway"
+        ]
+      },
+      "bob": {
+        "name": "p1-p2-m1-c-aa-net-bob",
+        "internal": true,
+        "options": {
+          "com.docker.network.bridge.gateway_mode_ipv4": "isolated"
+        },
+        "containers": [
+          "p1-p2-m1-c-aa-bob",
+          "p1-p2-m1-c-aa-gateway"
+        ]
+      },
+      "services": {
+        "name": "p1-p2-m1-c-aa-net-services",
+        "internal": true,
+        "options": {
+          "com.docker.network.bridge.gateway_mode_ipv4": "isolated"
+        },
+        "containers": [
+          "art-a",
+          "p1-p2-m1-c-aa-gateway",
+          "p1-p2-m1-c-aa-upstream"
+        ]
+      }
+    }
+  },
+  "network_positive_controls": {
+    "passed": true,
+    "checks": 7,
+    "records": [
+      {
+        "host": "172.20.0.1",
+        "port": 18888,
+        "expected_connected": true,
+        "name": "live peer listener on its own network",
+        "connected": true,
+        "error": null,
+        "actor": "bob"
+      },
+      {
+        "host": "p1-p2-m1-c-aa-gateway",
+        "port": 8000,
+        "expected_connected": true,
+        "name": "assigned gateway route",
+        "connected": true,
+        "error": null,
+        "actor": "bob"
+      },
+      {
+        "host": "172.21.0.3",
+        "port": 8082,
+        "expected_connected": false,
+        "name": "direct backend bypass",
+        "connected": false,
+        "error": "OSError",
+        "actor": "bob"
+      },
+      {
+        "host": "172.20.0.1",
+        "port": 18888,
+        "expected_connected": false,
+        "name": "same live listener from the other network",
+        "connected": false,
+        "error": "OSError",
+        "actor": "alice"
+      },
+      {
+        "host": "p1-p2-m1-c-aa-gateway",
+        "port": 8000,
+        "expected_connected": true,
+        "name": "assigned gateway route",
+        "connected": true,
+        "error": null,
+        "actor": "alice"
+      },
+      {
+        "host": "172.21.0.3",
+        "port": 8082,
+        "expected_connected": false,
+        "name": "direct backend bypass",
+        "connected": false,
+        "error": "OSError",
+        "actor": "alice"
+      },
+      {
+        "host": "172.21.0.3",
+        "port": 8082,
+        "expected_connected": true,
+        "name": "backend is reachable from the gateway",
+        "connected": true,
+        "error": null,
+        "actor": "gateway"
+      }
+    ],
+    "listener_stopped": true,
+    "scope": "Specified live TCP listeners and routes, not every possible bypass.",
+    "listener_exit_code": 0
+  }
+}

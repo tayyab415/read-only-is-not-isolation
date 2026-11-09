@@ -1,0 +1,706 @@
+{
+ "split_dir": "../data/split_v2_glm5",
+ "runs": [
+  {
+   "model": "encoder:v2glm5-modernbert-detok",
+   "seed": 0,
+   "thr1": -9.232812881469727,
+   "test_auc": 0.9999396029805565,
+   "test_ap": 0.9999444217680832,
+   "test_tpr@thr1": 0.9995110024449878,
+   "test_tpr@thr1_ci": [
+    0.9972,
+    0.9999
+   ],
+   "test_fpr@thr1": 0.011408730158730158,
+   "test_fpr@thr1_ci": [
+    0.0076,
+    0.0171
+   ],
+   "test_tpr@thr01": 0.9990220048899755,
+   "test_tpr@thr01_ci": [
+    0.9964,
+    0.9997
+   ],
+   "test_fpr@thr01": 0.003472222222222222,
+   "test_fpr@thr01_ci": [
+    0.0017,
+    0.0072
+   ],
+   "test_fpr@thr1:codesearchnet_js": 0.002053388090349076,
+   "test_fpr@thr1:gen_glm5": 0.0972972972972973,
+   "test_fpr@thr1:hf_docs": 0.009009009009009009,
+   "test_fpr@thr1:local_npm": 0.003194888178913738,
+   "test_fpr@thr1:nebius_openhands_bash": 0.0,
+   "test_fpr@thr1:xlam_calls": 0.0,
+   "eval_fpr@thr1:B_agentapprove": 0.11818181818181818,
+   "eval_fpr@thr1_ci:B_agentapprove": [
+    0.0877,
+    0.1575
+   ],
+   "eval_fpr@thr1:B_hf_docs_api": 0.05460750853242321,
+   "eval_fpr@thr1_ci:B_hf_docs_api": [
+    0.0339,
+    0.0869
+   ],
+   "eval_fpr@thr1:B_gen_luna": 0.37361530715005037,
+   "eval_fpr@thr1_ci:B_gen_luna": [
+    0.3441,
+    0.4041
+   ],
+   "eval_fpr@thr1:B_swegym_bash": 0.001784651992861392,
+   "eval_fpr@thr1_ci:B_swegym_bash": [
+    0.0006,
+    0.0052
+   ],
+   "eval_fpr@thr1:B_tomng_allow": 0.11666666666666667,
+   "eval_fpr@thr1_ci:B_tomng_allow": [
+    0.082,
+    0.1634
+   ],
+   "eval_fpr@thr1:B_rogue_safe": 0.34210526315789475,
+   "eval_fpr@thr1_ci:B_rogue_safe": [
+    0.2121,
+    0.5011
+   ],
+   "eval_fpr@thr1:B_glaive_calls": 0.011111111111111112,
+   "eval_fpr@thr1_ci:B_glaive_calls": [
+    0.002,
+    0.0603
+   ],
+   "eval_tpr@thr1:A_tomng_deny": 0.3791208791208791,
+   "eval_tpr@thr1_ci:A_tomng_deny": [
+    0.3118,
+    0.4514
+   ],
+   "eval_auc:A_tomng_deny_vs_test_benign": 0.928651829321472,
+   "eval_auc:A_tomng_deny_vs_B_agentapprove": 0.7568431568431568,
+   "eval_auc:A_tomng_deny_vs_B_hf_docs_api": 0.8566552901023892,
+   "eval_auc:A_tomng_deny_vs_B_gen_luna": 0.4535761318238659,
+   "eval_auc:A_tomng_deny_vs_B_swegym_bash": 0.8946123775094625,
+   "eval_auc:A_tomng_deny_vs_B_tomng_allow": 0.7236721611721612,
+   "eval_auc:A_tomng_deny_vs_B_rogue_safe": 0.5683921341816078,
+   "eval_auc:A_tomng_deny_vs_B_glaive_calls": 0.8398351648351647,
+   "eval_tpr@thr1:A_revshell": 0.8673469387755102,
+   "eval_tpr@thr1_ci:A_revshell": [
+    0.7862,
+    0.9208
+   ],
+   "eval_auc:A_revshell_vs_test_benign": 0.9942931041464205,
+   "eval_auc:A_revshell_vs_B_agentapprove": 0.9534477427334569,
+   "eval_auc:A_revshell_vs_B_hf_docs_api": 0.9809152329873929,
+   "eval_auc:A_revshell_vs_B_gen_luna": 0.8614074028402903,
+   "eval_auc:A_revshell_vs_B_swegym_bash": 0.9980423460282388,
+   "eval_auc:A_revshell_vs_B_tomng_allow": 0.9620110544217687,
+   "eval_auc:A_revshell_vs_B_rogue_safe": 0.9084317937701396,
+   "eval_auc:A_revshell_vs_B_glaive_calls": 0.9963718820861678,
+   "eval_tpr@thr1:A_agentapprove": 0.24431818181818182,
+   "eval_tpr@thr1_ci:A_agentapprove": [
+    0.2023,
+    0.2918
+   ],
+   "eval_auc:A_agentapprove_vs_test_benign": 0.8550946124188312,
+   "eval_auc:A_agentapprove_vs_B_agentapprove": 0.6432119490358127,
+   "eval_auc:A_agentapprove_vs_B_hf_docs_api": 0.765828614644741,
+   "eval_auc:A_agentapprove_vs_B_gen_luna": 0.3448328641398883,
+   "eval_auc:A_agentapprove_vs_B_swegym_bash": 0.785629664431345,
+   "eval_auc:A_agentapprove_vs_B_tomng_allow": 0.6000591856060606,
+   "eval_auc:A_agentapprove_vs_B_rogue_safe": 0.45181668660287083,
+   "eval_auc:A_agentapprove_vs_B_glaive_calls": 0.7031565656565657,
+   "eval_tpr@thr1:A_rogue_unsafe": 0.48148148148148145,
+   "eval_tpr@thr1_ci:A_rogue_unsafe": [
+    0.3074,
+    0.6601
+   ],
+   "eval_auc:A_rogue_unsafe_vs_test_benign": 0.9585446061140506,
+   "eval_auc:A_rogue_unsafe_vs_B_agentapprove": 0.82996632996633,
+   "eval_auc:A_rogue_unsafe_vs_B_hf_docs_api": 0.9025407660219947,
+   "eval_auc:A_rogue_unsafe_vs_B_gen_luna": 0.5580172317332438,
+   "eval_auc:A_rogue_unsafe_vs_B_swegym_bash": 0.9498975477559654,
+   "eval_auc:A_rogue_unsafe_vs_B_tomng_allow": 0.8114197530864197,
+   "eval_auc:A_rogue_unsafe_vs_B_rogue_safe": 0.6705653021442495,
+   "eval_auc:A_rogue_unsafe_vs_B_glaive_calls": 0.9271604938271604
+  },
+  {
+   "model": "encoder:v2glm5-modernbert-detok",
+   "seed": 1,
+   "thr1": -7.540781021118164,
+   "test_auc": 0.9998418528721559,
+   "test_ap": 0.9998603750476238,
+   "test_tpr@thr1": 0.9984848484848485,
+   "test_tpr@thr1_ci": [
+    0.9956,
+    0.9995
+   ],
+   "test_fpr@thr1": 0.004329004329004329,
+   "test_fpr@thr1_ci": [
+    0.0023,
+    0.0082
+   ],
+   "test_tpr@thr01": 0.9949494949494949,
+   "test_tpr@thr01_ci": [
+    0.9907,
+    0.9973
+   ],
+   "test_fpr@thr01": 0.000481000481000481,
+   "test_fpr@thr01_ci": [
+    0.0001,
+    0.0027
+   ],
+   "test_fpr@thr1:codesearchnet_js": 0.001006036217303823,
+   "test_fpr@thr1:gen_glm5": 0.04142011834319527,
+   "test_fpr@thr1:hf_docs": 0.0038910505836575876,
+   "test_fpr@thr1:local_npm": 0.0,
+   "test_fpr@thr1:nebius_openhands_bash": 0.0,
+   "test_fpr@thr1:xlam_calls": 0.0,
+   "eval_fpr@thr1:B_agentapprove": 0.07575757575757576,
+   "eval_fpr@thr1_ci:B_agentapprove": [
+    0.0518,
+    0.1094
+   ],
+   "eval_fpr@thr1:B_hf_docs_api": 0.006825938566552901,
+   "eval_fpr@thr1_ci:B_hf_docs_api": [
+    0.0019,
+    0.0245
+   ],
+   "eval_fpr@thr1:B_gen_luna": 0.24169184290030213,
+   "eval_fpr@thr1_ci:B_gen_luna": [
+    0.2161,
+    0.2693
+   ],
+   "eval_fpr@thr1:B_swegym_bash": 0.0,
+   "eval_fpr@thr1_ci:B_swegym_bash": [
+    0.0,
+    0.0023
+   ],
+   "eval_fpr@thr1:B_tomng_allow": 0.0125,
+   "eval_fpr@thr1_ci:B_tomng_allow": [
+    0.0043,
+    0.0361
+   ],
+   "eval_fpr@thr1:B_rogue_safe": 0.18421052631578946,
+   "eval_fpr@thr1_ci:B_rogue_safe": [
+    0.0922,
+    0.3342
+   ],
+   "eval_fpr@thr1:B_glaive_calls": 0.011111111111111112,
+   "eval_fpr@thr1_ci:B_glaive_calls": [
+    0.002,
+    0.0603
+   ],
+   "eval_tpr@thr1:A_tomng_deny": 0.06593406593406594,
+   "eval_tpr@thr1_ci:A_tomng_deny": [
+    0.0381,
+    0.1117
+   ],
+   "eval_auc:A_tomng_deny_vs_test_benign": 0.8916969274112131,
+   "eval_auc:A_tomng_deny_vs_B_agentapprove": 0.653946053946054,
+   "eval_auc:A_tomng_deny_vs_B_hf_docs_api": 0.8351179537186364,
+   "eval_auc:A_tomng_deny_vs_B_gen_luna": 0.21954229053926938,
+   "eval_auc:A_tomng_deny_vs_B_swegym_bash": 0.8037454811696335,
+   "eval_auc:A_tomng_deny_vs_B_tomng_allow": 0.6567651098901099,
+   "eval_auc:A_tomng_deny_vs_B_rogue_safe": 0.35410641989589353,
+   "eval_auc:A_tomng_deny_vs_B_glaive_calls": 0.7664529914529915,
+   "eval_tpr@thr1:A_revshell": 0.7959183673469388,
+   "eval_tpr@thr1_ci:A_revshell": [
+    0.7057,
+    0.8638
+   ],
+   "eval_auc:A_revshell_vs_test_benign": 0.9917714560571703,
+   "eval_auc:A_revshell_vs_B_agentapprove": 0.9441249226963513,
+   "eval_auc:A_revshell_vs_B_hf_docs_api": 0.987166538970537,
+   "eval_auc:A_revshell_vs_B_gen_luna": 0.8419549088517583,
+   "eval_auc:A_revshell_vs_B_swegym_bash": 0.994982942611905,
+   "eval_auc:A_revshell_vs_B_tomng_allow": 0.9743409863945579,
+   "eval_auc:A_revshell_vs_B_rogue_safe": 0.8904403866809882,
+   "eval_auc:A_revshell_vs_B_glaive_calls": 0.9888321995464853,
+   "eval_tpr@thr1:A_agentapprove": 0.10227272727272728,
+   "eval_tpr@thr1_ci:A_agentapprove": [
+    0.0748,
+    0.1383
+   ],
+   "eval_auc:A_agentapprove_vs_test_benign": 0.8374443843193844,
+   "eval_auc:A_agentapprove_vs_B_agentapprove": 0.5979855371900826,
+   "eval_auc:A_agentapprove_vs_B_hf_docs_api": 0.7723006515668632,
+   "eval_auc:A_agentapprove_vs_B_gen_luna": 0.21509515471939944,
+   "eval_auc:A_agentapprove_vs_B_swegym_bash": 0.7291537099129306,
+   "eval_auc:A_agentapprove_vs_B_tomng_allow": 0.5948686079545454,
+   "eval_auc:A_agentapprove_vs_B_rogue_safe": 0.33522727272727276,
+   "eval_auc:A_agentapprove_vs_B_glaive_calls": 0.6985006313131314,
+   "eval_tpr@thr1:A_rogue_unsafe": 0.2962962962962963,
+   "eval_tpr@thr1_ci:A_rogue_unsafe": [
+    0.1585,
+    0.4848
+   ],
+   "eval_auc:A_rogue_unsafe_vs_test_benign": 0.9608875349616091,
+   "eval_auc:A_rogue_unsafe_vs_B_agentapprove": 0.8201459034792368,
+   "eval_auc:A_rogue_unsafe_vs_B_hf_docs_api": 0.937808115282518,
+   "eval_auc:A_rogue_unsafe_vs_B_gen_luna": 0.4386072880534109,
+   "eval_auc:A_rogue_unsafe_vs_B_swegym_bash": 0.9622909643730584,
+   "eval_auc:A_rogue_unsafe_vs_B_tomng_allow": 0.863966049382716,
+   "eval_auc:A_rogue_unsafe_vs_B_rogue_safe": 0.5794346978557505,
+   "eval_auc:A_rogue_unsafe_vs_B_glaive_calls": 0.9395061728395062
+  },
+  {
+   "model": "encoder:v2glm5-modernbert-detok",
+   "seed": 2,
+   "thr1": -9.222187042236328,
+   "test_auc": 0.9999940454498902,
+   "test_ap": 0.9999943066508004,
+   "test_tpr@thr1": 1.0,
+   "test_tpr@thr1_ci": [
+    0.9982,
+    1.0
+   ],
+   "test_fpr@thr1": 0.008478802992518703,
+   "test_fpr@thr1_ci": [
+    0.0053,
+    0.0135
+   ],
+   "test_tpr@thr01": 0.9990448901623686,
+   "test_tpr@thr01_ci": [
+    0.9965,
+    0.9997
+   ],
+   "test_fpr@thr01": 0.0014962593516209476,
+   "test_fpr@thr01_ci": [
+    0.0005,
+    0.0044
+   ],
+   "test_fpr@thr1:codesearchnet_js": 0.0020161290322580645,
+   "test_fpr@thr1:gen_glm5": 0.05232558139534884,
+   "test_fpr@thr1:hf_docs": 0.01702127659574468,
+   "test_fpr@thr1:local_npm": 0.007042253521126761,
+   "test_fpr@thr1:nebius_openhands_bash": 0.0,
+   "test_fpr@thr1:xlam_calls": 0.0,
+   "eval_fpr@thr1:B_agentapprove": 0.10606060606060606,
+   "eval_fpr@thr1_ci:B_agentapprove": [
+    0.0773,
+    0.1439
+   ],
+   "eval_fpr@thr1:B_hf_docs_api": 0.017064846416382253,
+   "eval_fpr@thr1_ci:B_hf_docs_api": [
+    0.0073,
+    0.0393
+   ],
+   "eval_fpr@thr1:B_gen_luna": 0.2326283987915408,
+   "eval_fpr@thr1_ci:B_gen_luna": [
+    0.2074,
+    0.2599
+   ],
+   "eval_fpr@thr1:B_swegym_bash": 0.000594883997620464,
+   "eval_fpr@thr1_ci:B_swegym_bash": [
+    0.0001,
+    0.0034
+   ],
+   "eval_fpr@thr1:B_tomng_allow": 0.07083333333333333,
+   "eval_fpr@thr1_ci:B_tomng_allow": [
+    0.0447,
+    0.1105
+   ],
+   "eval_fpr@thr1:B_rogue_safe": 0.2894736842105263,
+   "eval_fpr@thr1_ci:B_rogue_safe": [
+    0.17,
+    0.4476
+   ],
+   "eval_fpr@thr1:B_glaive_calls": 0.011111111111111112,
+   "eval_fpr@thr1_ci:B_glaive_calls": [
+    0.002,
+    0.0603
+   ],
+   "eval_tpr@thr1:A_tomng_deny": 0.23626373626373626,
+   "eval_tpr@thr1_ci:A_tomng_deny": [
+    0.1804,
+    0.303
+   ],
+   "eval_auc:A_tomng_deny_vs_test_benign": 0.9137184511249349,
+   "eval_auc:A_tomng_deny_vs_B_agentapprove": 0.6372710622710622,
+   "eval_auc:A_tomng_deny_vs_B_hf_docs_api": 0.8968795709410045,
+   "eval_auc:A_tomng_deny_vs_B_gen_luna": 0.4560799220920067,
+   "eval_auc:A_tomng_deny_vs_B_swegym_bash": 0.9423338410548404,
+   "eval_auc:A_tomng_deny_vs_B_tomng_allow": 0.678743131868132,
+   "eval_auc:A_tomng_deny_vs_B_rogue_safe": 0.5703441295546559,
+   "eval_auc:A_tomng_deny_vs_B_glaive_calls": 0.8526556776556776,
+   "eval_tpr@thr1:A_revshell": 0.8979591836734694,
+   "eval_tpr@thr1_ci:A_revshell": [
+    0.8223,
+    0.9436
+   ],
+   "eval_auc:A_revshell_vs_test_benign": 0.9922184335080666,
+   "eval_auc:A_revshell_vs_B_agentapprove": 0.9392547928262214,
+   "eval_auc:A_revshell_vs_B_hf_docs_api": 0.9881242599428851,
+   "eval_auc:A_revshell_vs_B_gen_luna": 0.8935250837495119,
+   "eval_auc:A_revshell_vs_B_swegym_bash": 0.9980362757833652,
+   "eval_auc:A_revshell_vs_B_tomng_allow": 0.9568239795918367,
+   "eval_auc:A_revshell_vs_B_rogue_safe": 0.9202470461868958,
+   "eval_auc:A_revshell_vs_B_glaive_calls": 0.9869614512471655,
+   "eval_tpr@thr1:A_agentapprove": 0.1278409090909091,
+   "eval_tpr@thr1_ci:A_agentapprove": [
+    0.0969,
+    0.1668
+   ],
+   "eval_auc:A_agentapprove_vs_test_benign": 0.8608280435275447,
+   "eval_auc:A_agentapprove_vs_B_agentapprove": 0.5303116391184572,
+   "eval_auc:A_agentapprove_vs_B_hf_docs_api": 0.8478853164753335,
+   "eval_auc:A_agentapprove_vs_B_gen_luna": 0.3370797285544264,
+   "eval_auc:A_agentapprove_vs_B_swegym_bash": 0.8908007611811151,
+   "eval_auc:A_agentapprove_vs_B_tomng_allow": 0.5716264204545454,
+   "eval_auc:A_agentapprove_vs_B_rogue_safe": 0.4814219497607655,
+   "eval_auc:A_agentapprove_vs_B_glaive_calls": 0.7690972222222222,
+   "eval_tpr@thr1:A_rogue_unsafe": 0.3333333333333333,
+   "eval_tpr@thr1_ci:A_rogue_unsafe": [
+    0.1864,
+    0.5218
+   ],
+   "eval_auc:A_rogue_unsafe_vs_test_benign": 0.9120624365013392,
+   "eval_auc:A_rogue_unsafe_vs_B_agentapprove": 0.6472502805836139,
+   "eval_auc:A_rogue_unsafe_vs_B_hf_docs_api": 0.8967892807483251,
+   "eval_auc:A_rogue_unsafe_vs_B_gen_luna": 0.4867591660139494,
+   "eval_auc:A_rogue_unsafe_vs_B_swegym_bash": 0.9363033467733051,
+   "eval_auc:A_rogue_unsafe_vs_B_tomng_allow": 0.680324074074074,
+   "eval_auc:A_rogue_unsafe_vs_B_rogue_safe": 0.6081871345029239,
+   "eval_auc:A_rogue_unsafe_vs_B_glaive_calls": 0.8310699588477367
+  }
+ ],
+ "summary_mean_std_min_max": {
+  "encoder:v2glm5-modernbert-detok": {
+   "thr1": [
+    -8.6653,
+    0.9738,
+    -9.2328,
+    -7.5408
+   ],
+   "test_auc": [
+    0.9999,
+    0.0001,
+    0.9998,
+    1.0
+   ],
+   "test_ap": [
+    0.9999,
+    0.0001,
+    0.9999,
+    1.0
+   ],
+   "test_tpr@thr1": [
+    0.9993,
+    0.0008,
+    0.9985,
+    1.0
+   ],
+   "test_fpr@thr1": [
+    0.0081,
+    0.0036,
+    0.0043,
+    0.0114
+   ],
+   "test_tpr@thr01": [
+    0.9977,
+    0.0024,
+    0.9949,
+    0.999
+   ],
+   "test_fpr@thr01": [
+    0.0018,
+    0.0015,
+    0.0005,
+    0.0035
+   ],
+   "test_fpr@thr1:codesearchnet_js": [
+    0.0017,
+    0.0006,
+    0.001,
+    0.0021
+   ],
+   "test_fpr@thr1:gen_glm5": [
+    0.0637,
+    0.0296,
+    0.0414,
+    0.0973
+   ],
+   "test_fpr@thr1:hf_docs": [
+    0.01,
+    0.0066,
+    0.0039,
+    0.017
+   ],
+   "test_fpr@thr1:local_npm": [
+    0.0034,
+    0.0035,
+    0.0,
+    0.007
+   ],
+   "test_fpr@thr1:nebius_openhands_bash": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "test_fpr@thr1:xlam_calls": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "eval_fpr@thr1:B_agentapprove": [
+    0.1,
+    0.0219,
+    0.0758,
+    0.1182
+   ],
+   "eval_fpr@thr1:B_hf_docs_api": [
+    0.0262,
+    0.0252,
+    0.0068,
+    0.0546
+   ],
+   "eval_fpr@thr1:B_gen_luna": [
+    0.2826,
+    0.0789,
+    0.2326,
+    0.3736
+   ],
+   "eval_fpr@thr1:B_swegym_bash": [
+    0.0008,
+    0.0009,
+    0.0,
+    0.0018
+   ],
+   "eval_fpr@thr1:B_tomng_allow": [
+    0.0667,
+    0.0522,
+    0.0125,
+    0.1167
+   ],
+   "eval_fpr@thr1:B_rogue_safe": [
+    0.2719,
+    0.0804,
+    0.1842,
+    0.3421
+   ],
+   "eval_fpr@thr1:B_glaive_calls": [
+    0.0111,
+    0.0,
+    0.0111,
+    0.0111
+   ],
+   "eval_tpr@thr1:A_tomng_deny": [
+    0.2271,
+    0.1568,
+    0.0659,
+    0.3791
+   ],
+   "eval_auc:A_tomng_deny_vs_test_benign": [
+    0.9114,
+    0.0186,
+    0.8917,
+    0.9287
+   ],
+   "eval_auc:A_tomng_deny_vs_B_agentapprove": [
+    0.6827,
+    0.0648,
+    0.6373,
+    0.7568
+   ],
+   "eval_auc:A_tomng_deny_vs_B_hf_docs_api": [
+    0.8629,
+    0.0313,
+    0.8351,
+    0.8969
+   ],
+   "eval_auc:A_tomng_deny_vs_B_gen_luna": [
+    0.3764,
+    0.1358,
+    0.2195,
+    0.4561
+   ],
+   "eval_auc:A_tomng_deny_vs_B_swegym_bash": [
+    0.8802,
+    0.0704,
+    0.8037,
+    0.9423
+   ],
+   "eval_auc:A_tomng_deny_vs_B_tomng_allow": [
+    0.6864,
+    0.0341,
+    0.6568,
+    0.7237
+   ],
+   "eval_auc:A_tomng_deny_vs_B_rogue_safe": [
+    0.4976,
+    0.1243,
+    0.3541,
+    0.5703
+   ],
+   "eval_auc:A_tomng_deny_vs_B_glaive_calls": [
+    0.8196,
+    0.0465,
+    0.7665,
+    0.8527
+   ],
+   "eval_tpr@thr1:A_revshell": [
+    0.8537,
+    0.0524,
+    0.7959,
+    0.898
+   ],
+   "eval_auc:A_revshell_vs_test_benign": [
+    0.9928,
+    0.0013,
+    0.9918,
+    0.9943
+   ],
+   "eval_auc:A_revshell_vs_B_agentapprove": [
+    0.9456,
+    0.0072,
+    0.9393,
+    0.9534
+   ],
+   "eval_auc:A_revshell_vs_B_hf_docs_api": [
+    0.9854,
+    0.0039,
+    0.9809,
+    0.9881
+   ],
+   "eval_auc:A_revshell_vs_B_gen_luna": [
+    0.8656,
+    0.026,
+    0.842,
+    0.8935
+   ],
+   "eval_auc:A_revshell_vs_B_swegym_bash": [
+    0.997,
+    0.0018,
+    0.995,
+    0.998
+   ],
+   "eval_auc:A_revshell_vs_B_tomng_allow": [
+    0.9644,
+    0.009,
+    0.9568,
+    0.9743
+   ],
+   "eval_auc:A_revshell_vs_B_rogue_safe": [
+    0.9064,
+    0.015,
+    0.8904,
+    0.9202
+   ],
+   "eval_auc:A_revshell_vs_B_glaive_calls": [
+    0.9907,
+    0.005,
+    0.987,
+    0.9964
+   ],
+   "eval_tpr@thr1:A_agentapprove": [
+    0.1581,
+    0.0757,
+    0.1023,
+    0.2443
+   ],
+   "eval_auc:A_agentapprove_vs_test_benign": [
+    0.8511,
+    0.0122,
+    0.8374,
+    0.8608
+   ],
+   "eval_auc:A_agentapprove_vs_B_agentapprove": [
+    0.5905,
+    0.0568,
+    0.5303,
+    0.6432
+   ],
+   "eval_auc:A_agentapprove_vs_B_hf_docs_api": [
+    0.7953,
+    0.0456,
+    0.7658,
+    0.8479
+   ],
+   "eval_auc:A_agentapprove_vs_B_gen_luna": [
+    0.299,
+    0.0728,
+    0.2151,
+    0.3448
+   ],
+   "eval_auc:A_agentapprove_vs_B_swegym_bash": [
+    0.8019,
+    0.082,
+    0.7292,
+    0.8908
+   ],
+   "eval_auc:A_agentapprove_vs_B_tomng_allow": [
+    0.5889,
+    0.0151,
+    0.5716,
+    0.6001
+   ],
+   "eval_auc:A_agentapprove_vs_B_rogue_safe": [
+    0.4228,
+    0.0773,
+    0.3352,
+    0.4814
+   ],
+   "eval_auc:A_agentapprove_vs_B_glaive_calls": [
+    0.7236,
+    0.0395,
+    0.6985,
+    0.7691
+   ],
+   "eval_tpr@thr1:A_rogue_unsafe": [
+    0.3704,
+    0.098,
+    0.2963,
+    0.4815
+   ],
+   "eval_auc:A_rogue_unsafe_vs_test_benign": [
+    0.9438,
+    0.0275,
+    0.9121,
+    0.9609
+   ],
+   "eval_auc:A_rogue_unsafe_vs_B_agentapprove": [
+    0.7658,
+    0.1028,
+    0.6473,
+    0.83
+   ],
+   "eval_auc:A_rogue_unsafe_vs_B_hf_docs_api": [
+    0.9124,
+    0.0222,
+    0.8968,
+    0.9378
+   ],
+   "eval_auc:A_rogue_unsafe_vs_B_gen_luna": [
+    0.4945,
+    0.0601,
+    0.4386,
+    0.558
+   ],
+   "eval_auc:A_rogue_unsafe_vs_B_swegym_bash": [
+    0.9495,
+    0.013,
+    0.9363,
+    0.9623
+   ],
+   "eval_auc:A_rogue_unsafe_vs_B_tomng_allow": [
+    0.7852,
+    0.0946,
+    0.6803,
+    0.864
+   ],
+   "eval_auc:A_rogue_unsafe_vs_B_rogue_safe": [
+    0.6194,
+    0.0466,
+    0.5794,
+    0.6706
+   ],
+   "eval_auc:A_rogue_unsafe_vs_B_glaive_calls": [
+    0.8992,
+    0.0594,
+    0.8311,
+    0.9395
+   ]
+  }
+ },
+ "top_features_seed0": {}
+}

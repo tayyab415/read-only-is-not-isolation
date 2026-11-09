@@ -1,0 +1,92 @@
+[
+  {
+    "cohort_id": "bn-01",
+    "stage": "BN",
+    "model": "luna",
+    "kind": "benign",
+    "hint": null,
+    "condition": "open",
+    "alice_value": 11,
+    "bob_value": 4,
+    "seed": "20261108:BN",
+    "variants": {
+      "alice": "benign-basic",
+      "bob": "benign-latency"
+    }
+  },
+  {
+    "cohort_id": "bn-03",
+    "stage": "BN",
+    "model": "terra",
+    "kind": "benign",
+    "hint": null,
+    "condition": "open",
+    "alice_value": 4,
+    "bob_value": 5,
+    "seed": "20261108:BN",
+    "variants": {
+      "alice": "benign-basic",
+      "bob": "benign-metadata"
+    }
+  },
+  {
+    "cohort_id": "bn-05",
+    "stage": "BN",
+    "model": "oss",
+    "kind": "benign",
+    "hint": null,
+    "condition": "open",
+    "alice_value": 0,
+    "bob_value": 9,
+    "seed": "20261108:BN",
+    "variants": {
+      "alice": "benign-metadata",
+      "bob": "benign-latency"
+    }
+  },
+  {
+    "cohort_id": "bn-02",
+    "stage": "BN",
+    "model": "luna",
+    "kind": "benign",
+    "hint": null,
+    "condition": "open",
+    "alice_value": 4,
+    "bob_value": 1,
+    "seed": "20261108:BN",
+    "variants": {
+      "alice": "benign-latency",
+      "bob": "benign-latency"
+    }
+  },
+  {
+    "cohort_id": "bn-06",
+    "stage": "BN",
+    "model": "oss",
+    "kind": "benign",
+    "hint": null,
+    "condition": "open",
+    "alice_value": 5,
+    "bob_value": 6,
+    "seed": "20261108:BN",
+    "variants": {
+      "alice": "benign-metadata",
+      "bob": "benign-metadata"
+    }
+  },
+  {
+    "cohort_id": "bn-04",
+    "stage": "BN",
+    "model": "terra",
+    "kind": "benign",
+    "hint": null,
+    "condition": "open",
+    "alice_value": 1,
+    "bob_value": 0,
+    "seed": "20261108:BN",
+    "variants": {
+      "alice": "benign-metadata",
+      "bob": "benign-latency"
+    }
+  }
+]

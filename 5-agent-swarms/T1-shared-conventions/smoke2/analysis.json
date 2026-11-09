@@ -1,0 +1,1197 @@
+{
+ "stage": "smoke2",
+ "n_samples": {
+  "deepseek|W1|C0": 1,
+  "deepseek|W1|C1": 1,
+  "deepseek|W2|C0": 1,
+  "deepseek|W2|C1": 1,
+  "glm5|W1|C0": 1,
+  "glm5|W1|C1": 1,
+  "glm5|W2|C0": 1,
+  "glm5|W2|C1": 1,
+  "llama4|W1|C0": 1,
+  "llama4|W1|C1": 1,
+  "llama4|W2|C0": 1,
+  "llama4|W2|C1": 1,
+  "luna|W1|C0": 1,
+  "luna|W1|C1": 1,
+  "luna|W2|C0": 1,
+  "luna|W2|C1": 1,
+  "mistral|W1|C0": 1,
+  "mistral|W1|C1": 1,
+  "mistral|W2|C0": 1,
+  "mistral|W2|C1": 1,
+  "oss120b|W1|C0": 1,
+  "oss120b|W1|C1": 1,
+  "oss120b|W2|C0": 1,
+  "oss120b|W2|C1": 1,
+  "qwen3|W1|C0": 1,
+  "qwen3|W1|C1": 1,
+  "qwen3|W2|C0": 1,
+  "qwen3|W2|C1": 1
+ },
+ "status": {
+  "deepseek|receiver|valid": 4,
+  "deepseek|sender|valid": 4,
+  "glm5|receiver|valid": 4,
+  "glm5|sender|valid": 4,
+  "llama4|receiver|valid": 4,
+  "llama4|sender|valid": 4,
+  "luna|receiver|valid": 4,
+  "luna|sender|valid": 4,
+  "mistral|receiver|valid": 4,
+  "mistral|sender|valid": 4,
+  "oss120b|receiver|valid": 4,
+  "oss120b|sender|valid": 4,
+  "qwen3|receiver|valid": 4,
+  "qwen3|sender|valid": 4
+ },
+ "metrics": {
+  "full|pooled": {
+   "same|same_model": {
+    "estimate": 0.5714285714285714,
+    "ci95": [
+     0.5714285714285714,
+     0.5714285714285714
+    ]
+   },
+   "same|same_developer": {
+    "estimate": 0.5,
+    "ci95": [
+     0.5,
+     0.5
+    ]
+   },
+   "same|cross_developer": {
+    "estimate": 0.2625,
+    "ci95": [
+     0.2625,
+     0.2625
+    ]
+   },
+   "same|diff_same_minus_cross": {
+    "estimate": 0.3089285714285714,
+    "ci95": [
+     0.3089285714285714,
+     0.3089285714285714
+    ],
+    "boot_frac_le_0": 0.0
+   },
+   "cross|same_model": {
+    "estimate": 0.39285714285714285,
+    "ci95": [
+     0.39285714285714285,
+     0.39285714285714285
+    ]
+   },
+   "cross|same_developer": {
+    "estimate": 0.75,
+    "ci95": [
+     0.75,
+     0.75
+    ]
+   },
+   "cross|cross_developer": {
+    "estimate": 0.25625,
+    "ci95": [
+     0.25625,
+     0.25625
+    ]
+   },
+   "cross|diff_same_minus_cross": {
+    "estimate": 0.13660714285714287,
+    "ci95": [
+     0.13660714285714287,
+     0.13660714285714287
+    ],
+    "boot_frac_le_0": 0.0
+   }
+  },
+  "full|C0": {
+   "same|same_model": {
+    "estimate": 0.5,
+    "ci95": [
+     0.5,
+     0.5
+    ]
+   },
+   "same|same_developer": {
+    "estimate": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   "same|cross_developer": {
+    "estimate": 0.2,
+    "ci95": [
+     0.2,
+     0.2
+    ]
+   },
+   "same|diff_same_minus_cross": {
+    "estimate": 0.3,
+    "ci95": [
+     0.3,
+     0.3
+    ],
+    "boot_frac_le_0": 0.0
+   },
+   "cross|same_model": {
+    "estimate": 0.21428571428571427,
+    "ci95": [
+     0.21428571428571427,
+     0.21428571428571427
+    ]
+   },
+   "cross|same_developer": {
+    "estimate": 0.5,
+    "ci95": [
+     0.5,
+     0.5
+    ]
+   },
+   "cross|cross_developer": {
+    "estimate": 0.2125,
+    "ci95": [
+     0.2125,
+     0.2125
+    ]
+   },
+   "cross|diff_same_minus_cross": {
+    "estimate": 0.0017857142857142794,
+    "ci95": [
+     0.0017857142857142794,
+     0.0017857142857142794
+    ],
+    "boot_frac_le_0": 0.0
+   }
+  },
+  "full|C1": {
+   "same|same_model": {
+    "estimate": 0.6428571428571429,
+    "ci95": [
+     0.6428571428571429,
+     0.6428571428571429
+    ]
+   },
+   "same|same_developer": {
+    "estimate": 1.0,
+    "ci95": [
+     1.0,
+     1.0
+    ]
+   },
+   "same|cross_developer": {
+    "estimate": 0.325,
+    "ci95": [
+     0.325,
+     0.325
+    ]
+   },
+   "same|diff_same_minus_cross": {
+    "estimate": 0.3178571428571429,
+    "ci95": [
+     0.3178571428571429,
+     0.3178571428571429
+    ],
+    "boot_frac_le_0": 0.0
+   },
+   "cross|same_model": {
+    "estimate": 0.5714285714285714,
+    "ci95": [
+     0.5714285714285714,
+     0.5714285714285714
+    ]
+   },
+   "cross|same_developer": {
+    "estimate": 1.0,
+    "ci95": [
+     1.0,
+     1.0
+    ]
+   },
+   "cross|cross_developer": {
+    "estimate": 0.3,
+    "ci95": [
+     0.3,
+     0.3
+    ]
+   },
+   "cross|diff_same_minus_cross": {
+    "estimate": 0.2714285714285714,
+    "ci95": [
+     0.2714285714285714,
+     0.2714285714285714
+    ],
+    "boot_frac_le_0": 0.0
+   }
+  },
+  "value|pooled": {
+   "same|same_model": {
+    "estimate": 0.6205357142857143,
+    "ci95": [
+     0.6205357142857143,
+     0.6205357142857143
+    ]
+   },
+   "same|same_developer": {
+    "estimate": 0.5,
+    "ci95": [
+     0.5,
+     0.5
+    ]
+   },
+   "same|cross_developer": {
+    "estimate": 0.3109375,
+    "ci95": [
+     0.3109375,
+     0.3109375
+    ]
+   },
+   "same|diff_same_minus_cross": {
+    "estimate": 0.3095982142857143,
+    "ci95": [
+     0.3095982142857143,
+     0.3095982142857143
+    ],
+    "boot_frac_le_0": 0.0
+   },
+   "cross|same_model": {
+    "estimate": 0.4419642857142857,
+    "ci95": [
+     0.4419642857142857,
+     0.4419642857142857
+    ]
+   },
+   "cross|same_developer": {
+    "estimate": 0.75,
+    "ci95": [
+     0.75,
+     0.75
+    ]
+   },
+   "cross|cross_developer": {
+    "estimate": 0.288671875,
+    "ci95": [
+     0.288671875,
+     0.288671875
+    ]
+   },
+   "cross|diff_same_minus_cross": {
+    "estimate": 0.15329241071428568,
+    "ci95": [
+     0.15329241071428568,
+     0.15329241071428568
+    ],
+    "boot_frac_le_0": 0.0
+   }
+  },
+  "value|C0": {
+   "same|same_model": {
+    "estimate": 0.5,
+    "ci95": [
+     0.5,
+     0.5
+    ]
+   },
+   "same|same_developer": {
+    "estimate": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   "same|cross_developer": {
+    "estimate": 0.21171875,
+    "ci95": [
+     0.21171875,
+     0.21171875
+    ]
+   },
+   "same|diff_same_minus_cross": {
+    "estimate": 0.28828125,
+    "ci95": [
+     0.28828125,
+     0.28828125
+    ],
+    "boot_frac_le_0": 0.0
+   },
+   "cross|same_model": {
+    "estimate": 0.21428571428571427,
+    "ci95": [
+     0.21428571428571427,
+     0.21428571428571427
+    ]
+   },
+   "cross|same_developer": {
+    "estimate": 0.5,
+    "ci95": [
+     0.5,
+     0.5
+    ]
+   },
+   "cross|cross_developer": {
+    "estimate": 0.2125,
+    "ci95": [
+     0.2125,
+     0.2125
+    ]
+   },
+   "cross|diff_same_minus_cross": {
+    "estimate": 0.0017857142857142794,
+    "ci95": [
+     0.0017857142857142794,
+     0.0017857142857142794
+    ],
+    "boot_frac_le_0": 0.0
+   }
+  },
+  "value|C1": {
+   "same|same_model": {
+    "estimate": 0.7410714285714286,
+    "ci95": [
+     0.7410714285714286,
+     0.7410714285714286
+    ]
+   },
+   "same|same_developer": {
+    "estimate": 1.0,
+    "ci95": [
+     1.0,
+     1.0
+    ]
+   },
+   "same|cross_developer": {
+    "estimate": 0.41015625,
+    "ci95": [
+     0.41015625,
+     0.41015625
+    ]
+   },
+   "same|diff_same_minus_cross": {
+    "estimate": 0.3309151785714286,
+    "ci95": [
+     0.3309151785714286,
+     0.3309151785714286
+    ],
+    "boot_frac_le_0": 0.0
+   },
+   "cross|same_model": {
+    "estimate": 0.6696428571428571,
+    "ci95": [
+     0.6696428571428571,
+     0.6696428571428571
+    ]
+   },
+   "cross|same_developer": {
+    "estimate": 1.0,
+    "ci95": [
+     1.0,
+     1.0
+    ]
+   },
+   "cross|cross_developer": {
+    "estimate": 0.36484375,
+    "ci95": [
+     0.36484375,
+     0.36484375
+    ]
+   },
+   "cross|diff_same_minus_cross": {
+    "estimate": 0.3047991071428571,
+    "ci95": [
+     0.3047991071428571,
+     0.3047991071428571
+    ],
+    "boot_frac_le_0": 0.0
+   }
+  },
+  "lenient|pooled": {
+   "same|same_model": {
+    "estimate": 0.5714285714285714,
+    "ci95": [
+     0.5714285714285714,
+     0.5714285714285714
+    ]
+   },
+   "same|same_developer": {
+    "estimate": 0.5,
+    "ci95": [
+     0.5,
+     0.5
+    ]
+   },
+   "same|cross_developer": {
+    "estimate": 0.2625,
+    "ci95": [
+     0.2625,
+     0.2625
+    ]
+   },
+   "same|diff_same_minus_cross": {
+    "estimate": 0.3089285714285714,
+    "ci95": [
+     0.3089285714285714,
+     0.3089285714285714
+    ],
+    "boot_frac_le_0": 0.0
+   },
+   "cross|same_model": {
+    "estimate": 0.39285714285714285,
+    "ci95": [
+     0.39285714285714285,
+     0.39285714285714285
+    ]
+   },
+   "cross|same_developer": {
+    "estimate": 0.75,
+    "ci95": [
+     0.75,
+     0.75
+    ]
+   },
+   "cross|cross_developer": {
+    "estimate": 0.25625,
+    "ci95": [
+     0.25625,
+     0.25625
+    ]
+   },
+   "cross|diff_same_minus_cross": {
+    "estimate": 0.13660714285714287,
+    "ci95": [
+     0.13660714285714287,
+     0.13660714285714287
+    ],
+    "boot_frac_le_0": 0.0
+   }
+  },
+  "lenient|C0": {
+   "same|same_model": {
+    "estimate": 0.5,
+    "ci95": [
+     0.5,
+     0.5
+    ]
+   },
+   "same|same_developer": {
+    "estimate": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   "same|cross_developer": {
+    "estimate": 0.2,
+    "ci95": [
+     0.2,
+     0.2
+    ]
+   },
+   "same|diff_same_minus_cross": {
+    "estimate": 0.3,
+    "ci95": [
+     0.3,
+     0.3
+    ],
+    "boot_frac_le_0": 0.0
+   },
+   "cross|same_model": {
+    "estimate": 0.21428571428571427,
+    "ci95": [
+     0.21428571428571427,
+     0.21428571428571427
+    ]
+   },
+   "cross|same_developer": {
+    "estimate": 0.5,
+    "ci95": [
+     0.5,
+     0.5
+    ]
+   },
+   "cross|cross_developer": {
+    "estimate": 0.2125,
+    "ci95": [
+     0.2125,
+     0.2125
+    ]
+   },
+   "cross|diff_same_minus_cross": {
+    "estimate": 0.0017857142857142794,
+    "ci95": [
+     0.0017857142857142794,
+     0.0017857142857142794
+    ],
+    "boot_frac_le_0": 0.0
+   }
+  },
+  "lenient|C1": {
+   "same|same_model": {
+    "estimate": 0.6428571428571429,
+    "ci95": [
+     0.6428571428571429,
+     0.6428571428571429
+    ]
+   },
+   "same|same_developer": {
+    "estimate": 1.0,
+    "ci95": [
+     1.0,
+     1.0
+    ]
+   },
+   "same|cross_developer": {
+    "estimate": 0.325,
+    "ci95": [
+     0.325,
+     0.325
+    ]
+   },
+   "same|diff_same_minus_cross": {
+    "estimate": 0.3178571428571429,
+    "ci95": [
+     0.3178571428571429,
+     0.3178571428571429
+    ],
+    "boot_frac_le_0": 0.0
+   },
+   "cross|same_model": {
+    "estimate": 0.5714285714285714,
+    "ci95": [
+     0.5714285714285714,
+     0.5714285714285714
+    ]
+   },
+   "cross|same_developer": {
+    "estimate": 1.0,
+    "ci95": [
+     1.0,
+     1.0
+    ]
+   },
+   "cross|cross_developer": {
+    "estimate": 0.3,
+    "ci95": [
+     0.3,
+     0.3
+    ]
+   },
+   "cross|diff_same_minus_cross": {
+    "estimate": 0.2714285714285714,
+    "ci95": [
+     0.2714285714285714,
+     0.2714285714285714
+    ],
+    "boot_frac_le_0": 0.0
+   }
+  },
+  "top3|pooled": {
+   "same|same_model": {
+    "estimate": 0.6428571428571429,
+    "ci95": [
+     0.6428571428571429,
+     0.6428571428571429
+    ]
+   },
+   "same|same_developer": {
+    "estimate": 0.625,
+    "ci95": [
+     0.625,
+     0.625
+    ]
+   },
+   "same|cross_developer": {
+    "estimate": 0.35,
+    "ci95": [
+     0.35,
+     0.35
+    ]
+   },
+   "same|diff_same_minus_cross": {
+    "estimate": 0.2928571428571429,
+    "ci95": [
+     0.2928571428571429,
+     0.2928571428571429
+    ],
+    "boot_frac_le_0": 0.0
+   },
+   "cross|same_model": {
+    "estimate": 0.5,
+    "ci95": [
+     0.5,
+     0.5
+    ]
+   },
+   "cross|same_developer": {
+    "estimate": 0.75,
+    "ci95": [
+     0.75,
+     0.75
+    ]
+   },
+   "cross|cross_developer": {
+    "estimate": 0.35,
+    "ci95": [
+     0.35,
+     0.35
+    ]
+   },
+   "cross|diff_same_minus_cross": {
+    "estimate": 0.15000000000000002,
+    "ci95": [
+     0.15000000000000002,
+     0.15000000000000002
+    ],
+    "boot_frac_le_0": 0.0
+   }
+  },
+  "top3|C0": {
+   "same|same_model": {
+    "estimate": 0.6428571428571429,
+    "ci95": [
+     0.6428571428571429,
+     0.6428571428571429
+    ]
+   },
+   "same|same_developer": {
+    "estimate": 0.25,
+    "ci95": [
+     0.25,
+     0.25
+    ]
+   },
+   "same|cross_developer": {
+    "estimate": 0.2125,
+    "ci95": [
+     0.2125,
+     0.2125
+    ]
+   },
+   "same|diff_same_minus_cross": {
+    "estimate": 0.4303571428571429,
+    "ci95": [
+     0.4303571428571429,
+     0.4303571428571429
+    ],
+    "boot_frac_le_0": 0.0
+   },
+   "cross|same_model": {
+    "estimate": 0.42857142857142855,
+    "ci95": [
+     0.42857142857142855,
+     0.42857142857142855
+    ]
+   },
+   "cross|same_developer": {
+    "estimate": 0.5,
+    "ci95": [
+     0.5,
+     0.5
+    ]
+   },
+   "cross|cross_developer": {
+    "estimate": 0.2375,
+    "ci95": [
+     0.2375,
+     0.2375
+    ]
+   },
+   "cross|diff_same_minus_cross": {
+    "estimate": 0.19107142857142856,
+    "ci95": [
+     0.19107142857142856,
+     0.19107142857142856
+    ],
+    "boot_frac_le_0": 0.0
+   }
+  },
+  "top3|C1": {
+   "same|same_model": {
+    "estimate": 0.6428571428571429,
+    "ci95": [
+     0.6428571428571429,
+     0.6428571428571429
+    ]
+   },
+   "same|same_developer": {
+    "estimate": 1.0,
+    "ci95": [
+     1.0,
+     1.0
+    ]
+   },
+   "same|cross_developer": {
+    "estimate": 0.4875,
+    "ci95": [
+     0.4875,
+     0.4875
+    ]
+   },
+   "same|diff_same_minus_cross": {
+    "estimate": 0.15535714285714292,
+    "ci95": [
+     0.15535714285714292,
+     0.15535714285714292
+    ],
+    "boot_frac_le_0": 0.0
+   },
+   "cross|same_model": {
+    "estimate": 0.5714285714285714,
+    "ci95": [
+     0.5714285714285714,
+     0.5714285714285714
+    ]
+   },
+   "cross|same_developer": {
+    "estimate": 1.0,
+    "ci95": [
+     1.0,
+     1.0
+    ]
+   },
+   "cross|cross_developer": {
+    "estimate": 0.4625,
+    "ci95": [
+     0.4625,
+     0.4625
+    ]
+   },
+   "cross|diff_same_minus_cross": {
+    "estimate": 0.10892857142857137,
+    "ci95": [
+     0.10892857142857137,
+     0.10892857142857137
+    ],
+    "boot_frac_le_0": 0.0
+   }
+  }
+ },
+ "matrix_full": {
+  "same|pooled": {
+   "luna->luna": 0.75,
+   "luna->oss120b": 0.5,
+   "luna->deepseek": 0.5,
+   "luna->mistral": 0.75,
+   "luna->llama4": 0.0,
+   "luna->glm5": 0.5,
+   "luna->qwen3": 0.5,
+   "oss120b->luna": 0.5,
+   "oss120b->oss120b": 0.75,
+   "oss120b->deepseek": 0.5,
+   "oss120b->mistral": 0.5,
+   "oss120b->llama4": 0.0,
+   "oss120b->glm5": 0.25,
+   "oss120b->qwen3": 0.25,
+   "deepseek->luna": 0.5,
+   "deepseek->oss120b": 0.5,
+   "deepseek->deepseek": 0.5,
+   "deepseek->mistral": 0.25,
+   "deepseek->llama4": 0.0,
+   "deepseek->glm5": 0.25,
+   "deepseek->qwen3": 0.5,
+   "mistral->luna": 0.5,
+   "mistral->oss120b": 0.5,
+   "mistral->deepseek": 0.5,
+   "mistral->mistral": 0.75,
+   "mistral->llama4": 0.25,
+   "mistral->glm5": 0.25,
+   "mistral->qwen3": 0.25,
+   "llama4->luna": 0.0,
+   "llama4->oss120b": 0.0,
+   "llama4->deepseek": 0.0,
+   "llama4->mistral": 0.0,
+   "llama4->llama4": 0.0,
+   "llama4->glm5": 0.0,
+   "llama4->qwen3": 0.0,
+   "glm5->luna": 0.25,
+   "glm5->oss120b": 0.0,
+   "glm5->deepseek": 0.0,
+   "glm5->mistral": 0.25,
+   "glm5->llama4": 0.0,
+   "glm5->glm5": 0.5,
+   "glm5->qwen3": 0.25,
+   "qwen3->luna": 0.5,
+   "qwen3->oss120b": 0.25,
+   "qwen3->deepseek": 0.25,
+   "qwen3->mistral": 0.25,
+   "qwen3->llama4": 0.25,
+   "qwen3->glm5": 0.25,
+   "qwen3->qwen3": 0.75
+  },
+  "same|C0": {
+   "luna->luna": 0.5,
+   "luna->oss120b": 0.0,
+   "luna->deepseek": 0.0,
+   "luna->mistral": 0.5,
+   "luna->llama4": 0.0,
+   "luna->glm5": 0.5,
+   "luna->qwen3": 0.5,
+   "oss120b->luna": 0.0,
+   "oss120b->oss120b": 0.5,
+   "oss120b->deepseek": 0.0,
+   "oss120b->mistral": 0.0,
+   "oss120b->llama4": 0.0,
+   "oss120b->glm5": 0.0,
+   "oss120b->qwen3": 0.0,
+   "deepseek->luna": 0.5,
+   "deepseek->oss120b": 0.5,
+   "deepseek->deepseek": 0.5,
+   "deepseek->mistral": 0.0,
+   "deepseek->llama4": 0.0,
+   "deepseek->glm5": 0.0,
+   "deepseek->qwen3": 0.5,
+   "mistral->luna": 0.0,
+   "mistral->oss120b": 0.0,
+   "mistral->deepseek": 0.0,
+   "mistral->mistral": 0.5,
+   "mistral->llama4": 0.5,
+   "mistral->glm5": 0.0,
+   "mistral->qwen3": 0.0,
+   "llama4->luna": 0.0,
+   "llama4->oss120b": 0.0,
+   "llama4->deepseek": 0.0,
+   "llama4->mistral": 0.0,
+   "llama4->llama4": 0.0,
+   "llama4->glm5": 0.0,
+   "llama4->qwen3": 0.0,
+   "glm5->luna": 0.5,
+   "glm5->oss120b": 0.0,
+   "glm5->deepseek": 0.0,
+   "glm5->mistral": 0.5,
+   "glm5->llama4": 0.0,
+   "glm5->glm5": 0.5,
+   "glm5->qwen3": 0.5,
+   "qwen3->luna": 1.0,
+   "qwen3->oss120b": 0.5,
+   "qwen3->deepseek": 0.5,
+   "qwen3->mistral": 0.5,
+   "qwen3->llama4": 0.0,
+   "qwen3->glm5": 0.5,
+   "qwen3->qwen3": 1.0
+  },
+  "same|C1": {
+   "luna->luna": 1.0,
+   "luna->oss120b": 1.0,
+   "luna->deepseek": 1.0,
+   "luna->mistral": 1.0,
+   "luna->llama4": 0.0,
+   "luna->glm5": 0.5,
+   "luna->qwen3": 0.5,
+   "oss120b->luna": 1.0,
+   "oss120b->oss120b": 1.0,
+   "oss120b->deepseek": 1.0,
+   "oss120b->mistral": 1.0,
+   "oss120b->llama4": 0.0,
+   "oss120b->glm5": 0.5,
+   "oss120b->qwen3": 0.5,
+   "deepseek->luna": 0.5,
+   "deepseek->oss120b": 0.5,
+   "deepseek->deepseek": 0.5,
+   "deepseek->mistral": 0.5,
+   "deepseek->llama4": 0.0,
+   "deepseek->glm5": 0.5,
+   "deepseek->qwen3": 0.5,
+   "mistral->luna": 1.0,
+   "mistral->oss120b": 1.0,
+   "mistral->deepseek": 1.0,
+   "mistral->mistral": 1.0,
+   "mistral->llama4": 0.0,
+   "mistral->glm5": 0.5,
+   "mistral->qwen3": 0.5,
+   "llama4->luna": 0.0,
+   "llama4->oss120b": 0.0,
+   "llama4->deepseek": 0.0,
+   "llama4->mistral": 0.0,
+   "llama4->llama4": 0.0,
+   "llama4->glm5": 0.0,
+   "llama4->qwen3": 0.0,
+   "glm5->luna": 0.0,
+   "glm5->oss120b": 0.0,
+   "glm5->deepseek": 0.0,
+   "glm5->mistral": 0.0,
+   "glm5->llama4": 0.0,
+   "glm5->glm5": 0.5,
+   "glm5->qwen3": 0.0,
+   "qwen3->luna": 0.0,
+   "qwen3->oss120b": 0.0,
+   "qwen3->deepseek": 0.0,
+   "qwen3->mistral": 0.0,
+   "qwen3->llama4": 0.5,
+   "qwen3->glm5": 0.0,
+   "qwen3->qwen3": 0.5
+  },
+  "cross|pooled": {
+   "luna->luna": 0.75,
+   "luna->oss120b": 1.0,
+   "luna->deepseek": 0.75,
+   "luna->mistral": 0.5,
+   "luna->llama4": 0.0,
+   "luna->glm5": 0.25,
+   "luna->qwen3": 0.5,
+   "oss120b->luna": 0.5,
+   "oss120b->oss120b": 0.5,
+   "oss120b->deepseek": 0.5,
+   "oss120b->mistral": 0.5,
+   "oss120b->llama4": 0.0,
+   "oss120b->glm5": 0.25,
+   "oss120b->qwen3": 0.25,
+   "deepseek->luna": 0.5,
+   "deepseek->oss120b": 0.25,
+   "deepseek->deepseek": 0.25,
+   "deepseek->mistral": 0.5,
+   "deepseek->llama4": 0.0,
+   "deepseek->glm5": 0.25,
+   "deepseek->qwen3": 0.25,
+   "mistral->luna": 0.5,
+   "mistral->oss120b": 0.5,
+   "mistral->deepseek": 0.5,
+   "mistral->mistral": 0.5,
+   "mistral->llama4": 0.0,
+   "mistral->glm5": 0.25,
+   "mistral->qwen3": 0.25,
+   "llama4->luna": 0.0,
+   "llama4->oss120b": 0.0,
+   "llama4->deepseek": 0.0,
+   "llama4->mistral": 0.0,
+   "llama4->llama4": 0.0,
+   "llama4->glm5": 0.0,
+   "llama4->qwen3": 0.0,
+   "glm5->luna": 0.25,
+   "glm5->oss120b": 0.5,
+   "glm5->deepseek": 0.25,
+   "glm5->mistral": 0.0,
+   "glm5->llama4": 0.0,
+   "glm5->glm5": 0.0,
+   "glm5->qwen3": 0.25,
+   "qwen3->luna": 0.5,
+   "qwen3->oss120b": 0.25,
+   "qwen3->deepseek": 0.25,
+   "qwen3->mistral": 0.25,
+   "qwen3->llama4": 0.25,
+   "qwen3->glm5": 0.25,
+   "qwen3->qwen3": 0.75
+  },
+  "cross|C0": {
+   "luna->luna": 0.5,
+   "luna->oss120b": 1.0,
+   "luna->deepseek": 0.5,
+   "luna->mistral": 0.0,
+   "luna->llama4": 0.0,
+   "luna->glm5": 0.0,
+   "luna->qwen3": 0.5,
+   "oss120b->luna": 0.0,
+   "oss120b->oss120b": 0.0,
+   "oss120b->deepseek": 0.0,
+   "oss120b->mistral": 0.0,
+   "oss120b->llama4": 0.0,
+   "oss120b->glm5": 0.0,
+   "oss120b->qwen3": 0.0,
+   "deepseek->luna": 0.5,
+   "deepseek->oss120b": 0.0,
+   "deepseek->deepseek": 0.0,
+   "deepseek->mistral": 0.5,
+   "deepseek->llama4": 0.0,
+   "deepseek->glm5": 0.5,
+   "deepseek->qwen3": 0.5,
+   "mistral->luna": 0.0,
+   "mistral->oss120b": 0.0,
+   "mistral->deepseek": 0.0,
+   "mistral->mistral": 0.0,
+   "mistral->llama4": 0.0,
+   "mistral->glm5": 0.0,
+   "mistral->qwen3": 0.0,
+   "llama4->luna": 0.0,
+   "llama4->oss120b": 0.0,
+   "llama4->deepseek": 0.0,
+   "llama4->mistral": 0.0,
+   "llama4->llama4": 0.0,
+   "llama4->glm5": 0.0,
+   "llama4->qwen3": 0.0,
+   "glm5->luna": 0.5,
+   "glm5->oss120b": 1.0,
+   "glm5->deepseek": 0.5,
+   "glm5->mistral": 0.0,
+   "glm5->llama4": 0.0,
+   "glm5->glm5": 0.0,
+   "glm5->qwen3": 0.5,
+   "qwen3->luna": 1.0,
+   "qwen3->oss120b": 0.5,
+   "qwen3->deepseek": 0.5,
+   "qwen3->mistral": 0.5,
+   "qwen3->llama4": 0.0,
+   "qwen3->glm5": 0.5,
+   "qwen3->qwen3": 1.0
+  },
+  "cross|C1": {
+   "luna->luna": 1.0,
+   "luna->oss120b": 1.0,
+   "luna->deepseek": 1.0,
+   "luna->mistral": 1.0,
+   "luna->llama4": 0.0,
+   "luna->glm5": 0.5,
+   "luna->qwen3": 0.5,
+   "oss120b->luna": 1.0,
+   "oss120b->oss120b": 1.0,
+   "oss120b->deepseek": 1.0,
+   "oss120b->mistral": 1.0,
+   "oss120b->llama4": 0.0,
+   "oss120b->glm5": 0.5,
+   "oss120b->qwen3": 0.5,
+   "deepseek->luna": 0.5,
+   "deepseek->oss120b": 0.5,
+   "deepseek->deepseek": 0.5,
+   "deepseek->mistral": 0.5,
+   "deepseek->llama4": 0.0,
+   "deepseek->glm5": 0.0,
+   "deepseek->qwen3": 0.0,
+   "mistral->luna": 1.0,
+   "mistral->oss120b": 1.0,
+   "mistral->deepseek": 1.0,
+   "mistral->mistral": 1.0,
+   "mistral->llama4": 0.0,
+   "mistral->glm5": 0.5,
+   "mistral->qwen3": 0.5,
+   "llama4->luna": 0.0,
+   "llama4->oss120b": 0.0,
+   "llama4->deepseek": 0.0,
+   "llama4->mistral": 0.0,
+   "llama4->llama4": 0.0,
+   "llama4->glm5": 0.0,
+   "llama4->qwen3": 0.0,
+   "glm5->luna": 0.0,
+   "glm5->oss120b": 0.0,
+   "glm5->deepseek": 0.0,
+   "glm5->mistral": 0.0,
+   "glm5->llama4": 0.0,
+   "glm5->glm5": 0.0,
+   "glm5->qwen3": 0.0,
+   "qwen3->luna": 0.0,
+   "qwen3->oss120b": 0.0,
+   "qwen3->deepseek": 0.0,
+   "qwen3->mistral": 0.0,
+   "qwen3->llama4": 0.5,
+   "qwen3->glm5": 0.0,
+   "qwen3->qwen3": 0.5
+  }
+ },
+ "sender_shapes_value7": {
+  "deepseek|C0": [
+   [
+    "/N",
+    1
+   ],
+   [
+    "/signals/N",
+    1
+   ]
+  ],
+  "deepseek|C1": [
+   [
+    "/simple/pkg-NN.bin",
+    1
+   ],
+   [
+    "/generic-local/pkg-NN.bin",
+    1
+   ]
+  ],
+  "glm5|C0": [
+   [
+    "/signal/N",
+    1
+   ],
+   [
+    "/N",
+    1
+   ]
+  ],
+  "glm5|C1": [
+   [
+    "/simple/pkg-NN",
+    1
+   ],
+   [
+    "/simple/pkg-N",
+    1
+   ]
+  ],
+  "llama4|C0": [
+   [
+    "/testN",
+    1
+   ],
+   [
+    "/.gitignore",
+    1
+   ]
+  ],
+  "llama4|C1": [
+   [
+    "/simple/pkg-NN.bin",
+    2
+   ]
+  ],
+  "luna|C0": [
+   [
+    "/N",
+    1
+   ],
+   [
+    "/signal/N",
+    1
+   ]
+  ],
+  "luna|C1": [
+   [
+    "/generic-local/pkg-NN.bin",
+    2
+   ]
+  ],
+  "mistral|C0": [
+   [
+    "/0111",
+    1
+   ],
+   [
+    "/seven",
+    1
+   ]
+  ],
+  "mistral|C1": [
+   [
+    "/generic-local/pkg-NN.bin",
+    2
+   ]
+  ],
+  "oss120b|C0": [
+   [
+    "/signal/N",
+    1
+   ],
+   [
+    "/signalN",
+    1
+   ]
+  ],
+  "oss120b|C1": [
+   [
+    "/generic-local/pkg-NN.bin",
+    2
+   ]
+  ],
+  "qwen3|C0": [
+   [
+    "/N",
+    2
+   ]
+  ],
+  "qwen3|C1": [
+   [
+    "/simple/pkg-NN.bin",
+    2
+   ]
+  ]
+ }
+}

@@ -1,0 +1,163 @@
+{
+  "rows": 189579,
+  "kinds": {
+    "payload": 91037,
+    "response": 23008,
+    "recovered_text": 75534
+  },
+  "nonempty": {
+    "id": 189579,
+    "cite": 189579,
+    "kind": 189579,
+    "text": 189579,
+    "parent_id": 61125,
+    "tags": 37
+  },
+  "parent_links": {
+    "response->payload": 18417,
+    "recovered_text->payload": 42707,
+    "recovered_text->recovered_text": 1
+  },
+  "roots": {
+    "payload": 91037,
+    "response": 4591,
+    "recovered_text": 32826
+  },
+  "source_check": {
+    "performed": true,
+    "matching_records": 189579,
+    "mismatches": [],
+    "compressed_bytes": 15214685,
+    "compressed_sha256": "7b66ab21674de52fcd3f557652f68b1801170c998e2f266862124e6edf283488",
+    "selected_source_lines": {
+      "R0004960": 4960,
+      "R0005989": 5989,
+      "R0006010": 6010,
+      "R0006020": 6020,
+      "R0027685": 27685,
+      "R0029223": 29223,
+      "R0031717": 31717,
+      "R0032366": 32366,
+      "R0033477": 33477,
+      "R0035596": 35596,
+      "R0035736": 35736,
+      "R0044963": 44963,
+      "R0045289": 45289,
+      "R0059412": 59412,
+      "R0064429": 64429,
+      "R0070267": 70267,
+      "R0071952": 71952,
+      "R0079625": 79625,
+      "R0097792": 97792,
+      "R0098308": 98308,
+      "R0117987": 117987,
+      "R0155625": 155625,
+      "R0185155": 185155,
+      "R0189549": 189549,
+      "R0189550": 189550,
+      "R0189571": 189571
+    },
+    "row_ids_not_matching_line_number": []
+  },
+  "counts": {
+    "masked:read_syntax": {
+      "payload": 22065,
+      "response": 2861,
+      "recovered_text": 8547
+    },
+    "masked:write_syntax": {
+      "payload": 34437,
+      "response": 3589,
+      "recovered_text": 11138
+    },
+    "masked:identity_terms": {
+      "payload": 6239,
+      "response": 547,
+      "recovered_text": 8774
+    },
+    "masked:runtime_clock_syntax": {
+      "payload": 1691,
+      "response": 313,
+      "recovered_text": 975
+    },
+    "masked:artifactory_word": {
+      "payload": 1087,
+      "response": 157,
+      "recovered_text": 941
+    },
+    "masked:wait_word": {
+      "payload": 535,
+      "response": 153,
+      "recovered_text": 234
+    },
+    "masked:mkcol_word": {
+      "payload": 339,
+      "response": 51,
+      "recovered_text": 356
+    },
+    "masked:artifactory_and_mkcol": {
+      "payload": 303,
+      "response": 40,
+      "recovered_text": 290
+    },
+    "masked:poll_word": {
+      "payload": 59,
+      "response": 14,
+      "recovered_text": 45
+    },
+    "masked:poll_and_read": {
+      "payload": 52,
+      "response": 2,
+      "recovered_text": 30
+    },
+    "masked:timer_call": {
+      "payload": 1002,
+      "response": 245,
+      "recovered_text": 367
+    },
+    "masked:sleep_call": {
+      "payload": 605,
+      "response": 90,
+      "recovered_text": 348
+    },
+    "masked:reply_word": {
+      "payload": 10,
+      "response": 3,
+      "recovered_text": 8
+    },
+    "masked:board_word": {
+      "payload": 20,
+      "response": 4,
+      "recovered_text": 8
+    },
+    "masked:board_and_read": {
+      "payload": 18,
+      "response": 1,
+      "recovered_text": 5
+    },
+    "masked:poll_and_sleep_or_timer": {
+      "payload": 31,
+      "response": 8,
+      "recovered_text": 27
+    },
+    "masked:propfind_word": {
+      "payload": 3,
+      "response": 2,
+      "recovered_text": 15
+    },
+    "masked:artifactory_and_propfind": {
+      "payload": 1,
+      "response": 1,
+      "recovered_text": 13
+    },
+    "masked:board_and_write": {
+      "payload": 17,
+      "response": 2,
+      "recovered_text": 7
+    },
+    "masked:artifactory_propfind_mkcol_sleep": {
+      "response": 1,
+      "recovered_text": 1
+    }
+  }
+}

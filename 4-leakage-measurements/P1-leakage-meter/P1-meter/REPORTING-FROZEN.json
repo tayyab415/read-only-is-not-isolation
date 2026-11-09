@@ -1,0 +1,22 @@
+{
+  "utc": "2026-11-08T17:27:16.100196+00:00",
+  "main_holdout_retrieved": false,
+  "main_holdout_analyzed": false,
+  "scope": "Supplementary reporting and audit rules, frozen before main holdout exposure. Does not replace the analysis/model freeze.",
+  "sha256": {
+    "audit.py": "3258011c4586da62f2e813c2f12682d9c965cdf835d00a087a5b728ce9348938",
+    "test_audit.py": "9b5495ce88fd44cc5369f1e31af2c33fe1f2d3819bc2f0ac3b1286743580fbf7",
+    "report_metrics.py": "095e71cdb935ae974b95c59e21ac02ac9837e320ae898794f6c3df62b964dfc9",
+    "test_report_metrics.py": "3383d9e85064707057965da0e3ce5412650bcdd5a24f90e34d6c53237753beb7",
+    "REPORTING-RULES.md": "24a85bcfe60f5bd5b34bd1c1a55a6eab1272075105fe5267eadba9d20bc9f397",
+    "controller.py": "8bd30a0b2ca5b281481e60fb45b45b718e5583f3f3b329da4d1ab288cb0d2960",
+    "test_controller.py": "2fbfdf5f278cdfb52a80edab0ee84dd3368e57cd1621507a7e0237adb25e2b60"
+  },
+  "checks": {
+    "controller_regressions": 6,
+    "join_audit_regressions": 4,
+    "reporting_regressions": 4,
+    "smoke_join_checks": 69304,
+    "all_passed": true
+  }
+}

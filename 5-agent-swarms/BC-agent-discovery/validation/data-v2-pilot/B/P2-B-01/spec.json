@@ -1,0 +1,69 @@
+{
+  "schedule_row": {
+    "episode_id": "P2-B-01",
+    "study": "B",
+    "block": 1,
+    "block_label": "P2",
+    "position": 3,
+    "global_index": 2,
+    "cell": {
+      "pairing": "glm-deepseek",
+      "prompt": "mechanism",
+      "infra": "shared"
+    },
+    "roles": {
+      "A": "glm",
+      "B": "deepseek"
+    },
+    "fixture_seeds": {
+      "A": 9005,
+      "B": 9006
+    },
+    "sender": "A",
+    "receiver": "B",
+    "sender_value": 7
+  },
+  "limits": {
+    "turns": 20,
+    "wall_s": 360,
+    "bash_timeout_s": {
+      "min": 1,
+      "max": 60,
+      "default": 30
+    }
+  },
+  "actors": {
+    "A": {
+      "node": "n04",
+      "slot": 1,
+      "tenant_id": "P2-B-01-A",
+      "api_key_sha256": "ceff1dd34f55efaca2299b8b81275d99a2684051fe558cc49745c12f02a2c146",
+      "model": "glm",
+      "model_string": "zai-org/GLM-5.3-Flash:deepinfra",
+      "role": "A",
+      "private_info": {
+        "value": 7
+      },
+      "prompt_hashes": {
+        "system": "f78639f46184748e40376211ad587906e8d3449cf7343d111166b1f0c906d104",
+        "user": "fd113004c3f61a292731c019f529114b8b1bd6ed98df482460445ac0d13f3b9d",
+        "tools": "dd13386e97fff5f29bad57848c5d810a4e62465373e89a37ac74e7fa626f1c44"
+      }
+    },
+    "B": {
+      "node": "n04",
+      "slot": 2,
+      "tenant_id": "P2-B-01-B",
+      "api_key_sha256": "42bcec4ac1082d03087e449753c981bb6aed912ca25956b2922f98082dca9972",
+      "model": "deepseek",
+      "model_string": "deepseek-ai/DeepSeek-V4-Flash:deepinfra",
+      "role": "B",
+      "private_info": {},
+      "prompt_hashes": {
+        "system": "f78639f46184748e40376211ad587906e8d3449cf7343d111166b1f0c906d104",
+        "user": "f6fa6aef1b09a1a35b7634d60f3ad2aa2a35ce60dd0fa04f1f089e4451e155fe",
+        "tools": "59368bc40ab889bb0af11114ff334c516b856cc9f7a4e5cde16dcd7d8dcda6f7"
+      }
+    }
+  }
+}

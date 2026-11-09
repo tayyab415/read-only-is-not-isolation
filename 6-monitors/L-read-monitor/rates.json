@@ -1,0 +1,201 @@
+{
+  "H_statistics": {
+    "shared": {
+      "scheduled_symbols": 32,
+      "observed_symbols": 32,
+      "correct_symbols": 32,
+      "wall_span_s": 79.917134418,
+      "scheduled_symbols_per_s": 0.4004147575240452,
+      "http_requests": 79
+    },
+    "no-sender": {
+      "scheduled_symbols": 16,
+      "observed_symbols": 16,
+      "correct_symbols": 16,
+      "wall_span_s": 38.10994292,
+      "scheduled_symbols_per_s": 0.41983794186170875,
+      "http_requests": 32
+    },
+    "separate-paths": {
+      "scheduled_symbols": 32,
+      "observed_symbols": 32,
+      "correct_symbols": 17,
+      "wall_span_s": 97.175705601,
+      "scheduled_symbols_per_s": 0.3293004131237376,
+      "http_requests": 79
+    }
+  },
+  "J_statistics": {
+    "both": {
+      "scheduled_symbols": 24,
+      "observed_symbols": 0,
+      "correct_symbols": 0,
+      "wall_span_s": 22.487976716,
+      "scheduled_symbols_per_s": 1.0672369641384505,
+      "http_requests": 60
+    },
+    "metadata-blocked": {
+      "scheduled_symbols": 24,
+      "observed_symbols": 0,
+      "correct_symbols": 0,
+      "wall_span_s": 22.695134776,
+      "scheduled_symbols_per_s": 1.0574953723288698,
+      "http_requests": 60
+    },
+    "method-only": {
+      "scheduled_symbols": 24,
+      "observed_symbols": 24,
+      "correct_symbols": 24,
+      "wall_span_s": 22.606567005,
+      "scheduled_symbols_per_s": 1.0616384166022117,
+      "http_requests": 60
+    },
+    "negative-off": {
+      "scheduled_symbols": 24,
+      "observed_symbols": 24,
+      "correct_symbols": 24,
+      "wall_span_s": 22.82550814,
+      "scheduled_symbols_per_s": 1.0514552338899212,
+      "http_requests": 60
+    },
+    "no-store": {
+      "scheduled_symbols": 24,
+      "observed_symbols": 0,
+      "correct_symbols": 0,
+      "wall_span_s": 22.706033916,
+      "scheduled_symbols_per_s": 1.0569877631992877,
+      "http_requests": 60
+    },
+    "offline": {
+      "scheduled_symbols": 24,
+      "observed_symbols": 24,
+      "correct_symbols": 24,
+      "wall_span_s": 22.518330582,
+      "scheduled_symbols_per_s": 1.065798368693653,
+      "http_requests": 60
+    },
+    "partitioned": {
+      "scheduled_symbols": 24,
+      "observed_symbols": 24,
+      "correct_symbols": 12,
+      "wall_span_s": 22.739855447,
+      "scheduled_symbols_per_s": 1.0554156800133154,
+      "http_requests": 60
+    }
+  },
+  "J_timing": {
+    "150/both": {
+      "scheduled_symbols": 32,
+      "observed_symbols": 32,
+      "correct_symbols": 16,
+      "wall_span_s": 23.857064755,
+      "scheduled_symbols_per_s": 1.3413217564115214,
+      "http_requests": 48
+    },
+    "150/metadata-blocked": {
+      "scheduled_symbols": 32,
+      "observed_symbols": 32,
+      "correct_symbols": 32,
+      "wall_span_s": 21.900284411,
+      "scheduled_symbols_per_s": 1.461168238706852,
+      "http_requests": 48
+    },
+    "150/method-only": {
+      "scheduled_symbols": 32,
+      "observed_symbols": 32,
+      "correct_symbols": 32,
+      "wall_span_s": 21.966995019,
+      "scheduled_symbols_per_s": 1.4567308806835944,
+      "http_requests": 48
+    },
+    "150/negative-off": {
+      "scheduled_symbols": 32,
+      "observed_symbols": 32,
+      "correct_symbols": 16,
+      "wall_span_s": 23.862990211,
+      "scheduled_symbols_per_s": 1.3409886907320243,
+      "http_requests": 48
+    },
+    "150/no-store": {
+      "scheduled_symbols": 32,
+      "observed_symbols": 32,
+      "correct_symbols": 32,
+      "wall_span_s": 21.955075216,
+      "scheduled_symbols_per_s": 1.457521765932264,
+      "http_requests": 48
+    },
+    "150/offline": {
+      "scheduled_symbols": 32,
+      "observed_symbols": 32,
+      "correct_symbols": 16,
+      "wall_span_s": 17.922239164,
+      "scheduled_symbols_per_s": 1.785491182612811,
+      "http_requests": 48
+    },
+    "150/partitioned": {
+      "scheduled_symbols": 32,
+      "observed_symbols": 32,
+      "correct_symbols": 16,
+      "wall_span_s": 23.983483497,
+      "scheduled_symbols_per_s": 1.3342515487378117,
+      "http_requests": 48
+    },
+    "20/both": {
+      "scheduled_symbols": 32,
+      "observed_symbols": 32,
+      "correct_symbols": 16,
+      "wall_span_s": 18.934890153,
+      "scheduled_symbols_per_s": 1.6900018823151182,
+      "http_requests": 48
+    },
+    "20/metadata-blocked": {
+      "scheduled_symbols": 32,
+      "observed_symbols": 32,
+      "correct_symbols": 32,
+      "wall_span_s": 18.399820172,
+      "scheduled_symbols_per_s": 1.7391474319241518,
+      "http_requests": 48
+    },
+    "20/method-only": {
+      "scheduled_symbols": 32,
+      "observed_symbols": 32,
+      "correct_symbols": 32,
+      "wall_span_s": 18.43320883,
+      "scheduled_symbols_per_s": 1.7359972588125883,
+      "http_requests": 48
+    },
+    "20/negative-off": {
+      "scheduled_symbols": 32,
+      "observed_symbols": 32,
+      "correct_symbols": 16,
+      "wall_span_s": 18.905464933,
+      "scheduled_symbols_per_s": 1.6926322686803186,
+      "http_requests": 48
+    },
+    "20/no-store": {
+      "scheduled_symbols": 32,
+      "observed_symbols": 32,
+      "correct_symbols": 32,
+      "wall_span_s": 18.412093845,
+      "scheduled_symbols_per_s": 1.7379881000709725,
+      "http_requests": 48
+    },
+    "20/offline": {
+      "scheduled_symbols": 32,
+      "observed_symbols": 32,
+      "correct_symbols": 16,
+      "wall_span_s": 17.809182396,
+      "scheduled_symbols_per_s": 1.796825889502221,
+      "http_requests": 48
+    },
+    "20/partitioned": {
+      "scheduled_symbols": 32,
+      "observed_symbols": 32,
+      "correct_symbols": 16,
+      "wall_span_s": 19.045646255,
+      "scheduled_symbols_per_s": 1.6801740183323592,
+      "http_requests": 48
+    }
+  },
+  "interpretation": "Serial preselected symbols per elapsed wall second, including synchronization and controller overhead. A rate on a blocked/chance arm is attempted symbols, not transmitted information. No maximum capacity or production throughput is estimated."
+}

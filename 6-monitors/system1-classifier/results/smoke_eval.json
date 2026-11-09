@@ -1,0 +1,1117 @@
+{
+ "split_dir": "../data/smoke_split",
+ "runs": [
+  {
+   "model": "tfidf:detok",
+   "seed": 0,
+   "thr1": -1.446881121145903,
+   "test_auc": 1.0,
+   "test_ap": 1.0,
+   "test_tpr@thr1": 1.0,
+   "test_tpr@thr1_ci": [
+    0.9813,
+    1.0
+   ],
+   "test_fpr@thr1": 0.015384615384615385,
+   "test_fpr@thr1_ci": [
+    0.0052,
+    0.0442
+   ],
+   "test_tpr@thr01": 1.0,
+   "test_tpr@thr01_ci": [
+    0.9813,
+    1.0
+   ],
+   "test_fpr@thr01": 0.0,
+   "test_fpr@thr01_ci": [
+    0.0,
+    0.0193
+   ],
+   "test_fpr@thr1:local_npm": 0.015384615384615385,
+   "eval_fpr@thr1:npm_again": 0.023333333333333334,
+   "eval_fpr@thr1_ci:npm_again": [
+    0.0113,
+    0.0474
+   ],
+   "eval_tpr@thr1:swarm_again": 1.0,
+   "eval_tpr@thr1_ci:swarm_again": [
+    0.9874,
+    1.0
+   ],
+   "eval_auc:swarm_again_vs_test_benign": 1.0,
+   "eval_auc:swarm_again_vs_npm_again": 1.0
+  },
+  {
+   "model": "tfidf:struct",
+   "seed": 0,
+   "thr1": -0.32162465119506944,
+   "test_auc": 0.9998984513835998,
+   "test_ap": 0.9999030463297477,
+   "test_tpr@thr1": 0.9900990099009901,
+   "test_tpr@thr1_ci": [
+    0.9646,
+    0.9973
+   ],
+   "test_fpr@thr1": 0.005128205128205128,
+   "test_fpr@thr1_ci": [
+    0.0009,
+    0.0285
+   ],
+   "test_tpr@thr01": 0.9356435643564357,
+   "test_tpr@thr01_ci": [
+    0.893,
+    0.962
+   ],
+   "test_fpr@thr01": 0.0,
+   "test_fpr@thr01_ci": [
+    0.0,
+    0.0193
+   ],
+   "test_fpr@thr1:local_npm": 0.005128205128205128,
+   "eval_fpr@thr1:npm_again": 0.006666666666666667,
+   "eval_fpr@thr1_ci:npm_again": [
+    0.0018,
+    0.024
+   ],
+   "eval_tpr@thr1:swarm_again": 0.9933333333333333,
+   "eval_tpr@thr1_ci:swarm_again": [
+    0.976,
+    0.9982
+   ],
+   "eval_auc:swarm_again_vs_test_benign": 0.9998290598290599,
+   "eval_auc:swarm_again_vs_npm_again": 0.9995
+  },
+  {
+   "model": "probe:style",
+   "seed": 0,
+   "thr1": 2.5337927049436666,
+   "test_auc": 0.9770753998476771,
+   "test_ap": 0.9687498734684914,
+   "test_tpr@thr1": 0.7871287128712872,
+   "test_tpr@thr1_ci": [
+    0.7256,
+    0.8379
+   ],
+   "test_fpr@thr1": 0.010256410256410256,
+   "test_fpr@thr1_ci": [
+    0.0028,
+    0.0366
+   ],
+   "test_tpr@thr01": 0.09405940594059406,
+   "test_tpr@thr01_ci": [
+    0.061,
+    0.1422
+   ],
+   "test_fpr@thr01": 0.005128205128205128,
+   "test_fpr@thr01_ci": [
+    0.0009,
+    0.0285
+   ],
+   "test_fpr@thr1:local_npm": 0.010256410256410256,
+   "eval_fpr@thr1:npm_again": 0.016666666666666666,
+   "eval_fpr@thr1_ci:npm_again": [
+    0.0071,
+    0.0384
+   ],
+   "eval_tpr@thr1:swarm_again": 0.8433333333333334,
+   "eval_tpr@thr1_ci:swarm_again": [
+    0.7979,
+    0.8801
+   ],
+   "eval_auc:swarm_again_vs_test_benign": 0.9893504273504273,
+   "eval_auc:swarm_again_vs_npm_again": 0.9853444444444445
+  },
+  {
+   "model": "probe:tokens",
+   "seed": 0,
+   "thr1": -1.367706193623269,
+   "test_auc": 0.9746255394770247,
+   "test_ap": 0.9761516930190599,
+   "test_tpr@thr1": 0.9504950495049505,
+   "test_tpr@thr1_ci": [
+    0.9113,
+    0.9729
+   ],
+   "test_fpr@thr1": 0.02564102564102564,
+   "test_fpr@thr1_ci": [
+    0.011,
+    0.0586
+   ],
+   "test_tpr@thr01": 0.9504950495049505,
+   "test_tpr@thr01_ci": [
+    0.9113,
+    0.9729
+   ],
+   "test_fpr@thr01": 0.010256410256410256,
+   "test_fpr@thr01_ci": [
+    0.0028,
+    0.0366
+   ],
+   "test_fpr@thr1:local_npm": 0.02564102564102564,
+   "eval_fpr@thr1:npm_again": 0.016666666666666666,
+   "eval_fpr@thr1_ci:npm_again": [
+    0.0071,
+    0.0384
+   ],
+   "eval_tpr@thr1:swarm_again": 0.9566666666666667,
+   "eval_tpr@thr1_ci:swarm_again": [
+    0.9273,
+    0.9745
+   ],
+   "eval_auc:swarm_again_vs_test_benign": 0.9786153846153847,
+   "eval_auc:swarm_again_vs_npm_again": 0.9792722222222222
+  },
+  {
+   "model": "tfidf:detok",
+   "seed": 1,
+   "thr1": -1.7330876699047781,
+   "test_auc": 1.0,
+   "test_ap": 1.0000000000000002,
+   "test_tpr@thr1": 1.0,
+   "test_tpr@thr1_ci": [
+    0.981,
+    1.0
+   ],
+   "test_fpr@thr1": 0.07462686567164178,
+   "test_fpr@thr1_ci": [
+    0.0457,
+    0.1195
+   ],
+   "test_tpr@thr01": 1.0,
+   "test_tpr@thr01_ci": [
+    0.981,
+    1.0
+   ],
+   "test_fpr@thr01": 0.04975124378109453,
+   "test_fpr@thr01_ci": [
+    0.0272,
+    0.0891
+   ],
+   "test_fpr@thr1:local_npm": 0.07462686567164178,
+   "eval_fpr@thr1:npm_again": 0.056666666666666664,
+   "eval_fpr@thr1_ci:npm_again": [
+    0.0357,
+    0.0889
+   ],
+   "eval_tpr@thr1:swarm_again": 1.0,
+   "eval_tpr@thr1_ci:swarm_again": [
+    0.9874,
+    1.0
+   ],
+   "eval_auc:swarm_again_vs_test_benign": 1.0,
+   "eval_auc:swarm_again_vs_npm_again": 1.0
+  },
+  {
+   "model": "tfidf:struct",
+   "seed": 1,
+   "thr1": -1.6437139530300457,
+   "test_auc": 0.9998743655460074,
+   "test_ap": 0.9998730990232918,
+   "test_tpr@thr1": 1.0,
+   "test_tpr@thr1_ci": [
+    0.981,
+    1.0
+   ],
+   "test_fpr@thr1": 0.09950248756218906,
+   "test_fpr@thr1_ci": [
+    0.0653,
+    0.1487
+   ],
+   "test_tpr@thr01": 1.0,
+   "test_tpr@thr01_ci": [
+    0.981,
+    1.0
+   ],
+   "test_fpr@thr01": 0.09950248756218906,
+   "test_fpr@thr01_ci": [
+    0.0653,
+    0.1487
+   ],
+   "test_fpr@thr1:local_npm": 0.09950248756218906,
+   "eval_fpr@thr1:npm_again": 0.09666666666666666,
+   "eval_fpr@thr1_ci:npm_again": [
+    0.0681,
+    0.1354
+   ],
+   "eval_tpr@thr1:swarm_again": 1.0,
+   "eval_tpr@thr1_ci:swarm_again": [
+    0.9874,
+    1.0
+   ],
+   "eval_auc:swarm_again_vs_test_benign": 0.999933665008292,
+   "eval_auc:swarm_again_vs_npm_again": 0.9998666666666667
+  },
+  {
+   "model": "probe:style",
+   "seed": 1,
+   "thr1": 0.41817194680659053,
+   "test_auc": 0.9815819890446756,
+   "test_ap": 0.9532602177523471,
+   "test_tpr@thr1": 0.9292929292929293,
+   "test_tpr@thr1_ci": [
+    0.8848,
+    0.9574
+   ],
+   "test_fpr@thr1": 0.029850746268656716,
+   "test_fpr@thr1_ci": [
+    0.0138,
+    0.0636
+   ],
+   "test_tpr@thr01": 0.8535353535353535,
+   "test_tpr@thr01_ci": [
+    0.7976,
+    0.896
+   ],
+   "test_fpr@thr01": 0.024875621890547265,
+   "test_fpr@thr01_ci": [
+    0.0107,
+    0.0569
+   ],
+   "test_fpr@thr1:local_npm": 0.029850746268656716,
+   "eval_fpr@thr1:npm_again": 0.03,
+   "eval_fpr@thr1_ci:npm_again": [
+    0.0159,
+    0.056
+   ],
+   "eval_tpr@thr1:swarm_again": 0.98,
+   "eval_tpr@thr1_ci:swarm_again": [
+    0.9571,
+    0.9908
+   ],
+   "eval_auc:swarm_again_vs_test_benign": 0.986384742951907,
+   "eval_auc:swarm_again_vs_npm_again": 0.9843333333333334
+  },
+  {
+   "model": "probe:tokens",
+   "seed": 1,
+   "thr1": 2.237680714431593,
+   "test_auc": 0.9739182873511233,
+   "test_ap": 0.9758957126521091,
+   "test_tpr@thr1": 0.8535353535353535,
+   "test_tpr@thr1_ci": [
+    0.7976,
+    0.896
+   ],
+   "test_fpr@thr1": 0.004975124378109453,
+   "test_fpr@thr1_ci": [
+    0.0009,
+    0.0276
+   ],
+   "test_tpr@thr01": 0.32323232323232326,
+   "test_tpr@thr01_ci": [
+    0.262,
+    0.3912
+   ],
+   "test_fpr@thr01": 0.0,
+   "test_fpr@thr01_ci": [
+    0.0,
+    0.0188
+   ],
+   "test_fpr@thr1:local_npm": 0.004975124378109453,
+   "eval_fpr@thr1:npm_again": 0.0033333333333333335,
+   "eval_fpr@thr1_ci:npm_again": [
+    0.0006,
+    0.0186
+   ],
+   "eval_tpr@thr1:swarm_again": 0.8933333333333333,
+   "eval_tpr@thr1_ci:swarm_again": [
+    0.8533,
+    0.9234
+   ],
+   "eval_auc:swarm_again_vs_test_benign": 0.9785737976782753,
+   "eval_auc:swarm_again_vs_npm_again": 0.9792722222222222
+  }
+ ],
+ "summary_mean_std_min_max": {
+  "probe:style": {
+   "thr1": [
+    1.476,
+    1.496,
+    0.4182,
+    2.5338
+   ],
+   "test_auc": [
+    0.9793,
+    0.0032,
+    0.9771,
+    0.9816
+   ],
+   "test_ap": [
+    0.961,
+    0.011,
+    0.9533,
+    0.9687
+   ],
+   "test_tpr@thr1": [
+    0.8582,
+    0.1005,
+    0.7871,
+    0.9293
+   ],
+   "test_fpr@thr1": [
+    0.0201,
+    0.0139,
+    0.0103,
+    0.0299
+   ],
+   "test_tpr@thr01": [
+    0.4738,
+    0.537,
+    0.0941,
+    0.8535
+   ],
+   "test_fpr@thr01": [
+    0.015,
+    0.014,
+    0.0051,
+    0.0249
+   ],
+   "test_fpr@thr1:local_npm": [
+    0.0201,
+    0.0139,
+    0.0103,
+    0.0299
+   ],
+   "eval_fpr@thr1:npm_again": [
+    0.0233,
+    0.0094,
+    0.0167,
+    0.03
+   ],
+   "eval_tpr@thr1:swarm_again": [
+    0.9117,
+    0.0966,
+    0.8433,
+    0.98
+   ],
+   "eval_auc:swarm_again_vs_test_benign": [
+    0.9879,
+    0.0021,
+    0.9864,
+    0.9894
+   ],
+   "eval_auc:swarm_again_vs_npm_again": [
+    0.9848,
+    0.0007,
+    0.9843,
+    0.9853
+   ]
+  },
+  "probe:tokens": {
+   "thr1": [
+    0.435,
+    2.5494,
+    -1.3677,
+    2.2377
+   ],
+   "test_auc": [
+    0.9743,
+    0.0005,
+    0.9739,
+    0.9746
+   ],
+   "test_ap": [
+    0.976,
+    0.0002,
+    0.9759,
+    0.9762
+   ],
+   "test_tpr@thr1": [
+    0.902,
+    0.0686,
+    0.8535,
+    0.9505
+   ],
+   "test_fpr@thr1": [
+    0.0153,
+    0.0146,
+    0.005,
+    0.0256
+   ],
+   "test_tpr@thr01": [
+    0.6369,
+    0.4435,
+    0.3232,
+    0.9505
+   ],
+   "test_fpr@thr01": [
+    0.0051,
+    0.0073,
+    0.0,
+    0.0103
+   ],
+   "test_fpr@thr1:local_npm": [
+    0.0153,
+    0.0146,
+    0.005,
+    0.0256
+   ],
+   "eval_fpr@thr1:npm_again": [
+    0.01,
+    0.0094,
+    0.0033,
+    0.0167
+   ],
+   "eval_tpr@thr1:swarm_again": [
+    0.925,
+    0.0448,
+    0.8933,
+    0.9567
+   ],
+   "eval_auc:swarm_again_vs_test_benign": [
+    0.9786,
+    0.0,
+    0.9786,
+    0.9786
+   ],
+   "eval_auc:swarm_again_vs_npm_again": [
+    0.9793,
+    0.0,
+    0.9793,
+    0.9793
+   ]
+  },
+  "tfidf:detok": {
+   "thr1": [
+    -1.59,
+    0.2024,
+    -1.7331,
+    -1.4469
+   ],
+   "test_auc": [
+    1.0,
+    0.0,
+    1.0,
+    1.0
+   ],
+   "test_ap": [
+    1.0,
+    0.0,
+    1.0,
+    1.0
+   ],
+   "test_tpr@thr1": [
+    1.0,
+    0.0,
+    1.0,
+    1.0
+   ],
+   "test_fpr@thr1": [
+    0.045,
+    0.0419,
+    0.0154,
+    0.0746
+   ],
+   "test_tpr@thr01": [
+    1.0,
+    0.0,
+    1.0,
+    1.0
+   ],
+   "test_fpr@thr01": [
+    0.0249,
+    0.0352,
+    0.0,
+    0.0498
+   ],
+   "test_fpr@thr1:local_npm": [
+    0.045,
+    0.0419,
+    0.0154,
+    0.0746
+   ],
+   "eval_fpr@thr1:npm_again": [
+    0.04,
+    0.0236,
+    0.0233,
+    0.0567
+   ],
+   "eval_tpr@thr1:swarm_again": [
+    1.0,
+    0.0,
+    1.0,
+    1.0
+   ],
+   "eval_auc:swarm_again_vs_test_benign": [
+    1.0,
+    0.0,
+    1.0,
+    1.0
+   ],
+   "eval_auc:swarm_again_vs_npm_again": [
+    1.0,
+    0.0,
+    1.0,
+    1.0
+   ]
+  },
+  "tfidf:struct": {
+   "thr1": [
+    -0.9827,
+    0.9349,
+    -1.6437,
+    -0.3216
+   ],
+   "test_auc": [
+    0.9999,
+    0.0,
+    0.9999,
+    0.9999
+   ],
+   "test_ap": [
+    0.9999,
+    0.0,
+    0.9999,
+    0.9999
+   ],
+   "test_tpr@thr1": [
+    0.995,
+    0.007,
+    0.9901,
+    1.0
+   ],
+   "test_fpr@thr1": [
+    0.0523,
+    0.0667,
+    0.0051,
+    0.0995
+   ],
+   "test_tpr@thr01": [
+    0.9678,
+    0.0455,
+    0.9356,
+    1.0
+   ],
+   "test_fpr@thr01": [
+    0.0498,
+    0.0704,
+    0.0,
+    0.0995
+   ],
+   "test_fpr@thr1:local_npm": [
+    0.0523,
+    0.0667,
+    0.0051,
+    0.0995
+   ],
+   "eval_fpr@thr1:npm_again": [
+    0.0517,
+    0.0636,
+    0.0067,
+    0.0967
+   ],
+   "eval_tpr@thr1:swarm_again": [
+    0.9967,
+    0.0047,
+    0.9933,
+    1.0
+   ],
+   "eval_auc:swarm_again_vs_test_benign": [
+    0.9999,
+    0.0001,
+    0.9998,
+    0.9999
+   ],
+   "eval_auc:swarm_again_vs_npm_again": [
+    0.9997,
+    0.0003,
+    0.9995,
+    0.9999
+   ]
+  }
+ },
+ "top_features_seed0": {
+  "tfidf:detok": {
+   "attack": [
+    [
+     "ZQ",
+     1.89
+    ],
+    [
+     "Q'",
+     1.162
+    ],
+    [
+     "ZQ'",
+     1.156
+    ],
+    [
+     "'Z",
+     1.141
+    ],
+    [
+     "'ZQ",
+     1.14
+    ],
+    [
+     "='",
+     1.052
+    ],
+    [
+     "'ZQ'",
+     1.05
+    ],
+    [
+     "ZQ ",
+     0.965
+    ],
+    [
+     "Q ",
+     0.965
+    ],
+    [
+     "'+",
+     0.92
+    ],
+    [
+     " ZQ",
+     0.912
+    ],
+    [
+     " Z",
+     0.897
+    ],
+    [
+     "t=",
+     0.843
+    ],
+    [
+     ").",
+     0.828
+    ],
+    [
+     "\":",
+     0.824
+    ],
+    [
+     "n(",
+     0.813
+    ],
+    [
+     ",'",
+     0.79
+    ],
+    [
+     ".s",
+     0.783
+    ],
+    [
+     "doc",
+     0.767
+    ],
+    [
+     "docum",
+     0.759
+    ],
+    [
+     "docu",
+     0.759
+    ],
+    [
+     "ent.",
+     0.744
+    ],
+    [
+     "ment.",
+     0.74
+    ],
+    [
+     "('",
+     0.735
+    ],
+    [
+     "nt.",
+     0.731
+    ],
+    [
+     "cume",
+     0.727
+    ],
+    [
+     "cumen",
+     0.727
+    ],
+    [
+     "ocume",
+     0.727
+    ],
+    [
+     "ocum",
+     0.727
+    ],
+    [
+     "ocu",
+     0.727
+    ]
+   ],
+   "benign": [
+    [
+     " =",
+     -1.845
+    ],
+    [
+     "= ",
+     -1.803
+    ],
+    [
+     " = ",
+     -1.65
+    ],
+    [
+     ", ",
+     -1.381
+    ],
+    [
+     " }",
+     -1.374
+    ],
+    [
+     " { ",
+     -1.371
+    ],
+    [
+     "{ ",
+     -1.344
+    ],
+    [
+     " {",
+     -1.264
+    ],
+    [
+     "; ",
+     -1.23
+    ],
+    [
+     " } ",
+     -1.175
+    ],
+    [
+     " c",
+     -1.061
+    ],
+    [
+     " re",
+     -1.038
+    ],
+    [
+     " co",
+     -0.983
+    ],
+    [
+     " (",
+     -0.961
+    ],
+    [
+     "cons",
+     -0.946
+    ],
+    [
+     "} ",
+     -0.945
+    ],
+    [
+     " cons",
+     -0.94
+    ],
+    [
+     "nst",
+     -0.92
+    ],
+    [
+     "const",
+     -0.907
+    ],
+    [
+     "onst",
+     -0.906
+    ],
+    [
+     " con",
+     -0.892
+    ],
+    [
+     "nst ",
+     -0.871
+    ],
+    [
+     "onst ",
+     -0.871
+    ],
+    [
+     "ns",
+     -0.807
+    ],
+    [
+     "ons",
+     -0.793
+    ],
+    [
+     " retu",
+     -0.769
+    ],
+    [
+     " ret",
+     -0.764
+    ],
+    [
+     "e ",
+     -0.758
+    ],
+    [
+     " t",
+     -0.734
+    ],
+    [
+     ") ",
+     -0.726
+    ]
+   ]
+  },
+  "tfidf:struct": {
+   "attack": [
+    [
+     "+",
+     2.098
+    ],
+    [
+     "document .",
+     1.917
+    ],
+    [
+     "document",
+     1.896
+    ],
+    [
+     "/",
+     1.894
+    ],
+    [
+     "S",
+     1.74
+    ],
+    [
+     "= S",
+     1.687
+    ],
+    [
+     "S +",
+     1.595
+    ],
+    [
+     "body",
+     1.539
+    ],
+    [
+     ") .",
+     1.507
+    ],
+    [
+     "S v0",
+     1.484
+    ],
+    [
+     "S S",
+     1.43
+    ],
+    [
+     "fetch (",
+     1.37
+    ],
+    [
+     "fetch",
+     1.369
+    ],
+    [
+     ". body .",
+     1.366
+    ],
+    [
+     ": S",
+     1.36
+    ],
+    [
+     "document . body",
+     1.355
+    ],
+    [
+     ". body",
+     1.314
+    ],
+    [
+     "body .",
+     1.268
+    ],
+    [
+     ", S :",
+     1.253
+    ],
+    [
+     "( S",
+     1.198
+    ],
+    [
+     "( )",
+     1.174
+    ],
+    [
+     ") )",
+     1.156
+    ],
+    [
+     "-",
+     1.156
+    ],
+    [
+     "; v0",
+     1.153
+    ],
+    [
+     "await",
+     1.149
+    ],
+    [
+     "S :",
+     1.123
+    ],
+    [
+     "; v1",
+     1.111
+    ],
+    [
+     "0",
+     1.092
+    ],
+    [
+     "S : S",
+     1.092
+    ],
+    [
+     "; v0 .",
+     1.071
+    ]
+   ],
+   "benign": [
+    [
+     "var",
+     -2.232
+    ],
+    [
+     "; }",
+     -2.086
+    ],
+    [
+     ") {",
+     -1.897
+    ],
+    [
+     "exports",
+     -1.775
+    ],
+    [
+     "return",
+     -1.62
+    ],
+    [
+     "if (",
+     -1.571
+    ],
+    [
+     "function",
+     -1.488
+    ],
+    [
+     "exports .",
+     -1.439
+    ],
+    [
+     "this",
+     -1.434
+    ],
+    [
+     "v0 (",
+     -1.4
+    ],
+    [
+     "if",
+     -1.265
+    ],
+    [
+     ") ; }",
+     -1.249
+    ],
+    [
+     "{ return",
+     -1.239
+    ],
+    [
+     "require",
+     -1.22
+    ],
+    [
+     "require (",
+     -1.212
+    ],
+    [
+     "require ( S",
+     -1.212
+    ],
+    [
+     "this .",
+     -1.189
+    ],
+    [
+     "= require",
+     -1.174
+    ],
+    [
+     "= require (",
+     -1.168
+    ],
+    [
+     ") { return",
+     -1.126
+    ],
+    [
+     "function v0",
+     -1.119
+    ],
+    [
+     "function v0 (",
+     -1.119
+    ],
+    [
+     "{",
+     -1.108
+    ],
+    [
+     "var v0 =",
+     -1.091
+    ],
+    [
+     "==",
+     -1.089
+    ],
+    [
+     "var v0",
+     -1.089
+    ],
+    [
+     "}",
+     -1.074
+    ],
+    [
+     ", v2",
+     -1.047
+    ],
+    [
+     ") var",
+     -1.025
+    ],
+    [
+     "from S ;",
+     -1.014
+    ]
+   ]
+  }
+ }
+}

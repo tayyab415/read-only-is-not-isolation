@@ -1,0 +1,45 @@
+{
+  "models": {
+    "native": {
+      "kind": "threshold",
+      "threshold": 0.07253191458809001,
+      "direction": 1,
+      "calibration_correct": 24,
+      "calibration_trials": 24,
+      "feature": "aggregate_busy_fraction_first_to_last"
+    },
+    "masked": {
+      "kind": "constant",
+      "value": 0,
+      "calibration_correct": 12,
+      "calibration_trials": 24,
+      "feature": "aggregate_busy_fraction_first_to_last"
+    },
+    "aa-native": {
+      "kind": "threshold",
+      "threshold": 0.008413473692726187,
+      "direction": -1,
+      "calibration_correct": 15,
+      "calibration_trials": 24,
+      "feature": "aggregate_busy_fraction_first_to_last"
+    },
+    "aa-masked": {
+      "kind": "constant",
+      "value": 0,
+      "calibration_correct": 12,
+      "calibration_trials": 24,
+      "feature": "aggregate_busy_fraction_first_to_last"
+    }
+  },
+  "family": [
+    "native",
+    "masked",
+    "aa-native",
+    "aa-masked"
+  ],
+  "primary_tests": 4,
+  "feature": "aggregate_busy_fraction_first_to_last",
+  "permutations": 9999,
+  "family_alpha": 0.05,
+  "correction": "Holm"
+}

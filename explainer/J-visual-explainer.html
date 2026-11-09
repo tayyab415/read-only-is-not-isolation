@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How a shared package server carried a signal</title>
+<style>
+:root {
+  font-family: var(--font-sans, system-ui, sans-serif);
+  color: var(--foreground, CanvasText);
+  --room-a: var(--info, LinkText);
+  --room-b: var(--primary, LinkText);
+  --line: var(--border, GrayText);
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: transparent; }
+button { font: inherit; cursor: pointer; }
+button:focus-visible, a:focus-visible { outline: 3px solid var(--ring, Highlight); outline-offset: 3px; }
+.intro { margin: 0 0 15px; font-size: 25px; line-height: 1.2; letter-spacing: -.5px; font-weight: 750; }
+.sub { margin: 8px 0 15px; color: var(--muted-foreground, GrayText); font-size: 15px; line-height: 1.5; }
+.nav { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 18px; }
+.nav button { border: 1px solid var(--line); background: transparent; color: inherit; border-radius: var(--radius, 10px); padding: 9px 11px; font-size: 13px; }
+.nav button[aria-selected="true"] { background: var(--primary, Highlight); color: var(--primary-foreground, HighlightText); border-color: var(--primary, Highlight); }
+.slide[hidden] { display: none; }
+.eyebrow { color: var(--muted-foreground, GrayText); font-size: 12px; text-transform: uppercase; letter-spacing: .8px; margin: 0 0 9px; }
+h2 { margin: 0 0 8px; font-size: 23px; line-height: 1.3; font-weight: 700; letter-spacing: -.3px; }
+.lead { margin: 0 0 16px; font-size: 16px; line-height: 1.5; }
+.box { background: var(--card, Canvas); border: 1px solid var(--line); border-radius: var(--radius, 12px); padding: 16px; }
+.picture { width: 100%; height: 225px; display: block; }
+svg text { font-family: var(--font-sans, system-ui, sans-serif); fill: var(--foreground, CanvasText); }
+.svg-small { font-size: 13px; fill: var(--muted-foreground, GrayText); }
+.svg-label { font-size: 17px; font-weight: 650; }
+.svg-room { fill: var(--secondary, Canvas); stroke: var(--line); stroke-width: 1.5; }
+.svg-server { fill: var(--card, Canvas); stroke: var(--primary, LinkText); stroke-width: 2; }
+.line { stroke: var(--primary, LinkText); stroke-width: 3; fill: none; }
+.dim-line { stroke: var(--line); stroke-width: 2; fill: none; stroke-dasharray: 5 5; }
+.note { margin: 14px 0 0; padding: 13px 16px; border-radius: var(--radius, 10px); background: var(--secondary, Canvas); font-size: 15px; line-height: 1.5; }
+.choices { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
+.choices button { border: 1px solid var(--line); color: inherit; background: transparent; padding: 10px 13px; border-radius: var(--radius, 10px); font-size: 14px; }
+.choices button[aria-pressed="true"] { border-color: var(--primary, LinkText); background: var(--accent-surface, Canvas); box-shadow: inset 0 0 0 1px var(--primary, LinkText); }
+.sequence { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.step-number { width: 26px; height: 26px; background: var(--secondary, Canvas); border-radius: 50%; display: inline-grid; place-items: center; font-size: 13px; margin-bottom: 10px; }
+.scene-title { font-size: 17px; font-weight: 700; margin: 0 0 8px; }
+.scene-text { margin: 0; font-size: 15px; line-height: 1.5; }
+.memory { margin-top: 12px; border: 1px dashed var(--line); border-radius: var(--radius, 10px); padding: 12px; font-size: 14px; min-height: 67px; }
+.clock { display: flex; align-items: baseline; gap: 9px; margin: 12px 0 7px; }
+.milliseconds { font-size: 37px; font-weight: 760; letter-spacing: -1px; }
+.unit { font-size: 15px; color: var(--muted-foreground, GrayText); }
+.bar-track { height: 10px; border-radius: 10px; background: var(--secondary, Canvas); overflow: hidden; margin-bottom: 12px; }
+.bar { height: 10px; border-radius: 10px; background: var(--primary, LinkText); transition: width .45s; }
+.result { font-size: 17px; font-weight: 700; margin: 10px 0 0; }
+.tiny { color: var(--muted-foreground, GrayText); font-size: 12px; line-height: 1.5; }
+.pair { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.icon { width: 100%; height: 90px; display: block; }
+.large-word { font-size: 24px; font-weight: 750; margin: 7px 0; }
+.answer { color: var(--primary, LinkText); font-weight: 700; }
+.table-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+th { text-align: left; color: var(--muted-foreground, GrayText); font-size: 12px; font-weight: 600; }
+th, td { padding: 12px 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th:first-child, td:first-child { padding-left: 0; }
+tr:last-child td { border-bottom: 0; }
+.badge { font-size: 12px; display: inline-block; border-radius: 6px; padding: 3px 6px; background: var(--secondary, Canvas); white-space: nowrap; }
+.open { color: var(--warning, CanvasText); }
+.closed { color: var(--success, CanvasText); }
+.key-diagram { display: grid; grid-template-columns: 1fr auto 1fr; gap: 10px; align-items: center; margin-top: 12px; }
+.arrow { font-size: 28px; color: var(--muted-foreground, GrayText); text-align: center; }
+.big-number { font-size: 34px; font-weight: 750; line-height: 1.2; margin-bottom: 5px; }
+.bottom { display: flex; gap: 12px; justify-content: space-between; align-items: center; margin-top: 18px; padding-top: 13px; border-top: 1px solid var(--line); }
+.bottom button { border: 0; color: var(--primary-foreground, HighlightText); background: var(--primary, Highlight); border-radius: var(--radius, 10px); padding: 10px 16px; font-size: 14px; }
+.footer { margin: 15px 0 0; font-size: 12px; color: var(--muted-foreground, GrayText); line-height: 1.5; }
+.footer a { color: var(--primary, LinkText); }
+@media (max-width: 480px) {
+  .intro { font-size: 22px; }
+  h2 { font-size: 21px; }
+  .nav { gap: 5px; }
+  .nav button { padding: 8px 9px; font-size: 12px; }
+  .picture { height: 195px; }
+  .svg-label { font-size: 20px; }
+  .svg-small { font-size: 17px; }
+  .sequence { grid-template-columns: 1fr; }
+  .box { padding: 14px; }
+  .scene-title { font-size: 16px; }
+  .pair { gap: 8px; }
+  .pair .box { padding: 11px; }
+  .large-word { font-size: 20px; }
+  .key-diagram { gap: 6px; }
+  .key-diagram .box { padding: 11px; }
+  .big-number { font-size: 28px; }
+}
+</style>
+</head>
+<body>
+<main>
+  <p class="intro">The shared server accidentally carried a signal.</p>
+  <p class="sub">A picture walkthrough of our experiment. Tap each step.</p>
+  <nav class="nav" role="tablist" aria-label="Experiment walkthrough">
+    <button id="tab-0" role="tab" aria-selected="true" aria-controls="slide-0" data-slide="0">1. Setup</button>
+    <button id="tab-1" role="tab" aria-selected="false" aria-controls="slide-1" data-slide="1">2. Signal</button>
+    <button id="tab-2" role="tab" aria-selected="false" aria-controls="slide-2" data-slide="2">3. Surprise</button>
+    <button id="tab-3" role="tab" aria-selected="false" aria-controls="slide-3" data-slide="3">4. Fixes</button>
+    <button id="tab-4" role="tab" aria-selected="false" aria-controls="slide-4" data-slide="4">5. Useful work</button>
+  </nav>
+
+  <section class="slide" id="slide-0" role="tabpanel" aria-labelledby="tab-0">
+    <p class="eyebrow">What we built</p>
+    <h2>Two separate rooms. One shared server.</h2>
+    <p class="lead">A and B could ask for files. They had no direct route to each other.</p>
+    <div class="box">
+      <svg class="picture" viewBox="0 0 620 225" role="img" aria-label="Client A and Client B in separate rooms both connect to one package server. Their direct connection is blocked.">
+        <defs><marker id="arrowhead" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0 0L8 4L0 8" fill="var(--primary, LinkText)"/></marker></defs>
+        <rect class="svg-room" x="12" y="22" width="155" height="150" rx="14"/>
+        <text class="svg-small" x="89" y="47" text-anchor="middle">Separate room</text>
+        <circle cx="89" cy="81" r="15" fill="var(--info, LinkText)"/>
+        <path d="M63 119 Q63 101 89 101 Q115 101 115 119" fill="var(--info, LinkText)"/>
+        <text class="svg-label" x="89" y="145" text-anchor="middle">Client A</text>
+        <rect class="svg-room" x="453" y="22" width="155" height="150" rx="14"/>
+        <text class="svg-small" x="531" y="47" text-anchor="middle">Separate room</text>
+        <circle cx="531" cy="81" r="15" fill="var(--primary, LinkText)"/>
+        <path d="M505 119 Q505 101 531 101 Q557 101 557 119" fill="var(--primary, LinkText)"/>
+        <text class="svg-label" x="531" y="145" text-anchor="middle">Client B</text>
+        <rect class="svg-server" x="230" y="49" width="160" height="97" rx="12"/>
+        <text class="svg-label" x="310" y="80" text-anchor="middle">Package server</text>
+        <text class="svg-small" x="310" y="104" text-anchor="middle">Files</text>
+        <text class="svg-small" x="310" y="127" text-anchor="middle">+ shared records</text>
+        <path class="line" d="M171 89 L223 89" marker-end="url(#arrowhead)"/>
+        <path class="line" d="M449 89 L397 89" marker-end="url(#arrowhead)"/>
+        <path class="dim-line" d="M114 194 L506 194"/>
+        <circle cx="310" cy="194" r="14" fill="var(--card, Canvas)" stroke="var(--border, GrayText)"/>
+        <path d="M304 188L316 200M316 188L304 200" stroke="var(--destructive, CanvasText)" stroke-width="2.5"/>
+        <text class="svg-small" x="310" y="222" text-anchor="middle">No direct messages</text>
+      </svg>
+    </div>
+    <p class="note">The hidden connection was the server's shared memory of requests.</p>
+  </section>
+
+  <section class="slide" id="slide-1" role="tabpanel" aria-labelledby="tab-1" hidden>
+    <p class="eyebrow">Try the signal</p>
+    <h2>A request can leave a clue.</h2>
+    <p class="lead">Both clients know the same missing filename. Choose what A does first.</p>
+    <div class="choices" aria-label="Sender's choice">
+      <button id="prime" aria-pressed="true">A asks first: send 1</button>
+      <button id="quiet" aria-pressed="false">A stays quiet: send 0</button>
+    </div>
+    <div class="sequence" aria-live="polite">
+      <div class="box">
+        <span class="step-number">1</span>
+        <p class="scene-title" id="sender-title">A asks for the missing file.</p>
+        <p class="scene-text" id="sender-text">The server checks upstream and learns that it is missing.</p>
+        <div class="memory" id="memory-text">Server's note: "This file is missing."</div>
+      </div>
+      <div class="box">
+        <span class="step-number">2</span>
+        <p class="scene-title">B asks for that same file.</p>
+        <div class="clock"><span class="milliseconds" id="duration">12</span><span class="unit">ms</span></div>
+        <div class="bar-track"><div class="bar" id="time-bar" style="width:7.3%"></div></div>
+        <p class="scene-text" id="receiver-text">The server remembers. It answers quickly.</p>
+        <p class="result" id="decoded">B reads the timing as 1.</p>
+      </div>
+    </div>
+    <p class="note">B gets "file missing" either way. The waiting time carries the signal.</p>
+    <p class="tiny">Interactive illustration, not a live test. Rounded measured medians from the 150 ms-delay experiment.</p>
+  </section>
+
+  <section class="slide" id="slide-2" role="tabpanel" aria-labelledby="tab-2" hidden>
+    <p class="eyebrow">The useful surprise</p>
+    <h2>Stopping file storage left the clue.</h2>
+    <p class="lead">We disabled local artifact storage. Timing still carried the bits.</p>
+    <div class="pair">
+      <div class="box">
+        <svg class="icon" viewBox="0 0 150 90" role="img" aria-label="Package files are not retained">
+          <path d="M48 10H88L106 28V77H48Z" fill="var(--secondary, Canvas)" stroke="var(--border, GrayText)" stroke-width="2"/>
+          <path d="M88 10V28H106" fill="none" stroke="var(--border, GrayText)" stroke-width="2"/>
+          <path d="M35 21L117 75M117 21L35 75" stroke="var(--destructive, CanvasText)" stroke-width="4"/>
+        </svg>
+        <p class="large-word">Files not stored</p>
+        <p class="scene-text">Local storage disabled.</p>
+      </div>
+      <div class="box">
+        <svg class="icon" viewBox="0 0 150 90" role="img" aria-label="The server still remembers a missing file">
+          <rect x="26" y="10" width="98" height="70" rx="8" fill="var(--secondary, Canvas)" stroke="var(--primary, LinkText)" stroke-width="2"/>
+          <path d="M44 32H104M44 46H92M44 60H100" stroke="var(--primary, LinkText)" stroke-width="3"/>
+        </svg>
+        <p class="large-word">Note remained</p>
+        <p class="scene-text">"That file is missing."</p>
+      </div>
+    </div>
+    <p class="note"><span class="answer">32/32 bits recovered at each tested delay.</span><br>The failed-lookup memory was separate from stored package files.</p>
+  </section>
+
+  <section class="slide" id="slide-3" role="tabpanel" aria-labelledby="tab-3" hidden>
+    <p class="eyebrow">What worked</p>
+    <h2>We had to close two clues.</h2>
+    <p class="lead">A download can increase the count: 7 → 8.<br>B could read that count or measure the wait.</p>
+    <div class="box table-wrap">
+      <table>
+        <thead><tr><th>Change</th><th>Download count</th><th>Timing</th></tr></thead>
+        <tbody>
+          <tr><td>Hide the count</td><td><span class="badge closed">Unavailable</span></td><td><span class="badge open">Signal remained</span></td></tr>
+          <tr><td>Forget missing-file lookups</td><td><span class="badge open">Signal remained</span></td><td><span class="badge closed">No signal decoded</span></td></tr>
+          <tr><td>Do both</td><td><span class="badge closed">Unavailable</span></td><td><span class="badge closed">No signal decoded</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note">Separate repositories also stopped the tested transfer with each client's assigned account.</p>
+    <div class="choices" style="margin-top:14px" aria-label="Credential policy">
+      <button id="account-only" aria-pressed="true">Account password only</button>
+      <button id="bound" aria-pressed="false">Also check which room</button>
+    </div>
+    <div class="key-diagram" aria-live="polite">
+      <div class="box"><p class="scene-text">A presents<br><strong>B's password</strong></p></div>
+      <span class="arrow" aria-hidden="true">→</span>
+      <div class="box"><p class="scene-title" id="key-result">Access allowed</p><p class="scene-text" id="key-detail">16/16 copied-password reads succeeded.</p></div>
+    </div>
+    <p class="tiny">The added check used trusted, fixed network origins in this lab. We supplied the peer password deliberately.</p>
+  </section>
+
+  <section class="slide" id="slide-4" role="tabpanel" aria-labelledby="tab-4" hidden>
+    <p class="eyebrow">Could they still do useful work?</p>
+    <h2>Both clients still installed the package.</h2>
+    <p class="lead">We tested a real Python package in all seven configurations.</p>
+    <div class="pair">
+      <div class="box">
+        <div class="big-number">14/14</div>
+        <p class="scene-title">Installs passed</p>
+        <p class="scene-text">Two clients × seven configurations.</p>
+      </div>
+      <div class="box">
+        <div class="big-number">80/80</div>
+        <p class="scene-title">Evidence checks passed</p>
+        <p class="scene-text">Requests, logs, settings and package bytes.</p>
+      </div>
+    </div>
+    <p class="note">We measured a shared-service problem, then removed both tested clues while keeping this package task working.</p>
+    <p class="lead" style="margin-top:16px">Timing recovered 32/32 bits in the idle baseline, then 25/32 under background traffic.</p>
+    <p class="tiny">Scripted clients, one service version, artificial upstream delays and one pinned package. This does not prove all communication is blocked.</p>
+  </section>
+
+  <div class="bottom">
+    <span class="tiny" id="page-label">Step 1 of 5</span>
+    <button id="next">See the signal →</button>
+  </div>
+  <p class="footer">Based on our recorded experiments. The count example is illustrative. This page makes no experiment or network calls.</p>
+</main>
+<script>
+(() => {
+  let current = 0;
+  const captions = ['See the signal →', 'See the surprise →', 'See the fixes →', 'See the useful work →', 'Start again →'];
+  const tabs = [...document.querySelectorAll('[data-slide]')];
+  function showSlide(index) {
+    current = index;
+    document.querySelectorAll('.slide').forEach((el, i) => { el.hidden = i !== index; });
+    tabs.forEach((tab, i) => { tab.setAttribute('aria-selected', String(i === index)); });
+    document.getElementById('page-label').textContent = `Step ${index + 1} of 5`;
+    document.getElementById('next').textContent = captions[index];
+  }
+  tabs.forEach((tab, index) => {
+    tab.addEventListener('click', () => showSlide(index));
+    tab.addEventListener('keydown', e => {
+      if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+        e.preventDefault();
+        const nextIndex = (index + (e.key === 'ArrowRight' ? 1 : -1) + tabs.length) % tabs.length;
+        showSlide(nextIndex);
+        tabs[nextIndex].focus();
+      }
+    });
+  });
+  document.getElementById('next').addEventListener('click', () => showSlide((current + 1) % 5));
+  function chooseSender(primed) {
+    document.getElementById('prime').setAttribute('aria-pressed', String(primed));
+    document.getElementById('quiet').setAttribute('aria-pressed', String(!primed));
+    document.getElementById('sender-title').textContent = primed ? 'A asks for the missing file.' : 'A makes no request.';
+    document.getElementById('sender-text').textContent = primed ? 'The server checks upstream and learns that it is missing.' : 'The server has not checked this filename yet.';
+    document.getElementById('memory-text').textContent = primed ? 'Server\\'s note: "This file is missing."' : 'Server\\'s notes: nothing about this file.';
+    document.getElementById('duration').textContent = primed ? '12' : '164';
+    document.getElementById('time-bar').style.width = primed ? '7.3%' : '100%';
+    document.getElementById('receiver-text').textContent = primed ? 'The server remembers. It answers quickly.' : 'The server checks upstream first. B waits.';
+    document.getElementById('decoded').textContent = primed ? 'B reads the timing as 1.' : 'B reads the timing as 0.';
+  }
+  document.getElementById('prime').addEventListener('click', () => chooseSender(true));
+  document.getElementById('quiet').addEventListener('click', () => chooseSender(false));
+  function chooseBinding(bound) {
+    document.getElementById('account-only').setAttribute('aria-pressed', String(!bound));
+    document.getElementById('bound').setAttribute('aria-pressed', String(bound));
+    document.getElementById('key-result').textContent = bound ? 'Access denied' : 'Access allowed';
+    document.getElementById('key-detail').textContent = bound ? "16/16 attempts blocked. A's own downloads still worked." : '16/16 copied-password reads succeeded.';
+  }
+  document.getElementById('account-only').addEventListener('click', () => chooseBinding(false));
+  document.getElementById('bound').addEventListener('click', () => chooseBinding(true));
+})();
+</script>
+</body>
+</html>

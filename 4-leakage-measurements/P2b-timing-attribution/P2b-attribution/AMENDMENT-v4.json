@@ -1,0 +1,31 @@
+{
+  "utc": "2026-11-09T03:23:38.822815+00:00",
+  "edition": 4,
+  "timing": "after original 32 smoke trials, before fresh smoke, calibration or held data",
+  "prior_source_manifest_sha256": "0e3ba047d1298e739595acbdfa6884fc7d269103a941b956f848db4d896fea54",
+  "source_manifest_sha256": "755154d688bfffc0b4cce9ae97bfad83b9ef16c38745c7d7b09b27817269736a",
+  "prior_archive": "archive/v3",
+  "changes": [
+    "Export actual fixture_etag from private owned state to public provision.",
+    "Fresh fixture identities p2b-s2/c2/h2; original trial assignments unchanged."
+  ],
+  "checks": {
+    "metadata": {
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "..\n----------------------------------------------------------------------\nRan 2 tests in 0.010s\n\nOK\n"
+    },
+    "readiness": {
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "....................\n----------------------------------------------------------------------\nRan 20 tests in 0.754s\n\nOK\n"
+    }
+  },
+  "recovery_regression_sha256": "811217dbf29ef04ac1bba002daaf9d62f3317a31957e6db70c37a560615c138f",
+  "prior_public_retrieval_sha256": "e80fca2794709ac9f3e41880c452c654478e4ca846aa347ace1d2d45871b51e2",
+  "original_audit_failure_sha256": "4dd3d23aa69e7e622af99444420c270df4948ff6f67f6de8581e8bdb68f82dc2",
+  "p2_frozen_sources_unchanged": true,
+  "primary_tests_decoder_floor_sample_sizes_unchanged": true,
+  "calibration_and_held_exist": false,
+  "new_model_calls": 0
+}

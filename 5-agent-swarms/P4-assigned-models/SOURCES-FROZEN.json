@@ -1,0 +1,73 @@
+{
+  "edition": 6,
+  "frozen_utc": "2026-11-08T23:48:18.809735+00:00",
+  "preparation_only": true,
+  "local_checks": 31,
+  "provider_calls": 0,
+  "scripted_subject_smoke_run": false,
+  "scheduled_pairs": 6,
+  "scheduled_agents": 12,
+  "maximum_turns_per_agent": 12,
+  "maximum_output_tokens": 2048,
+  "shared_subject_stage_cap_usd": "6",
+  "sha256": {
+    "AMENDMENT-v2.json": "571c2de410801d186ab417411b884ad7aafa65c505ed681fb5593d40ffd0c0c2",
+    "PROTOCOL.md": "3b4cd8c111cc442841e3591f1b909cad8a879068883e2d5dfe993a6e1da5a5e0",
+    "README.md": "be1e09b31c3d76eef64547a7870696fcc89ee7072d720edf5beab283766f742d",
+    "actions.py": "ca03ab1af8ccb7e4b3fce3130075c59ac07aaebf6addb83bc5c1fab1a1f59886",
+    "assigned-plan.json": "f18675ce50ce346ce0e5c531b3596a3b952d6fc9672dc2d1637637b00385ca68",
+    "audit.py": "07ccf0551298329926e79dc64e741ea3fe7b3ebb7d0ee0e99bec7d684713c4ee",
+    "call_audit.py": "6745765a34ae7a3944768e2cb767a0a26df21c66810d56656907f50e3ece5277",
+    "deployment.py": "8ae1a5573cc0bd8c4037ffd9221da4db304f2c2f28bb693e5507052d382cae1e",
+    "gate.py": "7e2d324dd163225c87b9cff354492345173282797bde982003278667f35c90e9",
+    "known_statistics.py": "bbbdb639cfb12c3429544fa2cad9d61e47acd7749bba84e5666fc609c1f0675b",
+    "prompts.py": "369574add0acf7dc3b035253d2aa771a84043e1544b0fa5948620eea2418bd15",
+    "provider.py": "621c4d17d366c2b9265a6b682366311b80c9a4b25fa600be5270247fb6f812d8",
+    "report.py": "12fa512a77d71e11e3e44320acf32ca66752f0f32d86026f0c2b8b0770077b57",
+    "rpc.py": "606f637ef5c04a1bbc68cb98a7ef249f720cab3235d2b6619c4f0e5f1f78801a",
+    "run.py": "6de920ff95d150454a2450bbccdba0d02c7817a1ef1f58e933f12d6fd254d272",
+    "schedule.py": "a3b8ceb9f1c12b040418d211306725aa404bbff3e724f1661a9209fb2c7df091",
+    "smoke.py": "2671c26598310203ff6d0b13a0f46ab9d2ec1db51f0e6f67a18c831fb35bf6cb",
+    "test_actions.py": "1e3825de33393a8009a5cdba521e222bd14568d1e12e5e7bb00b77a27c54f3d5",
+    "test_audit.py": "f07a8cb8dcfe1058fae410c94c64c448eb2565dbb4c6471ac5743e6ece2855aa",
+    "test_bridge.py": "237aa606d605733d80b3c4bc65291c999f3ce4d03a6b5dc81bec2916ba60cec3",
+    "test_call_audit.py": "57c58b60169858cc70b0af91a777c67480aa10cb162aa543c8a2caed7bd1a248",
+    "test_known_statistics.py": "5ec729cd50c9b7859db06b07847dc1b18f8157e8741afcb9cf2848031cd75dd7",
+    "test_provider.py": "856c959dd6af57e34609906beab098b501c7a7114c2b96f95990164abdc34a5e",
+    "AMENDMENT-v3.json": "2f7dfbcdbca641df8f4d7f2ce23d25f29df54c43fcbac7aa26569c6863efe564",
+    "AMENDMENT-v4.json": "955a5d7955c7953ed0cc3076202e5512a7e19a1884ccf823cf9a9d69efecedd8",
+    "AMENDMENT-v5.json": "57861b335efc180468df21e4cb3b37bb2f0198e558e792714c61d3c41367a2bd",
+    "test_public_contract.py": "e03e6168eb9f6592b4badd2537efc307ea1ada42b1dcb8935447471da2bd2c97",
+    "AMENDMENT-v6.json": "3504c21e1ff102c8205395f03fc1ea908d2a63f95572b1695ec52b98ac2a3046"
+  },
+  "import_sha256": {
+    "P-budget/guard.py": "d38a59a192b4f1c36e5d1c23526c9e82c1fe696db520468ae6cdf7feccc29790",
+    "P-budget/guard-config.json": "39f778893782bc2ee8a1d61714030e7179e20c6924c89c71aa4786fe79c9e95b",
+    "P-budget/GUARD-FROZEN.json": "2cf6a1681a39ad765d6141c8838b75bee03793f65ace93390847dcdee3157aba",
+    "P2-residual/SOURCES-FROZEN.json": "a94a7883b207bd1ea9f6b6b83d9581f8370b975561cfb9be43ff8ff2d50f7e42",
+    "P2-residual/service.py": "3dc382cd8db920e28774f074b8cc9d17ab23e7acc9e8b35f61d3fbc993b08549",
+    "P2-residual/harness.py": "d90f5af249b62b5a2e76d34d4514bb8b718ca8a72cf56d0c993af4a00c33058f",
+    "P2-residual/worker.py": "b6b4274556d9ade70cf4d5822659d645feb66e617aff6094682fe7a7399f557f",
+    "P2-residual/gateway.py": "ef77dc2d92db75e7868b42e64395ae13f93304018866f9a06c51e7f040e4bd7f",
+    "P2-residual/preflight.py": "07586c78f0681d1552282906e5c7b2dc85c8a9464ac0505444e2161919abe513",
+    "P2-residual/audit.py": "c6455655fa0fa58d42f2c55aa3d7fba28a14478967c79685aa503fc787fc42e1",
+    "P1-meter/service.py": "c64f69fb68dda09671f2e551515c2991255548eb96ca9c7d09081c97d477a5de"
+  },
+  "prior_source_freeze_sha256": "b962b6747614065235249598e315b0c14c90be0120a95ab70a53bc30fba7478f",
+  "prior_source_archive": "archive/v5",
+  "native_mutable_identity_roles": [
+    "alice",
+    "bob",
+    "prefetch"
+  ],
+  "withdrawn_subjects": [
+    {
+      "model": "terra",
+      "model_id": "us.openai.gpt-6.1-terra",
+      "status": "withdrawn before data by user decision",
+      "reason": "provider policy blocks",
+      "included_in_denominator": false
+    }
+  ],
+  "surviving_assignments_and_order_unchanged": true
+}

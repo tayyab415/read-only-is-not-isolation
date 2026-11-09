@@ -1,0 +1,24 @@
+Looking in indexes: http://127.0.0.1:64627/simple/
+Collecting python-dateutil==2.9.0.post0
+  Downloading http://127.0.0.1:64627/files/a8b2bc7bffae282281c8140a97d3aa9c14da0b136dfe83f850eea9a5f7470427/python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Collecting six>=1.5 (from python-dateutil==2.9.0.post0)
+  Downloading http://127.0.0.1:64627/files/4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274/six-1.17.0-py2.py3-none-any.whl (11 kB)
+Installing collected packages: six, python-dateutil
+
+Successfully installed python-dateutil-2.9.0.post0 six-1.17.0
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+conda-repo-cli 1.0.41 requires requests_mock, which is not installed.
+spyder 5.4.3 requires pyqt5<5.16, which is not installed.
+spyder 5.4.3 requires pyqtwebengine<5.16, which is not installed.
+conda-repo-cli 1.0.41 requires clyent==1.2.1, but you have clyent 1.2.2 which is incompatible.
+conda-repo-cli 1.0.41 requires nbformat==5.4.0, but you have nbformat 5.7.0 which is incompatible.
+conda-repo-cli 1.0.41 requires python-dateutil==2.8.2, but you have python-dateutil 2.9.0.post0 which is incompatible.
+conda-repo-cli 1.0.41 requires PyYAML==6.0, but you have pyyaml 6.0.3 which is incompatible.
+conda-repo-cli 1.0.41 requires requests==2.28.1, but you have requests 2.32.5 which is incompatible.
+bigframes 2.21.0 requires google-cloud-bigquery[bqstorage,pandas]>=3.31.0, but you have google-cloud-bigquery 3.17.0 which is incompatible.
+bigframes 2.21.0 requires rich<14,>=12.4.4, but you have rich 15.0.0 which is incompatible.
+google-adk 1.27.1 requires google-genai<2.0.0,>=1.56.0, but you have google-genai 2.20.0 which is incompatible.
+socceraction 1.5.1 requires numpy<2.0.0,>=1.26.0, but you have numpy 2.4.2 which is incompatible.
+spyder 5.4.3 requires ipython!=8.10.0,!=8.8.0,!=8.9.0,<9.0.0,>=7.31.1, but you have ipython 9.5.0 which is incompatible.
+spyder 5.4.3 requires jedi<0.19.0,>=0.17.2, but you have jedi 0.19.2 which is incompatible.
+aiobotocore 2.5.0 requires botocore<1.29.77,>=1.29.76, but you have botocore 1.43.15 which is incompatible.

@@ -1,0 +1,43 @@
+{
+  "edition": 3,
+  "preparation_only": true,
+  "files": {
+    "P7-caches/.dockerignore": "5fd19e2d14cad81144e4391b8a848be3db0816815b0fb6a7b80e288305dce6f7",
+    "P7-caches/Dockerfile": "eec36e045b8da84c42fe55f13abc69abc2c61717d22d20ce232068e2bb4682e8",
+    "P7-caches/PROTOCOL.md": "d821052a7886bf9444c3e7f97c3b4de547a107c6ce81dab261035b0975742b71",
+    "P7-caches/README.md": "601db47bbf3041d82b2acbdaa62f8b75a5c868f7b3b48f46577af4da6c53bf19",
+    "P7-caches/analysis.py": "894d5907d91e00c5b349688e64c1ebf1f301483eee3132891cb4e7eed7d89e8a",
+    "P7-caches/audit.py": "ad4dbafcb1ef072a3b92df8a1ad5829ed5b9e6891ef4b9eb5af5e1342b3977f9",
+    "P7-caches/build.py": "7d5473d6d1a2fde4c2d7653e216e8275ed7e413d25a01f950adfd927aa77ae2b",
+    "P7-caches/collect.py": "1f9c6693899d21ec12d59dd956d9608aee882e091a68035d9a3f7b8d1d6fe847",
+    "P7-caches/configuration.py": "c8eaf3826d8540f172ccbf76a030d88735f586bf6d8c80819a5c3ea6aa8b9b86",
+    "P7-caches/origin.py": "d565d9e24602b6e60e4867c45c41e5f875079135c824707f8491c93349ed1664",
+    "P7-caches/plan.py": "35d647ccb4d1682e960591b93a8f6db8f5eb82bf894e22ce56d831e730fabae3",
+    "P7-caches/request_guard.py": "0cf2c52874abb91817b76271104970df02144f58009f2363f918b189581049d7",
+    "P7-caches/service.py": "00d1393ee895ccbe2a4df7579ca004ecc65b35fcdfbb813c81a3e0894ba0fdc4",
+    "P7-caches/sources/nginx-1.30.6.tar.gz": "3cf46f5ed7504d460125866b7bea99fb357f31d887e2e63b35503310e9b8b6c8",
+    "P7-caches/sources/provenance.json": "72cc3c1176378e53e53b8abafa153cc1fb96f333f5cbdba989dbf99b49609b83",
+    "P7-caches/sources/squid-7.8.tar.gz": "b1367b2a0e5ecf1641880f74100c570b0668fe3e8fe08693e83b270401846dad",
+    "P7-caches/store_id.py": "d8e218fdadf8865afdeb2697e57999b62910220fec0d0866967054f3b1dd999c",
+    "P7-caches/test_audit.py": "23fab432e1f7abe11710a0172f8483b9cfa0a679d59a4c324458375d9cddc8a7",
+    "P7-caches/test_preparation.py": "5f20b1b7f14439fee157397d68bd3c85626e3e74d77b709734007177ab67e2eb",
+    "P7-caches/test_request_guard.py": "7dbc0a169c89867733f90a2b006acf2b207c02f4ca3b24794a16216dde597a5e",
+    "P7-caches/test_runtime.py": "97e6b755d30b856aacfb34f1cd94c20c8cf334748dc9be77e07a0a386f926a63",
+    "P7-caches/AMENDMENT-v2.json": "43cf61c026c5c3d8040bc8b4f7603f494322f3eb4101b29ac5763361222cde69",
+    "P7-caches/AMENDMENT-v3.json": "f00e630011020a531366f15b159e47e6028b445a20dfbd3dc6a25a848eed990e",
+    "P7-caches/SOURCES-FROZEN.json": "e29bc3a73fb81cce237872d1cc61d771109b4a6ae424d70b8fe0cd1e70e84f5a"
+  },
+  "imported_public_sources_supplied_by": "P2-residual/deployment-preparation.tar.gz",
+  "j_source_included_as_import": true,
+  "excluded": [
+    "credentials",
+    "runtime",
+    "calibration",
+    "holdout",
+    "build",
+    "model_freeze"
+  ],
+  "archive_sha256": "3a36c78325a11e92a44a16b4b14974ce7906332ecd7f1cf30439d2aeb59ca64d",
+  "archive_bytes": 6509471,
+  "source_freeze_sha256": "e29bc3a73fb81cce237872d1cc61d771109b4a6ae424d70b8fe0cd1e70e84f5a"
+}

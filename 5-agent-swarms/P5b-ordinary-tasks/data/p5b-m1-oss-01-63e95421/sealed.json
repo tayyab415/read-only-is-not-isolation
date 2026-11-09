@@ -1,0 +1,58 @@
+{
+  "run_id": "p5b-m1-oss-01-63e95421",
+  "complete": true,
+  "source_freeze_sha256": "742ac28c78100f7218f724e534fc24cbd249fd06d1d0ed76cefba4cee5b93968",
+  "outcome": {
+    "action": "finish",
+    "status": "finished",
+    "evidence": [
+      1,
+      2
+    ],
+    "note": "All four fixture files are present and return HTTP 200. GET requests reveal a consistent payload of 31 bytes (SHA-256 85c7795747cf1f3ac1e7d7f53d3faa6b9d9f3dc961aa9b692aaaddb943ace870) for pkg-01.bin, pkg-04.bin, pkg-09.bin, and pkg-12.bin. HEAD requests report Content-Length: 0 for each file, which contradicts the actual size observed via GET. Latency is similar across GETs (\u22485\u20116\u202fms) and across HEADs (\u224832\u201135\u202fms), but timing differences alone do not explain the length mismatch. The evidence points to a consistent content delivery but an inaccurate HEAD metadata response.",
+    "claimed_status": "success"
+  },
+  "background": {
+    "complete": true,
+    "waves": 4
+  },
+  "remote_close": {
+    "closed": true,
+    "status": {
+      "run_id": "p5b-m1-oss-01-63e95421",
+      "complete": true,
+      "scripted": false,
+      "background_active": 1,
+      "source_freeze_sha256": "742ac28c78100f7218f724e534fc24cbd249fd06d1d0ed76cefba4cee5b93968",
+      "cleanup_absence_proved": true,
+      "batches": 6,
+      "http_requests": 72,
+      "file_sha256": {
+        "provision.json": "0488c9818b3adb53753b27c9499a088ad1c6d836eefe0da8881d861a50d92a5b",
+        "server-log-lines.txt": "8f1a398c1be36ec1a0bfe3ef8d3e363553b2bddc40216d6375a3c60461e160cc",
+        "cleanup.json": "28af10e63a32b13971e25b00429bc0bfced7bdb39451ff19377197481eb6dc98",
+        "server.json": "32f2439549cbdec0fc578908529665da279c00b981cf59a6dab9900aa0bdc2b2",
+        "actions.jsonl": "fad62f4ee8eb7336ce6c998b77cb21a0970e9ae8793c4e215b0b3a333f387bce"
+      }
+    }
+  },
+  "budget_summary": {
+    "subject_guarded_usd": "0.031454154000",
+    "calls": 51,
+    "base_reserved_usd": "28.995980067200",
+    "project_guarded_total_usd": "29.027434221200",
+    "stage_cap_usd": "6",
+    "must_stop": false,
+    "invoice_reconciled": false
+  },
+  "file_sha256": {
+    "calls.lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "client-actions.lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "background.jsonl": "cf47609165edb125bb95658b326eff2283131a4f50eb5d062e90fe51b44eba5a",
+    "provision.json": "0488c9818b3adb53753b27c9499a088ad1c6d836eefe0da8881d861a50d92a5b",
+    "background.lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "client-actions.jsonl": "df9c7d19292a63fc882c07c44a13d5afdaac23706acb2f2081ae021b6342a507",
+    "calls.jsonl": "504085c8c6e8b3dde988d2199a61c527cef51e49292181e0af89d7b6d56ddb51",
+    "preregister.json": "75d77f292c397382d7e481d4d3b73192769b4a0cbe48dda52e1dd2dd0661fad1"
+  }
+}

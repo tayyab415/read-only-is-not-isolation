@@ -1,0 +1,56 @@
+# Workstream D sandboxes. One internal network per sandbox so sandboxes cannot see each other.
+# art-a (workstream A) is attached to every network by scripts/attach-art.sh, so it is the only shared peer.
+name: d-lab
+
+x-sandbox: &sandbox
+  image: d-sandbox:1
+  user: "20001:20001"
+  init: true
+  read_only: true
+  cap_drop: [ALL]
+  security_opt: ["no-new-privileges:true"]
+  mem_limit: 2g
+  memswap_limit: 2g
+  cpus: 1.0
+  pids_limit: 256
+  ulimits:
+    nofile: { soft: 4096, hard: 4096 }
+  tmpfs:
+    - /home/agent:exec,nosuid,nodev,size=1g,uid=20001,gid=20001,mode=0755
+    - /tmp:exec,nosuid,nodev,size=256m,mode=1777
+  restart: "no"
+
+services:
+  agent1:
+    <<: *sandbox
+    container_name: d-agent1
+    hostname: agent1
+    networks: [net1]
+  agent2:
+    <<: *sandbox
+    container_name: d-agent2
+    hostname: agent2
+    networks: [net2]
+  agent3:
+    <<: *sandbox
+    container_name: d-agent3
+    hostname: agent3
+    networks: [net3]
+
+# internal: no route out. gateway_mode_ipv4=isolated: the host bridge gets no IP, so the sandbox
+# cannot reach lab host services listening on 0.0.0.0 (plain --internal leaves them reachable; see report).
+networks:
+  net1: &net
+    name: d-net-1
+    internal: true
+    driver: bridge
+    driver_opts: { com.docker.network.bridge.gateway_mode_ipv4: isolated }
+    ipam: { config: [{ subnet: 172.30.11.0/24 }] }
+  net2:
+    <<: *net
+    name: d-net-2
+    ipam: { config: [{ subnet: 172.30.12.0/24 }] }
+  net3:
+    <<: *net
+    name: d-net-3
+    ipam: { config: [{ subnet: 172.30.13.0/24 }] }

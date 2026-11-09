@@ -1,0 +1,416 @@
+[
+  {
+    "cohort": "c1-11",
+    "marker": "n/c1-11/bob/15",
+    "client_method": "GET",
+    "client_path": "/n-c1-11-pkg/?list",
+    "backend_path": "/api/nativeBrowser",
+    "router_path": "/artifactory/n-c1-11-pkg/?list",
+    "gateway_path": "/artifactory/n-c1-11-pkg/?list",
+    "status": [
+      200,
+      200,
+      200,
+      200
+    ],
+    "same_trace": true,
+    "same_principal": true,
+    "backend_path_matches": false
+  },
+  {
+    "cohort": "c1-11",
+    "marker": "n/c1-11/bob/17",
+    "client_method": "GET",
+    "client_path": "/n-c1-11-pkg/?list",
+    "backend_path": "/api/nativeBrowser",
+    "router_path": "/artifactory/n-c1-11-pkg/?list",
+    "gateway_path": "/artifactory/n-c1-11-pkg/?list",
+    "status": [
+      200,
+      200,
+      200,
+      200
+    ],
+    "same_trace": true,
+    "same_principal": true,
+    "backend_path_matches": false
+  },
+  {
+    "cohort": "c1-11",
+    "marker": "n/c1-11/alice/23",
+    "client_method": "GET",
+    "client_path": "/n-c1-11-pkg/?properties",
+    "backend_path": "/api/nativeBrowser",
+    "router_path": "/artifactory/n-c1-11-pkg/?properties",
+    "gateway_path": "/artifactory/n-c1-11-pkg/?properties",
+    "status": [
+      200,
+      200,
+      200,
+      200
+    ],
+    "same_trace": true,
+    "same_principal": true,
+    "backend_path_matches": true
+  },
+  {
+    "cohort": "c1-11",
+    "marker": "n/c1-11/alice/28",
+    "client_method": "GET",
+    "client_path": "/n-c1-11-pkg/pkg-04.bin?properties;stats",
+    "backend_path": "/n-c1-11-pkg/pkg-04.bin",
+    "router_path": "/artifactory/n-c1-11-pkg/pkg-04.bin?properties%3Bstats",
+    "gateway_path": "/artifactory/n-c1-11-pkg/pkg-04.bin?properties;stats",
+    "status": [
+      200,
+      200,
+      200,
+      200
+    ],
+    "same_trace": true,
+    "same_principal": true,
+    "backend_path_matches": true
+  },
+  {
+    "cohort": "c1-11",
+    "marker": "n/c1-11/bob/31",
+    "client_method": "GET",
+    "client_path": "/n-c1-11-pkg/?properties",
+    "backend_path": "/api/nativeBrowser",
+    "router_path": "/artifactory/n-c1-11-pkg/?properties",
+    "gateway_path": "/artifactory/n-c1-11-pkg/?properties",
+    "status": [
+      200,
+      200,
+      200,
+      200
+    ],
+    "same_trace": true,
+    "same_principal": true,
+    "backend_path_matches": true
+  },
+  {
+    "cohort": "c1-12",
+    "marker": "n/c1-12/bob/12",
+    "client_method": "GET",
+    "client_path": "/n-c1-12-pkg/?list",
+    "backend_path": "/api/nativeBrowser",
+    "router_path": "/artifactory/n-c1-12-pkg/?list",
+    "gateway_path": "/artifactory/n-c1-12-pkg/?list",
+    "status": [
+      200,
+      200,
+      200,
+      200
+    ],
+    "same_trace": true,
+    "same_principal": true,
+    "backend_path_matches": false
+  },
+  {
+    "cohort": "c1-12",
+    "marker": "n/c1-12/bob/15",
+    "client_method": "GET",
+    "client_path": "/n-c1-12-pkg/?list",
+    "backend_path": "/api/nativeBrowser",
+    "router_path": "/artifactory/n-c1-12-pkg/?list",
+    "gateway_path": "/artifactory/n-c1-12-pkg/?list",
+    "status": [
+      200,
+      200,
+      200,
+      200
+    ],
+    "same_trace": true,
+    "same_principal": true,
+    "backend_path_matches": false
+  },
+  {
+    "cohort": "c1-12",
+    "marker": "n/c1-12/alice/49",
+    "client_method": "GET",
+    "client_path": "/n-c1-12-pkg/?properties",
+    "backend_path": "/api/nativeBrowser",
+    "router_path": "/artifactory/n-c1-12-pkg/?properties",
+    "gateway_path": "/artifactory/n-c1-12-pkg/?properties",
+    "status": [
+      200,
+      200,
+      200,
+      200
+    ],
+    "same_trace": true,
+    "same_principal": true,
+    "backend_path_matches": true
+  },
+  {
+    "cohort": "c1-12",
+    "marker": "n/c1-12/bob/42",
+    "client_method": "GET",
+    "client_path": "/n-c1-12-pkg/?list",
+    "backend_path": "/api/nativeBrowser",
+    "router_path": "/artifactory/n-c1-12-pkg/?list",
+    "gateway_path": "/artifactory/n-c1-12-pkg/?list",
+    "status": [
+      200,
+      200,
+      200,
+      200
+    ],
+    "same_trace": true,
+    "same_principal": true,
+    "backend_path_matches": false
+  },
+  {
+    "cohort": "c1-13",
+    "marker": "n/c1-13/alice/10",
+    "client_method": "GET",
+    "client_path": "/n-c1-13-pkg/?list",
+    "backend_path": "/api/nativeBrowser",
+    "router_path": "/artifactory/n-c1-13-pkg/?list",
+    "gateway_path": "/artifactory/n-c1-13-pkg/?list",
+    "status": [
+      200,
+      200,
+      200,
+      200
+    ],
+    "same_trace": true,
+    "same_principal": true,
+    "backend_path_matches": false
+  },
+  {
+    "cohort": "c1-13",
+    "marker": "n/c1-13/alice/13",
+    "client_method": "GET",
+    "client_path": "/n-c1-13-pkg/?list",
+    "backend_path": "/api/nativeBrowser",
+    "router_path": "/artifactory/n-c1-13-pkg/?list",
+    "gateway_path": "/artifactory/n-c1-13-pkg/?list",
+    "status": [
+      200,
+      200,
+      200,
+      200
+    ],
+    "same_trace": true,
+    "same_principal": true,
+    "backend_path_matches": false
+  },
+  {
+    "cohort": "c1-13",
+    "marker": "n/c1-13/alice/16",
+    "client_method": "GET",
+    "client_path": "/n-c1-13-pkg/?stats",
+    "backend_path": "/api/nativeBrowser",
+    "router_path": "/artifactory/n-c1-13-pkg/?stats",
+    "gateway_path": "/artifactory/n-c1-13-pkg/?stats",
+    "status": [
+      200,
+      200,
+      200,
+      200
+    ],
+    "same_trace": true,
+    "same_principal": true,
+    "backend_path_matches": false
+  },
+  {
+    "cohort": "c1-13",
+    "marker": "n/c1-13/alice/18",
+    "client_method": "GET",
+    "client_path": "/n-c1-13-pkg/?list&stats=1",
+    "backend_path": "/api/nativeBrowser",
+    "router_path": "/artifactory/n-c1-13-pkg/?list&stats=1",
+    "gateway_path": "/artifactory/n-c1-13-pkg/?list&stats=1",
+    "status": [
+      200,
+      200,
+      200,
+      200
+    ],
+    "same_trace": true,
+    "same_principal": true,
+    "backend_path_matches": false
+  },
+  {
+    "cohort": "c1-14",
+    "marker": "n/c1-14/alice/24",
+    "client_method": "GET",
+    "client_path": "/n-c1-14-pkg/?value=8",
+    "backend_path": "/api/nativeBrowser",
+    "router_path": "/artifactory/n-c1-14-pkg/?value=8",
+    "gateway_path": "/artifactory/n-c1-14-pkg/?value=8",
+    "status": [
+      200,
+      200,
+      200,
+      200
+    ],
+    "same_trace": true,
+    "same_principal": true,
+    "backend_path_matches": false
+  },
+  {
+    "cohort": "c1-14",
+    "marker": "n/c1-14/alice/25",
+    "client_method": "GET",
+    "client_path": "/n-c1-14-pkg/?value=8",
+    "backend_path": "/api/nativeBrowser",
+    "router_path": "/artifactory/n-c1-14-pkg/?value=8",
+    "gateway_path": "/artifactory/n-c1-14-pkg/?value=8",
+    "status": [
+      200,
+      200,
+      200,
+      200
+    ],
+    "same_trace": true,
+    "same_principal": true,
+    "backend_path_matches": false
+  },
+  {
+    "cohort": "c1-14",
+    "marker": "n/c1-14/alice/45",
+    "client_method": "GET",
+    "client_path": "/n-c1-14-pkg/?stats",
+    "backend_path": "/api/nativeBrowser",
+    "router_path": "/artifactory/n-c1-14-pkg/?stats",
+    "gateway_path": "/artifactory/n-c1-14-pkg/?stats",
+    "status": [
+      200,
+      200,
+      200,
+      200
+    ],
+    "same_trace": true,
+    "same_principal": true,
+    "backend_path_matches": false
+  },
+  {
+    "cohort": "c1-15",
+    "marker": "n/c1-15/bob/30",
+    "client_method": "GET",
+    "client_path": "/n-c1-15-pkg/?list&deep=1",
+    "backend_path": "/api/nativeBrowser",
+    "router_path": "/artifactory/n-c1-15-pkg/?list&deep=1",
+    "gateway_path": "/artifactory/n-c1-15-pkg/?list&deep=1",
+    "status": [
+      200,
+      200,
+      200,
+      200
+    ],
+    "same_trace": true,
+    "same_principal": true,
+    "backend_path_matches": false
+  },
+  {
+    "cohort": "c1-16",
+    "marker": "n/c1-16/alice/46",
+    "client_method": "GET",
+    "client_path": "/n-c1-16-pkg/pkg-03.bin?properties;stats",
+    "backend_path": "/n-c1-16-pkg/pkg-03.bin",
+    "router_path": "/artifactory/n-c1-16-pkg/pkg-03.bin?properties%3Bstats",
+    "gateway_path": "/artifactory/n-c1-16-pkg/pkg-03.bin?properties;stats",
+    "status": [
+      200,
+      200,
+      200,
+      200
+    ],
+    "same_trace": true,
+    "same_principal": true,
+    "backend_path_matches": true
+  },
+  {
+    "cohort": "c1-17",
+    "marker": "n/c1-17/bob/24",
+    "client_method": "GET",
+    "client_path": "/n-c1-17-pkg/?properties",
+    "backend_path": "/api/nativeBrowser",
+    "router_path": "/artifactory/n-c1-17-pkg/?properties",
+    "gateway_path": "/artifactory/n-c1-17-pkg/?properties",
+    "status": [
+      200,
+      200,
+      200,
+      200
+    ],
+    "same_trace": true,
+    "same_principal": true,
+    "backend_path_matches": true
+  },
+  {
+    "cohort": "c1-17",
+    "marker": "n/c1-17/alice/55",
+    "client_method": "GET",
+    "client_path": "/n-c1-17-pkg/?stats",
+    "backend_path": "/api/nativeBrowser",
+    "router_path": "/artifactory/n-c1-17-pkg/?stats",
+    "gateway_path": "/artifactory/n-c1-17-pkg/?stats",
+    "status": [
+      200,
+      200,
+      200,
+      200
+    ],
+    "same_trace": true,
+    "same_principal": true,
+    "backend_path_matches": false
+  },
+  {
+    "cohort": "c1-18",
+    "marker": "n/c1-18/bob/17",
+    "client_method": "GET",
+    "client_path": "/n-c1-18-pkg/?list&deep=1",
+    "backend_path": "/api/nativeBrowser",
+    "router_path": "/artifactory/n-c1-18-pkg/?list&deep=1",
+    "gateway_path": "/artifactory/n-c1-18-pkg/?list&deep=1",
+    "status": [
+      200,
+      200,
+      200,
+      200
+    ],
+    "same_trace": true,
+    "same_principal": true,
+    "backend_path_matches": false
+  },
+  {
+    "cohort": "c1-18",
+    "marker": "n/c1-18/alice/28",
+    "client_method": "GET",
+    "client_path": "/n-c1-18-pkg/?properties",
+    "backend_path": "/api/nativeBrowser",
+    "router_path": "/artifactory/n-c1-18-pkg/?properties",
+    "gateway_path": "/artifactory/n-c1-18-pkg/?properties",
+    "status": [
+      200,
+      200,
+      200,
+      200
+    ],
+    "same_trace": true,
+    "same_principal": true,
+    "backend_path_matches": true
+  },
+  {
+    "cohort": "c1-20",
+    "marker": "n/c1-20/alice/23",
+    "client_method": "GET",
+    "client_path": "/n-c1-20-pkg/?properties",
+    "backend_path": "/api/nativeBrowser",
+    "router_path": "/artifactory/n-c1-20-pkg/?properties",
+    "gateway_path": "/artifactory/n-c1-20-pkg/?properties",
+    "status": [
+      200,
+      200,
+      200,
+      200
+    ],
+    "same_trace": true,
+    "same_principal": true,
+    "backend_path_matches": true
+  }
+]

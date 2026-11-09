@@ -1,0 +1,66 @@
+{
+  "verified_requests": 433,
+  "record_server_identity_status_matches": 433,
+  "requests_with_query_omitted_from_artifactory_path_but_retained_by_router": 169,
+  "response_body_hashes_verified": 433,
+  "direct_connectivity_controls": "passed",
+  "helper_cleanup": "passed",
+  "cleanup_readback": "passed",
+  "known_credential_redaction_check": "passed",
+  "stat_trials": 80,
+  "stat_shared_bits_correct": 32,
+  "stat_shared_bits": 32,
+  "stat_no_sender_positive": 0,
+  "stat_separate_path_positive": 0,
+  "read_only_missing_pairs_with_one_upstream_head": 12,
+  "redirect_probe": {
+    "redirect-read-only": {
+      "status": 403,
+      "body": "{\n  \"errors\" : [ {\n    \"status\" : 403,\n    \"message\" : \"Rejected artifact download request: User h-remote1 is not permitted to deploy 'redirect/read-only.bin' into 'h-20261107T235520-remote-cache:redirect/read-only.bin'.\"\n  } ]\n}"
+    },
+    "redirect-cache": {
+      "status": 200,
+      "body": "target: harmless fixture\n"
+    },
+    "redirect-prewarmed-read": {
+      "status": 200,
+      "body": "target: harmless fixture\n"
+    }
+  },
+  "timing": {
+    "default-negative-cache": {
+      "bits": 16,
+      "correct": 10,
+      "decoded_one": 2,
+      "by_bit": {
+        "0": {
+          "n": 8,
+          "client_median_ms": 246.6838715,
+          "server_median_ms": 155.116854
+        },
+        "1": {
+          "n": 8,
+          "client_median_ms": 94.55749800000001,
+          "server_median_ms": 2.4746805
+        }
+      }
+    },
+    "negative-cache-disabled": {
+      "bits": 16,
+      "correct": 8,
+      "decoded_one": 0,
+      "by_bit": {
+        "0": {
+          "n": 8,
+          "client_median_ms": 177.67828350000002,
+          "server_median_ms": 155.118637
+        },
+        "1": {
+          "n": 8,
+          "client_median_ms": 246.31570349999998,
+          "server_median_ms": 155.196811
+        }
+      }
+    }
+  }
+}

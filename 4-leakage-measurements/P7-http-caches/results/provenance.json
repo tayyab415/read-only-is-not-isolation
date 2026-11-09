@@ -1,0 +1,51 @@
+{
+  "source_sha256": "81f4d0cfac017fcb232a775f3d25a07d5aa9e7ba94cb5b5bd8fe3697dfa36bf4",
+  "inputs": {
+    "held_results": {
+      "path": "evidence/P7-caches/data/g2-main/holdout-results.json",
+      "sha256": "115279e9ed9e0ff463e7016356da66c1e9dd986ac1d5a228f9c2e7040de3cde8"
+    },
+    "held_native_audit": {
+      "path": "evidence/P7-caches/data/g2-main/audit-results.json",
+      "sha256": "913fc34700cff4e8ea95b4d180c783d9382839772fa802f6f22ed0b0385c93f5"
+    },
+    "retained_remote_native_audit": {
+      "path": "evidence/P7-caches/data/g2-main/remote-audit-results.json",
+      "sha256": "913fc34700cff4e8ea95b4d180c783d9382839772fa802f6f22ed0b0385c93f5"
+    },
+    "model_freeze": {
+      "path": "evidence/P7-caches/FROZEN.json",
+      "sha256": "7816def9ab488d6057bf5323d47d7c4f155a0f2f706aa8db7befb0a9b2fc247d"
+    },
+    "scientific_source_freeze": {
+      "path": "evidence/P7-caches/SOURCES-FROZEN.json",
+      "sha256": "e29bc3a73fb81cce237872d1cc61d771109b4a6ae424d70b8fe0cd1e70e84f5a"
+    },
+    "operational_amendment_freeze": {
+      "path": "evidence/P7-audit-recovery/AMENDMENT-FROZEN.json",
+      "sha256": "5d55904a5c6514ebf901ee0c2b64186bf256b40b48dc3896e9638dcea15b3a4e"
+    },
+    "transport_manifest": {
+      "path": "evidence/VM2/P7-G2-MAIN-TRANSPORT.json",
+      "sha256": "c18ad3a05b1804dc338e57d81bb2f964e51d5a6a541471e004bf590c071ee6a8"
+    },
+    "final_runtime_readback": {
+      "path": "evidence/VM2/P7-G2-FINAL-RUNTIME-READBACK.json",
+      "sha256": "f02c4d316e48b95ec451e127e54d871e636740ed43b2f79d28a172b8e8d4fbec"
+    }
+  },
+  "outputs_sha256": {
+    "P7-holdout.svg": "3c7fb02209e553b04a2ff88fb6047d037784a71216e839266d3c96fcf90183ee",
+    "descriptive-counts.json": "b32ca7cfeeffcd49c9bfee572b0553e69b40114ecf24d939c057a7312b3a9456",
+    "P7-holdout.pdf": "f320a777515a6c0f55a636c09353c2ae0a5d792bf327186d60ec70a27ee00859",
+    "P7-holdout.png": "6dbbc3cc3da97c4168b872bbfbdb0a8237d2ed672f2a0f90b8677eb92f95b6c7"
+  },
+  "statistical_rule": [
+    "One fixed timing decoder per product/delay, 32 trials per arm, 16 no-sender trials.",
+    "Configured negative caching, including nondefault Squid build and TTL.",
+    "Generic HTTP caches, not native package services or a deployment of the full P1 meter.",
+    "Wilson intervals are approximate binomial descriptions; shared-host trials do not give independent-deployment intervals.",
+    "Application-cache causes are independently joined; defended timing is exploratory.",
+    "Chance-like decoding does not bound capacity; private instances still share their host."
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "receiver_listener_control": [
+    {
+      "host": "127.0.0.1",
+      "port": 8765,
+      "result": "ConnectionRefusedError: [Errno 111] Connection refused",
+      "duration_s": 0.09598603400081629
+    },
+    {
+      "host": "127.0.0.1",
+      "port": 8765,
+      "result": "connected",
+      "duration_s": 0.008121724000375252
+    }
+  ],
+  "target_listener_control": [
+    {
+      "host": "127.0.0.1",
+      "port": 8000,
+      "result": "connected",
+      "duration_s": 0.08297090899577597
+    }
+  ],
+  "sender": [
+    {
+      "host": "art-a",
+      "port": 8082,
+      "result": "connected",
+      "duration_s": 0.0839679399941815
+    },
+    {
+      "host": "172.20.0.1",
+      "port": 8765,
+      "result": "OSError: [Errno 101] Network is unreachable",
+      "duration_s": 6.0250997194088995e-05
+    },
+    {
+      "host": "172.21.0.2",
+      "port": 8000,
+      "result": "OSError: [Errno 101] Network is unreachable",
+      "duration_s": 6.769200263079256e-05
+    }
+  ]
+}

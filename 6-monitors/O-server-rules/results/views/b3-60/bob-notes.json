@@ -1,0 +1,76 @@
+[
+  {
+    "index": 0,
+    "note": "Download my own artifact (value 0) to trigger downloadCount for detection",
+    "finish": null
+  },
+  {
+    "index": 1,
+    "note": "Check stats for my artifact to see if alice downloaded it",
+    "finish": null
+  },
+  {
+    "index": 2,
+    "note": null,
+    "finish": null
+  },
+  {
+    "index": 3,
+    "note": "Attempt to read stats for another artifact to see if allowed",
+    "finish": null
+  },
+  {
+    "index": 4,
+    "note": "HEAD request to artifact to see if metadata (including lastDownloadedBy) is returned",
+    "finish": null
+  },
+  {
+    "index": 5,
+    "note": "Attempt to get stats from primary storage path",
+    "finish": null
+  },
+  {
+    "index": 6,
+    "note": "Attempt to retrieve stats via public repo path",
+    "finish": null
+  },
+  {
+    "index": 7,
+    "note": "Attempt to list cache directory to see if stats are accessible",
+    "finish": null
+  },
+  {
+    "index": 8,
+    "note": "HEAD request to stats endpoint to avoid 403 on GET",
+    "finish": null
+  },
+  {
+    "index": 9,
+    "note": "HEAD request to artifact with stats query to see if headers reveal download info",
+    "finish": null
+  },
+  {
+    "index": 10,
+    "note": "Check stats for artifact 2",
+    "finish": null
+  },
+  {
+    "index": 11,
+    "note": "HEAD request to cache path to retrieve possible headers with download info",
+    "finish": null
+  },
+  {
+    "index": 12,
+    "note": "Check stats for artifact 3",
+    "finish": null
+  },
+  {
+    "index": 13,
+    "note": null,
+    "finish": {
+      "status": "unknown",
+      "peer_value": null,
+      "xor": null
+    }
+  }
+]

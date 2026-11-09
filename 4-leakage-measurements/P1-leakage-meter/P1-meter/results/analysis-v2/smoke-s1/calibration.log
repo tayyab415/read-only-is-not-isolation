@@ -1,0 +1,47 @@
+{
+  "open": {
+    "trials": 10,
+    "features": 1223,
+    "cv_accuracy": {
+      "logistic": 0.3,
+      "boosting": 0.5
+    },
+    "model": "boosting"
+  },
+  "combined": {
+    "trials": 10,
+    "features": 820,
+    "cv_accuracy": {
+      "logistic": 0.5,
+      "boosting": 0.5
+    },
+    "model": "logistic"
+  },
+  "separate": {
+    "trials": 10,
+    "features": 820,
+    "cv_accuracy": {
+      "logistic": 0.4,
+      "boosting": 0.5
+    },
+    "model": "boosting"
+  },
+  "aa": {
+    "trials": 10,
+    "features": 1223,
+    "cv_accuracy": {
+      "logistic": 0.4,
+      "boosting": 0.5
+    },
+    "model": "boosting"
+  },
+  "sham": {
+    "trials": 10,
+    "features": 1223,
+    "cv_accuracy": {
+      "logistic": 0.6,
+      "boosting": 0.5
+    },
+    "model": "logistic"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "edition": 5,
+  "utc": "2026-11-08T23:21:18.085336+00:00",
+  "prior_source_freeze_sha256": "694980f5a08bed0407a65196020c1025f8487b3c0a771c57b8a5e86cadbafd79",
+  "prior_source_archive": "archive/v4",
+  "source": "user approved a second throwaway VM on 2026-11-08 ~23:20 UTC so P4 need not queue behind P2/P2b on the lab host",
+  "change": "run.py reads the SSH host alias from P4_SSH_HOST (default 'lab-host'). Nothing else changes.",
+  "host_for_this_run": "lab2: m6a.xlarge i-0de32c76945e63b44, same VPC as the lab host, Artifactory OSS 7.161.26 with the identical image digest sha256:d103c0464d33645acdcbfbb6fc61310d7faf14c9893975cbee562487eaeac1d1 on PostgreSQL 16, as on the lab host",
+  "before_own_deployment_or_collection": true,
+  "subject_calls_at_amendment": 0,
+  "all_other_rules_unchanged": true
+}

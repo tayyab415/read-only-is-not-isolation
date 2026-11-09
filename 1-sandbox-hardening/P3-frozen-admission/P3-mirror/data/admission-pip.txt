@@ -1,0 +1,99 @@
+Collecting requests==2.32.3 (from -r $LAB_ROOT/evidence/P3-mirror/requirements.txt (line 1))
+  Downloading requests-2.32.3-py3-none-any.whl.metadata (4.6 kB)
+Collecting rich==13.9.4 (from -r $LAB_ROOT/evidence/P3-mirror/requirements.txt (line 2))
+  Downloading rich-13.9.4-py3-none-any.whl.metadata (18 kB)
+Collecting python-dateutil==2.9.0.post0 (from -r $LAB_ROOT/evidence/P3-mirror/requirements.txt (line 3))
+  Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting networkx==3.4.2 (from -r $LAB_ROOT/evidence/P3-mirror/requirements.txt (line 4))
+  Downloading networkx-3.4.2-py3-none-any.whl.metadata (6.3 kB)
+Collecting click==8.1.8 (from -r $LAB_ROOT/evidence/P3-mirror/requirements.txt (line 5))
+  Downloading click-8.1.8-py3-none-any.whl.metadata (2.3 kB)
+Collecting packaging==24.2 (from -r $LAB_ROOT/evidence/P3-mirror/requirements.txt (line 6))
+  Downloading packaging-24.2-py3-none-any.whl.metadata (3.2 kB)
+Collecting attrs==24.3.0 (from -r $LAB_ROOT/evidence/P3-mirror/requirements.txt (line 7))
+  Downloading attrs-24.3.0-py3-none-any.whl.metadata (11 kB)
+Collecting typing_extensions==4.12.2 (from -r $LAB_ROOT/evidence/P3-mirror/requirements.txt (line 8))
+  Downloading typing_extensions-4.12.2-py3-none-any.whl.metadata (3.0 kB)
+Collecting pytest==8.3.5 (from -r $LAB_ROOT/evidence/P3-mirror/requirements.txt (line 9))
+  Downloading pytest-8.3.5-py3-none-any.whl.metadata (7.6 kB)
+Collecting beautifulsoup4==4.13.3 (from -r $LAB_ROOT/evidence/P3-mirror/requirements.txt (line 10))
+  Downloading beautifulsoup4-4.13.3-py3-none-any.whl.metadata (3.8 kB)
+Collecting more-itertools==10.6.0 (from -r $LAB_ROOT/evidence/P3-mirror/requirements.txt (line 11))
+  Downloading more_itertools-10.6.0-py3-none-any.whl.metadata (37 kB)
+Collecting toolz==1.0.0 (from -r $LAB_ROOT/evidence/P3-mirror/requirements.txt (line 12))
+  Downloading toolz-1.0.0-py3-none-any.whl.metadata (5.1 kB)
+Collecting tenacity==9.0.0 (from -r $LAB_ROOT/evidence/P3-mirror/requirements.txt (line 13))
+  Downloading tenacity-9.0.0-py3-none-any.whl.metadata (1.2 kB)
+Collecting pluggy==1.5.0 (from -r $LAB_ROOT/evidence/P3-mirror/requirements.txt (line 14))
+  Downloading pluggy-1.5.0-py3-none-any.whl.metadata (4.8 kB)
+Collecting charset-normalizer<4,>=2 (from requests==2.32.3->-r $LAB_ROOT/evidence/P3-mirror/requirements.txt (line 1))
+  Downloading charset_normalizer-3.4.1-py3-none-any.whl.metadata (35 kB)
+Collecting idna<4,>=2.5 (from requests==2.32.3->-r $LAB_ROOT/evidence/P3-mirror/requirements.txt (line 1))
+  Downloading idna-3.10-py3-none-any.whl.metadata (10 kB)
+Collecting urllib3<3,>=1.21.1 (from requests==2.32.3->-r $LAB_ROOT/evidence/P3-mirror/requirements.txt (line 1))
+  Downloading urllib3-2.3.0-py3-none-any.whl.metadata (6.5 kB)
+Collecting certifi>=2017.4.17 (from requests==2.32.3->-r $LAB_ROOT/evidence/P3-mirror/requirements.txt (line 1))
+  Downloading certifi-2025.1.31-py3-none-any.whl.metadata (2.5 kB)
+Collecting markdown-it-py>=2.2.0 (from rich==13.9.4->-r $LAB_ROOT/evidence/P3-mirror/requirements.txt (line 2))
+  Downloading markdown_it_py-3.0.0-py3-none-any.whl.metadata (6.9 kB)
+Collecting pygments<3.0.0,>=2.13.0 (from rich==13.9.4->-r $LAB_ROOT/evidence/P3-mirror/requirements.txt (line 2))
+  Downloading pygments-2.19.1-py3-none-any.whl.metadata (2.5 kB)
+Collecting six>=1.5 (from python-dateutil==2.9.0.post0->-r $LAB_ROOT/evidence/P3-mirror/requirements.txt (line 3))
+  Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Collecting iniconfig (from pytest==8.3.5->-r $LAB_ROOT/evidence/P3-mirror/requirements.txt (line 9))
+  Downloading iniconfig-2.0.0-py3-none-any.whl.metadata (2.6 kB)
+Collecting soupsieve>1.2 (from beautifulsoup4==4.13.3->-r $LAB_ROOT/evidence/P3-mirror/requirements.txt (line 10))
+  Downloading soupsieve-2.6-py3-none-any.whl.metadata (4.6 kB)
+Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich==13.9.4->-r $LAB_ROOT/evidence/P3-mirror/requirements.txt (line 2))
+  Downloading mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+Downloading requests-2.32.3-py3-none-any.whl (64 kB)
+Downloading rich-13.9.4-py3-none-any.whl (242 kB)
+Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Downloading networkx-3.4.2-py3-none-any.whl (1.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.7/1.7 MB 12.3 MB/s  0:00:00
+Downloading click-8.1.8-py3-none-any.whl (98 kB)
+Downloading packaging-24.2-py3-none-any.whl (65 kB)
+Downloading attrs-24.3.0-py3-none-any.whl (63 kB)
+Downloading typing_extensions-4.12.2-py3-none-any.whl (37 kB)
+Downloading pytest-8.3.5-py3-none-any.whl (343 kB)
+Downloading pluggy-1.5.0-py3-none-any.whl (20 kB)
+Downloading beautifulsoup4-4.13.3-py3-none-any.whl (186 kB)
+Downloading more_itertools-10.6.0-py3-none-any.whl (63 kB)
+Downloading toolz-1.0.0-py3-none-any.whl (56 kB)
+Downloading tenacity-9.0.0-py3-none-any.whl (28 kB)
+Downloading charset_normalizer-3.4.1-py3-none-any.whl (49 kB)
+Downloading idna-3.10-py3-none-any.whl (70 kB)
+Downloading pygments-2.19.1-py3-none-any.whl (1.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 15.7 MB/s  0:00:00
+Downloading urllib3-2.3.0-py3-none-any.whl (128 kB)
+Downloading certifi-2025.1.31-py3-none-any.whl (166 kB)
+Downloading markdown_it_py-3.0.0-py3-none-any.whl (87 kB)
+Downloading mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+Downloading soupsieve-2.6-py3-none-any.whl (36 kB)
+Downloading iniconfig-2.0.0-py3-none-any.whl (5.9 kB)
+Saved ./artifactory-lab/evidence/P3-mirror/data/wheels/requests-2.32.3-py3-none-any.whl
+Saved ./artifactory-lab/evidence/P3-mirror/data/wheels/rich-13.9.4-py3-none-any.whl
+Saved ./artifactory-lab/evidence/P3-mirror/data/wheels/python_dateutil-2.9.0.post0-py2.py3-none-any.whl
+Saved ./artifactory-lab/evidence/P3-mirror/data/wheels/networkx-3.4.2-py3-none-any.whl
+Saved ./artifactory-lab/evidence/P3-mirror/data/wheels/click-8.1.8-py3-none-any.whl
+Saved ./artifactory-lab/evidence/P3-mirror/data/wheels/packaging-24.2-py3-none-any.whl
+Saved ./artifactory-lab/evidence/P3-mirror/data/wheels/attrs-24.3.0-py3-none-any.whl
+Saved ./artifactory-lab/evidence/P3-mirror/data/wheels/typing_extensions-4.12.2-py3-none-any.whl
+Saved ./artifactory-lab/evidence/P3-mirror/data/wheels/pytest-8.3.5-py3-none-any.whl
+Saved ./artifactory-lab/evidence/P3-mirror/data/wheels/pluggy-1.5.0-py3-none-any.whl
+Saved ./artifactory-lab/evidence/P3-mirror/data/wheels/beautifulsoup4-4.13.3-py3-none-any.whl
+Saved ./artifactory-lab/evidence/P3-mirror/data/wheels/more_itertools-10.6.0-py3-none-any.whl
+Saved ./artifactory-lab/evidence/P3-mirror/data/wheels/toolz-1.0.0-py3-none-any.whl
+Saved ./artifactory-lab/evidence/P3-mirror/data/wheels/tenacity-9.0.0-py3-none-any.whl
+Saved ./artifactory-lab/evidence/P3-mirror/data/wheels/charset_normalizer-3.4.1-py3-none-any.whl
+Saved ./artifactory-lab/evidence/P3-mirror/data/wheels/idna-3.10-py3-none-any.whl
+Saved ./artifactory-lab/evidence/P3-mirror/data/wheels/pygments-2.19.1-py3-none-any.whl
+Saved ./artifactory-lab/evidence/P3-mirror/data/wheels/urllib3-2.3.0-py3-none-any.whl
+Saved ./artifactory-lab/evidence/P3-mirror/data/wheels/certifi-2025.1.31-py3-none-any.whl
+Saved ./artifactory-lab/evidence/P3-mirror/data/wheels/markdown_it_py-3.0.0-py3-none-any.whl
+Saved ./artifactory-lab/evidence/P3-mirror/data/wheels/mdurl-0.1.2-py3-none-any.whl
+Saved ./artifactory-lab/evidence/P3-mirror/data/wheels/six-1.17.0-py2.py3-none-any.whl
+Saved ./artifactory-lab/evidence/P3-mirror/data/wheels/soupsieve-2.6-py3-none-any.whl
+Saved ./artifactory-lab/evidence/P3-mirror/data/wheels/iniconfig-2.0.0-py3-none-any.whl
+Successfully downloaded requests rich python-dateutil networkx click packaging attrs typing_extensions pytest pluggy beautifulsoup4 more-itertools toolz tenacity charset-normalizer idna pygments urllib3 certifi markdown-it-py mdurl six soupsieve iniconfig

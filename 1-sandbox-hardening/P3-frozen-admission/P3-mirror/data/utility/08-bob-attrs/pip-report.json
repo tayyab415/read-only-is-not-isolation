@@ -1,0 +1,121 @@
+{
+  "version": "1",
+  "pip_version": "25.3",
+  "install": [
+    {
+      "download_info": {
+        "url": "http://127.0.0.1:64628/files/ac96cd038792094f438ad1f6ff80837353805ac950cd2aa0e0625ef19850c308/attrs-24.3.0-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=ac96cd038792094f438ad1f6ff80837353805ac950cd2aa0e0625ef19850c308",
+          "hashes": {
+            "sha256": "ac96cd038792094f438ad1f6ff80837353805ac950cd2aa0e0625ef19850c308"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "attrs",
+        "version": "24.3.0",
+        "summary": "Classes Without Boilerplate",
+        "description": "<p align=\"center\">\n  <a href=\"https://www.attrs.org/\">\n    <img src=\"https://raw.githubusercontent.com/python-attrs/attrs/main/docs/_static/attrs_logo.svg\" width=\"35%\" alt=\"attrs\" />\n  </a>\n</p>\n\n\n*attrs* is the Python package that will bring back the **joy** of **writing classes** by relieving you from the drudgery of implementing object protocols (aka [dunder methods](https://www.attrs.org/en/latest/glossary.html#term-dunder-methods)).\n[Trusted by NASA](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/personalizing-your-profile#list-of-qualifying-repositories-for-mars-2020-helicopter-contributor-achievement) for Mars missions since 2020!\n\nIts main goal is to help you to write **concise** and **correct** software without slowing down your code.\n\n\n## Sponsors\n\n*attrs* would not be possible without our [amazing sponsors](https://github.com/sponsors/hynek).\nEspecially those generously supporting us at the *The Organization* tier and higher:\n\n<!-- sponsor-break-begin -->\n\n<p align=\"center\">\n\n<!-- [[[cog\nimport pathlib, tomllib\n\nfor sponsor in tomllib.loads(pathlib.Path(\"pyproject.toml\").read_text())[\"tool\"][\"sponcon\"][\"sponsors\"]:\n      print(f'<a href=\"{sponsor[\"url\"]}\"><img title=\"{sponsor[\"title\"]}\" src=\"https://www.attrs.org/en/24.3.0/_static/sponsors/{sponsor[\"img\"]}\" width=\"190\" /></a>')\n]]] -->\n<a href=\"https://www.variomedia.de/\"><img title=\"Variomedia AG\" src=\"https://www.attrs.org/en/24.3.0/_static/sponsors/Variomedia.svg\" width=\"190\" /></a>\n<a href=\"https://tidelift.com/?utm_source=lifter&utm_medium=referral&utm_campaign=hynek\"><img title=\"Tidelift\" src=\"https://www.attrs.org/en/24.3.0/_static/sponsors/Tidelift.svg\" width=\"190\" /></a>\n<a href=\"https://klaviyo.com/\"><img title=\"Klaviyo\" src=\"https://www.attrs.org/en/24.3.0/_static/sponsors/Klaviyo.svg\" width=\"190\" /></a>\n<a href=\"https://www.emsys-renewables.com/\"><img title=\"emsys renewables\" src=\"https://www.attrs.org/en/24.3.0/_static/sponsors/emsys-renewables.svg\" width=\"190\" /></a>\n<a href=\"https://filepreviews.io/\"><img title=\"FilePreviews\" src=\"https://www.attrs.org/en/24.3.0/_static/sponsors/FilePreviews.svg\" width=\"190\" /></a>\n<a href=\"https://polar.sh/\"><img title=\"Polar\" src=\"https://www.attrs.org/en/24.3.0/_static/sponsors/Polar.svg\" width=\"190\" /></a>\n<!-- [[[end]]] -->\n\n</p>\n\n<!-- sponsor-break-end -->\n\n<p align=\"center\">\n   <strong>Please consider <a href=\"https://github.com/sponsors/hynek\">joining them</a> to help make <em>attrs</em>’s maintenance more sustainable!</strong>\n</p>\n\n<!-- teaser-end -->\n\n## Example\n\n*attrs* gives you a class decorator and a way to declaratively define the attributes on that class:\n\n<!-- code-begin -->\n\n```pycon\n>>> from attrs import asdict, define, make_class, Factory\n\n>>> @define\n... class SomeClass:\n...     a_number: int = 42\n...     list_of_numbers: list[int] = Factory(list)\n...\n...     def hard_math(self, another_number):\n...         return self.a_number + sum(self.list_of_numbers) * another_number\n\n\n>>> sc = SomeClass(1, [1, 2, 3])\n>>> sc\nSomeClass(a_number=1, list_of_numbers=[1, 2, 3])\n\n>>> sc.hard_math(3)\n19\n>>> sc == SomeClass(1, [1, 2, 3])\nTrue\n>>> sc != SomeClass(2, [3, 2, 1])\nTrue\n\n>>> asdict(sc)\n{'a_number': 1, 'list_of_numbers': [1, 2, 3]}\n\n>>> SomeClass()\nSomeClass(a_number=42, list_of_numbers=[])\n\n>>> C = make_class(\"C\", [\"a\", \"b\"])\n>>> C(\"foo\", \"bar\")\nC(a='foo', b='bar')\n```\n\nAfter *declaring* your attributes, *attrs* gives you:\n\n- a concise and explicit overview of the class's attributes,\n- a nice human-readable `__repr__`,\n- equality-checking methods,\n- an initializer,\n- and much more,\n\n*without* writing dull boilerplate code again and again and *without* runtime performance penalties.\n\n---\n\nThis example uses *attrs*'s modern APIs that have been introduced in version 20.1.0, and the *attrs* package import name that has been added in version 21.3.0.\nThe classic APIs (`@attr.s`, `attr.ib`, plus their serious-business aliases) and the `attr` package import name will remain **indefinitely**.\n\nCheck out [*On The Core API Names*](https://www.attrs.org/en/latest/names.html) for an in-depth explanation!\n\n\n### Hate Type Annotations!?\n\nNo problem!\nTypes are entirely **optional** with *attrs*.\nSimply assign `attrs.field()` to the attributes instead of annotating them with types:\n\n```python\nfrom attrs import define, field\n\n@define\nclass SomeClass:\n    a_number = field(default=42)\n    list_of_numbers = field(factory=list)\n```\n\n\n## Data Classes\n\nOn the tin, *attrs* might remind you of `dataclasses` (and indeed, `dataclasses` [are a descendant](https://hynek.me/articles/import-attrs/) of *attrs*).\nIn practice it does a lot more and is more flexible.\nFor instance, it allows you to define [special handling of NumPy arrays for equality checks](https://www.attrs.org/en/stable/comparison.html#customization), allows more ways to [plug into the initialization process](https://www.attrs.org/en/stable/init.html#hooking-yourself-into-initialization), has a replacement for `__init_subclass__`, and allows for stepping through the generated methods using a debugger.\n\nFor more details, please refer to our [comparison page](https://www.attrs.org/en/stable/why.html#data-classes), but generally speaking, we are more likely to commit crimes against nature to make things work that one would expect to work, but that are quite complicated in practice.\n\n\n## Project Information\n\n- [**Changelog**](https://www.attrs.org/en/stable/changelog.html)\n- [**Documentation**](https://www.attrs.org/)\n- [**PyPI**](https://pypi.org/project/attrs/)\n- [**Source Code**](https://github.com/python-attrs/attrs)\n- [**Contributing**](https://github.com/python-attrs/attrs/blob/main/.github/CONTRIBUTING.md)\n- [**Third-party Extensions**](https://github.com/python-attrs/attrs/wiki/Extensions-to-attrs)\n- **Get Help**: use the `python-attrs` tag on [Stack Overflow](https://stackoverflow.com/questions/tagged/python-attrs)\n\n\n### *attrs* for Enterprise\n\nAvailable as part of the [Tidelift Subscription](https://tidelift.com/?utm_source=lifter&utm_medium=referral&utm_campaign=hynek).\n\nThe maintainers of *attrs* and thousands of other packages are working with Tidelift to deliver commercial support and maintenance for the open source packages you use to build your applications.\nSave time, reduce risk, and improve code health, while paying the maintainers of the exact packages you use.\n\n## Release Information\n\n### Backwards-incompatible Changes\n\n- Python 3.7 has been dropped.\n  [#1340](https://github.com/python-attrs/attrs/issues/1340)\n\n\n### Changes\n\n- Introduce `attrs.NothingType`, for annotating types consistent with `attrs.NOTHING`.\n  [#1358](https://github.com/python-attrs/attrs/issues/1358)\n- Allow mutating `__suppress_context__` and `__notes__` on frozen exceptions.\n  [#1365](https://github.com/python-attrs/attrs/issues/1365)\n- `attrs.converters.optional()` works again when taking `attrs.converters.pipe()` or another Converter as its argument.\n  [#1372](https://github.com/python-attrs/attrs/issues/1372)\n- *attrs* instances now support [`copy.replace()`](https://docs.python.org/3/library/copy.html#copy.replace).\n  [#1383](https://github.com/python-attrs/attrs/issues/1383)\n- `attrs.validators.instance_of()`'s type hints now allow for union types.\n  For example: `instance_of(str | int)`\n  [#1385](https://github.com/python-attrs/attrs/issues/1385)\n\n\n\n---\n\n[Full changelog →](https://www.attrs.org/en/stable/changelog.html)\n",
+        "description_content_type": "text/markdown",
+        "keywords": [
+          "attribute",
+          "boilerplate",
+          "class"
+        ],
+        "author_email": "Hynek Schlawack <<email-removed>>",
+        "license_expression": "MIT",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "Programming Language :: Python :: Implementation :: PyPy",
+          "Typing :: Typed"
+        ],
+        "requires_dist": [
+          "cloudpickle; (platform_python_implementation == 'CPython') and extra == 'benchmark'",
+          "hypothesis; extra == 'benchmark'",
+          "mypy>=1.11.1; (platform_python_implementation == 'CPython' and python_version >= '3.10') and extra == 'benchmark'",
+          "pympler; extra == 'benchmark'",
+          "pytest-codspeed; extra == 'benchmark'",
+          "pytest-mypy-plugins; (platform_python_implementation == 'CPython' and python_version >= '3.10') and extra == 'benchmark'",
+          "pytest-xdist[psutil]; extra == 'benchmark'",
+          "pytest>=4.3.0; extra == 'benchmark'",
+          "cloudpickle; (platform_python_implementation == 'CPython') and extra == 'cov'",
+          "coverage[toml]>=5.3; extra == 'cov'",
+          "hypothesis; extra == 'cov'",
+          "mypy>=1.11.1; (platform_python_implementation == 'CPython' and python_version >= '3.10') and extra == 'cov'",
+          "pympler; extra == 'cov'",
+          "pytest-mypy-plugins; (platform_python_implementation == 'CPython' and python_version >= '3.10') and extra == 'cov'",
+          "pytest-xdist[psutil]; extra == 'cov'",
+          "pytest>=4.3.0; extra == 'cov'",
+          "cloudpickle; (platform_python_implementation == 'CPython') and extra == 'dev'",
+          "hypothesis; extra == 'dev'",
+          "mypy>=1.11.1; (platform_python_implementation == 'CPython' and python_version >= '3.10') and extra == 'dev'",
+          "pre-commit-uv; extra == 'dev'",
+          "pympler; extra == 'dev'",
+          "pytest-mypy-plugins; (platform_python_implementation == 'CPython' and python_version >= '3.10') and extra == 'dev'",
+          "pytest-xdist[psutil]; extra == 'dev'",
+          "pytest>=4.3.0; extra == 'dev'",
+          "cogapp; extra == 'docs'",
+          "furo; extra == 'docs'",
+          "myst-parser; extra == 'docs'",
+          "sphinx; extra == 'docs'",
+          "sphinx-notfound-page; extra == 'docs'",
+          "sphinxcontrib-towncrier; extra == 'docs'",
+          "towncrier<24.7; extra == 'docs'",
+          "cloudpickle; (platform_python_implementation == 'CPython') and extra == 'tests'",
+          "hypothesis; extra == 'tests'",
+          "mypy>=1.11.1; (platform_python_implementation == 'CPython' and python_version >= '3.10') and extra == 'tests'",
+          "pympler; extra == 'tests'",
+          "pytest-mypy-plugins; (platform_python_implementation == 'CPython' and python_version >= '3.10') and extra == 'tests'",
+          "pytest-xdist[psutil]; extra == 'tests'",
+          "pytest>=4.3.0; extra == 'tests'",
+          "mypy>=1.11.1; (platform_python_implementation == 'CPython' and python_version >= '3.10') and extra == 'tests-mypy'",
+          "pytest-mypy-plugins; (platform_python_implementation == 'CPython' and python_version >= '3.10') and extra == 'tests-mypy'"
+        ],
+        "requires_python": ">=3.8",
+        "project_url": [
+          "Documentation, https://www.attrs.org/",
+          "Changelog, https://www.attrs.org/en/stable/changelog.html",
+          "GitHub, https://github.com/python-attrs/attrs",
+          "Funding, https://github.com/sponsors/hynek",
+          "Tidelift, https://tidelift.com/subscription/pkg/pypi-attrs?utm_source=pypi-attrs&utm_medium=pypi"
+        ],
+        "provides_extra": [
+          "benchmark",
+          "cov",
+          "dev",
+          "docs",
+          "tests",
+          "tests-mypy"
+        ]
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.11.4",
+    "os_name": "posix",
+    "platform_machine": "arm64",
+    "platform_release": "23.6.0",
+    "platform_system": "Darwin",
+    "platform_version": "Darwin Kernel Version 23.6.0: Tue Apr 21 20:28:28 PDT 2026; root:xnu-10063.141.1.712.16~1/RELEASE_ARM64_T8112",
+    "python_full_version": "3.11.4",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.11",
+    "sys_platform": "darwin"
+  }
+}

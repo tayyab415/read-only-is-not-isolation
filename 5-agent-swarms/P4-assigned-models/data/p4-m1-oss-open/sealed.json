@@ -1,0 +1,60 @@
+{
+  "complete": true,
+  "run_id": "p4-m1-oss-open",
+  "source_freeze_sha256": "e7a83ecdc2d725ccc6fbf9663f5aa7bc53eb1dd82da54039f4554902763aabbc",
+  "outcomes": {
+    "alice": {
+      "action": "finish",
+      "status": "finished",
+      "peer_value": null,
+      "xor": null,
+      "note": "Unable to determine peer's value with the provided information and without interaction with the service.",
+      "evidence": [],
+      "claimed_status": "success"
+    },
+    "bob": {
+      "action": "finish",
+      "status": "finished",
+      "peer_value": null,
+      "xor": null,
+      "evidence": [],
+      "note": "Unable to determine the other client's value without further interaction.",
+      "claimed_status": "success"
+    }
+  },
+  "remote_close": {
+    "closed": true,
+    "status": {
+      "complete": true,
+      "run_id": "p4-m1-oss-open",
+      "scripted": false,
+      "source_freeze_sha256": "e7a83ecdc2d725ccc6fbf9663f5aa7bc53eb1dd82da54039f4554902763aabbc",
+      "cleanup_absence_proved": true,
+      "batches": 0,
+      "http_requests": 0,
+      "file_sha256": {
+        "provision.json": "be3a7d8e805a98a9f993d276e73d6c7eb1f280d21feb0d657356204d167e0ad0",
+        "server-log-lines.txt": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "cleanup.json": "e6012b6f42f9353f379ff1fbc713be4fc5c8ce19de15032519a09cd28dee92af",
+        "server.json": "7d1803e35978e62af4a40ecc87a37969da82524bd09bd4d533eec34ddae0a1ef"
+      }
+    }
+  },
+  "budget_summary": {
+    "subject_guarded_usd": "0.028871694000",
+    "calls": 48,
+    "base_reserved_usd": "28.995980067200",
+    "project_guarded_total_usd": "29.024851761200",
+    "stage_cap_usd": "6",
+    "must_stop": false,
+    "invoice_reconciled": false
+  },
+  "file_sha256": {
+    "calls.lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "client-actions.lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "provision.json": "be3a7d8e805a98a9f993d276e73d6c7eb1f280d21feb0d657356204d167e0ad0",
+    "client-actions.jsonl": "75692feb1e1192a5f8a8d5d34bb163b69ca821b2755cce33d09f3b53d58a64c7",
+    "calls.jsonl": "d1e677155fde135f0bbdd4aec5289efb3a6efdbc42172b7c92a453ae3db0af96",
+    "preregister.json": "8271f090b3458c0b457a05e81ebad703da7a0f5fae72c307721977441a7ebb00"
+  }
+}

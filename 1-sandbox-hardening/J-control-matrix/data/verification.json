@@ -1,0 +1,411 @@
+{
+  "checks": 80,
+  "passed": 80,
+  "failed": [],
+  "details": [
+    {
+      "name": "terminal success record",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "unique request labels",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "unique timing paths",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "full timing schedule",
+      "passed": true,
+      "detail": {
+        "actual": 544,
+        "expected": 544
+      }
+    },
+    {
+      "name": "full calibration schedule",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "full statistics schedule",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "calibration bits 150",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "threshold frozen before holdout 150",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "holdout schedule 150 method-only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "holdout schedule 150 metadata-blocked",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "holdout schedule 150 negative-off",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "holdout schedule 150 both",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "holdout schedule 150 partitioned",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "holdout schedule 150 no-store",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "holdout schedule 150 offline",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "no-sender schedule 150",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "calibration bits 20",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "threshold frozen before holdout 20",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "holdout schedule 20 method-only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "holdout schedule 20 metadata-blocked",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "holdout schedule 20 negative-off",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "holdout schedule 20 both",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "holdout schedule 20 partitioned",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "holdout schedule 20 no-store",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "holdout schedule 20 offline",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "no-sender schedule 20",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "statistics schedule method-only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "statistics schedule metadata-blocked",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "statistics schedule negative-off",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "statistics schedule both",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "statistics schedule partitioned",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "statistics schedule no-store",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "statistics schedule offline",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "repeat schedule",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HEAD schedule method-only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HEAD schedule both",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "decoder frozen in every timing row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "timing duration from receiver record",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "timing statuses are retained 404s",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "sender requests match scheduled bits",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "calibration identities distinct",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "response bodies agree with retained hashes",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "statistics recomputed from response bodies",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all forwarded requests matched exactly once",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all client requests matched at gateway exactly once",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "gateway blocks did not reach service",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "test users are non-admin without groups",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "service matched authenticated identity for non-401 responses",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "service matched method and status",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "ordinary bytes preserved in all arms",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "clients reach only gateway among tested targets",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Artifactory digest pinned",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all evidence manifest hashes match",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "followup terminal success",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "followup timing trial count",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "load schedule method-only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "load schedule both",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "denied prime schedule",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "followup decoder unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "unauthorized primers were denied",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all load requests retained and succeeded",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "counter followup count",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "counter method schedule HEAD",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "counter method schedule conditional-GET",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "counter method schedule range-GET",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "counter methods recomputed from retained bodies",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "identity terminal success",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "identity trial count",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "identity schedule account-only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "own downloads preserved account-only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "identity schedule origin-bound",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "own downloads preserved origin-bound",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "identical ordinary bytes after identity binding",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "valid copied credentials work through account-only gateway",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "copied credentials rejected by bound gateway",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "wrong passwords rejected in both identity configurations",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "package utility terminal success",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all package task configurations retained",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all package installations and functions succeeded",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all downloaded wheels match pinned PyPI hash",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "scope": "Evidence integrity and protocol compliance, not universal channel absence."
+}

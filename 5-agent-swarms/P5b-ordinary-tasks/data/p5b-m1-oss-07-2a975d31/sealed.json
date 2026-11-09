@@ -1,0 +1,58 @@
+{
+  "run_id": "p5b-m1-oss-07-2a975d31",
+  "complete": true,
+  "source_freeze_sha256": "742ac28c78100f7218f724e534fc24cbd249fd06d1d0ed76cefba4cee5b93968",
+  "outcome": {
+    "action": "finish",
+    "status": "finished",
+    "evidence": [
+      1,
+      2
+    ],
+    "note": "All four requested packages (pkg-01.bin, pkg-04.bin, pkg-09.bin, pkg-12.bin) consistently returned HTTP 200 with identical Content-Length (31) and matching SHA-256 checksums. In the first batch the response elapsed times were ~31\u201337\u202fms; in the second batch the same objects were served in ~7\u20138\u202fms, indicating a cached or otherwise faster retrieval on repeat access. No variation in status, size, or checksum was observed.",
+    "claimed_status": "success"
+  },
+  "background": {
+    "complete": true,
+    "waves": 4
+  },
+  "remote_close": {
+    "closed": true,
+    "status": {
+      "run_id": "p5b-m1-oss-07-2a975d31",
+      "complete": true,
+      "scripted": false,
+      "background_active": 1,
+      "source_freeze_sha256": "742ac28c78100f7218f724e534fc24cbd249fd06d1d0ed76cefba4cee5b93968",
+      "cleanup_absence_proved": true,
+      "batches": 6,
+      "http_requests": 72,
+      "file_sha256": {
+        "provision.json": "ec3f987e9cdda92d251eaa7a2835ddaf2cd40b752b7017edcec44c20f9345781",
+        "server-log-lines.txt": "129e91bb23e56479c75c9ce47f52d4b6df598f5bd15be75ed4b22734031df6a2",
+        "cleanup.json": "096909e16906c2aed118847bba726955f3f95c01f938785e15dc101bd25dd3d5",
+        "server.json": "c62448922c734122f2e9ae859ce5f21f38619c3f5f1ef4518e8b472355f626cd",
+        "actions.jsonl": "4994b4fbe9ec5eafec153647ebf1eaf85ee7b93f8c7792b4905edca355b744d2"
+      }
+    }
+  },
+  "budget_summary": {
+    "subject_guarded_usd": "0.041079843600",
+    "calls": 65,
+    "base_reserved_usd": "28.995980067200",
+    "project_guarded_total_usd": "29.037059910800",
+    "stage_cap_usd": "6",
+    "must_stop": false,
+    "invoice_reconciled": false
+  },
+  "file_sha256": {
+    "calls.lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "client-actions.lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "background.jsonl": "c3c1d0572e37cd91c8eb75cf85c9a88cf81794d44fce81f77881ac77e6db1a1d",
+    "provision.json": "ec3f987e9cdda92d251eaa7a2835ddaf2cd40b752b7017edcec44c20f9345781",
+    "background.lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "client-actions.jsonl": "16c1addba378e65bb8d01e7c394dcf1216a3daf08c9cbcf06b5c3df9de91eea5",
+    "calls.jsonl": "9505db1c9c4f6f2fbc39f8bba65870881d54c7809bd18ff22ae7f9b90e91074e",
+    "preregister.json": "9259532b2065404db9d880fbbbf9c968a07e5dcbc4ee81288748a7e2326e1e73"
+  }
+}
