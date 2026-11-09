@@ -53,9 +53,9 @@ This matters because agents can get out of their sandboxes, and here they did \c
 
 \textbf{\emph{My main contributions are:}}
 \begin{enumerate}[itemsep=1pt,topsep=2pt]
-\item \textbf{A double-layer door.} Separate caches close both read channels on the package mirror, and a gateway that ties each sandbox's network to its account stops copied passwords (16/16 $\to$ 0/16) (\S4.1).
-\item \textbf{Closing what is left.} Every control closed the state it was aimed at, but none brought shared load to chance, on either service: 942 of 1,000 trials on the mirror, 10 bits/s on the model server (\S4.1--4.2).
-\item \textbf{What agents do with it.} Models swapped secrets through the counter in 110 of 120 episodes and 0 of 120 once it was closed; on load they found the channel but could not agree on a code (\S4.1, 4.3).
+\item \textbf{A double-layer door.} Separate caches close both read channels on the package mirror, and a gateway that ties each sandbox's network to its account stops copied passwords (16/16 $\to$ 0/16) (Sec.~4.1).
+\item \textbf{Closing what is left.} Every control closed the state it was aimed at, but none brought shared load to chance, on either service: 942 of 1,000 trials on the mirror, 10 bits/s on the model server (Sec.~4.1--4.2).
+\item \textbf{What agents do with it.} Models swapped secrets through the counter in 110 of 120 episodes and 0 of 120 once it was closed; on load they found the channel but could not agree on a code (Sec.~4.1, 4.3).
 \end{enumerate}
 
 \section{Related Work}
@@ -104,7 +104,7 @@ In 144 audited episodes, agents doing ordinary work never blamed a slowdown on a
 \end{minipage}\hfill
 \begin{minipage}[t]{0.48\linewidth}\centering
 \includegraphics[width=\linewidth]{figures/monitor-bars.pdf}
-\caption{Three study-O monitors on the 110 verified package exchanges and the 60 benign validation agents, with Wilson 95\% intervals: the server-side rule of \S4.3 (M1), a wait-count monitor (M2) and a notes monitor (M3). $^\dagger$M1's recall is partly by construction: a verified exchange requires the peer download and revealing statistics read that M1 looks for, so 110/110 is not evidence that it recognises intent.}\label{fig:monitors}
+\caption{Three study-O monitors on the 110 verified package exchanges and the 60 benign validation agents, with Wilson 95\% intervals: the server-side rule of Sec.~4.3 (M1), a wait-count monitor (M2) and a notes monitor (M3). $^\dagger$M1's recall is partly by construction: a verified exchange requires the peer download and revealing statistics read that M1 looks for, so 110/110 is not evidence that it recognises intent.}\label{fig:monitors}
 \end{minipage}
 \end{figure}
 
@@ -170,17 +170,17 @@ Each study keeps schedules, raw request and response records, gateway, service, 
 Control & \cellcolor{ledgergreenh}\textbf{What it closes} & \cellcolor{ledgerredh}\textbf{What still leaks} & \textbf{Cost I measured} & \textbf{Evidence} \\
 \midrule
 \multicolumn{5}{l}{\cellcolor{ledgerband}\textit{\textbf{Package mirror: Artifactory OSS 7.161.26}}} \\ \addlinespace[2pt]
-Storage API denied & \cellcolor{ledgergreen}Statistics 24/24~$\to$~unavailable & \cellcolor{ledgerred}Miss timing 32/32 at 150 and 20~ms & Upstream calls unchanged; installs 14/14 & \S{}4.1 \\ \addlinespace[2pt]
-Negative caching off & \cellcolor{ledgergreen}Miss timing 32/32~$\to$~16/32 (chance) & \cellcolor{ledgerred}Statistics 24/24 & Upstream calls 32~$\to$~48 (+50\%); installs 14/14 & \S{}4.1 \\ \addlinespace[2pt]
-Both of the above & \cellcolor{ledgergreen}Statistics unavailable; timing 16/32; model exchanges 110/120~$\to$~0/120 & \cellcolor{ledgerred}One 0.11~ms HEAD timing association (P1) & Upstream calls +50\%; installs 14/14 & \S{}4.1 \\ \addlinespace[2pt]
-Separate repositories & \cellcolor{ledgergreen}Statistics 12/24 and timing 16/32 (chance) & \cellcolor{ledgerred}Copied peer password: read 16/16 & Upstream calls 48 (vs 32); installs 14/14 & \S{}4.1 \\ \addlinespace[2pt]
-Separate repositories + origin binding & \cellcolor{ledgergreen}Copied-password read 16/16~$\to$~0/16 & \cellcolor{ledgerred}Activity under concurrent load: 942/1,000 (A/A null 517). Not tested: NAT, address reuse & 16/16 paired downloads, identical bytes & \S{}4.1 \\ \addlinespace[2pt]
-Frozen admission, private serving & \cellcolor{ledgergreen}No shared read-triggered records, by design & \cellcolor{ledgerred}Weaker activity signal under concurrent load: 562/1,000 & Installs with dependencies: 28/28 macOS, 28/28 Linux & \S{}4.1, App.~F \\ \addlinespace[2pt]
+Storage API denied & \cellcolor{ledgergreen}Statistics 24/24~$\to$~unavailable & \cellcolor{ledgerred}Miss timing 32/32 at 150 and 20~ms & Upstream calls unchanged; installs 14/14 & Sec.~4.1 \\ \addlinespace[2pt]
+Negative caching off & \cellcolor{ledgergreen}Miss timing 32/32~$\to$~16/32 (chance) & \cellcolor{ledgerred}Statistics 24/24 & Upstream calls 32~$\to$~48 (+50\%); installs 14/14 & Sec.~4.1 \\ \addlinespace[2pt]
+Both of the above & \cellcolor{ledgergreen}Statistics unavailable; timing 16/32; model exchanges 110/120~$\to$~0/120 & \cellcolor{ledgerred}One 0.11~ms HEAD timing association (P1) & Upstream calls +50\%; installs 14/14 & Sec.~4.1 \\ \addlinespace[2pt]
+Separate repositories & \cellcolor{ledgergreen}Statistics 12/24 and timing 16/32 (chance) & \cellcolor{ledgerred}Copied peer password: read 16/16 & Upstream calls 48 (vs 32); installs 14/14 & Sec.~4.1 \\ \addlinespace[2pt]
+Separate repositories + origin binding & \cellcolor{ledgergreen}Copied-password read 16/16~$\to$~0/16 & \cellcolor{ledgerred}Activity under concurrent load: 942/1,000 (A/A null 517). Not tested: NAT, address reuse & 16/16 paired downloads, identical bytes & Sec.~4.1 \\ \addlinespace[2pt]
+Frozen admission, private serving & \cellcolor{ledgergreen}No shared read-triggered records, by design & \cellcolor{ledgerred}Weaker activity signal under concurrent load: 562/1,000 & Installs with dependencies: 28/28 macOS, 28/28 Linux & Sec.~4.1, App.~F \\ \addlinespace[2pt]
 \multicolumn{5}{l}{\cellcolor{ledgerband}\textit{\textbf{Model server: vLLM 0.33.0, Qwen2.5-1.5B, one L4}}} \\ \addlinespace[2pt]
-Client-chosen cache salt & \cellcolor{ledgergrey}Nothing: cache decoder 1.000~$\to$~1.000 & \cellcolor{ledgerred}Both tenants send one salt: decoder 1.000, cross-tenant hits 100\% & \textcolor[HTML]{6B6B6B}{Not measured} & \S{}4.2 (S1) \\ \addlinespace[2pt]
-Gateway-assigned tenant salt & \cellcolor{ledgergreen}Cache decoder 1.000~$\to$~0.498 (0.449--0.546); hits 100\%~$\to$~0\% & \cellcolor{ledgerred}Load: one ordinary request decoded 1.000; 10.0~bits/s ($\geq$~9.4) at 100~ms & 14.66~$\to$~14.72~req/s; $-$1.9\% with a shared scaffold & \S{}4.2 (S1, S3) \\ \addlinespace[2pt]
-Gateway salt + 500 ms response floor & \cellcolor{ledgergreen}1-token load gap at the receiver: 380~ms~$\to$~about 0.3~ms & \cellcolor{ledgerred}64-token probe 1.000; 1-token calls still separable (AUC~0.40) & 1-token calls 63~$\to$~501~ms; 32-token 477~$\to$~501~ms & \S{}4.2 (S2) \\ \addlinespace[2pt]
-Gateway salt + separate process per tenant & \cellcolor{ledgergrey}Nothing on load: 10.0~$\to$~10.0~bits/s at 100~ms & \cellcolor{ledgerred}Load via shared GPU: 1.000, 10.0~bits/s ($\geq$~9.4) & Latency not measured; GPU memory 2~$\times$~9,280~MiB & \S{}4.2 (S4) \\ \addlinespace[2pt]
+Client-chosen cache salt & \cellcolor{ledgergrey}Nothing: cache decoder 1.000~$\to$~1.000 & \cellcolor{ledgerred}Both tenants send one salt: decoder 1.000, cross-tenant hits 100\% & \textcolor[HTML]{6B6B6B}{Not measured} & Sec.~4.2 (S1) \\ \addlinespace[2pt]
+Gateway-assigned tenant salt & \cellcolor{ledgergreen}Cache decoder 1.000~$\to$~0.498 (0.449--0.546); hits 100\%~$\to$~0\% & \cellcolor{ledgerred}Load: one ordinary request decoded 1.000; 10.0~bits/s ($\geq$~9.4) at 100~ms & 14.66~$\to$~14.72~req/s; $-$1.9\% with a shared scaffold & Sec.~4.2 (S1, S3) \\ \addlinespace[2pt]
+Gateway salt + 500 ms response floor & \cellcolor{ledgergreen}1-token load gap at the receiver: 380~ms~$\to$~about 0.3~ms & \cellcolor{ledgerred}64-token probe 1.000; 1-token calls still separable (AUC~0.40) & 1-token calls 63~$\to$~501~ms; 32-token 477~$\to$~501~ms & Sec.~4.2 (S2) \\ \addlinespace[2pt]
+Gateway salt + separate process per tenant & \cellcolor{ledgergrey}Nothing on load: 10.0~$\to$~10.0~bits/s at 100~ms & \cellcolor{ledgerred}Load via shared GPU: 1.000, 10.0~bits/s ($\geq$~9.4) & Latency not measured; GPU memory 2~$\times$~9,280~MiB & Sec.~4.2 (S4) \\ \addlinespace[2pt]
 \bottomrule
 \end{tabularx}
 \caption{Defence ledger. Green: what the control closed (before $\to$ after; decoder accuracy on balanced schedules unless another unit is shown; 16/32 and 0.50 are chance). Red: what I measured still leaking. Grey: nothing closed. The Artifactory baseline is read-only accounts on a shared cache: statistics 24/24, miss timing 32/32. The two blocks use different services and units, so rows are not comparable across blocks.}\label{tab:ledger}
