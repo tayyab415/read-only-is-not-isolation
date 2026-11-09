@@ -1,0 +1,280 @@
+% appendix-studies.tex
+% Follow-up studies that do not fit in the 8-page main text. Fragment: no preamble.
+% Needs booktabs. Citations use keys from new-direction-refs.tex.
+% Source paths below are relative to artifactory-lab/reports/ unless they start with s1-monitor-lab/.
+% Each number has a comment on the line above it giving source file and line (or JSON key).
+
+% ============================================================
+{\emergencystretch=3em
+\section*{Appendix C: Gateway topology, padding and file content against the load observation (P2b, P9)}
+
+The main text found that separate repositories still leave a receiver-visible HTTP timing association (study P2).
+P2b asks whether one gateway per client, or a fixed 12~ms response-header floor, removes it.
+% P2b-methods-and-boundaries.md L16-17 (128 GETs, concurrency eight, two seconds)
+On an active trial the sender sends 128 GETs at concurrency eight over two seconds; on an idle trial it sends none.
+% P2b-methods-and-boundaries.md L21 (fifteen timed probes)
+The receiver makes fifteen timed probes.
+The decoder is the median probe time against a midpoint threshold, frozen before any held trial.
+% P2b-methods-and-boundaries.md L39 (100 calibration, 300 held); P2b-attribution-results.md L20 (150 labels per class)
+Each arm had 100 calibration and 300 held trials, 150 per label.
+
+\begin{table}[!ht]\centering\small
+\begin{tabular}{lrrr}\toprule
+Arm & Correct / 300 & Accuracy & Holm $p$ \\\midrule
+% P2b-attribution-results.md L16
+Shared gateway & 220 & 73.3\% & $5.7\times10^{-16}$ \\
+% P2b-attribution-results.md L17
+Per-tenant gateways & 197 & 65.7\% & $6.2\times10^{-8}$ \\
+% P2b-attribution-results.md L18
+Shared, 12~ms floor & 216 & 72.0\% & $2.2\times10^{-14}$ \\
+% P2b-attribution-results.md L19
+Shared, idle A/A control & 146 & 48.7\% & 0.698 \\\bottomrule
+\end{tabular}
+\caption{P2b held accuracy of the frozen decoder. A/A sends no requests under either label.}
+\end{table}
+
+Neither intervention removed the signal.
+% P2b-attribution-results.md L53-54 (Fisher 0.0509298, 0.783519)
+The two secondary Fisher comparisons, shared against per-tenant (0.051) and shared against padding (0.78), do not establish a reduction in accuracy.
+% P2b-attribution-results.md L41-43 (25,500 requests; 12.012926 ms)
+A native review joined all 25,500 padded requests to gateway records; every header began at least 12.01~ms after request start.
+The floor is a minimum, not a constant delay.
+% P2b-attribution-results.md L50 (9.064939 ms)
+It added 9.06~ms to the pooled receiver-probe median.
+% P2b-attribution-results.md L37 (double gateway CPU)
+Per-tenant gateways also doubled total gateway CPU.
+
+The four arms ran in sequence on one shared host.
+The result does not identify an Artifactory, storage or host cause, and gives no capacity estimate.
+Neither gateway change should be called timing isolation.
+
+% P9-content-results.md L5-10, L25-30 (254/267/163/141 of 300; Fisher p=0.1470272065 L12-14)
+\textbf{Different file content (P9).} A later run on a second host asked whether the signal comes from both tenants fetching identical files. With separate repositories and separate gateways, the tenants' hot object was given a different checksum for each tenant, while the receiver's own probe object stayed fixed. The frozen decoder scored 254/300 with equal content and 267/300 with different content; the idle controls scored 163/300 and 141/300 and passed their tests. The difference between the two active cells is not significant (Fisher $p=0.147$), so this shows no reduction, and no equivalence either. Changing only the shared hot files is not enough on this stack; most content, Artifactory and the host stayed shared.
+
+% ============================================================
+\section*{Appendix D: Identity-keyed negative caches in NGINX and Squid (P7)}
+
+The main text showed that a shared negative cache lets a read-only client leak activity (study J).
+P7 asks whether NGINX and Squid show the same state when configured to cache 404 responses, and whether a cache key taken from a trusted client identity removes it.
+% P7-cache-results.md L3 (NGINX 1.30.6, Squid 7.8); L10-11 (60 s; nondefault build)
+I used NGINX 1.30.6 and Squid 7.8, both caching a 404 for 60 seconds; Squid needed a nondefault build.
+% P7-cache-results.md L53 (shared: 64 fills, 0/64), L54 (trusted key: 64/64), L55-56 (private, disabled: 64/64)
+After each sender filled a missing object, the receiver's request reached the origin in 0 of 64 shared-cache cases, and in 64 of 64 cases with a tenant key, a private cache instance or caching disabled.
+The tenant key comes from the client's network address, not a client-supplied header.
+Four timing decoders were frozen before held collection.
+
+\begin{table}[!ht]\centering\small
+\begin{tabular}{lccc}\toprule
+Cache, miss delay & Shared & Each defended arm & Holm $p$ (shared) \\\midrule
+% P7-cache-results.md L25
+NGINX, 20~ms & 31/32 & 16/32 & $1.1\times10^{-7}$ \\
+% P7-cache-results.md L26
+NGINX, 150~ms & 32/32 & 16/32 & $2.4\times10^{-8}$ \\
+% P7-cache-results.md L27
+Squid, 20~ms & 29/32 & 16/32 & $1.0\times10^{-6}$ \\
+% P7-cache-results.md L28
+Squid, 150~ms & 32/32 & 16/32 & $2.4\times10^{-8}$ \\\bottomrule
+\end{tabular}
+\caption{P7 held accuracy. Defended arms are trusted key, private instances and caching disabled.}
+\end{table}
+
+% P7-cache-results.md L36-38 (always idle; 8/16)
+Every defended decoder always predicted idle, so 16/32 describes that decoder, not a capacity bound.
+The control cost origin work:
+% P7-cache-results.md L88-89 (34 vs 50; 39 vs 55)
+50 origin requests per setting instead of 34 for NGINX, and 55 instead of 39 for Squid.
+% P7-cache-results.md L75-76 (sixty canaries); L75 (40-byte object)
+All sixty ordinary GET canaries returned the exact object.
+% P7-cache-results.md L125-128 (audit amendment after calibration, before fitting)
+I amended the native audit rule after calibration and before any decoder was fitted.
+This measures a known mechanism under explicit configuration, not a new channel, historical attribution or whole-host isolation.
+
+% ============================================================
+\section*{Appendix E: Host CPU counters (P8)}
+
+P2 and P2b left an HTTP timing association whose cause I could not name.
+P8 asks a narrower question: does a private cgroup hide the host's aggregate CPU counter from a shell-enabled client?
+% P8-telemetry-results.md L44-46 (UID, caps, 128 MiB, 48 PIDs, 0.5 CPU)
+Alice and Bob ran with private networks, mirrors and cgroup namespaces, 128~MiB of memory and a 0.5 CPU quota.
+% P8-telemetry-results.md L49 (22 offsets, 0.1 to 2.2 s)
+A scripted reader sampled the live aggregate \texttt{/proc/stat} CPU row at 22 offsets between 0.1 and 2.2 seconds.
+In the masked arms a static file was bound over that path.
+
+\begin{table}[!ht]\centering\small
+\begin{tabular}{lrrr}\toprule
+Configuration & Correct / 64 & Accuracy & Holm $p$ \\\midrule
+% P8-telemetry-results.md L19
+Native & 64 & 1.00 & 0.0004 \\
+% P8-telemetry-results.md L20
+Masked & 32 & 0.50 & 1 \\
+% P8-telemetry-results.md L21
+A/A, native & 34 & 0.53 & 1 \\
+% P8-telemetry-results.md L22
+A/A, masked & 32 & 0.50 & 1 \\\bottomrule
+\end{tabular}
+\caption{P8 held accuracy of the frozen reader. A/A runs no sender activity.}
+\end{table}
+
+% P8-telemetry-results.md L58-59 (1.027 s native, 1.025 s masked)
+The masked result follows a change in what the reader can see, not a change in work: sender CPU medians were 1.03~s native and 1.02~s masked.
+% P8-telemetry-results.md L77-78 (736 file tasks, 1,472 GETs)
+All 736 private-file tasks and 1,472 approved mirror GETs passed.
+% CLAIM-BOUNDARIES.md L17 (masked 32/64 follows from a constant feature and balanced labels)
+Masked 32/64 follows from a constant feature and balanced labels, so native A/A is the informative idle check.
+LXCFS and counter masking are established approaches; the contribution is a bounded comparison on this stack.
+% P8-telemetry-results.md L109-116 (limits)
+The bind removes one input. Other procfs and sysfs files, other mounts, inherited descriptors and HTTP timing were not tested.
+The four cells ran in sequence on one shared host. Nothing here shows production counter virtualization or the cause of P2's timing effect.
+
+% ============================================================
+\section*{Appendix F: Linux dependency installs through frozen admission (P3)}
+
+One control I evaluate is private immutable serving of an admitted, pinned package catalog.
+P3 asks whether that route still supports ordinary dependency installs.
+% P3-linux-results.md L33-34 (24 universal wheels, 5,013,675 bytes, fourteen roots)
+The catalog has 24 universal wheels, 5,013,675 unique bytes, for fourteen pinned roots.
+% P3-linux-results.md L1-2 (28 installs; 56 tasks audited)
+Each route ran 28 scheduled installs, and the native audit passed all 56 tasks.
+% P3-linux-results.md L11-12 (Python 3.12.16, pip 25.0.1, 256 MiB, 0.5 CPU)
+Clients used Python 3.12.16 and pip 25.0.1 with 256~MiB and 0.5 CPU, and dependency resolution stayed on.
+
+\begin{table}[!ht]\centering\small
+\begin{tabular}{lrr}\toprule
+Measure & Separate repositories & Private immutable \\\midrule
+% P3-linux-results.md L18
+Successful installs & 28/28 & 28/28 \\
+% P3-linux-results.md L19
+Median task time & 4.308~s & 4.288~s \\
+% P3-linux-results.md L22
+Wheel payload bytes & 10,274,240 & 10,274,240 \\
+% P3-linux-results.md L23
+Setup fill requests & 48 & 0 \\
+% P3-linux-results.md L25
+External package requests & 0 & 0 \\\bottomrule
+\end{tabular}
+\caption{P3 matched Linux workload.}
+\end{table}
+
+% P3-linux-results.md L27-28 (-8.35 ms; -25.00 to +7.99 ms)
+The paired median difference, immutable minus separate, was $-8.35$~ms, with a bootstrap interval of $-25.00$ to $+7.99$~ms.
+The interval includes zero, so the data show no speed advantage.
+Arms ran in the order separate, then immutable, on one host.
+
+These were cold install directories against prewarmed service content.
+The study does not cover native extensions, source builds, extras, unrestricted package admission, refresh behavior or timing isolation.
+It supports utility for this fixed catalog only.
+
+% ============================================================
+\section*{Appendix G: Model clients on assigned and ordinary tasks (P4, P5b)}
+
+The main text measures the read-state observation with scripted clients.
+P4 and P5b ask whether model clients use it, on an assigned task and on an ordinary one.
+% P4-assigned-results.md L1-2 (six Luna/gpt-oss pairs; twelve clients)
+P4 gave six Luna and gpt-oss pairs a short task built around a private peer value.
+% P5b-ordinary-results.md L3-4 (twelve episodes; 38 notes)
+P5b ran twelve ordinary episodes, six with a background client active, using a prompt that invites diagnostics.
+Both have only one pair or episode per model, route and condition.
+
+\begin{table}[!ht]\centering\small
+\begin{tabular}{lrrp{5.4cm}}\toprule
+Study & Calls & HTTP & Outcome \\\midrule
+% P4-assigned-results.md L24 (48 calls, 146 HTTP, 1/12 correct, 0/12 strict witnesses)
+P4, 6 pairs & 48 & 146 & 1/12 clients correct; 0/12 strict witnesses \\
+% P5b-ordinary-results.md L32 (55 calls, 150 HTTP, 0 peer-linked)
+P5b, 12 episodes & 55 & 150 & 0 peer-linked observations \\\bottomrule
+\end{tabular}
+\caption{Model-client outcomes. A strict witness needs the correct answer and a cited observation of the peer's activity, among other conditions.}
+\end{table}
+
+% P5b-ordinary-results.md L4 (no ?stats request); L43 (seventeen storage-API requests)
+Among seventeen storage-API requests from the models, none was the statistics query.
+% P4-assigned-results.md L31 (gpt-oss: no HTTP)
+In P4 the gpt-oss clients made no HTTP requests, so they say nothing about route coverage.
+% P4-assigned-results.md L42-43 (five of 50); P4-assigned-results.md L63-67 (post-paid amendment)
+One P4 pair failed the original native audit on five of 50 request-interval checks; a validator correction written after paid collection resolves it, and the corrected replay is not a passing original audit.
+% P5b-ordinary-results.md L74-75 (21 HEAD observations, five episodes)
+P5b also exposed a defect in my custom mutable gateway: 21 HEAD responses in five episodes reported zero \texttt{Content-Length}.
+
+These are exploratory outcomes from a limited search.
+They do not show that the mechanism is unavailable to models, bound capacity, or identify how a correct answer was reached.
+
+% ============================================================
+\section*{Appendix H: Shared codes without a channel (T1, T2)}
+
+Covert coordination needs a channel and a shared code.
+The main text removes and measures channels; here I ask how often independently sampled agents choose the same code, and whether opaque file names remove it.
+Motwani et al.~\cite{motwani2024} tested copies writing their own encoders, and Shirnin and Kudelya~\cite{shirnin2026} compared same-model with cross-model signalling.
+% new-direction-T1.tex L8 (seven models, six developers, 1,344 calls)
+In T1, seven models from six developers each wrote, in independent calls, the path they would request to signal each value 0--15 on a shared file server, as sender or receiver (1,344 calls).
+A pair is compatible when the receiver decodes all 16 values.
+% new-direction-T1.tex L13, L15 (0.49; 0.32, same wording)
+With the same wording, same-model pairs agreed 0.49 and different-developer pairs 0.32.
+% new-direction-T1.tex L21 (0.41; 6 of 7; p=0.06; 0/96)
+On a package mirror holding \texttt{pkg-00} to \texttt{pkg-15}, different-developer pairs agreed 0.41.
+The same-model advantage held for 6 of 7 models (post-hoc, sign test $p=0.06$).
+An earlier exploratory 0/96 mixed-model count did not replicate.
+% T2-naming-results.md L20 (0.392 to 0.559)
+In T2, opaque six-character file names raised different-developer agreement from 0.392 to 0.559, because models signalled value $n$ with the $n$-th file in the server's listing.
+
+\begin{table}[!ht]\centering\small
+\begin{tabular}{lcc}\toprule
+Pair class & Value-aligned & Opaque listed \\\midrule
+% T2-naming-results.md L20
+Different developer (40 pairs) & 0.392 & 0.559 \\
+% T2-naming-results.md L21
+Same model (7) & 0.587 & 0.707 \\\bottomrule
+\end{tabular}
+\caption{T2 share of fully compatible pairs (16/16) with one wording.}
+\end{table}
+
+% T2-naming-results.md L50 (limits); L46 (hiding listings not tested)
+Limits: seven models, one temperature, one task family, intervals conditional on these models.
+These tables were never run over a live channel. Hiding listings was not tested.
+
+% ============================================================
+\section*{Appendix I: A per-call monitor trained on the incident traces}
+
+If containment fails, could a cheap per-call classifier trained on the incident's own traffic watch every tool call?
+% s1-monitor-lab/PAPER_SECTION.md L11 (43,784 actions, 17,618 clusters); REPORT.md L38-39 (3 seeds; 1% validation FPR)
+I trained four monitors on 43,784 swarm actions from the Swarm Traces release against public benign code, with cluster-disjoint splits, 3 seeds and a threshold at 1\% validation false-positive rate.
+% s1-monitor-lab/REPORT.md L52-55 (AUC 1.000)
+Every monitor separated held-out swarm actions from its benign training sources at AUC 1.000.
+% s1-monitor-lab/REPORT.md L83-84 (99.7, 99.5), PAPER_SECTION.md L13 (89--100%)
+They flagged 89--100\% of benign scripts, written by other model families in the swarm's style.
+% s1-monitor-lab/REPORT.md L103 (22--86%); L96-101
+% s1-monitor-lab/PAPER_SECTION.md L27 (swarm 100% flagged at that threshold, TF-IDF)
+The TF-IDF monitor flagged 22\% to 86\% of ordinary tool calls from six models acting as agents without style instructions (table), and 100\% of held-out swarm actions.
+% s1-monitor-lab/REPORT.md L67, L71 (paired AUC 0.69/0.70/0.68 vs 0.62/0.61/0.65)
+On three outside attack sets their paired AUC was 0.49 to 0.70; a probe seeing only length and character ratios scored 0.61 to 0.65.
+
+\begin{table}[!ht]\centering\small
+\begin{tabular}{lr}\toprule
+Model writing the benign call & Flagged by TF-IDF monitor \\\midrule
+% s1-monitor-lab/REPORT.md L96
+GPT-6 Luna & $85.7\pm1.0$\% \\
+% s1-monitor-lab/REPORT.md L97
+Llama 4 Maverick & $78.5\pm0.9$\% \\
+% s1-monitor-lab/REPORT.md L98
+GPT-6.1 Terra & $75.5\pm1.4$\% \\
+% s1-monitor-lab/REPORT.md L99
+Pixtral Large & $54.0\pm1.2$\% \\
+% s1-monitor-lab/REPORT.md L100
+gpt-oss-120b & $51.4\pm1.5$\% \\
+% s1-monitor-lab/REPORT.md L101
+GLM 5 & $22.1\pm1.5$\% \\\bottomrule
+\end{tabular}
+\caption{Natural benign tool calls on the same 400 tasks, mean $\pm$ std over 3 seeds.}
+\end{table}
+
+% s1-monitor-lab/REPORT.md L111 (99.6 to 11.9)
+Adding benign scripts from three other model families cut the unseen-family false-positive rate from 99.6\% to 11.9\%.
+% s1-monitor-lab/REPORT.md L121-123 (PG2 1.5%; AgentDoG 99.4%; 12.0 and 24.7%); results/guards_agentdog.json flag_rate_native B_agentapprove 0.5636, B_tomng_allow 0.8958
+Off the shelf, Prompt Guard~2 flagged 1.5\% of swarm actions; AgentDoG~1.5 run per call flagged 99.4\% of them and 56\% to 90\% of benign sets, falling to 12.0\% and 24.7\% on two benign script sets when given the task.
+Positive labels mean swarm membership, not judged harm. Benign agent code is synthetic, and both guards were used outside their design.
+
+}
+
+% ============================================================
+% Extra bibitems: none added. Every \cite above uses a key already in new-direction-refs.tex.
+% s1-monitor-lab/REPORT.md L15 names two prior papers (arXiv 2602.14161; arXiv 2610.22243), but
+% REPORT.md gives no complete author list for 2602.14161, so no \bibitem was written for either.

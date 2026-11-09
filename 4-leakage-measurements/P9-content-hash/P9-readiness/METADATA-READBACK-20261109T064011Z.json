@@ -1,0 +1,9 @@
+{
+  "utc": "2026-11-09T06:40:11.149810+00:00",
+  "scope": "Metadata and complete seals only; no held observations accessed",
+  "returncode": 1,
+  "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 4, in <module>\n  File \"/usr/lib/python3.12/pathlib.py\", line 1029, in read_text\n    with self.open(mode='r', encoding=encoding, errors=errors) as f:\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/pathlib.py\", line 1015, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/home/ubuntu/workspaces/artifactory-lab/next/P9-content/sequence-holdout.json'\n",
+  "remote_program": "from pathlib import Path\nimport json,subprocess,hashlib\nr=Path.home()/\"workspaces/artifactory-lab/next/P9-content\"\nstatus=json.loads((r/\"sequence-holdout.json\").read_text())\nseals={}\nfor arm in (\"equal\",\"distinct\",\"aa-equal\",\"aa-distinct\"):\n p=r/\"data\"/arm/\"holdout-sealed.json\"\n if p.exists():seals[arm]=json.loads(p.read_text())\ntmux=subprocess.run([\"tmux\",\"has-session\",\"-t\",\"p9-holdout\"],capture_output=True).returncode==0\nproc=subprocess.run([\"ps\",\"-p\",\"286345\",\"-o\",\"pid=,etime=,args=\"],capture_output=True,text=True)\nprint(json.dumps({\"status\":status,\"seals\":seals,\"tmux_live\":tmux,\"process\":proc.stdout.strip(),\"model_sha256\":hashlib.sha256((r/\"data/models.json\").read_bytes()).hexdigest()}))\n",
+  "remote_program_sha256": "1e7050fe1ca54d7a50a0fd3fccb2ddb8434860bc760d89426cceebf1e396b202",
+  "stdout": ""
+}

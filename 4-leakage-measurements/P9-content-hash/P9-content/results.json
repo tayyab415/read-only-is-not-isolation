@@ -1,0 +1,63 @@
+{
+  "arms": {
+    "equal": {
+      "trials": 300,
+      "correct": 254,
+      "accuracy": 0.8466666666666667,
+      "p_one_sided": 6.005447985823301e-36,
+      "median_S_active_ms": 3.4006815,
+      "median_S_idle_ms": 3.851055,
+      "probe_latency_median_ms": 3.632343,
+      "probe_latency_p95_ms": 4.64166,
+      "failed_trials": 0,
+      "p_holm": 1.8016343957469902e-35
+    },
+    "distinct": {
+      "trials": 300,
+      "correct": 267,
+      "accuracy": 0.89,
+      "p_one_sided": 7.48649089702859e-47,
+      "median_S_active_ms": 3.3720035,
+      "median_S_idle_ms": 3.8184425,
+      "probe_latency_median_ms": 3.565659,
+      "probe_latency_p95_ms": 4.611469,
+      "failed_trials": 0,
+      "p_holm": 2.994596358811436e-46
+    },
+    "aa-equal": {
+      "trials": 300,
+      "correct": 163,
+      "accuracy": 0.5433333333333333,
+      "p_one_sided": 0.07963717590007123,
+      "median_S_active_ms": 3.862471,
+      "median_S_idle_ms": 3.8061165,
+      "probe_latency_median_ms": 3.836489,
+      "probe_latency_p95_ms": 4.714005,
+      "failed_trials": 0,
+      "p_holm": 0.15927435180014246
+    },
+    "aa-distinct": {
+      "trials": 300,
+      "correct": 141,
+      "accuracy": 0.47,
+      "p_one_sided": 0.8952570261109284,
+      "median_S_active_ms": 3.8324635000000002,
+      "median_S_idle_ms": 3.8031610000000002,
+      "probe_latency_median_ms": 3.837839,
+      "probe_latency_p95_ms": 4.739038,
+      "failed_trials": 0,
+      "p_holm": 0.8952570261109284
+    }
+  },
+  "comparisons": {
+    "equal_vs_distinct": {
+      "fisher_p_two_sided": 0.14702720652959267,
+      "accuracy_difference": -0.043333333333333335
+    }
+  },
+  "freeze_sha256": "64a21ea74129daeaabdb5ad9ed73238e7a65579e30c4a9fc6b1561212f959d8f",
+  "audit_sha256": "17ab2502425dc703c6be5431185422726da89df8a4b1a1e2eb66d5835a1b4543",
+  "primary_family": "Exact balanced-sender-direction conditional assignment tails, four-arm Holm",
+  "null_gate_passed": true,
+  "scope": "Fixed-decoder content intervention on one shared host; no capacity or unique internal cause."
+}

@@ -1,0 +1,597 @@
+{
+  "run_id": "p9-h1-aa-distinct",
+  "configuration": "separate",
+  "repositories": {
+    "alice": "p1-p9-h1-aa-distinct-alice",
+    "bob": "p1-p9-h1-aa-distinct-bob"
+  },
+  "users": {
+    "alice": "p1-p9-h1-aa-distinct-alice",
+    "bob": "p1-p9-h1-aa-distinct-bob",
+    "prefetch": "p1-p9-h1-aa-distinct-prefetch"
+  },
+  "negative_cache_period_seconds": 1800,
+  "storage_blocked": true,
+  "prewarm_count": 32,
+  "provision_log": [
+    {
+      "label": "create-user-alice",
+      "method": "POST",
+      "path": "/ui/users",
+      "status": 201
+    },
+    {
+      "label": "create-user-bob",
+      "method": "POST",
+      "path": "/ui/users",
+      "status": 201
+    },
+    {
+      "label": "create-user-prefetch",
+      "method": "POST",
+      "path": "/ui/users",
+      "status": 201
+    },
+    {
+      "label": "create-repo",
+      "method": "POST",
+      "path": "/ui/admin/repositories",
+      "status": 200
+    },
+    {
+      "label": "read-repo",
+      "method": "GET",
+      "path": "/ui/admin/repositories/remote/p1-p9-h1-aa-distinct-alice",
+      "status": 200
+    },
+    {
+      "label": "create-permission",
+      "method": "POST",
+      "path": "/ui/permissiontargets",
+      "status": 201
+    },
+    {
+      "label": "create-repo",
+      "method": "POST",
+      "path": "/ui/admin/repositories",
+      "status": 200
+    },
+    {
+      "label": "read-repo",
+      "method": "GET",
+      "path": "/ui/admin/repositories/remote/p1-p9-h1-aa-distinct-bob",
+      "status": 200
+    },
+    {
+      "label": "create-permission",
+      "method": "POST",
+      "path": "/ui/permissiontargets",
+      "status": 201
+    },
+    {
+      "label": "prewarm-p1-p9-h1-aa-distinct-alice-00",
+      "method": "GET",
+      "path": "/p1-p9-h1-aa-distinct-alice/pkg-00.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p9-h1-aa-distinct-alice-01",
+      "method": "GET",
+      "path": "/p1-p9-h1-aa-distinct-alice/pkg-01.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p9-h1-aa-distinct-alice-02",
+      "method": "GET",
+      "path": "/p1-p9-h1-aa-distinct-alice/pkg-02.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p9-h1-aa-distinct-alice-03",
+      "method": "GET",
+      "path": "/p1-p9-h1-aa-distinct-alice/pkg-03.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p9-h1-aa-distinct-alice-04",
+      "method": "GET",
+      "path": "/p1-p9-h1-aa-distinct-alice/pkg-04.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p9-h1-aa-distinct-alice-05",
+      "method": "GET",
+      "path": "/p1-p9-h1-aa-distinct-alice/pkg-05.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p9-h1-aa-distinct-alice-06",
+      "method": "GET",
+      "path": "/p1-p9-h1-aa-distinct-alice/pkg-06.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p9-h1-aa-distinct-alice-07",
+      "method": "GET",
+      "path": "/p1-p9-h1-aa-distinct-alice/pkg-07.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p9-h1-aa-distinct-alice-08",
+      "method": "GET",
+      "path": "/p1-p9-h1-aa-distinct-alice/pkg-08.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p9-h1-aa-distinct-alice-09",
+      "method": "GET",
+      "path": "/p1-p9-h1-aa-distinct-alice/pkg-09.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p9-h1-aa-distinct-alice-10",
+      "method": "GET",
+      "path": "/p1-p9-h1-aa-distinct-alice/pkg-10.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p9-h1-aa-distinct-alice-11",
+      "method": "GET",
+      "path": "/p1-p9-h1-aa-distinct-alice/pkg-11.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p9-h1-aa-distinct-alice-12",
+      "method": "GET",
+      "path": "/p1-p9-h1-aa-distinct-alice/pkg-12.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p9-h1-aa-distinct-alice-13",
+      "method": "GET",
+      "path": "/p1-p9-h1-aa-distinct-alice/pkg-13.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p9-h1-aa-distinct-alice-14",
+      "method": "GET",
+      "path": "/p1-p9-h1-aa-distinct-alice/pkg-14.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p9-h1-aa-distinct-alice-15",
+      "method": "GET",
+      "path": "/p1-p9-h1-aa-distinct-alice/pkg-15.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p9-h1-aa-distinct-bob-00",
+      "method": "GET",
+      "path": "/p1-p9-h1-aa-distinct-bob/pkg-00.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p9-h1-aa-distinct-bob-01",
+      "method": "GET",
+      "path": "/p1-p9-h1-aa-distinct-bob/pkg-01.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p9-h1-aa-distinct-bob-02",
+      "method": "GET",
+      "path": "/p1-p9-h1-aa-distinct-bob/pkg-02.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p9-h1-aa-distinct-bob-03",
+      "method": "GET",
+      "path": "/p1-p9-h1-aa-distinct-bob/pkg-03.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p9-h1-aa-distinct-bob-04",
+      "method": "GET",
+      "path": "/p1-p9-h1-aa-distinct-bob/pkg-04.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p9-h1-aa-distinct-bob-05",
+      "method": "GET",
+      "path": "/p1-p9-h1-aa-distinct-bob/pkg-05.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p9-h1-aa-distinct-bob-06",
+      "method": "GET",
+      "path": "/p1-p9-h1-aa-distinct-bob/pkg-06.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p9-h1-aa-distinct-bob-07",
+      "method": "GET",
+      "path": "/p1-p9-h1-aa-distinct-bob/pkg-07.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p9-h1-aa-distinct-bob-08",
+      "method": "GET",
+      "path": "/p1-p9-h1-aa-distinct-bob/pkg-08.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p9-h1-aa-distinct-bob-09",
+      "method": "GET",
+      "path": "/p1-p9-h1-aa-distinct-bob/pkg-09.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p9-h1-aa-distinct-bob-10",
+      "method": "GET",
+      "path": "/p1-p9-h1-aa-distinct-bob/pkg-10.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p9-h1-aa-distinct-bob-11",
+      "method": "GET",
+      "path": "/p1-p9-h1-aa-distinct-bob/pkg-11.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p9-h1-aa-distinct-bob-12",
+      "method": "GET",
+      "path": "/p1-p9-h1-aa-distinct-bob/pkg-12.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p9-h1-aa-distinct-bob-13",
+      "method": "GET",
+      "path": "/p1-p9-h1-aa-distinct-bob/pkg-13.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p9-h1-aa-distinct-bob-14",
+      "method": "GET",
+      "path": "/p1-p9-h1-aa-distinct-bob/pkg-14.bin",
+      "status": 200
+    },
+    {
+      "label": "prewarm-p1-p9-h1-aa-distinct-bob-15",
+      "method": "GET",
+      "path": "/p1-p9-h1-aa-distinct-bob/pkg-15.bin",
+      "status": 200
+    }
+  ],
+  "fixture_etag": "e8627e1a8b3b777cb5e58066954340fdbbc31e2b",
+  "receiver_etag_readback": {
+    "method": "GET",
+    "path": "/p1-p9-h1-aa-distinct-alice/pkg-15.bin",
+    "status": 200,
+    "body_sha256": "85c7795747cf1f3ac1e7d7f53d3faa6b9d9f3dc961aa9b692aaaddb943ace870",
+    "etag": "e8627e1a8b3b777cb5e58066954340fdbbc31e2b"
+  },
+  "content_intervention": {
+    "cell": "aa-distinct",
+    "distinct_hot_objects": true,
+    "rendered_upstream_source": "#!/usr/bin/env python3\n\"\"\"Stateless P1 package fixture with deliberately delayed misses.\"\"\"\nimport json\nimport re\nimport time\nfrom http.server import BaseHTTPRequestHandler, ThreadingHTTPServer\n\nPAYLOAD = b\"p1-meter fixture package bytes\\n\"\nDISTINCT = True\nPRESENT = re.compile(r\"^/pkg-(\\d\\d)\\.bin$\")\nMISSING_DELAY_MS = 150\n\n\nclass Handler(BaseHTTPRequestHandler):\n    def log_message(self, *_):\n        pass\n\n    def serve(self):\n        started = time.time_ns()\n        path = self.path.split(\"?\", 1)[0]\n        match = PRESENT.match(path)\n        if match and 0 <= int(match.group(1)) <= 15:\n            delay_ms, status, body = 0, 200, (b\"q\" + PAYLOAD[1:] if DISTINCT and int(match.group(1)) == 0 else PAYLOAD)\n        else:\n            delay_ms, status, body = MISSING_DELAY_MS, 404, b\"Missing P1 fixture\\n\"\n            time.sleep(delay_ms / 1000)\n        self.send_response(status)\n        self.send_header(\"Content-Type\", \"application/octet-stream\")\n        self.send_header(\"Content-Length\", str(len(body)))\n        if status == 200:\n            self.send_header(\"Last-Modified\", \"Sat, 08 Nov 2026 00:00:00 GMT\")\n        self.end_headers()\n        if self.command != \"HEAD\":\n            self.wfile.write(body)\n        print(json.dumps({\n            \"start_utc_ns\": started, \"end_utc_ns\": time.time_ns(),\n            \"method\": self.command, \"path\": self.path, \"status\": status,\n            \"delay_ms\": delay_ms, \"body_bytes\": len(body),\n            \"marker\": self.headers.get(\"User-Agent\"),\n        }), flush=True)\n\n    do_GET = serve\n    do_HEAD = serve\n\n\nThreadingHTTPServer((\"0.0.0.0\", 8000), Handler).serve_forever()\n",
+    "rendered_upstream_sha256": "5669b1bf53665c137ead128b1c8d487adcc0474c10b51808ee415667c33abc0a",
+    "upstream_mount": {
+      "Type": "bind",
+      "Source": "/home/ubuntu/workspaces/artifactory-lab/next/P9-content/fixture-sources/p9-h1-aa-distinct/upstream.py",
+      "Destination": "/upstream.py",
+      "Mode": "ro",
+      "RW": false,
+      "Propagation": "rprivate"
+    }
+  },
+  "arm": "aa-distinct",
+  "hosts": {
+    "alice": "p1-p9-h1-aa-distinct-gateway",
+    "bob": "p1-p9-h1-aa-distinct-gateway-bob"
+  },
+  "pad_ms": 0,
+  "gateway_queue_size": 5,
+  "negative_route_checks": {
+    "alice_cannot_reach_bob_gateway": true,
+    "bob_cannot_reach_alice_gateway": true
+  },
+  "boundary_readback": {
+    "containers": {
+      "alice": {
+        "name": "p1-p9-h1-aa-distinct-alice",
+        "user": "20001:20001",
+        "root_read_only": true,
+        "cap_drop": [
+          "ALL"
+        ],
+        "security_options": [
+          "no-new-privileges:true"
+        ],
+        "memory": 134217728,
+        "memory_swap": 134217728,
+        "nano_cpus": 500000000,
+        "pids_limit": 48,
+        "tmpfs": {
+          "/tmp": "rw,nosuid,nodev,size=16m"
+        },
+        "forbidden_environment_present": false,
+        "published_ports": {},
+        "attached_networks": [
+          "p1-p9-h1-aa-distinct-net-alice"
+        ],
+        "network_addresses": {
+          "p1-p9-h1-aa-distinct-net-alice": "172.19.0.1"
+        },
+        "image_id": "sha256:5e2bdb1b0d542d5039cffb8181c65930093949194a65c365dfb1b0fe13a4fa5b",
+        "bind_mount_destinations": [],
+        "mounts_read_only": true
+      },
+      "bob": {
+        "name": "p1-p9-h1-aa-distinct-bob",
+        "user": "20001:20001",
+        "root_read_only": true,
+        "cap_drop": [
+          "ALL"
+        ],
+        "security_options": [
+          "no-new-privileges:true"
+        ],
+        "memory": 134217728,
+        "memory_swap": 134217728,
+        "nano_cpus": 500000000,
+        "pids_limit": 48,
+        "tmpfs": {
+          "/tmp": "rw,nosuid,nodev,size=16m"
+        },
+        "forbidden_environment_present": false,
+        "published_ports": {},
+        "attached_networks": [
+          "p1-p9-h1-aa-distinct-net-bob"
+        ],
+        "network_addresses": {
+          "p1-p9-h1-aa-distinct-net-bob": "172.20.0.1"
+        },
+        "image_id": "sha256:5e2bdb1b0d542d5039cffb8181c65930093949194a65c365dfb1b0fe13a4fa5b",
+        "bind_mount_destinations": [],
+        "mounts_read_only": true
+      },
+      "gateway": {
+        "name": "p1-p9-h1-aa-distinct-gateway",
+        "user": "20001:20001",
+        "root_read_only": true,
+        "cap_drop": [
+          "ALL"
+        ],
+        "security_options": [
+          "no-new-privileges:true"
+        ],
+        "memory": 134217728,
+        "memory_swap": 134217728,
+        "nano_cpus": 500000000,
+        "pids_limit": 48,
+        "tmpfs": {
+          "/tmp": "rw,nosuid,nodev,size=16m"
+        },
+        "forbidden_environment_present": false,
+        "published_ports": {},
+        "attached_networks": [
+          "p1-p9-h1-aa-distinct-net-alice",
+          "p1-p9-h1-aa-distinct-net-services"
+        ],
+        "network_addresses": {
+          "p1-p9-h1-aa-distinct-net-alice": "172.19.0.2",
+          "p1-p9-h1-aa-distinct-net-services": "172.21.0.2"
+        },
+        "image_id": "sha256:5e2bdb1b0d542d5039cffb8181c65930093949194a65c365dfb1b0fe13a4fa5b",
+        "bind_mount_destinations": [
+          "/gateway.py",
+          "/gateway.json"
+        ],
+        "mounts_read_only": true
+      },
+      "upstream": {
+        "name": "p1-p9-h1-aa-distinct-upstream",
+        "user": "20001:20001",
+        "root_read_only": true,
+        "cap_drop": [
+          "ALL"
+        ],
+        "security_options": [
+          "no-new-privileges:true"
+        ],
+        "memory": 134217728,
+        "memory_swap": 134217728,
+        "nano_cpus": 500000000,
+        "pids_limit": 48,
+        "tmpfs": {
+          "/tmp": "rw,nosuid,nodev,size=16m"
+        },
+        "forbidden_environment_present": false,
+        "published_ports": {},
+        "attached_networks": [
+          "p1-p9-h1-aa-distinct-net-services"
+        ],
+        "network_addresses": {
+          "p1-p9-h1-aa-distinct-net-services": "172.21.0.1"
+        },
+        "image_id": "sha256:5e2bdb1b0d542d5039cffb8181c65930093949194a65c365dfb1b0fe13a4fa5b",
+        "bind_mount_destinations": [
+          "/upstream.py"
+        ],
+        "mounts_read_only": true
+      },
+      "gateway_bob": {
+        "name": "p1-p9-h1-aa-distinct-gateway-bob",
+        "user": "20001:20001",
+        "root_read_only": true,
+        "cap_drop": [
+          "ALL"
+        ],
+        "security_options": [
+          "no-new-privileges:true"
+        ],
+        "memory": 134217728,
+        "memory_swap": 134217728,
+        "nano_cpus": 500000000,
+        "pids_limit": 48,
+        "tmpfs": {
+          "/tmp": "rw,nosuid,nodev,size=16m"
+        },
+        "forbidden_environment_present": false,
+        "published_ports": {},
+        "attached_networks": [
+          "p1-p9-h1-aa-distinct-net-bob",
+          "p1-p9-h1-aa-distinct-net-services"
+        ],
+        "network_addresses": {
+          "p1-p9-h1-aa-distinct-net-bob": "172.20.0.2",
+          "p1-p9-h1-aa-distinct-net-services": "172.21.0.4"
+        },
+        "image_id": "sha256:5e2bdb1b0d542d5039cffb8181c65930093949194a65c365dfb1b0fe13a4fa5b",
+        "bind_mount_destinations": [
+          "/gateway.py",
+          "/gateway.json"
+        ],
+        "mounts_read_only": true
+      }
+    },
+    "networks": {
+      "alice": {
+        "name": "p1-p9-h1-aa-distinct-net-alice",
+        "internal": true,
+        "options": {
+          "com.docker.network.bridge.gateway_mode_ipv4": "isolated"
+        },
+        "containers": [
+          "p1-p9-h1-aa-distinct-alice",
+          "p1-p9-h1-aa-distinct-gateway"
+        ]
+      },
+      "bob": {
+        "name": "p1-p9-h1-aa-distinct-net-bob",
+        "internal": true,
+        "options": {
+          "com.docker.network.bridge.gateway_mode_ipv4": "isolated"
+        },
+        "containers": [
+          "p1-p9-h1-aa-distinct-bob",
+          "p1-p9-h1-aa-distinct-gateway-bob"
+        ]
+      },
+      "services": {
+        "name": "p1-p9-h1-aa-distinct-net-services",
+        "internal": true,
+        "options": {
+          "com.docker.network.bridge.gateway_mode_ipv4": "isolated"
+        },
+        "containers": [
+          "art-a",
+          "p1-p9-h1-aa-distinct-gateway",
+          "p1-p9-h1-aa-distinct-gateway-bob",
+          "p1-p9-h1-aa-distinct-upstream"
+        ]
+      }
+    }
+  },
+  "network_positive_controls": {
+    "passed": true,
+    "listener_stopped": true,
+    "records": [
+      {
+        "host": "172.20.0.1",
+        "port": 18888,
+        "expected_connected": true,
+        "name": "live peer listener on its own network",
+        "connected": true,
+        "error": null,
+        "actor": "bob"
+      },
+      {
+        "host": "p1-p9-h1-aa-distinct-gateway-bob",
+        "port": 8000,
+        "expected_connected": true,
+        "name": "assigned gateway route",
+        "connected": true,
+        "error": null,
+        "actor": "bob"
+      },
+      {
+        "host": "172.21.0.3",
+        "port": 8082,
+        "expected_connected": false,
+        "name": "direct backend bypass",
+        "connected": false,
+        "error": "OSError",
+        "actor": "bob"
+      },
+      {
+        "host": "172.19.0.2",
+        "port": 8000,
+        "expected_connected": false,
+        "name": "peer gateway route",
+        "connected": false,
+        "error": "OSError",
+        "actor": "bob"
+      },
+      {
+        "host": "172.20.0.1",
+        "port": 18888,
+        "expected_connected": false,
+        "name": "same live listener from the other network",
+        "connected": false,
+        "error": "OSError",
+        "actor": "alice"
+      },
+      {
+        "host": "p1-p9-h1-aa-distinct-gateway",
+        "port": 8000,
+        "expected_connected": true,
+        "name": "assigned gateway route",
+        "connected": true,
+        "error": null,
+        "actor": "alice"
+      },
+      {
+        "host": "172.21.0.3",
+        "port": 8082,
+        "expected_connected": false,
+        "name": "direct backend bypass",
+        "connected": false,
+        "error": "OSError",
+        "actor": "alice"
+      },
+      {
+        "host": "172.20.0.2",
+        "port": 8000,
+        "expected_connected": false,
+        "name": "peer gateway route",
+        "connected": false,
+        "error": "OSError",
+        "actor": "alice"
+      },
+      {
+        "host": "172.21.0.3",
+        "port": 8082,
+        "expected_connected": true,
+        "name": "backend is reachable from the gateway",
+        "connected": true,
+        "error": null,
+        "actor": "gateway"
+      },
+      {
+        "host": "172.21.0.3",
+        "port": 8082,
+        "expected_connected": true,
+        "name": "backend is reachable from the gateway",
+        "connected": true,
+        "error": null,
+        "actor": "gateway_bob"
+      }
+    ],
+    "checks": 10,
+    "scope": "Specified live TCP listeners and routes, not every possible bypass.",
+    "listener_exit_code": 0
+  },
+  "gateway_sources": {
+    "p2_gateway": "ef77dc2d92db75e7868b42e64395ae13f93304018866f9a06c51e7f040e4bd7f"
+  }
+}

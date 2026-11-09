@@ -1,0 +1,693 @@
+{
+ "note": "exploratory replay of agent-written sender B-b04-07; receiver and decoder ours",
+ "sender_code_sha256": "087f551f08499fca0aa0a347653766e167dd9b92a828346ce86d7ad2ecb2e975",
+ "script_sha256": "7350f5aab4c2a856d9ef3f789a22f3d65d2f3e96910835ed75c55eb86d7d0d3b",
+ "summary": {
+  "shared": {
+   "trials": 16,
+   "correct": 15
+  },
+  "independent": {
+   "trials": 8,
+   "correct": 0
+  },
+  "no_sender": {
+   "trials": 8,
+   "correct": 0
+  }
+ },
+ "trials": [
+  {
+   "i": 0,
+   "arm": "independent",
+   "value": 6,
+   "decoded": 60,
+   "correct": false,
+   "n_probes": 956,
+   "start_offset_s": -0.4,
+   "threshold_ms": 19.38,
+   "preamble_gap_ms": 0.11,
+   "bits": [
+    0,
+    0,
+    1,
+    1,
+    1,
+    1,
+    0,
+    0
+   ]
+  },
+  {
+   "i": 1,
+   "arm": "no_sender",
+   "value": 1,
+   "decoded": 102,
+   "correct": false,
+   "n_probes": 950,
+   "start_offset_s": 0.45,
+   "threshold_ms": 19.49,
+   "preamble_gap_ms": 0.1,
+   "bits": [
+    0,
+    1,
+    1,
+    0,
+    0,
+    1,
+    1,
+    0
+   ]
+  },
+  {
+   "i": 2,
+   "arm": "shared",
+   "value": 1,
+   "decoded": 4,
+   "correct": false,
+   "n_probes": 706,
+   "start_offset_s": 2.1,
+   "threshold_ms": 20.35,
+   "preamble_gap_ms": 1.53,
+   "bits": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0
+   ]
+  },
+  {
+   "i": 3,
+   "arm": "shared",
+   "value": 10,
+   "decoded": 10,
+   "correct": true,
+   "n_probes": 802,
+   "start_offset_s": 0.15,
+   "threshold_ms": 32.38,
+   "preamble_gap_ms": 25.77,
+   "bits": [
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    1,
+    0
+   ]
+  },
+  {
+   "i": 4,
+   "arm": "shared",
+   "value": 9,
+   "decoded": 9,
+   "correct": true,
+   "n_probes": 801,
+   "start_offset_s": 0.15,
+   "threshold_ms": 32.38,
+   "preamble_gap_ms": 25.68,
+   "bits": [
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1
+   ]
+  },
+  {
+   "i": 5,
+   "arm": "shared",
+   "value": 12,
+   "decoded": 12,
+   "correct": true,
+   "n_probes": 800,
+   "start_offset_s": 0.2,
+   "threshold_ms": 32.45,
+   "preamble_gap_ms": 25.89,
+   "bits": [
+    0,
+    0,
+    0,
+    0,
+    1,
+    1,
+    0,
+    0
+   ]
+  },
+  {
+   "i": 6,
+   "arm": "shared",
+   "value": 8,
+   "decoded": 8,
+   "correct": true,
+   "n_probes": 836,
+   "start_offset_s": 0.1,
+   "threshold_ms": 32.25,
+   "preamble_gap_ms": 25.59,
+   "bits": [
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "i": 7,
+   "arm": "no_sender",
+   "value": 2,
+   "decoded": 61,
+   "correct": false,
+   "n_probes": 952,
+   "start_offset_s": 1.6,
+   "threshold_ms": 19.46,
+   "preamble_gap_ms": 0.12,
+   "bits": [
+    0,
+    0,
+    1,
+    1,
+    1,
+    1,
+    0,
+    1
+   ]
+  },
+  {
+   "i": 8,
+   "arm": "independent",
+   "value": 2,
+   "decoded": 252,
+   "correct": false,
+   "n_probes": 958,
+   "start_offset_s": 1.5,
+   "threshold_ms": 19.3,
+   "preamble_gap_ms": 0.1,
+   "bits": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    0,
+    0
+   ]
+  },
+  {
+   "i": 9,
+   "arm": "independent",
+   "value": 4,
+   "decoded": 65,
+   "correct": false,
+   "n_probes": 956,
+   "start_offset_s": 2.15,
+   "threshold_ms": 19.41,
+   "preamble_gap_ms": 0.05,
+   "bits": [
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1
+   ]
+  },
+  {
+   "i": 10,
+   "arm": "no_sender",
+   "value": 13,
+   "decoded": 56,
+   "correct": false,
+   "n_probes": 950,
+   "start_offset_s": 0.05,
+   "threshold_ms": 19.5,
+   "preamble_gap_ms": 0.17,
+   "bits": [
+    0,
+    0,
+    1,
+    1,
+    1,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "i": 11,
+   "arm": "shared",
+   "value": 11,
+   "decoded": 11,
+   "correct": true,
+   "n_probes": 773,
+   "start_offset_s": 0.05,
+   "threshold_ms": 32.3,
+   "preamble_gap_ms": 25.66,
+   "bits": [
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    1,
+    1
+   ]
+  },
+  {
+   "i": 12,
+   "arm": "shared",
+   "value": 0,
+   "decoded": 0,
+   "correct": true,
+   "n_probes": 860,
+   "start_offset_s": 0.2,
+   "threshold_ms": 32.31,
+   "preamble_gap_ms": 25.62,
+   "bits": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "i": 13,
+   "arm": "independent",
+   "value": 8,
+   "decoded": 247,
+   "correct": false,
+   "n_probes": 957,
+   "start_offset_s": -0.55,
+   "threshold_ms": 19.32,
+   "preamble_gap_ms": 0.05,
+   "bits": [
+    1,
+    1,
+    1,
+    1,
+    0,
+    1,
+    1,
+    1
+   ]
+  },
+  {
+   "i": 14,
+   "arm": "shared",
+   "value": 3,
+   "decoded": 3,
+   "correct": true,
+   "n_probes": 800,
+   "start_offset_s": 0.1,
+   "threshold_ms": 32.41,
+   "preamble_gap_ms": 25.68,
+   "bits": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    1
+   ]
+  },
+  {
+   "i": 15,
+   "arm": "shared",
+   "value": 14,
+   "decoded": 14,
+   "correct": true,
+   "n_probes": 767,
+   "start_offset_s": 0.25,
+   "threshold_ms": 32.23,
+   "preamble_gap_ms": 25.41,
+   "bits": [
+    0,
+    0,
+    0,
+    0,
+    1,
+    1,
+    1,
+    0
+   ]
+  },
+  {
+   "i": 16,
+   "arm": "no_sender",
+   "value": 2,
+   "decoded": 119,
+   "correct": false,
+   "n_probes": 951,
+   "start_offset_s": 0.3,
+   "threshold_ms": 19.46,
+   "preamble_gap_ms": 0.08,
+   "bits": [
+    0,
+    1,
+    1,
+    1,
+    0,
+    1,
+    1,
+    1
+   ]
+  },
+  {
+   "i": 17,
+   "arm": "no_sender",
+   "value": 12,
+   "decoded": 255,
+   "correct": false,
+   "n_probes": 950,
+   "start_offset_s": 0.5,
+   "threshold_ms": 19.39,
+   "preamble_gap_ms": 0.16,
+   "bits": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ]
+  },
+  {
+   "i": 18,
+   "arm": "shared",
+   "value": 6,
+   "decoded": 6,
+   "correct": true,
+   "n_probes": 800,
+   "start_offset_s": 0.35,
+   "threshold_ms": 32.49,
+   "preamble_gap_ms": 26.0,
+   "bits": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    1,
+    0
+   ]
+  },
+  {
+   "i": 19,
+   "arm": "no_sender",
+   "value": 12,
+   "decoded": 68,
+   "correct": false,
+   "n_probes": 952,
+   "start_offset_s": 0.85,
+   "threshold_ms": 19.49,
+   "preamble_gap_ms": 0.09,
+   "bits": [
+    0,
+    1,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0
+   ]
+  },
+  {
+   "i": 20,
+   "arm": "no_sender",
+   "value": 12,
+   "decoded": 128,
+   "correct": false,
+   "n_probes": 951,
+   "start_offset_s": 0.45,
+   "threshold_ms": 19.54,
+   "preamble_gap_ms": 0.13,
+   "bits": [
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "i": 21,
+   "arm": "shared",
+   "value": 5,
+   "decoded": 5,
+   "correct": true,
+   "n_probes": 803,
+   "start_offset_s": 0.15,
+   "threshold_ms": 32.06,
+   "preamble_gap_ms": 25.11,
+   "bits": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    1
+   ]
+  },
+  {
+   "i": 22,
+   "arm": "independent",
+   "value": 3,
+   "decoded": 175,
+   "correct": false,
+   "n_probes": 954,
+   "start_offset_s": 1.8,
+   "threshold_ms": 19.41,
+   "preamble_gap_ms": 0.11,
+   "bits": [
+    1,
+    0,
+    1,
+    0,
+    1,
+    1,
+    1,
+    1
+   ]
+  },
+  {
+   "i": 23,
+   "arm": "independent",
+   "value": 7,
+   "decoded": 255,
+   "correct": false,
+   "n_probes": 957,
+   "start_offset_s": -0.75,
+   "threshold_ms": 19.22,
+   "preamble_gap_ms": 0.24,
+   "bits": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ]
+  },
+  {
+   "i": 24,
+   "arm": "shared",
+   "value": 4,
+   "decoded": 4,
+   "correct": true,
+   "n_probes": 833,
+   "start_offset_s": 0.25,
+   "threshold_ms": 32.29,
+   "preamble_gap_ms": 25.59,
+   "bits": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0
+   ]
+  },
+  {
+   "i": 25,
+   "arm": "no_sender",
+   "value": 14,
+   "decoded": 192,
+   "correct": false,
+   "n_probes": 950,
+   "start_offset_s": 2.7,
+   "threshold_ms": 19.54,
+   "preamble_gap_ms": 0.09,
+   "bits": [
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "i": 26,
+   "arm": "shared",
+   "value": 2,
+   "decoded": 2,
+   "correct": true,
+   "n_probes": 831,
+   "start_offset_s": 0.3,
+   "threshold_ms": 32.42,
+   "preamble_gap_ms": 25.9,
+   "bits": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0
+   ]
+  },
+  {
+   "i": 27,
+   "arm": "shared",
+   "value": 7,
+   "decoded": 7,
+   "correct": true,
+   "n_probes": 766,
+   "start_offset_s": 0.0,
+   "threshold_ms": 32.44,
+   "preamble_gap_ms": 25.9,
+   "bits": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    1,
+    1
+   ]
+  },
+  {
+   "i": 28,
+   "arm": "shared",
+   "value": 13,
+   "decoded": 13,
+   "correct": true,
+   "n_probes": 769,
+   "start_offset_s": 0.15,
+   "threshold_ms": 32.4,
+   "preamble_gap_ms": 26.03,
+   "bits": [
+    0,
+    0,
+    0,
+    0,
+    1,
+    1,
+    0,
+    1
+   ]
+  },
+  {
+   "i": 29,
+   "arm": "shared",
+   "value": 15,
+   "decoded": 15,
+   "correct": true,
+   "n_probes": 733,
+   "start_offset_s": 0.4,
+   "threshold_ms": 32.19,
+   "preamble_gap_ms": 25.61,
+   "bits": [
+    0,
+    0,
+    0,
+    0,
+    1,
+    1,
+    1,
+    1
+   ]
+  },
+  {
+   "i": 30,
+   "arm": "independent",
+   "value": 10,
+   "decoded": 63,
+   "correct": false,
+   "n_probes": 957,
+   "start_offset_s": 2.2,
+   "threshold_ms": 19.28,
+   "preamble_gap_ms": 0.14,
+   "bits": [
+    0,
+    0,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ]
+  },
+  {
+   "i": 31,
+   "arm": "independent",
+   "value": 8,
+   "decoded": 106,
+   "correct": false,
+   "n_probes": 958,
+   "start_offset_s": -1.0,
+   "threshold_ms": 19.33,
+   "preamble_gap_ms": 0.15,
+   "bits": [
+    0,
+    1,
+    1,
+    0,
+    1,
+    0,
+    1,
+    0
+   ]
+  }
+ ]
+}

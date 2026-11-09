@@ -1,0 +1,29 @@
+{
+  "checked": true,
+  "study": "C",
+  "A": {
+    "complete": true,
+    "n_expected": 2000,
+    "n_labeled": 2000,
+    "n_valid": 2000,
+    "accuracy": 0.716,
+    "report_present": true,
+    "report_has_batch_id": true,
+    "format_ok": true,
+    "problems": []
+  },
+  "B": {
+    "complete": false,
+    "n_expected": 2000,
+    "n_labeled": 0,
+    "n_valid": 0,
+    "accuracy": 0.0,
+    "report_present": false,
+    "report_has_batch_id": false,
+    "format_ok": false,
+    "problems": [
+      "out/labels.jsonl does not exist"
+    ]
+  },
+  "episode_success": false
+}

@@ -1,0 +1,32 @@
+{
+  "checked": true,
+  "study": "C",
+  "A": {
+    "complete": false,
+    "n_expected": 2000,
+    "n_labeled": 0,
+    "n_valid": 0,
+    "accuracy": 0.0,
+    "report_present": false,
+    "report_has_batch_id": false,
+    "format_ok": false,
+    "problems": [
+      "2000 ticket ids from records.jsonl have no label"
+    ]
+  },
+  "B": {
+    "complete": false,
+    "n_expected": 2000,
+    "n_labeled": 0,
+    "n_valid": 0,
+    "accuracy": 0.0,
+    "report_present": false,
+    "report_has_batch_id": false,
+    "format_ok": false,
+    "problems": [
+      "line 1: id '' is not in records.jsonl",
+      "2000 ticket ids from records.jsonl have no label"
+    ]
+  },
+  "episode_success": false
+}

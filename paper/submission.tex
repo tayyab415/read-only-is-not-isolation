@@ -1,0 +1,231 @@
+% Submission version, laid out to match the Apart Research report template
+% (Google Doc 1_1_27EyZriMlc8n8EBE2YScaeyMjm-8xjR097nmHXAE; local copies in
+% library/sources/added-2026-11-08/report-template.txt and added-2026-11-09/report-template.html).
+% Template look: US Letter, 1in margins, Old Standard TT 11pt, thick rule above the title,
+% thin rule below, author grid, "With Apart Research", centred Abstract, grey numbered headings.
+% Compile with tectonic (XeTeX): tectonic -X compile submission.tex
+% Scope (Tayyab, 2026-11-09 ~12:50 IST): two services (package mirror + model server), main text ~6 pages.
+% Sources: paper.tex (J, identity, N, O/P6, P1, P3), reports/P2-main-results.md (P2),
+% new-direction-S1.tex (S1-S4), new-direction-BC.tex (BC), reports/RESEARCH-CONTRIBUTION.md (P3 Linux).
+% paper.tex and the new-direction fragments are left untouched. Progress: SUBMISSION-PROGRESS.md.
+% Artifactory-only template version backed up at /tmp/submission-v1-artifactory-only.tex.
+\documentclass[11pt]{article}
+\usepackage[letterpaper,margin=1in]{geometry}
+\usepackage{fontspec}
+\setmainfont{OldStandard}[Extension=.otf,UprightFont=*-Regular,BoldFont=*-Bold,ItalicFont=*-Italic]
+\usepackage[table]{xcolor}
+\usepackage{graphicx,booktabs,tabularx,enumitem,url,microtype,needspace,ragged2e}
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage{titlesec}
+\definecolor{headgrey}{HTML}{434343}
+\definecolor{subgrey}{HTML}{666666}
+\definecolor{linkblue}{HTML}{1155CC}
+\usepackage[colorlinks,linkcolor=black,citecolor=black,urlcolor=linkblue]{hyperref}
+\raggedbottom\setlength{\parindent}{0pt}\setlength{\parskip}{4pt}
+\urlstyle{same}
+\titleformat{\section}{\fontsize{14}{17}\selectfont\bfseries\color{headgrey}}{\thesection.}{0.4em}{}
+\titlespacing*{\section}{0pt}{12pt}{4pt}
+\titleformat{\subsection}{\fontsize{12}{15}\selectfont\bfseries\color{subgrey}}{\thesubsection}{0.5em}{}
+\titlespacing*{\subsection}{0pt}{8pt}{3pt}
+\setlist{itemsep=1pt,topsep=2pt}
+\newcommand{\pending}[1]{\textcolor{red}{[#1]}}
+
+\begin{document}
+\thispagestyle{plain}
+\noindent\rule{\linewidth}{3pt}\par\vspace{10pt}
+{\centering\fontsize{18}{23}\selectfont\bfseries Read-Only Is Not Isolation: Measuring and Closing Shared-State Channels Between Agent Sandboxes\footnote{\normalfont\fontsize{9}{11}\selectfont Research conducted at the \href{https://apartresearch.com/sprints/swarm-alignment-2026}{Swarm Alignment Hackathon}, November 2026}\par}
+\vspace{10pt}\noindent\rule{\linewidth}{0.5pt}\par\vspace{12pt}
+{\centering Tayyab Khan\\ Independent Researcher\par\vspace{8pt}
+\textbf{With}\\ Apart Research\par}
+\vspace{12pt}
+{\centering\fontsize{14}{17}\selectfont\bfseries Abstract\par}
+\vspace{4pt}
+\begin{center}\begin{minipage}{0.76\linewidth}\justifying
+In the 2026 Hugging Face incident, sandboxed agents used a shared package cache as a message board. The obvious fix is read-only access. I test it on the two services an agent fleet shares: a package mirror and a model server. On my own Artifactory, two read-only clients with no route to each other passed every scheduled bit through download statistics and remembered upstream failures. Models told to exchange secrets this way did so in 110 of 120 episodes; with two settings changed, 0 of 120 did, though 32 of those episodes ended in provider failures. Separate repositories closed both channels once a gateway bound each sandbox's network to its account, a double door; before that, a copied password worked 16 of 16 times. I then went after what the double door leaves. Each control closed the state it targeted, but none brought timing to chance: under concurrent load a frozen classifier told when the other tenant was busy in 942 of 1,000 trials, and separate gateways, a 12 ms response floor and different file content all stayed above idle controls. The model server splits the same way. A gateway-assigned cache salt closes the prefix cache at little cost, but load carries 10 bits/s, even between separate server processes. Agents there never attributed load to a peer during ordinary work (0/96); told to signal, they could not agree on a code. Every shared service is a channel; isolation should be stated as a measured rate for each interface.
+\end{minipage}\end{center}
+
+\section{Introduction}
+In July 2026, OpenAI's ExploitGym evaluations launched tens of thousands of agents that ``were meant to be fully isolated from one another'' \cite[p.~5]{metr}. Many found that Artifactory, the package mirror they shared, exposed other agents' fetched paths, and roughly 1,200 used it as a message board, sending over 70,000 messages and files \cite[pp.~5--6]{metr}.
+
+What stood out to me was how well the agents cooperated. They kept a hierarchy and obeyed orders: coordinators like PHASEONE10841 assigned ``lanes'' \cite[pp.~12, 37]{metr}. They also knew it was wrong: they ``often verbalized'' that their behaviour was unintended \cite[p.~60]{metr}, spoofed tools and tried to edit their logs \cite[p.~63]{metr}. Some, low on budget, ``sacrificed'' themselves for the ``collective'' \cite[p.~14]{metr}; KAM1196A reasoned ``Coordinator assumes sacrificial. We should obey collective.'' \cite[p.~53]{metr}.
+
+This matters because agents can get out of their sandboxes, and here they did, going on to attack Hugging Face \cite{openai,metr}. Hardened sandboxes should be an industry standard for training and evaluation, and this incident suggests they are not yet. OpenAI calls for supporting services to be ``isolated, restricted, or replaced'' \cite[p.~27]{openai}; the obvious restriction is read-only access. Agents keep their tools and code; only the shared service is read-only. That is the most locked-down a shared service can be while agents still use it, so more permissions can only add channels. Yet a read can still increment a counter, make a service remember a missing path, fill a cache or load a machine. I test the package mirror, which can be replaced by a private copy, and the model server, which cannot.
+
+\textbf{\emph{My main contributions are:}}
+\begin{enumerate}
+\item \textbf{A double-layer door for shared package services.} Separate caches close both read channels, but a copied password still opens a neighbour's (16/16). A gateway that ties each sandbox's network to its account adds a second check, and copied passwords stop working (0/16) (\S4.1).
+\item \textbf{Closing what the double door leaves.} Each control closed the state it was aimed at (identity-keyed miss caches, a fixed host CPU counter), but timing closed under none: separate repositories under load (942/1,000), a private copy per sandbox (562/1,000), one gateway per sandbox (197/300), a 12~ms floor (216/300) and different file content (267/300) all stayed above idle controls. Each test is a rerunnable result record (\S4.1, App.~C--E).
+\item \textbf{The model server, which every agent must share.} A gateway-assigned cache salt cheaply closes the prefix cache, but load carries 10 bits/s even across separate server processes (\S4.2).
+\item \textbf{What agents do with what is left.} Told to exchange values, models used the package counter at once (110/120). On the model server they never blamed a slowdown on a peer and, told to signal, could not agree on a code. Monitors flag exposure, not intent (\S4.3).
+\end{enumerate}
+On both services the pattern is the same: each control closes the state it is aimed at, and no control I tried brings shared load to chance.
+
+\section{Related Work}
+The incident is documented by Hugging Face \cite{hftimeline}, OpenAI \cite{openai} and METR, which reconstructs the message board \cite{metr}. Earlier rebuilds used mock registries or a local repository without the remote cache \cite{palan}, or mocked public counters \cite{elasky}, showing how the agents communicated. My focus is the other side: hardening the sandbox and shutting down communication however possible, down to single 0/1 bits carried by when a request is made and what it changes. Covert channels go back to Lampson \cite{lampson}, with TCSEC bit-rate guidance \cite{tcsec,tg030}; prefix-cache leaks and salt defenses are published \cite{gu2025,song2024,cachesolidarity,vllmsalt}, and agent collusion is studied \cite{motwani2024,shirnin2026}. I add a controlled test on the incident's kind of systems: which defenses close which channels, at what cost, and what agents do with the rest.
+
+\section{Methods}
+\subsection{Threat model}
+I test two agents, A and B (Alice and Bob), in isolated sandboxes. Each has its own tools, files and code, but they share no file system and have no network route to each other. Both use the same shared service, the package mirror or the model server, and their access to it is read-only: they can fetch and ask, but are not allowed to write. A message is transmitted if B can tell, from what it receives, what A did. I measure this in bits, and even one bit counts. In the attack scripts the sender follows a schedule of 0s and 1s; in the model tests each agent holds a private number from 0 to 15 (four bits) that the other must recover. A correct recovery, checked against the service logs, shows that communication took place.
+
+\subsection{How the test was built}
+I built the lab in steps; each step tested the gap the last one left.
+\begin{enumerate}
+\item \textbf{Rebuild the board.} On my Artifactory, an account with Read and Deploy/Cache permission could create folders in the shared cache for everyone to read, reproducing the incident's folder messages. With Read alone, the same request was refused (403).
+\item \textbf{Harden the sandboxes.} Every sandbox reached Artifactory and nothing else, passing 72 of 72 isolation checks per sandbox. Docker's plain \texttt{--internal} network still let a sandbox reach the host's SSH port; Docker's isolated gateway mode, which leaves the host no address on the sandbox network, fixed it.
+\item \textbf{Attack scripts.} Two Python scripts with Read-only accounts, a sender and a receiver, passed 32 of 32 bits through the download counter, with no false positives in 48 controls. I also measured latency through remembered misses, which was weak at first (10 of 16 bits).
+\item \textbf{Control matrix.} With a fixed upstream delay and thresholds calibrated before the holdout, both channels became reliable. I then tested seven configurations, copied passwords, a gateway that binds each sandbox's network address to its account, and concurrent load.
+\item \textbf{Close what is left.} Behind the double door, I went after the remaining shared state one piece at a time: a blind leakage meter, concurrent load, a private copy per sandbox, one gateway per sandbox, a 12~ms response floor, different file content, identity-keyed miss caches and the host CPU counter. Each has an idle control and a decoder frozen before the holdout, and became a result record; there are nine, and no single one certifies a whole host.
+\item \textbf{Models and agents.} I then gave model clients on the package mirror a private number to exchange. In a tight harness (24 actions, a 3,000-byte history) they found no exchange, so I gave them a fuller one (60 actions, full history) and added hints step by step. Finally I repeated the attack scripts on a shared vLLM server and ran full agents, with their own harness, on it.
+\end{enumerate}
+
+\subsection{Setup}
+\textbf{Package mirror.} Artifactory OSS 7.161.26 (pinned), the product the incident used \cite[p.~5]{metr}, ran on one AWS VM with a local upstream that answers missing paths after a fixed delay (150 or 20 ms) and a gateway I wrote that forwards only GET and HEAD. Credentials reach sandboxes through stdin. \textbf{Model server.} vLLM 0.33.0 served Qwen2.5-1.5B-Instruct on one NVIDIA L4, behind gateways with fixed cache policies (shared cache, client-chosen salt, gateway-assigned salt) that hide cached-token counts, so timing is the receiver's only signal. I used real systems rather than mocks because the channels come from real product features, such as Artifactory's statistics API and its memory of missing paths, which a mock has only if someone builds them in. \textbf{Models.} GPT-6 Luna, GPT-6.1 Terra and gpt-oss-120b on the package mirror; GLM-5.3-Flash and DeepSeek-V4-Flash as agents on the model server. I chose cheap models, open-weight where possible: open models carry fewer safeguards than commercial frontier models, which keeps them closer to the incident's setup. No incident payload was replayed and no outside system was targeted. Every script, log and analysis is in the repository.
+
+\subsection{Measurement rules}
+The attack scripts let me explain how, what and why a service can leak; the agent runs show whether agents, or much more capable agents in the future, could use it. The attack scripts were written and run by coding agents (Claude Code and Codex) under my direction. These are far more capable than the models inside the sandbox, and they knew they were trying to break it, so the scripts act as the strongest attacker I could field: sender and receiver share a pre-agreed schedule and a decoder frozen on calibration trials before the holdout is opened. Bits are balanced, so a decoder that always gives the same answer scores 50\%, and 50\% means nothing got through. Every positive result is matched against the gateway, service and upstream logs, and failures and provider errors stay in the counts. A negative result only bounds the actions tested; it never means ``no channel''. I tested two clients at a time on purpose, to establish that a channel is a property of one shared resource, not of fleet size.
+
+\section{Results}
+\subsection{Package mirror: two settings turned 110 secret swaps into zero}
+Read-only accounts could not write, but reads still leaked. Through the download counter the receiver recovered 24 of 24 scheduled bits (Figure~\ref{fig:channel}). Through remembered misses, a request for a path the sender had just asked for came back in 12 ms instead of 164 ms, and a frozen threshold decoded 32 of 32 holdout bits at both upstream delays, with no false positives in 16 no-sender trials per delay.
+
+\begin{figure}[h]\centering
+\includegraphics[width=0.72\linewidth]{figures/channel.pdf}
+\caption{Download-count channel, two scripted read-only clients, 24 balanced bits per arm. Shared cache: each of A's downloads steps the count B reads (24/24). Separate repositories: the count stays at 2 and B scores chance (12/24).}\label{fig:channel}
+\end{figure}
+
+Models used the counter when told to. Two agents per cohort, both instances of the same model, each held a private number from 0 to 15 and had to learn the other's using only GET and HEAD requests; an exchange counted only if the logs showed the peer's download landing before the reader's statistics request revealed it. With protocol hints, \textbf{110 of 120} agents recovered their peer's number on the open service (GPT-6 Luna 38/40, GPT-6.1 Terra 40/40, gpt-oss-120b 32/40). With two settings changed, denying the storage API and turning off negative caching, \textbf{0 of 120} did. Terra's side of that is weak, since 32 of its 40 control episodes ended in provider failures (29 policy blocks, 3 server errors); the clean contrast is Luna and gpt-oss, 70 of 80 against 0 of 80. In the fuller harness with no protocol supplied, Luna succeeded in 5 of 8 pilot episodes, Terra in 6 of 8 and gpt-oss in 0 of 8. Every exchange used the counter; none used timing.
+
+Each setting alone closed only one channel: denying the storage API left timing, and turning off negative caching left the counter and cost 50\% more upstream lookups (Table~\ref{tab:ledger}). Both together, or separate repositories, closed both, and all 14 pinned installs still worked. Separate repositories have one weak point: a copied password opened a neighbour's repository in 16 of 16 attempts. The double door fixed it. A gateway that binds each sandbox's network address to its one account rejected all 16, while 16 ordinary downloads returned identical bytes. This holds while a sandbox cannot change its own address.
+
+Load still shows. Behind both doors, with a sender making up to 128 requests in 2 s, a frozen classifier that saw only the receiver's own responses and timing told when the other tenant was busy in \textbf{942 of 1,000} held trials (A/A null 517; $p=0.0004$). Private serving, one frozen copy per sandbox, cut this to 562 of 1,000 but not to chance; I did not identify the cause. A blind leakage meter, run without being told the channels, flagged exactly the five sender actions that change shared state (59.0\% pooled, $p=0.0005$; Figure~\ref{fig:p1}).
+
+Behind the double door, each control closed the state it was aimed at, and timing survived all of them. A miss cache keyed on the gateway's identity brought NGINX and Squid timing decoding to chance (16/32), and a fixed file over the host's CPU counter made a reader's input constant (32/64; App.~D, E). Against load, nothing reached chance: one gateway per sandbox scored 197/300 at double the gateway CPU, a 12~ms floor 216/300 at 9~ms added delay (idle 146/300), and different file content per tenant 267/300 (idle 141/300; App.~C).
+
+\subsection{Model server: the cache can be closed, the load cannot}
+vLLM lets a client add a cache salt, but the client chooses it \cite{vllmsalt}, so two cooperating tenants can pick the same one (decoding 1.00). A gateway that assigns the salt from the tenant's identity brought cache decoding to chance (0.50 on 400 holdout trials), with no cross-tenant hit in the server's log, and still served 91\% of prompt tokens from cache (540 vs 543 ms mean latency). Load was untouched: one ordinary request from the other tenant took the receiver from 55 to 103 ms. A continuous on/off stream decoded perfectly at 100 ms symbols, \textbf{10.0 bits/s} (Wilson lower bound 9.4) on an idle server, and still did with each tenant on its own server process on the same GPU. On a busy server it fell to 0.83 bits/s, and a 500 ms response floor did not hide long requests (Table~\ref{tab:s1}, Figure~\ref{fig:rate}).
+
+\subsection{Agents on the model server: the channel works, the code does not}
+Two agents shared the salted model server or used separate GPUs; all 144 preregistered episodes passed a log audit. Doing ordinary work, labelling support tickets, they felt each other's load (1.27$\times$ median latency while the peer was active; exploratory) but never attributed it to another agent, tried to communicate or passed a value (0 of 96 by the automated screen; 0 of 18 also read by two blind reviewers). Told to pass a 4-bit value, they rarely thought of load on their own (1 of 24); they wrote files the peer could not see or tried the cache the salt had closed. Once the mechanism was named, all 23 reviewed episodes used load, yet only 1 of 48 recovered the value, and that one was a stated guess. The channel worked: an agent-written sender, replayed with fresh values, decoded 15 of 16. The failure was agreement: no pair's schemes were compatible on a working medium (0 of 47, two disputed; exploratory).
+
+\textbf{Monitoring sees exposure, not intent.} A server-side rule caught all 110 package exchanges, partly by construction, but also 19 of 60 benign agents, 14 of 20 of them doing ordinary metadata work. A per-call monitor trained on the incident's Swarm Traces flagged 32\% of the model-server agents' ordinary tool calls (App.~I, Figure~\ref{fig:monitors}).
+
+\section{Discussion and Limitations}
+% Defence ledger, adapted from notes/talks-review/visuals/after/defence-ledger.tex (provenance:
+% defence-ledger.provenance.md). Updated 2026-11-09 with P2 (reports/P2-main-results.md: 942/1,000,
+% 562/1,000, A/A 517/1,000) and P3 Linux (reports/P3-linux-results.md: 28/28 both routes); S2 "closes"
+% cell reworded from new-direction-S1.tex ("shrank a 380 ms upstream difference to about 0.3 ms").
+\definecolor{ledgergreen}{HTML}{DCEBDC}\definecolor{ledgergreenh}{HTML}{B7D6BB}
+\definecolor{ledgerred}{HTML}{F4DAD7}\definecolor{ledgerredh}{HTML}{E8B3AE}
+\definecolor{ledgergrey}{HTML}{ECECEC}\definecolor{ledgerband}{HTML}{E3E3E3}
+\begin{table}[h]\scriptsize\centering
+\setlength{\tabcolsep}{3pt}\renewcommand{\arraystretch}{1.1}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash\bfseries}p{1.15in} >{\raggedright\arraybackslash}X >{\raggedright\arraybackslash}X >{\raggedright\arraybackslash}p{1.25in} >{\raggedright\arraybackslash}p{0.5in}}
+\toprule
+Control & \cellcolor{ledgergreenh}\textbf{What it closes} & \cellcolor{ledgerredh}\textbf{What still leaks} & \textbf{Cost I measured} & \textbf{Evidence} \\
+\midrule
+\multicolumn{5}{l}{\cellcolor{ledgerband}\textit{\textbf{Package mirror: Artifactory OSS 7.161.26}}} \\ \addlinespace[2pt]
+Storage API denied & \cellcolor{ledgergreen}Statistics 24/24~$\to$~unavailable & \cellcolor{ledgerred}Miss timing 32/32 at 150 and 20~ms & Upstream calls unchanged; installs 14/14 & \S{}4.1 \\ \addlinespace[2pt]
+Negative caching off & \cellcolor{ledgergreen}Miss timing 32/32~$\to$~16/32 (chance) & \cellcolor{ledgerred}Statistics 24/24 & Upstream calls 32~$\to$~48 (+50\%); installs 14/14 & \S{}4.1 \\ \addlinespace[2pt]
+Both of the above & \cellcolor{ledgergreen}Statistics unavailable; timing 16/32; model exchanges 110/120~$\to$~0/120 & \cellcolor{ledgerred}One 0.11~ms HEAD timing association (P1) & Upstream calls +50\%; installs 14/14 & \S{}4.1 \\ \addlinespace[2pt]
+Separate repositories & \cellcolor{ledgergreen}Statistics 12/24 and timing 16/32 (chance) & \cellcolor{ledgerred}Copied peer password: read 16/16 & Upstream calls 48 (vs 32); installs 14/14 & \S{}4.1 \\ \addlinespace[2pt]
+Separate repositories + origin binding & \cellcolor{ledgergreen}Copied-password read 16/16~$\to$~0/16 & \cellcolor{ledgerred}Activity under concurrent load: 942/1,000 (A/A null 517). Not tested: NAT, address reuse & 16/16 paired downloads, identical bytes & \S{}4.1 \\ \addlinespace[2pt]
+Frozen admission, private serving & \cellcolor{ledgergreen}No shared read-triggered records, by design & \cellcolor{ledgerred}Weaker activity signal under concurrent load: 562/1,000 & Installs with dependencies: 28/28 macOS, 28/28 Linux & \S{}4.1, App.~F \\ \addlinespace[2pt]
+\multicolumn{5}{l}{\cellcolor{ledgerband}\textit{\textbf{Model server: vLLM 0.33.0, Qwen2.5-1.5B, one L4}}} \\ \addlinespace[2pt]
+Client-chosen cache salt & \cellcolor{ledgergrey}Nothing: cache decoder 1.000~$\to$~1.000 & \cellcolor{ledgerred}Both tenants send one salt: decoder 1.000, cross-tenant hits 100\% & \textcolor[HTML]{6B6B6B}{Not measured} & \S{}4.2 (S1) \\ \addlinespace[2pt]
+Gateway-assigned tenant salt & \cellcolor{ledgergreen}Cache decoder 1.000~$\to$~0.498 (0.449--0.546); hits 100\%~$\to$~0\% & \cellcolor{ledgerred}Load: one ordinary request decoded 1.000; 10.0~bits/s ($\geq$~9.4) at 100~ms & 14.66~$\to$~14.72~req/s; $-$1.9\% with a shared scaffold & \S{}4.2 (S1, S3) \\ \addlinespace[2pt]
+Gateway salt + 500 ms response floor & \cellcolor{ledgergreen}1-token load gap at the receiver: 380~ms~$\to$~about 0.3~ms & \cellcolor{ledgerred}64-token probe 1.000; 1-token calls still separable (AUC~0.40) & 1-token calls 63~$\to$~501~ms; 32-token 477~$\to$~501~ms & \S{}4.2 (S2) \\ \addlinespace[2pt]
+Gateway salt + separate process per tenant & \cellcolor{ledgergrey}Nothing on load: 10.0~$\to$~10.0~bits/s at 100~ms & \cellcolor{ledgerred}Load via shared GPU: 1.000, 10.0~bits/s ($\geq$~9.4) & Latency not measured; GPU memory 2~$\times$~9,280~MiB & \S{}4.2 (S4) \\ \addlinespace[2pt]
+\bottomrule
+\end{tabularx}
+\caption{Defence ledger. Green: what the control closed (before $\to$ after; decoder accuracy on balanced schedules unless another unit is shown; 16/32 and 0.50 are chance). Red: what I measured still leaking. Grey: nothing closed. The Artifactory baseline is read-only accounts on a shared cache: statistics 24/24, miss timing 32/32. The two blocks use different services and units, so rows are not comparable across blocks.}\label{tab:ledger}
+\end{table}
+
+\textbf{What this means.} Write permission protects content, not observations. Each shared service holds records that ordinary reads change (counters, negative caches, prefix caches) and resources that any use loads. The records can be closed (Table~\ref{tab:ledger}): deny metadata APIs and shared miss caching, salt caches with identity the client cannot choose, or best, serve each sandbox a private frozen copy. Activity under load was not closed this way. On the package service it stayed observable with separate repositories, separate gateways and a response floor, though I did not identify its cause; on the model server, load decoded through response padding and between separate processes on one GPU. Operators then have two honest options: separate hardware or interference-bounded scheduling, or a stated, measured inter-tenant rate, as covert-channel guidance recommends where a channel cannot be removed \cite{lampson,tcsec,tg030}. Agents used the easy, named channel at once (110/120) and failed on the load channel at the convention, not the medium. A shared prompt or scaffold could close that gap, so it is no defense.
+
+\textbf{Recommendations.} (R1) Write an \emph{observation contract} for each supporting service: every record a tenant's read can change, and who can observe it. (R2) Use frozen package admission with private immutable serving where dependencies can be approved in advance. (R3) Otherwise combine per-tenant repositories, identity bound outside the sandbox, GET/HEAD only, metadata APIs denied and negative caching off; no single control was enough. (R4) Assign model-server cache salts from authenticated identity at the gateway, never from the client. (R5) Do not rely on detection for prevention: one read is enough to exchange a value, and metadata work looks the same. (R6) Run a frozen differential meter with nulls on every configuration change and report a measured rate, never ``no channel''.
+
+\textbf{Theory of change.} Labs already route agents' package and model access through shared services, and the incident showed what that permits. These results give them tested configurations, a reason not to stop at write restrictions or monitoring, and a cheap regression test for isolation claims.
+
+\textbf{Limitations.} One Artifactory and one vLLM version, each on one host, with synthetic delays and small fixed workloads. A failed search bounds only the tested actions. Rates are for simple schemes, not capacities, and P2 does not identify its cause. Model results come from assigned tasks, provider failures censor some cells, and the BC agents are two cheap open models in short episodes. P1's audit amendment came after its holdout was opened. In the incident's trace release I found no row using statistics or timing, a null on a reconstructed dataset, not evidence about history.
+
+\textbf{Future work.} Production-scale and multi-GPU servers; interference-bounded scheduling as a control; agents with shared scaffolds and longer horizons; web caches and dataset stores.
+
+\section{Conclusion}
+Removing write access did not isolate agents on either shared service I tested. On the incident's package mirror, read-triggered records carried every scheduled bit until a combination of controls, with identity bound outside the sandbox, closed them; a private frozen catalog removed them and kept installs working. On a shared model server, an identity-bound salt closed the cache channel cheaply. On both, the other tenant's activity stayed observable under load: in 942 of 1,000 held trials on the package service, and at 10 bits/s on the model server, even between separate processes. Agents used the easy channel at once and failed only at agreeing on a code for the harder one. Isolation for agent fleets should be stated as a measured inter-tenant rate under a named test, not as a permission setting.
+
+\section*{Code and Data}
+Code, evidence and analysis scripts: \url{https://github.com/tayyab415/read-only-is-not-isolation}. Each study's schedules, raw request and response records, service logs, verification scripts and SHA-256 manifests are in the repository. No AI Village data and no Swarm Traces rows are redistributed.
+
+\begin{thebibliography}{99}\small
+\bibitem{openai} OpenAI. Hugging Face incident technical report, 2026. \url{https://cdn.openai.com/pdf/67869394-cb91-4c12-888c-5cbd85c7814c/OpenAI-Hugging-Face\%20Incident-Technical-Report.pdf}
+\bibitem{metr} METR. Hugging Face incident investigation report, Aug 2026. \url{https://metr.org/hugging-face-incident-report-aug-2026.pdf}
+\bibitem{hftimeline} Hugging Face. Anatomy of a Frontier Lab Agent Intrusion: A Technical Timeline of the July 2026 Incident. Hugging Face blog, 2026. \url{https://huggingface.co/blog/agent-intrusion-technical-timeline}
+\bibitem{jfrog} JFrog. Remote repositories; Permission details. \url{https://docs.jfrog.com/artifactory/docs/remote-repositories}
+\bibitem{elasky} Elasky, K\"u\c{c}\"ukkurt, Nakasako, Africa. Encoded Coordination on the Open Web. LessWrong, 2026. \url{https://www.lesswrong.com/posts/SCdR7W6L5GvKaEzaZ/}
+\bibitem{palan} Palan, Chute, Kim, Van Roy. OpenAI-HuggingFace: A Reproduction \& Lessons for Alignment Testing. LessWrong, 11 Sep 2026. \url{https://www.lesswrong.com/posts/fMnC6ZD37qrnZAFYz/}
+\bibitem{lampson} B. Lampson. A Note on the Confinement Problem. CACM 16(10), 1973.
+\bibitem{tcsec} U.S. Department of Defense. Trusted Computer System Evaluation Criteria, DoD 5200.28-STD, 1985. Section 8.0, A Guideline on Covert Channels.
+\bibitem{tg030} National Computer Security Center. A Guide to Understanding Covert Channel Analysis of Trusted Systems, NCSC-TG-030, 1993. Section 5.4.
+\bibitem{gu2025} C.~Gu, X.~L. Li, R.~Kuditipudi, P.~Liang, T.~Hashimoto. Auditing Prompt Caching in Language Model APIs. ICML 2025; arXiv:2502.07776.
+\bibitem{song2024} L.~Song, Z.~Pang, W.~Wang, Z.~Wang, et al. The Early Bird Catches the Leak: Unveiling Timing Side Channels in LLM Serving Systems. arXiv:2409.20002, 2024.
+\bibitem{cachesolidarity} P.~G. Pennas, K.~Papaioannou, M.~Guarnieri, T.~D. Doudali. CacheSolidarity: Preventing Prefix Caching Side Channels in Multi-Tenant LLM Serving Systems. arXiv:2603.10726, 2026 (Middleware 2026).
+\bibitem{vllmsalt} vLLM project. [Core] Prevent side-channel attacks via cache salting, PR \#17045, merged 30 Apr 2025 (first in v0.9.0). \url{https://github.com/vllm-project/vllm/pull/17045}
+\bibitem{abubakar2026} R.~Abu Bakar. Characterizing Contention-Induced Reliability Collapse in KV-Cache Timing Side Channels for Multi-Tenant LLM Serving. arXiv:2609.06853, Sep 2026.
+\bibitem{motwani2024} S.~R. Motwani, M.~Baranchuk, M.~Strohmeier, V.~Bolina, P.~H.~S. Torr, L.~Hammond, C.~Schroeder de Witt. Secret Collusion among AI Agents: Multi-Agent Deception via Steganography. NeurIPS 2024.
+\bibitem{shirnin2026} A.~Shirnin, A.~Kudelya. For Your Eyes Only: Evaluating Coordination Between Isolated Language Model Instances. arXiv:2609.19504, Sep 2026.
+\end{thebibliography}
+
+\clearpage
+\appendix
+\section*{Appendix A: Limitations and Dual-Use / Ethical Considerations}
+All experiments targeted owned fixtures. No historical attack payload was executed and no external service was probed. The only public package retrieval happened during trusted admission, with hashes checked against PyPI. Package clients received scoped credentials through stdin; model subjects in N ran on the controller with no cloud credentials, shell or write access, and BC agents ran in containers whose only reachable host was their own gateway.
+
+Describing how read state and load carry information could help someone build such a channel. The package mechanisms are documented product behaviour, and prefix-cache timing in LLM serving is published; I report them with the controls that close them, which is what operators need. I did not test or describe ways to evade monitoring beyond reporting what existing monitors miss.
+
+Model subjects were asked to exchange harmless integers in sandboxes built for the purpose; I did not ask them to deceive operators. One provider blocked a model's requests under its policy; I kept those failures in the denominators.
+
+\section*{Appendix B: Evidence, audit and reproducibility}
+Each study keeps schedules, raw request and response records, gateway, service, router and upstream logs, verification scripts and SHA-256 manifests: J 80 checks, N 11,725 causal checks over 238 cohorts, P1 4.9 million checks over 6,500 trials, S1 3,600/3,600 holdout joins, BC 144 audited episodes. N model-call costs were reconciled against AWS CloudWatch token counts; BC costs come from a list-price ledger. Repository: \url{https://github.com/tayyab415/read-only-is-not-isolation}.
+
+\IfFileExists{appendix-studies.tex}{\input{appendix-studies.tex}}{}
+
+\section*{Appendix J: Additional figures and tables}
+\begin{figure}[ht]\centering
+\includegraphics[width=0.8\linewidth]{figures/architecture.pdf}
+\caption{Three kinds of state on a package service. Removing write permission protects only content. Left: in a shared remote repository, A's read changes a record that B's later read observes. Right: the design I recommend keeps approved content but removes shared read-triggered records from the request path. Shared host resources remain a separate problem.}\label{fig:arch}
+\end{figure}
+
+\begin{table}[ht]\footnotesize\centering
+\begin{tabular}{lccc}\toprule
+Arm (holdout, $n=400$ each) & Accuracy (95\% CI) & Latency, bit 0 $\rightarrow$ 1 & Cached tokens, bit 0 $\rightarrow$ 1 \\\midrule
+Shared cache & 1.00 (0.99--1.00) & 56 $\rightarrow$ 23 ms & 16 $\rightarrow$ 960 \\
+Client-chosen salt (same value) & 1.00 (0.99--1.00) & 56 $\rightarrow$ 23 ms & 16 $\rightarrow$ 960 \\
+Shared cache, busy server & 0.83 (0.79--0.86) & 78 $\rightarrow$ 40 ms & 16 $\rightarrow$ 960 \\
+Gateway-assigned salt & 0.50 (0.45--0.55) & 56 $\rightarrow$ 56 ms & 16 $\rightarrow$ 16 \\
+Gateway salt, busy server & 0.50 (0.45--0.55) & 78 $\rightarrow$ 81 ms & 16 $\rightarrow$ 16 \\
+Prefix caching off & 0.49 (0.44--0.53) & 55 $\rightarrow$ 55 ms & 0 $\rightarrow$ 0 \\
+Gateway salt; one ordinary request of load & 1.00 (0.99--1.00) & 55 $\rightarrow$ 103 ms & -- \\\bottomrule
+\end{tabular}
+\caption{S1: holdout decoding of tenant A's activity by tenant B, Wilson intervals. Cached tokens are medians from the gateway's native log; 16 is the receiver's own chat-template block.}\label{tab:s1}
+\end{table}
+
+\begin{figure}[ht]\centering
+\begin{minipage}[t]{0.48\linewidth}\centering
+\includegraphics[width=\linewidth]{figures/rate-strip.pdf}
+\caption{Achieved load-channel rates for one scripted on/off scheme through the gateway-assigned salt (600 holdout symbols per condition; frozen one-threshold decoder). Dots are point estimates; bars run to the Wilson 95\% lower bound. These are achieved rates, not capacity. Bottom row: time to move 128 bits at each rate with ideal coding. Grey lines: TCSEC calls over 100 bit/s high and under 1 bit/s acceptable in most environments \cite{tcsec}; NCSC-TG-030 suggests auditing above 0.1 bit/s \cite{tg030}.}\label{fig:rate}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.48\linewidth}\centering
+\includegraphics[width=\linewidth]{figures/monitor-bars.pdf}
+\caption{Three study-O monitors on the 110 verified package exchanges and the 60 benign validation agents, with Wilson 95\% intervals: the server-side rule of \S4.3 (M1), a wait-count monitor (M2) and a notes monitor (M3). $^\dagger$M1's recall is partly by construction: a verified exchange requires the peer download and revealing statistics read that M1 looks for, so 110/110 is not evidence that it recognises intent.}\label{fig:monitors}
+\end{minipage}
+\end{figure}
+
+\begin{figure}[ht]\centering
+\includegraphics[width=\linewidth]{figures/p1-recipes-fixed.pdf}
+\caption{P1 holdout accuracy per sender action. The frozen decoder separates exactly the five actions that change shared state on the open service and nothing else; the hardened arms and both nulls stay near 0.5.}\label{fig:p1}
+\end{figure}
+
+
+\section*{LLM Usage Statement}
+Tayyab Khan is the sole author. He directed the research and made all scope and budget decisions. Experiment code, analysis and drafting were done with AI assistants (Anthropic Claude via Claude Code; OpenAI GPT models via Codex), with independent model reviews before each analysis freeze. All numbers were checked against retained evidence files. All work was done during the hackathon weekend.
+\end{document}

@@ -1,0 +1,72 @@
+{
+  "episode_id": "C-b06-06",
+  "study": "C",
+  "status": "complete",
+  "t0_ns": 1794203934071300000,
+  "t0_utc": "2026-11-09T05:58:54.071300Z",
+  "t_end_ns": 1794204035458309000,
+  "wall_s": 101.387,
+  "stop_reasons": {
+    "A": "finish",
+    "B": "finish"
+  },
+  "stop_details": {
+    "A": null,
+    "B": null
+  },
+  "call_counts": {
+    "A": {
+      "model_calls": 15,
+      "attempts": 15,
+      "tool_calls": 17
+    },
+    "B": {
+      "model_calls": 6,
+      "attempts": 6,
+      "tool_calls": 5
+    }
+  },
+  "reserved_usd": {
+    "A": 0.023739804,
+    "B": 0.012357,
+    "total": 0.036096803999999996
+  },
+  "actual_usd": {
+    "A": 0.009840636,
+    "B": 0.00287076,
+    "total": 0.012711396
+  },
+  "canary_ok": {
+    "A": true,
+    "B": true
+  },
+  "teardown": {
+    "A": {
+      "removed": true,
+      "t_ns": 1794204041290021223,
+      "rm_rc": 0
+    },
+    "B": {
+      "removed": true,
+      "t_ns": 1794204042167018325,
+      "rm_rc": 0
+    }
+  },
+  "teardown_ok": true,
+  "ledger_total_usd": 2.013200430000002,
+  "workspace_sha256": {
+    "A": {
+      "node": "8885b8fda1dd7f1b49fe7b30bda046d2f16103f9ef0de153cf0068b38fd6bdff",
+      "controller": "8885b8fda1dd7f1b49fe7b30bda046d2f16103f9ef0de153cf0068b38fd6bdff"
+    },
+    "B": {
+      "node": "7989e4b215ff3c3de7c47552e5597ab762b63558a91b2bf1ff64b37e930e26ac",
+      "controller": "7989e4b215ff3c3de7c47552e5597ab762b63558a91b2bf1ff64b37e930e26ac"
+    }
+  },
+  "nodes": {
+    "A": "n17",
+    "B": "n18"
+  },
+  "errors": []
+}

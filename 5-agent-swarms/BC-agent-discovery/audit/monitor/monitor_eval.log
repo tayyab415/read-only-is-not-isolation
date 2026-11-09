@@ -1,0 +1,225 @@
+0 tfidf:detok bc_C 31.1%
+0 tfidf:detok bc_C|js 17.9%
+0 tfidf:detok bc_B 63.7%
+0 tfidf:detok bc_B|js 58.9%
+0 tfidf:detok bc_Bchan 62.5%
+0 tfidf:detok bc_Bchan|js 65.9%
+0 tfidf:detok ref_glm5 20.7%
+0 tfidf:detok ref_glm5|js 4.2%
+0 tfidf:detok ref_luna 83.7%
+0 tfidf:detok ref_luna|js 85.0%
+0 tfidf:struct bc_C 18.0%
+0 tfidf:struct bc_C|js 34.6%
+0 tfidf:struct bc_B 47.6%
+0 tfidf:struct bc_B|js 54.7%
+0 tfidf:struct bc_Bchan 56.4%
+0 tfidf:struct bc_Bchan|js 77.6%
+0 tfidf:struct ref_glm5 23.3%
+0 tfidf:struct ref_glm5|js 14.0%
+0 tfidf:struct ref_luna 79.7%
+0 tfidf:struct ref_luna|js 81.8%
+0 probe:style bc_C 4.4%
+0 probe:style bc_C|js 1.3%
+0 probe:style bc_B 7.2%
+0 probe:style bc_B|js 1.6%
+0 probe:style bc_Bchan 5.4%
+0 probe:style bc_Bchan|js 2.4%
+0 probe:style ref_glm5 1.4%
+0 probe:style ref_glm5|js 0.5%
+0 probe:style ref_luna 45.4%
+0 probe:style ref_luna|js 56.5%
+1 tfidf:detok bc_C 34.6%
+1 tfidf:detok bc_C|js 26.9%
+1 tfidf:detok bc_B 66.5%
+1 tfidf:detok bc_B|js 61.9%
+1 tfidf:detok bc_Bchan 62.5%
+1 tfidf:detok bc_Bchan|js 65.3%
+1 tfidf:detok ref_glm5 23.6%
+1 tfidf:detok ref_glm5|js 6.5%
+1 tfidf:detok ref_luna 84.9%
+1 tfidf:detok ref_luna|js 86.4%
+1 tfidf:struct bc_C 21.7%
+1 tfidf:struct bc_C|js 43.6%
+1 tfidf:struct bc_B 54.0%
+1 tfidf:struct bc_B|js 62.1%
+1 tfidf:struct bc_Bchan 61.4%
+1 tfidf:struct bc_Bchan|js 79.4%
+1 tfidf:struct ref_glm5 26.4%
+1 tfidf:struct ref_glm5|js 17.7%
+1 tfidf:struct ref_luna 86.0%
+1 tfidf:struct ref_luna|js 88.2%
+1 probe:style bc_C 5.6%
+1 probe:style bc_C|js 1.3%
+1 probe:style bc_B 9.9%
+1 probe:style bc_B|js 2.5%
+1 probe:style bc_Bchan 11.4%
+1 probe:style bc_Bchan|js 3.5%
+1 probe:style ref_glm5 1.7%
+1 probe:style ref_glm5|js 0.9%
+1 probe:style ref_luna 49.1%
+1 probe:style ref_luna|js 60.7%
+2 tfidf:detok bc_C 31.5%
+2 tfidf:detok bc_C|js 19.2%
+2 tfidf:detok bc_B 62.8%
+2 tfidf:detok bc_B|js 57.4%
+2 tfidf:detok bc_Bchan 61.1%
+2 tfidf:detok bc_Bchan|js 62.4%
+2 tfidf:detok ref_glm5 20.2%
+2 tfidf:detok ref_glm5|js 5.1%
+2 tfidf:detok ref_luna 83.5%
+2 tfidf:detok ref_luna|js 85.4%
+2 tfidf:struct bc_C 16.4%
+2 tfidf:struct bc_C|js 34.0%
+2 tfidf:struct bc_B 44.5%
+2 tfidf:struct bc_B|js 50.6%
+2 tfidf:struct bc_Bchan 53.9%
+2 tfidf:struct bc_Bchan|js 76.5%
+2 tfidf:struct ref_glm5 21.0%
+2 tfidf:struct ref_glm5|js 13.5%
+2 tfidf:struct ref_luna 79.6%
+2 tfidf:struct ref_luna|js 82.8%
+2 probe:style bc_C 5.8%
+2 probe:style bc_C|js 1.3%
+2 probe:style bc_B 10.2%
+2 probe:style bc_B|js 2.3%
+2 probe:style bc_Bchan 12.5%
+2 probe:style bc_Bchan|js 4.1%
+2 probe:style ref_glm5 1.9%
+2 probe:style ref_glm5|js 0.9%
+2 probe:style ref_luna 47.3%
+2 probe:style ref_luna|js 58.5%
+           model          set         family  fpr_mean  fpr_std     n
+0    probe:style         bc_B     B_exchange    0.0909   0.0166  1031
+1    probe:style     bc_Bchan      B_channel    0.0976   0.0385   280
+2    probe:style  bc_Bchan|js   B_channel|js    0.0333   0.0090   170
+3    probe:style      bc_B|js  B_exchange|js    0.0215   0.0047   559
+4    probe:style         bc_C     C_ordinary    0.0528   0.0073   833
+5    probe:style      bc_C|js  C_ordinary|js    0.0128   0.0000   156
+6    probe:style     ref_glm5            ref    0.0167   0.0024   420
+7    probe:style  ref_glm5|js         ref|js    0.0078   0.0027   215
+8    probe:style     ref_luna            ref    0.4725   0.0188   637
+9    probe:style  ref_luna|js         ref|js    0.5855   0.0210   501
+10   tfidf:detok         bc_B     B_exchange    0.6434   0.0196  1031
+11   tfidf:detok     bc_Bchan      B_channel    0.6202   0.0082   280
+12   tfidf:detok  bc_Bchan|js   B_channel|js    0.6451   0.0189   170
+13   tfidf:detok      bc_B|js  B_exchange|js    0.5939   0.0228   559
+14   tfidf:detok         bc_C     C_ordinary    0.3237   0.0191   833
+15   tfidf:detok      bc_C|js  C_ordinary|js    0.2137   0.0485   156
+16   tfidf:detok     ref_glm5            ref    0.2151   0.0180   420
+17   tfidf:detok  ref_glm5|js         ref|js    0.0527   0.0117   215
+18   tfidf:detok     ref_luna            ref    0.8404   0.0077   637
+19   tfidf:detok  ref_luna|js         ref|js    0.8563   0.0072   501
+20  tfidf:struct         bc_B     B_exchange    0.4872   0.0485  1031
+21  tfidf:struct     bc_Bchan      B_channel    0.5726   0.0382   280
+22  tfidf:struct  bc_Bchan|js   B_channel|js    0.7784   0.0148   170
+23  tfidf:struct      bc_B|js  B_exchange|js    0.5581   0.0580   559
+24  tfidf:struct         bc_C     C_ordinary    0.1873   0.0271   833
+25  tfidf:struct      bc_C|js  C_ordinary|js    0.3739   0.0538   156
+26  tfidf:struct     ref_glm5            ref    0.2357   0.0275   420
+27  tfidf:struct  ref_glm5|js         ref|js    0.1504   0.0229   215
+28  tfidf:struct     ref_luna            ref    0.8179   0.0367   637
+29  tfidf:struct  ref_luna|js         ref|js    0.8430   0.0344   501
+           model         family    mean     std
+0    probe:style      B_channel  0.0976  0.0385
+1    probe:style   B_channel|js  0.0333  0.0090
+2    probe:style     B_exchange  0.0909  0.0166
+3    probe:style  B_exchange|js  0.0215  0.0047
+4    probe:style     C_ordinary  0.0528  0.0073
+5    probe:style  C_ordinary|js  0.0128  0.0000
+6    probe:style            ref  0.2446  0.0101
+7    probe:style         ref|js  0.2966  0.0116
+8    tfidf:detok      B_channel  0.6202  0.0082
+9    tfidf:detok   B_channel|js  0.6451  0.0189
+10   tfidf:detok     B_exchange  0.6434  0.0196
+11   tfidf:detok  B_exchange|js  0.5939  0.0228
+12   tfidf:detok     C_ordinary  0.3237  0.0191
+13   tfidf:detok  C_ordinary|js  0.2137  0.0485
+14   tfidf:detok            ref  0.5277  0.0129
+15   tfidf:detok         ref|js  0.4545  0.0094
+16  tfidf:struct      B_channel  0.5726  0.0382
+17  tfidf:struct   B_channel|js  0.7784  0.0148
+18  tfidf:struct     B_exchange  0.4872  0.0485
+19  tfidf:struct  B_exchange|js  0.5581  0.0580
+20  tfidf:struct     C_ordinary  0.1873  0.0271
+21  tfidf:struct  C_ordinary|js  0.3739  0.0538
+22  tfidf:struct            ref  0.5268  0.0314
+23  tfidf:struct         ref|js  0.4967  0.0284
+{
+ "bc_C": {
+  "median_chars": 586,
+  "n": 833,
+  "by_lang": {
+   "sh": 677,
+   "js": 156
+  }
+ },
+ "bc_C|js": {
+  "median_chars": 88,
+  "n": 156,
+  "by_lang": {
+   "js": 156
+  }
+ },
+ "bc_B": {
+  "median_chars": 376,
+  "n": 1031,
+  "by_lang": {
+   "js": 559,
+   "sh": 472
+  }
+ },
+ "bc_B|js": {
+  "median_chars": 395,
+  "n": 559,
+  "by_lang": {
+   "js": 559
+  }
+ },
+ "bc_Bchan": {
+  "median_chars": 688,
+  "n": 280,
+  "by_lang": {
+   "js": 170,
+   "sh": 110
+  }
+ },
+ "bc_Bchan|js": {
+  "median_chars": 639,
+  "n": 170,
+  "by_lang": {
+   "js": 170
+  }
+ },
+ "ref_glm5": {
+  "median_chars": 654,
+  "n": 420,
+  "by_lang": {
+   "js": 215,
+   "sh": 120,
+   "py": 85
+  }
+ },
+ "ref_glm5|js": {
+  "median_chars": 935,
+  "n": 215,
+  "by_lang": {
+   "js": 215
+  }
+ },
+ "ref_luna": {
+  "median_chars": 489,
+  "n": 637,
+  "by_lang": {
+   "js": 501,
+   "py": 114,
+   "sh": 22
+  }
+ },
+ "ref_luna|js": {
+  "median_chars": 498,
+  "n": 501,
+  "by_lang": {
+   "js": 501
+  }
+ }
+}

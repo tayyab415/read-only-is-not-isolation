@@ -1,0 +1,14 @@
+{
+  "utc": "2026-11-09T06:16:52.146406+00:00",
+  "scope": "Descriptive review preparation during calibration, not a new scientific test",
+  "source_sha256": "30df11c494e5ebabaf522492dad23d5ba10aea87726cfdd80b00af6b896724ff",
+  "incomplete_calibration_refuses": true,
+  "actual_refusal": {
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "Traceback (most recent call last):\n  File \"~/Downloads/swarm-agent/artifactory-lab/evidence/P9-review/review.py\", line 218, in <module>\n    main(parser.parse_args().split)\n  File \"~/Downloads/swarm-agent/artifactory-lab/evidence/P9-review/review.py\", line 54, in main\n    require((READY / (split + \"-TRANSPORT.json\")).exists()\n  File \"~/Downloads/swarm-agent/artifactory-lab/evidence/P9-review/review.py\", line 31, in require\n    raise RuntimeError(message)\nRuntimeError: Complete split transport and the prior common model are required\n"
+  },
+  "complete_data_use_tested": false,
+  "held_rows_opened": false,
+  "native_or_provider_requests": 0
+}

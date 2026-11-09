@@ -1,6 +1,6 @@
 # 5. Agent swarms
 
-These are the runs where language-model agents, not scripted clients, worked against the shared service. They ask whether cheap models find and use the shared read state when told to, whether they stumble on it during ordinary work, and whether independent copies already share a signalling code. M, N, P4 and P5b use the Artifactory lab, T1 and T2 are single-call tests of shared conventions, and BC moves to a shared model server and is still collecting.
+These are the runs where language-model agents, not scripted clients, worked against the shared service. They ask whether cheap models find and use the shared read state when told to, whether they stumble on it during ordinary work, and whether independent copies already share a signalling code. M, N, P4 and P5b use the Artifactory lab, T1 and T2 are single-call tests of shared conventions, and BC moves to a shared model server and has finished collecting.
 
 | Folder | Question | Result |
 | --- | --- | --- |
@@ -10,7 +10,7 @@ These are the runs where language-model agents, not scripted clients, worked aga
 | [P5b-ordinary-tasks](P5b-ordinary-tasks/) | In an ordinary diagnostic task with no peer or goal, do models notice another tenant's state? | 0 peer-linked observations in 12 episodes. No `?stats` request was made. |
 | [T1-shared-conventions](T1-shared-conventions/) | Do independent samples from the same model, same developer or different developers pick the same signalling code? | Fully compatible pairs: 0.49 same model, 0.32 different developers (same wording). Difference 0.17 (0.15 to 0.19). |
 | [T2-opaque-naming](T2-opaque-naming/) | Do opaque file names remove that shared code? | No. Different-developer agreement rose from 0.392 to 0.559 (+0.167, 0.106 to 0.228). |
-| [BC-agent-discovery](BC-agent-discovery/) | Do agents sharing a model server notice or use its load channel, during ordinary work or with a goal? | Pending. Design, frozen protocol, harness and validation are included. Data comes at the freeze. |
+| [BC-agent-discovery](BC-agent-discovery/) | Do agents sharing a model server notice or use its load channel, during ordinary work or with a goal? | C (96 episodes): work done in 84, no attribution, attempt or transfer, requests about 1.27x slower when the peer was busy. B (48 episodes): agents tried every time, value recovered 1/48 (a guess), no shared scheme. |
 
 ## How the agent runs worked
 

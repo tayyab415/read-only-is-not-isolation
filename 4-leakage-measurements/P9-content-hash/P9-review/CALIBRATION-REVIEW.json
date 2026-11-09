@@ -1,0 +1,510 @@
+{
+  "utc": "2026-11-09T06:25:56.498021+00:00",
+  "passed": true,
+  "split": "calibration",
+  "trials": 400,
+  "native_checks": 170512,
+  "model_sha256": "64a21ea74129daeaabdb5ad9ed73238e7a65579e30c4a9fc6b1561212f959d8f",
+  "model_frozen_utc": "2026-11-09T06:25:23.557759+00:00",
+  "model_utc_ns": 1794205523557759000,
+  "all_calibration_seals_precede_model": true,
+  "cells": {
+    "equal": {
+      "run_id": "p9-c1-equal",
+      "trials": 100,
+      "calibration_sealed_utc_ns": 1794204319348750979,
+      "sealed_utc_ns": 1794204319348750979,
+      "native_nodes": 32,
+      "canonical_files": 1,
+      "receiver_etag": "e8627e1a8b3b777cb5e58066954340fdbbc31e2b",
+      "original_fit_exact": true,
+      "class_medians_ms": {
+        "0": 3.8461345,
+        "1": 3.37153
+      },
+      "decoder": {
+        "threshold_ms": 3.60883225,
+        "active_is_below": true,
+        "calibration_median_active_ms": 3.37153,
+        "calibration_median_idle_ms": 3.8461345,
+        "calibration_trials": 100,
+        "calibration_sha256": "2aac725297b7d145cc3a3e5fb8f285192273ea50b18b30ff4b9fd7287dc9fb63"
+      },
+      "receiver_schedule_lead_ms": {
+        "count": 100,
+        "min": 296.68672,
+        "median": 298.44273250000003,
+        "p95_nearest_rank": 298.649338,
+        "max": 298.700042
+      },
+      "sender_overrun_ms_all_trials": {
+        "count": 100,
+        "min": 0.0,
+        "median": 0.0,
+        "p95_nearest_rank": 518.111514,
+        "max": 893.150172
+      },
+      "late_receiver_setup_trials": [],
+      "positive_sender_overrun_trials": [
+        {
+          "trial": "c0013",
+          "label": 1,
+          "sender": "alice",
+          "receiver": "bob",
+          "jsonl_line": 14,
+          "receiver_schedule_lead_ms": 298.334055,
+          "sender_overrun_ms": 14.971463
+        },
+        {
+          "trial": "c0016",
+          "label": 1,
+          "sender": "alice",
+          "receiver": "bob",
+          "jsonl_line": 17,
+          "receiver_schedule_lead_ms": 298.334905,
+          "sender_overrun_ms": 784.552444
+        },
+        {
+          "trial": "c0026",
+          "label": 1,
+          "sender": "alice",
+          "receiver": "bob",
+          "jsonl_line": 27,
+          "receiver_schedule_lead_ms": 298.453093,
+          "sender_overrun_ms": 654.171426
+        },
+        {
+          "trial": "c0034",
+          "label": 1,
+          "sender": "alice",
+          "receiver": "bob",
+          "jsonl_line": 35,
+          "receiver_schedule_lead_ms": 298.238397,
+          "sender_overrun_ms": 893.150172
+        },
+        {
+          "trial": "c0038",
+          "label": 1,
+          "sender": "bob",
+          "receiver": "alice",
+          "jsonl_line": 39,
+          "receiver_schedule_lead_ms": 298.67882,
+          "sender_overrun_ms": 518.111514
+        },
+        {
+          "trial": "c0042",
+          "label": 1,
+          "sender": "bob",
+          "receiver": "alice",
+          "jsonl_line": 43,
+          "receiver_schedule_lead_ms": 298.636157,
+          "sender_overrun_ms": 287.762126
+        },
+        {
+          "trial": "c0046",
+          "label": 1,
+          "sender": "bob",
+          "receiver": "alice",
+          "jsonl_line": 47,
+          "receiver_schedule_lead_ms": 298.482826,
+          "sender_overrun_ms": 309.471133
+        },
+        {
+          "trial": "c0049",
+          "label": 1,
+          "sender": "bob",
+          "receiver": "alice",
+          "jsonl_line": 50,
+          "receiver_schedule_lead_ms": 298.510488,
+          "sender_overrun_ms": 887.007981
+        },
+        {
+          "trial": "c0056",
+          "label": 1,
+          "sender": "bob",
+          "receiver": "alice",
+          "jsonl_line": 57,
+          "receiver_schedule_lead_ms": 298.262528,
+          "sender_overrun_ms": 525.128404
+        },
+        {
+          "trial": "c0068",
+          "label": 1,
+          "sender": "bob",
+          "receiver": "alice",
+          "jsonl_line": 69,
+          "receiver_schedule_lead_ms": 298.379847,
+          "sender_overrun_ms": 147.843058
+        },
+        {
+          "trial": "c0073",
+          "label": 1,
+          "sender": "bob",
+          "receiver": "alice",
+          "jsonl_line": 74,
+          "receiver_schedule_lead_ms": 298.27031,
+          "sender_overrun_ms": 509.629689
+        },
+        {
+          "trial": "c0074",
+          "label": 1,
+          "sender": "alice",
+          "receiver": "bob",
+          "jsonl_line": 75,
+          "receiver_schedule_lead_ms": 298.260899,
+          "sender_overrun_ms": 273.572081
+        },
+        {
+          "trial": "c0082",
+          "label": 1,
+          "sender": "bob",
+          "receiver": "alice",
+          "jsonl_line": 83,
+          "receiver_schedule_lead_ms": 298.385458,
+          "sender_overrun_ms": 388.047955
+        }
+      ],
+      "controller_trial_wall_seconds": {
+        "count": 100,
+        "min": 3.055312515,
+        "median": 3.0564838825000002,
+        "p95_nearest_rank": 3.057622769,
+        "max": 3.19763479
+      },
+      "sender_http_requests": 6400,
+      "receiver_http_requests": 2100,
+      "failed_trials": 0
+    },
+    "distinct": {
+      "run_id": "p9-c1-distinct",
+      "trials": 100,
+      "calibration_sealed_utc_ns": 1794204685881189064,
+      "sealed_utc_ns": 1794204685881189064,
+      "native_nodes": 32,
+      "canonical_files": 2,
+      "receiver_etag": "e8627e1a8b3b777cb5e58066954340fdbbc31e2b",
+      "original_fit_exact": true,
+      "class_medians_ms": {
+        "0": 3.805137,
+        "1": 3.3748945
+      },
+      "decoder": {
+        "threshold_ms": 3.59001575,
+        "active_is_below": true,
+        "calibration_median_active_ms": 3.3748945,
+        "calibration_median_idle_ms": 3.805137,
+        "calibration_trials": 100,
+        "calibration_sha256": "5c1bb58e4f9f999547a7ba0bcbb215be05cd43ff24315f29a6ff2972b1880c1b"
+      },
+      "receiver_schedule_lead_ms": {
+        "count": 100,
+        "min": 297.708508,
+        "median": 298.4373575,
+        "p95_nearest_rank": 298.666349,
+        "max": 298.718444
+      },
+      "sender_overrun_ms_all_trials": {
+        "count": 100,
+        "min": 0.0,
+        "median": 0.0,
+        "p95_nearest_rank": 766.268924,
+        "max": 938.449633
+      },
+      "late_receiver_setup_trials": [],
+      "positive_sender_overrun_trials": [
+        {
+          "trial": "c0003",
+          "label": 1,
+          "sender": "alice",
+          "receiver": "bob",
+          "jsonl_line": 4,
+          "receiver_schedule_lead_ms": 298.568992,
+          "sender_overrun_ms": 766.268924
+        },
+        {
+          "trial": "c0011",
+          "label": 1,
+          "sender": "bob",
+          "receiver": "alice",
+          "jsonl_line": 12,
+          "receiver_schedule_lead_ms": 298.440123,
+          "sender_overrun_ms": 667.103267
+        },
+        {
+          "trial": "c0020",
+          "label": 1,
+          "sender": "alice",
+          "receiver": "bob",
+          "jsonl_line": 21,
+          "receiver_schedule_lead_ms": 298.166361,
+          "sender_overrun_ms": 675.850567
+        },
+        {
+          "trial": "c0021",
+          "label": 1,
+          "sender": "alice",
+          "receiver": "bob",
+          "jsonl_line": 22,
+          "receiver_schedule_lead_ms": 298.40768,
+          "sender_overrun_ms": 568.467213
+        },
+        {
+          "trial": "c0038",
+          "label": 1,
+          "sender": "bob",
+          "receiver": "alice",
+          "jsonl_line": 39,
+          "receiver_schedule_lead_ms": 298.596834,
+          "sender_overrun_ms": 938.449633
+        },
+        {
+          "trial": "c0047",
+          "label": 1,
+          "sender": "bob",
+          "receiver": "alice",
+          "jsonl_line": 48,
+          "receiver_schedule_lead_ms": 298.621576,
+          "sender_overrun_ms": 436.57393
+        },
+        {
+          "trial": "c0048",
+          "label": 1,
+          "sender": "alice",
+          "receiver": "bob",
+          "jsonl_line": 49,
+          "receiver_schedule_lead_ms": 298.341575,
+          "sender_overrun_ms": 519.456786
+        },
+        {
+          "trial": "c0057",
+          "label": 1,
+          "sender": "alice",
+          "receiver": "bob",
+          "jsonl_line": 58,
+          "receiver_schedule_lead_ms": 298.399489,
+          "sender_overrun_ms": 518.772285
+        },
+        {
+          "trial": "c0074",
+          "label": 1,
+          "sender": "alice",
+          "receiver": "bob",
+          "jsonl_line": 75,
+          "receiver_schedule_lead_ms": 298.430482,
+          "sender_overrun_ms": 776.166522
+        },
+        {
+          "trial": "c0083",
+          "label": 1,
+          "sender": "bob",
+          "receiver": "alice",
+          "jsonl_line": 84,
+          "receiver_schedule_lead_ms": 298.666349,
+          "sender_overrun_ms": 891.332419
+        },
+        {
+          "trial": "c0087",
+          "label": 1,
+          "sender": "alice",
+          "receiver": "bob",
+          "jsonl_line": 88,
+          "receiver_schedule_lead_ms": 298.216186,
+          "sender_overrun_ms": 646.486074
+        },
+        {
+          "trial": "c0088",
+          "label": 1,
+          "sender": "alice",
+          "receiver": "bob",
+          "jsonl_line": 89,
+          "receiver_schedule_lead_ms": 298.470274,
+          "sender_overrun_ms": 795.838654
+        },
+        {
+          "trial": "c0089",
+          "label": 1,
+          "sender": "bob",
+          "receiver": "alice",
+          "jsonl_line": 90,
+          "receiver_schedule_lead_ms": 298.266169,
+          "sender_overrun_ms": 132.456764
+        },
+        {
+          "trial": "c0094",
+          "label": 1,
+          "sender": "alice",
+          "receiver": "bob",
+          "jsonl_line": 95,
+          "receiver_schedule_lead_ms": 298.473535,
+          "sender_overrun_ms": 434.210206
+        },
+        {
+          "trial": "c0096",
+          "label": 1,
+          "sender": "alice",
+          "receiver": "bob",
+          "jsonl_line": 97,
+          "receiver_schedule_lead_ms": 298.518968,
+          "sender_overrun_ms": 923.739918
+        }
+      ],
+      "controller_trial_wall_seconds": {
+        "count": 100,
+        "min": 3.055546176,
+        "median": 3.0562707365,
+        "p95_nearest_rank": 3.070443669,
+        "max": 3.242861205
+      },
+      "sender_http_requests": 6400,
+      "receiver_http_requests": 2100,
+      "failed_trials": 0
+    },
+    "aa-equal": {
+      "run_id": "p9-c1-aa-equal",
+      "trials": 100,
+      "calibration_sealed_utc_ns": 1794205050998597727,
+      "sealed_utc_ns": 1794205050998597727,
+      "native_nodes": 32,
+      "canonical_files": 1,
+      "receiver_etag": "e8627e1a8b3b777cb5e58066954340fdbbc31e2b",
+      "original_fit_exact": true,
+      "class_medians_ms": {
+        "0": 3.8579705000000004,
+        "1": 3.9138945
+      },
+      "decoder": {
+        "threshold_ms": 3.8859325,
+        "active_is_below": false,
+        "calibration_median_active_ms": 3.9138945,
+        "calibration_median_idle_ms": 3.8579705000000004,
+        "calibration_trials": 100,
+        "calibration_sha256": "e9865932143362a4188500722235f2d3f6dfb76c5d98ac7c5d05aebd615979f9"
+      },
+      "receiver_schedule_lead_ms": {
+        "count": 100,
+        "min": 297.509182,
+        "median": 298.3989345,
+        "p95_nearest_rank": 298.636708,
+        "max": 298.695292
+      },
+      "sender_overrun_ms_all_trials": {
+        "count": 100,
+        "min": 0.0,
+        "median": 0.0,
+        "p95_nearest_rank": 0.0,
+        "max": 0.0
+      },
+      "late_receiver_setup_trials": [],
+      "positive_sender_overrun_trials": [],
+      "controller_trial_wall_seconds": {
+        "count": 100,
+        "min": 3.05544796,
+        "median": 3.05647066,
+        "p95_nearest_rank": 3.057702517,
+        "max": 3.058787659
+      },
+      "sender_http_requests": 0,
+      "receiver_http_requests": 2100,
+      "failed_trials": 0
+    },
+    "aa-distinct": {
+      "run_id": "p9-c1-aa-distinct",
+      "trials": 100,
+      "calibration_sealed_utc_ns": 1794205416839495704,
+      "sealed_utc_ns": 1794205416839495704,
+      "native_nodes": 32,
+      "canonical_files": 2,
+      "receiver_etag": "e8627e1a8b3b777cb5e58066954340fdbbc31e2b",
+      "original_fit_exact": true,
+      "class_medians_ms": {
+        "0": 3.72163,
+        "1": 3.6576405000000003
+      },
+      "decoder": {
+        "threshold_ms": 3.6896352500000003,
+        "active_is_below": true,
+        "calibration_median_active_ms": 3.6576405000000003,
+        "calibration_median_idle_ms": 3.72163,
+        "calibration_trials": 100,
+        "calibration_sha256": "043931b9da48b38a114a441e4fb63145d24872e5992217ff49b3343c65f760ee"
+      },
+      "receiver_schedule_lead_ms": {
+        "count": 100,
+        "min": 297.647593,
+        "median": 298.44937849999997,
+        "p95_nearest_rank": 298.642698,
+        "max": 298.734625
+      },
+      "sender_overrun_ms_all_trials": {
+        "count": 100,
+        "min": 0.0,
+        "median": 0.0,
+        "p95_nearest_rank": 0.0,
+        "max": 0.0
+      },
+      "late_receiver_setup_trials": [],
+      "positive_sender_overrun_trials": [],
+      "controller_trial_wall_seconds": {
+        "count": 100,
+        "min": 3.05514258,
+        "median": 3.056203416,
+        "p95_nearest_rank": 3.057153221,
+        "max": 3.084786721
+      },
+      "sender_http_requests": 0,
+      "receiver_http_requests": 2100,
+      "failed_trials": 0
+    }
+  },
+  "input_sha256": {
+    "P9-readiness/calibration-TRANSPORT.json": "b96e00f46df2fcaa20933286ddab260dba48cc6d29024a96d6393c8ba9b9937a",
+    "P9-content/data/aa-distinct/calibration-cleanup.json": "3175bcd2d0290090f52d856a569177ac693e3868d401a443a841439f9261b447",
+    "P9-content/data/aa-distinct/calibration-native-after.json": "02e8b9b4c0761c515f4aa23f07d78a3470cc1f69814cc1fbb4e0a6c1efab6bea",
+    "P9-content/data/aa-distinct/calibration-native-before.json": "ef198bd0266df62f04b98511e9074b5d294bf5667f371bfd9ac24b0d5d994dea",
+    "P9-content/data/aa-distinct/calibration-provision.json": "77aa8ae0d54c1f3e60b9b6eea5384716144df29ee90ac84302faa3bcb3471ea1",
+    "P9-content/data/aa-distinct/calibration-schedule.json": "682eaa6af91b4c80fe914449da8fd0ef89965038b6c7e2ec0f0a31835f9658a8",
+    "P9-content/data/aa-distinct/calibration-sealed.json": "3fe9dfbae6b4cab5808d2529b72c28787dda8c91e5ba8675a1a0a385446d201f",
+    "P9-content/data/aa-distinct/calibration-server-log-lines.txt": "7cd7125a06d2ba5fd4347a9f66445856b395e0b68ed8b227672db31b9e0c220e",
+    "P9-content/data/aa-distinct/calibration-server.json": "0b3e8d0a02c236709f69db1eeb9e652cec083bc175b40d6f2dfd911fcaf22454",
+    "P9-content/data/aa-distinct/calibration.jsonl": "043931b9da48b38a114a441e4fb63145d24872e5992217ff49b3343c65f760ee",
+    "P9-content/data/aa-equal/calibration-cleanup.json": "ab5d1ed845041e567fb5010a870d2aafa71c33bf2c92d171db2e9e57226fbf5c",
+    "P9-content/data/aa-equal/calibration-native-after.json": "0d29dd8bf3cecd5cab4161f2edb6954b545ad4f3ba0a8e20203fded8fef26c84",
+    "P9-content/data/aa-equal/calibration-native-before.json": "3897a0ef49e861fe0e7939970c91ecb2488891bf940cd12ed8540c73d04e3c4b",
+    "P9-content/data/aa-equal/calibration-provision.json": "68d764e4b3eef9c2851c98ef6f14579321bb212c8155b00f828231ab08557916",
+    "P9-content/data/aa-equal/calibration-schedule.json": "21419d710339132dbc79b1ac1ecf6381b12fc99f4fcfdc1397b1526bb4f5499d",
+    "P9-content/data/aa-equal/calibration-sealed.json": "e4ee7079977764fd0952e44cd387791ae8ef6224d276af5a44deffcccb92b6a6",
+    "P9-content/data/aa-equal/calibration-server-log-lines.txt": "626570428a8264866722ef515daa1cb8a6dd4e6fe48d119651ff89eb4c0dbac8",
+    "P9-content/data/aa-equal/calibration-server.json": "4a3ea9714cb3b47c4b8be888dc8ba7a22c3b16fa1e5061b3b6853f30a893a076",
+    "P9-content/data/aa-equal/calibration.jsonl": "e9865932143362a4188500722235f2d3f6dfb76c5d98ac7c5d05aebd615979f9",
+    "P9-content/data/audit-calibration.json": "8dea74c93b5039dd58916b144e5e921d95bce29c4708570ac162bcf02ea7848f",
+    "P9-content/data/distinct/calibration-cleanup.json": "5395e3286e40b8c99bcf1ab05e58e0b3e587c5b4963f74604869564958e34f57",
+    "P9-content/data/distinct/calibration-native-after.json": "b388afaa4e78e4d99da0c532f67eba92afe9654c02f5efd113f82eed610f840b",
+    "P9-content/data/distinct/calibration-native-before.json": "3c6f3b9bc2fd571f365172d10117935537c91a74683485cea48ff3f150e15250",
+    "P9-content/data/distinct/calibration-provision.json": "365bddc991b4e5274db52dac3555c321c1d18f8b6fdcbcd6ef7254b9fee28192",
+    "P9-content/data/distinct/calibration-schedule.json": "12c392c28d1aea35c14c62c53f95b214c035b1da2bb57c9b2d28aeb64fb974cf",
+    "P9-content/data/distinct/calibration-sealed.json": "3bdeedf98f48f7e0bcb563057e516512c4e9087f7739cb72f015ac2092f63e89",
+    "P9-content/data/distinct/calibration-server-log-lines.txt": "d50e32bf4dc0230c156f15cc846255e57ad22e68d97936d83bdbc94881b6a8b9",
+    "P9-content/data/distinct/calibration-server.json": "b581f2f9378ced086107c97e80451c701017770c9b447653b36cd791165b74c5",
+    "P9-content/data/distinct/calibration.jsonl": "5c1bb58e4f9f999547a7ba0bcbb215be05cd43ff24315f29a6ff2972b1880c1b",
+    "P9-content/data/equal/calibration-cleanup.json": "4c14dc7c2141e149f1165b7505a5ca2a33e31cb8f1f8786f0e8bfc43b97c5b12",
+    "P9-content/data/equal/calibration-native-after.json": "272a0c549cc38c9a456aead1f7ad13f095b2a820a12916e4288aeb00f827bbf9",
+    "P9-content/data/equal/calibration-native-before.json": "4857bcf91e3c1e3611fe205faa7e879aaa5c66663da345142cf5e7e5e11ce947",
+    "P9-content/data/equal/calibration-provision.json": "e3733b089477cde00dd8cb8e417b2c4a8a175e04886426559b0f75cee77121d1",
+    "P9-content/data/equal/calibration-schedule.json": "a1abe85555024faac7db8a8de63516931efe739da94c23bcc94df79eaa1ddb99",
+    "P9-content/data/equal/calibration-sealed.json": "da31c90c9fb5f52574e6aa1842d6cc0411f616e0199abec25ede78d72c911026",
+    "P9-content/data/equal/calibration-server-log-lines.txt": "cb66dd6f6d2053ee396c68fed53608ab075505af852a783c328e200396b45b28",
+    "P9-content/data/equal/calibration-server.json": "aae9ef6fc58ab59ba2f41d47816d9c92c788c60e5bd817caad539b481eb11972",
+    "P9-content/data/equal/calibration.jsonl": "2aac725297b7d145cc3a3e5fb8f285192273ea50b18b30ff4b9fd7287dc9fb63",
+    "P9-content/DECODERS-FROZEN.json": "64a21ea74129daeaabdb5ad9ed73238e7a65579e30c4a9fc6b1561212f959d8f"
+  },
+  "review_source_sha256": "30df11c494e5ebabaf522492dad23d5ba10aea87726cfdd80b00af6b896724ff",
+  "trials_excluded": 0,
+  "original_outputs_overwritten": false,
+  "native_or_provider_requests": 0,
+  "scope": "Complete descriptive fit/mapping/timing review; no new statistical test or scientific change",
+  "limits": [
+    "Mappings are scoped canonical-file evidence, not global copy or page-cache proof",
+    "One sequential host comparison does not establish a unique storage cause",
+    "Late setup and overruns remain descriptive and never select or exclude trials"
+  ]
+}

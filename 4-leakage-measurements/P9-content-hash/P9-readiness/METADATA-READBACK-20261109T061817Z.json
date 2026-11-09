@@ -1,0 +1,49 @@
+{
+  "utc": "2026-11-09T06:18:17.859516+00:00",
+  "scope": "Metadata only; no calibration/held observations parsed",
+  "actual_remote": {
+    "status": {
+      "split": "calibration",
+      "stage": "collecting",
+      "finished": [
+        "equal",
+        "distinct",
+        "aa-equal"
+      ],
+      "utc_ns": 1794205051003045072,
+      "arm": "aa-distinct"
+    },
+    "clean_seals": {
+      "equal": {
+        "complete": true,
+        "cleanup_absence_proved": true,
+        "trials": 100,
+        "sealed_utc_ns": 1794204319348750979
+      },
+      "distinct": {
+        "complete": true,
+        "cleanup_absence_proved": true,
+        "trials": 100,
+        "sealed_utc_ns": 1794204685881189064
+      },
+      "aa-equal": {
+        "complete": true,
+        "cleanup_absence_proved": true,
+        "trials": 100,
+        "sealed_utc_ns": 1794205050998597727
+      }
+    },
+    "native_audit": null,
+    "tmux_live": true,
+    "process_pid_elapsed_seconds": [
+      [
+        "253456",
+        "1144"
+      ]
+    ],
+    "source_manifest_sha256": "2cb5aa500c0225acfded77d18f1c84a6c0fc31b4677498f79ae53eb3b956de9b",
+    "model_exists": false
+  },
+  "stderr": "",
+  "remote_program_sha256": "b419dbba1aa19bb2f1d941bd3b0fb677542d1f88d3b41a792c4dfe93d42b90b0"
+}

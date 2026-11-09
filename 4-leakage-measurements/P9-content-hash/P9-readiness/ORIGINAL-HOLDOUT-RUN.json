@@ -1,0 +1,23 @@
+{
+  "started_utc": "2026-11-09T07:49:58.925090+00:00",
+  "finished_utc": "2026-11-09T07:50:01.344350+00:00",
+  "command": [
+    "~/anaconda3/bin/python3",
+    "~/Downloads/swarm-agent/artifactory-lab/evidence/P9-content/analyze.py",
+    "holdout",
+    "~/Downloads/swarm-agent/artifactory-lab/evidence/P9-content/data"
+  ],
+  "environment": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "returncode": 0,
+  "stdout": "{\n  \"arms\": {\n    \"equal\": {\n      \"trials\": 300,\n      \"correct\": 254,\n      \"accuracy\": 0.8466666666666667,\n      \"p_one_sided\": 6.005447985823301e-36,\n      \"median_S_active_ms\": 3.4006815,\n      \"median_S_idle_ms\": 3.851055,\n      \"probe_latency_median_ms\": 3.632343,\n      \"probe_latency_p95_ms\": 4.64166,\n      \"failed_trials\": 0,\n      \"p_holm\": 1.8016343957469902e-35\n    },\n    \"distinct\": {\n      \"trials\": 300,\n      \"correct\": 267,\n      \"accuracy\": 0.89,\n      \"p_one_sided\": 7.48649089702859e-47,\n      \"median_S_active_ms\": 3.3720035,\n      \"median_S_idle_ms\": 3.8184425,\n      \"probe_latency_median_ms\": 3.565659,\n      \"probe_latency_p95_ms\": 4.611469,\n      \"failed_trials\": 0,\n      \"p_holm\": 2.994596358811436e-46\n    },\n    \"aa-equal\": {\n      \"trials\": 300,\n      \"correct\": 163,\n      \"accuracy\": 0.5433333333333333,\n      \"p_one_sided\": 0.07963717590007123,\n      \"median_S_active_ms\": 3.862471,\n      \"median_S_idle_ms\": 3.8061165,\n      \"probe_latency_median_ms\": 3.836489,\n      \"probe_latency_p95_ms\": 4.714005,\n      \"failed_trials\": 0,\n      \"p_holm\": 0.15927435180014246\n    },\n    \"aa-distinct\": {\n      \"trials\": 300,\n      \"correct\": 141,\n      \"accuracy\": 0.47,\n      \"p_one_sided\": 0.8952570261109284,\n      \"median_S_active_ms\": 3.8324635000000002,\n      \"median_S_idle_ms\": 3.8031610000000002,\n      \"probe_latency_median_ms\": 3.837839,\n      \"probe_latency_p95_ms\": 4.739038,\n      \"failed_trials\": 0,\n      \"p_holm\": 0.8952570261109284\n    }\n  },\n  \"comparisons\": {\n    \"equal_vs_distinct\": {\n      \"fisher_p_two_sided\": 0.14702720652959267,\n      \"accuracy_difference\": -0.043333333333333335\n    }\n  },\n  \"freeze_sha256\": \"64a21ea74129daeaabdb5ad9ed73238e7a65579e30c4a9fc6b1561212f959d8f\",\n  \"audit_sha256\": \"17ab2502425dc703c6be5431185422726da89df8a4b1a1e2eb66d5835a1b4543\",\n  \"primary_family\": \"Exact balanced-sender-direction conditional assignment tails, four-arm Holm\",\n  \"null_gate_passed\": true,\n  \"scope\": \"Fixed-decoder content intervention on one shared host; no capacity or unique internal cause.\"\n}\n",
+  "stderr": "",
+  "analysis_source_sha256": "8d0ac94eb061ab68df7b9cfe89c56d5a048fcd8e3767116cdc437374eb7096f6",
+  "pre_primary_review_sha256": "e879f180861b41c6e42f13d234264ad195554f32a4521d01089193cb00c817de",
+  "original_results_sha256": "601b49c7dbf5286a7abbe5816636851259ce7e1f9bf25117eb0565ee7e909aa3",
+  "provider_calls": 0,
+  "original_outputs_overwritten": false
+}

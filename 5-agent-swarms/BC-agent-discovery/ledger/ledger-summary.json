@@ -1,0 +1,38 @@
+{
+ "note": "Made for the release from ledger/hf-ledger.jsonl and ledger/cash-ledger.jsonl, which are not included (instance ids in the cash ledger). HF rows are list prices x a 1.2 guard factor. AWS figures are upper bounds at the on-demand rate.",
+ "hf": {
+  "rows": 7802,
+  "reserve_rows": 3901,
+  "actual_rows": 3901,
+  "actual_usd_total": 2.509,
+  "reserved_usd_total": 7.2119,
+  "cap_usd": 10.0,
+  "by_model": {
+   "deepseek": {
+    "calls": 2263,
+    "actual_usd": 1.6178
+   },
+   "glm": {
+    "calls": 1411,
+    "actual_usd": 0.8572
+   },
+   "llama": {
+    "calls": 65,
+    "actual_usd": 0.0096
+   },
+   "qwen": {
+    "calls": 162,
+    "actual_usd": 0.0244
+   }
+  },
+  "scope": "all rows: smoke run, v2 pilot, v1 pilot and the 144 v2 episodes"
+ },
+ "aws": {
+  "nodes_launched": 18,
+  "nodes_stopped": 18,
+  "node_hours_upper": 28.99,
+  "usd_upper": 23.71,
+  "usd_per_hour": 0.8179506849315068,
+  "cap_usd": 32.0
+ }
+}

@@ -1,0 +1,90 @@
+{
+  "utc": "2026-11-09T07:29:58.100655+00:00",
+  "scope": "Metadata and complete seals only; no held observations accessed",
+  "returncode": 0,
+  "remote_program": "from pathlib import Path\nimport json,subprocess,hashlib\nr=Path.home()/\"workspaces/artifactory-lab/next/P9-content\"\nstatus=json.loads((r/\"holdout-sequence-status.json\").read_text())\nseals={}\nfor arm in (\"equal\",\"distinct\",\"aa-equal\",\"aa-distinct\"):\n p=r/\"data\"/arm/\"holdout-sealed.json\"\n if p.exists():seals[arm]=json.loads(p.read_text())\ntmux=subprocess.run([\"tmux\",\"has-session\",\"-t\",\"p9-holdout\"],capture_output=True).returncode==0\nproc=subprocess.run([\"ps\",\"-p\",\"286345\",\"-o\",\"pid=,etime=,args=\"],capture_output=True,text=True)\nprint(json.dumps({\"status\":status,\"seals\":seals,\"tmux_live\":tmux,\"process\":proc.stdout.strip(),\"model_sha256\":hashlib.sha256((r/\"DECODERS-FROZEN.json\").read_bytes()).hexdigest()}))\n",
+  "remote_program_sha256": "47b1b00378e317dd2c997459d0622d780751a3a55b2794d016c9f19f2d29fd21",
+  "stdout": "{\"status\": {\"split\": \"holdout\", \"stage\": \"collecting\", \"finished\": [\"equal\", \"distinct\", \"aa-equal\"], \"utc_ns\": 1794208890302721640, \"arm\": \"aa-distinct\"}, \"seals\": {\"equal\": {\"run_id\": \"p9-h1-equal\", \"arm\": \"equal\", \"split\": \"holdout\", \"complete\": true, \"retained\": 300, \"cleanup_absence_proved\": true, \"sha256\": \"66b9ecb141085ba2ab9a4f61cecaf7e446947f109942e9e67a64c5b9d6f929b6\", \"trials\": 300, \"sealed_utc_ns\": 1794206729820312038, \"source_manifest_sha256\": \"2cb5aa500c0225acfded77d18f1c84a6c0fc31b4677498f79ae53eb3b956de9b\", \"evidence_sha256\": {\"holdout-provision.json\": \"569345aafaec7c792ed772b312b8d89eb52355b4638c563ec905f6faa434dcf8\", \"holdout-schedule.json\": \"ad67fccea610c27af204ab38868b6b91e91e8a0854df0a5a730400be5583ed5c\", \"holdout-server.json\": \"e1d4cbf47b8f755757ebcd7ec0c526f43e3e6b94ce6f783e7367f48e55fa7731\", \"holdout-server-log-lines.txt\": \"dc47c7297464ea5c6a49075837fb23dc167a1f419cee738e60b519f33e368780\", \"holdout-cleanup.json\": \"3742ca390239677dc42575505c030e1ac56663afe9857f281cf4ecf9e5ae14cd\", \"holdout-native-before.json\": \"8fa08c132bfd5caab21eea5006f741214b4afa7a52c14c9da92610578fd7a184\", \"holdout-native-after.json\": \"ce68bae31689eb37de38cfbdb09892a62ace314a4935491515ab88ec511050ad\"}}, \"distinct\": {\"run_id\": \"p9-h1-distinct\", \"arm\": \"distinct\", \"split\": \"holdout\", \"complete\": true, \"retained\": 300, \"cleanup_absence_proved\": true, \"sha256\": \"e9e0d99dcbdc99b205c410010009e8144e0fd97cca6739bd5b1d506b53cfbf3b\", \"trials\": 300, \"sealed_utc_ns\": 1794207811122915907, \"source_manifest_sha256\": \"2cb5aa500c0225acfded77d18f1c84a6c0fc31b4677498f79ae53eb3b956de9b\", \"evidence_sha256\": {\"holdout-provision.json\": \"ef2a9c769e24e73653d1a43100dd27597076540944895b821439441dae4a12e5\", \"holdout-schedule.json\": \"d31802307a686fbf748d6b7a61427bf209102f484eef484383739e71333602fb\", \"holdout-server.json\": \"bdeb46f23283e20814ae8d87f68e4d8b930d36651ab003f6ecaf7764208e4b96\", \"holdout-server-log-lines.txt\": \"516f65fc4eef9836bf438f41b312ed7ef6034de8ae6d0309119ff88a32346f18\", \"holdout-cleanup.json\": \"6c16540b2b7b4a790b4e6ac845b10a74e143b6cb0c3a826805a2126d1e04a778\", \"holdout-native-before.json\": \"81bbe41dfa5cd5beefd2c7c64e7251e292ee38c14c2136212340af9360f8f45f\", \"holdout-native-after.json\": \"046883122b2823bee2d870392c5ce8526b0e81b2ee6bd47a5bbb6e2335ad019e\"}}, \"aa-equal\": {\"run_id\": \"p9-h1-aa-equal\", \"arm\": \"aa-equal\", \"split\": \"holdout\", \"complete\": true, \"retained\": 300, \"cleanup_absence_proved\": true, \"sha256\": \"ca2e606596a37128704108c7d6ac82eac306497e455db8292a56e19282bd150a\", \"trials\": 300, \"sealed_utc_ns\": 1794208890291173981, \"source_manifest_sha256\": \"2cb5aa500c0225acfded77d18f1c84a6c0fc31b4677498f79ae53eb3b956de9b\", \"evidence_sha256\": {\"holdout-provision.json\": \"d24e84622d016e0b28cd735f5629865ae4bcf870c4a747147e58eeb8aabeffc1\", \"holdout-schedule.json\": \"70998c18210a0f6e7fd944d305c66b5c3613ba86e804dbdf64f97ca808c49d54\", \"holdout-server.json\": \"efa0513d4ba5871e1fbee095f6189345d98b501d37310001405e6d96ff243c91\", \"holdout-server-log-lines.txt\": \"567f518da7f8092e3fbde3d4b40914517a34cac59ba67aa5d126d06a3c700123\", \"holdout-cleanup.json\": \"7c94db5ea2ac53f916dfa7a16f6100b077d6a2dfcc90fdb401374a0e3e824b0e\", \"holdout-native-before.json\": \"f344aab510aaf90a5698b7156b6d5be2095518b42b8088f0471b4b68569f9a40\", \"holdout-native-after.json\": \"125734617c04be21ae6e4dd358ce7c3b7e31e32c84b14ac1cf02b33a09129e28\"}}}, \"tmux_live\": true, \"process\": \"286345    01:02:29 python3 -u sequence.py holdout\", \"model_sha256\": \"64a21ea74129daeaabdb5ad9ed73238e7a65579e30c4a9fc6b1561212f959d8f\"}\n",
+  "stderr": "",
+  "actual_remote": {
+    "status": {
+      "split": "holdout",
+      "stage": "collecting",
+      "finished": [
+        "equal",
+        "distinct",
+        "aa-equal"
+      ],
+      "utc_ns": 1794208890302721640,
+      "arm": "aa-distinct"
+    },
+    "seals": {
+      "equal": {
+        "run_id": "p9-h1-equal",
+        "arm": "equal",
+        "split": "holdout",
+        "complete": true,
+        "retained": 300,
+        "cleanup_absence_proved": true,
+        "sha256": "66b9ecb141085ba2ab9a4f61cecaf7e446947f109942e9e67a64c5b9d6f929b6",
+        "trials": 300,
+        "sealed_utc_ns": 1794206729820312038,
+        "source_manifest_sha256": "2cb5aa500c0225acfded77d18f1c84a6c0fc31b4677498f79ae53eb3b956de9b",
+        "evidence_sha256": {
+          "holdout-provision.json": "569345aafaec7c792ed772b312b8d89eb52355b4638c563ec905f6faa434dcf8",
+          "holdout-schedule.json": "ad67fccea610c27af204ab38868b6b91e91e8a0854df0a5a730400be5583ed5c",
+          "holdout-server.json": "e1d4cbf47b8f755757ebcd7ec0c526f43e3e6b94ce6f783e7367f48e55fa7731",
+          "holdout-server-log-lines.txt": "dc47c7297464ea5c6a49075837fb23dc167a1f419cee738e60b519f33e368780",
+          "holdout-cleanup.json": "3742ca390239677dc42575505c030e1ac56663afe9857f281cf4ecf9e5ae14cd",
+          "holdout-native-before.json": "8fa08c132bfd5caab21eea5006f741214b4afa7a52c14c9da92610578fd7a184",
+          "holdout-native-after.json": "ce68bae31689eb37de38cfbdb09892a62ace314a4935491515ab88ec511050ad"
+        }
+      },
+      "distinct": {
+        "run_id": "p9-h1-distinct",
+        "arm": "distinct",
+        "split": "holdout",
+        "complete": true,
+        "retained": 300,
+        "cleanup_absence_proved": true,
+        "sha256": "e9e0d99dcbdc99b205c410010009e8144e0fd97cca6739bd5b1d506b53cfbf3b",
+        "trials": 300,
+        "sealed_utc_ns": 1794207811122915907,
+        "source_manifest_sha256": "2cb5aa500c0225acfded77d18f1c84a6c0fc31b4677498f79ae53eb3b956de9b",
+        "evidence_sha256": {
+          "holdout-provision.json": "ef2a9c769e24e73653d1a43100dd27597076540944895b821439441dae4a12e5",
+          "holdout-schedule.json": "d31802307a686fbf748d6b7a61427bf209102f484eef484383739e71333602fb",
+          "holdout-server.json": "bdeb46f23283e20814ae8d87f68e4d8b930d36651ab003f6ecaf7764208e4b96",
+          "holdout-server-log-lines.txt": "516f65fc4eef9836bf438f41b312ed7ef6034de8ae6d0309119ff88a32346f18",
+          "holdout-cleanup.json": "6c16540b2b7b4a790b4e6ac845b10a74e143b6cb0c3a826805a2126d1e04a778",
+          "holdout-native-before.json": "81bbe41dfa5cd5beefd2c7c64e7251e292ee38c14c2136212340af9360f8f45f",
+          "holdout-native-after.json": "046883122b2823bee2d870392c5ce8526b0e81b2ee6bd47a5bbb6e2335ad019e"
+        }
+      },
+      "aa-equal": {
+        "run_id": "p9-h1-aa-equal",
+        "arm": "aa-equal",
+        "split": "holdout",
+        "complete": true,
+        "retained": 300,
+        "cleanup_absence_proved": true,
+        "sha256": "ca2e606596a37128704108c7d6ac82eac306497e455db8292a56e19282bd150a",
+        "trials": 300,
+        "sealed_utc_ns": 1794208890291173981,
+        "source_manifest_sha256": "2cb5aa500c0225acfded77d18f1c84a6c0fc31b4677498f79ae53eb3b956de9b",
+        "evidence_sha256": {
+          "holdout-provision.json": "d24e84622d016e0b28cd735f5629865ae4bcf870c4a747147e58eeb8aabeffc1",
+          "holdout-schedule.json": "70998c18210a0f6e7fd944d305c66b5c3613ba86e804dbdf64f97ca808c49d54",
+          "holdout-server.json": "efa0513d4ba5871e1fbee095f6189345d98b501d37310001405e6d96ff243c91",
+          "holdout-server-log-lines.txt": "567f518da7f8092e3fbde3d4b40914517a34cac59ba67aa5d126d06a3c700123",
+          "holdout-cleanup.json": "7c94db5ea2ac53f916dfa7a16f6100b077d6a2dfcc90fdb401374a0e3e824b0e",
+          "holdout-native-before.json": "f344aab510aaf90a5698b7156b6d5be2095518b42b8088f0471b4b68569f9a40",
+          "holdout-native-after.json": "125734617c04be21ae6e4dd358ce7c3b7e31e32c84b14ac1cf02b33a09129e28"
+        }
+      }
+    },
+    "tmux_live": true,
+    "process": "286345    01:02:29 python3 -u sequence.py holdout",
+    "model_sha256": "64a21ea74129daeaabdb5ad9ed73238e7a65579e30c4a9fc6b1561212f959d8f"
+  }
+}

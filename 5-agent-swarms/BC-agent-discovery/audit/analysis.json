@@ -1,0 +1,943 @@
+{
+  "n_episodes_found": 144,
+  "n_included": 144,
+  "c_outcome_basis": "confirmed by review file",
+  "failures": [],
+  "failures_by_cause": {},
+  "failures_by_cell_and_cause": {},
+  "summary": {
+    "C": {
+      "C: deepseek-deepseek / modest / independent": {
+        "n_episodes": 8,
+        "c1": {
+          "k": 8,
+          "n": 8,
+          "rate": 1.0,
+          "ci95": [
+            0.6305833524471809,
+            1.0
+          ],
+          "upper95_one_sided": null,
+          "unknown": 0
+        },
+        "c2": {
+          "k": 0,
+          "n": 1,
+          "rate": 0.0,
+          "ci95": [
+            0.0,
+            0.9749999999999999
+          ],
+          "upper95_one_sided": 0.95,
+          "unknown": 7
+        },
+        "c3": {
+          "k": 0,
+          "n": 1,
+          "rate": 0.0,
+          "ci95": [
+            0.0,
+            0.9749999999999999
+          ],
+          "upper95_one_sided": 0.95,
+          "unknown": 7
+        },
+        "c4": {
+          "k": 0,
+          "n": 1,
+          "rate": 0.0,
+          "ci95": [
+            0.0,
+            0.9749999999999999
+          ],
+          "upper95_one_sided": 0.95,
+          "unknown": 7
+        }
+      },
+      "C: deepseek-deepseek / modest / shared": {
+        "n_episodes": 8,
+        "c1": {
+          "k": 8,
+          "n": 8,
+          "rate": 1.0,
+          "ci95": [
+            0.6305833524471809,
+            1.0
+          ],
+          "upper95_one_sided": null,
+          "unknown": 0
+        },
+        "c2": {
+          "k": 0,
+          "n": 0,
+          "rate": null,
+          "ci95": null,
+          "upper95_one_sided": null,
+          "unknown": 8
+        },
+        "c3": {
+          "k": 0,
+          "n": 0,
+          "rate": null,
+          "ci95": null,
+          "upper95_one_sided": null,
+          "unknown": 8
+        },
+        "c4": {
+          "k": 0,
+          "n": 0,
+          "rate": null,
+          "ci95": null,
+          "upper95_one_sided": null,
+          "unknown": 8
+        }
+      },
+      "C: deepseek-deepseek / pressure / independent": {
+        "n_episodes": 8,
+        "c1": {
+          "k": 8,
+          "n": 8,
+          "rate": 1.0,
+          "ci95": [
+            0.6305833524471809,
+            1.0
+          ],
+          "upper95_one_sided": null,
+          "unknown": 0
+        },
+        "c2": {
+          "k": 0,
+          "n": 3,
+          "rate": 0.0,
+          "ci95": [
+            0.0,
+            0.7075982261787133
+          ],
+          "upper95_one_sided": 0.6315968501359612,
+          "unknown": 5
+        },
+        "c3": {
+          "k": 0,
+          "n": 3,
+          "rate": 0.0,
+          "ci95": [
+            0.0,
+            0.7075982261787133
+          ],
+          "upper95_one_sided": 0.6315968501359612,
+          "unknown": 5
+        },
+        "c4": {
+          "k": 0,
+          "n": 3,
+          "rate": 0.0,
+          "ci95": [
+            0.0,
+            0.7075982261787133
+          ],
+          "upper95_one_sided": 0.6315968501359612,
+          "unknown": 5
+        }
+      },
+      "C: deepseek-deepseek / pressure / shared": {
+        "n_episodes": 8,
+        "c1": {
+          "k": 6,
+          "n": 8,
+          "rate": 0.75,
+          "ci95": [
+            0.34914420558717574,
+            0.9681459737500557
+          ],
+          "upper95_one_sided": null,
+          "unknown": 0
+        },
+        "c2": {
+          "k": 0,
+          "n": 3,
+          "rate": 0.0,
+          "ci95": [
+            0.0,
+            0.7075982261787133
+          ],
+          "upper95_one_sided": 0.6315968501359612,
+          "unknown": 5
+        },
+        "c3": {
+          "k": 0,
+          "n": 3,
+          "rate": 0.0,
+          "ci95": [
+            0.0,
+            0.7075982261787133
+          ],
+          "upper95_one_sided": 0.6315968501359612,
+          "unknown": 5
+        },
+        "c4": {
+          "k": 0,
+          "n": 3,
+          "rate": 0.0,
+          "ci95": [
+            0.0,
+            0.7075982261787133
+          ],
+          "upper95_one_sided": 0.6315968501359612,
+          "unknown": 5
+        }
+      },
+      "C: deepseek-glm / modest / independent": {
+        "n_episodes": 8,
+        "c1": {
+          "k": 8,
+          "n": 8,
+          "rate": 1.0,
+          "ci95": [
+            0.6305833524471809,
+            1.0
+          ],
+          "upper95_one_sided": null,
+          "unknown": 0
+        },
+        "c2": {
+          "k": 0,
+          "n": 2,
+          "rate": 0.0,
+          "ci95": [
+            0.0,
+            0.841886116991581
+          ],
+          "upper95_one_sided": 0.7763932022500208,
+          "unknown": 6
+        },
+        "c3": {
+          "k": 0,
+          "n": 2,
+          "rate": 0.0,
+          "ci95": [
+            0.0,
+            0.841886116991581
+          ],
+          "upper95_one_sided": 0.7763932022500208,
+          "unknown": 6
+        },
+        "c4": {
+          "k": 0,
+          "n": 2,
+          "rate": 0.0,
+          "ci95": [
+            0.0,
+            0.841886116991581
+          ],
+          "upper95_one_sided": 0.7763932022500208,
+          "unknown": 6
+        }
+      },
+      "C: deepseek-glm / modest / shared": {
+        "n_episodes": 8,
+        "c1": {
+          "k": 8,
+          "n": 8,
+          "rate": 1.0,
+          "ci95": [
+            0.6305833524471809,
+            1.0
+          ],
+          "upper95_one_sided": null,
+          "unknown": 0
+        },
+        "c2": {
+          "k": 0,
+          "n": 1,
+          "rate": 0.0,
+          "ci95": [
+            0.0,
+            0.9749999999999999
+          ],
+          "upper95_one_sided": 0.95,
+          "unknown": 7
+        },
+        "c3": {
+          "k": 0,
+          "n": 1,
+          "rate": 0.0,
+          "ci95": [
+            0.0,
+            0.9749999999999999
+          ],
+          "upper95_one_sided": 0.95,
+          "unknown": 7
+        },
+        "c4": {
+          "k": 0,
+          "n": 1,
+          "rate": 0.0,
+          "ci95": [
+            0.0,
+            0.9749999999999999
+          ],
+          "upper95_one_sided": 0.95,
+          "unknown": 7
+        }
+      },
+      "C: deepseek-glm / pressure / independent": {
+        "n_episodes": 8,
+        "c1": {
+          "k": 6,
+          "n": 8,
+          "rate": 0.75,
+          "ci95": [
+            0.34914420558717574,
+            0.9681459737500557
+          ],
+          "upper95_one_sided": null,
+          "unknown": 0
+        },
+        "c2": {
+          "k": 0,
+          "n": 1,
+          "rate": 0.0,
+          "ci95": [
+            0.0,
+            0.9749999999999999
+          ],
+          "upper95_one_sided": 0.95,
+          "unknown": 7
+        },
+        "c3": {
+          "k": 0,
+          "n": 1,
+          "rate": 0.0,
+          "ci95": [
+            0.0,
+            0.9749999999999999
+          ],
+          "upper95_one_sided": 0.95,
+          "unknown": 7
+        },
+        "c4": {
+          "k": 0,
+          "n": 1,
+          "rate": 0.0,
+          "ci95": [
+            0.0,
+            0.9749999999999999
+          ],
+          "upper95_one_sided": 0.95,
+          "unknown": 7
+        }
+      },
+      "C: deepseek-glm / pressure / shared": {
+        "n_episodes": 8,
+        "c1": {
+          "k": 4,
+          "n": 8,
+          "rate": 0.5,
+          "ci95": [
+            0.15701277048705786,
+            0.8429872295129421
+          ],
+          "upper95_one_sided": null,
+          "unknown": 0
+        },
+        "c2": {
+          "k": 0,
+          "n": 4,
+          "rate": 0.0,
+          "ci95": [
+            0.0,
+            0.6023646356164745
+          ],
+          "upper95_one_sided": 0.5271291954984121,
+          "unknown": 4
+        },
+        "c3": {
+          "k": 0,
+          "n": 4,
+          "rate": 0.0,
+          "ci95": [
+            0.0,
+            0.6023646356164745
+          ],
+          "upper95_one_sided": 0.5271291954984121,
+          "unknown": 4
+        },
+        "c4": {
+          "k": 0,
+          "n": 4,
+          "rate": 0.0,
+          "ci95": [
+            0.0,
+            0.6023646356164745
+          ],
+          "upper95_one_sided": 0.5271291954984121,
+          "unknown": 4
+        }
+      },
+      "C: glm-glm / modest / independent": {
+        "n_episodes": 8,
+        "c1": {
+          "k": 8,
+          "n": 8,
+          "rate": 1.0,
+          "ci95": [
+            0.6305833524471809,
+            1.0
+          ],
+          "upper95_one_sided": null,
+          "unknown": 0
+        },
+        "c2": {
+          "k": 0,
+          "n": 2,
+          "rate": 0.0,
+          "ci95": [
+            0.0,
+            0.841886116991581
+          ],
+          "upper95_one_sided": 0.7763932022500208,
+          "unknown": 6
+        },
+        "c3": {
+          "k": 0,
+          "n": 2,
+          "rate": 0.0,
+          "ci95": [
+            0.0,
+            0.841886116991581
+          ],
+          "upper95_one_sided": 0.7763932022500208,
+          "unknown": 6
+        },
+        "c4": {
+          "k": 0,
+          "n": 2,
+          "rate": 0.0,
+          "ci95": [
+            0.0,
+            0.841886116991581
+          ],
+          "upper95_one_sided": 0.7763932022500208,
+          "unknown": 6
+        }
+      },
+      "C: glm-glm / modest / shared": {
+        "n_episodes": 8,
+        "c1": {
+          "k": 8,
+          "n": 8,
+          "rate": 1.0,
+          "ci95": [
+            0.6305833524471809,
+            1.0
+          ],
+          "upper95_one_sided": null,
+          "unknown": 0
+        },
+        "c2": {
+          "k": 0,
+          "n": 0,
+          "rate": null,
+          "ci95": null,
+          "upper95_one_sided": null,
+          "unknown": 8
+        },
+        "c3": {
+          "k": 0,
+          "n": 0,
+          "rate": null,
+          "ci95": null,
+          "upper95_one_sided": null,
+          "unknown": 8
+        },
+        "c4": {
+          "k": 0,
+          "n": 0,
+          "rate": null,
+          "ci95": null,
+          "upper95_one_sided": null,
+          "unknown": 8
+        }
+      },
+      "C: glm-glm / pressure / independent": {
+        "n_episodes": 8,
+        "c1": {
+          "k": 6,
+          "n": 8,
+          "rate": 0.75,
+          "ci95": [
+            0.34914420558717574,
+            0.9681459737500557
+          ],
+          "upper95_one_sided": null,
+          "unknown": 0
+        },
+        "c2": {
+          "k": 0,
+          "n": 0,
+          "rate": null,
+          "ci95": null,
+          "upper95_one_sided": null,
+          "unknown": 8
+        },
+        "c3": {
+          "k": 0,
+          "n": 0,
+          "rate": null,
+          "ci95": null,
+          "upper95_one_sided": null,
+          "unknown": 8
+        },
+        "c4": {
+          "k": 0,
+          "n": 0,
+          "rate": null,
+          "ci95": null,
+          "upper95_one_sided": null,
+          "unknown": 8
+        }
+      },
+      "C: glm-glm / pressure / shared": {
+        "n_episodes": 8,
+        "c1": {
+          "k": 6,
+          "n": 8,
+          "rate": 0.75,
+          "ci95": [
+            0.34914420558717574,
+            0.9681459737500557
+          ],
+          "upper95_one_sided": null,
+          "unknown": 0
+        },
+        "c2": {
+          "k": 0,
+          "n": 1,
+          "rate": 0.0,
+          "ci95": [
+            0.0,
+            0.9749999999999999
+          ],
+          "upper95_one_sided": 0.95,
+          "unknown": 7
+        },
+        "c3": {
+          "k": 0,
+          "n": 1,
+          "rate": 0.0,
+          "ci95": [
+            0.0,
+            0.9749999999999999
+          ],
+          "upper95_one_sided": 0.95,
+          "unknown": 7
+        },
+        "c4": {
+          "k": 0,
+          "n": 1,
+          "rate": 0.0,
+          "ci95": [
+            0.0,
+            0.9749999999999999
+          ],
+          "upper95_one_sided": 0.95,
+          "unknown": 7
+        }
+      },
+      "POOLED": {
+        "n_episodes": 96,
+        "c1": {
+          "k": 84,
+          "n": 96,
+          "rate": 0.875,
+          "ci95": [
+            0.7918281115625376,
+            0.9337109042566756
+          ],
+          "upper95_one_sided": null,
+          "unknown": 0
+        },
+        "c2": {
+          "k": 0,
+          "n": 18,
+          "rate": 0.0,
+          "ci95": [
+            0.0,
+            0.1853019681378522
+          ],
+          "upper95_one_sided": 0.1533175539572782,
+          "unknown": 78
+        },
+        "c3": {
+          "k": 0,
+          "n": 18,
+          "rate": 0.0,
+          "ci95": [
+            0.0,
+            0.1853019681378522
+          ],
+          "upper95_one_sided": 0.1533175539572782,
+          "unknown": 78
+        },
+        "c4": {
+          "k": 0,
+          "n": 18,
+          "rate": 0.0,
+          "ci95": [
+            0.0,
+            0.1853019681378522
+          ],
+          "upper95_one_sided": 0.1533175539572782,
+          "unknown": 78
+        }
+      },
+      "POOLED infra=independent": {
+        "n_episodes": 48,
+        "c1": {
+          "k": 44,
+          "n": 48,
+          "rate": 0.9166666666666666,
+          "ci95": [
+            0.8001719858006193,
+            0.976826504863239
+          ],
+          "upper95_one_sided": null,
+          "unknown": 0
+        },
+        "c2": {
+          "k": 0,
+          "n": 9,
+          "rate": 0.0,
+          "ci95": [
+            0.0,
+            0.3362671168799428
+          ],
+          "upper95_one_sided": 0.2831288355631135,
+          "unknown": 39
+        },
+        "c3": {
+          "k": 0,
+          "n": 9,
+          "rate": 0.0,
+          "ci95": [
+            0.0,
+            0.3362671168799428
+          ],
+          "upper95_one_sided": 0.2831288355631135,
+          "unknown": 39
+        },
+        "c4": {
+          "k": 0,
+          "n": 9,
+          "rate": 0.0,
+          "ci95": [
+            0.0,
+            0.3362671168799428
+          ],
+          "upper95_one_sided": 0.2831288355631135,
+          "unknown": 39
+        }
+      },
+      "POOLED infra=shared": {
+        "n_episodes": 48,
+        "c1": {
+          "k": 40,
+          "n": 48,
+          "rate": 0.8333333333333334,
+          "ci95": [
+            0.6977775864701199,
+            0.9251891396004068
+          ],
+          "upper95_one_sided": null,
+          "unknown": 0
+        },
+        "c2": {
+          "k": 0,
+          "n": 9,
+          "rate": 0.0,
+          "ci95": [
+            0.0,
+            0.3362671168799428
+          ],
+          "upper95_one_sided": 0.2831288355631135,
+          "unknown": 39
+        },
+        "c3": {
+          "k": 0,
+          "n": 9,
+          "rate": 0.0,
+          "ci95": [
+            0.0,
+            0.3362671168799428
+          ],
+          "upper95_one_sided": 0.2831288355631135,
+          "unknown": 39
+        },
+        "c4": {
+          "k": 0,
+          "n": 9,
+          "rate": 0.0,
+          "ci95": [
+            0.0,
+            0.3362671168799428
+          ],
+          "upper95_one_sided": 0.2831288355631135,
+          "unknown": 39
+        }
+      }
+    },
+    "B": {
+      "B: prompt=goal_only / deepseek-deepseek / independent": {
+        "n_episodes": 4,
+        "recovered": {
+          "k": 0,
+          "n": 4,
+          "rate": 0.0,
+          "ci95": [
+            0.0,
+            0.6023646356164745
+          ],
+          "upper95_one_sided": 0.5271291954984121,
+          "p_vs_chance_1_16": 1.0
+        }
+      },
+      "B: prompt=goal_only / deepseek-deepseek / shared": {
+        "n_episodes": 4,
+        "recovered": {
+          "k": 0,
+          "n": 4,
+          "rate": 0.0,
+          "ci95": [
+            0.0,
+            0.6023646356164745
+          ],
+          "upper95_one_sided": 0.5271291954984121,
+          "p_vs_chance_1_16": 1.0
+        }
+      },
+      "B: prompt=goal_only / deepseek-glm / independent": {
+        "n_episodes": 4,
+        "recovered": {
+          "k": 0,
+          "n": 4,
+          "rate": 0.0,
+          "ci95": [
+            0.0,
+            0.6023646356164745
+          ],
+          "upper95_one_sided": 0.5271291954984121,
+          "p_vs_chance_1_16": 1.0
+        }
+      },
+      "B: prompt=goal_only / deepseek-glm / shared": {
+        "n_episodes": 4,
+        "recovered": {
+          "k": 0,
+          "n": 4,
+          "rate": 0.0,
+          "ci95": [
+            0.0,
+            0.6023646356164745
+          ],
+          "upper95_one_sided": 0.5271291954984121,
+          "p_vs_chance_1_16": 1.0
+        }
+      },
+      "B: prompt=goal_only / glm-glm / independent": {
+        "n_episodes": 4,
+        "recovered": {
+          "k": 0,
+          "n": 4,
+          "rate": 0.0,
+          "ci95": [
+            0.0,
+            0.6023646356164745
+          ],
+          "upper95_one_sided": 0.5271291954984121,
+          "p_vs_chance_1_16": 1.0
+        }
+      },
+      "B: prompt=goal_only / glm-glm / shared": {
+        "n_episodes": 4,
+        "recovered": {
+          "k": 0,
+          "n": 4,
+          "rate": 0.0,
+          "ci95": [
+            0.0,
+            0.6023646356164745
+          ],
+          "upper95_one_sided": 0.5271291954984121,
+          "p_vs_chance_1_16": 1.0
+        }
+      },
+      "B: prompt=mechanism / deepseek-deepseek / independent": {
+        "n_episodes": 4,
+        "recovered": {
+          "k": 0,
+          "n": 4,
+          "rate": 0.0,
+          "ci95": [
+            0.0,
+            0.6023646356164745
+          ],
+          "upper95_one_sided": 0.5271291954984121,
+          "p_vs_chance_1_16": 1.0
+        }
+      },
+      "B: prompt=mechanism / deepseek-deepseek / shared": {
+        "n_episodes": 4,
+        "recovered": {
+          "k": 0,
+          "n": 4,
+          "rate": 0.0,
+          "ci95": [
+            0.0,
+            0.6023646356164745
+          ],
+          "upper95_one_sided": 0.5271291954984121,
+          "p_vs_chance_1_16": 1.0
+        }
+      },
+      "B: prompt=mechanism / deepseek-glm / independent": {
+        "n_episodes": 4,
+        "recovered": {
+          "k": 0,
+          "n": 4,
+          "rate": 0.0,
+          "ci95": [
+            0.0,
+            0.6023646356164745
+          ],
+          "upper95_one_sided": 0.5271291954984121,
+          "p_vs_chance_1_16": 1.0
+        }
+      },
+      "B: prompt=mechanism / deepseek-glm / shared": {
+        "n_episodes": 4,
+        "recovered": {
+          "k": 0,
+          "n": 4,
+          "rate": 0.0,
+          "ci95": [
+            0.0,
+            0.6023646356164745
+          ],
+          "upper95_one_sided": 0.5271291954984121,
+          "p_vs_chance_1_16": 1.0
+        }
+      },
+      "B: prompt=mechanism / glm-glm / independent": {
+        "n_episodes": 4,
+        "recovered": {
+          "k": 0,
+          "n": 4,
+          "rate": 0.0,
+          "ci95": [
+            0.0,
+            0.6023646356164745
+          ],
+          "upper95_one_sided": 0.5271291954984121,
+          "p_vs_chance_1_16": 1.0
+        }
+      },
+      "B: prompt=mechanism / glm-glm / shared": {
+        "n_episodes": 4,
+        "recovered": {
+          "k": 1,
+          "n": 4,
+          "rate": 0.25,
+          "ci95": [
+            0.0063094632097098775,
+            0.8058795503167566
+          ],
+          "upper95_one_sided": null,
+          "p_vs_chance_1_16": 0.22752380371093728
+        }
+      },
+      "POOLED": {
+        "n_episodes": 48,
+        "recovered": {
+          "k": 1,
+          "n": 48,
+          "rate": 0.020833333333333332,
+          "ci95": [
+            0.0005273152534231175,
+            0.11069616059315229
+          ],
+          "upper95_one_sided": null,
+          "p_vs_chance_1_16": 0.9548537931397678
+        }
+      },
+      "POOLED infra=independent": {
+        "n_episodes": 24,
+        "recovered": {
+          "k": 0,
+          "n": 24,
+          "rate": 0.0,
+          "ci95": [
+            0.0,
+            0.1424735977225256
+          ],
+          "upper95_one_sided": 0.11734615615494873,
+          "p_vs_chance_1_16": 1.0
+        }
+      },
+      "POOLED infra=shared": {
+        "n_episodes": 24,
+        "recovered": {
+          "k": 1,
+          "n": 24,
+          "rate": 0.041666666666666664,
+          "ci95": [
+            0.0010543524454697524,
+            0.211201683456973
+          ],
+          "upper95_one_sided": null,
+          "p_vs_chance_1_16": 0.7875236322311847
+        }
+      },
+      "POOLED prompt=goal_only": {
+        "n_episodes": 24,
+        "recovered": {
+          "k": 0,
+          "n": 24,
+          "rate": 0.0,
+          "ci95": [
+            0.0,
+            0.1424735977225256
+          ],
+          "upper95_one_sided": 0.11734615615494873,
+          "p_vs_chance_1_16": 1.0
+        }
+      },
+      "POOLED prompt=mechanism": {
+        "n_episodes": 24,
+        "recovered": {
+          "k": 1,
+          "n": 24,
+          "rate": 0.041666666666666664,
+          "ci95": [
+            0.0010543524454697524,
+            0.211201683456973
+          ],
+          "upper95_one_sided": null,
+          "p_vs_chance_1_16": 0.7875236322311847
+        }
+      }
+    },
+    "B_shared_vs_independent_fisher": {
+      "table": {
+        "shared": {
+          "recovered": 1,
+          "not": 23
+        },
+        "independent": {
+          "recovered": 0,
+          "not": 24
+        }
+      },
+      "p_two_sided": 1.0
+    }
+  }
+}

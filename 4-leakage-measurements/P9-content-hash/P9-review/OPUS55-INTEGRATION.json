@@ -1,0 +1,50 @@
+{
+  "utc": "2026-11-09T07:59:30.472935+00:00",
+  "passed": true,
+  "memo_sha256": "c0917935ecf2865dcefaaad00e85cc14647dd22684e854a9c62d54c9dbcc35ac",
+  "reviewed_original_report_sha256": "fdba48d2803f68e3ba69ce3a401ef3bd46941bc95bc9de2844b81e8bb4a83368",
+  "current_report_sha256": "16f461d008dd7f7e41384bd495b48493cb9806bd3c6a375acbe3d5625b5782c7",
+  "actual_primary_sha256": "601b49c7dbf5286a7abbe5816636851259ce7e1f9bf25117eb0565ee7e909aa3",
+  "actual_verification_sha256": "76d8ee97b2c550861d280bf866ab39efae9c8443cdfa5d031bc0863eb1b653ce",
+  "actual_full_review_sha256": "609f788bb7e3c5f11a7203ff6cb3b40ec928d10b7dbc5fbdad0c9ce06eafdb73",
+  "accepted_clarifications": [
+    "Both tenants object0 change; receiver hot object15 remains fixed",
+    "Keep all300assigned denominators and disclose50/150 versus32/150 executed sender overruns",
+    "Fixed cell order, later idle windows and independently fitted directions",
+    "Not necessary is limited to lab2 single sequential run and does not rule out a contribution",
+    "Actual prior model review locator named"
+  ],
+  "active_overrun_counts": {
+    "equal": {
+      "positive_overruns": 50,
+      "assigned_trials": 300,
+      "executed_active_label_trials": 150
+    },
+    "distinct": {
+      "positive_overruns": 32,
+      "assigned_trials": 300,
+      "executed_active_label_trials": 150
+    }
+  },
+  "gap_decomposition": {
+    "distinct_minus_equal_tp": 15,
+    "equal_minus_distinct_tn": 2,
+    "distinct_minus_equal_correct": 13,
+    "cause_inferred": false
+  },
+  "raw_and_corrected_nulls": {
+    "aa-equal": {
+      "raw_pass": true,
+      "holm_pass": true
+    },
+    "aa-distinct": {
+      "raw_pass": true,
+      "holm_pass": true
+    }
+  },
+  "new_statistical_tests": false,
+  "fitted_again": false,
+  "subjects_or_trials_rerun": false,
+  "frozen_scientific_sources_changed": false,
+  "native_or_provider_requests": 0
+}

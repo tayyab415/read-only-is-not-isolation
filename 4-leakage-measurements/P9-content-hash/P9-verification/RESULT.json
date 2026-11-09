@@ -1,0 +1,136 @@
+{
+  "utc": "2026-11-09T07:50:15.166880+00:00",
+  "passed": true,
+  "scores": {
+    "equal": {
+      "trials": 300,
+      "correct": 254,
+      "accuracy": 0.8466666666666667,
+      "accuracy_wilson_95": [
+        0.8015339429418983,
+        0.8830335970090831
+      ],
+      "tp": 124,
+      "tn": 130,
+      "fp": 20,
+      "fn": 26,
+      "tpr": 0.8266666666666667,
+      "fpr": 0.13333333333333333,
+      "median_S_active_ms": 3.4006815,
+      "median_S_idle_ms": 3.851055,
+      "probe_latency_median_ms": 3.632343,
+      "probe_latency_p95_ms": 4.64166,
+      "failed_trials": 0,
+      "primary_conditional_p": 6.0054479858232994e-36,
+      "primary_holm_p": 1.80163439574699e-35
+    },
+    "distinct": {
+      "trials": 300,
+      "correct": 267,
+      "accuracy": 0.89,
+      "accuracy_wilson_95": [
+        0.8495437677561146,
+        0.9205947146887394
+      ],
+      "tp": 139,
+      "tn": 128,
+      "fp": 22,
+      "fn": 11,
+      "tpr": 0.9266666666666666,
+      "fpr": 0.14666666666666667,
+      "median_S_active_ms": 3.3720035,
+      "median_S_idle_ms": 3.8184425,
+      "probe_latency_median_ms": 3.565659,
+      "probe_latency_p95_ms": 4.611469,
+      "failed_trials": 0,
+      "primary_conditional_p": 7.48649089702859e-47,
+      "primary_holm_p": 2.994596358811436e-46
+    },
+    "aa-equal": {
+      "trials": 300,
+      "correct": 163,
+      "accuracy": 0.5433333333333333,
+      "accuracy_wilson_95": [
+        0.48677384505565635,
+        0.5987970974382163
+      ],
+      "tp": 68,
+      "tn": 95,
+      "fp": 55,
+      "fn": 82,
+      "tpr": 0.4533333333333333,
+      "fpr": 0.36666666666666664,
+      "median_S_active_ms": 3.862471,
+      "median_S_idle_ms": 3.8061165,
+      "probe_latency_median_ms": 3.836489,
+      "probe_latency_p95_ms": 4.714005,
+      "failed_trials": 0,
+      "primary_conditional_p": 0.0796371759000712,
+      "primary_holm_p": 0.1592743518001424
+    },
+    "aa-distinct": {
+      "trials": 300,
+      "correct": 141,
+      "accuracy": 0.47,
+      "accuracy_wilson_95": [
+        0.4142588116594049,
+        0.5264997666140677
+      ],
+      "tp": 41,
+      "tn": 100,
+      "fp": 50,
+      "fn": 109,
+      "tpr": 0.2733333333333333,
+      "fpr": 0.3333333333333333,
+      "median_S_active_ms": 3.8324635000000002,
+      "median_S_idle_ms": 3.8031610000000002,
+      "probe_latency_median_ms": 3.837839,
+      "probe_latency_p95_ms": 4.739038,
+      "failed_trials": 0,
+      "primary_conditional_p": 0.8952570261109281,
+      "primary_holm_p": 0.8952570261109281
+    }
+  },
+  "comparison": {
+    "fisher_p_two_sided": 0.14702720652959264,
+    "accuracy_difference": -0.043333333333333335
+  },
+  "nulls": {
+    "aa-equal": {
+      "raw_pass": true,
+      "holm_pass": true
+    },
+    "aa-distinct": {
+      "raw_pass": true,
+      "holm_pass": true
+    }
+  },
+  "null_gate_passed": true,
+  "chronology": {
+    "equal": {
+      "calibration_seal_utc_ns": 1794204319348750979,
+      "model_utc_ns": 1794205523557758976,
+      "first_held_utc_ns": 1794205656198602188
+    },
+    "distinct": {
+      "calibration_seal_utc_ns": 1794204685881189064,
+      "model_utc_ns": 1794205523557758976,
+      "first_held_utc_ns": 1794206737591766428
+    },
+    "aa-equal": {
+      "calibration_seal_utc_ns": 1794205050998597727,
+      "model_utc_ns": 1794205523557758976,
+      "first_held_utc_ns": 1794207818207724285
+    },
+    "aa-distinct": {
+      "calibration_seal_utc_ns": 1794205416839495704,
+      "model_utc_ns": 1794205523557758976,
+      "first_held_utc_ns": 1794208897741459031
+    }
+  },
+  "verification_freeze_sha256": "fa8dc17187219c984f84652d97f4c1eb280a66f02a09c020bd89d25204ddbc6a",
+  "primary_results_sha256": "601b49c7dbf5286a7abbe5816636851259ce7e1f9bf25117eb0565ee7e909aa3",
+  "model_freeze_sha256": "64a21ea74129daeaabdb5ad9ed73238e7a65579e30c4a9fc6b1561212f959d8f",
+  "native_audit_sha256": "17ab2502425dc703c6be5431185422726da89df8a4b1a1e2eb66d5835a1b4543",
+  "scope": "Separate exact arithmetic; original native auditor is reused. Arithmetic agreement does not guarantee passing idle controls."
+}

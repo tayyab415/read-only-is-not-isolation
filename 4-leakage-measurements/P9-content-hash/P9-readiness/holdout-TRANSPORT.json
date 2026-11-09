@@ -1,0 +1,180 @@
+{
+  "utc": "2026-11-09T07:49:10.209129+00:00",
+  "passed": true,
+  "split": "holdout",
+  "diagnostics_only": false,
+  "manifest": {
+    "stage": "audited",
+    "sequence_status": {
+      "split": "holdout",
+      "stage": "audited",
+      "finished": [
+        "equal",
+        "distinct",
+        "aa-equal",
+        "aa-distinct"
+      ],
+      "utc_ns": 1794209973048694096,
+      "arm": "aa-distinct"
+    },
+    "source_manifest_sha256": "2cb5aa500c0225acfded77d18f1c84a6c0fc31b4677498f79ae53eb3b956de9b",
+    "model_freeze_sha256": "64a21ea74129daeaabdb5ad9ed73238e7a65579e30c4a9fc6b1561212f959d8f",
+    "files": {
+      "data/aa-distinct/holdout-cleanup.json": {
+        "sha256": "488724792adc0c468d266572a4cc20ede962ef9140ac67a2cdf957151d6e4718",
+        "bytes": 1331
+      },
+      "data/aa-distinct/holdout-native-after.json": {
+        "sha256": "115368e3ff6bbdfb14d1df4ae6b87c8a71d56082300b9889e9103296b4d600bc",
+        "bytes": 12300
+      },
+      "data/aa-distinct/holdout-native-before.json": {
+        "sha256": "c79fac4ea9d3009fe720ad4e14b8ab3570e2392e741f8e1ff562477c913f2e2f",
+        "bytes": 12300
+      },
+      "data/aa-distinct/holdout-provision.json": {
+        "sha256": "0b0505aa8f2bde94c8911878f2c6d16b486b33878a99cd6709fa5b59dd47da1a",
+        "bytes": 18431
+      },
+      "data/aa-distinct/holdout-schedule.json": {
+        "sha256": "008f88e1db30462245f1a3295d67cb791b976b7580def7bb3dd7dc9e40006190",
+        "bytes": 45790
+      },
+      "data/aa-distinct/holdout-sealed.json": {
+        "sha256": "6172012c90e049550479438f3d81424c4a8ec78c550134f1316ed601f0b4eab5",
+        "bytes": 1107
+      },
+      "data/aa-distinct/holdout-server-log-lines.txt": {
+        "sha256": "fe41035b47af985b2f810dd72353350dcfab7fc94833d72c9944daafb4ce7310",
+        "bytes": 4094587
+      },
+      "data/aa-distinct/holdout-server.json": {
+        "sha256": "2126fc5707695db7034c1594a30a1c8a9f033ef040b8bf5e8dc4b271895a4a5d",
+        "bytes": 3113298
+      },
+      "data/aa-distinct/holdout.jsonl": {
+        "sha256": "eef2c63aa02f5cbd3ba0379f0d6af5e25eea6cc8390dae64422172ed48d9c49b",
+        "bytes": 9773995
+      },
+      "data/aa-equal/holdout-cleanup.json": {
+        "sha256": "7c94db5ea2ac53f916dfa7a16f6100b077d6a2dfcc90fdb401374a0e3e824b0e",
+        "bytes": 1286
+      },
+      "data/aa-equal/holdout-native-after.json": {
+        "sha256": "125734617c04be21ae6e4dd358ce7c3b7e31e32c84b14ac1cf02b33a09129e28",
+        "bytes": 11723
+      },
+      "data/aa-equal/holdout-native-before.json": {
+        "sha256": "f344aab510aaf90a5698b7156b6d5be2095518b42b8088f0471b4b68569f9a40",
+        "bytes": 11723
+      },
+      "data/aa-equal/holdout-provision.json": {
+        "sha256": "d24e84622d016e0b28cd735f5629865ae4bcf870c4a747147e58eeb8aabeffc1",
+        "bytes": 18106
+      },
+      "data/aa-equal/holdout-schedule.json": {
+        "sha256": "70998c18210a0f6e7fd944d305c66b5c3613ba86e804dbdf64f97ca808c49d54",
+        "bytes": 45790
+      },
+      "data/aa-equal/holdout-sealed.json": {
+        "sha256": "3c29c10add091658879dd602e01297ca1f9c7daa244568268cc64f9c6d9e0679",
+        "bytes": 1101
+      },
+      "data/aa-equal/holdout-server-log-lines.txt": {
+        "sha256": "567f518da7f8092e3fbde3d4b40914517a34cac59ba67aa5d126d06a3c700123",
+        "bytes": 4005347
+      },
+      "data/aa-equal/holdout-server.json": {
+        "sha256": "efa0513d4ba5871e1fbee095f6189345d98b501d37310001405e6d96ff243c91",
+        "bytes": 3056595
+      },
+      "data/aa-equal/holdout.jsonl": {
+        "sha256": "ca2e606596a37128704108c7d6ac82eac306497e455db8292a56e19282bd150a",
+        "bytes": 9715551
+      },
+      "data/audit-holdout.json": {
+        "sha256": "17ab2502425dc703c6be5431185422726da89df8a4b1a1e2eb66d5835a1b4543",
+        "bytes": 1313
+      },
+      "data/distinct/holdout-cleanup.json": {
+        "sha256": "6c16540b2b7b4a790b4e6ac845b10a74e143b6cb0c3a826805a2126d1e04a778",
+        "bytes": 1286
+      },
+      "data/distinct/holdout-native-after.json": {
+        "sha256": "046883122b2823bee2d870392c5ce8526b0e81b2ee6bd47a5bbb6e2335ad019e",
+        "bytes": 12192
+      },
+      "data/distinct/holdout-native-before.json": {
+        "sha256": "81bbe41dfa5cd5beefd2c7c64e7251e292ee38c14c2136212340af9360f8f45f",
+        "bytes": 12192
+      },
+      "data/distinct/holdout-provision.json": {
+        "sha256": "ef2a9c769e24e73653d1a43100dd27597076540944895b821439441dae4a12e5",
+        "bytes": 18104
+      },
+      "data/distinct/holdout-schedule.json": {
+        "sha256": "d31802307a686fbf748d6b7a61427bf209102f484eef484383739e71333602fb",
+        "bytes": 45790
+      },
+      "data/distinct/holdout-sealed.json": {
+        "sha256": "cc60f3c4692a620c893b6db459660a0269e7567bb8195a1cdf33b9b6aad508c0",
+        "bytes": 1101
+      },
+      "data/distinct/holdout-server-log-lines.txt": {
+        "sha256": "516f65fc4eef9836bf438f41b312ed7ef6034de8ae6d0309119ff88a32346f18",
+        "bytes": 16354408
+      },
+      "data/distinct/holdout-server.json": {
+        "sha256": "bdeb46f23283e20814ae8d87f68e4d8b930d36651ab003f6ecaf7764208e4b96",
+        "bytes": 11638995
+      },
+      "data/distinct/holdout.jsonl": {
+        "sha256": "e9e0d99dcbdc99b205c410010009e8144e0fd97cca6739bd5b1d506b53cfbf3b",
+        "bytes": 39039821
+      },
+      "data/equal/holdout-cleanup.json": {
+        "sha256": "3742ca390239677dc42575505c030e1ac56663afe9857f281cf4ecf9e5ae14cd",
+        "bytes": 1241
+      },
+      "data/equal/holdout-native-after.json": {
+        "sha256": "ce68bae31689eb37de38cfbdb09892a62ace314a4935491515ab88ec511050ad",
+        "bytes": 11615
+      },
+      "data/equal/holdout-native-before.json": {
+        "sha256": "8fa08c132bfd5caab21eea5006f741214b4afa7a52c14c9da92610578fd7a184",
+        "bytes": 11615
+      },
+      "data/equal/holdout-provision.json": {
+        "sha256": "569345aafaec7c792ed772b312b8d89eb52355b4638c563ec905f6faa434dcf8",
+        "bytes": 17779
+      },
+      "data/equal/holdout-schedule.json": {
+        "sha256": "ad67fccea610c27af204ab38868b6b91e91e8a0854df0a5a730400be5583ed5c",
+        "bytes": 45790
+      },
+      "data/equal/holdout-sealed.json": {
+        "sha256": "f5cf01d5dc07e5b7dcebef05489600aea2193b1316987fb54aa56cf068b4c1e8",
+        "bytes": 1095
+      },
+      "data/equal/holdout-server-log-lines.txt": {
+        "sha256": "dc47c7297464ea5c6a49075837fb23dc167a1f419cee738e60b519f33e368780",
+        "bytes": 15977561
+      },
+      "data/equal/holdout-server.json": {
+        "sha256": "e1d4cbf47b8f755757ebcd7ec0c526f43e3e6b94ce6f783e7367f48e55fa7731",
+        "bytes": 11409492
+      },
+      "data/equal/holdout.jsonl": {
+        "sha256": "66b9ecb141085ba2ab9a4f61cecaf7e446947f109942e9e67a64c5b9d6f929b6",
+        "bytes": 38808899
+      }
+    }
+  },
+  "public_files": 37,
+  "trials": 1200,
+  "native_checks": 511312,
+  "native_or_provider_requests": 0,
+  "private_runtime_exported": false,
+  "held_observations_interpreted": false,
+  "helper_sha256": "f24280ce1438766e9b344b90e0cbb79fb27c47f78de94d4bbb34a95a4023be4c"
+}

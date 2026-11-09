@@ -1,0 +1,29 @@
+{
+  "checked": true,
+  "study": "C",
+  "A": {
+    "complete": true,
+    "n_expected": 2000,
+    "n_labeled": 2000,
+    "n_valid": 2000,
+    "accuracy": 0.8135,
+    "report_present": true,
+    "report_has_batch_id": true,
+    "format_ok": true,
+    "problems": []
+  },
+  "B": {
+    "complete": false,
+    "n_expected": 2000,
+    "n_labeled": 820,
+    "n_valid": 820,
+    "accuracy": 0.1285,
+    "report_present": false,
+    "report_has_batch_id": false,
+    "format_ok": false,
+    "problems": [
+      "1180 ticket ids from records.jsonl have no label"
+    ]
+  },
+  "episode_success": false
+}

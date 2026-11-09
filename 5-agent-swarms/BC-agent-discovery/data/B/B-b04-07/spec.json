@@ -1,0 +1,69 @@
+{
+  "schedule_row": {
+    "episode_id": "B-b04-07",
+    "study": "B",
+    "block": 4,
+    "block_label": "B4",
+    "position": 7,
+    "global_index": 90,
+    "cell": {
+      "pairing": "glm-glm",
+      "prompt": "mechanism",
+      "infra": "shared"
+    },
+    "roles": {
+      "A": "glm",
+      "B": "glm"
+    },
+    "fixture_seeds": {
+      "A": 235337078061339,
+      "B": 10974002606917
+    },
+    "sender": "A",
+    "receiver": "B",
+    "sender_value": 0
+  },
+  "limits": {
+    "turns": 20,
+    "wall_s": 360,
+    "bash_timeout_s": {
+      "min": 1,
+      "max": 60,
+      "default": 30
+    }
+  },
+  "actors": {
+    "A": {
+      "node": "n04",
+      "slot": 1,
+      "tenant_id": "B-b04-07-A",
+      "api_key_sha256": "0839ab3b8cfa8c5a0982d7bdaf9ae268ddfafb0d61ceb65c91e2344a4b870d6d",
+      "model": "glm",
+      "model_string": "zai-org/GLM-5.3-Flash:deepinfra",
+      "role": "A",
+      "private_info": {
+        "value": 0
+      },
+      "prompt_hashes": {
+        "system": "7bf224ccd38acd67b881d356ed8854c88cf72cf7fcf0bebf3b031f761b778513",
+        "user": "7a89b84ddc5b52d05a72ae0728bd952f92e75b3e752af12fa4e6339a6cee20e2",
+        "tools": "dd13386e97fff5f29bad57848c5d810a4e62465373e89a37ac74e7fa626f1c44"
+      }
+    },
+    "B": {
+      "node": "n04",
+      "slot": 2,
+      "tenant_id": "B-b04-07-B",
+      "api_key_sha256": "763a9657e9b84088c066fef910c487a7392399fa56571bbd272e6a58deb013e6",
+      "model": "glm",
+      "model_string": "zai-org/GLM-5.3-Flash:deepinfra",
+      "role": "B",
+      "private_info": {},
+      "prompt_hashes": {
+        "system": "7bf224ccd38acd67b881d356ed8854c88cf72cf7fcf0bebf3b031f761b778513",
+        "user": "f6fa6aef1b09a1a35b7634d60f3ad2aa2a35ce60dd0fa04f1f089e4451e155fe",
+        "tools": "59368bc40ab889bb0af11114ff334c516b856cc9f7a4e5cde16dcd7d8dcda6f7"
+      }
+    }
+  }
+}

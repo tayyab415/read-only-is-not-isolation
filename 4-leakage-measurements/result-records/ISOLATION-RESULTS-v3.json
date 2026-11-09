@@ -1,0 +1,921 @@
+{
+  "format": "swarm-isolation-property-records-v3",
+  "created_utc": "2026-11-09T08:02:42.659005+00:00",
+  "status": "Nine completed scientific property records; final programme costs/cleanup/readback remain pending",
+  "scope": "Result records outside the paused manuscript; no scientific change or new experiment",
+  "prior_edition_sha256": "dc36d3beb2c6a75b7725100b14d669bff5195e8fa687202678a610edaf8b3220",
+  "original_eight_records_unchanged": true,
+  "builder_sha256": "73c0762d98b7f077ddcc735a6592285b24778a71432d66c52718418eac0b065e",
+  "records": [
+    {
+      "id": "artifactory-read-state",
+      "property": "Receiver observation of another permitted client's read state",
+      "receiver_interface": "Owned HTTP statistics and missing-object responses",
+      "sender_action": "Completed fixture download or fresh missing-object GET",
+      "tested_configuration": "Artifactory OSS 7.161.26 shared open repository",
+      "finding_kind": "native_mechanism_confirmed",
+      "finding": "Download statistics and cached misses have exact sender/receiver native joins.",
+      "denominators": {
+        "download_statistics": {
+          "0": 51,
+          "1": 39
+        },
+        "negative_cache": {
+          "1": 47,
+          "0": 47
+        }
+      },
+      "null_controls": {
+        "passed": true,
+        "arms": [
+          "physically idle A/A",
+          "settled dummy sender"
+        ]
+      },
+      "control_recommendation": "Restrict the statistics interface and partition cached-failure state.",
+      "utility_link": "pinned-linux-package-utility",
+      "limitations": [
+        "Known mechanisms, not novelty or historical incident attribution",
+        "Fixed-script native witnesses do not establish model discovery or intent",
+        "P1 audit includes a disclosed post-holdout operational amendment"
+      ],
+      "evidence": [
+        {
+          "file": "evidence/P1-meter/results/analysis-v2/main-m1/known-channel-validation.json",
+          "sha256": "38b8e72197fbf4b97339a08b55042305a11f5f5932cbd396cac9f7fed98ca1c2",
+          "locator": "#/mechanisms",
+          "role": "exact client markers and upstream array locators"
+        },
+        {
+          "file": "evidence/P1-audit-recovery/data/main-m1-recovered/audit-results.json",
+          "sha256": "10cc441fb3dbd779c5170ee40032567a9b9edea56ce96b75fc55cdcf882303f4",
+          "locator": "#/runs",
+          "role": "complete amended native audit"
+        },
+        {
+          "file": "reports/P1-main-results.md",
+          "sha256": "8d07da80dc98d62f39a7f3b4a39242435bebabdc18946fcc75705c79d7ed9807",
+          "locator": "Independent checks and failed original audit",
+          "role": "method, controls and disclosure"
+        }
+      ]
+    },
+    {
+      "id": "repository-separated-http",
+      "property": "Receiver association with concurrent activity despite repository separation",
+      "receiver_interface": "Own allowed HTTP responses, elapsed time and scheduling lag",
+      "sender_action": "Eight bounded recipes with fixed during/after receiver probes",
+      "tested_configuration": "Separate repositories and private immutable serving on one host",
+      "finding_kind": "association_confirmed_cause_unresolved",
+      "finding": "Permission separation does not remove all tested receiver observations.",
+      "denominators": {
+        "separate": {
+          "trials": 1000,
+          "correct": 942,
+          "accuracy": 0.942,
+          "tpr": 0.922,
+          "fpr": 0.038,
+          "classifier_p_holm_experiment": 0.00039996000399960006
+        },
+        "sham": {
+          "trials": 1000,
+          "correct": 657,
+          "accuracy": 0.657,
+          "tpr": 0.684,
+          "fpr": 0.37,
+          "classifier_p_holm_experiment": 0.00039996000399960006
+        },
+        "aa": {
+          "trials": 1000,
+          "correct": 517,
+          "accuracy": 0.517,
+          "tpr": 0.65,
+          "fpr": 0.616,
+          "classifier_p_holm_experiment": 0.147985201479852
+        },
+        "immutable": {
+          "trials": 1000,
+          "correct": 562,
+          "accuracy": 0.562,
+          "tpr": 0.212,
+          "fpr": 0.088,
+          "classifier_p_holm_experiment": 0.00039996000399960006
+        }
+      },
+      "null_controls": {
+        "primary_aa_passed": true,
+        "concurrent_sham_is_zero_leak_null": false
+      },
+      "control_recommendation": "Measure permitted observations separately from authorization.",
+      "utility_link": "pinned-linux-package-utility",
+      "limitations": [
+        "No established storage, scheduler or gateway cause",
+        "Aggregate immutable association has no confirmed selected univariate feature",
+        "Sender overruns and one late A/A receiver remain",
+        "A shared-host fixed-decoder score is not a capacity or deployment guarantee"
+      ],
+      "evidence": [
+        {
+          "file": "evidence/P2-residual/results/p2-m1/holdout-results.json",
+          "sha256": "fce05bd604bdc2994d1a033d0b0e36e30a37a5949ad7565c25f35e26d1f735a9",
+          "locator": "#/results",
+          "role": "original frozen primary analysis"
+        },
+        {
+          "file": "evidence/P2-verification/RESULT.json",
+          "sha256": "2120db34049af888933ce999afa97416bbe2b8c154130fecc24647915413b98f",
+          "locator": "#/numerical_checks",
+          "role": "prospective independent arithmetic"
+        },
+        {
+          "file": "evidence/P2-residual/FROZEN.json",
+          "sha256": "9f01e42c8d81a7926ac157bbe3c86c9d70bb62733ce9e28d178b5ea6ad83ea14",
+          "locator": "#",
+          "role": "prior all-model freeze"
+        },
+        {
+          "file": "evidence/P2-verification/HELD-TIMING-DIAGNOSTIC.json",
+          "sha256": "48077d13ebd5cfe15d1ca57c306f09e564f54883b6235e0d1735a7e513bd6391",
+          "locator": "#",
+          "role": "retained schedule limitations"
+        }
+      ]
+    },
+    {
+      "id": "pinned-linux-package-utility",
+      "property": "Dependency installation and function utility for the admitted pinned catalog",
+      "receiver_interface": "Private package index adapter and Linux pip",
+      "sender_action": "Each tenant installs into a fresh task directory",
+      "tested_configuration": "Matched separate and private immutable routes",
+      "finding_kind": "bounded_utility_confirmed",
+      "finding": "Both routes complete every admitted task; no speed advantage is supported.",
+      "denominators": {
+        "separate": {
+          "scheduled": 28,
+          "completed": 28,
+          "passed": 28,
+          "index_and_wheel_requests": 108,
+          "backend_wheel_requests": 54,
+          "wheel_payload_bytes": 10274240,
+          "external_package_requests_during_tasks": 0
+        },
+        "immutable": {
+          "scheduled": 28,
+          "completed": 28,
+          "passed": 28,
+          "index_and_wheel_requests": 108,
+          "backend_wheel_requests": 54,
+          "wheel_payload_bytes": 10274240,
+          "external_package_requests_during_tasks": 0
+        }
+      },
+      "control_cost": {
+        "unique_wheels": 24,
+        "unique_catalog_bytes": 5013675,
+        "logical_catalog_copies": {
+          "separate": 3,
+          "immutable": 4
+        },
+        "paired_median_difference_s": -0.0083545244999641,
+        "root_cluster_bootstrap95_s": [
+          -0.02500266450010713,
+          0.00799098600009529
+        ]
+      },
+      "null_controls": {
+        "paired_timing_interval_contains_zero": true
+      },
+      "control_recommendation": "Evaluate private immutable serving for this admitted catalog.",
+      "limitations": [
+        "Fourteen pinned roots and 24 universal wheels",
+        "No native extensions, source builds, unrestricted admission or refresh test",
+        "Memory snapshots are not peaks; no whole-host timing isolation",
+        "Pip success does not certify general HEAD semantics"
+      ],
+      "evidence": [
+        {
+          "file": "evidence/P3-linux/data/u1/utility-report.json",
+          "sha256": "a39856be5d0f05b5ed6c64ce276beacde2fbca130e8a37c03041c3a48939ed27",
+          "locator": "#/paired_tasks",
+          "role": "exact matched task IDs and function outcomes"
+        },
+        {
+          "file": "evidence/P3-linux/data/u1/audit-results.json",
+          "sha256": "6c30a2d698fe502881de377913747211e03c6aaa8b4b2aaedd073ef130ca7c15",
+          "locator": "#/runs",
+          "role": "complete native task audit"
+        },
+        {
+          "file": "evidence/P3-linux/UTILITY-FROZEN.json",
+          "sha256": "93e268532ededd4060a955df8ac3dfb707cb9d2a80b40894d446020d29b4acc4",
+          "locator": "#",
+          "role": "source/host freeze"
+        }
+      ]
+    },
+    {
+      "id": "configured-negative-cache",
+      "property": "Receiver origin lookup skipped because another client filled a cached 404",
+      "receiver_interface": "Own completed missing-object GET elapsed time",
+      "sender_action": "Completed fresh missing-object GET before the receiver",
+      "tested_configuration": "NGINX 1.30.6 and Squid 7.8 with explicit 60-second 404 caching",
+      "finding_kind": "native_control_effect_confirmed",
+      "finding": "Trusted key, private cache and disabled cache remove the tested cross-client reuse.",
+      "denominators": {
+        "held_trials": 576,
+        "successful_get_canaries": 60,
+        "get_canaries": 60,
+        "unknown_origins_denied": 20,
+        "unknown_origin_probes": 20,
+        "origin_lookups_after_peer_fill_by_arm": {
+          "shared": 0,
+          "tenant-keyed": 64,
+          "private": 64,
+          "disabled": 64
+        }
+      },
+      "null_controls": {
+        "defended_frozen_predictions_always_idle": true
+      },
+      "control_cost": {
+        "actual_client_plus_origin_http": 2058,
+        "origin_work_per_setting": {
+          "nginx": {
+            "shared": 34,
+            "keyed": 50,
+            "private": 50,
+            "disabled": 56
+          },
+          "squid": {
+            "shared": 39,
+            "keyed": 55,
+            "private": 55,
+            "disabled": 56
+          }
+        }
+      },
+      "control_recommendation": "Use a trusted tenant key when this property and cache utility are required.",
+      "utility_link": "pinned-linux-package-utility",
+      "limitations": [
+        "Known mechanism under explicit negative-cache settings",
+        "Chance-level fixed decoder does not prove every timing channel closed",
+        "One host, two clients and owned fixtures",
+        "Initial NGINX failure and post-calibration/pre-model Squid audit amendment retained"
+      ],
+      "evidence": [
+        {
+          "file": "reports/figures/P7-holdout/descriptive-counts.json",
+          "sha256": "b32ca7cfeeffcd49c9bfee572b0553e69b40114ecf24d939c057a7312b3a9456",
+          "locator": "#/cohorts",
+          "role": "per-cohort native origin/canary counts"
+        },
+        {
+          "file": "evidence/P7-caches/data/g2-main/holdout-results.json",
+          "sha256": "115279e9ed9e0ff463e7016356da66c1e9dd986ac1d5a228f9c2e7040de3cde8",
+          "locator": "#/results",
+          "role": "unchanged original frozen tests"
+        },
+        {
+          "file": "evidence/P7-caches/data/g2-main/audit-results.json",
+          "sha256": "913fc34700cff4e8ea95b4d180c783d9382839772fa802f6f22ed0b0385c93f5",
+          "locator": "#",
+          "role": "complete native held audit"
+        },
+        {
+          "file": "reports/P7-cache-results.md",
+          "sha256": "bbb4d1a1d77057d9a14e9e192f3ffd42091a82da7712d748409fe7a518b14bed",
+          "locator": "Utility and costs",
+          "role": "exact serving limits"
+        }
+      ]
+    },
+    {
+      "id": "bounded-model-search",
+      "property": "Assigned exchange witness versus background-client attribution during diagnostics",
+      "receiver_interface": "Only bounded own HTTP observations and fixed model-visible history",
+      "sender_action": "Assigned peer client or hidden matched ordinary background GETs",
+      "tested_configuration": "Original Luna/gpt-oss pairs and ordinary episodes across three routes",
+      "finding_kind": "exploratory_model_outcomes",
+      "finding": "No strict assigned witness or ordinary peer attribution; search coverage is limited.",
+      "denominators": {
+        "assigned_pairs": 6,
+        "assigned_clients": 12,
+        "assigned_calls": 48,
+        "ordinary_episodes": 12,
+        "ordinary_calls": 55,
+        "ordinary_notes": 38,
+        "ordinary_peer_observations": 0,
+        "ordinary_statistics_queries": 0,
+        "ordinary_invalid_actions": 13
+      },
+      "null_controls": {
+        "ordinary_background": "Six active and six idle matched episodes"
+      },
+      "control_recommendation": "Report endpoint coverage and native witnesses beside model success.",
+      "limitations": [
+        "One episode per cell and a prompt inviting diagnostics",
+        "Ordinary clients never query the known statistics endpoint",
+        "Wrong-path 404 diagnosis and invalid actions remain",
+        "P4 post-paid validator amendment; P5b prospective binding",
+        "No discovery prevalence, intent, capacity or channel-closure inference"
+      ],
+      "evidence": [
+        {
+          "file": "evidence/P4-audit-recovery/replay-v2/assigned-results.json",
+          "sha256": "f6faddc3dcceb78a4a7e5233a4377937931b83b644f9aed636b950bfd9f98e4a",
+          "locator": "#/rows",
+          "role": "complete assigned outcomes and strict witness assessments"
+        },
+        {
+          "file": "evidence/P4-audit-recovery/AMENDMENT.json",
+          "sha256": "0890f79555181b5b86f115b46b7e8dc0909ae69a77a825fcd8ddc8a89f43c31a",
+          "locator": "#",
+          "role": "post-paid disclosure"
+        },
+        {
+          "file": "evidence/P5b-subjects/ordinary-results.json",
+          "sha256": "7ef7cbdfa12a712e0aa8c7dc496fb3e12580e55724d9e7a08862cf0753cb35de",
+          "locator": "#/results",
+          "role": "unchanged ordinary extractor"
+        },
+        {
+          "file": "evidence/P5b-review/OBSERVATION-REVIEW.json",
+          "sha256": "2c9be011db401f8bc9b77c442aaab25eb281c99fab64496af739302ea07e22d9",
+          "locator": "#/episodes",
+          "role": "all exact notes and preceding native background joins"
+        }
+      ]
+    },
+    {
+      "id": "mutable-head-contract",
+      "property": "Supplied HEAD Content-Length equals the corresponding GET representation length",
+      "receiver_interface": "Successful own HEAD and GET response metadata",
+      "sender_action": "Same-path object requests, no peer inference required",
+      "tested_configuration": "Frozen custom mutable P2 gateway used by the subjects",
+      "finding_kind": "serving_contract_failed",
+      "finding": "HEAD emits zero Content-Length for matching 31-byte GET fixtures.",
+      "denominators": {
+        "matched_head_get_failures": 21,
+        "episodes_with_matched_failures": 5
+      },
+      "null_controls": {
+        "same_path_etag_comparison": "Exact successful HEAD/GET pairs, lengths, ETags and native markers"
+      },
+      "control_recommendation": "Repair the future wrapper and validate serving semantics before general use.",
+      "limitations": [
+        "Custom wrapper finding, not demonstrated origin behavior",
+        "Frozen experiment remains unchanged",
+        "No inference about a timing cause or arbitrary HTTP client utility"
+      ],
+      "evidence": [
+        {
+          "file": "evidence/P5b-review/OBSERVATION-REVIEW.json",
+          "sha256": "2c9be011db401f8bc9b77c442aaab25eb281c99fab64496af739302ea07e22d9",
+          "locator": "#/head_zero_length_matched_get_cases",
+          "role": "exact native markers and JSONL lines"
+        },
+        {
+          "file": "evidence/P2-residual/gateway.py",
+          "sha256": "ef77dc2d92db75e7868b42e64395ae13f93304018866f9a06c51e7f040e4bd7f",
+          "locator": "lines 58-79",
+          "role": "empty HEAD body length reheader"
+        },
+        {
+          "file": "evidence/P5b-review/sources/rfc9110-text.txt",
+          "sha256": "21c1cdce6ab0e5509b04d84a28000836c7a087cf786efe6f04877ebfff47232a",
+          "locator": "section 8.6, lines 3226-3230; section 9.3.2, lines 3985-4003",
+          "role": "complete primary serving standard"
+        }
+      ]
+    },
+    {
+      "id": "gateway-and-response-floor",
+      "property": "Activity discrimination through own HTTP after gateway topology or a response floor",
+      "receiver_interface": "Median elapsed time of fifteen scheduled own-object probes",
+      "sender_action": "Fixed 128-GET hot-object workload with eight workers in a two-second window",
+      "tested_configuration": "Shared, per-tenant and 12 ms minimum-header gateways on one shared host",
+      "finding_kind": "tested_mitigations_insufficient",
+      "finding": "Both gateway interventions retain above-chance activity discrimination.",
+      "denominators": {
+        "shared": {
+          "trials": 300,
+          "correct": 220,
+          "accuracy": 0.7333333333333333,
+          "failed_trials": 0,
+          "p_one_sided": 1.4331608660527506e-16,
+          "p_holm": 5.732643464211003e-16
+        },
+        "pergw": {
+          "trials": 300,
+          "correct": 197,
+          "accuracy": 0.6566666666666666,
+          "failed_trials": 0,
+          "p_one_sided": 3.109605119133965e-08,
+          "p_holm": 6.21921023826793e-08
+        },
+        "pad": {
+          "trials": 300,
+          "correct": 216,
+          "accuracy": 0.72,
+          "failed_trials": 0,
+          "p_one_sided": 7.335130515981675e-15,
+          "p_holm": 2.2005391547945024e-14
+        },
+        "aa": {
+          "trials": 300,
+          "correct": 146,
+          "accuracy": 0.4866666666666667,
+          "failed_trials": 0,
+          "p_one_sided": 0.6982971410639314,
+          "p_holm": 0.6982971410639314
+        }
+      },
+      "null_controls": {
+        "primary_aa_raw_nominal_pass": true,
+        "primary_aa_holm_pass": true,
+        "conditional_aa_sensitivity_pass": true
+      },
+      "control_cost": {
+        "probe_latency_by_arm": {
+          "shared": {
+            "probe_latency_median_ms": 4.558495,
+            "probe_latency_p95_ms": 8.116588
+          },
+          "pergw": {
+            "probe_latency_median_ms": 6.061501,
+            "probe_latency_p95_ms": 8.541694
+          },
+          "pad": {
+            "probe_latency_median_ms": 13.623434,
+            "probe_latency_p95_ms": 14.138319
+          },
+          "aa": {
+            "probe_latency_median_ms": 3.937477,
+            "probe_latency_p95_ms": 4.976668
+          }
+        },
+        "original_secondary_comparisons": {
+          "shared_vs_pergw": {
+            "fisher_p_two_sided": 0.050929839365423425,
+            "accuracy_difference": 0.07666666666666666
+          },
+          "shared_vs_pad": {
+            "fisher_p_two_sided": 0.7835186029179049,
+            "accuracy_difference": 0.013333333333333308
+          },
+          "pad_latency_cost_median_ms": 9.064938999999999
+        },
+        "per_tenant_gateway_aggregate_cpu_doubled": true
+      },
+      "control_recommendation": "Do not use these tested gateway or minimum-delay changes as an isolation certificate.",
+      "limitations": [
+        "Sequential configurations on one host, not independent host replications",
+        "A minimum response floor is not constant delivery time",
+        "Secondary comparisons do not establish an accuracy reduction",
+        "Remaining storage, scheduler or application cause is unresolved",
+        "Sender overruns remain; no excluded trials, refitting or capacity claim",
+        "Public ETag amendment and transport/descriptive-helper failures remain disclosed"
+      ],
+      "evidence": [
+        {
+          "file": "evidence/P2b-attribution/results.json",
+          "sha256": "b38af191c9260a5111dc4fb648a2aad31156abf832d5bf5784c0f9573f2bb7e0",
+          "locator": "#/arms; #/comparisons",
+          "role": "unchanged original primary outcomes and intervention costs"
+        },
+        {
+          "file": "evidence/P2b-attribution/DECODERS-FROZEN.json",
+          "sha256": "93397b2e74a47d13de4dc28d3b5c3bed76dd0879085edffab9c2252b9d491acc",
+          "locator": "#",
+          "role": "all calibration models frozen before held collection"
+        },
+        {
+          "file": "evidence/P2b-verification/RESULT.json",
+          "sha256": "223dd7050413c6dc72a74ac2cf8c536818c562d3009056d6e274b1ca7a678aec",
+          "locator": "#/scores; idle decisions",
+          "role": "prospective separate arithmetic and explicit primary/sensitivity nulls"
+        },
+        {
+          "file": "evidence/P2b-recovery/HELD-REVIEW.json",
+          "sha256": "d788657456941dcd5bcc12bf20027a95ac6dbf9b1ecb2c9131beb701e1e23266",
+          "locator": "#/arms/pad; chronology",
+          "role": "complete native floor, timing and retained-overrun review"
+        },
+        {
+          "file": "reports/P2b-attribution-results.md",
+          "sha256": "940871efa5238d3316cd403469455310ffca11cc354224a3be358e6e74f811b2",
+          "locator": "What the interventions establish",
+          "role": "original method, secondary uncertainty and source-edition disclosure"
+        }
+      ]
+    },
+    {
+      "id": "host-cpu-counter-scope",
+      "property": "Activity discrimination through the aggregate host CPU counter",
+      "receiver_interface": "Twenty-two fixed aggregate /proc/stat samples in a private cgroup namespace",
+      "sender_action": "Two-second fixed CPU workload, with a measured 0.5 CPU quota",
+      "tested_configuration": "Private mirrors, networks and cgroups with native versus static-bound /proc/stat",
+      "finding_kind": "specific_observation_scope_control_confirmed",
+      "finding": "The native counter reader classifies all 64 labels; the actual static view yields a constant feature.",
+      "denominators": {
+        "native": {
+          "trials": 64,
+          "correct": 64,
+          "accuracy": 1.0,
+          "confusion": {
+            "tp": 32,
+            "fp": 0,
+            "fn": 0,
+            "tn": 32
+          },
+          "uncorrected_blocked_pvalue": 0.0001,
+          "holm_pvalue": 0.0004
+        },
+        "masked": {
+          "trials": 64,
+          "correct": 32,
+          "accuracy": 0.5,
+          "confusion": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 32,
+            "tn": 32
+          },
+          "uncorrected_blocked_pvalue": 1.0,
+          "holm_pvalue": 1.0
+        },
+        "aa-native": {
+          "trials": 64,
+          "correct": 34,
+          "accuracy": 0.53125,
+          "confusion": {
+            "tp": 13,
+            "fp": 11,
+            "fn": 19,
+            "tn": 21
+          },
+          "uncorrected_blocked_pvalue": 0.4039,
+          "holm_pvalue": 1.0
+        },
+        "aa-masked": {
+          "trials": 64,
+          "correct": 32,
+          "accuracy": 0.5,
+          "confusion": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 32,
+            "tn": 32
+          },
+          "uncorrected_blocked_pvalue": 1.0,
+          "holm_pvalue": 1.0
+        }
+      },
+      "null_controls": {
+        "primary_both_idle_passed": true,
+        "exact_sensitivity_both_idle_passed": true,
+        "primary_holm": {
+          "native": 0.0004,
+          "aa-native": 1.0,
+          "masked": 1.0,
+          "aa-masked": 1.0
+        },
+        "exact_sensitivity_holm": {
+          "native": 1.4178816604869857e-12,
+          "aa-native": 1.0,
+          "masked": 1.0,
+          "aa-masked": 1.0
+        }
+      },
+      "utility_and_validation": {
+        "smoke_calibration_held_trials": [
+          16,
+          96,
+          256
+        ],
+        "native_checks": 92640,
+        "public_transport_files": 87,
+        "private_1kib_file_tasks": 736,
+        "assigned_31byte_gets": 1472,
+        "provider_calls": 0
+      },
+      "control_recommendation": "Verify the scope of permitted telemetry inputs alongside private application state.",
+      "limitations": [
+        "Known kernel counter behavior and prior virtualization work, not a new mechanism",
+        "Static binding tests this input; production counter virtualization remains untested",
+        "One measured host and fixed reader, not maximum capacity or autonomous discovery",
+        "Narrow 1 KiB file and 31-byte HTTP utility, not general coding workloads",
+        "Counter observations cannot attribute P2's HTTP-only association",
+        "Bookend overruns remain; no trial exclusion or whole-host timing certificate"
+      ],
+      "evidence": [
+        {
+          "file": "evidence/P8-telemetry/results/p8-m1/holdout-results.json",
+          "sha256": "9de44a2dcaca5b306afab29a3595190b396a784fff6dc54682e40c31b7d044e5",
+          "locator": "#/results",
+          "role": "unchanged original blocked Monte Carlo and Holm family"
+        },
+        {
+          "file": "evidence/P8-telemetry/FROZEN.json",
+          "sha256": "12775c68e4551e770553b6da38e7d613fb3275d01822def683a5c21d8b2124a0",
+          "locator": "#",
+          "role": "complete common model freeze before held collection"
+        },
+        {
+          "file": "evidence/P8-verification/RESULT.json",
+          "sha256": "782537bc5593138773b72e7d1d2ae71567d2f8890145469d878796f154bd256c",
+          "locator": "#/numerical_checks; primary/exact idle decisions",
+          "role": "prospective independent counter and randomization arithmetic"
+        },
+        {
+          "file": "evidence/P8-review/RESULT.json",
+          "sha256": "9d189f8481a81a9b3368e31fc245af1314587065e8a42c9c8f5cbc368ee8b536",
+          "locator": "#/splits; #/bindings",
+          "role": "complete native counter/bind/quota/utility and chronology review"
+        },
+        {
+          "file": "reports/P8-telemetry-results.md",
+          "sha256": "39a10743a81f3217e6c21d0b7486e2f3244c1f8f2c006632d6947d310eb61d95",
+          "locator": "What the native evidence establishes",
+          "role": "measured runtime, narrow control and prior-art limits"
+        }
+      ]
+    },
+    {
+      "id": "hot-object-content-layout",
+      "property": "HTTP activity discrimination after changing hot-object checksum sharing",
+      "receiver_interface": "Median elapsed time of fifteen own object-15 HTTP probes",
+      "sender_action": "128 own object-0 GETs with eight workers, executed only for active labels",
+      "tested_configuration": "Separate repositories and per-tenant gateways on owned lab2; both tenants object0 A/B changes while receiver object15 stays A",
+      "finding_kind": "tested_mitigation_insufficient",
+      "finding": "Distinct hot-object content retains activity discrimination on this single sequential run.",
+      "denominators": {
+        "equal": {
+          "trials": 300,
+          "correct": 254,
+          "accuracy": 0.8466666666666667,
+          "accuracy_wilson_95": [
+            0.8015339429418983,
+            0.8830335970090831
+          ],
+          "tp": 124,
+          "tn": 130,
+          "fp": 20,
+          "fn": 26,
+          "tpr": 0.8266666666666667,
+          "fpr": 0.13333333333333333,
+          "median_S_active_ms": 3.4006815,
+          "median_S_idle_ms": 3.851055,
+          "primary_conditional_p": 6.0054479858232994e-36,
+          "primary_holm_p": 1.80163439574699e-35,
+          "failed_trials": 0
+        },
+        "distinct": {
+          "trials": 300,
+          "correct": 267,
+          "accuracy": 0.89,
+          "accuracy_wilson_95": [
+            0.8495437677561146,
+            0.9205947146887394
+          ],
+          "tp": 139,
+          "tn": 128,
+          "fp": 22,
+          "fn": 11,
+          "tpr": 0.9266666666666666,
+          "fpr": 0.14666666666666667,
+          "median_S_active_ms": 3.3720035,
+          "median_S_idle_ms": 3.8184425,
+          "primary_conditional_p": 7.48649089702859e-47,
+          "primary_holm_p": 2.994596358811436e-46,
+          "failed_trials": 0
+        },
+        "aa-equal": {
+          "trials": 300,
+          "correct": 163,
+          "accuracy": 0.5433333333333333,
+          "accuracy_wilson_95": [
+            0.48677384505565635,
+            0.5987970974382163
+          ],
+          "tp": 68,
+          "tn": 95,
+          "fp": 55,
+          "fn": 82,
+          "tpr": 0.4533333333333333,
+          "fpr": 0.36666666666666664,
+          "median_S_active_ms": 3.862471,
+          "median_S_idle_ms": 3.8061165,
+          "primary_conditional_p": 0.0796371759000712,
+          "primary_holm_p": 0.1592743518001424,
+          "failed_trials": 0
+        },
+        "aa-distinct": {
+          "trials": 300,
+          "correct": 141,
+          "accuracy": 0.47,
+          "accuracy_wilson_95": [
+            0.4142588116594049,
+            0.5264997666140677
+          ],
+          "tp": 41,
+          "tn": 100,
+          "fp": 50,
+          "fn": 109,
+          "tpr": 0.2733333333333333,
+          "fpr": 0.3333333333333333,
+          "median_S_active_ms": 3.8324635000000002,
+          "median_S_idle_ms": 3.8031610000000002,
+          "primary_conditional_p": 0.8952570261109281,
+          "primary_holm_p": 0.8952570261109281,
+          "failed_trials": 0
+        }
+      },
+      "null_controls": {
+        "actual_raw_and_holm_decisions": {
+          "aa-equal": {
+            "raw_pass": true,
+            "holm_pass": true
+          },
+          "aa-distinct": {
+            "raw_pass": true,
+            "holm_pass": true
+          }
+        },
+        "actual_gate_passed": true,
+        "idle_senders_execute_http": false,
+        "idle_cells_use_their_own_decoders_and_later_windows": true
+      },
+      "original_secondary_comparison": {
+        "fisher_p_two_sided": 0.14702720652959267,
+        "accuracy_difference": -0.043333333333333335
+      },
+      "native_layout_and_workload": {
+        "equal": {
+          "native_nodes": 32,
+          "canonical_files": 1,
+          "receiver_etag": "e8627e1a8b3b777cb5e58066954340fdbbc31e2b",
+          "sender_http_requests": 19200,
+          "receiver_http_requests": 6300,
+          "assigned_trials": 300,
+          "positive_sender_overruns": 50,
+          "executed_active_label_trials": 150,
+          "late_receiver_setup_trials": 0
+        },
+        "distinct": {
+          "native_nodes": 32,
+          "canonical_files": 2,
+          "receiver_etag": "e8627e1a8b3b777cb5e58066954340fdbbc31e2b",
+          "sender_http_requests": 19200,
+          "receiver_http_requests": 6300,
+          "assigned_trials": 300,
+          "positive_sender_overruns": 32,
+          "executed_active_label_trials": 150,
+          "late_receiver_setup_trials": 0
+        },
+        "aa-equal": {
+          "native_nodes": 32,
+          "canonical_files": 1,
+          "receiver_etag": "e8627e1a8b3b777cb5e58066954340fdbbc31e2b",
+          "sender_http_requests": 0,
+          "receiver_http_requests": 6300,
+          "assigned_trials": 300,
+          "positive_sender_overruns": 0,
+          "executed_active_label_trials": 0,
+          "late_receiver_setup_trials": 0
+        },
+        "aa-distinct": {
+          "native_nodes": 32,
+          "canonical_files": 2,
+          "receiver_etag": "e8627e1a8b3b777cb5e58066954340fdbbc31e2b",
+          "sender_http_requests": 0,
+          "receiver_http_requests": 6300,
+          "assigned_trials": 300,
+          "positive_sender_overruns": 0,
+          "executed_active_label_trials": 0,
+          "late_receiver_setup_trials": 0
+        }
+      },
+      "utility_and_validation": {
+        "fresh_smoke_calibration_held_trials": [
+          32,
+          400,
+          1200
+        ],
+        "native_checks": 695568,
+        "public_transfer_hashes": 111,
+        "preserved_initial_failed_smoke_trials": 32,
+        "receiver_object_bytes_and_etag_fixed": true,
+        "provider_calls": 0,
+        "separate_general_dependency_utility_study": "P3"
+      },
+      "control_recommendation": "Do not use changing only these hot-object checksums as sufficient timing mitigation here.",
+      "limitations": [
+        "One host and fixed sequential cell order; no pooled or matched cross-host replication",
+        "Both tenants object0 change; other catalog content, Artifactory and host remain shared",
+        "Idle cells cover later windows with independently fitted decoders",
+        "Active inference relies on the randomized balanced within-cell label schedule",
+        "Realized sender overruns differ: 50/150 versus32/150 executed trials",
+        "Fisher nonsignificance is neither reduction nor equivalence",
+        "Scoped canonical identities do not prove page-cache residency or every physical copy",
+        "Sharing the two hot checksums is unnecessary for this signal here, not proved irrelevant",
+        "No unique internal cause, hub attribution, capacity, autonomy or mechanism priority",
+        "Native replay reuses the original auditor; failed smoke and amendments remain"
+      ],
+      "evidence": [
+        {
+          "file": "evidence/P9-content/results.json",
+          "sha256": "601b49c7dbf5286a7abbe5816636851259ce7e1f9bf25117eb0565ee7e909aa3",
+          "locator": "#/arms; #/comparisons",
+          "role": "unchanged original conditional/Holm outcomes"
+        },
+        {
+          "file": "evidence/P9-content/DECODERS-FROZEN.json",
+          "sha256": "64a21ea74129daeaabdb5ad9ed73238e7a65579e30c4a9fc6b1561212f959d8f",
+          "locator": "#/decoders; frozen_utc",
+          "role": "all four prior calibration models"
+        },
+        {
+          "file": "evidence/P9-verification/RESULT.json",
+          "sha256": "76d8ee97b2c550861d280bf866ab39efae9c8443cdfa5d031bc0863eb1b653ce",
+          "locator": "#/scores; #/nulls; #/chronology",
+          "role": "separate exact integer arithmetic and actual idle decisions"
+        },
+        {
+          "file": "evidence/P9-review/HOLDOUT-REVIEW.json",
+          "sha256": "609f788bb7e3c5f11a7203ff6cb3b40ec928d10b7dbc5fbdad0c9ce06eafdb73",
+          "locator": "#/cells; #/input_sha256",
+          "role": "complete native content, timing, workload and chronology review"
+        },
+        {
+          "file": "evidence/P9-review/HELD-PRE-PRIMARY-REVIEW.json",
+          "sha256": "e879f180861b41c6e42f13d234264ad195554f32a4521d01089193cb00c817de",
+          "locator": "#/cells",
+          "role": "complete native/freeze chronology checked before the original primary"
+        },
+        {
+          "file": "evidence/P9-readiness/MODEL-PUBLICATION.json",
+          "sha256": "d89624e78274cfed67735f67c30d5d9a04e3549bab533db7dcef1e019e8c42cd",
+          "locator": "#/actual_remote",
+          "role": "actual common lock, remote hashes and zero prior held files"
+        },
+        {
+          "file": "evidence/P9-readiness/ACTUAL-MODEL-REVIEW.json",
+          "sha256": "bdeeeaf18b6aa596b79cf43a9ef7f1e4356a40d6f4b0228a22d9ff648b5ed475",
+          "locator": "#",
+          "role": "reviewed model publication before held start"
+        },
+        {
+          "file": "evidence/P9-readiness/holdout-TRANSPORT.json",
+          "sha256": "217d67d1c54ecaa964a47e36d05c711613416fc523cefea2ae9129889fe48e2a",
+          "locator": "#/manifest/files",
+          "role": "all37public held hashes and exact native replay"
+        },
+        {
+          "file": "evidence/Package/completed-P9-v1-PORTABLE-REPLAY.json",
+          "sha256": "64fa91b6ba50339cf1576bb8a5c51a7a3599e3678e2cccb8c941f9e8cc67127b",
+          "locator": "#",
+          "role": "fresh contained full native and original/separate numerical replay"
+        },
+        {
+          "file": "reports/P9-content-results.md",
+          "sha256": "16f461d008dd7f7e41384bd495b48493cb9806bd3c6a375acbe3d5625b5782c7",
+          "locator": "Original held results; chronology; limits",
+          "role": "reviewed report with complete denominators and intervention scope"
+        },
+        {
+          "file": "evidence/P9-review/OPUS55-INTEGRATION.json",
+          "sha256": "2f7b0116dd64d6651853b0ad1bca55fd1a4a4a002c375ba036181c3c2c1b17c7",
+          "locator": "#",
+          "role": "actual independent review and accepted clarifications"
+        }
+      ]
+    }
+  ],
+  "global_limits": [
+    "No record is a certificate of whole-host isolation",
+    "No capacity, intent or historical incident attribution is established",
+    "Model outcomes, native mechanisms, utility and monitor exposure differ",
+    "Configuration changes require new validation; production use is untested"
+  ],
+  "additional_limits": [
+    "One host and fixed sequential cell order; no pooled or matched cross-host replication",
+    "Both tenants object0 change; other catalog content, Artifactory and host remain shared",
+    "Idle cells cover later windows with independently fitted decoders",
+    "Active inference relies on the randomized balanced within-cell label schedule",
+    "Realized sender overruns differ: 50/150 versus32/150 executed trials",
+    "Fisher nonsignificance is neither reduction nor equivalence",
+    "Scoped canonical identities do not prove page-cache residency or every physical copy",
+    "Sharing the two hot checksums is unnecessary for this signal here, not proved irrelevant",
+    "No unique internal cause, hub attribution, capacity, autonomy or mechanism priority",
+    "Native replay reuses the original auditor; failed smoke and amendments remain"
+  ],
+  "completed_portable_components": 8,
+  "pending": [
+    "Final supported synthesis and full programme package",
+    "Final cost reconciliation and actual owned instance/volume/group/alias teardown"
+  ],
+  "paper_rewrite_paused": true,
+  "whole_host_isolation_certificate": false,
+  "native_or_provider_requests": 0
+}

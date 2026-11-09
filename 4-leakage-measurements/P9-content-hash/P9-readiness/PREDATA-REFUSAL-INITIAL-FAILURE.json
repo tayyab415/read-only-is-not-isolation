@@ -1,0 +1,19 @@
+{
+  "utc": "2026-11-09T05:40:56.973929+00:00",
+  "initial_freeze_precheck_failure": "AssertionError: expected missing decoder file in the predata refusal; the preceding science and verification freezes are retained. No native data or publication occurred.",
+  "actual_followup_refusals": {
+    "P9-readiness": {
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"~/Downloads/swarm-agent/artifactory-lab/evidence/P9-readiness/models.py\", line 93, in <module>\n    main()\n  File \"~/Downloads/swarm-agent/artifactory-lab/evidence/P9-readiness/models.py\", line 27, in main\n    spec.loader.exec_module(module)\n  File \"<frozen importlib._bootstrap_external>\", line 940, in exec_module\n  File \"<frozen importlib._bootstrap>\", line 241, in _call_with_frames_removed\n  File \"~/Downloads/swarm-agent/artifactory-lab/evidence/P9-content/p2b.py\", line 20, in <module>\n    from gate import check_gate\nModuleNotFoundError: No module named 'gate'\n",
+      "source_sha256": "ce78c034561aa2bf1d2b74cfacd72bca212bddf08e937dc0249c63b200de8104"
+    },
+    "P9-verification": {
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"~/Downloads/swarm-agent/artifactory-lab/evidence/P9-verification/verify.py\", line 136, in <module>\n    main()\n  File \"~/Downloads/swarm-agent/artifactory-lab/evidence/P9-verification/verify.py\", line 46, in main\n    collector = module(\"p2b\", STUDY / \"p2b.py\")\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"~/Downloads/swarm-agent/artifactory-lab/evidence/P9-verification/verify.py\", line 35, in module\n    spec.loader.exec_module(value)\n  File \"<frozen importlib._bootstrap_external>\", line 940, in exec_module\n  File \"<frozen importlib._bootstrap>\", line 241, in _call_with_frames_removed\n  File \"~/Downloads/swarm-agent/artifactory-lab/evidence/P9-content/p2b.py\", line 20, in <module>\n    from gate import check_gate\nModuleNotFoundError: No module named 'gate'\n",
+      "source_sha256": "f349d8369b82343faac2dd45fa1e030e1e7b26962f5418c68677b9bb99d2d2c3"
+    }
+  },
+  "native_or_provider_requests": 0
+}

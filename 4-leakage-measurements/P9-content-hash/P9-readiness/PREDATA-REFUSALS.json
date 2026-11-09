@@ -1,0 +1,20 @@
+{
+  "utc": "2026-11-09T05:41:45.171985+00:00",
+  "passed": true,
+  "refusals": {
+    "models.py": {
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"~/Downloads/swarm-agent/artifactory-lab/evidence/P9-readiness/models.py\", line 94, in <module>\n    main()\n  File \"~/Downloads/swarm-agent/artifactory-lab/evidence/P9-readiness/models.py\", line 30, in main\n    frozen = analyze.verify_freeze(STUDY / \"data\")\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"~/Downloads/swarm-agent/artifactory-lab/evidence/P9-content/analyze.py\", line 125, in verify_freeze\n    frozen = json.loads((HERE / \"DECODERS-FROZEN.json\").read_text())\n                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"~/anaconda3/lib/python3.11/pathlib.py\", line 1058, in read_text\n    with self.open(mode='r', encoding=encoding, errors=errors) as f:\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"~/anaconda3/lib/python3.11/pathlib.py\", line 1044, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '~/Downloads/swarm-agent/artifactory-lab/evidence/P9-content/DECODERS-FROZEN.json'\n",
+      "helper_sha256": "2003adac2ee65f0b0c6a4da0081885af5495a59720c39d055c2308e07401cfc9"
+    },
+    "verify.py": {
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"~/Downloads/swarm-agent/artifactory-lab/evidence/P9-verification/verify.py\", line 137, in <module>\n    main()\n  File \"~/Downloads/swarm-agent/artifactory-lab/evidence/P9-verification/verify.py\", line 52, in main\n    frozen = analyze.verify_freeze(data)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"~/Downloads/swarm-agent/artifactory-lab/evidence/P9-content/analyze.py\", line 125, in verify_freeze\n    frozen = json.loads((HERE / \"DECODERS-FROZEN.json\").read_text())\n                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"~/anaconda3/lib/python3.11/pathlib.py\", line 1058, in read_text\n    with self.open(mode='r', encoding=encoding, errors=errors) as f:\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"~/anaconda3/lib/python3.11/pathlib.py\", line 1044, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '~/Downloads/swarm-agent/artifactory-lab/evidence/P9-content/DECODERS-FROZEN.json'\n",
+      "helper_sha256": "1bbfd963ea9c70cc18f42005df5d13af78c107deaa21b4b3dd9f5848f1cc7839"
+    }
+  },
+  "native_or_provider_requests": 0,
+  "scientific_source_unchanged": true
+}

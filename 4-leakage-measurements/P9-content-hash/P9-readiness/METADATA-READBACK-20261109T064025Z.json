@@ -1,0 +1,21 @@
+{
+  "utc": "2026-11-09T06:40:25.323270+00:00",
+  "scope": "Metadata and complete seals only; no held observations accessed",
+  "returncode": 0,
+  "stderr": "",
+  "remote_program": "from pathlib import Path\nimport json,subprocess,hashlib\nr=Path.home()/\"workspaces/artifactory-lab/next/P9-content\"\nstatus=json.loads((r/\"holdout-sequence-status.json\").read_text())\nseals={}\nfor arm in (\"equal\",\"distinct\",\"aa-equal\",\"aa-distinct\"):\n p=r/\"data\"/arm/\"holdout-sealed.json\"\n if p.exists():seals[arm]=json.loads(p.read_text())\ntmux=subprocess.run([\"tmux\",\"has-session\",\"-t\",\"p9-holdout\"],capture_output=True).returncode==0\nproc=subprocess.run([\"ps\",\"-p\",\"286345\",\"-o\",\"pid=,etime=,args=\"],capture_output=True,text=True)\nprint(json.dumps({\"status\":status,\"seals\":seals,\"tmux_live\":tmux,\"process\":proc.stdout.strip(),\"model_sha256\":hashlib.sha256((r/\"DECODERS-FROZEN.json\").read_bytes()).hexdigest()}))\n",
+  "remote_program_sha256": "47b1b00378e317dd2c997459d0622d780751a3a55b2794d016c9f19f2d29fd21",
+  "actual_remote": {
+    "status": {
+      "split": "holdout",
+      "stage": "collecting",
+      "finished": [],
+      "utc_ns": 1794205649024654796,
+      "arm": "equal"
+    },
+    "seals": {},
+    "tmux_live": true,
+    "process": "286345       12:56 python3 -u sequence.py holdout",
+    "model_sha256": "64a21ea74129daeaabdb5ad9ed73238e7a65579e30c4a9fc6b1561212f959d8f"
+  }
+}

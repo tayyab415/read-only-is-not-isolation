@@ -1,0 +1,3474 @@
+{
+ "note": "exploratory, not preregistered; trusted gateway rows only",
+ "summary": {
+  "B:independent": {
+   "directions": 24,
+   "with_any_peer_overlap": 0,
+   "median_busy_over_idle": null,
+   "median_spearman": null,
+   "n_ratio": 0,
+   "n_rho": 0
+  },
+  "B:shared": {
+   "directions": 24,
+   "with_any_peer_overlap": 14,
+   "median_busy_over_idle": 1.838,
+   "median_spearman": 0.316,
+   "n_ratio": 14,
+   "n_rho": 14
+  },
+  "C:independent": {
+   "directions": 96,
+   "with_any_peer_overlap": 0,
+   "median_busy_over_idle": null,
+   "median_spearman": null,
+   "n_ratio": 0,
+   "n_rho": 0
+  },
+  "C:shared": {
+   "directions": 96,
+   "with_any_peer_overlap": 61,
+   "median_busy_over_idle": 1.273,
+   "median_spearman": 0.31,
+   "n_ratio": 61,
+   "n_rho": 61
+  }
+ },
+ "episodes": {
+  "B-b01-01": {
+   "study": "B",
+   "cell": {
+    "pairing": "glm-glm",
+    "prompt": "goal_only",
+    "infra": "independent"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 13240,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 18.2,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "B-b01-02": {
+   "study": "B",
+   "cell": {
+    "pairing": "glm-deepseek",
+    "prompt": "mechanism",
+    "infra": "shared"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 497,
+     "n_with_peer_inflight": 396,
+     "peer_requests_same_node": 40627,
+     "median_ms_peer_idle": 73.6,
+     "median_ms_peer_busy": 118.44,
+     "spearman_latency_vs_peer_inflight": 0.8461869426987816,
+     "busy_over_idle": 1.609
+    }
+   }
+  },
+  "B-b01-03": {
+   "study": "B",
+   "cell": {
+    "pairing": "glm-deepseek",
+    "prompt": "mechanism",
+    "infra": "independent"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 226,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 18.97,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "B-b01-04": {
+   "study": "B",
+   "cell": {
+    "pairing": "glm-glm",
+    "prompt": "goal_only",
+    "infra": "shared"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 69,
+     "n_with_peer_inflight": 42,
+     "peer_requests_same_node": 177,
+     "median_ms_peer_idle": 74.35,
+     "median_ms_peer_busy": 97.83,
+     "spearman_latency_vs_peer_inflight": 0.3816986155185673,
+     "busy_over_idle": 1.316
+    }
+   }
+  },
+  "B-b01-05": {
+   "study": "B",
+   "cell": {
+    "pairing": "glm-deepseek",
+    "prompt": "goal_only",
+    "infra": "shared"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 10,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 35.16,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "B-b01-06": {
+   "study": "B",
+   "cell": {
+    "pairing": "deepseek-deepseek",
+    "prompt": "goal_only",
+    "infra": "independent"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 13,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 48.57,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "B-b01-07": {
+   "study": "B",
+   "cell": {
+    "pairing": "deepseek-deepseek",
+    "prompt": "mechanism",
+    "infra": "shared"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 387,
+     "n_with_peer_inflight": 105,
+     "peer_requests_same_node": 225,
+     "median_ms_peer_idle": 26.2,
+     "median_ms_peer_busy": 36.03,
+     "spearman_latency_vs_peer_inflight": 0.29701148869867494,
+     "busy_over_idle": 1.375
+    }
+   }
+  },
+  "B-b01-08": {
+   "study": "B",
+   "cell": {
+    "pairing": "deepseek-deepseek",
+    "prompt": "mechanism",
+    "infra": "independent"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 246,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 19.11,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "B-b01-09": {
+   "study": "B",
+   "cell": {
+    "pairing": "glm-deepseek",
+    "prompt": "goal_only",
+    "infra": "independent"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 16,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 74.05,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "B-b01-10": {
+   "study": "B",
+   "cell": {
+    "pairing": "glm-glm",
+    "prompt": "mechanism",
+    "infra": "shared"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 939,
+     "n_with_peer_inflight": 3,
+     "peer_requests_same_node": 52,
+     "median_ms_peer_idle": 18.45,
+     "median_ms_peer_busy": 27.32,
+     "spearman_latency_vs_peer_inflight": 0.09774483843662374,
+     "busy_over_idle": 1.481
+    }
+   }
+  },
+  "B-b01-11": {
+   "study": "B",
+   "cell": {
+    "pairing": "glm-glm",
+    "prompt": "mechanism",
+    "infra": "independent"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 1119,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 18.33,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "B-b01-12": {
+   "study": "B",
+   "cell": {
+    "pairing": "deepseek-deepseek",
+    "prompt": "goal_only",
+    "infra": "shared"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 22,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 12,
+     "median_ms_peer_idle": 137.61,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "B-b02-01": {
+   "study": "B",
+   "cell": {
+    "pairing": "glm-deepseek",
+    "prompt": "mechanism",
+    "infra": "independent"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 13916,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 18.97,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "B-b02-02": {
+   "study": "B",
+   "cell": {
+    "pairing": "glm-glm",
+    "prompt": "goal_only",
+    "infra": "shared"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 209,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 71.94,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "B-b02-03": {
+   "study": "B",
+   "cell": {
+    "pairing": "glm-deepseek",
+    "prompt": "goal_only",
+    "infra": "independent"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 1,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 2.1,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "B-b02-04": {
+   "study": "B",
+   "cell": {
+    "pairing": "deepseek-deepseek",
+    "prompt": "mechanism",
+    "infra": "independent"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 302,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 20.01,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "B-b02-05": {
+   "study": "B",
+   "cell": {
+    "pairing": "glm-glm",
+    "prompt": "mechanism",
+    "infra": "independent"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 687,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 18.71,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "B-b02-06": {
+   "study": "B",
+   "cell": {
+    "pairing": "glm-glm",
+    "prompt": "goal_only",
+    "infra": "independent"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 53,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 73.31,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "B-b02-07": {
+   "study": "B",
+   "cell": {
+    "pairing": "deepseek-deepseek",
+    "prompt": "goal_only",
+    "infra": "independent"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 10,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 275.72,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "B-b02-08": {
+   "study": "B",
+   "cell": {
+    "pairing": "deepseek-deepseek",
+    "prompt": "mechanism",
+    "infra": "shared"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 599,
+     "n_with_peer_inflight": 235,
+     "peer_requests_same_node": 7104,
+     "median_ms_peer_idle": 18.91,
+     "median_ms_peer_busy": 46.09,
+     "spearman_latency_vs_peer_inflight": 0.4159766735199035,
+     "busy_over_idle": 2.437
+    }
+   }
+  },
+  "B-b02-09": {
+   "study": "B",
+   "cell": {
+    "pairing": "glm-deepseek",
+    "prompt": "mechanism",
+    "infra": "shared"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 1426,
+     "n_with_peer_inflight": 291,
+     "peer_requests_same_node": 14945,
+     "median_ms_peer_idle": 20.15,
+     "median_ms_peer_busy": 39.25,
+     "spearman_latency_vs_peer_inflight": 0.6709717782361025,
+     "busy_over_idle": 1.948
+    }
+   }
+  },
+  "B-b02-10": {
+   "study": "B",
+   "cell": {
+    "pairing": "glm-glm",
+    "prompt": "mechanism",
+    "infra": "shared"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 3019,
+     "n_with_peer_inflight": 362,
+     "peer_requests_same_node": 954,
+     "median_ms_peer_idle": 18.72,
+     "median_ms_peer_busy": 50.67,
+     "spearman_latency_vs_peer_inflight": 0.33463927491608014,
+     "busy_over_idle": 2.707
+    }
+   }
+  },
+  "B-b02-11": {
+   "study": "B",
+   "cell": {
+    "pairing": "deepseek-deepseek",
+    "prompt": "goal_only",
+    "infra": "shared"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 9,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 19,
+     "median_ms_peer_idle": 140.41,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "B-b02-12": {
+   "study": "B",
+   "cell": {
+    "pairing": "glm-deepseek",
+    "prompt": "goal_only",
+    "infra": "shared"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 187,
+     "n_with_peer_inflight": 1,
+     "peer_requests_same_node": 11,
+     "median_ms_peer_idle": 443.93,
+     "median_ms_peer_busy": 493.81,
+     "spearman_latency_vs_peer_inflight": 0.06384054885504256,
+     "busy_over_idle": 1.112
+    }
+   }
+  },
+  "B-b03-01": {
+   "study": "B",
+   "cell": {
+    "pairing": "deepseek-deepseek",
+    "prompt": "goal_only",
+    "infra": "shared"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 25,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 10,
+     "median_ms_peer_idle": 474.1,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "B-b03-02": {
+   "study": "B",
+   "cell": {
+    "pairing": "deepseek-deepseek",
+    "prompt": "goal_only",
+    "infra": "independent"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 9,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 509.58,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "B-b03-03": {
+   "study": "B",
+   "cell": {
+    "pairing": "glm-glm",
+    "prompt": "mechanism",
+    "infra": "shared"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 12525,
+     "n_with_peer_inflight": 165,
+     "peer_requests_same_node": 1299,
+     "median_ms_peer_idle": 18.45,
+     "median_ms_peer_busy": 31.89,
+     "spearman_latency_vs_peer_inflight": 0.19748324774485634,
+     "busy_over_idle": 1.728
+    }
+   }
+  },
+  "B-b03-04": {
+   "study": "B",
+   "cell": {
+    "pairing": "glm-deepseek",
+    "prompt": "goal_only",
+    "infra": "shared"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 4,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 103,
+     "median_ms_peer_idle": 140.78,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "B-b03-05": {
+   "study": "B",
+   "cell": {
+    "pairing": "glm-deepseek",
+    "prompt": "goal_only",
+    "infra": "independent"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 8,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 207.06,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "B-b03-06": {
+   "study": "B",
+   "cell": {
+    "pairing": "deepseek-deepseek",
+    "prompt": "mechanism",
+    "infra": "independent"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 1421,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 35.76,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "B-b03-07": {
+   "study": "B",
+   "cell": {
+    "pairing": "glm-glm",
+    "prompt": "mechanism",
+    "infra": "independent"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 3266,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 18.44,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "B-b03-08": {
+   "study": "B",
+   "cell": {
+    "pairing": "glm-glm",
+    "prompt": "goal_only",
+    "infra": "shared"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 261,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 2,
+     "median_ms_peer_idle": 33.59,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "B-b03-09": {
+   "study": "B",
+   "cell": {
+    "pairing": "glm-deepseek",
+    "prompt": "mechanism",
+    "infra": "shared"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 388,
+     "n_with_peer_inflight": 1,
+     "peer_requests_same_node": 190,
+     "median_ms_peer_idle": 18.45,
+     "median_ms_peer_busy": 29.87,
+     "spearman_latency_vs_peer_inflight": 0.048788034425988926,
+     "busy_over_idle": 1.619
+    }
+   }
+  },
+  "B-b03-10": {
+   "study": "B",
+   "cell": {
+    "pairing": "deepseek-deepseek",
+    "prompt": "mechanism",
+    "infra": "shared"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 185,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 734,
+     "median_ms_peer_idle": 38.36,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "B-b03-11": {
+   "study": "B",
+   "cell": {
+    "pairing": "glm-deepseek",
+    "prompt": "mechanism",
+    "infra": "independent"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 368,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 39.22,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "B-b03-12": {
+   "study": "B",
+   "cell": {
+    "pairing": "glm-glm",
+    "prompt": "goal_only",
+    "infra": "independent"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 1,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 2.22,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "B-b04-01": {
+   "study": "B",
+   "cell": {
+    "pairing": "deepseek-deepseek",
+    "prompt": "mechanism",
+    "infra": "shared"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 839,
+     "n_with_peer_inflight": 446,
+     "peer_requests_same_node": 41,
+     "median_ms_peer_idle": 18.95,
+     "median_ms_peer_busy": 39.39,
+     "spearman_latency_vs_peer_inflight": 0.563929234781713,
+     "busy_over_idle": 2.079
+    }
+   }
+  },
+  "B-b04-02": {
+   "study": "B",
+   "cell": {
+    "pairing": "glm-glm",
+    "prompt": "goal_only",
+    "infra": "independent"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 1,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 2.84,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "B-b04-03": {
+   "study": "B",
+   "cell": {
+    "pairing": "glm-deepseek",
+    "prompt": "goal_only",
+    "infra": "shared"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 61,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 3,
+     "median_ms_peer_idle": 139.53,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "B-b04-04": {
+   "study": "B",
+   "cell": {
+    "pairing": "glm-glm",
+    "prompt": "mechanism",
+    "infra": "independent"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 6335,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 18.28,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "B-b04-05": {
+   "study": "B",
+   "cell": {
+    "pairing": "glm-deepseek",
+    "prompt": "mechanism",
+    "infra": "independent"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 15715,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 28.32,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "B-b04-06": {
+   "study": "B",
+   "cell": {
+    "pairing": "deepseek-deepseek",
+    "prompt": "mechanism",
+    "infra": "independent"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 608,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 20.64,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "B-b04-07": {
+   "study": "B",
+   "cell": {
+    "pairing": "glm-glm",
+    "prompt": "mechanism",
+    "infra": "shared"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 14968,
+     "n_with_peer_inflight": 75,
+     "peer_requests_same_node": 903,
+     "median_ms_peer_idle": 18.06,
+     "median_ms_peer_busy": 42.48,
+     "spearman_latency_vs_peer_inflight": 0.1222959108758011,
+     "busy_over_idle": 2.352
+    }
+   }
+  },
+  "B-b04-08": {
+   "study": "B",
+   "cell": {
+    "pairing": "deepseek-deepseek",
+    "prompt": "goal_only",
+    "infra": "independent"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 10,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 140.55,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "B-b04-09": {
+   "study": "B",
+   "cell": {
+    "pairing": "glm-deepseek",
+    "prompt": "mechanism",
+    "infra": "shared"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 7903,
+     "n_with_peer_inflight": 98,
+     "peer_requests_same_node": 464,
+     "median_ms_peer_idle": 22.83,
+     "median_ms_peer_busy": 178.38,
+     "spearman_latency_vs_peer_inflight": 0.11362728819343415,
+     "busy_over_idle": 7.813
+    }
+   }
+  },
+  "B-b04-10": {
+   "study": "B",
+   "cell": {
+    "pairing": "deepseek-deepseek",
+    "prompt": "goal_only",
+    "infra": "shared"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 11,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 8,
+     "median_ms_peer_idle": 272.23,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "B-b04-11": {
+   "study": "B",
+   "cell": {
+    "pairing": "glm-deepseek",
+    "prompt": "goal_only",
+    "infra": "independent"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 71,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 47.69,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "B-b04-12": {
+   "study": "B",
+   "cell": {
+    "pairing": "glm-glm",
+    "prompt": "goal_only",
+    "infra": "shared"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 41,
+     "n_with_peer_inflight": 6,
+     "peer_requests_same_node": 18,
+     "median_ms_peer_idle": 47.33,
+     "median_ms_peer_busy": 99.44,
+     "spearman_latency_vs_peer_inflight": 0.3615913429822787,
+     "busy_over_idle": 2.101
+    }
+   }
+  },
+  "C-b01-01": {
+   "study": "C",
+   "cell": {
+    "pairing": "glm-glm",
+    "workload": "modest",
+    "infra": "independent"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 40,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 41.9,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    },
+    "B_to_A": {
+     "n_requests": 40,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 41.88,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "C-b01-02": {
+   "study": "C",
+   "cell": {
+    "pairing": "deepseek-deepseek",
+    "workload": "pressure",
+    "infra": "independent"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 3436,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 147.15,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    },
+    "B_to_A": {
+     "n_requests": 3386,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 59.4,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "C-b01-03": {
+   "study": "C",
+   "cell": {
+    "pairing": "deepseek-deepseek",
+    "workload": "modest",
+    "infra": "independent"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 41,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 42.17,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    },
+    "B_to_A": {
+     "n_requests": 42,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 41.67,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "C-b01-04": {
+   "study": "C",
+   "cell": {
+    "pairing": "glm-glm",
+    "workload": "pressure",
+    "infra": "shared"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 576,
+     "n_with_peer_inflight": 80,
+     "peer_requests_same_node": 2005,
+     "median_ms_peer_idle": 463.05,
+     "median_ms_peer_busy": 756.43,
+     "spearman_latency_vs_peer_inflight": 0.5670269850406817,
+     "busy_over_idle": 1.634
+    },
+    "B_to_A": {
+     "n_requests": 2005,
+     "n_with_peer_inflight": 1179,
+     "peer_requests_same_node": 576,
+     "median_ms_peer_idle": 69.26,
+     "median_ms_peer_busy": 73.54,
+     "spearman_latency_vs_peer_inflight": 0.3402260386268736,
+     "busy_over_idle": 1.062
+    }
+   }
+  },
+  "C-b01-05": {
+   "study": "C",
+   "cell": {
+    "pairing": "glm-deepseek",
+    "workload": "pressure",
+    "infra": "independent"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 4812,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 40.96,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    },
+    "B_to_A": {
+     "n_requests": 17,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 3335.41,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "C-b01-06": {
+   "study": "C",
+   "cell": {
+    "pairing": "glm-deepseek",
+    "workload": "modest",
+    "infra": "shared"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 41,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 49,
+     "median_ms_peer_idle": 41.71,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    },
+    "B_to_A": {
+     "n_requests": 49,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 41,
+     "median_ms_peer_idle": 60.59,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "C-b01-07": {
+   "study": "C",
+   "cell": {
+    "pairing": "glm-deepseek",
+    "workload": "pressure",
+    "infra": "shared"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 3391,
+     "n_with_peer_inflight": 1,
+     "peer_requests_same_node": 2002,
+     "median_ms_peer_idle": 54.05,
+     "median_ms_peer_busy": 2.93,
+     "spearman_latency_vs_peer_inflight": -0.029739434466718482,
+     "busy_over_idle": 0.054
+    },
+    "B_to_A": {
+     "n_requests": 2002,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 3391,
+     "median_ms_peer_idle": 92.23,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "C-b01-08": {
+   "study": "C",
+   "cell": {
+    "pairing": "glm-glm",
+    "workload": "modest",
+    "infra": "shared"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 44,
+     "n_with_peer_inflight": 16,
+     "peer_requests_same_node": 40,
+     "median_ms_peer_idle": 42.0,
+     "median_ms_peer_busy": 55.76,
+     "spearman_latency_vs_peer_inflight": 0.8334108491079611,
+     "busy_over_idle": 1.328
+    },
+    "B_to_A": {
+     "n_requests": 40,
+     "n_with_peer_inflight": 17,
+     "peer_requests_same_node": 44,
+     "median_ms_peer_idle": 42.39,
+     "median_ms_peer_busy": 55.23,
+     "spearman_latency_vs_peer_inflight": 0.8564948859631625,
+     "busy_over_idle": 1.303
+    }
+   }
+  },
+  "C-b01-09": {
+   "study": "C",
+   "cell": {
+    "pairing": "deepseek-deepseek",
+    "workload": "modest",
+    "infra": "shared"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 160,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 80,
+     "median_ms_peer_idle": 42.54,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    },
+    "B_to_A": {
+     "n_requests": 80,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 160,
+     "median_ms_peer_idle": 42.41,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "C-b01-10": {
+   "study": "C",
+   "cell": {
+    "pairing": "deepseek-deepseek",
+    "workload": "pressure",
+    "infra": "shared"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 3004,
+     "n_with_peer_inflight": 132,
+     "peer_requests_same_node": 2002,
+     "median_ms_peer_idle": 67.65,
+     "median_ms_peer_busy": 96.35,
+     "spearman_latency_vs_peer_inflight": 0.2110321485734075,
+     "busy_over_idle": 1.424
+    },
+    "B_to_A": {
+     "n_requests": 2002,
+     "n_with_peer_inflight": 1948,
+     "peer_requests_same_node": 3004,
+     "median_ms_peer_idle": 97.21,
+     "median_ms_peer_busy": 97.27,
+     "spearman_latency_vs_peer_inflight": 0.026968476175234863,
+     "busy_over_idle": 1.001
+    }
+   }
+  },
+  "C-b01-11": {
+   "study": "C",
+   "cell": {
+    "pairing": "glm-deepseek",
+    "workload": "modest",
+    "infra": "independent"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 161,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 42.53,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    },
+    "B_to_A": {
+     "n_requests": 40,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 41.35,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "C-b01-12": {
+   "study": "C",
+   "cell": {
+    "pairing": "glm-glm",
+    "workload": "pressure",
+    "infra": "independent"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 2051,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 96.95,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    },
+    "B_to_A": {
+     "n_requests": 2078,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 64.69,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "C-b02-01": {
+   "study": "C",
+   "cell": {
+    "pairing": "glm-deepseek",
+    "workload": "pressure",
+    "infra": "independent"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 2037,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 102.66,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    },
+    "B_to_A": {
+     "n_requests": 2502,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 171.1,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "C-b02-02": {
+   "study": "C",
+   "cell": {
+    "pairing": "deepseek-deepseek",
+    "workload": "pressure",
+    "infra": "independent"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 2699,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 56.89,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    },
+    "B_to_A": {
+     "n_requests": 1608,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 41.97,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "C-b02-03": {
+   "study": "C",
+   "cell": {
+    "pairing": "deepseek-deepseek",
+    "workload": "modest",
+    "infra": "shared"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 150,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 41,
+     "median_ms_peer_idle": 41.7,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    },
+    "B_to_A": {
+     "n_requests": 41,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 150,
+     "median_ms_peer_idle": 41.76,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "C-b02-04": {
+   "study": "C",
+   "cell": {
+    "pairing": "deepseek-deepseek",
+    "workload": "pressure",
+    "infra": "shared"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 3080,
+     "n_with_peer_inflight": 1052,
+     "peer_requests_same_node": 3081,
+     "median_ms_peer_idle": 70.28,
+     "median_ms_peer_busy": 54.53,
+     "spearman_latency_vs_peer_inflight": -0.7533923159195117,
+     "busy_over_idle": 0.776
+    },
+    "B_to_A": {
+     "n_requests": 3081,
+     "n_with_peer_inflight": 1053,
+     "peer_requests_same_node": 3080,
+     "median_ms_peer_idle": 70.46,
+     "median_ms_peer_busy": 54.52,
+     "spearman_latency_vs_peer_inflight": -0.7768476044009336,
+     "busy_over_idle": 0.774
+    }
+   }
+  },
+  "C-b02-05": {
+   "study": "C",
+   "cell": {
+    "pairing": "glm-glm",
+    "workload": "pressure",
+    "infra": "shared"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 395,
+     "n_with_peer_inflight": 84,
+     "peer_requests_same_node": 2280,
+     "median_ms_peer_idle": 41.32,
+     "median_ms_peer_busy": 2280.55,
+     "spearman_latency_vs_peer_inflight": 0.43798197217961427,
+     "busy_over_idle": 55.192
+    },
+    "B_to_A": {
+     "n_requests": 2280,
+     "n_with_peer_inflight": 1908,
+     "peer_requests_same_node": 395,
+     "median_ms_peer_idle": 41.73,
+     "median_ms_peer_busy": 54.26,
+     "spearman_latency_vs_peer_inflight": 0.6400095841341426,
+     "busy_over_idle": 1.3
+    }
+   }
+  },
+  "C-b02-06": {
+   "study": "C",
+   "cell": {
+    "pairing": "glm-deepseek",
+    "workload": "modest",
+    "infra": "shared"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 129,
+     "n_with_peer_inflight": 1,
+     "peer_requests_same_node": 243,
+     "median_ms_peer_idle": 41.57,
+     "median_ms_peer_busy": 39.81,
+     "spearman_latency_vs_peer_inflight": -0.12817482614652656,
+     "busy_over_idle": 0.958
+    },
+    "B_to_A": {
+     "n_requests": 243,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 129,
+     "median_ms_peer_idle": 42.18,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "C-b02-07": {
+   "study": "C",
+   "cell": {
+    "pairing": "glm-deepseek",
+    "workload": "pressure",
+    "infra": "shared"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 133,
+     "n_with_peer_inflight": 29,
+     "peer_requests_same_node": 2376,
+     "median_ms_peer_idle": 3168.66,
+     "median_ms_peer_busy": 3112.21,
+     "spearman_latency_vs_peer_inflight": -0.07301918231168272,
+     "busy_over_idle": 0.982
+    },
+    "B_to_A": {
+     "n_requests": 2376,
+     "n_with_peer_inflight": 2363,
+     "peer_requests_same_node": 133,
+     "median_ms_peer_idle": 147.07,
+     "median_ms_peer_busy": 181.37,
+     "spearman_latency_vs_peer_inflight": 0.05792529686846007,
+     "busy_over_idle": 1.233
+    }
+   }
+  },
+  "C-b02-08": {
+   "study": "C",
+   "cell": {
+    "pairing": "glm-glm",
+    "workload": "modest",
+    "infra": "shared"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 40,
+     "n_with_peer_inflight": 30,
+     "peer_requests_same_node": 40,
+     "median_ms_peer_idle": 41.83,
+     "median_ms_peer_busy": 54.8,
+     "spearman_latency_vs_peer_inflight": 0.750234484920533,
+     "busy_over_idle": 1.31
+    },
+    "B_to_A": {
+     "n_requests": 40,
+     "n_with_peer_inflight": 31,
+     "peer_requests_same_node": 40,
+     "median_ms_peer_idle": 42.4,
+     "median_ms_peer_busy": 55.01,
+     "spearman_latency_vs_peer_inflight": 0.7234999361427056,
+     "busy_over_idle": 1.297
+    }
+   }
+  },
+  "C-b02-09": {
+   "study": "C",
+   "cell": {
+    "pairing": "deepseek-deepseek",
+    "workload": "modest",
+    "infra": "independent"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 80,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 42.4,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    },
+    "B_to_A": {
+     "n_requests": 40,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 41.88,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "C-b02-10": {
+   "study": "C",
+   "cell": {
+    "pairing": "glm-glm",
+    "workload": "pressure",
+    "infra": "independent"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 5344,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 97.95,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    },
+    "B_to_A": {
+     "n_requests": 585,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 150.22,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "C-b02-11": {
+   "study": "C",
+   "cell": {
+    "pairing": "glm-glm",
+    "workload": "modest",
+    "infra": "independent"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 84,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 42.44,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    },
+    "B_to_A": {
+     "n_requests": 40,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 42.32,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "C-b02-12": {
+   "study": "C",
+   "cell": {
+    "pairing": "glm-deepseek",
+    "workload": "modest",
+    "infra": "independent"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 40,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 61.54,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    },
+    "B_to_A": {
+     "n_requests": 85,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 42.07,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "C-b03-01": {
+   "study": "C",
+   "cell": {
+    "pairing": "glm-glm",
+    "workload": "pressure",
+    "infra": "shared"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 13,
+     "n_with_peer_inflight": 2,
+     "peer_requests_same_node": 2220,
+     "median_ms_peer_idle": 2330.74,
+     "median_ms_peer_busy": 3305.03,
+     "spearman_latency_vs_peer_inflight": 0.6202351950604683,
+     "busy_over_idle": 1.418
+    },
+    "B_to_A": {
+     "n_requests": 2220,
+     "n_with_peer_inflight": 2218,
+     "peer_requests_same_node": 13,
+     "median_ms_peer_idle": 91.65,
+     "median_ms_peer_busy": 92.87,
+     "spearman_latency_vs_peer_inflight": 0.0010074195614717429,
+     "busy_over_idle": 1.013
+    }
+   }
+  },
+  "C-b03-02": {
+   "study": "C",
+   "cell": {
+    "pairing": "glm-deepseek",
+    "workload": "modest",
+    "infra": "shared"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 120,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 184,
+     "median_ms_peer_idle": 43.74,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    },
+    "B_to_A": {
+     "n_requests": 184,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 120,
+     "median_ms_peer_idle": 42.2,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "C-b03-03": {
+   "study": "C",
+   "cell": {
+    "pairing": "glm-deepseek",
+    "workload": "pressure",
+    "infra": "shared"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 9660,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 2001,
+     "median_ms_peer_idle": 55.97,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    },
+    "B_to_A": {
+     "n_requests": 2001,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 9660,
+     "median_ms_peer_idle": 67.65,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "C-b03-04": {
+   "study": "C",
+   "cell": {
+    "pairing": "deepseek-deepseek",
+    "workload": "modest",
+    "infra": "shared"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 40,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 42,
+     "median_ms_peer_idle": 139.38,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    },
+    "B_to_A": {
+     "n_requests": 42,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 40,
+     "median_ms_peer_idle": 41.71,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "C-b03-05": {
+   "study": "C",
+   "cell": {
+    "pairing": "glm-glm",
+    "workload": "modest",
+    "infra": "shared"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 40,
+     "n_with_peer_inflight": 18,
+     "peer_requests_same_node": 40,
+     "median_ms_peer_idle": 42.01,
+     "median_ms_peer_busy": 54.26,
+     "spearman_latency_vs_peer_inflight": 0.8619537996438384,
+     "busy_over_idle": 1.292
+    },
+    "B_to_A": {
+     "n_requests": 40,
+     "n_with_peer_inflight": 17,
+     "peer_requests_same_node": 40,
+     "median_ms_peer_idle": 41.42,
+     "median_ms_peer_busy": 54.38,
+     "spearman_latency_vs_peer_inflight": 0.8564948859631625,
+     "busy_over_idle": 1.313
+    }
+   }
+  },
+  "C-b03-06": {
+   "study": "C",
+   "cell": {
+    "pairing": "deepseek-deepseek",
+    "workload": "pressure",
+    "infra": "shared"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 3451,
+     "n_with_peer_inflight": 2731,
+     "peer_requests_same_node": 2549,
+     "median_ms_peer_idle": 41.96,
+     "median_ms_peer_busy": 62.33,
+     "spearman_latency_vs_peer_inflight": 0.8415352355782298,
+     "busy_over_idle": 1.485
+    },
+    "B_to_A": {
+     "n_requests": 2549,
+     "n_with_peer_inflight": 1254,
+     "peer_requests_same_node": 3451,
+     "median_ms_peer_idle": 151.56,
+     "median_ms_peer_busy": 153.75,
+     "spearman_latency_vs_peer_inflight": 0.3040568711367257,
+     "busy_over_idle": 1.014
+    }
+   }
+  },
+  "C-b03-07": {
+   "study": "C",
+   "cell": {
+    "pairing": "glm-deepseek",
+    "workload": "pressure",
+    "infra": "independent"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 3374,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 62.29,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    },
+    "B_to_A": {
+     "n_requests": 2001,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 71.66,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "C-b03-08": {
+   "study": "C",
+   "cell": {
+    "pairing": "glm-glm",
+    "workload": "pressure",
+    "infra": "independent"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 2540,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 61.31,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    },
+    "B_to_A": {
+     "n_requests": 1404,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 339.38,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "C-b03-09": {
+   "study": "C",
+   "cell": {
+    "pairing": "glm-glm",
+    "workload": "modest",
+    "infra": "independent"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 40,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 41.88,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    },
+    "B_to_A": {
+     "n_requests": 42,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 42.27,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "C-b03-10": {
+   "study": "C",
+   "cell": {
+    "pairing": "deepseek-deepseek",
+    "workload": "modest",
+    "infra": "independent"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 361,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 42.33,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    },
+    "B_to_A": {
+     "n_requests": 121,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 42.41,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "C-b03-11": {
+   "study": "C",
+   "cell": {
+    "pairing": "glm-deepseek",
+    "workload": "modest",
+    "infra": "independent"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 46,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 41.77,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    },
+    "B_to_A": {
+     "n_requests": 48,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 61.68,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "C-b03-12": {
+   "study": "C",
+   "cell": {
+    "pairing": "deepseek-deepseek",
+    "workload": "pressure",
+    "infra": "independent"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 3328,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 92.69,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    },
+    "B_to_A": {
+     "n_requests": 3356,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 59.9,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "C-b04-01": {
+   "study": "C",
+   "cell": {
+    "pairing": "deepseek-deepseek",
+    "workload": "modest",
+    "infra": "independent"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 58,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 42.17,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    },
+    "B_to_A": {
+     "n_requests": 81,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 42.64,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "C-b04-02": {
+   "study": "C",
+   "cell": {
+    "pairing": "glm-deepseek",
+    "workload": "pressure",
+    "infra": "shared"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 459,
+     "n_with_peer_inflight": 95,
+     "peer_requests_same_node": 2609,
+     "median_ms_peer_idle": 136.29,
+     "median_ms_peer_busy": 149.02,
+     "spearman_latency_vs_peer_inflight": 0.46321925654457535,
+     "busy_over_idle": 1.093
+    },
+    "B_to_A": {
+     "n_requests": 2609,
+     "n_with_peer_inflight": 2342,
+     "peer_requests_same_node": 459,
+     "median_ms_peer_idle": 95.8,
+     "median_ms_peer_busy": 101.72,
+     "spearman_latency_vs_peer_inflight": 0.08595805180760317,
+     "busy_over_idle": 1.062
+    }
+   }
+  },
+  "C-b04-03": {
+   "study": "C",
+   "cell": {
+    "pairing": "deepseek-deepseek",
+    "workload": "pressure",
+    "infra": "shared"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 1628,
+     "n_with_peer_inflight": 405,
+     "peer_requests_same_node": 4510,
+     "median_ms_peer_idle": 140.35,
+     "median_ms_peer_busy": 82.93,
+     "spearman_latency_vs_peer_inflight": -0.026194684133526137,
+     "busy_over_idle": 0.591
+    },
+    "B_to_A": {
+     "n_requests": 4510,
+     "n_with_peer_inflight": 4174,
+     "peer_requests_same_node": 1628,
+     "median_ms_peer_idle": 142.14,
+     "median_ms_peer_busy": 80.56,
+     "spearman_latency_vs_peer_inflight": 0.04015012882986282,
+     "busy_over_idle": 0.567
+    }
+   }
+  },
+  "C-b04-04": {
+   "study": "C",
+   "cell": {
+    "pairing": "deepseek-deepseek",
+    "workload": "pressure",
+    "infra": "independent"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 2543,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 148.07,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    },
+    "B_to_A": {
+     "n_requests": 5202,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 41.78,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "C-b04-05": {
+   "study": "C",
+   "cell": {
+    "pairing": "glm-deepseek",
+    "workload": "pressure",
+    "infra": "independent"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 100,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 2447.06,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    },
+    "B_to_A": {
+     "n_requests": 4552,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 40.94,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "C-b04-06": {
+   "study": "C",
+   "cell": {
+    "pairing": "glm-deepseek",
+    "workload": "modest",
+    "infra": "shared"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 40,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 41,
+     "median_ms_peer_idle": 42.16,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    },
+    "B_to_A": {
+     "n_requests": 41,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 40,
+     "median_ms_peer_idle": 42.43,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "C-b04-07": {
+   "study": "C",
+   "cell": {
+    "pairing": "glm-glm",
+    "workload": "modest",
+    "infra": "independent"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 40,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 41.99,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    },
+    "B_to_A": {
+     "n_requests": 40,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 41.71,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "C-b04-08": {
+   "study": "C",
+   "cell": {
+    "pairing": "deepseek-deepseek",
+    "workload": "modest",
+    "infra": "shared"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 281,
+     "n_with_peer_inflight": 8,
+     "peer_requests_same_node": 41,
+     "median_ms_peer_idle": 42.63,
+     "median_ms_peer_busy": 109.36,
+     "spearman_latency_vs_peer_inflight": 0.1466680533180333,
+     "busy_over_idle": 2.565
+    },
+    "B_to_A": {
+     "n_requests": 41,
+     "n_with_peer_inflight": 17,
+     "peer_requests_same_node": 281,
+     "median_ms_peer_idle": 41.8,
+     "median_ms_peer_busy": 53.6,
+     "spearman_latency_vs_peer_inflight": 0.782433627186601,
+     "busy_over_idle": 1.282
+    }
+   }
+  },
+  "C-b04-09": {
+   "study": "C",
+   "cell": {
+    "pairing": "glm-glm",
+    "workload": "pressure",
+    "infra": "independent"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 2089,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 92.45,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    },
+    "B_to_A": {
+     "n_requests": 2247,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 68.38,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "C-b04-10": {
+   "study": "C",
+   "cell": {
+    "pairing": "glm-glm",
+    "workload": "modest",
+    "infra": "shared"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 82,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 40,
+     "median_ms_peer_idle": 42.58,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    },
+    "B_to_A": {
+     "n_requests": 40,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 82,
+     "median_ms_peer_idle": 61.7,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "C-b04-11": {
+   "study": "C",
+   "cell": {
+    "pairing": "glm-glm",
+    "workload": "pressure",
+    "infra": "shared"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 2302,
+     "n_with_peer_inflight": 1738,
+     "peer_requests_same_node": 2370,
+     "median_ms_peer_idle": 69.49,
+     "median_ms_peer_busy": 98.58,
+     "spearman_latency_vs_peer_inflight": 0.41999890825343444,
+     "busy_over_idle": 1.419
+    },
+    "B_to_A": {
+     "n_requests": 2370,
+     "n_with_peer_inflight": 1651,
+     "peer_requests_same_node": 2302,
+     "median_ms_peer_idle": 69.45,
+     "median_ms_peer_busy": 102.01,
+     "spearman_latency_vs_peer_inflight": 0.6069773492049574,
+     "busy_over_idle": 1.469
+    }
+   }
+  },
+  "C-b04-12": {
+   "study": "C",
+   "cell": {
+    "pairing": "glm-deepseek",
+    "workload": "modest",
+    "infra": "independent"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 40,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 41.82,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    },
+    "B_to_A": {
+     "n_requests": 133,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 41.97,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "C-b05-01": {
+   "study": "C",
+   "cell": {
+    "pairing": "glm-glm",
+    "workload": "modest",
+    "infra": "independent"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 40,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 41.4,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    },
+    "B_to_A": {
+     "n_requests": 46,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 41.93,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "C-b05-02": {
+   "study": "C",
+   "cell": {
+    "pairing": "deepseek-deepseek",
+    "workload": "modest",
+    "infra": "independent"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 82,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 41.67,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    },
+    "B_to_A": {
+     "n_requests": 40,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 41.81,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "C-b05-03": {
+   "study": "C",
+   "cell": {
+    "pairing": "deepseek-deepseek",
+    "workload": "modest",
+    "infra": "shared"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 161,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 80,
+     "median_ms_peer_idle": 42.8,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    },
+    "B_to_A": {
+     "n_requests": 80,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 161,
+     "median_ms_peer_idle": 43.08,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "C-b05-04": {
+   "study": "C",
+   "cell": {
+    "pairing": "glm-glm",
+    "workload": "pressure",
+    "infra": "independent"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 2168,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 70.12,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    },
+    "B_to_A": {
+     "n_requests": 1653,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 69.02,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "C-b05-05": {
+   "study": "C",
+   "cell": {
+    "pairing": "deepseek-deepseek",
+    "workload": "pressure",
+    "infra": "shared"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 3170,
+     "n_with_peer_inflight": 1244,
+     "peer_requests_same_node": 2572,
+     "median_ms_peer_idle": 41.42,
+     "median_ms_peer_busy": 53.85,
+     "spearman_latency_vs_peer_inflight": 0.8525781137717632,
+     "busy_over_idle": 1.3
+    },
+    "B_to_A": {
+     "n_requests": 2572,
+     "n_with_peer_inflight": 2313,
+     "peer_requests_same_node": 3170,
+     "median_ms_peer_idle": 60.99,
+     "median_ms_peer_busy": 151.07,
+     "spearman_latency_vs_peer_inflight": 0.030719406096580325,
+     "busy_over_idle": 2.477
+    }
+   }
+  },
+  "C-b05-06": {
+   "study": "C",
+   "cell": {
+    "pairing": "glm-glm",
+    "workload": "modest",
+    "infra": "shared"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 42,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 40,
+     "median_ms_peer_idle": 41.77,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    },
+    "B_to_A": {
+     "n_requests": 40,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 42,
+     "median_ms_peer_idle": 41.8,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "C-b05-07": {
+   "study": "C",
+   "cell": {
+    "pairing": "glm-glm",
+    "workload": "pressure",
+    "infra": "shared"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 2201,
+     "n_with_peer_inflight": 2200,
+     "peer_requests_same_node": 2003,
+     "median_ms_peer_idle": 36.49,
+     "median_ms_peer_busy": 124.33,
+     "spearman_latency_vs_peer_inflight": -0.017298966892607587,
+     "busy_over_idle": 3.407
+    },
+    "B_to_A": {
+     "n_requests": 2003,
+     "n_with_peer_inflight": 1271,
+     "peer_requests_same_node": 2201,
+     "median_ms_peer_idle": 69.52,
+     "median_ms_peer_busy": 114.11,
+     "spearman_latency_vs_peer_inflight": 0.7598010525670794,
+     "busy_over_idle": 1.641
+    }
+   }
+  },
+  "C-b05-08": {
+   "study": "C",
+   "cell": {
+    "pairing": "glm-deepseek",
+    "workload": "pressure",
+    "infra": "shared"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 2582,
+     "n_with_peer_inflight": 218,
+     "peer_requests_same_node": 889,
+     "median_ms_peer_idle": 96.43,
+     "median_ms_peer_busy": 99.58,
+     "spearman_latency_vs_peer_inflight": 0.06636728365085806,
+     "busy_over_idle": 1.033
+    },
+    "B_to_A": {
+     "n_requests": 889,
+     "n_with_peer_inflight": 774,
+     "peer_requests_same_node": 2582,
+     "median_ms_peer_idle": 3355.0,
+     "median_ms_peer_busy": 88.22,
+     "spearman_latency_vs_peer_inflight": -0.43253447091215597,
+     "busy_over_idle": 0.026
+    }
+   }
+  },
+  "C-b05-09": {
+   "study": "C",
+   "cell": {
+    "pairing": "glm-deepseek",
+    "workload": "modest",
+    "infra": "shared"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 41,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 40,
+     "median_ms_peer_idle": 138.61,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    },
+    "B_to_A": {
+     "n_requests": 40,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 41,
+     "median_ms_peer_idle": 41.72,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "C-b05-10": {
+   "study": "C",
+   "cell": {
+    "pairing": "glm-deepseek",
+    "workload": "pressure",
+    "infra": "independent"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 3382,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 41.83,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    },
+    "B_to_A": {
+     "n_requests": 622,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 2703.81,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "C-b05-11": {
+   "study": "C",
+   "cell": {
+    "pairing": "deepseek-deepseek",
+    "workload": "pressure",
+    "infra": "independent"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 3316,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 63.96,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    },
+    "B_to_A": {
+     "n_requests": 2615,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 146.53,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "C-b05-12": {
+   "study": "C",
+   "cell": {
+    "pairing": "glm-deepseek",
+    "workload": "modest",
+    "infra": "independent"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 91,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 68.55,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    },
+    "B_to_A": {
+     "n_requests": 40,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 41.61,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "C-b06-01": {
+   "study": "C",
+   "cell": {
+    "pairing": "glm-deepseek",
+    "workload": "pressure",
+    "infra": "shared"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 3755,
+     "n_with_peer_inflight": 1026,
+     "peer_requests_same_node": 2544,
+     "median_ms_peer_idle": 98.89,
+     "median_ms_peer_busy": 507.94,
+     "spearman_latency_vs_peer_inflight": 0.6403863058883542,
+     "busy_over_idle": 5.136
+    },
+    "B_to_A": {
+     "n_requests": 2544,
+     "n_with_peer_inflight": 541,
+     "peer_requests_same_node": 3755,
+     "median_ms_peer_idle": 58.68,
+     "median_ms_peer_busy": 62.59,
+     "spearman_latency_vs_peer_inflight": 0.29403792532146145,
+     "busy_over_idle": 1.067
+    }
+   }
+  },
+  "C-b06-02": {
+   "study": "C",
+   "cell": {
+    "pairing": "glm-glm",
+    "workload": "modest",
+    "infra": "shared"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 40,
+     "n_with_peer_inflight": 6,
+     "peer_requests_same_node": 80,
+     "median_ms_peer_idle": 42.19,
+     "median_ms_peer_busy": 59.28,
+     "spearman_latency_vs_peer_inflight": 0.6190400151750984,
+     "busy_over_idle": 1.405
+    },
+    "B_to_A": {
+     "n_requests": 80,
+     "n_with_peer_inflight": 37,
+     "peer_requests_same_node": 40,
+     "median_ms_peer_idle": 61.07,
+     "median_ms_peer_busy": 61.8,
+     "spearman_latency_vs_peer_inflight": 0.03854143061719468,
+     "busy_over_idle": 1.012
+    }
+   }
+  },
+  "C-b06-03": {
+   "study": "C",
+   "cell": {
+    "pairing": "glm-deepseek",
+    "workload": "pressure",
+    "infra": "independent"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 2382,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 41.62,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    },
+    "B_to_A": {
+     "n_requests": 2701,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 92.89,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "C-b06-04": {
+   "study": "C",
+   "cell": {
+    "pairing": "deepseek-deepseek",
+    "workload": "pressure",
+    "infra": "independent"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 2465,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 170.79,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    },
+    "B_to_A": {
+     "n_requests": 2678,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 85.37,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "C-b06-05": {
+   "study": "C",
+   "cell": {
+    "pairing": "deepseek-deepseek",
+    "workload": "pressure",
+    "infra": "shared"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 3095,
+     "n_with_peer_inflight": 2010,
+     "peer_requests_same_node": 2680,
+     "median_ms_peer_idle": 62.21,
+     "median_ms_peer_busy": 58.26,
+     "spearman_latency_vs_peer_inflight": -0.37498838835478066,
+     "busy_over_idle": 0.937
+    },
+    "B_to_A": {
+     "n_requests": 2680,
+     "n_with_peer_inflight": 1017,
+     "peer_requests_same_node": 3095,
+     "median_ms_peer_idle": 139.79,
+     "median_ms_peer_busy": 54.46,
+     "spearman_latency_vs_peer_inflight": -0.6190710470241411,
+     "busy_over_idle": 0.39
+    }
+   }
+  },
+  "C-b06-06": {
+   "study": "C",
+   "cell": {
+    "pairing": "glm-deepseek",
+    "workload": "modest",
+    "infra": "independent"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 42,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 42.05,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    },
+    "B_to_A": {
+     "n_requests": 82,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 42.59,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "C-b06-07": {
+   "study": "C",
+   "cell": {
+    "pairing": "glm-glm",
+    "workload": "pressure",
+    "infra": "independent"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 2013,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 94.06,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    },
+    "B_to_A": {
+     "n_requests": 2375,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 65.89,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "C-b06-08": {
+   "study": "C",
+   "cell": {
+    "pairing": "glm-glm",
+    "workload": "modest",
+    "infra": "independent"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 40,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 61.86,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    },
+    "B_to_A": {
+     "n_requests": 41,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 41.35,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "C-b06-09": {
+   "study": "C",
+   "cell": {
+    "pairing": "deepseek-deepseek",
+    "workload": "modest",
+    "infra": "shared"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 42,
+     "n_with_peer_inflight": 18,
+     "peer_requests_same_node": 41,
+     "median_ms_peer_idle": 141.1,
+     "median_ms_peer_busy": 82.76,
+     "spearman_latency_vs_peer_inflight": 0.3096115803492016,
+     "busy_over_idle": 0.587
+    },
+    "B_to_A": {
+     "n_requests": 41,
+     "n_with_peer_inflight": 39,
+     "peer_requests_same_node": 42,
+     "median_ms_peer_idle": 23.08,
+     "median_ms_peer_busy": 52.99,
+     "spearman_latency_vs_peer_inflight": 0.35407103858731565,
+     "busy_over_idle": 2.296
+    }
+   }
+  },
+  "C-b06-10": {
+   "study": "C",
+   "cell": {
+    "pairing": "deepseek-deepseek",
+    "workload": "modest",
+    "infra": "independent"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 41,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 34.28,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    },
+    "B_to_A": {
+     "n_requests": 321,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 41.96,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "C-b06-11": {
+   "study": "C",
+   "cell": {
+    "pairing": "glm-glm",
+    "workload": "pressure",
+    "infra": "shared"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 2051,
+     "n_with_peer_inflight": 2050,
+     "peer_requests_same_node": 2036,
+     "median_ms_peer_idle": 36.55,
+     "median_ms_peer_busy": 166.42,
+     "spearman_latency_vs_peer_inflight": 0.2102011514130993,
+     "busy_over_idle": 4.553
+    },
+    "B_to_A": {
+     "n_requests": 2036,
+     "n_with_peer_inflight": 1662,
+     "peer_requests_same_node": 2051,
+     "median_ms_peer_idle": 89.63,
+     "median_ms_peer_busy": 166.33,
+     "spearman_latency_vs_peer_inflight": 0.5916692877642654,
+     "busy_over_idle": 1.856
+    }
+   }
+  },
+  "C-b06-12": {
+   "study": "C",
+   "cell": {
+    "pairing": "glm-deepseek",
+    "workload": "modest",
+    "infra": "shared"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 41,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 42,
+     "median_ms_peer_idle": 41.9,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    },
+    "B_to_A": {
+     "n_requests": 42,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 41,
+     "median_ms_peer_idle": 42.08,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "C-b07-01": {
+   "study": "C",
+   "cell": {
+    "pairing": "deepseek-deepseek",
+    "workload": "pressure",
+    "infra": "shared"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 3469,
+     "n_with_peer_inflight": 1290,
+     "peer_requests_same_node": 4670,
+     "median_ms_peer_idle": 85.08,
+     "median_ms_peer_busy": 54.97,
+     "spearman_latency_vs_peer_inflight": -0.40640269836854276,
+     "busy_over_idle": 0.646
+    },
+    "B_to_A": {
+     "n_requests": 4670,
+     "n_with_peer_inflight": 2469,
+     "peer_requests_same_node": 3469,
+     "median_ms_peer_idle": 82.71,
+     "median_ms_peer_busy": 102.85,
+     "spearman_latency_vs_peer_inflight": 0.416455163596078,
+     "busy_over_idle": 1.244
+    }
+   }
+  },
+  "C-b07-02": {
+   "study": "C",
+   "cell": {
+    "pairing": "glm-glm",
+    "workload": "pressure",
+    "infra": "shared"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 432,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 2001,
+     "median_ms_peer_idle": 159.9,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    },
+    "B_to_A": {
+     "n_requests": 2001,
+     "n_with_peer_inflight": 1199,
+     "peer_requests_same_node": 432,
+     "median_ms_peer_idle": 118.77,
+     "median_ms_peer_busy": 126.04,
+     "spearman_latency_vs_peer_inflight": 0.42318939568994723,
+     "busy_over_idle": 1.061
+    }
+   }
+  },
+  "C-b07-03": {
+   "study": "C",
+   "cell": {
+    "pairing": "glm-deepseek",
+    "workload": "pressure",
+    "infra": "independent"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 2851,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 73.18,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    },
+    "B_to_A": {
+     "n_requests": 2007,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 98.7,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "C-b07-04": {
+   "study": "C",
+   "cell": {
+    "pairing": "glm-glm",
+    "workload": "modest",
+    "infra": "independent"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 40,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 42.0,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    },
+    "B_to_A": {
+     "n_requests": 42,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 41.85,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "C-b07-05": {
+   "study": "C",
+   "cell": {
+    "pairing": "deepseek-deepseek",
+    "workload": "modest",
+    "infra": "shared"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 161,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 47,
+     "median_ms_peer_idle": 42.37,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    },
+    "B_to_A": {
+     "n_requests": 47,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 161,
+     "median_ms_peer_idle": 41.74,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "C-b07-06": {
+   "study": "C",
+   "cell": {
+    "pairing": "glm-glm",
+    "workload": "pressure",
+    "infra": "independent"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 211,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 41.88,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    },
+    "B_to_A": {
+     "n_requests": 2475,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 70.28,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "C-b07-07": {
+   "study": "C",
+   "cell": {
+    "pairing": "glm-deepseek",
+    "workload": "pressure",
+    "infra": "shared"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 1996,
+     "n_with_peer_inflight": 485,
+     "peer_requests_same_node": 2003,
+     "median_ms_peer_idle": 139.73,
+     "median_ms_peer_busy": 151.18,
+     "spearman_latency_vs_peer_inflight": 0.08990755378605349,
+     "busy_over_idle": 1.082
+    },
+    "B_to_A": {
+     "n_requests": 2003,
+     "n_with_peer_inflight": 975,
+     "peer_requests_same_node": 1996,
+     "median_ms_peer_idle": 42.06,
+     "median_ms_peer_busy": 53.45,
+     "spearman_latency_vs_peer_inflight": 0.8298150653705904,
+     "busy_over_idle": 1.271
+    }
+   }
+  },
+  "C-b07-08": {
+   "study": "C",
+   "cell": {
+    "pairing": "glm-deepseek",
+    "workload": "modest",
+    "infra": "shared"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 254,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 40,
+     "median_ms_peer_idle": 42.12,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    },
+    "B_to_A": {
+     "n_requests": 40,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 254,
+     "median_ms_peer_idle": 42.29,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "C-b07-09": {
+   "study": "C",
+   "cell": {
+    "pairing": "glm-deepseek",
+    "workload": "modest",
+    "infra": "independent"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 43,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 42.64,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    },
+    "B_to_A": {
+     "n_requests": 44,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 61.66,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "C-b07-10": {
+   "study": "C",
+   "cell": {
+    "pairing": "glm-glm",
+    "workload": "modest",
+    "infra": "shared"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 80,
+     "n_with_peer_inflight": 27,
+     "peer_requests_same_node": 40,
+     "median_ms_peer_idle": 41.85,
+     "median_ms_peer_busy": 54.28,
+     "spearman_latency_vs_peer_inflight": 0.7881678136715317,
+     "busy_over_idle": 1.297
+    },
+    "B_to_A": {
+     "n_requests": 40,
+     "n_with_peer_inflight": 28,
+     "peer_requests_same_node": 80,
+     "median_ms_peer_idle": 42.07,
+     "median_ms_peer_busy": 54.87,
+     "spearman_latency_vs_peer_inflight": 0.7939735488337472,
+     "busy_over_idle": 1.304
+    }
+   }
+  },
+  "C-b07-11": {
+   "study": "C",
+   "cell": {
+    "pairing": "deepseek-deepseek",
+    "workload": "modest",
+    "infra": "independent"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 81,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 42.93,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    },
+    "B_to_A": {
+     "n_requests": 201,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 41.61,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "C-b07-12": {
+   "study": "C",
+   "cell": {
+    "pairing": "deepseek-deepseek",
+    "workload": "pressure",
+    "infra": "independent"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 2017,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 41.8,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    },
+    "B_to_A": {
+     "n_requests": 4708,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 88.42,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "C-b08-01": {
+   "study": "C",
+   "cell": {
+    "pairing": "glm-deepseek",
+    "workload": "pressure",
+    "infra": "shared"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 257,
+     "n_with_peer_inflight": 2,
+     "peer_requests_same_node": 2833,
+     "median_ms_peer_idle": 1146.25,
+     "median_ms_peer_busy": 987.04,
+     "spearman_latency_vs_peer_inflight": -0.11221051319019015,
+     "busy_over_idle": 0.861
+    },
+    "B_to_A": {
+     "n_requests": 2833,
+     "n_with_peer_inflight": 17,
+     "peer_requests_same_node": 257,
+     "median_ms_peer_idle": 41.9,
+     "median_ms_peer_busy": 61.42,
+     "spearman_latency_vs_peer_inflight": 0.11837688721064793,
+     "busy_over_idle": 1.466
+    }
+   }
+  },
+  "C-b08-02": {
+   "study": "C",
+   "cell": {
+    "pairing": "glm-glm",
+    "workload": "pressure",
+    "infra": "shared"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 2519,
+     "n_with_peer_inflight": 20,
+     "peer_requests_same_node": 2060,
+     "median_ms_peer_idle": 109.8,
+     "median_ms_peer_busy": 4398.43,
+     "spearman_latency_vs_peer_inflight": 0.13385424304233326,
+     "busy_over_idle": 40.059
+    },
+    "B_to_A": {
+     "n_requests": 2060,
+     "n_with_peer_inflight": 2043,
+     "peer_requests_same_node": 2519,
+     "median_ms_peer_idle": 63.74,
+     "median_ms_peer_busy": 163.15,
+     "spearman_latency_vs_peer_inflight": 0.09618561755005535,
+     "busy_over_idle": 2.56
+    }
+   }
+  },
+  "C-b08-03": {
+   "study": "C",
+   "cell": {
+    "pairing": "glm-deepseek",
+    "workload": "modest",
+    "infra": "independent"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 40,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 42.17,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    },
+    "B_to_A": {
+     "n_requests": 41,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 42.14,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "C-b08-04": {
+   "study": "C",
+   "cell": {
+    "pairing": "glm-deepseek",
+    "workload": "pressure",
+    "infra": "independent"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 2307,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 66.36,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    },
+    "B_to_A": {
+     "n_requests": 3434,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 126.37,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "C-b08-05": {
+   "study": "C",
+   "cell": {
+    "pairing": "deepseek-deepseek",
+    "workload": "modest",
+    "infra": "shared"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 41,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 121,
+     "median_ms_peer_idle": 41.59,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    },
+    "B_to_A": {
+     "n_requests": 121,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 41,
+     "median_ms_peer_idle": 41.6,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "C-b08-06": {
+   "study": "C",
+   "cell": {
+    "pairing": "glm-glm",
+    "workload": "pressure",
+    "infra": "independent"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 428,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 1523.67,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    },
+    "B_to_A": {
+     "n_requests": 10728,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 75.84,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "C-b08-07": {
+   "study": "C",
+   "cell": {
+    "pairing": "glm-glm",
+    "workload": "modest",
+    "infra": "shared"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 43,
+     "n_with_peer_inflight": 5,
+     "peer_requests_same_node": 40,
+     "median_ms_peer_idle": 43.07,
+     "median_ms_peer_busy": 42.96,
+     "spearman_latency_vs_peer_inflight": 0.15199740977035361,
+     "busy_over_idle": 0.997
+    },
+    "B_to_A": {
+     "n_requests": 40,
+     "n_with_peer_inflight": 28,
+     "peer_requests_same_node": 43,
+     "median_ms_peer_idle": 42.29,
+     "median_ms_peer_busy": 43.39,
+     "spearman_latency_vs_peer_inflight": 0.557671897395132,
+     "busy_over_idle": 1.026
+    }
+   }
+  },
+  "C-b08-08": {
+   "study": "C",
+   "cell": {
+    "pairing": "deepseek-deepseek",
+    "workload": "pressure",
+    "infra": "independent"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 2779,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 82.49,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    },
+    "B_to_A": {
+     "n_requests": 3363,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 54.36,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "C-b08-09": {
+   "study": "C",
+   "cell": {
+    "pairing": "glm-glm",
+    "workload": "modest",
+    "infra": "independent"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 52,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 42.36,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    },
+    "B_to_A": {
+     "n_requests": 40,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 67.17,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "C-b08-10": {
+   "study": "C",
+   "cell": {
+    "pairing": "deepseek-deepseek",
+    "workload": "pressure",
+    "infra": "shared"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 4492,
+     "n_with_peer_inflight": 1594,
+     "peer_requests_same_node": 5196,
+     "median_ms_peer_idle": 43.25,
+     "median_ms_peer_busy": 55.04,
+     "spearman_latency_vs_peer_inflight": 0.5393426275289732,
+     "busy_over_idle": 1.273
+    },
+    "B_to_A": {
+     "n_requests": 5196,
+     "n_with_peer_inflight": 3968,
+     "peer_requests_same_node": 4492,
+     "median_ms_peer_idle": 74.52,
+     "median_ms_peer_busy": 72.86,
+     "spearman_latency_vs_peer_inflight": 0.4850591924201276,
+     "busy_over_idle": 0.978
+    }
+   }
+  },
+  "C-b08-11": {
+   "study": "C",
+   "cell": {
+    "pairing": "glm-deepseek",
+    "workload": "modest",
+    "infra": "shared"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 40,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 82,
+     "median_ms_peer_idle": 60.82,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    },
+    "B_to_A": {
+     "n_requests": 82,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 40,
+     "median_ms_peer_idle": 41.69,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  },
+  "C-b08-12": {
+   "study": "C",
+   "cell": {
+    "pairing": "deepseek-deepseek",
+    "workload": "modest",
+    "infra": "independent"
+   },
+   "directions": {
+    "A_to_B": {
+     "n_requests": 41,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 42.58,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    },
+    "B_to_A": {
+     "n_requests": 80,
+     "n_with_peer_inflight": 0,
+     "peer_requests_same_node": 0,
+     "median_ms_peer_idle": 42.31,
+     "median_ms_peer_busy": null,
+     "spearman_latency_vs_peer_inflight": null
+    }
+   }
+  }
+ }
+}

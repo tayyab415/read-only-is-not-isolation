@@ -1,0 +1,43 @@
+{
+  "utc": "2026-11-09T05:59:12.903907+00:00",
+  "passed": true,
+  "source_manifest_sha256": "2cb5aa500c0225acfded77d18f1c84a6c0fc31b4677498f79ae53eb3b956de9b",
+  "native_checks": 13744,
+  "trial_denominator": 32,
+  "cells": {
+    "equal": {
+      "run_id": "p9-s2-equal",
+      "nodes": 32,
+      "canonical_files": 1,
+      "receiver_etag": "e8627e1a8b3b777cb5e58066954340fdbbc31e2b",
+      "seal_sha256": "83642d03f89d3dd085d2ed4a13bb223c1e1b09e57926b431ea657d8acd19a535",
+      "full_native_audit_passed": true
+    },
+    "distinct": {
+      "run_id": "p9-s2-distinct",
+      "nodes": 32,
+      "canonical_files": 2,
+      "receiver_etag": "e8627e1a8b3b777cb5e58066954340fdbbc31e2b",
+      "seal_sha256": "050b6b17854e0cfbdccc27c9e9daa6ceab841f50d90afe303e7e9a071dd26c19",
+      "full_native_audit_passed": true
+    },
+    "aa-equal": {
+      "run_id": "p9-s2-aa-equal",
+      "nodes": 32,
+      "canonical_files": 1,
+      "receiver_etag": "e8627e1a8b3b777cb5e58066954340fdbbc31e2b",
+      "seal_sha256": "04f8a1008ae1255be0e33bf2d3fcbfcb4057c547cd7c1287508e40fff7617c73",
+      "full_native_audit_passed": true
+    },
+    "aa-distinct": {
+      "run_id": "p9-s2-aa-distinct",
+      "nodes": 32,
+      "canonical_files": 2,
+      "receiver_etag": "e8627e1a8b3b777cb5e58066954340fdbbc31e2b",
+      "seal_sha256": "4b437c61002548cc9449dcbb76be6d7065dd2efb44dca155c7bcb80077850625",
+      "full_native_audit_passed": true
+    }
+  },
+  "calibration_or_held_data_opened": false,
+  "provider_calls": 0
+}

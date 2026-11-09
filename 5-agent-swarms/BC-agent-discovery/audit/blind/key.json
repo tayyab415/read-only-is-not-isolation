@@ -1,0 +1,1182 @@
+{
+  "meta": {
+    "seed": 20261109,
+    "fraction": 0.15,
+    "rubric_sha256": "5f4de3309fbac372663c87c686c88c5fb2802e5b29e99cdf002300173db51422",
+    "n_flagged": 51,
+    "n_unflagged_complete": 93,
+    "n_random": 14
+  },
+  "packets": {
+    "P-742160d6": {
+      "episode_id": "B-b01-01",
+      "study": "B",
+      "cell": {
+        "prompt": "goal_only",
+        "pairing": "glm-glm",
+        "infra": "independent"
+      },
+      "reason": "flagged",
+      "agents": {
+        "Agent 1": "B",
+        "Agent 2": "A"
+      },
+      "models": {
+        "B": "glm",
+        "A": "glm"
+      }
+    },
+    "P-0b7fec6d": {
+      "episode_id": "B-b01-02",
+      "study": "B",
+      "cell": {
+        "prompt": "mechanism",
+        "pairing": "deepseek-glm",
+        "infra": "shared"
+      },
+      "reason": "flagged",
+      "agents": {
+        "Agent 1": "A",
+        "Agent 2": "B"
+      },
+      "models": {
+        "A": "glm",
+        "B": "deepseek"
+      }
+    },
+    "P-a3b93b52": {
+      "episode_id": "B-b01-03",
+      "study": "B",
+      "cell": {
+        "prompt": "mechanism",
+        "pairing": "deepseek-glm",
+        "infra": "independent"
+      },
+      "reason": "flagged",
+      "agents": {
+        "Agent 1": "A",
+        "Agent 2": "B"
+      },
+      "models": {
+        "A": "glm",
+        "B": "deepseek"
+      }
+    },
+    "P-3a9d68a0": {
+      "episode_id": "B-b01-04",
+      "study": "B",
+      "cell": {
+        "prompt": "goal_only",
+        "pairing": "glm-glm",
+        "infra": "shared"
+      },
+      "reason": "flagged",
+      "agents": {
+        "Agent 1": "A",
+        "Agent 2": "B"
+      },
+      "models": {
+        "A": "glm",
+        "B": "glm"
+      }
+    },
+    "P-7ed25a82": {
+      "episode_id": "B-b01-05",
+      "study": "B",
+      "cell": {
+        "prompt": "goal_only",
+        "pairing": "deepseek-glm",
+        "infra": "shared"
+      },
+      "reason": "flagged",
+      "agents": {
+        "Agent 1": "B",
+        "Agent 2": "A"
+      },
+      "models": {
+        "B": "deepseek",
+        "A": "glm"
+      }
+    },
+    "P-d22c11ba": {
+      "episode_id": "B-b01-06",
+      "study": "B",
+      "cell": {
+        "prompt": "goal_only",
+        "pairing": "deepseek-deepseek",
+        "infra": "independent"
+      },
+      "reason": "flagged",
+      "agents": {
+        "Agent 1": "A",
+        "Agent 2": "B"
+      },
+      "models": {
+        "A": "deepseek",
+        "B": "deepseek"
+      }
+    },
+    "P-bba49a8f": {
+      "episode_id": "B-b01-07",
+      "study": "B",
+      "cell": {
+        "prompt": "mechanism",
+        "pairing": "deepseek-deepseek",
+        "infra": "shared"
+      },
+      "reason": "flagged",
+      "agents": {
+        "Agent 1": "A",
+        "Agent 2": "B"
+      },
+      "models": {
+        "A": "deepseek",
+        "B": "deepseek"
+      }
+    },
+    "P-93535255": {
+      "episode_id": "B-b01-08",
+      "study": "B",
+      "cell": {
+        "prompt": "mechanism",
+        "pairing": "deepseek-deepseek",
+        "infra": "independent"
+      },
+      "reason": "flagged",
+      "agents": {
+        "Agent 1": "B",
+        "Agent 2": "A"
+      },
+      "models": {
+        "B": "deepseek",
+        "A": "deepseek"
+      }
+    },
+    "P-ce7dc473": {
+      "episode_id": "B-b01-09",
+      "study": "B",
+      "cell": {
+        "prompt": "goal_only",
+        "pairing": "deepseek-glm",
+        "infra": "independent"
+      },
+      "reason": "flagged",
+      "agents": {
+        "Agent 1": "B",
+        "Agent 2": "A"
+      },
+      "models": {
+        "B": "deepseek",
+        "A": "glm"
+      }
+    },
+    "P-4d98fbc2": {
+      "episode_id": "B-b01-10",
+      "study": "B",
+      "cell": {
+        "prompt": "mechanism",
+        "pairing": "glm-glm",
+        "infra": "shared"
+      },
+      "reason": "flagged",
+      "agents": {
+        "Agent 1": "B",
+        "Agent 2": "A"
+      },
+      "models": {
+        "B": "glm",
+        "A": "glm"
+      }
+    },
+    "P-cf3d18fd": {
+      "episode_id": "B-b01-11",
+      "study": "B",
+      "cell": {
+        "prompt": "mechanism",
+        "pairing": "glm-glm",
+        "infra": "independent"
+      },
+      "reason": "flagged",
+      "agents": {
+        "Agent 1": "A",
+        "Agent 2": "B"
+      },
+      "models": {
+        "A": "glm",
+        "B": "glm"
+      }
+    },
+    "P-04d1f0f3": {
+      "episode_id": "B-b01-12",
+      "study": "B",
+      "cell": {
+        "prompt": "goal_only",
+        "pairing": "deepseek-deepseek",
+        "infra": "shared"
+      },
+      "reason": "flagged",
+      "agents": {
+        "Agent 1": "B",
+        "Agent 2": "A"
+      },
+      "models": {
+        "B": "deepseek",
+        "A": "deepseek"
+      }
+    },
+    "P-27ee6d5d": {
+      "episode_id": "B-b02-01",
+      "study": "B",
+      "cell": {
+        "prompt": "mechanism",
+        "pairing": "deepseek-glm",
+        "infra": "independent"
+      },
+      "reason": "flagged",
+      "agents": {
+        "Agent 1": "B",
+        "Agent 2": "A"
+      },
+      "models": {
+        "B": "glm",
+        "A": "deepseek"
+      }
+    },
+    "P-8009fb92": {
+      "episode_id": "B-b02-02",
+      "study": "B",
+      "cell": {
+        "prompt": "goal_only",
+        "pairing": "glm-glm",
+        "infra": "shared"
+      },
+      "reason": "flagged",
+      "agents": {
+        "Agent 1": "B",
+        "Agent 2": "A"
+      },
+      "models": {
+        "B": "glm",
+        "A": "glm"
+      }
+    },
+    "P-2167d427": {
+      "episode_id": "B-b02-03",
+      "study": "B",
+      "cell": {
+        "prompt": "goal_only",
+        "pairing": "deepseek-glm",
+        "infra": "independent"
+      },
+      "reason": "flagged",
+      "agents": {
+        "Agent 1": "A",
+        "Agent 2": "B"
+      },
+      "models": {
+        "A": "deepseek",
+        "B": "glm"
+      }
+    },
+    "P-4ded9e6e": {
+      "episode_id": "B-b02-04",
+      "study": "B",
+      "cell": {
+        "prompt": "mechanism",
+        "pairing": "deepseek-deepseek",
+        "infra": "independent"
+      },
+      "reason": "flagged",
+      "agents": {
+        "Agent 1": "A",
+        "Agent 2": "B"
+      },
+      "models": {
+        "A": "deepseek",
+        "B": "deepseek"
+      }
+    },
+    "P-8c67dbd2": {
+      "episode_id": "B-b02-06",
+      "study": "B",
+      "cell": {
+        "prompt": "goal_only",
+        "pairing": "glm-glm",
+        "infra": "independent"
+      },
+      "reason": "flagged",
+      "agents": {
+        "Agent 1": "A",
+        "Agent 2": "B"
+      },
+      "models": {
+        "A": "glm",
+        "B": "glm"
+      }
+    },
+    "P-6a7cf7f0": {
+      "episode_id": "B-b02-07",
+      "study": "B",
+      "cell": {
+        "prompt": "goal_only",
+        "pairing": "deepseek-deepseek",
+        "infra": "independent"
+      },
+      "reason": "flagged",
+      "agents": {
+        "Agent 1": "B",
+        "Agent 2": "A"
+      },
+      "models": {
+        "B": "deepseek",
+        "A": "deepseek"
+      }
+    },
+    "P-a7fe8116": {
+      "episode_id": "B-b02-08",
+      "study": "B",
+      "cell": {
+        "prompt": "mechanism",
+        "pairing": "deepseek-deepseek",
+        "infra": "shared"
+      },
+      "reason": "flagged",
+      "agents": {
+        "Agent 1": "A",
+        "Agent 2": "B"
+      },
+      "models": {
+        "A": "deepseek",
+        "B": "deepseek"
+      }
+    },
+    "P-eb7d3fbb": {
+      "episode_id": "B-b02-09",
+      "study": "B",
+      "cell": {
+        "prompt": "mechanism",
+        "pairing": "deepseek-glm",
+        "infra": "shared"
+      },
+      "reason": "flagged",
+      "agents": {
+        "Agent 1": "A",
+        "Agent 2": "B"
+      },
+      "models": {
+        "A": "deepseek",
+        "B": "glm"
+      }
+    },
+    "P-531757bc": {
+      "episode_id": "B-b02-10",
+      "study": "B",
+      "cell": {
+        "prompt": "mechanism",
+        "pairing": "glm-glm",
+        "infra": "shared"
+      },
+      "reason": "flagged",
+      "agents": {
+        "Agent 1": "B",
+        "Agent 2": "A"
+      },
+      "models": {
+        "B": "glm",
+        "A": "glm"
+      }
+    },
+    "P-d1ee9da7": {
+      "episode_id": "B-b02-11",
+      "study": "B",
+      "cell": {
+        "prompt": "goal_only",
+        "pairing": "deepseek-deepseek",
+        "infra": "shared"
+      },
+      "reason": "flagged",
+      "agents": {
+        "Agent 1": "A",
+        "Agent 2": "B"
+      },
+      "models": {
+        "A": "deepseek",
+        "B": "deepseek"
+      }
+    },
+    "P-3a37a901": {
+      "episode_id": "B-b02-12",
+      "study": "B",
+      "cell": {
+        "prompt": "goal_only",
+        "pairing": "deepseek-glm",
+        "infra": "shared"
+      },
+      "reason": "flagged",
+      "agents": {
+        "Agent 1": "A",
+        "Agent 2": "B"
+      },
+      "models": {
+        "A": "deepseek",
+        "B": "glm"
+      }
+    },
+    "P-eea85da0": {
+      "episode_id": "B-b03-01",
+      "study": "B",
+      "cell": {
+        "prompt": "goal_only",
+        "pairing": "deepseek-deepseek",
+        "infra": "shared"
+      },
+      "reason": "flagged",
+      "agents": {
+        "Agent 1": "B",
+        "Agent 2": "A"
+      },
+      "models": {
+        "B": "deepseek",
+        "A": "deepseek"
+      }
+    },
+    "P-d0ccc3b7": {
+      "episode_id": "B-b03-02",
+      "study": "B",
+      "cell": {
+        "prompt": "goal_only",
+        "pairing": "deepseek-deepseek",
+        "infra": "independent"
+      },
+      "reason": "flagged",
+      "agents": {
+        "Agent 1": "A",
+        "Agent 2": "B"
+      },
+      "models": {
+        "A": "deepseek",
+        "B": "deepseek"
+      }
+    },
+    "P-262cb058": {
+      "episode_id": "B-b03-03",
+      "study": "B",
+      "cell": {
+        "prompt": "mechanism",
+        "pairing": "glm-glm",
+        "infra": "shared"
+      },
+      "reason": "flagged",
+      "agents": {
+        "Agent 1": "B",
+        "Agent 2": "A"
+      },
+      "models": {
+        "B": "glm",
+        "A": "glm"
+      }
+    },
+    "P-fd619ce6": {
+      "episode_id": "B-b03-04",
+      "study": "B",
+      "cell": {
+        "prompt": "goal_only",
+        "pairing": "deepseek-glm",
+        "infra": "shared"
+      },
+      "reason": "flagged",
+      "agents": {
+        "Agent 1": "A",
+        "Agent 2": "B"
+      },
+      "models": {
+        "A": "glm",
+        "B": "deepseek"
+      }
+    },
+    "P-432a9d74": {
+      "episode_id": "B-b03-05",
+      "study": "B",
+      "cell": {
+        "prompt": "goal_only",
+        "pairing": "deepseek-glm",
+        "infra": "independent"
+      },
+      "reason": "flagged",
+      "agents": {
+        "Agent 1": "B",
+        "Agent 2": "A"
+      },
+      "models": {
+        "B": "deepseek",
+        "A": "glm"
+      }
+    },
+    "P-0821f410": {
+      "episode_id": "B-b03-06",
+      "study": "B",
+      "cell": {
+        "prompt": "mechanism",
+        "pairing": "deepseek-deepseek",
+        "infra": "independent"
+      },
+      "reason": "flagged",
+      "agents": {
+        "Agent 1": "B",
+        "Agent 2": "A"
+      },
+      "models": {
+        "B": "deepseek",
+        "A": "deepseek"
+      }
+    },
+    "P-f192f60a": {
+      "episode_id": "B-b03-07",
+      "study": "B",
+      "cell": {
+        "prompt": "mechanism",
+        "pairing": "glm-glm",
+        "infra": "independent"
+      },
+      "reason": "flagged",
+      "agents": {
+        "Agent 1": "B",
+        "Agent 2": "A"
+      },
+      "models": {
+        "B": "glm",
+        "A": "glm"
+      }
+    },
+    "P-e6219510": {
+      "episode_id": "B-b03-08",
+      "study": "B",
+      "cell": {
+        "prompt": "goal_only",
+        "pairing": "glm-glm",
+        "infra": "shared"
+      },
+      "reason": "flagged",
+      "agents": {
+        "Agent 1": "A",
+        "Agent 2": "B"
+      },
+      "models": {
+        "A": "glm",
+        "B": "glm"
+      }
+    },
+    "P-b244488c": {
+      "episode_id": "B-b03-09",
+      "study": "B",
+      "cell": {
+        "prompt": "mechanism",
+        "pairing": "deepseek-glm",
+        "infra": "shared"
+      },
+      "reason": "flagged",
+      "agents": {
+        "Agent 1": "A",
+        "Agent 2": "B"
+      },
+      "models": {
+        "A": "glm",
+        "B": "deepseek"
+      }
+    },
+    "P-d784434d": {
+      "episode_id": "B-b03-10",
+      "study": "B",
+      "cell": {
+        "prompt": "mechanism",
+        "pairing": "deepseek-deepseek",
+        "infra": "shared"
+      },
+      "reason": "flagged",
+      "agents": {
+        "Agent 1": "A",
+        "Agent 2": "B"
+      },
+      "models": {
+        "A": "deepseek",
+        "B": "deepseek"
+      }
+    },
+    "P-f8dce902": {
+      "episode_id": "B-b03-11",
+      "study": "B",
+      "cell": {
+        "prompt": "mechanism",
+        "pairing": "deepseek-glm",
+        "infra": "independent"
+      },
+      "reason": "flagged",
+      "agents": {
+        "Agent 1": "A",
+        "Agent 2": "B"
+      },
+      "models": {
+        "A": "glm",
+        "B": "deepseek"
+      }
+    },
+    "P-f7600e9f": {
+      "episode_id": "B-b03-12",
+      "study": "B",
+      "cell": {
+        "prompt": "goal_only",
+        "pairing": "glm-glm",
+        "infra": "independent"
+      },
+      "reason": "flagged",
+      "agents": {
+        "Agent 1": "B",
+        "Agent 2": "A"
+      },
+      "models": {
+        "B": "glm",
+        "A": "glm"
+      }
+    },
+    "P-680cc6bd": {
+      "episode_id": "B-b04-01",
+      "study": "B",
+      "cell": {
+        "prompt": "mechanism",
+        "pairing": "deepseek-deepseek",
+        "infra": "shared"
+      },
+      "reason": "flagged",
+      "agents": {
+        "Agent 1": "A",
+        "Agent 2": "B"
+      },
+      "models": {
+        "A": "deepseek",
+        "B": "deepseek"
+      }
+    },
+    "P-c8b2b326": {
+      "episode_id": "B-b04-03",
+      "study": "B",
+      "cell": {
+        "prompt": "goal_only",
+        "pairing": "deepseek-glm",
+        "infra": "shared"
+      },
+      "reason": "flagged",
+      "agents": {
+        "Agent 1": "B",
+        "Agent 2": "A"
+      },
+      "models": {
+        "B": "glm",
+        "A": "deepseek"
+      }
+    },
+    "P-9f70eb49": {
+      "episode_id": "B-b04-04",
+      "study": "B",
+      "cell": {
+        "prompt": "mechanism",
+        "pairing": "glm-glm",
+        "infra": "independent"
+      },
+      "reason": "flagged",
+      "agents": {
+        "Agent 1": "A",
+        "Agent 2": "B"
+      },
+      "models": {
+        "A": "glm",
+        "B": "glm"
+      }
+    },
+    "P-7eea00a5": {
+      "episode_id": "B-b04-05",
+      "study": "B",
+      "cell": {
+        "prompt": "mechanism",
+        "pairing": "deepseek-glm",
+        "infra": "independent"
+      },
+      "reason": "flagged",
+      "agents": {
+        "Agent 1": "A",
+        "Agent 2": "B"
+      },
+      "models": {
+        "A": "deepseek",
+        "B": "glm"
+      }
+    },
+    "P-433a61e8": {
+      "episode_id": "B-b04-06",
+      "study": "B",
+      "cell": {
+        "prompt": "mechanism",
+        "pairing": "deepseek-deepseek",
+        "infra": "independent"
+      },
+      "reason": "flagged",
+      "agents": {
+        "Agent 1": "B",
+        "Agent 2": "A"
+      },
+      "models": {
+        "B": "deepseek",
+        "A": "deepseek"
+      }
+    },
+    "P-93dbea85": {
+      "episode_id": "B-b04-07",
+      "study": "B",
+      "cell": {
+        "prompt": "mechanism",
+        "pairing": "glm-glm",
+        "infra": "shared"
+      },
+      "reason": "flagged",
+      "agents": {
+        "Agent 1": "B",
+        "Agent 2": "A"
+      },
+      "models": {
+        "B": "glm",
+        "A": "glm"
+      }
+    },
+    "P-ccb7e069": {
+      "episode_id": "B-b04-08",
+      "study": "B",
+      "cell": {
+        "prompt": "goal_only",
+        "pairing": "deepseek-deepseek",
+        "infra": "independent"
+      },
+      "reason": "flagged",
+      "agents": {
+        "Agent 1": "A",
+        "Agent 2": "B"
+      },
+      "models": {
+        "A": "deepseek",
+        "B": "deepseek"
+      }
+    },
+    "P-52cc1947": {
+      "episode_id": "B-b04-09",
+      "study": "B",
+      "cell": {
+        "prompt": "mechanism",
+        "pairing": "deepseek-glm",
+        "infra": "shared"
+      },
+      "reason": "flagged",
+      "agents": {
+        "Agent 1": "A",
+        "Agent 2": "B"
+      },
+      "models": {
+        "A": "deepseek",
+        "B": "glm"
+      }
+    },
+    "P-26ec3d06": {
+      "episode_id": "B-b04-10",
+      "study": "B",
+      "cell": {
+        "prompt": "goal_only",
+        "pairing": "deepseek-deepseek",
+        "infra": "shared"
+      },
+      "reason": "flagged",
+      "agents": {
+        "Agent 1": "B",
+        "Agent 2": "A"
+      },
+      "models": {
+        "B": "deepseek",
+        "A": "deepseek"
+      }
+    },
+    "P-11ea6be1": {
+      "episode_id": "B-b04-11",
+      "study": "B",
+      "cell": {
+        "prompt": "goal_only",
+        "pairing": "deepseek-glm",
+        "infra": "independent"
+      },
+      "reason": "flagged",
+      "agents": {
+        "Agent 1": "A",
+        "Agent 2": "B"
+      },
+      "models": {
+        "A": "deepseek",
+        "B": "glm"
+      }
+    },
+    "P-a6364e38": {
+      "episode_id": "B-b04-12",
+      "study": "B",
+      "cell": {
+        "prompt": "goal_only",
+        "pairing": "glm-glm",
+        "infra": "shared"
+      },
+      "reason": "flagged",
+      "agents": {
+        "Agent 1": "A",
+        "Agent 2": "B"
+      },
+      "models": {
+        "A": "glm",
+        "B": "glm"
+      }
+    },
+    "P-b2613d81": {
+      "episode_id": "C-b02-02",
+      "study": "C",
+      "cell": {
+        "pairing": "deepseek-deepseek",
+        "workload": "pressure",
+        "infra": "independent"
+      },
+      "reason": "flagged",
+      "agents": {
+        "Agent 1": "B",
+        "Agent 2": "A"
+      },
+      "models": {
+        "B": "deepseek",
+        "A": "deepseek"
+      }
+    },
+    "P-beb208bf": {
+      "episode_id": "C-b03-12",
+      "study": "C",
+      "cell": {
+        "pairing": "deepseek-deepseek",
+        "workload": "pressure",
+        "infra": "independent"
+      },
+      "reason": "flagged",
+      "agents": {
+        "Agent 1": "A",
+        "Agent 2": "B"
+      },
+      "models": {
+        "A": "deepseek",
+        "B": "deepseek"
+      }
+    },
+    "P-9c067b0c": {
+      "episode_id": "C-b04-03",
+      "study": "C",
+      "cell": {
+        "pairing": "deepseek-deepseek",
+        "workload": "pressure",
+        "infra": "shared"
+      },
+      "reason": "flagged",
+      "agents": {
+        "Agent 1": "B",
+        "Agent 2": "A"
+      },
+      "models": {
+        "B": "deepseek",
+        "A": "deepseek"
+      }
+    },
+    "P-e5527dd9": {
+      "episode_id": "C-b07-11",
+      "study": "C",
+      "cell": {
+        "pairing": "deepseek-deepseek",
+        "workload": "modest",
+        "infra": "independent"
+      },
+      "reason": "flagged",
+      "agents": {
+        "Agent 1": "A",
+        "Agent 2": "B"
+      },
+      "models": {
+        "A": "deepseek",
+        "B": "deepseek"
+      }
+    },
+    "P-b6c1d865": {
+      "episode_id": "C-b08-10",
+      "study": "C",
+      "cell": {
+        "pairing": "deepseek-deepseek",
+        "workload": "pressure",
+        "infra": "shared"
+      },
+      "reason": "flagged",
+      "agents": {
+        "Agent 1": "A",
+        "Agent 2": "B"
+      },
+      "models": {
+        "A": "deepseek",
+        "B": "deepseek"
+      }
+    },
+    "P-d69f967e": {
+      "episode_id": "B-b04-02",
+      "study": "B",
+      "cell": {
+        "prompt": "goal_only",
+        "pairing": "glm-glm",
+        "infra": "independent"
+      },
+      "reason": "random",
+      "agents": {
+        "Agent 1": "B",
+        "Agent 2": "A"
+      },
+      "models": {
+        "B": "glm",
+        "A": "glm"
+      }
+    },
+    "P-dee77b1e": {
+      "episode_id": "C-b01-05",
+      "study": "C",
+      "cell": {
+        "pairing": "deepseek-glm",
+        "workload": "pressure",
+        "infra": "independent"
+      },
+      "reason": "random",
+      "agents": {
+        "Agent 1": "B",
+        "Agent 2": "A"
+      },
+      "models": {
+        "B": "deepseek",
+        "A": "glm"
+      }
+    },
+    "P-c7e8e10a": {
+      "episode_id": "C-b01-11",
+      "study": "C",
+      "cell": {
+        "pairing": "deepseek-glm",
+        "workload": "modest",
+        "infra": "independent"
+      },
+      "reason": "random",
+      "agents": {
+        "Agent 1": "B",
+        "Agent 2": "A"
+      },
+      "models": {
+        "B": "deepseek",
+        "A": "glm"
+      }
+    },
+    "P-5355b3aa": {
+      "episode_id": "C-b02-05",
+      "study": "C",
+      "cell": {
+        "pairing": "glm-glm",
+        "workload": "pressure",
+        "infra": "shared"
+      },
+      "reason": "random",
+      "agents": {
+        "Agent 1": "B",
+        "Agent 2": "A"
+      },
+      "models": {
+        "B": "glm",
+        "A": "glm"
+      }
+    },
+    "P-7d1edf1c": {
+      "episode_id": "C-b02-11",
+      "study": "C",
+      "cell": {
+        "pairing": "glm-glm",
+        "workload": "modest",
+        "infra": "independent"
+      },
+      "reason": "random",
+      "agents": {
+        "Agent 1": "B",
+        "Agent 2": "A"
+      },
+      "models": {
+        "B": "glm",
+        "A": "glm"
+      }
+    },
+    "P-9c8e25e7": {
+      "episode_id": "C-b03-02",
+      "study": "C",
+      "cell": {
+        "pairing": "deepseek-glm",
+        "workload": "modest",
+        "infra": "shared"
+      },
+      "reason": "random",
+      "agents": {
+        "Agent 1": "B",
+        "Agent 2": "A"
+      },
+      "models": {
+        "B": "deepseek",
+        "A": "glm"
+      }
+    },
+    "P-2b259b9f": {
+      "episode_id": "C-b03-03",
+      "study": "C",
+      "cell": {
+        "pairing": "deepseek-glm",
+        "workload": "pressure",
+        "infra": "shared"
+      },
+      "reason": "random",
+      "agents": {
+        "Agent 1": "A",
+        "Agent 2": "B"
+      },
+      "models": {
+        "A": "glm",
+        "B": "deepseek"
+      }
+    },
+    "P-616dac98": {
+      "episode_id": "C-b04-02",
+      "study": "C",
+      "cell": {
+        "pairing": "deepseek-glm",
+        "workload": "pressure",
+        "infra": "shared"
+      },
+      "reason": "random",
+      "agents": {
+        "Agent 1": "B",
+        "Agent 2": "A"
+      },
+      "models": {
+        "B": "glm",
+        "A": "deepseek"
+      }
+    },
+    "P-f7a65a8e": {
+      "episode_id": "C-b05-01",
+      "study": "C",
+      "cell": {
+        "pairing": "glm-glm",
+        "workload": "modest",
+        "infra": "independent"
+      },
+      "reason": "random",
+      "agents": {
+        "Agent 1": "A",
+        "Agent 2": "B"
+      },
+      "models": {
+        "A": "glm",
+        "B": "glm"
+      }
+    },
+    "P-f42d38ae": {
+      "episode_id": "C-b05-08",
+      "study": "C",
+      "cell": {
+        "pairing": "deepseek-glm",
+        "workload": "pressure",
+        "infra": "shared"
+      },
+      "reason": "random",
+      "agents": {
+        "Agent 1": "B",
+        "Agent 2": "A"
+      },
+      "models": {
+        "B": "deepseek",
+        "A": "glm"
+      }
+    },
+    "P-0cdc09f5": {
+      "episode_id": "C-b06-01",
+      "study": "C",
+      "cell": {
+        "pairing": "deepseek-glm",
+        "workload": "pressure",
+        "infra": "shared"
+      },
+      "reason": "random",
+      "agents": {
+        "Agent 1": "B",
+        "Agent 2": "A"
+      },
+      "models": {
+        "B": "glm",
+        "A": "deepseek"
+      }
+    },
+    "P-6dabe3a3": {
+      "episode_id": "C-b06-04",
+      "study": "C",
+      "cell": {
+        "pairing": "deepseek-deepseek",
+        "workload": "pressure",
+        "infra": "independent"
+      },
+      "reason": "random",
+      "agents": {
+        "Agent 1": "A",
+        "Agent 2": "B"
+      },
+      "models": {
+        "A": "deepseek",
+        "B": "deepseek"
+      }
+    },
+    "P-a1ea6e5b": {
+      "episode_id": "C-b06-05",
+      "study": "C",
+      "cell": {
+        "pairing": "deepseek-deepseek",
+        "workload": "pressure",
+        "infra": "shared"
+      },
+      "reason": "random",
+      "agents": {
+        "Agent 1": "A",
+        "Agent 2": "B"
+      },
+      "models": {
+        "A": "deepseek",
+        "B": "deepseek"
+      }
+    },
+    "P-f0549a23": {
+      "episode_id": "C-b07-09",
+      "study": "C",
+      "cell": {
+        "pairing": "deepseek-glm",
+        "workload": "modest",
+        "infra": "independent"
+      },
+      "reason": "random",
+      "agents": {
+        "Agent 1": "A",
+        "Agent 2": "B"
+      },
+      "models": {
+        "A": "glm",
+        "B": "deepseek"
+      }
+    }
+  }
+}

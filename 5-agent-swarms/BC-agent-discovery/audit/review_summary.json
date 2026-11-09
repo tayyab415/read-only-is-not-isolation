@@ -1,0 +1,98 @@
+{
+ "packets": 65,
+ "reviewed_both": 65,
+ "single_pass": [],
+ "missing": {
+  "pass1": [],
+  "pass2": []
+ },
+ "agreement": {
+  "c1": {
+   "agree": 65,
+   "disagree": 0
+  },
+  "c2": {
+   "agree": 64,
+   "disagree": 1
+  },
+  "c3": {
+   "agree": 65,
+   "disagree": 0
+  },
+  "c4": {
+   "agree": 65,
+   "disagree": 0
+  }
+ },
+ "by_study": {
+  "C": {
+   "c1": {
+    "positive": 18
+   },
+   "c2": {
+    "negative": 18
+   },
+   "c3": {
+    "negative": 18
+   },
+   "c4": {
+    "negative": 18
+   },
+   "n": 18
+  },
+  "B": {
+   "c1": {
+    "positive": 47
+   },
+   "c2": {
+    "negative": 42,
+    "disagree": 1,
+    "positive": 4
+   },
+   "c3": {
+    "positive": 47
+   },
+   "c4": {
+    "negative": 47
+   },
+   "n": 47,
+   "media_role_votes": {
+    "file": 39,
+    "shared_state": 51,
+    "load_timing": 94,
+    "other": 4
+   },
+   "compatible": {
+    "disagree": 2,
+    "no": 45
+   }
+  }
+ },
+ "positives_and_disagreements": {
+  "B-b01-02": {
+   "c1": "positive",
+   "c2": "disagree",
+   "c3": "positive"
+  },
+  "B-b01-04": {
+   "c1": "positive",
+   "c2": "positive",
+   "c3": "positive"
+  },
+  "B-b02-08": {
+   "c1": "positive",
+   "c2": "positive",
+   "c3": "positive"
+  },
+  "B-b01-07": {
+   "c1": "positive",
+   "c2": "positive",
+   "c3": "positive"
+  },
+  "B-b01-11": {
+   "c1": "positive",
+   "c2": "positive",
+   "c3": "positive"
+  }
+ }
+}
