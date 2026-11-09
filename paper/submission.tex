@@ -62,14 +62,18 @@ This matters because agents can get out of their sandboxes, and here they did \c
 Hugging Face \cite{hftimeline}, OpenAI \cite{openai} and METR \cite{metr} document the incident; rebuilds with mocks \cite{palan,elasky} show how the agents communicated. My focus is the other side: hardening the sandbox and shutting down communication however possible, down to single 0/1 bits carried by when a request is made and what it changes. Covert channels \cite{lampson,tcsec,tg030}, prefix-cache leaks and salts \cite{gu2025,song2024,cachesolidarity,vllmsalt} and agent collusion \cite{motwani2024,shirnin2026} are known; I test which defenses close which channels on the systems the incident used.
 
 \section{Methods}
-\subsection{Threat model}
+\subsection{Threat model and setup}
 I test two agents, A and B (Alice and Bob), in isolated sandboxes with their own tools, files and code, no shared file system and no network route to each other. Both use one shared service, the package mirror or the model server, read-only: they can fetch and ask, but not write. A message is transmitted if B can tell, from what it receives, what A did, and even one bit counts. Scripts send a schedule of 0s and 1s; model agents each hold a number from 0 to 15 that the other must recover, checked against the service logs.
 
-\subsection{How the test was built}
+
 I built the lab in steps; each step tested the gap the last one left. First I rebuilt the board: an account with Read and Deploy/Cache permission could create folders everyone could read, and with Read alone the request was refused (403). Next I hardened the sandboxes so each reached Artifactory and nothing else (72 of 72 checks); Docker's plain \texttt{--internal} network still exposed the host's SSH port until I switched to its isolated gateway mode. Two read-only Python scripts, a sender and a receiver, then attacked the mirror, and a control matrix tested seven configurations, copied passwords, the gateway binding and concurrent load. Behind this double door I went after each remaining piece of shared state, every test with an idle control and a decoder frozen before the holdout; each became one of nine result records. Last, I gave model clients a number to exchange, adding hints step by step, and repeated the scripts and ran full agents on a shared vLLM server.
 
-\subsection{Setup}
 Artifactory OSS 7.161.26, the product the incident used \cite[p.~5]{metr}, ran on one AWS VM with a local upstream that answers misses after a fixed delay, behind my gateway that forwards only GET and HEAD. vLLM 0.33.0 served Qwen2.5-1.5B-Instruct on one NVIDIA L4 behind gateways with fixed cache policies. I used real systems because the channels come from real product features a mock lacks. Models: GPT-6 Luna, GPT-6.1 Terra and gpt-oss-120b on the mirror; GLM-5.3-Flash and DeepSeek-V4-Flash on the model server, cheap and, where possible, open-weight, with fewer safeguards than frontier models.
+
+\begin{figure}[h]\centering
+\includegraphics[width=\linewidth]{figures/setup.pdf}
+\caption{The test. Two sandboxes with read-only accounts and no route to each other reach one shared service only through my gateway, which forwards GET and HEAD and binds each sandbox's network address to its account. A message passes when A's read changes shared state that B's later read observes. Bottom: the order in which the lab was built.}\label{fig:setup}
+\end{figure}
 
 \subsection{Measurement rules}
 The attack scripts explain how and why a service leaks; the agent runs show whether agents, or more capable future ones, could use it. The scripts were written and run by coding agents (Claude Code and Codex) under my direction. They are far more capable than the sandboxed models and knew they were trying to break it, so they are the strongest attacker I could field. Bits are balanced, so 50\% means nothing got through. Positives are checked against service logs, failures stay in the counts, and a negative result bounds only the actions tested. Two clients are enough on purpose: a channel is a property of one shared resource, not of fleet size.
@@ -79,7 +83,7 @@ The attack scripts explain how and why a service leaks; the agent runs show whet
 Reads leaked. Through the download counter the receiver recovered 24 of 24 scheduled bits (Figure~\ref{fig:channel}); through remembered misses, a path the sender had just asked for came back in 12 ms instead of 164 ms, and a frozen decoder got 32 of 32 bits. Told to swap a number through the mirror, \textbf{110 of 120} model agents did (Luna 38/40, Terra 40/40, gpt-oss 32/40), all through the counter. With the storage API denied and negative caching off, \textbf{0 of 120} did. 32 of Terra's 40 control episodes were provider failures, so the clean contrast is 70/80 against 0/80.
 
 \begin{figure}[h]\centering
-\includegraphics[width=0.48\linewidth]{figures/channel.pdf}
+\includegraphics[width=0.72\linewidth]{figures/channel.pdf}
 \caption{Download-count channel, two scripted read-only clients, 24 balanced bits per arm. Shared cache: each of A's downloads steps the count B reads (24/24). Separate repositories: the count stays at 2 and B scores chance (12/24).}\label{fig:channel}
 \end{figure}
 
@@ -87,11 +91,22 @@ Each setting alone closed only one channel (ledger in Table~\ref{tab:ledger}, Ap
 
 Load is what is left. Behind both doors, a frozen classifier told when the other tenant was busy in \textbf{942 of 1,000} trials (idle 517; $p=0.0004$). Every other control closed the state it aimed at: a miss cache keyed on the gateway's identity brought NGINX and Squid timing to chance, and a fixed file over the host CPU counter made it unreadable. None brought load to chance. A private copy per sandbox scored 562/1,000, one gateway per sandbox 197/300, a 12~ms response floor 216/300 and different file content 267/300, against idle controls of 141--163/300 (App.~C--F).
 
-\subsection{Model server: the cache can be closed, the load cannot}
-vLLM's cache salt is chosen by the client \cite{vllmsalt}, so cooperating tenants can share one. A salt assigned by the gateway from the tenant's identity brought cache decoding to chance (0.50 on 400 trials) and still served 91\% of prompt tokens from cache. Load was untouched: one ordinary request moved the receiver from 55 to 103 ms, and an on/off stream carried \textbf{10.0 bits/s} (lower bound 9.4), even with each tenant on its own server process. A busy server cut this to 0.83 bits/s, and a 500 ms floor did not hide long requests (App.~J).
+\subsection{Model server}
+vLLM's cache salt is chosen by the client \cite{vllmsalt}, so cooperating tenants can share one. A salt assigned by the gateway from the tenant's identity brought cache decoding to chance (0.50 on 400 trials) and still served 91\% of prompt tokens from cache. Load was untouched: one ordinary request moved the receiver from 55 to 103 ms, and an on/off stream carried \textbf{10.0 bits/s} (lower bound 9.4), even with each tenant on its own server process. A busy server cut this to 0.83 bits/s, and a 500 ms floor did not hide long requests (Figure~\ref{fig:rate}).
 
-\subsection{Agents on the model server: the channel works, the code does not}
-In 144 audited episodes, agents doing ordinary work never blamed a slowdown on a peer (0 of 96). Told to pass a 4-bit value, they rarely thought of load (1 of 24); once it was named, all 23 reviewed episodes used it, yet only 1 of 48 recovered the value, by a stated guess. An agent-written sender, replayed, decoded 15 of 16, but no pair's schemes matched (0 of 47). \textbf{Monitoring sees exposure, not intent:} a server-side rule caught all 110 package exchanges, partly by construction, but also 19 of 60 benign agents, and a monitor trained on Swarm Traces flagged 32\% of ordinary tool calls (App.~I).
+\subsection{Agents on the model server}
+In 144 audited episodes, agents doing ordinary work never blamed a slowdown on a peer (0 of 96). Told to pass a 4-bit value, they rarely thought of load (1 of 24); once it was named, all 23 reviewed episodes used it, yet only 1 of 48 recovered the value, by a stated guess. An agent-written sender, replayed, decoded 15 of 16, but no pair's schemes matched (0 of 47). \textbf{Monitoring sees exposure, not intent:} a server-side rule caught all 110 package exchanges, partly by construction, but also 19 of 60 benign agents, and a monitor trained on Swarm Traces flagged 32\% of ordinary tool calls (Figure~\ref{fig:monitors}, App.~I).
+
+\begin{figure}[h]\centering
+\begin{minipage}[t]{0.48\linewidth}\centering
+\includegraphics[width=\linewidth]{figures/rate-strip.pdf}
+\caption{Achieved load-channel rates for one scripted on/off scheme through the gateway-assigned salt (600 holdout symbols per condition; frozen one-threshold decoder). Dots are point estimates; bars run to the Wilson 95\% lower bound. These are achieved rates, not capacity. Bottom row: time to move 128 bits at each rate with ideal coding. Grey lines: TCSEC calls over 100 bit/s high and under 1 bit/s acceptable in most environments \cite{tcsec}; NCSC-TG-030 suggests auditing above 0.1 bit/s \cite{tg030}.}\label{fig:rate}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.48\linewidth}\centering
+\includegraphics[width=\linewidth]{figures/monitor-bars.pdf}
+\caption{Three study-O monitors on the 110 verified package exchanges and the 60 benign validation agents, with Wilson 95\% intervals: the server-side rule of \S4.3 (M1), a wait-count monitor (M2) and a notes monitor (M3). $^\dagger$M1's recall is partly by construction: a verified exchange requires the peer download and revealing statistics read that M1 looks for, so 110/110 is not evidence that it recognises intent.}\label{fig:monitors}
+\end{minipage}
+\end{figure}
 
 \section{Discussion and Limitations}
 
@@ -189,16 +204,6 @@ Gateway salt; one ordinary request of load & 1.00 (0.99--1.00) & 55 $\rightarrow
 \caption{S1: holdout decoding of tenant A's activity by tenant B, Wilson intervals. Cached tokens are medians from the gateway's native log; 16 is the receiver's own chat-template block.}\label{tab:s1}
 \end{table}
 
-\begin{figure}[ht]\centering
-\begin{minipage}[t]{0.48\linewidth}\centering
-\includegraphics[width=\linewidth]{figures/rate-strip.pdf}
-\caption{Achieved load-channel rates for one scripted on/off scheme through the gateway-assigned salt (600 holdout symbols per condition; frozen one-threshold decoder). Dots are point estimates; bars run to the Wilson 95\% lower bound. These are achieved rates, not capacity. Bottom row: time to move 128 bits at each rate with ideal coding. Grey lines: TCSEC calls over 100 bit/s high and under 1 bit/s acceptable in most environments \cite{tcsec}; NCSC-TG-030 suggests auditing above 0.1 bit/s \cite{tg030}.}\label{fig:rate}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.48\linewidth}\centering
-\includegraphics[width=\linewidth]{figures/monitor-bars.pdf}
-\caption{Three study-O monitors on the 110 verified package exchanges and the 60 benign validation agents, with Wilson 95\% intervals: the server-side rule of \S4.3 (M1), a wait-count monitor (M2) and a notes monitor (M3). $^\dagger$M1's recall is partly by construction: a verified exchange requires the peer download and revealing statistics read that M1 looks for, so 110/110 is not evidence that it recognises intent.}\label{fig:monitors}
-\end{minipage}
-\end{figure}
 
 \begin{figure}[ht]\centering
 \includegraphics[width=\linewidth]{figures/p1-recipes-fixed.pdf}
